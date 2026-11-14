@@ -5,6 +5,15 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-14 · Repozytorium wieloprojektowe — ✅
+- Repo przestaje być tylko bazą wiedzy Ewy: każdy projekt (także krótkie) dostaje folder
+  `projects/<nazwa>/`; ten projekt przeniesiony do `projects/ewa-dabrowska/` (historia gita zachowana).
+- Główny `CLAUDE.md` = spis projektów + zasady wspólne (Framer, definition of done); `CLAUDE.md`
+  tego folderu = tylko specyfika Ewy. Skille `/add-work` i `/framer-audit` żyją w
+  `projects/ewa-dabrowska/.claude/skills/`.
+- **Powód:** użytkownik prowadzi wiele projektów, część krótkich — osobne repo dla każdego to
+  za dużo zachodu, a wspólny główny `CLAUDE.md` mieszałby kontekst Ewy z innymi projektami.
+
 ### 2026-11-14 · Przełącznik języków, e-mail, materiały źródłowe — ✅
 - **Przełącznik języków EN/PL w pasku nawigacyjnym.** Strona powstaje po angielsku, wersja polska
   dojdzie później — ale miejsce na przełącznik (EN / PL) projektujemy w Nav Bar **od razu**, na
