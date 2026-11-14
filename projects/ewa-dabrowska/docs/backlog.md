@@ -22,6 +22,13 @@
       podstrona `/privacy` jest **wymagana** (nie usuwamy linku).
 - [ ] **Usunąć draft `/home`** (`PkrJvvJdu`) — stara kopia Home, ryzyko pomyłki.
 - [ ] Domena i pierwsza publikacja.
+- [x] **Footer Bar nie pojawiał się przy stopce** — warianty *Desktop Visible* / *Phone Visible*
+      (`CZImlwXQG`) miały opacity 0 jak *Hidden*; ustawiono 1 i przywrócono wysuwanie z góry
+      (szczegóły w decisions.md, 2026-11-14).
+- [ ] **Szare paski po bokach sekcji About** — prześwituje stopka (`NMyUr1YCD`, z-index 4, sticky
+      bottom), bo „About + sticky-scope” (`hVUwmnJJl`) nie ma z-indexu, a jego dzieci zaczynają się
+      za paddingiem 60px. Proponowana poprawka: Z Index = 5 na `hVUwmnJJl` (powyżej stopki 4 i
+      Projects 2–3).
 
 ## P1 — fundamenty pod rozbudowę
 
