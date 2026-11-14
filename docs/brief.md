@@ -20,24 +20,23 @@
 
 ## Cel strony
 
-_TODO — wybierz 1 główny i max 2 poboczne:_
+✅ Ustalone z artystką 2026-11-14 (zob. decisions.md, `docs/ustalenia/`).
 
-- [ ] Portfolio dla kuratorów / galerii / festiwali (zaproszenia do wystaw, rezydencji)
-- [ ] Dokumentacja dorobku do wniosków grantowych i stypendialnych
-- [ ] Zamówienia / sprzedaż prac, realizacje plenerowe na zlecenie
-- [ ] Warsztaty / edukacja
-- [ ] Prasa — materiały do pobrania (press kit)
+- **Główne:** wizytówka uwiarygadniająca portfolio przed profesjonalistami i instytucjami ·
+  wirtualna galeria ułatwiająca nowe współprace · rozpoznawalność i marka własna.
+- **Wspierające:** baza dla mediów · cyfrowe archiwum sztuki efemerycznej · mniejsze projekty
+  (warsztaty, spotkania z lokalną społecznością).
 
-**Główne działanie, które ma wykonać odwiedzający:** _TODO_ (np. napisać e-mail, obejrzeć projekt, pobrać portfolio PDF)
+**Główne działania odwiedzającego (CTA):** „Zobacz realizacje” i „Kontakt” (równorzędnie) +
+dodatkowo „Gdzie zobaczyć moje prace” (mapa prac).
 
 ## Odbiorcy
 
-| Grupa | Czego szuka | Priorytet |
-|---|---|---|
-| Kuratorzy, instytucje kultury | Przegląd prac, CV, kontakt | _TODO_ |
-| Komisje grantowe | Opisy projektów, daty, miejsca, dokumentacja | _TODO_ |
-| Prasa | Bio, zdjęcia w wysokiej rozdzielczości, nagrody | _TODO_ |
-| Publiczność / fani | Zdjęcia, wydarzenia, Instagram | _TODO_ |
+- **Docelowi (persona):** osoby decyzyjne z budżetem — instytucje publiczne, fundacje
+  kulturalne, samorządy, kuratorzy, organizatorzy festiwali, instytucje grantowe, dyrektorzy
+  instytucji kultury, architekci krajobrazu.
+- **Poboczni:** dziennikarze / krytycy · szeroki odbiorca · klienci prywatni / właściciele
+  ogrodów · edukatorzy, studenci, domy kultury · inni artyści i rzemieślnicy.
 
 ## Ton i osobowość marki
 
@@ -47,19 +46,25 @@ _TODO — wybierz 1 główny i max 2 poboczne:_
 
 ## Zakres strony (sitemap docelowa)
 
-Obecnie: tylko `/` (Home) + szkic `/home` (draft, do usunięcia — zob. backlog).
+Obecnie: tylko `/` (Home) + szkic `/home` (draft, do usunięcia — zob. backlog). Obecna nawigacja
+(Works · Info · Awards · Contact) **nie odpowiada ustaleniom** — docelowe menu poniżej.
 
-Nawigacja na stronie wskazuje: **Works · Info · Awards · Contact**. Proponowany docelowy kształt:
-
-| Strona | Ścieżka | Źródło treści | Status |
+| Strona (nazwa robocza) | Ścieżka | Źródło treści | Status |
 |---|---|---|---|
-| Home | `/` | canvas | jest |
-| Works (lista) | `/works` | CMS „Works” | _do zrobienia_ |
-| Work (detail) | `/works/:slug` | CMS „Works” | _do zrobienia_ |
-| Info / About | `/info` lub kotwica `/#about` | `content/bio.md` | _decyzja TODO_ |
-| Awards & Press | `/awards` | `content/awards-press.md` (lub CMS) | _do zrobienia_ |
-| Contact | kotwica w stopce | — | jest (e-mail w stopce) |
-| Privacy Policy | `/privacy` | — | link w stopce, strony brak |
+| Home | `/` | canvas | jest — do przebudowy wg ustaleń |
+| Work (lista) | `/work` | CMS „Works” | _do zrobienia_ |
+| Work (detail) | `/work/:slug` | CMS „Works” (+ blok „Gdzie zobaczyć”) | _do zrobienia_ |
+| Where to see (mapa prac) | `/where-to-see` | CMS „Works” (lokalizacje) | _do zrobienia, nowe_ |
+| Exhibitions | `/exhibitions` | CMS — jedna lista, od najnowszych | _do zrobienia_ |
+| Film / Performance | `/film` | YouTube (embed) | _do zrobienia_ |
+| Publications / Press | `/press` | `content/awards-press.md` (lub CMS) | _do zrobienia_ |
+| About | `/about` | `content/bio.md` | _do zrobienia_ |
+| Contact | `/contact` | e-mail (widoczny) + formularz | _do zrobienia_ |
+| Privacy Policy | `/privacy` | — | wymagana przy formularzu |
+
+**Home:** wybrane projekty (3–5, _TODO wybór_), krótko o artystce, logotypy instytucji, CTA.
+**Odrzucone:** newsletter, News / belka „Nowości”, sekcja „Featured”, Creative Process,
+podział wystaw na nadchodzące/archiwalne, telefon na stronie.
 
 ## Ograniczenia i terminy
 

@@ -22,12 +22,23 @@
 
 ## P1 — fundamenty pod rozbudowę
 
+- [ ] **Nowa architektura wg ustaleń z 2026-11-14** (decisions.md): menu Work · Where to see ·
+      Exhibitions · Film / Performance · Publications / Press · About · Contact; obecny Nav Bar
+      (Works / Info / Awards / Contact) do zmiany.
+- [ ] **Mapa „Where to see”:** dodać do `content/works.csv` pola na lokalizację (np. `maps_url`,
+      `lat`, `lng`, `visitable`) — po decyzji artystki co z pracami efemerycznymi i prywatnymi.
+- [ ] **Home:** dodać sekcję logotypów instytucji + przyciski „Zobacz realizacje” / „Kontakt” /
+      „Gdzie zobaczyć moje prace”.
+- [ ] **Contact:** podstrona z widocznym e-mailem + formularzem (formularz ⇒ Privacy Policy).
+- [ ] **Czekamy na artystkę:** inspiracje, wybór 3–5 projektów na Home i kolejność Work, kierunek
+      logo, lokalizacje prac, potwierdzenie e-maila, logotypy instytucji, linki YouTube.
+
 - [ ] **CMS „Works”** wg schematu `content/works.csv` + strona listy `/works` i detail `/works/:slug`.
 - [ ] **Layout Template** z Nav Bar i stopką — warunek przed dodaniem kolejnych stron.
 - [ ] **Tokeny kolorów** zamiast surowych wartości (Ink / Paper / Line / Muted) — bez zmiany wyglądu.
-- [ ] **Strona Awards / Press** (nawigacja już do niej odsyła).
-- [ ] **Info / About** — decyzja: osobna strona czy kotwica `#about`; „Read more” musi gdzieś prowadzić.
-- [ ] Decyzja PL/EN (decisions.md).
+- [ ] **Strona Publications / Press** (ustalona nazwa; dawniej „Awards”).
+- [ ] **About** — osobna podstrona (ustalone 2026-11-14); „Read more” na Home ma do niej prowadzić.
+- [x] Decyzja PL/EN — najpierw EN, PL na końcu z przełącznikiem (2026-11-14).
 - [ ] Ujednolicić `Copyright`: w stopce są dwa warianty („© 2026 Ewa Dąbrowska” i „… All rights reserved.”).
 
 ## P2 — później
