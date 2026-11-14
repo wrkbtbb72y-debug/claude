@@ -14,8 +14,14 @@
 - **Główny temat (z hero):** „Land-Art & Sculpture on Humans, Animals and the Earth”
 - **Opis jednym zdaniem (z intro):** „A multidisciplinary art exploring sculpture, ecology, and sound.”
 - **Motto / cytat (z About):** „Every blade of grass is worth attention. Every love needs courage.”
-- **Materiały / techniki charakterystyczne:** _TODO_ (ze zdjęć: słoma/trawa, drewno, glina, gąbka? — potwierdzić)
-- **Miejsce działania:** _TODO_
+- **Źródło cytatu z About:** pieśń/wiersz z filmu „Micro voyagers” (2020): „każde źdźbło warte jest
+  uwagi / każda miłość potrzebuje odwagi”.
+- **Materiały / techniki (z portfolio):** głównie lekkie — papier, stara gąbka tapicerska, patyki z
+  poszycia lasu skręcane własną techniką; także drewno (lipa, jesion, sosna), wiklina, trzcina, siano,
+  mech, żywica, gips. Pełne CV: `content/bio.md`.
+- **Miejsce działania:** Warszawa (ur. 1989); realizacje w Polsce, na Węgrzech, w Niemczech, Armenii,
+  Ukrainie, we Włoszech, Francji i na Słowacji. Częsty współautor: Jan Sajdak.
+- **Materiały źródłowe:** Google Drive — https://drive.google.com/drive/folders/1ODdjKarffSbNv4YrUwelKkm0PLBD317T
 - **Reprezentacja (galeria, agent):** _TODO_
 
 ## Cel strony
@@ -65,6 +71,8 @@ Obecnie: tylko `/` (Home) + szkic `/home` (draft, do usunięcia — zob. backlog
 **Home:** wybrane projekty (propozycja: „Słoneczny Stwór”, „Tancerz”, „Dziki” + ew. 1–2), krótko o artystce,
 logotypy instytucji, CTA. **Work:** od najnowszych, ręcznie (te trzy na początku).
 **Logo:** imię i nazwisko ładnym fontem; miejsce na własny znak artystki (szkic w przygotowaniu).
+**Nawigacja:** + przełącznik języków **EN / PL** (od razu w projekcie, aktywny na etapie PL).
+**Kontakt:** `e.dabrowska@mail.com` to adres przykładowy — prawdziwy poda artystka.
 **Odrzucone:** newsletter, News / belka „Nowości”, sekcja „Featured”, Creative Process,
 podział wystaw na nadchodzące/archiwalne, telefon na stronie.
 

@@ -16,13 +16,25 @@
       ani w kolumnach stopki (Menu, Instagram, Facebook, E-mail, Privacy Policy, Site credits).
       Do weryfikacji i podpięcia (kotwice `#work`, `#about`, mailto:, profile social).
       ⚠ Pozycje menu zmienią się wg nowej architektury (P1) — linki podpinać już do docelowych podstron.
-- [ ] **E-mail kontaktowy:** `e.dabrowska@mail.com` — potwierdzić, że to prawdziwy adres.
+- [ ] **E-mail kontaktowy:** `e.dabrowska@mail.com` to **adres przykładowy** (potwierdzone 2026-11-14) —
+      podmienić na prawdziwy, gdy artystka go poda (stopka, Contact, `mailto:`, odbiorca formularza).
 - [ ] **Privacy Policy:** link w stopce, strony brak. Ustalono formularz kontaktowy, więc
       podstrona `/privacy` jest **wymagana** (nie usuwamy linku).
 - [ ] **Usunąć draft `/home`** (`PkrJvvJdu`) — stara kopia Home, ryzyko pomyłki.
 - [ ] Domena i pierwsza publikacja.
 
 ## P1 — fundamenty pod rozbudowę
+
+- [ ] **Przełącznik języków EN / PL w Nav Bar** (desktop + menu mobilne) — zaprojektować od razu,
+      włączyć przy etapie PL (lokalizacja Framera). Decyzja 2026-11-14.
+- [ ] **Pytania do artystki po lekturze portfolio** (szczegóły w kolumnie `notes` w `content/works.csv`):
+      „Słoneczny Stwór”, „Kłos”, „Wszechkarmicielka” — brak w portfolio (dane?); czy „Tancerz” =
+      „Taniec deszczu”?; „Wszechkarmicielka” — część „Żywiciała”?; rok „Państwa Gąbczaków” i
+      „Obsesji” (portfolio 2014, pliki 2015); pisownia „Kroppemaan”; zdjęcia Ewy — które na About.
+- [ ] **Zdjęcia:** zmniejszyć pliki z aparatu (10–31 MB) przed Framerem; brakuje folderów zdjęć dla
+      części prac z portfolio (lista w `works.csv` → `notes`).
+- [ ] **Autorzy zdjęć** (A. Aubry, Kaja Tarłowska, …) — podpisywać na stronach prac; zebrać brakujące.
+- [x] Baza prac zbudowana z portfolio (31 pozycji), lista wystaw/nagród/filmów i biogram (2026-11-14).
 
 - [ ] **Nowa architektura wg ustaleń z 2026-11-14** (decisions.md): menu Work · Where to see ·
       Exhibitions · Film / Performance · Publications / Press · About · Contact; obecny Nav Bar
@@ -32,8 +44,9 @@
 - [ ] **Home:** dodać sekcję logotypów instytucji + przyciski „Zobacz realizacje” / „Kontakt” /
       „Gdzie zobaczyć moje prace”.
 - [ ] **Contact:** podstrona z widocznym e-mailem + formularzem (formularz ⇒ Privacy Policy).
-- [ ] **Czekamy na artystkę:** inspiracje, lokalizacje prac do mapy, potwierdzenie e-maila,
-      logotypy instytucji, linki YouTube, szkic znaku (bez terminu).
+- [ ] **Czekamy na artystkę:** inspiracje, lokalizacje prac do mapy, prawdziwy e-mail,
+      wybór logotypów instytucji (kandydaci w `content/awards-press.md`), szkic znaku (bez terminu).
+      Linki YouTube — 4 są w portfolio (`awards-press.md` → Filmy); zapytać o kolejne (np. „Spójnia”).
 - [x] Kolejność prac i kierunek logo ustalone (2026-11-14, decisions.md).
 - [ ] **Prace „Tancerz” i „Dziki”** — uzupełnić dane w `content/works.csv` (skill `/add-work`).
       Wiersz „Tancerz” i kolumna `order` już są (2026-11-14). „Dziki” = „Herd” — potwierdzone.

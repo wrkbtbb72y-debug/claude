@@ -5,11 +5,21 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-14 · Przełącznik języków, e-mail, materiały źródłowe — ✅
+- **Przełącznik języków EN/PL w pasku nawigacyjnym.** Strona powstaje po angielsku, wersja polska
+  dojdzie później — ale miejsce na przełącznik (EN / PL) projektujemy w Nav Bar **od razu**, na
+  desktopie i w menu mobilnym, żeby nie przebudowywać nawigacji na końcu.
+- **E-mail `e.dabrowska@mail.com` jest przykładowy (placeholder).** Nie traktować jako prawdziwego;
+  prawdziwy adres przekaże artystka. Do tego czasu nie podpinać `mailto:` ani formularza do niego.
+- **Materiały źródłowe na Google Drive** (portfolio PDF, zdjęcia Ewy, zdjęcia prac):
+  https://drive.google.com/drive/folders/1ODdjKarffSbNv4YrUwelKkm0PLBD317T — portfolio przepisane do
+  `content/sources/portfolio-2026-09.md`; baza `content/works.csv` zbudowana z portfolio (31 prac).
+
 ### 2026-11-14 · Kolejność prac i logo (wiadomości od artystki z 7.10.2026) — ✅
 Zapisane w `docs/ustalenia/ustalenia-strony-v3.pdf` (pkt 7 i 8).
 - **Kolejność prac (Work):** od najnowszych, ręcznie: 1. „Słoneczny Stwór”, 2. „Tancerz”,
   3. „Dziki” (z patyków); dalej wg wyczucia projektanta. Propozycja na Home: te same trzy
-  (+ ew. 1–2 kolejne). ✅ Potwierdzone: „Dziki” = praca podpisana na stronie jako „Herd” (slug `dziki`).
+  (+ ew. 1–2 kolejne). ✅ Potwierdzone: „Dziki” = praca podpisana na stronie jako „Herd” (slug `herd`; tytuł w portfolio „Herd”, folder na Dysku „Stado”).
 - **Logo:** start z logotypem — imię i nazwisko ładnym fontem (artystce bardzo się podoba).
   Własny znak: artystka spróbuje naszkicować (w podróży, bez terminu) — zostawiamy na niego
   miejsce, potem ewentualnie motyw przewodni strony. Strona nie czeka na znak.

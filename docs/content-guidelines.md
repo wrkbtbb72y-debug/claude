@@ -42,6 +42,11 @@ Wzór: **[Tytuł], [rok] — [co widać / materiał / kontekst].** Max ~125 znak
 
 Zdjęcia czysto dekoracyjne (tekstury, tła) — alt pusty, ale świadomie.
 
+## Autorzy zdjęć
+
+Każde zdjęcie pracy ma podanego autora (`photo_credit` w `works.csv`), np. „fot. Kaja Tarłowska”.
+Na stronie projektu — pod galerią lub w metadanych pracy. Brak autora → pytamy, nie zgadujemy.
+
 ## Fakty
 
 Nie wymyślamy dat, materiałów, wymiarów, miejsc, nagród, wystaw. Brak danych → `TODO`

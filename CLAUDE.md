@@ -8,6 +8,8 @@ mapę projektu, treści, bazę prac i backlog.
 - **Framer:** https://framer.com/projects/Ewa-D-browska-Official--gMKkn1ektXgFZXROgJCy-a6APP
   (project ID `gMKkn1ektXgFZXROgJCy`)
 - **Produkcja:** jeszcze nieopublikowana — domena: _TODO_
+- **Materiały od artystki (Google Drive):** portfolio PDF, zdjęcia Ewy, zdjęcia prac —
+  https://drive.google.com/drive/folders/1ODdjKarffSbNv4YrUwelKkm0PLBD317T
 - **Język rozmowy z Claude:** polski. **Język treści na stronie:** patrz `docs/content-guidelines.md`.
 
 ## Mapa repozytorium
@@ -22,7 +24,8 @@ mapę projektu, treści, bazę prac i backlog.
 | `docs/ustalenia/` | Dokument ustaleń z klientką (HTML → PDF, najnowsza wersja = najwyższy numer) | Gdy trzeba wysłać artystce aktualny stan ustaleń |
 | `docs/backlog.md` | Znane problemy i plan prac z priorytetami | Na start sesji roboczej |
 | `content/works.csv` | Baza prac — źródło prawdy dla przyszłego CMS „Works” | Przy dodawaniu/edycji prac |
-| `content/bio.md`, `content/awards-press.md` | Teksty źródłowe | Przy sekcjach About / Awards / Press |
+| `content/bio.md`, `content/awards-press.md` | Biogram/CV; wystawy, nagrody, filmy, kandydaci na logotypy | Przy About / Exhibitions / Film / Press |
+| `content/sources/` | Przepisane materiały źródłowe (portfolio) — słowa artystki, nie edytować | Gdy potrzebny opis pracy lub fakt |
 
 Skille projektu (`.claude/skills/`): **`/framer-audit`** — audyt przed publikacją,
 **`/add-work`** — dodanie nowej pracy do bazy (i do CMS, gdy powstanie).
@@ -59,7 +62,9 @@ Skille projektu (`.claude/skills/`): **`/framer-audit`** — audyt przed publika
   w `docs/brief.md` i `docs/decisions.md`: najpierw EN (PL później), CTA „Zobacz realizacje” +
   „Kontakt” (+ „Gdzie zobaczyć moje prace”), docelowe menu Work · Where to see · Exhibitions ·
   Film / Performance · Publications / Press · About · Contact. **Obecna strona jeszcze tego nie
-  odzwierciedla** (stare menu Works / Info / Awards).
+  odzwierciedla** (stare menu Works / Info / Awards). W nawigacji musi się zmieścić
+  **przełącznik języków EN / PL**.
+- **E-mail na stronie (`e.dabrowska@mail.com`) jest przykładowy** — prawdziwy poda artystka.
 - **Brak CMS** — prace są wpięte ręcznie na canvasie. Plan: kolekcja „Works” zgodna ze
   schematem `content/works.csv` (patrz backlog).
 
