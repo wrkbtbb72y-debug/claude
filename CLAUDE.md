@@ -20,6 +20,7 @@ skillami. Ten plik zawiera tylko spis projektów i zasady wspólne dla wszystkic
 | Folder | Klient / projekt | Framer | Status |
 |---|---|---|---|
 | `projects/ewa-dabrowska/` | Ewa Dąbrowska — oficjalna strona artystki | [projekt](https://framer.com/projects/Ewa-D-browska-Official--gMKkn1ektXgFZXROgJCy-a6APP) | w toku |
+| `projects/kronika/` | Kronika | [projekt](https://framer.com/projects/Kronika--0h5pA6cwUCiyjVB0qFni-1oD05) | w toku — brief do uzupełnienia |
 
 **Nowy projekt:** skopiuj `projects/_template/` do `projects/<nazwa>/`, uzupełnij jego
 `CLAUDE.md` i dopisz wiersz do tabeli powyżej. Krótkiemu projektowi wystarczy sam `CLAUDE.md`
