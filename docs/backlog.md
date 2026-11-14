@@ -30,8 +30,12 @@
 - [ ] **Home:** dodać sekcję logotypów instytucji + przyciski „Zobacz realizacje” / „Kontakt” /
       „Gdzie zobaczyć moje prace”.
 - [ ] **Contact:** podstrona z widocznym e-mailem + formularzem (formularz ⇒ Privacy Policy).
-- [ ] **Czekamy na artystkę:** inspiracje, wybór 3–5 projektów na Home i kolejność Work, kierunek
-      logo, lokalizacje prac, potwierdzenie e-maila, logotypy instytucji, linki YouTube.
+- [ ] **Czekamy na artystkę:** inspiracje, lokalizacje prac do mapy, potwierdzenie e-maila,
+      logotypy instytucji, linki YouTube, szkic znaku (bez terminu).
+- [x] Kolejność prac i kierunek logo ustalone (2026-11-14, decisions.md).
+- [ ] **Prace „Tancerz” i „Dziki”** — dodać do `content/works.csv` (skill `/add-work`); „Tancerz”
+      nie ma jeszcze wiersza, „Dziki” — potwierdzić, czy to `herd`. Ustawić kolejność (pole do dodania, np. `order`).
+- [ ] **Logotyp:** dobrać font do imienia i nazwiska (uwaga na licencje — zob. P0 fonty).
 
 - [ ] **CMS „Works”** wg schematu `content/works.csv` + strona listy `/works` i detail `/works/:slug`.
 - [ ] **Layout Template** z Nav Bar i stopką — warunek przed dodaniem kolejnych stron.

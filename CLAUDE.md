@@ -19,7 +19,7 @@ mapę projektu, treści, bazę prac i backlog.
 | `docs/framer-map.md` | Strony, sekcje, ID węzłów, kotwice, triggery scrolla | Przed edycją we Framerze |
 | `docs/content-guidelines.md` | Język PL/EN, ton, alt-teksty, nazewnictwo prac | Przy pisaniu copy |
 | `docs/decisions.md` | Log decyzji (co, dlaczego, kiedy) | Gdy coś wydaje się „dziwne” — może było celowe |
-| `docs/ustalenia/` | Dokument ustaleń z klientką (HTML → PDF) | Gdy trzeba wysłać artystce aktualny stan ustaleń |
+| `docs/ustalenia/` | Dokument ustaleń z klientką (HTML → PDF, najnowsza wersja = najwyższy numer) | Gdy trzeba wysłać artystce aktualny stan ustaleń |
 | `docs/backlog.md` | Znane problemy i plan prac z priorytetami | Na start sesji roboczej |
 | `content/works.csv` | Baza prac — źródło prawdy dla przyszłego CMS „Works” | Przy dodawaniu/edycji prac |
 | `content/bio.md`, `content/awards-press.md` | Teksty źródłowe | Przy sekcjach About / Awards / Press |

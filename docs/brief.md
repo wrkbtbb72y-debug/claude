@@ -62,7 +62,9 @@ Obecnie: tylko `/` (Home) + szkic `/home` (draft, do usunięcia — zob. backlog
 | Contact | `/contact` | e-mail (widoczny) + formularz | _do zrobienia_ |
 | Privacy Policy | `/privacy` | — | wymagana przy formularzu |
 
-**Home:** wybrane projekty (3–5, _TODO wybór_), krótko o artystce, logotypy instytucji, CTA.
+**Home:** wybrane projekty (propozycja: „Słoneczny Stwór”, „Tancerz”, „Dziki” + ew. 1–2), krótko o artystce,
+logotypy instytucji, CTA. **Work:** od najnowszych, ręcznie (te trzy na początku).
+**Logo:** imię i nazwisko ładnym fontem; miejsce na własny znak artystki (szkic w przygotowaniu).
 **Odrzucone:** newsletter, News / belka „Nowości”, sekcja „Featured”, Creative Process,
 podział wystaw na nadchodzące/archiwalne, telefon na stronie.
 

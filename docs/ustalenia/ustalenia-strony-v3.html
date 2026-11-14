@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Ustalenia strony — Ewa Dąbrowska (v3)</title>
+<style>
+  @page { size: A4; margin: 18mm 17mm 18mm 17mm; }
+  :root { --navy:#13205a; --ink:#1d1d1f; --muted:#6b6b72; --line:#e3e3e6;
+          --ok:#1f7a4d; --okbg:#e9f5ee; --no:#a23a3a; --nobg:#f8ecec;
+          --todo:#9a6400; --todobg:#fdf4e3; --new:#5b2bb5; --newbg:#f1ebfc; }
+  * { box-sizing:border-box; }
+  body { font-family:"Inter", sans-serif; color:var(--ink); font-size:10.2pt; line-height:1.55; margin:0; }
+  h1 { font-size:20pt; color:var(--navy); margin:0 0 2pt; letter-spacing:-.01em; }
+  .meta { color:var(--muted); font-size:9pt; margin-bottom:12pt; }
+  .intro { color:#444; margin:0 0 12pt; }
+  hr { border:0; border-top:1px solid var(--line); margin:12pt 0; }
+  h2 { font-size:13.5pt; color:var(--navy); margin:18pt 0 6pt; display:flex; align-items:center; gap:8pt; break-after:avoid; }
+  h2 .dot { width:7pt; height:7pt; border-radius:50%; background:#d8d8dc; display:inline-block; }
+  h3 { font-size:10.4pt; margin:10pt 0 3pt; break-after:avoid; }
+  p { margin:0 0 6pt; }
+  ul { margin:0 0 6pt; padding-left:15pt; }
+  li { margin:1.5pt 0; }
+  ul.s { list-style:none; padding-left:0; }
+  ul.s > li { padding-left:22pt; position:relative; }
+  ul.s > li::before { position:absolute; left:0; top:1.5pt; width:15pt; height:15pt; border-radius:4pt;
+    font-size:8.5pt; font-weight:700; display:flex; align-items:center; justify-content:center; line-height:1; }
+  li.ok::before { content:"✓"; color:var(--ok); background:var(--okbg); }
+  li.no::before { content:"✕"; color:var(--no); background:var(--nobg); }
+  li.todo::before { content:"?"; color:var(--todo); background:var(--todobg); }
+  li.new::before { content:"+"; color:var(--new); background:var(--newbg); }
+  li.no { color:#6f6f75; }
+  .why { color:var(--muted); font-size:9pt; }
+  .tag { display:inline-block; font-size:7.6pt; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+    padding:1.5pt 5pt; border-radius:3pt; vertical-align:2pt; margin-left:4pt; }
+  .tag.ok { color:var(--ok); background:var(--okbg); }
+  .tag.todo { color:var(--todo); background:var(--todobg); }
+  .tag.new { color:var(--new); background:var(--newbg); }
+  .legend { font-size:8.8pt; color:var(--muted); display:flex; gap:12pt; flex-wrap:wrap; margin:0 0 10pt; }
+  .legend span b { display:inline-flex; width:12pt; height:12pt; border-radius:3pt; align-items:center; justify-content:center; font-size:7.5pt; margin-right:3pt; }
+  .box { border:1px solid var(--line); border-radius:6pt; padding:10pt 12pt; margin:8pt 0 4pt; break-inside:avoid; }
+  .box.summary { background:#fafafb; }
+  .box.new { border-color:#d9c9f5; background:#faf7fe; }
+  .box h3 { margin-top:0; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:4pt 18pt; }
+  .quote { border-left:3px solid #c9b6f0; padding:2pt 0 2pt 9pt; color:#4a3a73; font-style:italic; margin:4pt 0 8pt; font-size:9.6pt; }
+  table { border-collapse:collapse; width:100%; font-size:9.4pt; margin:4pt 0 8pt; }
+  th, td { text-align:left; padding:4pt 6pt; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { font-size:8.2pt; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); font-weight:600; }
+  td:first-child { font-weight:600; white-space:nowrap; }
+  img.logo { width:100%; display:block; margin:6pt 0 8pt; border-radius:2pt; }
+  ol.todo-list { padding-left:16pt; }
+  ol.todo-list li { margin:3pt 0; }
+  .keep { break-inside:avoid; }
+  .pb { break-before:page; }
+</style>
+</head>
+<body>
+
+<h1>Ustalenia — strona Ewy Dąbrowskiej</h1>
+<div class="meta">Wersja 3 · 14 listopada 2026 · zaktualizowana po Twoich komentarzach i wiadomościach</div>
+
+<p class="intro">Dziękuję za odpowiedzi! Poniżej zebrałem wszystko, co ustaliliśmy, oraz kilka rzeczy, które jeszcze
+zostały do decyzji. Wstępny projekt strony przygotuję po angielsku — wersję polską dodam pod koniec prac
+(przełącznik języków będzie dostępny).</p>
+
+<div class="legend">
+  <span><b style="color:var(--ok);background:var(--okbg)">✓</b>ustalone</span>
+  <span><b style="color:var(--no);background:var(--nobg)">✕</b>rezygnujemy</span>
+  <span><b style="color:var(--new);background:var(--newbg)">+</b>nowy pomysł z Twoich komentarzy</span>
+  <span><b style="color:var(--todo);background:var(--todobg)">?</b>do decyzji / potrzebuję od Ciebie</span>
+</div>
+
+<div class="box summary">
+  <h3>W skrócie</h3>
+  <div class="cols">
+    <div>
+      <b>Ustalone</b>
+      <ul>
+        <li>Cele strony i odbiorcy — wszystkie propozycje</li>
+        <li>Dwa główne przyciski: „Zobacz realizacje” i „Kontakt”</li>
+        <li>Kontakt: widoczny adres e-mail (+ formularz)</li>
+        <li>Menu: Work, Gdzie zobaczyć, Exhibitions, Film/Performance, Publications/Press, About, Contact</li>
+        <li>Strona główna: wybrane projekty, o Tobie, logotypy instytucji</li>
+        <li>Kolejność prac: od najnowszych — „Słoneczny Stwór”, „Tancerz”, „Dziki”</li>
+        <li>Logo: imię i nazwisko ładnym fontem, z miejscem na Twój znak</li>
+      </ul>
+    </div>
+    <div>
+      <b>Nowe</b>
+      <ul><li>„Gdzie zobaczyć moje prace” — mapa prac w Polsce i Europie (pkt 4)</li>
+      <li>Własny znak — Twój szkic, bez pośpiechu (pkt 8)</li></ul>
+      <b>Rezygnujemy</b>
+      <ul><li>Newsletter, News / belka „Nowości”, sekcja „Featured”, Creative Process, podział wystaw na nadchodzące i archiwalne</li></ul>
+      <b>Wciąż do decyzji</b>
+      <ul><li>Inspiracje (pkt 1), szczegóły mapy (pkt 4)</li></ul>
+    </div>
+  </div>
+</div>
+
+<h2><span class="dot"></span>1. Punkt wyjścia <span class="tag todo">do decyzji</span></h2>
+<p>Jeśli widziałaś kiedyś stronę — niekoniecznie o identycznej tematyce — która Ci się spodobała, chętnie ją zobaczę.
+Może to być jakiś szczegół, który przyciągnął Twoją uwagę, ogólny styl, kolorystyka czy ulubiony font.
+Wystarczy link albo zrzut ekranu z krótkim dopiskiem, co Ci się w niej podoba.</p>
+
+<h2><span class="dot"></span>2. Cel strony <span class="tag ok">ustalone</span></h2>
+<h3>Główne cele</h3>
+<ul class="s">
+  <li class="ok">Wizytówka uwiarygadniająca portfolio przed profesjonalistami i instytucjami</li>
+  <li class="ok">Wirtualna galeria ułatwiająca zdobywanie nowych współprac</li>
+  <li class="ok">Zwiększanie rozpoznawalności, uwiarygodnienie i ugruntowanie marki własnej</li>
+</ul>
+<h3>Cele wspierające</h3>
+<ul class="s">
+  <li class="ok">Baza dla mediów</li>
+  <li class="ok">Cyfrowe archiwum sztuki efemerycznej</li>
+  <li class="ok">Możliwość pozyskania mniejszych projektów typu warsztaty, spotkania z lokalną społecznością</li>
+</ul>
+
+<h2><span class="dot"></span>3. Odbiorcy docelowi i poboczni <span class="tag ok">ustalone</span></h2>
+<h3>Odbiorcy docelowi</h3>
+<ul class="s">
+  <li class="ok">Instytucje publiczne, fundacje kulturalne, samorządy, kuratorzy sztuki, organizatorzy festiwali, instytucje grantowe —
+  w skrócie jedna persona: <b>osoby decyzyjne z budżetem</b> (kuratorzy, urzędnicy, dyrektorzy instytucji kultury, architekci krajobrazu)</li>
+</ul>
+<h3>Odbiorcy poboczni</h3>
+<ul class="s">
+  <li class="ok">Dziennikarze / krytycy sztuki</li>
+  <li class="ok">Widzowie / szeroki odbiorca</li>
+  <li class="ok">Klienci prywatni / właściciele ogrodów</li>
+  <li class="ok">Edukatorzy, studenci, domy kultury</li>
+  <li class="ok">Inni artyści i rzemieślnicy</li>
+</ul>
+
+<h2><span class="dot"></span>4. Główny „Call to Action” strony <span class="tag ok">ustalone</span> <span class="tag new">nowy pomysł</span></h2>
+<ul class="s">
+  <li class="ok"><b>„Zobacz realizacje”</b> i <b>„Kontakt”</b> — dwa równorzędne, główne przyciski. „Szeroki odbiorca” pójdzie oglądać zdjęcia,
+  a osoba szukająca współpracy od razu przejdzie do kontaktu.</li>
+  <li class="no">Kup, Zapytaj o współpracę, Napisz do mnie, Zobacz terminy — rezygnujemy.</li>
+  <li class="new"><b>„Gdzie zobaczyć moje prace”</b> — trzeci, dodatkowy przycisk (Twój pomysł, szczegóły poniżej).</li>
+</ul>
+
+<div class="box new keep">
+  <h3>Propozycja: „Gdzie zobaczyć moje prace”</h3>
+  <div class="quote">„Po naciśnięciu mogłyby się wyświetlać zdjęcia rzeźby i potem lokalizacja lub od razu otwierać mapka Google
+  z lokalizacją pracy. Wiele prac, przede wszystkim te land-artowe, są rozproszone w różnych miejscach w Polsce i w Europie.”</div>
+  <p>Proponuję połączyć oba warianty:</p>
+  <ul>
+    <li><b>Osobna podstrona z mapą</b> (robocza nazwa: <i>Where to see</i>) — mapa Polski i Europy z zaznaczonymi pracami.
+    Kliknięcie w punkt pokazuje zdjęcie pracy, tytuł, rok i miejsce oraz przycisk <b>„Otwórz w Mapach Google”</b>,
+    który od razu prowadzi do nawigacji.</li>
+    <li><b>Lista pod mapą</b> — te same prace pogrupowane wg miejsc (wygodniejsze na telefonie i dla osób, które wolą przewijać zdjęcia niż mapę).</li>
+    <li><b>Na podstronie każdego projektu</b> — krótki blok „Gdzie zobaczyć” z miejscem i linkiem do Map Google.</li>
+    <li><b>Na stronie głównej</b> — przycisk „Gdzie zobaczyć moje prace” obok dwóch głównych, ale wizualnie spokojniejszy,
+    żeby nie konkurował z „Zobacz realizacje” i „Kontakt”.</li>
+  </ul>
+  <p style="margin-top:6pt"><b>Do ustalenia przy mapie:</b></p>
+  <ul class="s" style="margin-bottom:0">
+    <li class="todo">Które prace można dziś zobaczyć na żywo? Prace efemeryczne, których już nie ma, proponuję pominąć na mapie
+    (zostają w Work jako archiwum) — albo oznaczyć je inaczej, jako „miejsce, w którym powstała praca”. Która opcja Ci odpowiada?</li>
+    <li class="todo">Dokładne lokalizacje: najprościej wkleić mi link z Map Google do każdej pracy (albo adres / nazwę miejsca).</li>
+    <li class="todo">Prace w prywatnych ogrodach lub miejscach niedostępnych publicznie — pokazujemy je, przybliżamy lokalizację tylko do miejscowości, czy pomijamy?</li>
+  </ul>
+</div>
+
+<h2><span class="dot"></span>5. Kontakt <span class="tag ok">ustalone</span></h2>
+<ul class="s">
+  <li class="ok"><b>Adres e-mail widoczny na stronie</b> — główny sposób kontaktu: na podstronie Contact i w stopce każdej strony
+  (kliknięcie otwiera program pocztowy).</li>
+  <li class="ok"><b>Formularz kontaktowy</b> na podstronie Contact jako uzupełnienie — dla osób, które wolą napisać od razu ze strony.
+  <span class="why">Jeśli wolisz zostawić sam adres e-mail, bez formularza — daj znać.</span></li>
+  <li class="no">Numer telefonu — nie publikujemy.</li>
+  <li class="no">Newsletter — rezygnujemy.</li>
+  <li class="todo">Potwierdź proszę adres e-mail, który ma się pojawić na stronie.</li>
+</ul>
+
+<h2><span class="dot"></span>6. Podział strony <span class="tag ok">ustalone</span></h2>
+<h3>Strona główna (homepage)</h3>
+<ul class="s">
+  <li class="ok">Wybrane projekty — w formie skróconej, z przyciskami kierującymi do podstron tych projektów</li>
+  <li class="ok">Trochę informacji o Tobie</li>
+  <li class="ok">Logotypy organizacji / instytucji publicznych / fundacji / firm, z którymi współpracowałaś — wybierzesz, które pokazać,
+  z listy „Wybrane realizacje i projekty” w portfolio</li>
+  <li class="ok">Przyciski: „Zobacz realizacje”, „Kontakt” i „Gdzie zobaczyć moje prace” (pkt 4)</li>
+  <li class="no">Belka „Nowości” <span class="why">— nowości byłyby aktualizowane rzadko, a nieaktualna belka działa na niekorzyść strony</span></li>
+  <li class="no">Sekcja typu „Featured”</li>
+</ul>
+
+<h3>Podstrony w górnym menu <span class="why" style="font-weight:400">(nazwy robocze, po angielsku)</span></h3>
+<table>
+  <tr><th style="width:26%">Podstrona</th><th>Co zawiera</th></tr>
+  <tr><td>Work</td><td>Lista wszystkich projektów; z niej przechodzi się do podstron projektów</td></tr>
+  <tr><td>Where to see <span class="tag new">nowa</span></td><td>Mapa prac w Polsce i Europie + lista miejsc (pkt 4)</td></tr>
+  <tr><td>Exhibitions</td><td><b>Jedna wspólna lista wystaw</b>, od najnowszych — bez podziału na nadchodzące, aktualne i archiwalne</td></tr>
+  <tr><td>Film / Performance</td><td>Filmy i zapisy performansów osadzone z YouTube</td></tr>
+  <tr><td>Publications / Press</td><td>Publikacje i materiały prasowe</td></tr>
+  <tr><td>About</td><td>Zdjęcie i bio</td></tr>
+  <tr><td>Contact</td><td>Adres e-mail + formularz kontaktowy</td></tr>
+</table>
+<p class="why">Siedem pozycji to sporo jak na górny pasek — na telefonie menu będzie rozwijane, a na komputerze dobiorę układ tak,
+żeby pasek pozostał lekki. Kolejność w menu mogę jeszcze zmienić, gdy zobaczysz projekt.</p>
+
+<h3>Rezygnujemy z podstron</h3>
+<ul class="s">
+  <li class="no">News — Nowości / Co nowego</li>
+  <li class="no">Creative Process — opowieść o procesie twórczym</li>
+</ul>
+
+<h3>Podstrony projektów</h3>
+<ul class="s">
+  <li class="ok">Dostępne z listy projektów na podstronie Work i z wybranych projektów na stronie głównej.
+  Każda będzie miała też blok „Gdzie zobaczyć” (jeśli praca jest dostępna do obejrzenia).</li>
+</ul>
+
+<h2><span class="dot"></span>7. Struktura prezentacji projektów <span class="tag ok">ustalone</span></h2>
+<div class="quote">„Fajnie byłoby mieć najnowsze prace w pierwszej kolejności, czyli 1. »Słoneczny Stwór«, 2. »Tancerz«,
+3. mogłyby być »Dziki« z patyków, a dalej według wyczucia.”</div>
+<ul class="s">
+  <li class="ok"><b>Kolejność na podstronie Work:</b> od najnowszych prac, ustalana ręcznie:
+    <ol style="margin:3pt 0 3pt; padding-left:15pt">
+      <li>„Słoneczny Stwór”</li>
+      <li>„Tancerz”</li>
+      <li>„Dziki” (z patyków)</li>
+    </ol>
+    dalej ułożę prace według wyczucia — tak, żeby lista dobrze się oglądała (różne techniki i skale obok siebie).
+    Pokażę Ci ją w projekcie, każdą pozycję łatwo będzie przesunąć.</li>
+  <li class="ok"><b>Strona główna:</b> proponuję te same trzy prace na start — „Słoneczny Stwór”, „Tancerz”, „Dziki” —
+  ewentualnie uzupełnione o 1–2 kolejne z listy. Rok przy każdej pracy będzie widoczny.</li>
+</ul>
+
+<div class="keep">
+<h2><span class="dot"></span>8. Logo <span class="tag ok">ustalone</span> <span class="tag new">Twój znak</span></h2>
+<p>Logo strony w górnym pasku nawigacyjnym, propozycje:</p>
+<ul>
+  <li>„Imię i Nazwisko” pisane ładnym fontem lub pisane ręcznie, typu:</li>
+</ul>
+<img class="logo" src="logo-przyklad.jpg" alt="Przykład logo: odręczny podpis na zielonym pasku obok ilustracji">
+<ul>
+  <li>znak wizualny / logo — coś nietypowego + „Ewa Dąbrowska” obok:
+    <ul>
+      <li>mogą to być inicjały ED, które po najechaniu będą się rozwijały w pełne imię i nazwisko,</li>
+      <li>coś naszkicowanego na szybko, oddającego charakter działalności,</li>
+      <li>abstrakcyjny prosty kształt.</li>
+    </ul>
+  </li>
+</ul>
+<p>Logo może być na tyle ciekawe, że mógłbym je użyć jako motyw przewodni strony — coś, co będzie się pojawiało
+w różnych formach podczas przeglądania strony.</p>
+<div class="quote">„Z własnym znakiem to świetny pomysł! […] spróbuję coś w międzyczasie poszkicować.” · „Twoja propozycja ładnego fontu też mi się bardzo podoba!”</div>
+<p><b>Ustalenia:</b></p>
+<ul class="s">
+  <li class="ok"><b>Na start: imię i nazwisko pisane ładnym fontem</b> — od tego zaczynam projekt, strona nie musi czekać na znak.</li>
+  <li class="new"><b>Własny znak</b> — Twój szkic. Zostawię na niego miejsce obok imienia i nazwiska; gdy powstanie,
+  dopracuję go i mogę użyć jako motywu przewodniego strony.</li>
+  <li class="todo">Szkic — bez pośpiechu, kiedy znajdziesz chwilę w podróży. Wystarczy zdjęcie kartki z telefonu,
+  nawet kilka luźnych wersji. Jeśli nie zdążysz, strona spokojnie wystartuje z samym logotypem.</li>
+</ul>
+</div>
+
+<div class="box keep" style="margin-top:16pt">
+  <h3>Czego jeszcze potrzebuję od Ciebie</h3>
+  <ol class="todo-list">
+    <li>Linki lub zrzuty ekranu stron, które Ci się podobają (pkt 1).</li>
+    <li>Do mapy: lista prac, które można zobaczyć, z linkiem do Map Google lub adresem, oraz decyzja w sprawie prac efemerycznych i prywatnych lokalizacji (pkt 4).</li>
+    <li>Potwierdzenie adresu e-mail do kontaktu (pkt 5).</li>
+    <li>Logotypy instytucji, które chcesz pokazać na stronie głównej (pkt 6).</li>
+    <li>Linki do filmów na YouTube do podstrony Film / Performance (pkt 6).</li>
+    <li>Zdjęcia i podstawowe informacje o „Tancerzu” i „Dzikach” (rok, materiał, miejsce), jeśli jeszcze ich nie mam (pkt 7).</li>
+    <li>Szkic znaku — bez pośpiechu (pkt 8).</li>
+  </ol>
+</div>
+
+</body>
+</html>

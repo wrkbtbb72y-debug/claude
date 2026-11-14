@@ -5,6 +5,15 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-14 · Kolejność prac i logo (wiadomości od artystki z 7.10.2026) — ✅
+Zapisane w `docs/ustalenia/ustalenia-strony-v3.pdf` (pkt 7 i 8).
+- **Kolejność prac (Work):** od najnowszych, ręcznie: 1. „Słoneczny Stwór”, 2. „Tancerz”,
+  3. „Dziki” (z patyków); dalej wg wyczucia projektanta. Propozycja na Home: te same trzy
+  (+ ew. 1–2 kolejne). 🟡 Do potwierdzenia: czy „Dziki” = praca `herd` w `works.csv`.
+- **Logo:** start z logotypem — imię i nazwisko ładnym fontem (artystce bardzo się podoba).
+  Własny znak: artystka spróbuje naszkicować (w podróży, bez terminu) — zostawiamy na niego
+  miejsce, potem ewentualnie motyw przewodni strony. Strona nie czeka na znak.
+
 ### 2026-11-14 · Ustalenia z klientką (dokument „Ustalenia strony”, v2) — ✅
 Źródło: komentarze artystki do v1 dokumentu ustaleń → podsumowanie w `docs/ustalenia/ustalenia-strony-v2.pdf`
 (źródło HTML obok; PDF generowany z HTML przez Chromium/Playwright).
@@ -24,7 +33,7 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 - **Menu (nazwy robocze):** Work · Where to see · Exhibitions (jedna lista, bez podziału na
   nadchodzące/aktualne/archiwalne) · Film / Performance (YouTube) · Publications / Press · About · Contact.
   ❌ News, ❌ Creative Process.
-- **Wciąż otwarte:** strony-inspiracje, wybór/kolejność projektów (Home i Work), kierunek logo.
+- **Wciąż otwarte:** strony-inspiracje. (Kolejność projektów i logo — ustalone, wpis wyżej.)
 
 ### 2026-11-14 · Język strony — ✅
 - **Decyzja:** najpierw wersja EN, wersja PL dodana pod koniec prac (przełącznik języków,
