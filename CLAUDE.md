@@ -55,6 +55,11 @@ Skille projektu (`.claude/skills/`): **`/framer-audit`** — audyt przed publika
 - **Practice (4 obszary = kategorie prac):** Land Art & Happenings · Sculpture ·
   Drawing & stop-motion · Sound.
 - **Zewnętrzne moduły:** Lenis (smooth scroll), Video, override `withLinksAfterSection`.
+- **Ustalenia z artystką (v3, 2026-11-14)** — `docs/ustalenia/ustalenia-strony-v3.pdf`, streszczone
+  w `docs/brief.md` i `docs/decisions.md`: najpierw EN (PL później), CTA „Zobacz realizacje” +
+  „Kontakt” (+ „Gdzie zobaczyć moje prace”), docelowe menu Work · Where to see · Exhibitions ·
+  Film / Performance · Publications / Press · About · Contact. **Obecna strona jeszcze tego nie
+  odzwierciedla** (stare menu Works / Info / Awards).
 - **Brak CMS** — prace są wpięte ręcznie na canvasie. Plan: kolekcja „Works” zgodna ze
   schematem `content/works.csv` (patrz backlog).
 

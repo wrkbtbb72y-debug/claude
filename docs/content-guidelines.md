@@ -2,12 +2,15 @@
 
 ## Język
 
-- Obecnie strona jest **po angielsku**, a tytuły prac w podpisach **po polsku**
-  („Słoneczny Stwór”, „Państwo Gąbczakowie”) z wyjątkiem „Herd”.
-- _Decyzja TODO (zob. decisions.md):_
-  - A) Tylko EN, polskie tytuły jako nazwy własne (+ tłumaczenie w opisie pracy), albo
-  - B) Dwie wersje językowe PL/EN przez wbudowaną lokalizację Framera.
-- Do czasu decyzji: nie tłumaczymy istniejących tekstów.
+- ✅ **Ustalone (2026-11-14):** projekt powstaje **najpierw po angielsku**; wersja **polska**
+  dochodzi pod koniec prac jako druga wersja językowa z przełącznikiem (lokalizacja Framera).
+- Na tym etapie piszemy i redagujemy copy po angielsku. Teksty polskie zbieramy w `content/`
+  (`description_pl`, `bio.md`), ale nie wstawiamy ich na stronę przed etapem PL.
+- Tytuły prac: oryginalny polski tytuł jest nadrzędny (np. „Słoneczny Stwór”); w wersji EN
+  pokazujemy tytuł angielski, a polski oryginał jako podtytuł/w opisie — _do potwierdzenia
+  w projekcie_.
+- Nazwy w menu są robocze, po angielsku: Work · Where to see · Exhibitions · Film / Performance ·
+  Publications / Press · About · Contact.
 
 ## Ton
 

@@ -6,6 +6,7 @@ Jeden wiersz = jedna praca. Schemat odpowiada planowanej kolekcji CMS „Works�
 
 | Kolumna | Typ w CMS | Opis |
 |---|---|---|
+| `order` | number | ręczna kolejność na podstronie Work (1 = pierwsza). Ustalone: 1 „Słoneczny Stwór”, 2 „Tancerz”, 3 „Dziki”; reszta wg wyczucia projektanta |
 | `slug` | slug | z tytułu oryginalnego, bez polskich znaków, kebab-case |
 | `title_pl` | string | tytuł oryginalny (nadrzędny) |
 | `title_en` | string | tłumaczenie tytułu |
@@ -13,7 +14,9 @@ Jeden wiersz = jedna praca. Schemat odpowiada planowanej kolekcji CMS „Works�
 | `category` | enum | `Land Art & Happenings` · `Sculpture` · `Drawing & stop-motion` · `Sound` |
 | `materials` | string | np. „słoma, drewno” |
 | `dimensions` | string | np. „220 × 90 × 80 cm” lub „site-specific” |
-| `location` | string | miejsce realizacji / wystawy |
+| `location` | string | miejsce realizacji / wystawy (nazwa miejscowości / miejsca) |
+| `maps_url` | link | link z Map Google — do mapy „Where to see” i bloku „Gdzie zobaczyć” |
+| `can_visit` | enum | `yes` (można zobaczyć na żywo) · `gone` (praca efemeryczna, już nie istnieje) · `private` (prywatny ogród / niedostępne). Sposób pokazywania `gone` i `private` na mapie — **czeka na decyzję artystki** |
 | `description_pl` / `description_en` | richtext | 2–5 zdań |
 | `images` | array (galeria) | nazwy plików/URL; pierwszy = okładka |
 | `featured` | boolean | czy pokazywać na Home |
