@@ -1,0 +1,90 @@
+# Design system
+
+> Snapshot z Framera: 2026-11-14. Źródło prawdy to Framer — ten plik jest mapą.
+> Jeśli dodasz/zmienisz preset, token albo komponent, zaktualizuj ten plik.
+
+## Kierunek wizualny
+
+- **Ciemna galeria:** tło `#000`, tekst biały; sekcja Projects ma jasne tło, na którym
+  „pływają” zdjęcia prac w różnych skalach (asymetryczna kompozycja, głębia przez scroll).
+- **Akcent = fotografia**, nie kolor. Nie wprowadzamy kolorów akcentowych bez decyzji.
+- **Typografia katalogowa:** ogromny szeryf (Instrument Serif 132px, interlinia 80–110%)
+  vs. drobny, techniczny grotesk (ABC Diatype 14–15px).
+- **Ruch:** płynny scroll (Lenis), efekty scroll-transform i appear (po 14 węzłów na Home),
+  stopka typu „reveal”, sticky pasek „Explore projects”. Ruch jest częścią tożsamości —
+  zmiany w sekcjach z triggerami robić ostrożnie (zob. framer-map.md).
+
+## Breakpointy
+
+| Nazwa | Szerokość | Zakres |
+|---|---|---|
+| Desktop Large (primary) | 1200px | ≥ 1200px |
+| Tablet | 810px | 810–1199.98px |
+| Phone | 390px | ≤ 809.98px |
+
+Kontener nawigacji: 1168px (16px marginesu na 1200). Hero: padding `60px 40px 0 40px`.
+Pasek „Explore projects”: wysokość 59px, padding poziomy 100px.
+
+## Kolory
+
+| Token / wartość | Gdzie | Uwagi |
+|---|---|---|
+| `Black` token — `rgb(31,31,31)` (ID `0397fb76-20a8-4fdc-ba50-854349caca2b`) | tekst na jasnym tle | jedyny token w projekcie |
+| `#000000` | tło strony, hero, About | **niezatokenizowane** |
+| `#FFFFFF` | tekst na ciemnym, tło Projects | **niezatokenizowane** |
+| `rgb(196,196,196)` | placeholdery/linie | **niezatokenizowane** |
+| `rgb(122,121,121)` | podpisy (preset Caption) | w presecie |
+| `rgba(255,255,255,0.6)` | podtytuł hero | w presecie |
+
+➡ Backlog: zamienić surowe wartości na tokeny (`Ink` #000, `Paper` #fff, `Line` #c4c4c4,
+`Muted` #7a7979) — bez zmiany wyglądu.
+
+## Typografia — presety tekstu
+
+| Preset | ID | Font | Rozmiar D / T / P | Interlinia | Rola |
+|---|---|---|---|---|---|
+| Heading 1 Narrow | `j1PLXPFTE` | Instrument Serif 400 | 132 / 100 / 56 | 80% | Hero, linia 1 („Land-Art”) |
+| Heading 1 Wide | `p91ikxZED` | Instrument Serif 400 | 132 / 92 / 56 | 110% | Hero, linia 2 („& Sculpture”) |
+| Body 2 Instrument | `pHLTmOCkW` | Instrument Serif 400 | 18 / 16 | 140% | Podtytuł hero (biel 60%) |
+| Intro Quote | `DNPvqvyeg` | ABC Arizona Mix Condensed 300 | 34 / 30 / 24 | 120% | Intro, cytat w About |
+| Practice Title | `oiJIGsspQ` | ABC Arizona Mix Condensed 300 | 24 / 22 | 120% | Pozycje listy Practice |
+| Contact Email | `nwEhFmtSs` | Instrument Serif 400 | 56 / 36 / 30 | 1.15em | E-mail w stopce |
+| Heading 2 | `OlIghTzTc` | ABC Diatype 400 | 18 / 16 / 15 | 100% | „Get in touch” |
+| Heading 3 | `EIxkWzKdw` | ABC Diatype 400 | 15 | 140% | Etykiety sekcji („Explore projects”, „My Journey”) |
+| Heading 4 | `ZFoPtf4uS` | ABC Diatype 400 | 14 | 140% | Małe nagłówki („Practice”) |
+| Meta | `jlhfHVuRU` | ABC Diatype 400 | 15 | 140% | Metadane |
+| Caption | `q8a80OhDX` | ABC Diatype 400 | 14 | 140% | Podpisy pod zdjęciami prac |
+| links | `sAkSZeyYk` | ABC Diatype 300 | 14 | 145% | Linki („Read more”, social) |
+| footer small | `VPJZTLXqN` | ABC Diatype 300 | 14 / 13 | — | Stopka |
+
+Link style: `Contact Email Link` (`JrZOvXHMr`).
+
+**Fonty w użyciu:** Instrument Serif (Google, OK), ABC Diatype **Trial**,
+ABC Arizona Mix Condensed **Unlicensed Trial**, Syne, Inter.
+⚠ Wersje Trial nie są licencjonowane do produkcji — zob. backlog P0.
+
+## Komponenty
+
+| Komponent | ID | Warianty | Użycie |
+|---|---|---|---|
+| Nav Bar | `ECLoOCCHr` | Desktop White, Mobile White, Desktop Black, Mobile Black | Górna nawigacja (logo, Works/Info/Awards, Contact) |
+| Nav Bar button | `RQhfdR2vS` | Variant 1, Black (+ gesty) | Przycisk w nawigacji; zmienna `Title` |
+| Nav bar button outlined | `flntBxkgE` | Variant 1 (+ gesty) | Obrysowany przycisk („Contact”) |
+| Footer Bar | `CZImlwXQG` | Desktop/Phone × Hidden/Visible | Stały pasek na dole (pojawia się przy scrollu) |
+| Intro Subtext | `dLnxv11ux` | 1, 2 | Podmieniany tekst w intro (blend „difference”) |
+| Read More Underline | `WMRFPcODi` | Hidden, Drawn | Animowane podkreślenie „Read more” |
+
+Zewnętrzne: **Lenis** (smooth scroll), **Video** (np. „wszechkarmicielka-video”),
+override **withLinksAfterSection**.
+
+Ikony: zestaw z ikonami `Copy`, `Arrow Down`, `Facebook`, `Instagram` (+ własne wektory „arrow big”).
+
+## Zasady przy rozbudowie
+
+- Nowe sekcje: tło czarne lub białe, etykieta sekcji presetem **Heading 3** + linia
+  pozioma (jak „Explore projects” / „My Journey”).
+- Listy numerowane: wzór Practice (numer 01–04 drobnym groteskiem + tytuł **Practice Title**,
+  separator linią).
+- Podpisy zdjęć: zawsze **Caption**, oryginalny tytuł pracy.
+- Brak zaokrągleń, brak cieni — estetyka płaska, drukowa.
+- Nawigacja i stopka powinny trafić do **Layout Template** zanim powstaną kolejne strony.
