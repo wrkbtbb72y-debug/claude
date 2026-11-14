@@ -63,5 +63,20 @@ Zakończony projekt: status „zakończony” (folder zostaje jako archiwum).
 ## Utrzymanie tej wiedzy
 
 Po każdej sesji, w której coś ustaliliśmy, **zaktualizuj odpowiedni plik w folderze
-projektu** i zaproponuj commit (w opisie commita podaj nazwę projektu, np. `ewa-dabrowska: …`).
+projektu** (w opisie commita podaj nazwę projektu, np. `ewa-dabrowska: …`).
 Ten plik trzymaj krótki — szczegóły idą do folderów projektów.
+
+## Zapisywanie zmian w repo — automatycznie, bez pytania
+
+Użytkownik nie jest techniczny i **nie chce o tym pamiętać** (stała zgoda, 2026-11-14).
+Zawsze, gdy w sesji zmieniły się pliki w repo, na koniec pracy (zanim oddasz głos) **sam**:
+
+1. zrób commit i push na branch roboczy sesji;
+2. otwórz pull request do domyślnego brancha repo (`claude/eloquent-cray-h16cwt`) i od razu
+   go **scal** (merge) — bez pytania o zgodę;
+3. jeśli przy scalaniu jest konflikt (np. równoległa sesja zmieniła te same pliki), rozwiąż go,
+   zachowując zmiany obu stron; pytaj użytkownika tylko, gdy treści naprawdę sobie przeczą;
+4. w podsumowaniu napisz jednym zdaniem, że zmiany są zapisane i widoczne dla kolejnych sesji.
+
+To dotyczy **tylko notatek w tym repozytorium**. Zasada z sekcji o Framerze bez zmian:
+**brancha we Framerze nigdy nie scalaj i strony nie publikuj** bez wyraźnego polecenia.
