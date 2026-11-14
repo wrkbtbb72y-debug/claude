@@ -36,7 +36,7 @@
       logotypy instytucji, linki YouTube, szkic znaku (bez terminu).
 - [x] Kolejność prac i kierunek logo ustalone (2026-11-14, decisions.md).
 - [ ] **Prace „Tancerz” i „Dziki”** — uzupełnić dane w `content/works.csv` (skill `/add-work`).
-      Wiersz „Tancerz” i kolumna `order` już są (2026-11-14). „Dziki” — potwierdzić, czy to `herd`.
+      Wiersz „Tancerz” i kolumna `order` już są (2026-11-14). „Dziki” = „Herd” — potwierdzone.
 - [x] Kolumny na mapę (`maps_url`, `can_visit`) dodane do `content/works.csv` (2026-11-14);
       współrzędne niepotrzebne, jeśli są linki z Map Google.
 - [ ] **Logotyp:** dobrać font do imienia i nazwiska (uwaga na licencje — zob. P0 fonty).

@@ -9,7 +9,7 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 Zapisane w `docs/ustalenia/ustalenia-strony-v3.pdf` (pkt 7 i 8).
 - **Kolejność prac (Work):** od najnowszych, ręcznie: 1. „Słoneczny Stwór”, 2. „Tancerz”,
   3. „Dziki” (z patyków); dalej wg wyczucia projektanta. Propozycja na Home: te same trzy
-  (+ ew. 1–2 kolejne). 🟡 Do potwierdzenia: czy „Dziki” = praca `herd` w `works.csv`.
+  (+ ew. 1–2 kolejne). ✅ Potwierdzone: „Dziki” = praca podpisana na stronie jako „Herd” (slug `dziki`).
 - **Logo:** start z logotypem — imię i nazwisko ładnym fontem (artystce bardzo się podoba).
   Własny znak: artystka spróbuje naszkicować (w podróży, bez terminu) — zostawiamy na niego
   miejsce, potem ewentualnie motyw przewodni strony. Strona nie czeka na znak.

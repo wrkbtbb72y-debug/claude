@@ -39,7 +39,7 @@ jKwXMbO36  Desktop Large Primary (fill #000, stack vertical)
    ├─ vwdTZARvA  Projects        #work (Scroll runway RPSCNyuOK)
    │    EBDMHlsbW intro „A multidisciplinary art…” · pky5JYXw5 Intro Subtext
    │    podpisy: Oj16NppMH Płaskorzeźba · tZPu6cFZr Słoneczny Stwór ·
-   │             i2N136b3V Państwo Gąbczakowie · cry8ujNyS Herd
+   │             i2N136b3V Państwo Gąbczakowie · cry8ujNyS Herd (= „Dziki”, slug `dziki`)
    │    F9wbx7YX3 wszechkarmicielka-video (Video)
    └─ WsnqpbDjZ  footer-reveal-wrap
         ├─ vJjOZlmbG About  #about — jOjY0LRDG „My Journey”, WofT2fgDc cytat,

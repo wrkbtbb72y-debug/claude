@@ -37,7 +37,7 @@
 Wzór: **[Tytuł], [rok] — [co widać / materiał / kontekst].** Max ~125 znaków.
 
 - ✅ „Słoneczny Stwór — postać ze słomy z twarzą słońca na tle drzew”
-- ✅ „Herd — rzeźby dzików ustawione w lesie”
+- ✅ „Herd (Dziki) — rzeźby dzików z patyków ustawione w lesie”
 - ❌ „zdjęcie”, „IMG_2034”, „rzeźba”
 
 Zdjęcia czysto dekoracyjne (tekstury, tła) — alt pusty, ale świadomie.

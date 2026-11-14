@@ -1,7 +1,7 @@
 order,slug,title_pl,title_en,year,category,materials,dimensions,location,maps_url,can_visit,description_pl,description_en,images,featured,on_site,status
 1,sloneczny-stwor,Słoneczny Stwór,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,yes,home,draft
 2,tancerz,Tancerz,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,yes,—,draft
-3,herd,TODO (Dziki?),Herd,TODO,TODO,patyki (wg artystki: „Dziki z patyków” — potwierdzić),TODO,TODO,TODO,TODO,TODO,TODO,TODO,yes,home,draft
+3,dziki,Dziki,Herd,TODO,TODO,patyki,TODO,TODO,TODO,TODO,TODO,TODO,TODO,yes,home,draft
 ,plaskorzezba,Płaskorzeźba,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,home,draft
 ,panstwo-gabczakowie,Państwo Gąbczakowie,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,home,draft
 ,wszechkarmicielka,Wszechkarmicielka,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,TODO,home (video),draft
