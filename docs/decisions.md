@@ -5,6 +5,14 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-14 · Footer Bar — wysuwanie z góry przy stopce — ✅
+- Komponent **Footer Bar** (`CZImlwXQG`) przełącza się Hidden → Visible, gdy znacznik `footer-revealed`
+  (`mHZutgMyh`) wjedzie w widok. Warianty Visible miały opacity 0 (pasek się nie pokazywał) — ustawiono 1.
+- **Wysuwanie z góry:** w Hidden zawartość (`xLBQXSdqJ` rząd + `QyRvqp2GG` linia) ma `translateY −59px`,
+  w Visible **`0.01px`**. Nie zmieniać na `0px`: Framer traktuje 0 w wariancie-replice jak brak
+  nadpisania i dziedziczy −59px z Hidden (pasek znika). Korzenia wariantu nie da się przesunąć.
+- Animacja: tween 1 s, ease (0.22, 1, 0.36, 1), w Visible opóźnienie 0,25 s.
+
 ### 2026-11-14 · Przełącznik języków, e-mail, materiały źródłowe — ✅
 - **Przełącznik języków EN/PL w pasku nawigacyjnym.** Strona powstaje po angielsku, wersja polska
   dojdzie później — ale miejsce na przełącznik (EN / PL) projektujemy w Nav Bar **od razu**, na
