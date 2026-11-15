@@ -39,8 +39,9 @@ Zakończony projekt: status „zakończony” (folder zostaje jako archiwum).
    „przy okazji” — tylko na wyraźną prośbę. Nowy styl = nowy preset, dopisany do dokumentacji.
 4. **Każda zmiana → screenshot wszystkich breakpointów** (zwykle Desktop 1200 / Tablet 810 /
    Phone 390) i obejrzenie go.
-5. **Branche:** pierwsza edycja AI tworzy branch we Framerze. **Nigdy nie merguj i nie
-   publikuj** bez wyraźnego polecenia. W podsumowaniu zawsze podaj link do brancha.
+5. **Branche:** jeśli plan Framera je obejmuje, pierwsza edycja AI tworzy branch — podaj link do niego
+   w podsumowaniu. Jeśli nie obejmuje (sprawdź w `CLAUDE.md` projektu), zmiany idą od razu do głównej
+   wersji: powiedz to wprost. **Nigdy nie merguj i nie publikuj** bez wyraźnego polecenia.
 6. ID węzłów w replikach (Tablet/Phone) to ID złożone `<breakpoint><węzeł>` — nie
    wstawiaj nic do replik, tylko patchuj.
 

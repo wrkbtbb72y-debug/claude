@@ -2,7 +2,8 @@
 
 > Źródło: lista „Wybrane realizacje i projekty” z portfolio (09.2026). Najnowsze na górze.
 > Pisownia nazw do sprawdzenia z artystką przed publikacją (w portfolio są literówki).
-> Podstrona **Exhibitions** = jedna lista od najnowszych (ustalenia v3).
+> Podstrona **Exhibitions** = jedna lista od najnowszych (ustalenia v3). Typ wystawy podany tylko,
+> gdy portfolio go wymienia. Te dane są już we Framerze w CMS „Exhibitions” (2026-11-15).
 
 ## Nagrody i wyróżnienia
 
@@ -27,11 +28,11 @@
 | 2025 | „Bachantki” | Galeria BWA, Zielona Góra | zbiorowa |
 | 2024 | „CiałoShow” | Galeria Amfilada, kamienica Naujacka, Olsztyn | indywidualna |
 | 2024 | „Herd” — La Forêt Monumentale (konkurs międzynarodowy) | Rouen, Francja | festiwal |
-| 2024 | „Żywiciało” | Oranżeria, Centrum Rzeźby Polskiej w Orońsku | indywidualna (?) |
-| 2023 | „Niech szyją! Współczesna polska rzeźba uszyta” | Centrum Sztuki Współczesnej, Toruń | zbiorowa |
+| 2024 | „Żywiciało” | Oranżeria, Centrum Rzeźby Polskiej w Orońsku | — |
+| 2023 | „Niech szyją! Współczesna polska rzeźba uszyta” | Centrum Sztuki Współczesnej, Toruń | — |
 | 2023 | „Sztuka organiczna z Dąbrowy Dolnej” | Galeria Stara Łaźnia, Suwałki | zbiorowa |
-| 2023 | „Green art”, Festiwal „Góry Literatury” | Nowa Ruda | zbiorowa |
-| 2022 | „Niech szyją! Współczesna polska rzeźba uszyta” | Studio Cannaregio, Wenecja, Włochy | zbiorowa |
+| 2023 | „Green art”, Festiwal „Góry Literatury” | Nowa Ruda | — |
+| 2022 | „Niech szyją! Współczesna polska rzeźba uszyta” | Studio Cannaregio, Wenecja, Włochy | — |
 | 2022 | „Więzi” | Muzeum Geologiczne, Warszawa | — |
 | 2021 | „Laboratorium rzeźby” | ToTuart Galeria Sztuki, Koneser, Warszawa | zbiorowa |
 | 2020 | „Homo empathicus” | Galeria Promocyjna, Warszawa | indywidualna |

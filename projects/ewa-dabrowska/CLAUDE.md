@@ -38,7 +38,12 @@ publikacją, **`/add-work`** — dodanie nowej pracy do bazy (i do CMS, gdy pows
 
 - Strona Home ma rozbudowane triggery scrolla — po każdej zmianie sprawdź, czy kotwice
   z `docs/framer-map.md` nadal istnieją.
-- Strona nie ma jeszcze CMS — prace są wpięte ręcznie na canvasie.
+- **Plan Framera nie obejmuje branchy** — każda zmiana trafia od razu do głównej wersji projektu.
+  Strona nie jest opublikowana; przed zmianą istniejących elementów zrób screenshot „przed”, po zmianie
+  „po”, i powiedz Piotrowi, że cofnięcie jest w historii wersji Framera.
+- CMS: kolekcje **Works** (31 prac) i **Exhibitions** (18 wystaw) — ID pól w `docs/framer-map.md`.
+  Prace na Home są nadal wpięte ręcznie na canvasie (nie z CMS).
+- Skill Framera **`ewa-brand`** trzyma zasady marki dla AI we Framerze — aktualizuj go razem z design-system.md.
 
 ## Kluczowe fakty (skrót — szczegóły w docs/)
 

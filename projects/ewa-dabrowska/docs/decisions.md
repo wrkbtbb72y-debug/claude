@@ -5,6 +5,18 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-15 · Prace we Framerze bez brancha; podstrony wstrzymane — ✅
+- **Plan Framera tego projektu nie obejmuje branchy** („Branching is not included in this project’s plan”).
+  Zmiany AI trafiają od razu do głównej wersji. Bezpiecznik: strona nie jest opublikowana, a każda zmiana
+  jest w historii wersji Framera. Zmiany w istniejących elementach (np. Home) zawsze ze screenshotami.
+- **Podstrony i szablon stron wstrzymane** na prośbę Piotra — menu ma docelowe pozycje, ale bez linków.
+- **Na tablecie (810 px) pasek nawigacji używa wariantów mobilnych** (logo, EN / PL, hamburger), jak na
+  telefonie — pełne menu z 7 pozycjami nie mieści się w 810 px.
+- **Przełącznik EN / PL** jest na razie tylko wizualny (EN aktywny, PL wyszarzony).
+- **Dane w CMS po angielsku:** materiały, miejsca i kontekst prac przetłumaczone z portfolio wiernie, bez
+  dodawania faktów; tytuły prac zostają oryginalne (pole *Original title* = polski tytuł).
+- **Typ wystawy** w CMS ustawiony tylko tam, gdzie portfolio go podaje (indywidualna / zbiorowa itd.).
+
 ### 2026-11-14 · Repozytorium wieloprojektowe — ✅
 - Repo przestaje być tylko bazą wiedzy Ewy: każdy projekt (także krótkie) dostaje folder
   `projects/<nazwa>/`; ten projekt przeniesiony do `projects/ewa-dabrowska/` (historia gita zachowana).

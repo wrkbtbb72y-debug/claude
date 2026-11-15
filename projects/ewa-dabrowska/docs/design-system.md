@@ -29,15 +29,14 @@ Pasek „Explore projects”: wysokość 59px, padding poziomy 100px.
 
 | Token / wartość | Gdzie | Uwagi |
 |---|---|---|
-| `Black` token — `rgb(31,31,31)` (ID `0397fb76-20a8-4fdc-ba50-854349caca2b`) | tekst na jasnym tle | jedyny token w projekcie |
-| `#000000` | tło strony, hero, About | **niezatokenizowane** |
-| `#FFFFFF` | tekst na ciemnym, tło Projects | **niezatokenizowane** |
-| `rgb(196,196,196)` | placeholdery/linie | **niezatokenizowane** |
-| `rgb(122,121,121)` | podpisy (preset Caption) | w presecie |
+| `Black` token — `rgb(31,31,31)` (ID `0397fb76-20a8-4fdc-ba50-854349caca2b`) | tekst na jasnym tle | starszy token |
+| **Ink** `dLrIqbBXT` — `#000000` | tło strony, hero, About, logo w wariantach Black | token (2026-11-15) |
+| **Paper** `y2ty1fQ3X` — `#FFFFFF` | tekst/elementy na ciemnym, tło Projects | token |
+| **Line** `Lgw6mIbcg` — `rgb(196,196,196)` | stopka, linie | token |
+| **Muted** `NidFX33fI` — `rgb(122,121,121)` | podpisy (preset Caption) | token |
 | `rgba(255,255,255,0.6)` | podtytuł hero | w presecie |
 
-➡ Backlog: zamienić surowe wartości na tokeny (`Ink` #000, `Paper` #fff, `Line` #c4c4c4,
-`Muted` #7a7979) — bez zmiany wyglądu.
+Nowe elementy: używaj tokenów zamiast surowych wartości. Półprzezroczyste kolory (np. biel 60%) zostają w presetach.
 
 ## Typografia — presety tekstu
 

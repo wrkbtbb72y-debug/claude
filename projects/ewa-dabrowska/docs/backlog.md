@@ -9,18 +9,24 @@
       *Trial / Unlicensed Trial* — nie wolno ich używać na produkcji. Opcje: kupić licencje
       webowe (Dinamo) albo podmienić na zamienniki (np. grotesk: Inter / Geist; condensed
       serif: Instrument Serif lub Google Fonts). Dotyczy 9 z 13 presetów.
-- [ ] **SEO / metadane.** Tytuł strony to „My Framer Site”, opis „Made with Framer”.
-      Ustawić tytuł, opis, obraz społecznościowy (OG), favicon.
-- [ ] **Alt-teksty:** 0 z 19 obrazów na Home ma alt-text (zob. content-guidelines.md).
+      ➡ 2026-11-15: próbki darmowych zamienników są we Framerze na design page
+      „Fonty — propozycje zamienników” (`IC_Z5ffzI`). **Decyzja Piotra** — style nie zostały zmienione.
+- [x] **SEO / metadane** — tytuł „Ewa Dąbrowska · Land Art & Sculpture” i opis ustawione (2026-11-15).
+- [ ] **Obraz społecznościowy (OG) i favicon** — do dodania (potrzebny wybór zdjęcia / znak).
+- [x] **Alt-teksty** — 13 zdjęć prac i portret na Home mają opisy (2026-11-15); 6 grafik dekoracyjnych
+      (ikony, kreski) celowo bez opisu.
 - [ ] **Nawigacja i linki:** nie wykryto `href` w Nav Bar (Works / Info / Awards / Contact)
       ani w kolumnach stopki (Menu, Instagram, Facebook, E-mail, Privacy Policy, Site credits).
       Do weryfikacji i podpięcia (kotwice `#work`, `#about`, mailto:, profile social).
       ⚠ Pozycje menu zmienią się wg nowej architektury (P1) — linki podpinać już do docelowych podstron.
+      ➡ 2026-11-15: menu ma już docelowe pozycje (Work, Where to see, Exhibitions, Film / Performance,
+      Publications / Press, About + Contact + EN / PL); logo prowadzi do `/`. **Linki pozycji menu
+      czekają na utworzenie podstron** (wstrzymane na prośbę Piotra).
 - [ ] **E-mail kontaktowy:** `e.dabrowska@mail.com` to **adres przykładowy** (potwierdzone 2026-11-14) —
       podmienić na prawdziwy, gdy artystka go poda (stopka, Contact, `mailto:`, odbiorca formularza).
 - [ ] **Privacy Policy:** link w stopce, strony brak. Ustalono formularz kontaktowy, więc
       podstrona `/privacy` jest **wymagana** (nie usuwamy linku).
-- [ ] **Usunąć draft `/home`** (`PkrJvvJdu`) — stara kopia Home, ryzyko pomyłki.
+- [x] **Usunięto draft `/home`** (`PkrJvvJdu`, 2026-11-15) — w razie potrzeby do odzyskania z historii wersji Framera.
 - [ ] Domena i pierwsza publikacja.
 - [x] **Footer Bar nie pojawiał się przy stopce** — warianty *Desktop Visible* / *Phone Visible*
       (`CZImlwXQG`) miały opacity 0 jak *Hidden*; ustawiono 1 i przywrócono wysuwanie z góry
@@ -32,8 +38,19 @@
 
 ## P1 — fundamenty pod rozbudowę
 
-- [ ] **Przełącznik języków EN / PL w Nav Bar** (desktop + menu mobilne) — zaprojektować od razu,
-      włączyć przy etapie PL (lokalizacja Framera). Decyzja 2026-11-14.
+- [x] **Przełącznik języków EN / PL w Nav Bar** — dodany wizualnie we wszystkich 4 wariantach (2026-11-15);
+      **aktywować** (podpiąć pod lokalizację Framera) na etapie wersji PL.
+- [ ] **Podstrony + szablon (Layout Template) z nawigacją i stopką** — Work, Where to see, Exhibitions,
+      Film / Performance, Publications / Press, About, Contact. **Wstrzymane na prośbę Piotra (2026-11-15).**
+      Gdy ruszą: podpiąć linki w menu, Contact → `/contact`, „Read more” → `/about`.
+- [ ] **Podstrona Exhibitions** — dane gotowe w CMS „Exhibitions” (18 wystaw); zostaje zbudować stronę z listą.
+- [ ] **Menu mobilne (hamburger)** na telefonie i tablecie to tylko grafika, nic nie otwiera — do zrobienia
+      jako wariant Open komponentu Nav Bar (drawer).
+- [ ] **Opisy prac po angielsku** — pole *Description* w CMS „Works” jest puste; źródło: `content/sources/portfolio-2026-09.md`.
+- [ ] **Okładki w CMS** — 8 z 31 prac ma okładkę (zdjęcia już będące na stronie); reszta po zmniejszeniu
+      zdjęć z Dysku. Pole *Photos source (Drive)* wskazuje folder.
+- [ ] **Sprawdzić przycisk Contact w wariancie Black** paska — na jasnym tle był niewidoczny już przed zmianami
+      (biały przycisk na białym).
 - [ ] **Pytania do artystki po lekturze portfolio** (szczegóły w kolumnie `notes` w `content/works.csv`):
       „Słoneczny Stwór”, „Kłos”, „Wszechkarmicielka” — brak w portfolio (dane?); czy „Tancerz” =
       „Taniec deszczu”?; „Wszechkarmicielka” — część „Żywiciała”?; rok „Państwa Gąbczaków” i
@@ -61,9 +78,10 @@
       współrzędne niepotrzebne, jeśli są linki z Map Google.
 - [ ] **Logotyp:** dobrać font do imienia i nazwiska (uwaga na licencje — zob. P0 fonty).
 
-- [ ] **CMS „Works”** wg schematu `content/works.csv` + strona listy `/work` i detail `/work/:slug` (zgodnie z brief.md).
+- [x] **CMS „Works”** (31 prac, 2026-11-15; strony listy i detail — jeszcze nie) wg schematu `content/works.csv` + strona listy `/work` i detail `/work/:slug` (zgodnie z brief.md).
 - [ ] **Layout Template** z Nav Bar i stopką — warunek przed dodaniem kolejnych stron.
-- [ ] **Tokeny kolorów** zamiast surowych wartości (Ink / Paper / Line / Muted) — bez zmiany wyglądu.
+- [x] **Tokeny kolorów** Ink / Paper / Line / Muted — dodane i podpięte w miejsce identycznych wartości na Home
+      i w komponentach (24 miejsca) oraz w presecie Caption (2026-11-15).
 - [ ] **Strona Publications / Press** (ustalona nazwa; dawniej „Awards”).
 - [ ] **About** — osobna podstrona (ustalone 2026-11-14); „Read more” na Home ma do niej prowadzić.
 - [x] Decyzja PL/EN — najpierw EN, PL na końcu z przełącznikiem (2026-11-14).
@@ -76,4 +94,4 @@
 - [ ] Dane strukturalne JSON-LD (`Person`, `VisualArtwork`) dla SEO.
 - [ ] Wydajność: rozmiary zdjęć i wideo (Bandwidth), `prefers-reduced-motion` dla efektów scrolla.
 - [ ] Porządek w design page „Robocze”.
-- [ ] Framer project skill (SkillNode) z zasadami marki — żeby AI wewnątrz Framera też ich pilnowało.
+- [x] Framer project skill **`ewa-brand`** z zasadami marki i listą kotwic scrolla (2026-11-15).

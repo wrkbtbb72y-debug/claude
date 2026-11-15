@@ -8,12 +8,40 @@
 | Strona | ID | Ścieżka | Status | Layout Template |
 |---|---|---|---|---|
 | Home | `OQp6lSols` | `/` | opublikowana w projekcie | brak |
-| Home (stara kopia) | `PkrJvvJdu` | `/home` | **draft** | brak |
 
 Design page (brudnopis): **Robocze** `juyxNVARq` — wersje robocze stopki, About,
 „work-grid — B Index”, sticky-icon, read-more.
 
-CMS: **brak kolekcji.** Layout Templates: **brak.**
+Design page: **Fonty — propozycje zamienników** `IC_Z5ffzI` — próbki darmowych fontów (2026-11-15).
+
+Layout Templates: **brak** (wstrzymane). Skill Framera: **`ewa-brand`** `QIgqMpnwt` (on-demand).
+
+## CMS (od 2026-11-15)
+
+**Works** `jkOY2Zimh` — 31 prac (z `content/works.csv`, fakty po angielsku). Pola (ID):
+Title `WzOlAO5cq` · Slug `QoWpilZnw` · Original title `y44E_IcMd` · Order `GVnHfz3yR` ·
+Featured on Home `tG4628spA` · Year `q0COQSAiL` · Category `GLfRDJsQD` (enum: Land Art & Happenings
+`ZY2J1ZJuX`, Sculpture `OLOMNw4U6`, Drawing & stop-motion `u7n5Amtxe`, Sound `kqMwgvwz7`) ·
+Cover image `DxHd9Q0PN` · Gallery `NYI0ZAt_H` · Description `NM5SrvrVs` (puste) · Materials `iGwXHAKjU` ·
+Dimensions `SSPzrvI4E` · Context `c28BHMS4b` · Collaborators `ZUuWu0sXo` · Location `CkNmLthkp` ·
+Country `GYOtKiSnZ` · Can visit `bP3XnnkGZ` (puste) · Google Maps `rzQH2k1i0` · Video `Dy1n8eRUL` ·
+Photo credit `NoEk5UhCp` · Photos source (Drive) `ICFIO1h2q`.
+
+**Exhibitions** `T6szg68Z3` — 18 wystaw. Pola: Title `rqF5Iwx_r` · Slug `eiaa4zvBL` · Year (number)
+`VzrrcKmZt` · Venue `N7AuqP9nD` · City `p75Rs9FWW` · Country `qQ9KgIhrq` · Type `VtyAOyIX1` (Solo,
+Group, International, Festival, Open-air) · Link `mM2hTlwr3`.
+
+## Nav Bar `ECLoOCCHr` (po zmianach 2026-11-15)
+
+Warianty: Desktop White `PKP79zZJ_`, Mobile White `i2tgDvjkO`, Desktop Black `SdizDLgxu`, Mobile Black `Ii_PrCq2k`.
+- Nav-right `TtQqBfySi` (szerokość auto, gap 32px; mobile 20px) → nav-links `lDGdXylue`:
+  Work, `YLvlX7Zs1` · Where to see, `kqmsI6XdP` · Exhibitions, `OToj1MVWj` · Film / Performance,
+  `i2IyH4QtE` · Publications / Press, `vOfp1_xvb` · About `UJdoV6Oz2` (instancje Nav Bar button, w
+  wariantach Black — wariant „Black”); Contact `LtsS5yjgf`; **EN / PL** `gB3ixSUcy` (EN `ZMOZgDB6s`,
+  „/” `QPrvRHUsm`, PL `IcWUDMV8x`); hamburger `OOgm1RAxl` (tylko mobile, nie działa).
+- Logo `iyXc2Haid` → link `/`. Pozostałe linki: brak (czekają na podstrony).
+- Na Home instancja `xLcWXJD7r` przełącza warianty przy scrollu (hero → White, #work → Black);
+  **tablet `YinCLfjHuxLcWXJD7r` używa wariantów Mobile** (jak telefon).
 
 ## Home — breakpointy
 
@@ -67,5 +95,7 @@ Efekty na Desktop: 14 × appearEffect, 14 × styleTransformEffect.
 ## Inne ustawienia
 
 - Custom code (plugin API, site-wide, head): `html, body { overscroll-behavior: none; }`
-- Metadane strony głównej: **domyślne** („My Framer Site” / „Made with Framer”) — backlog P0.
+- Metadane strony: tytuł „Ewa Dąbrowska · Land Art & Sculpture” + opis (2026-11-15). Brak OG i favicon.
+- Tokeny kolorów: Ink `dLrIqbBXT`, Paper `y2ty1fQ3X`, Line `Lgw6mIbcg`, Muted `NidFX33fI` (+ starszy `Black`).
+- Plan Framera **bez branchy** — zmiany od razu w głównej wersji (zob. decisions.md).
 - Publikacja: status „ready”, cel: production, brak URL produkcyjnego, staging wyłączony.
