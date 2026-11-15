@@ -50,10 +50,29 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
 - **Interakcje:** każda nowa bryła ląduje częściowo w poprzedniej (przyciągana do snopa światła).
   Bryły odkształcają się nawzajem (pole wypychające i skręcające), mocniej w chwili uderzenia.
   Miejsca przecięć (szwy) świecą kolorem akcentu `#FF5A36`, części głęboko w innej bryle przygasają.
-- **Światło vs mrok:** jeden kwadratowy świetlik w suficie i ostry snop światła na podłogę (rama
-  świetlika, promienie, plama na podłodze, drobiny w powietrzu). Poza snopem sala tonie w mroku.
+- **Światło vs mrok:** z sufitu pada snop światła — widać tylko **promienie i drobiny w powietrzu**
+  (rama świetlika, krawędzie snopa i obrys plamy na podłodze usunięte na prośbę użytkownika). Poza snopem sala tonie w mroku.
   Każde uderzenie bryły daje krótki błysk, który na moment odsłania całą salę.
 - Bryły są jasne (`#F2EFE9`), akcent tylko na przecięciach.
+
+### Przebieg: 3 bryły → „Nadaj kształt” (od 2026-11-15)
+
+- Zrzucić można **3 bryły** (kontrolka „Liczba brył”, domyślnie 3). Etykieta panelu pokazuje
+  postęp („Dodaj bryłę · 1 z 3”, potem „Bryły opadają…”).
+- Gdy wszystkie wylądują, **przyciski brył znikają** i pojawia się **„Nadaj kształt”**.
+- „Nadaj kształt” (ok. 3,4 s): bryły zsuwają się w jeden zwarty obiekt w snopie światła, mocno
+  się przy tym odkształcając; rozpad, drżenie i pył ustają (materia „zastyga”), szwy przecięć
+  zostają jako złącza w kolorze akcentu, na końcu błysk światła. Potem na powierzchnie
+  wchodzą **faktury** (inspiracja: zdjęcia użytkownika — stal kortenowska i granit):
+  Kwadrat → pionowe zacieki rdzy, Głaz → ziarno granitu i drobne pęknięcia,
+  Koło → gładkie, poziome warstwice.
+- Po nadaniu kształtu pojawia się **„Od nowa”** (czyści salę i przywraca przyciski brył) —
+  dodane, żeby nie było ślepego zaułka; do usunięcia, jeśli niepotrzebne.
+- Stan sceny komponent ogłasza zdarzeniem `wnetrze3d:stan` (`{ phase, count, total }`,
+  fazy: drop → settling → ready → merging → formed); overrides w `ShapeButtons.tsx`
+  pokazują/ukrywają przyciski. **W edytorze widać wszystkie przyciski naraz** (overrides
+  działają dopiero w podglądzie), dlatego panel ma zawijanie.
+- „Podgląd kształtu” (kontrolka) pokazuje w edytorze gotowy, scalony obiekt z fakturami.
 
 ## Struktura (Home `augiA20Il`, `/`)
 
@@ -64,7 +83,9 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
     „Poruszaj kursorem, aby się rozejrzeć” `pvlTW1vEa` (ukryta na Tablet/Phone).
   - **Wnętrze 3D** `Hohropvqf` — komponent kodowy `Wnetrze3D.tsx`, wysokość `1fr`.
   - **Panel sterowania** `xHih95kf6` — „Dodaj bryłę” `A8IrKWoZJ` (ukryte na Phone) + przyciski
-    `vmmVh1mwZ`: Koło `O9pkhZJRu`, Kwadrat `gcLtVqWZ1`, Głaz `kPExmBcjU`.
+    `vmmVh1mwZ` (override `withPrzyciskiBryl`): Koło `O9pkhZJRu`, Kwadrat `gcLtVqWZ1`, Głaz `kPExmBcjU`;
+    „Nadaj kształt” `ZqJgdZL2N` (`withNadajKsztalt`), „Od nowa” `C6hHtDu5I` (`withOdNowa`).
+    Etykieta panelu `A8IrKWoZJ` ma override `withEtykietaPanelu` (tekst zależny od etapu).
 
 ## Jak to działa (kod)
 
@@ -87,6 +108,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 
 - Kolory (folder Assets → Kolory): Tło, Powierzchnia `#15181C`, Obrys, Tekst, Tekst drugorzędny, Akcent.
 - Tekst (PP Neue Montreal): Znak (17/600), Etykieta (14/400), Podpis (13/400, kolor drugorzędny).
+- Komponent **Przycisk akcji** `HAR1CjvV6`: warianty Główny (jasny) / Drugorzędny + hover i pressed,
+  zmienna „Etykieta”. Preset tekstu „Etykieta akcji” (14/600, kolor Tło).
 - Komponent **Przycisk bryły** `IhvcEuszi`: warianty Koło / Kwadrat / Głaz (różnią się ikoną SVG
   i etykietą) + warianty hover i pressed dla każdego.
 
@@ -107,9 +130,16 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - 2026-11-15 — bryły abstrakcyjne i losowe, dematerializujące się, przecinające i zniekształcające
   się nawzajem; scena oświetlona jednym snopem światła ze świetlika (mocny kontrast światło/mrok);
   bryły jasne, akcent tylko na szwach przecięć — na prośbę użytkownika („całkowicie inne”).
+- 2026-11-15 — limit 3 brył i przycisk „Nadaj kształt” scalający je w jeden obiekt z fakturami
+  (zacieki rdzy / granit / warstwice wg zdjęć-inspiracji); dodany „Od nowa”; usunięta „klatka”
+  snopa światła, zostały promienie — na prośbę użytkownika.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
+
+- [ ] Potwierdzić, czy zostaje przycisk „Od nowa” (dodany z własnej inicjatywy).
+- [ ] Inspiracje od użytkownika (2026-11-15) jeszcze niewykorzystane w pełni: wklęsła czerwona
+      połówka dysku, kamienie rozsypane na podłodze, kilka długich świetlików, skośne słupy.
 
 - [ ] Potwierdzić nazwę w nawigacji („Kubatura” jest robocza) i ewentualne linki w nawigacji.
 - [ ] Kolejne przyciski w dolnym pasku (np. „Wyczyść” — override `withWyczysc` jest gotowy).
