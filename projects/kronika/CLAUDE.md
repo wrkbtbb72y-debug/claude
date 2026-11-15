@@ -7,6 +7,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 
 - **Framer:** https://framer.com/projects/Kronika--0h5pA6cwUCiyjVB0qFni-1oD05
   (project ID `0h5pA6cwUCiyjVB0qFni`)
+- **Figma (projekt graficzny):** https://www.figma.com/design/XvZvAuEpnnShbbxSqZoseo/KRONIKA
+  — komponenty robocze na stronie „- KOMPONENTY - nowe (robocze)”, przyciski na stronie „BUTTONS”.
 - **Produkcja / domena:** _TODO_
 - **Materiały od klienta:** _TODO (np. link do Google Drive)_
 - **Język treści na stronie:** _TODO (PL / EN / oba)_
@@ -54,6 +56,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 
 - 2026-11-15 — Mobile tej sekcji zrobiony na wzór sekcji Aktualności na Mobile (prośba
   użytkownika: obie sekcje mają podobny układ, więc na Mobile mają wyglądać podobnie).
+
+- 2026-11-15 — **Figma:** komponent „Section heading” (`3350:38625`, 4 warianty: Dekstop Large /
+  Desktop Small / Tablet / Mobile) dostał dwa przełączniki: **„Link tekstowy”** (instancja
+  „Zobacz wszystkie” `8867:14967`) i **„Strzałki”** (instancja „arrows navi” `8867:14958`),
+  domyślnie wyłączone — dotychczasowe użycia wyglądają bez zmian. Układ wzorowany na roboczych
+  frame’ach `8867:14979`: w każdym wariancie nagłówek siedzi w „Heading row” (space-between),
+  po prawej kontener „Actions” (gap 24) z „Link wrapper” (link wyrównany do dołu nagłówka)
+  i strzałkami (wyśrodkowane w pionie). Oba naraz: link po lewej, strzałki przy krawędzi.
+  Na Tablecie/Mobile włączone strzałki (32 px) podnoszą wysokość bloku o 1–3 px.
 
 ## Do zrobienia
 
