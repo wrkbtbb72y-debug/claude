@@ -27,6 +27,7 @@ są względem tego folderu** (np. `docs/brief.md` = `projects/ewa-dabrowska/docs
 | `docs/decisions.md` | Log decyzji (co, dlaczego, kiedy) | Gdy coś wydaje się „dziwne” — może było celowe |
 | `docs/ustalenia/` | Dokument ustaleń z klientką (HTML → PDF, najnowsza wersja = najwyższy numer) | Gdy trzeba wysłać artystce aktualny stan ustaleń |
 | `docs/backlog.md` | Znane problemy i plan prac z priorytetami | Na start sesji roboczej |
+| `docs/zaliczenie-klika.md` | **Wymagania zaliczenia kursu KLIKA** (21 punktów) ze statusami ✅ / 🟡 / ⬜ / ❓ | Gdy Piotr pyta, co zostało do zaliczenia; przy planowaniu prac; po każdej zmianie we Framerze, która spełnia punkt |
 | `content/works.csv` | Baza prac — źródło prawdy dla przyszłego CMS „Works” | Przy dodawaniu/edycji prac |
 | `content/bio.md`, `content/awards-press.md` | Biogram/CV; wystawy, nagrody, filmy, kandydaci na logotypy | Przy About / Exhibitions / Film / Press |
 | `content/sources/` | Przepisane materiały źródłowe (portfolio) — słowa artystki, nie edytować | Gdy potrzebny opis pracy lub fakt |
@@ -47,6 +48,9 @@ publikacją, **`/add-work`** — dodanie nowej pracy do bazy (i do CMS, gdy pows
 
 ## Kluczowe fakty (skrót — szczegóły w docs/)
 
+- **Projekt zaliczeniowy kursu KLIKA** — strona musi spełnić wszystkie wymagania z
+  `docs/zaliczenie-klika.md` (m.in. min. 1 zalinkowana podstrona, Layout Template, favicon + Social
+  Image, znaczniki HTML, aria-label). Po zmianie we Framerze, która spełnia punkt, **zaktualizuj jego status**.
 - **Klimat:** ciemny, galeryjny, dużo powietrza; czerń `#000` + biel, akcent przez zdjęcia,
   nie przez kolor. Duża szeryfowa typografia (Instrument Serif) + techniczny grotesk
   (ABC Diatype) do UI.

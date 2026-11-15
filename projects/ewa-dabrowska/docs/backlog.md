@@ -2,6 +2,8 @@
 
 > Wyniki audytu z 2026-11-14 + plan rozbudowy. P0 = blokuje publikację, P1 = ważne, P2 = później.
 > Odhaczaj `[x]` i dopisuj datę.
+>
+> **[KLIKA]** = punkt wymagany do zaliczenia kursu KLIKA — pełna lista i statusy: `docs/zaliczenie-klika.md`.
 
 ## P0 — przed publikacją
 
@@ -12,12 +14,13 @@
       ➡ 2026-11-15: próbki darmowych zamienników są we Framerze na design page
       „Fonty — propozycje zamienników” (`IC_Z5ffzI`). **Decyzja Piotra** — style nie zostały zmienione.
 - [x] **SEO / metadane** — tytuł „Ewa Dąbrowska · Land Art & Sculpture” i opis ustawione (2026-11-15).
-- [ ] **Obraz społecznościowy (OG) i favicon** — do dodania (potrzebny wybór zdjęcia / znak).
+- [ ] **[KLIKA]** **Obraz społecznościowy (OG) i favicon** — do dodania (potrzebny wybór zdjęcia / znak).
 - [x] **Alt-teksty** — 13 zdjęć prac i portret na Home mają opisy (2026-11-15); 6 grafik dekoracyjnych
       (ikony, kreski) celowo bez opisu.
-- [ ] **Nawigacja i linki:** nie wykryto `href` w Nav Bar (Works / Info / Awards / Contact)
+- [ ] **[KLIKA]** **Nawigacja i linki:** nie wykryto `href` w Nav Bar (Works / Info / Awards / Contact)
       ani w kolumnach stopki (Menu, Instagram, Facebook, E-mail, Privacy Policy, Site credits).
       Do weryfikacji i podpięcia (kotwice `#work`, `#about`, mailto:, profile social).
+      KLIKA: linki bez tekstu (logo, ikony social, „Back to top”) muszą mieć **aria-label**.
       ⚠ Pozycje menu zmienią się wg nowej architektury (P1) — linki podpinać już do docelowych podstron.
       ➡ 2026-11-15: menu ma już docelowe pozycje (Work, Where to see, Exhibitions, Film / Performance,
       Publications / Press, About + Contact + EN / PL); logo prowadzi do `/`. **Linki pozycji menu
@@ -31,7 +34,7 @@
 - [x] **Footer Bar nie pojawiał się przy stopce** — warianty *Desktop Visible* / *Phone Visible*
       (`CZImlwXQG`) miały opacity 0 jak *Hidden*; ustawiono 1 i przywrócono wysuwanie z góry
       (szczegóły w decisions.md, 2026-11-14).
-- [ ] **Szare paski po bokach sekcji About** — prześwituje stopka (`NMyUr1YCD`, z-index 4, sticky
+- [ ] **[KLIKA]** **Szare paski po bokach sekcji About** — prześwituje stopka (`NMyUr1YCD`, z-index 4, sticky
       bottom), bo „About + sticky-scope” (`hVUwmnJJl`) nie ma z-indexu, a jego dzieci zaczynają się
       za paddingiem 60px. Proponowana poprawka: Z Index = 5 na `hVUwmnJJl` (powyżej stopki 4 i
       Projects 2–3).
@@ -40,8 +43,9 @@
 
 - [x] **Przełącznik języków EN / PL w Nav Bar** — dodany wizualnie we wszystkich 4 wariantach (2026-11-15);
       **aktywować** (podpiąć pod lokalizację Framera) na etapie wersji PL.
-- [ ] **Podstrony + szablon (Layout Template) z nawigacją i stopką** — Work, Where to see, Exhibitions,
+- [ ] **[KLIKA]** **Podstrony + szablon (Layout Template) z nawigacją i stopką** — Work, Where to see, Exhibitions,
       Film / Performance, Publications / Press, About, Contact. **Wstrzymane na prośbę Piotra (2026-11-15).**
+      KLIKA wymaga min. 1 zalinkowanej podstrony i Layout Template z top-barem i stopką.
       Gdy ruszą: podpiąć linki w menu, Contact → `/contact`, „Read more” → `/about`.
 - [ ] **Podstrona Exhibitions** — dane gotowe w CMS „Exhibitions” (18 wystaw); zostaje zbudować stronę z listą.
 - [ ] **Menu mobilne (hamburger)** na telefonie i tablecie to tylko grafika, nic nie otwiera — do zrobienia
@@ -49,6 +53,9 @@
 - [ ] **Opisy prac po angielsku** — pole *Description* w CMS „Works” jest puste; źródło: `content/sources/portfolio-2026-09.md`.
 - [ ] **Okładki w CMS** — 8 z 31 prac ma okładkę (zdjęcia już będące na stronie); reszta po zmniejszeniu
       zdjęć z Dysku. Pole *Photos source (Drive)* wskazuje folder.
+- [ ] **[KLIKA] Sprawdzić we Framerze** (brak danych w dokumentacji): wrappery z Max Width w sekcjach,
+      hover na wszystkich przyciskach, znaczniki HTML (header / nav / main / section / footer),
+      nazwy wszystkich warstw, presety na wszystkich tekstach, test 1920 → 390 px.
 - [ ] **Sprawdzić przycisk Contact w wariancie Black** paska — na jasnym tle był niewidoczny już przed zmianami
       (biały przycisk na białym).
 - [ ] **Pytania do artystki po lekturze portfolio** (szczegóły w kolumnie `notes` w `content/works.csv`):
@@ -79,11 +86,11 @@
 - [ ] **Logotyp:** dobrać font do imienia i nazwiska (uwaga na licencje — zob. P0 fonty).
 
 - [x] **CMS „Works”** (31 prac, 2026-11-15; strony listy i detail — jeszcze nie) wg schematu `content/works.csv` + strona listy `/work` i detail `/work/:slug` (zgodnie z brief.md).
-- [ ] **Layout Template** z Nav Bar i stopką — warunek przed dodaniem kolejnych stron.
+- [ ] **[KLIKA]** **Layout Template** z Nav Bar i stopką — warunek przed dodaniem kolejnych stron.
 - [x] **Tokeny kolorów** Ink / Paper / Line / Muted — dodane i podpięte w miejsce identycznych wartości na Home
       i w komponentach (24 miejsca) oraz w presecie Caption (2026-11-15).
 - [ ] **Strona Publications / Press** (ustalona nazwa; dawniej „Awards”).
-- [ ] **About** — osobna podstrona (ustalone 2026-11-14); „Read more” na Home ma do niej prowadzić.
+- [ ] **[KLIKA]** **About** — osobna podstrona (ustalone 2026-11-14); „Read more” na Home ma do niej prowadzić.
 - [x] Decyzja PL/EN — najpierw EN, PL na końcu z przełącznikiem (2026-11-14).
 - [ ] Ujednolicić `Copyright`: w stopce są dwa warianty („© 2026 Ewa Dąbrowska” i „… All rights reserved.”).
 
