@@ -25,8 +25,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   1024–1439 px), **Tablet** `hzEqmNBoY` (810, 810–1023 px), **Duzy desktop** `XjMbofAH4`
   (1440, ≥1440 px), **Mobile** `YLBtCSeLh` (390, <810 px). Uwaga: primary to 1024, nie 1200.
 - Sekcja „O Portalu‑section 4” (`XQ6Ofe1Rp`, w środku `About_wrapper` `tTtyi3gJx`) —
-  „Otwarte zasoby nauki i kultury” + licznik „19mln zgromadzonych obiektów”, nad
-  „Instytucje Partnerskie”.
+  „Otwarte zasoby nauki i kultury”, nad „Instytucje Partnerskie”. Desktop Primary, Tablet
+  i Duży desktop: ilustracja „tablet i książki” (`XTasEtfqG`) po lewej + tekst „Zapewniamy
+  bezpłatny dostęp…” z „Czytaj więcej” (`OJuh71bfJ`) po prawej; „Czytaj więcej” w wierszu
+  tytułu (`FXesmdTxZ`) ukryte. Mobile: tytuł z „Czytaj więcej” + licznik „19mln
+  zgromadzonych obiektów” (`uXWoz4CPW`, `B22SY_ZNm`) — utrzymane nadpisaniami Mobile.
 - Presety tekstu są responsywne (sloty `medium` ≥1024, `small` ≥768): np. „Nazwy sekcji”
   `onFkvs54B` 28→26 px, „Body 1 - tekst długi L” `qho9AhWr_` 20→18 px na tablecie.
 
@@ -39,8 +42,14 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   użytkownika. Uwaga: zmiana trafiła bezpośrednio do `main` we Framerze (nie utworzył się
   branch), strona nieopublikowana.
 
+- 2026-11-15 — Ta sama sekcja na Desktop Primary i Tablecie pokazuje te same elementy co na
+  Dużym desktopie (ilustracja + opis zamiast licznika „19mln”) — prośba użytkownika. Zmiana
+  na Desktop Primary (dziedziczy Tablet); Mobile celowo bez zmian. Znów bezpośrednio w `main`
+  we Framerze, nieopublikowane.
+
 ## Do zrobienia
 
-- [ ] Zdecydować, czy na tablecie tytuł sekcji i podpis licznika mają mieć te same rozmiary
-      fontu co na Desktop Primary (wymaga zmiany presetów — wpływa na całą stronę).
+- [ ] Zdecydować, czy na tablecie tytuł sekcji i opis mają mieć te same rozmiary fontu co na
+      Desktop Primary (28/20 px zamiast 26/18 px — wymaga zmiany presetów, wpływa na całą stronę).
+- [ ] Zdecydować, czy Mobile w sekcji „Otwarte zasoby…” też ma dostać ilustrację + opis.
 - [ ] Uzupełnić brief (pola TODO powyżej).
