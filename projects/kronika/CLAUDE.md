@@ -9,6 +9,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   (project ID `0h5pA6cwUCiyjVB0qFni`)
 - **Figma (projekt graficzny):** https://www.figma.com/design/XvZvAuEpnnShbbxSqZoseo/KRONIKA
   — komponenty robocze na stronie „- KOMPONENTY - nowe (robocze)”, przyciski na stronie „BUTTONS”.
+- **Figma (makiety):** https://www.figma.com/design/XvZvAuEpnnShbbxSqZoseo/KRONIKA — strona
+  „1. Główna 2.0”, ramka `8867:13877` z 4 makietami Home: 1440 `7373:100781`, Desktop Primary
+  1024 `7399:252`, Tablet 810 `7373:101588`, Mobile 390 `7373:102357`.
 - **Produkcja / domena:** _TODO_
 - **Materiały od klienta:** _TODO (np. link do Google Drive)_
 - **Język treści na stronie:** _TODO (PL / EN / oba)_
@@ -65,6 +68,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   po prawej kontener „Actions” (gap 24) z „Link wrapper” (link wyrównany do dołu nagłówka)
   i strzałkami (wyśrodkowane w pionie). Oba naraz: link po lewej, strzałki przy krawędzi.
   Na Tablecie/Mobile włączone strzałki (32 px) podnoszą wysokość bloku o 1–3 px.
+
+- 2026-11-15 — Makiety w Figmie zsynchronizowane z Framerem dla sekcji „Otwarte zasoby nauki
+  i kultury” (ramki „O Portalu — Integrujemy zasoby” `7636:83155` / `:83162` / `:83169` /
+  `:83176`): przebudowane na auto‑layout — tytuł + linia, ilustracja + opis z pogrubionym
+  „19 milionów obiektów” + „Czytaj więcej”; licznik „19mln” usunięty. Ilustracja to kopia
+  ramki „Ilustracja 07b” (`8833:7645`, wskazana przez użytkownika) ze strony „1. Główna 2.0”,
+  przeskalowana do rozmiarów z Framera (652×373 / 468×267 / 361×206 / 358×205).
 
 ## Do zrobienia
 
