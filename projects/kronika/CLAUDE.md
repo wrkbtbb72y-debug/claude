@@ -11,6 +11,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 - **Materiały od klienta:** _TODO (np. link do Google Drive)_
 - **Język treści na stronie:** _TODO (PL / EN / oba)_
 - **Termin:** _TODO_
+- **Branche we Framerze:** w tym projekcie edycje AI **nie tworzą brancha** (sprawdzone
+  2026-11-15, trzy razy) — zmiany idą od razu do głównej wersji (`main`), nieopublikowane.
 
 ## O projekcie (brief w skrócie)
 
@@ -28,8 +30,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „Otwarte zasoby nauki i kultury”, nad „Instytucje Partnerskie”. Desktop Primary, Tablet
   i Duży desktop: ilustracja „tablet i książki” (`XTasEtfqG`) po lewej + tekst „Zapewniamy
   bezpłatny dostęp…” z „Czytaj więcej” (`OJuh71bfJ`) po prawej; „Czytaj więcej” w wierszu
-  tytułu (`FXesmdTxZ`) ukryte. Mobile: tytuł z „Czytaj więcej” + licznik „19mln
-  zgromadzonych obiektów” (`uXWoz4CPW`, `B22SY_ZNm`) — utrzymane nadpisaniami Mobile.
+  tytułu (`FXesmdTxZ`) ukryte. Licznik „19mln zgromadzonych obiektów” (`uXWoz4CPW`,
+  `B22SY_ZNm`) ukryty na wszystkich breakpointach. Mobile: układ jak „Aktualności-section”
+  (`K4Yhx9QyY`) na Mobile — tytuł + linia, ilustracja na całą szerokość, pod nią tekst
+  (odstęp 28 px) i „Czytaj więcej” (gap 20 px, wariant przycisku jak w Aktualnościach),
+  odstęp tytuł–treść 32 px.
 - Presety tekstu są responsywne (sloty `medium` ≥1024, `small` ≥768): np. „Nazwy sekcji”
   `onFkvs54B` 28→26 px, „Body 1 - tekst długi L” `qho9AhWr_` 20→18 px na tablecie.
 
@@ -47,9 +52,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   na Desktop Primary (dziedziczy Tablet); Mobile celowo bez zmian. Znów bezpośrednio w `main`
   we Framerze, nieopublikowane.
 
+- 2026-11-15 — Mobile tej sekcji zrobiony na wzór sekcji Aktualności na Mobile (prośba
+  użytkownika: obie sekcje mają podobny układ, więc na Mobile mają wyglądać podobnie).
+
 ## Do zrobienia
 
 - [ ] Zdecydować, czy na tablecie tytuł sekcji i opis mają mieć te same rozmiary fontu co na
       Desktop Primary (28/20 px zamiast 26/18 px — wymaga zmiany presetów, wpływa na całą stronę).
-- [ ] Zdecydować, czy Mobile w sekcji „Otwarte zasoby…” też ma dostać ilustrację + opis.
 - [ ] Uzupełnić brief (pola TODO powyżej).
