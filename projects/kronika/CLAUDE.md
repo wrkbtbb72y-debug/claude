@@ -97,6 +97,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Button Thin, Desktop Primary: Body 4 Thin, Tablet: jak Button Thin bez presetu, Mobile: jak
   Button bez presetu) — w Figmie odwzorowane 1:1, do ujednolicenia, jeśli to niezamierzone.
 
+- 2026-11-15 — **Figma, Desktop Large, sekcja Polecane:** 3 karty jak we Framerze (Duży
+  desktop). Czwarta karta („Polecane_card 4” `7658:1935`) ukryta, nie usunięta. Karty 1–3
+  mają szerokość „Fill” (429 px), obrazki 429×241 (proporcja 1,78 jak we Framerze), karta
+  429×358.
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
