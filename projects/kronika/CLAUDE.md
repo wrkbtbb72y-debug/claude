@@ -76,6 +76,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   ramki „Ilustracja 07b” (`8833:7645`, wskazana przez użytkownika) ze strony „1. Główna 2.0”,
   przeskalowana do rozmiarów z Framera (652×373 / 468×267 / 361×206 / 358×205).
 
+- 2026-11-15 — **Figma:** na makietach Desktop Small, Tablet i Mobile (strona „1. Główna 2.0”)
+  wszystkie tytuły sekcji (ramki tytuł + kreska) zastąpione instancjami „Section heading”
+  w wariancie danego breakpointu, jak na Desktop Large. Przełączniki jak na Desktop Large:
+  Polecane — „Strzałki”, Wybrane kategorie i Instytucje — „Link tekstowy”, Aktualności
+  i Otwarte zasoby — bez dodatków. Teksty tytułów zostały bez zmian (na Mobile „Instytucje”,
+  nie „Instytucje Partnerskie”). Instancje mają szerokość „Fill”.
+
 ## Do zrobienia
 
 - [ ] Zdecydować, czy na tablecie tytuł sekcji i opis mają mieć te same rozmiary fontu co na
