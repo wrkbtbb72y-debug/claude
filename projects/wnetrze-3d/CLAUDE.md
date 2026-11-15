@@ -46,11 +46,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 
 - `Wnetrze3D.tsx` — własny renderer linii na `<canvas>` (bez bibliotek): perspektywa, przycinanie
   linii za kamerą, fizyka spadania, „mgła” (dalsze linie gasną w ciemności). Kontrolki: kolory (tło,
-  linie, bryły), grubość, wymiary sali (domyślnie 24 × 40 m, wys. 7 m), wys. oczu (2,6 m),
+  linie, bryły), grubość, wymiary sali (domyślnie 44 × 72 m, wys. 16 m), wys. oczu (2,6 m),
   przejście do kolejnej sali (wył. — usunięte na prośbę użytkownika), mgła (0,55), siatka podłogi (wył.), czułość kursora, dryf,
   limit brył, „Podgląd brył” (tylko w edytorze, pokazuje 3 przykładowe bryły).
 - Kamera stoi na osi sali ok. 1 szerokość sali od tylnej ściany, kąt widzenia ~70° w poziomie.
-  Bryły (~2 m) spadają w strefie od ~40% odległości do tylnej ściany.
+  Bryły mają stały rzeczywisty rozmiar (~2 m, niezależny od wielkości sali — tak większa sala
+  wygląda na większą) i spadają w strefie od ~40% odległości do tylnej ściany.
 - `ShapeButtons.tsx` — code overrides na przyciskach: `withKolo`, `withKwadrat`, `withGlaz`
   oraz gotowy `withWyczysc` (czyści wnętrze, jeszcze nie podpięty). Komunikacja przez zdarzenie
   okna `wnetrze3d:bryla` z `detail: { type: "add", shape: "kolo" | "kwadrat" | "glaz" }`
@@ -75,6 +76,9 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   słabszy i bezwładny ruch kursorem — dla klimatu liminalnego i monumentalnego.
 - 2026-11-15 — przejście (wgłębienie) w tylnej ścianie usunięte na prośbę użytkownika — tylna
   ściana jest pełna. Kontrolka „Przejście” zostaje w komponencie, domyślnie wyłączona.
+- 2026-11-15 — sala powiększona do 44 × 72 × 16 m (prośba: większa, bardziej monumentalna);
+  wysokość oczu bez zmian (2,6 m), więc sufit i ściana górują nad widzem, a bryły ~2 m wyglądają
+  na małe względem przestrzeni.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
