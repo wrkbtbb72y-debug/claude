@@ -31,6 +31,30 @@ Ustalenia z użytkownikiem (2026-11-15):
   (zmiana 2026-11-15 — każda ląduje w losowym ustawieniu i stoi nieruchomo) (przerywany obrys miejsca lądowania
   + fala przy uderzeniu).
 
+### Bryły i światło (od 2026-11-15, wersja „całkowicie inne”)
+
+Prośba użytkownika: bryły losowo abstrakcyjne, wrażenie dematerializacji materii, doświadczenie
+czegoś „całkowicie innego”, zaburzone proporcje, nieludzka skala; światło na zasadzie mocnego
+kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się przecinać i zniekształcać.
+
+- **Przyciski wybierają rodzinę**, kształt w niej jest losowy:
+  - Koło: spłaszczony dysk, igła, nieregularna elipsoida, pierścień (torus, często pionowy jak brama),
+    kula pocięta na rozjeżdżające się plastry;
+  - Kwadrat: cienki monolit (do ~85% wysokości sali), długa przechylona belka, skręcony graniastosłup,
+    tesserakt (sześcian w sześcianie), rozpadający się sześcian (krawędzie odsunięte od siebie);
+  - Głaz: zdeformowany głaz, odłamki zawieszone w powietrzu, kryształ z wyrwanymi wierzchołkami.
+- Skala od ludzkiej do nieludzkiej (część brył sięga prawie sufitu). Ok. 18% brył zatrzymuje się
+  w powietrzu i lewituje.
+- **Dematerializacja:** krawędzie „oddychają” przerwami (górne części bardziej), drżenie wierzchołków,
+  pył odrywający się od bryły i unoszący w stronę światła.
+- **Interakcje:** każda nowa bryła ląduje częściowo w poprzedniej (przyciągana do snopa światła).
+  Bryły odkształcają się nawzajem (pole wypychające i skręcające), mocniej w chwili uderzenia.
+  Miejsca przecięć (szwy) świecą kolorem akcentu `#FF5A36`, części głęboko w innej bryle przygasają.
+- **Światło vs mrok:** jeden kwadratowy świetlik w suficie i ostry snop światła na podłogę (rama
+  świetlika, promienie, plama na podłodze, drobiny w powietrzu). Poza snopem sala tonie w mroku.
+  Każde uderzenie bryły daje krótki błysk, który na moment odsłania całą salę.
+- Bryły są jasne (`#F2EFE9`), akcent tylko na przecięciach.
+
 ## Struktura (Home `augiA20Il`, `/`)
 
 Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiRp42` (390).
@@ -45,8 +69,9 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 ## Jak to działa (kod)
 
 - `Wnetrze3D.tsx` — własny renderer linii na `<canvas>` (bez bibliotek): perspektywa, przycinanie
-  linii za kamerą, fizyka spadania, „mgła” (dalsze linie gasną w ciemności). Kontrolki: kolory (tło,
-  linie, bryły), grubość, wymiary sali (domyślnie 44 × 72 m, wys. 16 m), wys. oczu (2,6 m),
+  linii za kamerą, fizyka spadania, „mgła” (dalsze linie gasną w ciemności), oświetlenie snopem.
+  Kontrolki: kolory (tło, linie, bryły, przecięcia, światło), mrok (0,72), rozpad (0,6),
+  zniekształcenie (1), limit brył (10), grubość, wymiary sali (domyślnie 44 × 72 m, wys. 16 m), wys. oczu (2,6 m),
   przejście do kolejnej sali (wył. — usunięte na prośbę użytkownika), mgła (0,55), siatka podłogi (wył.), czułość kursora, dryf,
   limit brył, „Podgląd brył” (tylko w edytorze, pokazuje 3 przykładowe bryły).
 - Kamera stoi na osi sali ok. 1 szerokość sali od tylnej ściany, kąt widzenia ~70° w poziomie.
@@ -79,6 +104,9 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - 2026-11-15 — sala powiększona do 44 × 72 × 16 m (prośba: większa, bardziej monumentalna);
   wysokość oczu bez zmian (2,6 m), więc sufit i ściana górują nad widzem, a bryły ~2 m wyglądają
   na małe względem przestrzeni.
+- 2026-11-15 — bryły abstrakcyjne i losowe, dematerializujące się, przecinające i zniekształcające
+  się nawzajem; scena oświetlona jednym snopem światła ze świetlika (mocny kontrast światło/mrok);
+  bryły jasne, akcent tylko na szwach przecięć — na prośbę użytkownika („całkowicie inne”).
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
