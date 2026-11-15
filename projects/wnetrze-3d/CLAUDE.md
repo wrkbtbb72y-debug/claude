@@ -27,7 +27,8 @@ Ustalenia z użytkownikiem (2026-11-15):
   kursor obraca widok **dużo słabiej** i z bezwładnością. Inspiracja skali i rodzaju przestrzeni:
   zdjęcie od użytkownika — szeroka, pusta sala galerii z betonową podłogą, ciężkie prostopadłościenne
   rzeźby ok. 2 m, w tylnej ścianie przejście do kolejnej sali (amfilada),
-- bryła **spada z sufitu**, odbija się od podłogi i powoli obraca (przerywany obrys miejsca lądowania
+- bryła **spada z sufitu** i odbija się od podłogi; **nie obraca się** wokół własnej osi
+  (zmiana 2026-11-15 — każda ląduje w losowym ustawieniu i stoi nieruchomo) (przerywany obrys miejsca lądowania
   + fala przy uderzeniu).
 
 ## Struktura (Home `augiA20Il`, `/`)
