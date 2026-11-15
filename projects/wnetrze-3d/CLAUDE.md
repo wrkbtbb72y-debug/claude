@@ -22,6 +22,11 @@ Ustalenia z użytkownikiem (2026-11-15):
 - kolejne kliknięcia **dokładają** bryły (limit 12, potem znika najstarsza),
 - styl **ciemny, blueprint** (tło `#0B0D10`, jasne linie wnętrza, bryły w akcencie `#FF5A36`),
 - kamera: **ruch kursora lekko obraca widok**, bez ruchu kamera bardzo powoli dryfuje,
+- (zmiana 2026-11-15) kamera **centralnie, wzrok na wprost** (perspektywa z jednym punktem zbiegu),
+  jak oczy człowieka w wielkiej sali galerii; klimat **liminalny, monumentalny, prawie groźny**;
+  kursor obraca widok **dużo słabiej** i z bezwładnością. Inspiracja skali i rodzaju przestrzeni:
+  zdjęcie od użytkownika — szeroka, pusta sala galerii z betonową podłogą, ciężkie prostopadłościenne
+  rzeźby ok. 2 m, w tylnej ścianie przejście do kolejnej sali (amfilada),
 - bryła **spada z sufitu**, odbija się od podłogi i powoli obraca (przerywany obrys miejsca lądowania
   + fala przy uderzeniu).
 
@@ -39,9 +44,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 ## Jak to działa (kod)
 
 - `Wnetrze3D.tsx` — własny renderer linii na `<canvas>` (bez bibliotek): perspektywa, przycinanie
-  linii za kamerą, fizyka spadania. Kontrolki: kolory (tło, linie, bryły), grubość, wymiary hali
-  (domyślnie 40 × 60 m, wys. 14 m), siatka podłogi (domyślnie wył.), czułość kursora, dryf,
+  linii za kamerą, fizyka spadania, „mgła” (dalsze linie gasną w ciemności). Kontrolki: kolory (tło,
+  linie, bryły), grubość, wymiary sali (domyślnie 24 × 40 m, wys. 7 m), wys. oczu (2,6 m),
+  przejście do kolejnej sali (wł.), mgła (0,55), siatka podłogi (wył.), czułość kursora, dryf,
   limit brył, „Podgląd brył” (tylko w edytorze, pokazuje 3 przykładowe bryły).
+- Kamera stoi na osi sali ok. 1 szerokość sali od tylnej ściany, kąt widzenia ~70° w poziomie.
+  Bryły (~2 m) spadają w strefie od ~40% odległości do tylnej ściany.
 - `ShapeButtons.tsx` — code overrides na przyciskach: `withKolo`, `withKwadrat`, `withGlaz`
   oraz gotowy `withWyczysc` (czyści wnętrze, jeszcze nie podpięty). Komunikacja przez zdarzenie
   okna `wnetrze3d:bryla` z `detail: { type: "add", shape: "kolo" | "kwadrat" | "glaz" }`
@@ -61,6 +69,9 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   3D z fizyką nie da się zrobić natywnie we Framerze; bez zewnętrznych bibliotek = lekko i stabilnie.
 - 2026-11-15 — przyciski zostają na canvasie (edytowalne), a do sceny mówią przez code overrides
   i zdarzenie okna — pasek można dowolnie przebudowywać bez ruszania kodu.
+- 2026-11-15 — zmiana kamery i proporcji (galeria jak na zdjęciu użytkownika): centralnie,
+  wzrok na wprost, sala szeroka i niższa (24 × 40 × 7 m) z przejściem w głąb, mgła głębi,
+  słabszy i bezwładny ruch kursorem — dla klimatu liminalnego i monumentalnego.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
