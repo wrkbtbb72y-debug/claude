@@ -5,6 +5,14 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-15 · Strona = projekt zaliczeniowy kursu KLIKA — ✅
+- Strona Ewy jest jednocześnie projektem końcowym kursu KLIKA. Wymagania (21 punktów z Notion, przepisane
+  dosłownie) i ich statusy są w `docs/zaliczenie-klika.md`; punkty wymagające pracy oznaczone w backlogu **[KLIKA]**.
+- Osobny plik, a nie sekcja backlogu: to stała lista wymagań z zewnątrz, którą sprawdza się w całości
+  przed oddaniem, a backlog to bieżący plan prac klientki.
+- Konsekwencja: wstrzymane podstrony i Layout Template są **wymagane do zaliczenia** (min. 1 zalinkowana
+  podstrona) — do decyzji Piotra, kiedy je odblokować.
+
 ### 2026-11-15 · Prace we Framerze bez brancha; podstrony wstrzymane — ✅
 - **Plan Framera tego projektu nie obejmuje branchy** („Branching is not included in this project’s plan”).
   Zmiany AI trafiają od razu do głównej wersji. Bezpiecznik: strona nie jest opublikowana, a każda zmiana
