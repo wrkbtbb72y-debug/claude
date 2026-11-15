@@ -83,7 +83,23 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   i Otwarte zasoby — bez dodatków. Teksty tytułów zostały bez zmian (na Mobile „Instytucje”,
   nie „Instytucje Partnerskie”). Instancje mają szerokość „Fill”.
 
+- 2026-11-15 — **Figma:** teksty na 4 makietach Home (poza instancjami komponentów: nawigacja,
+  stopka, Section heading itp.) dostały style tekstowe odpowiadające presetom z Framera.
+  Mapowanie preset Framera → styl Figmy (grupa breakpointu: „Duży desktop ≥1440” /
+  „Desktop 1024–1439” / „Tablet 768–1023” / „Mobile ≤767”, albo „Wszystkie breakpointy”):
+  Nazwy sekcji → H2 - Nazwy sekcji; Nagłówki → H4 - Nagłówki; Body 1 - tekst długi L → Body 1;
+  Nagłówek stron → H1; Body 4 Thin, Button, Button Thin, Uppercase S → odpowiedniki
+  z „Wszystkie breakpointy”. „Czytaj więcej”, „Jak zarejestrować instytucję”, „Wyszukiwanie
+  zaawansowane”, „Wszystkie instytucje” → Button (we Framerze to komponenty z presetem Button).
+  Pogrubienie „19 milionów obiektów” zostawione jako nadpisanie. Ukryte procenty w kategoriach
+  pominięte (we Framerze bez presetu).
+  Uwaga: placeholder wyszukiwarki we Framerze ma różne style na breakpointach (Duży desktop:
+  Button Thin, Desktop Primary: Body 4 Thin, Tablet: jak Button Thin bez presetu, Mobile: jak
+  Button bez presetu) — w Figmie odwzorowane 1:1, do ujednolicenia, jeśli to niezamierzone.
+
 ## Do zrobienia
+
+- [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
 
 - [ ] Zdecydować, czy na tablecie tytuł sekcji i opis mają mieć te same rozmiary fontu co na
       Desktop Primary (28/20 px zamiast 26/18 px — wymaga zmiany presetów, wpływa na całą stronę).
