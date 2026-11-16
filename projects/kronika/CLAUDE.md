@@ -280,6 +280,18 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     Cards” i w wynikach wyszukiwania (wcześniej był tam wariant „Sztuki wizualne” z ręcznie
     zmienionym tekstem „FILM” i kolorem; poprawione, wygląd bez zmian). W kopii zapasowej
     zostało po staremu.
+  - **Podpowiedzi wyszukiwania** (prośba użytkownika, wzór: screen z obecnego serwisu):
+    na makiecie wyników `8949:9184` między przełącznikiem Obiekty / Kolekcje a tytułem
+    „Wyniki wyszukiwania” blok „Podpowiedzi wyszukiwania” (`9002:8224`): „Czy chodziło Ci o?”
+    i „Możesz obejrzeć także” (etykiety Body 4 Bold), pod nimi zawijane rzędy podpowiedzi
+    (odstęp 8). Treści przykładowe. Na stronie BUTTONS nie było pasującego elementu —
+    najbliżej klasa „B · Outline button 1 px (kompaktowy)” (44–46 px, z ikoną), więc
+    powstał nowy przycisk **„Podpowiedź wyszukiwania”** (`9002:341`, w tabeli „Nowe
+    przyciski”): bez ikony, 36 px, padding 0/14, tekst Button 15/450 #222222, ramka 1 px
+    #222222, białe tło; Stan = Domyślny / Hover (#F3F3F3) / Focus (pierścień 2 px);
+    długi tekst ucinany wielokropkiem (maks. 640 px); właściwość „Etykieta”.
+    Uwaga: odstęp w grupie nad listą to 100 px (zmiana użytkownika) — działa też nad
+    i pod blokiem podpowiedzi.
   - We Framerze nic nie zmieniano.
 
 ## Do zrobienia
@@ -297,3 +309,6 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
       nowy styl czy Uppercase S 13/450?).
 - [ ] „Lista obiektów”: **po akceptacji makiety w Figmie** przenieść projekt strony do Framera
       (nie wcześniej — wymóg użytkownika). Potem pozostałe 3 breakpointy.
+- [ ] Wyniki wyszukiwania — do decyzji, czy dodać: opcje wyszukiwania (checkboxy „Szukaj
+      z warstwą tekstową OCR”, „Szukaj tylko w tytułach” z ikoną informacji), pasek aktywnych
+      filtrów z „×” i „Wyczyść filtry”, stan „brak wyników”, wyróżnienie frazy w wynikach.
