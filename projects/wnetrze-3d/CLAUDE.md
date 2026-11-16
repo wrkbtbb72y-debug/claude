@@ -58,6 +58,8 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
   (rama świetlika, krawędzie snopa i obrys plamy na podłodze usunięte na prośbę użytkownika). Poza snopem sala tonie w mroku.
   Każde uderzenie bryły daje krótki błysk, który na moment odsłania całą salę.
 - Bryły są jasne (`#F2EFE9`), akcent tylko na przecięciach.
+- **Tylne linie brył są przygaszone** (2026-11-16): im dalej za środkiem bryły (patrząc od widza),
+  tym słabsza linia — do ~15% jasności; dotyczy krawędzi, szwów, faktur i ziarna. Przód czyta się wyraźnie.
 
 ### Jak spadają bryły (od 2026-11-16)
 
@@ -187,6 +189,7 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   (nagranie użytkownika pokazało przechył i odrywanie się od ziemi).
 - 2026-11-16 — kształty mają przypominać nazwy (Kwadrat = sześcian, Głaz = kamień, Koło = geoida);
   linia ziemi niżej; obiekt powoli się obraca, reaguje na kursor, obrót przeciąganiem.
+- 2026-11-16 — tylne linie brył ciemniejsze i mniej widoczne (przygaszanie wg głębokości).
 - 2026-11-16 — druga bryła w losową połowę (lewą/prawą) pierwszej, trzecia w przeciwną — żeby nie
   spadały jedna nad drugą w tym samym miejscu.
 - 2026-11-16 — układ: tekst w lewej połowie, scena 3D w prawej (wg screena-inspiracji); na telefonie tekst nad sceną.
