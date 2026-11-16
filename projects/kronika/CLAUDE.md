@@ -203,6 +203,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     `8975:7831` (40×40, białe tło, ramka 1 px #E5E5E5 jak sortowanie i filtry, ikona 24 px
     wyśrodkowana). W „Object tile” i „Object row” wstawiony wariant **W ramce** — powrót do
     poprzedniego wyglądu = przełączenie wariantu w komponentach.
+    **Styl wg tabeli stanów** (prośba użytkownika, wzór: strona „BUTTONS”, wiersz „Niebieski”
+    `8578:129283`): wariant W ramce ma teraz 36×36, białe tło, ramkę 1 px #193680 / 40 %,
+    ikonę folder-plus 18 px z linią 1,5 px #193680. Nowa właściwość **Stan**: Domyślny,
+    Hover (tło #193680 / 6 %), Focus (pierścień 2 px #193680 z 2 px odstępu — warstwa
+    „Focus ring” 44×44), Wciśnięty (tło #193680, ikona biała), Nieaktywny (krycie 35 %).
+    „Bez ramki” ma tylko stan Domyślny. Karta: 405 → 401 px.
   - **Etykieta kategorii „Tekst”:** komponent „Category label” (`8675:4398`), wariant
     Kategoria=Tekst (`8675:4388`) — tło zmienione #F4EDDA → **#D6DADF** (polecenie
     użytkownika; wariant nie był wcześniej nigdzie użyty). Karta „Maria Skłodowska-Curie”
