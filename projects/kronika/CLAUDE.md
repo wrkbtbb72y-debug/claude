@@ -189,6 +189,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     (zestaw stoi obok makiety, x 3689). Wzór w kodzie: shadcn Toggle Group (`type="single"`)
     lub Tabs. Poprzednia wersja (dwa kwadraty 48×48) zachowana bez zmian jako osobny zestaw
     „Przełącznik widoku – kwadraty (poprzednia wersja)” `8951:7085`.
+    **Poprawka:** szare tło szyny nie pasowało do stylu strony (uwaga użytkownika) — szyna
+    jest teraz biała z ramką 1 px #E5E5E5 (jak przycisk sortowania obok), aktywny segment
+    ma tło #F1F1F1 (jak aktywne „20” w „Pokaż na stronie”), bez cienia.
   - **Wyniki wyszukiwania** — propozycja w osobnej ramce `8949:9184`: fraza w wyszukiwarce,
     zakładki z liczbami („Obiekty (1 248)”, „Kolekcje (3)”), tytuł sekcji „Wyniki
     wyszukiwania”, licznik „Znaleziono 1 248 obiektów dla „…””, sortowanie „Trafność”,
