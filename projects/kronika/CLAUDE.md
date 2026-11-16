@@ -168,6 +168,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     Button Active / Button Thin. Hero zostaje 380 px — tytuł „Przeglądaj obiekty”
     z wyszukiwarką wyśrodkowany w pionie między okruszkami a dolną krawędzią hero (prośba
     użytkownika). Sekcja listy ma teraz wysokość „Hug” (wcześniej stała 1777 px).
+    **Linia bazowa** (prośba użytkownika): pod oboma opcjami cienka linia 1 px #D6D6D6
+    („Linia bazowa”, prostokąt absolutny, rozciągany na szerokość przełącznika, pod opcjami);
+    gruba kreska aktywnej opcji (3 px #121212, obrys „Inside”) leży na niej, wyrównana do
+    dołu. Obie opcje mają stałą wysokość 32 px (padding 4/4), żeby teksty były w jednej linii.
+    To samo w ramce wyników wyszukiwania (`8949:9453`).
   - **Karta „Object tile”** (komponent `8669:3701`): marginesy 16 px ze wszystkich stron
     (ikona „Dodaj do kolekcji” 20 px dosunięta do prawej krawędzi przycisku 32 px, więc
     wizualnie też 16 px), rytm pionowy: zdjęcie –16– kategoria –16– tytuł –4– autor –24–
