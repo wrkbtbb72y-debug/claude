@@ -128,6 +128,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   wokół tekstów — 27 warstw) i ukryta 4. karta na Desktop Large (`7658:1935`). Nazwy proste,
   po angielsku jak reszta pliku, bez kresek, slashy i podkreśleń. Różnice między breakpointami
   zostały tylko w wartościach (odstępy, paddingi, wysokość zdjęcia, liczba kart: 3 / 3 / 2 / 1).
+  Odstęp tytuł–podpis w `Content` (gap): 8 px na wszystkich breakpointach (wcześniej 12, na Mobile 10;
+  prośba użytkownika). We Framerze nie zmieniano.
 
 ## Do zrobienia
 
