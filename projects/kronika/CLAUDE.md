@@ -307,6 +307,14 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     kolumny** (z bocznymi marginesami 60 px, jak tytuł i filtry; początkowo była na całą
     szerokość — zmiana użytkownika; „Linia – pełna szerokość”, `9010:7887`): 24 px pod przełącznikiem, 40 px nad
     podpowiedziami; pod podpowiedziami 40 px do końca białego pasa (padding bloku 16/40).
+  - **Brak wyników** (prośba użytkownika): makieta **„Desktop Large – brak wyników”**
+    `9015:7886` (kopia makiety wyników, x 11165). Fraza z literówką „Muzeum Wojska Polskeigo”,
+    przełącznik „Obiekty (0)” / „Kolekcje (0)”, pierwsza podpowiedź „Czy chodziło Ci o?” =
+    poprawna fraza. Pasek wyników, siatka kart i paginacja usunięte; w ich miejscu blok
+    „Brak wyników” (`9015:9141`, wyśrodkowany, padding 120 góra/dół): napis **„Brak wyników”**
+    w stylu **H1 - Nagłówek stron** (Duży desktop, 38/400 — ten sam co „Przeglądaj obiekty”;
+    alternatywa: „Metric” 60/700, ale ta klasa jest dla liczb) + zdanie pomocy w Body 3
+    #333333 (maks. 640 px). Tytuł sekcji i filtry zostają.
   - **Wyniki wyszukiwania — pogrubiona liczba wyników:** w „Znaleziono 336 obiektów” liczba
     w Aspekta 600, reszta zdania bez zmian (15/450).
   - We Framerze nic nie zmieniano.
@@ -328,5 +336,5 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
       (nie wcześniej — wymóg użytkownika). Potem pozostałe 3 breakpointy.
 - [ ] Wyniki wyszukiwania — do decyzji, czy dodać: opcje wyszukiwania (checkboxy „Szukaj
       z warstwą tekstową OCR”, „Szukaj tylko w tytułach” z ikoną informacji), pasek aktywnych
-      filtrów z „×” i „Wyczyść filtry”, stan „brak wyników”, wyróżnienie frazy w wynikach.
-      (Pogrubiona liczba wyników — zrobione 2026-11-16.)
+      filtrów z „×” i „Wyczyść filtry”, wyróżnienie frazy w wynikach.
+      (Pogrubiona liczba wyników i makieta „brak wyników” — zrobione 2026-11-16.)
