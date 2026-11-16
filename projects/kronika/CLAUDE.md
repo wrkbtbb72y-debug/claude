@@ -301,9 +301,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     **Białe tło od krawędzi hero** (próba, prośba użytkownika): absolutny prostokąt
     „Tło – białe, pełna szerokość” (`9010:7888`) w tej ramce — od dolnej krawędzi hero
     (sięga w górny padding sekcji, 24 px) do końca podpowiedzi, 1440 px; obejmuje przełącznik.
-    Między przełącznikiem a „Czy chodziło Ci o?” **szara kreska 1 px #E5E5E5 na całą szerokość**
-    („Linia – pełna szerokość”, `9010:7887`): 24 px pod przełącznikiem, 40 px nad
+    Między przełącznikiem a „Czy chodziło Ci o?” **szara kreska 1 px #E5E5E5 na szerokość
+    kolumny** (z bocznymi marginesami 60 px, jak tytuł i filtry; początkowo była na całą
+    szerokość — zmiana użytkownika; „Linia – pełna szerokość”, `9010:7887`): 24 px pod przełącznikiem, 40 px nad
     podpowiedziami; pod podpowiedziami 40 px do końca białego pasa (padding bloku 16/40).
+  - **Wyniki wyszukiwania — pogrubiona liczba wyników:** w „Znaleziono 336 obiektów” liczba
+    w Aspekta 600, reszta zdania bez zmian (15/450).
   - We Framerze nic nie zmieniano.
 
 ## Do zrobienia
@@ -324,3 +327,4 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 - [ ] Wyniki wyszukiwania — do decyzji, czy dodać: opcje wyszukiwania (checkboxy „Szukaj
       z warstwą tekstową OCR”, „Szukaj tylko w tytułach” z ikoną informacji), pasek aktywnych
       filtrów z „×” i „Wyczyść filtry”, stan „brak wyników”, wyróżnienie frazy w wynikach.
+      (Pogrubiona liczba wyników — zrobione 2026-11-16.)
