@@ -298,7 +298,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     w kolumnie 1320. Ramka-rodzic `8949:9452` ma wyłączone przycinanie. We Framerze zrobić
     to jako osobną sekcję na pełną szerokość z białym tłem i kontenerem o szerokości kolumny.
     (Próba z podpowiedziami bezpośrednio pod hero i przełącznikiem pod nimi — cofnięta na
-    prośbę użytkownika.)
+    prośbę użytkownika.) Odstęp przełącznik → biały pas podpowiedzi: **24 px** — oba elementy
+    w ramce „Przełącznik + podpowiedzi” (`9009:7886`, gap 24); od niej do tytułu
+    „Wyniki wyszukiwania” zostaje 100 px (gap grupy).
   - We Framerze nic nie zmieniano.
 
 ## Do zrobienia
