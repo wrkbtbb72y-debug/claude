@@ -180,6 +180,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     (wysokość jak sortowanie), ikony lucide/layout-grid i lucide/layout-list, aktywny tło
     #F1F1F1 + ikona #121212, nieaktywny białe + #6C6C6C, ramka #E5E5E5. Instancja na prawo
     od sortowania (`8949:6741`).
+  - **Przełącznik widoku — wersja 2** (tego samego dnia, prośba użytkownika: „jak shadcn Tabs
+    z ikonami, w stylu Kroniki”): komponent `8949:6740` przebudowany na segmentowany
+    przełącznik — szyna #E5E5E5 (padding 4, wysokość 48 jak sortowanie, kąty proste),
+    segmenty 40 px z ikoną 20 px + podpisem „Kafelki” / „Lista” (gap 8, padding 16).
+    Aktywny: białe tło + cień 0/1/3 rgba(0,0,0,.08), #121212, styl Button Active;
+    nieaktywny: bez tła, #6C6C6C, styl Button. Warianty w zestawie ułożone pionowo
+    (zestaw stoi obok makiety, x 3689). Wzór w kodzie: shadcn Toggle Group (`type="single"`)
+    lub Tabs. Poprzednia wersja (dwa kwadraty 48×48) zachowana bez zmian jako osobny zestaw
+    „Przełącznik widoku – kwadraty (poprzednia wersja)” `8951:7085`.
   - **Wyniki wyszukiwania** — propozycja w osobnej ramce `8949:9184`: fraza w wyszukiwarce,
     zakładki z liczbami („Obiekty (1 248)”, „Kolekcje (3)”), tytuł sekcji „Wyniki
     wyszukiwania”, licznik „Znaleziono 1 248 obiektów dla „…””, sortowanie „Trafność”,
