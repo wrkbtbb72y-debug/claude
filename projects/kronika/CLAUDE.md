@@ -17,7 +17,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   **„Desktop Large - Lista”** `8970:7119` (x 5639), dalej „audyt” i **„Desktop Large – wyniki
   wyszukiwania”** `8949:9184` (pozostałe 3 breakpointy jeszcze nie powstały); kopia zapasowa
   sprzed zmian 2026-11-16: „Lista obiektów - kopia zapasowa” `8911:31206` (karty odłączone
-  od komponentu).
+  od komponentu). **Nowe komponenty** tych makiet (wzorce) leżą w opisanej ramce
+  **„Lista obiektów – nowe komponenty”** `8983:7846` na prawo od makiety wyników
+  (x 10777): Przełącznik Obiekty / Kolekcje, Przełącznik widoku, Przycisk Dodaj do kolekcji,
+  Object row — każdy z nagłówkiem i opisem; na dole notka o zmienionych „Object tile”
+  i „Category label” (te zostały na swoich miejscach). Wcześniej podane pozycje x/y tych
+  komponentów są nieaktualne. Stara wersja przełącznika widoku („– kwadraty (poprzednia
+  wersja)” `8951:7085`) nie jest używana i została obok makiety kart.
 - **Ikony w Figmie:** wszystkie ikony w przyciskach bierz **wyłącznie** z kolekcji na stronie
   „- ICONS LUCIDE” (`31:782`, ramka „Lucide Icons” `39:784`, nazwy `lucide/<nazwa>`) —
   polecenie użytkownika, 2026-11-16.
