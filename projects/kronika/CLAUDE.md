@@ -247,6 +247,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     na dole instytucja z ikoną. Właściwości tekstowe: Tytuł, Autor, Instytucja; zdjęcie
     i kategoria jako nadpisania w instancji. Wiersz: 1320 × ~349 (Hug), ramka #E5E5E5.
     Makieta listy ma przez to ~5520 px wysokości.
+    **Opis obiektu** (prośba użytkownika): między „Top” a „Institution row” tekst „Opis”
+    — styl **Body 3** (Duży desktop, 16/350, interlinia 150%), kolor #333333, maks. szerokość
+    640 px (2–3 linie), właściwość tekstowa „Opis”. Treść `Content`: wyrównanie do góry,
+    odstęp 16; opis wypełnia wolną wysokość, więc instytucja zostaje na dole. Opisy na
+    makiecie są **zmyślone** (wypełniacz do makiety) — przed wdrożeniem podmienić na prawdziwe
+    z danych KRONIK@.
     „Wycieczka statkiem” ma wariant etykiety **Film** — także na kartach w „Desktop Large -
     Cards” i w wynikach wyszukiwania (wcześniej był tam wariant „Sztuki wizualne” z ręcznie
     zmienionym tekstem „FILM” i kolorem; poprawione, wygląd bez zmian). W kopii zapasowej
