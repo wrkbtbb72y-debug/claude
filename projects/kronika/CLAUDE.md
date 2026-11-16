@@ -104,16 +104,25 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 
 - 2026-11-16 — **Figma, „Ilustracja 07b” (`8911:27037`) → „Kompozycja” (`8911:27061`):** tablet
   z efektem 3D (ramka „Tablet – perspektywa” `8911:27095`: perspektywa 500 na ramce + obrót 3D
-  tabletu) spłaszczony na prośbę użytkownika — zwykła warstwa obrazu „Tablet (spłaszczony)”
-  (`8915:4621`, PNG 4×, 270,5×340 px, x 87,5 / y 5,25 w „Kompozycja”, z cieniem), wygląd 1:1
-  z wersją 3D, bez żadnego efektu. Oryginał 3D zostawiony **ukryty** jako kopia zapasowa
-  („… (oryginał 3D, ukryty)”) — można go usunąć.
-  **Lekcja (jak spłaszczać 3D):** `exportAsync`/`screenshot` we wtyczce (use_figma) renderują
-  perspektywę **źle** (pierwsza próba wyglądała inaczej — użytkownik to wychwycił). Prawidłowy
-  render daje `get_screenshot` (serwer). Przepis: kopia ramki powiększona `rescale(4)` (+ perspektywa,
-  translateZ i transformOrigin w px ×4) w tymczasowej ramce z clipem → `get_screenshot` na czarnym
-  i białym tle → alfa = 1 − (biały − czarny)/255 → przycięcie → `upload_assets` (wymaga hosta
-  `mcp.figma.com`, dodanego do środowiska 2026-11-16).
+  tabletu) spłaszczony na prośbę użytkownika — bez żadnego efektu 3D, wygląd 1:1 z wersją 3D.
+  Nowa ramka „Tablet (spłaszczony)” (`8936:4629`, x 134 / y 17,75 w „Kompozycja”):
+  **„Korpus”** (`8936:4630`) — edytowalny wektor z wypełnieniem (kolor + gradient, cień jak
+  w oryginale); **„Ekran – Kronika polska”** (`8936:4631`) — wektor z wypełnieniem obrazem
+  (zdjęcie ekranu w perspektywie, PNG 4×); **„Linia”** (`8936:4636`) — białe obrysy jako wektory
+  (obrys tabletu, ekranu, przycisku, lewa krawędź; stroke 1,14 px). Oryginał 3D zostawiony
+  **ukryty** jako kopia zapasowa („… (oryginał 3D, ukryty)”) — można go usunąć.
+  Wcześniejsza wersja (cały tablet jako jedna bitmapa) odrzucona — użytkownik chce wektorów.
+  **Jak spłaszczać 3D (lekcje):**
+  - `exportAsync`/`screenshot` we wtyczce (use_figma) renderują perspektywę **źle**; prawidłowy
+    render daje `get_screenshot` (serwer) — tylko nim porównywać.
+  - Wektory: rzutować punkty ścieżek (także punkty kontrolne) modelem CSS: punkt w układzie
+    lokalnym węzła − transformOrigin → rotateZ, potem Y, potem X (konwencja CSS) → + origin,
+    + translateZ → transformacja 2D węzła do rodzica → perspektywa d/(d − z) względem środka
+    ramki ze `scene3d`. Zgodność konturu z renderem serwera: 99,2%.
+  - Bitmapy (zdjęcie ekranu): kopia ramki `rescale(4)` (perspektywa, translateZ, transformOrigin
+    w px ×4) w tymczasowej ramce → `get_screenshot` → przycięcie do bboxa wektora → `upload_assets`
+    z `nodeIds` (wymaga hosta `mcp.figma.com`, dodanego do środowiska 2026-11-16). Przezroczystość
+    w renderze serwera: dwa rendery (czarne i białe tło), alfa = 1 − (biały − czarny)/255.
 
 - 2026-11-16 — **Figma, strona „BUTTONS”, tabela przycisków (ramka `8911:29360`):** komponenty
   linków tekstowych „Czytaj więcej” i „Zobacz wszystkie” zamienione na zestawy wariantów
