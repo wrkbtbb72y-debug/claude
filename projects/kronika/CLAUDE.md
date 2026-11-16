@@ -162,7 +162,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   w komponencie przenoszą się teraz automatycznie na wszystkie makiety.
 
 - 2026-11-16 — **Figma, „Lista obiektów” (Desktop Large `8670:4812`):**
-  - **Przełącznik Obiekty / Kolekcje** (`8701:4842`) przeniesiony z hero na górę sekcji listy,
+  - **Przełącznik Obiekty / Kolekcje** (dawniej ramka `8701:4842`, teraz instancja
+    komponentu — niżej) przeniesiony z hero na górę sekcji listy,
     tuż pod hero (padding sekcji u góry 120 → 24 px; 40 px do tytułu „Lista obiektów”).
     Kolory pod jasne tło: aktywny #121212 + kreska 3 px, nieaktywny #6C6C6C; style tekstu
     Button Active / Button Thin. Hero zostaje 380 px — tytuł „Przeglądaj obiekty”
@@ -172,7 +173,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     („Linia bazowa”, prostokąt absolutny, rozciągany na szerokość przełącznika, pod opcjami);
     gruba kreska aktywnej opcji (3 px #121212, obrys „Inside”) leży na niej, wyrównana do
     dołu. Obie opcje mają stałą wysokość 32 px (padding 4/4), żeby teksty były w jednej linii.
-    To samo w ramce wyników wyszukiwania (`8949:9453`).
+    To samo w ramce wyników wyszukiwania.
+    **Komponent** (prośba użytkownika): „Przełącznik Obiekty / Kolekcje” (`8967:7106`, obok
+    makiety, x 3689 / y −28300), warianty **Aktywny=Obiekty** `8967:7099` / **Aktywny=Kolekcje**
+    `8967:7100`, właściwości tekstowe „Obiekty” i „Kolekcje”. Obie opcje mają **jednakową
+    szerokość podkreślenia** — równą dłuższej etykiecie (61 px dla „Obiekty” / „Kolekcje”
+    w pogrubieniu): komponent ma stałą szerokość 142 px, opcje „Fill” (dzielą po równo,
+    odstęp 20), tekst wyśrodkowany. Przy dłuższych etykietach poszerza się całą instancję:
+    2 × szersza etykieta + 20. Instancje: lista `8967:7107` (142 px), wyniki wyszukiwania
+    `8967:7113` (224 px, „Obiekty (1 248)” / „Kolekcje (3)”). Stare ramki usunięte.
   - **Karta „Object tile”** (komponent `8669:3701`): marginesy 16 px ze wszystkich stron
     (ikona „Dodaj do kolekcji” 20 px dosunięta do prawej krawędzi przycisku 32 px, więc
     wizualnie też 16 px), rytm pionowy: zdjęcie –16– kategoria –16– tytuł –4– autor –24–
