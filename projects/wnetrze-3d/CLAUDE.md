@@ -38,6 +38,9 @@ czegoś „całkowicie innego”, zaburzone proporcje, nieludzka skala; światł
 kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się przecinać i zniekształcać.
 
 - **Przyciski wybierają rodzinę**, kształt w niej jest losowy:
+  - Trójkąt (od 2026-11-16): gruba trójkątna płyta (jak stalowa płyta ze zdjęć) albo ostrosłup;
+    faktura jak Kwadrat (pionowe linie), wbija się ukośnie jak ostrze.
+  - Walec (od 2026-11-16): walec z lekkim, miękkim wybrzuszeniem wzdłuż wysokości; faktura warstwic.
   - Koło: **geoida** (zmiana 2026-11-16) — wyraźnie kula, ale z miękkimi wybrzuszeniami
     i wklęsłościami (±6–17% promienia), lekko spłaszczona lub wydłużona, promień 2,6–6 m;
     wcześniejsze warianty (dysk, igła, torus, plastry) usunięte na prośbę użytkownika;
@@ -123,7 +126,10 @@ Kamera się nie rusza — ruch kursora działa teraz na obiekt (patrz „Obracan
 Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiRp42` (390).
 
 - **Ekran** `N06uDCvcg` — stack pionowy, `100vh` (min 520px), pełna szerokość (celowo bez maxWidth).
-  - **Nawigacja** `GTrNEG7XB` — 64px (Phone 56px): znak „Kubatura” + wskazówka
+  - **Nawigacja** `GTrNEG7XB` — 64px (Phone 56px): **logotyp NUMINO** `NCKX7jaYC` (SVG, 80×46 px,
+    Phone 66×38; od 2026-11-16 zamiast napisu „Kubatura”; plik źródłowy w `assets/numino-logo-nav.svg` —
+    odwrócony i uproszczony z pliku użytkownika `numino_v2.svg`, który miał białe tło z literami
+    „wyciętymi” w nim) + wskazówka
     „Poruszaj kursorem, aby się rozejrzeć” `pvlTW1vEa` (ukryta na Tablet/Phone).
   - **Treść** `Mtv7dJz2Z` (od 2026-11-16) — wiersz poziomy, wysokość `1fr`; Phone: pionowo (tekst nad sceną).
     - **Opis** `au8f8iUvr` — lewa połowa: nagłówek `hXCwV4zV6` „Puste wnętrze, w\u00A0którym trzy
@@ -132,8 +138,11 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
       Tekst wzorowany na screenie użytkownika (długość/wielkość), treść robocza — do akceptacji.
     - **Wnętrze 3D** `Hohropvqf` — prawa połowa (`1fr`), komponent kodowy `Wnetrze3D.tsx`.
   - **Panel sterowania** `xHih95kf6` — „Dodaj bryłę” `A8IrKWoZJ` (ukryte na Phone) + przyciski
-    `vmmVh1mwZ` (override `withPrzyciskiBryl`): Koło `O9pkhZJRu`, Kwadrat `gcLtVqWZ1`, Głaz `kPExmBcjU`;
-    „Nadaj kształt” `ZqJgdZL2N` (`withNadajKsztalt`), „Od nowa” `C6hHtDu5I` (`withOdNowa`).
+    `vmmVh1mwZ` (override `withPrzyciskiBryl`) — **same ikony, bez tekstu** (26 px, okrągłe 52 px):
+    Koło `O9pkhZJRu`, Kwadrat `gcLtVqWZ1`, Głaz `kPExmBcjU`, Trójkąt `gjZINwi2_`, Walec `J9E6tPMgd`;
+    **licznik** `hgMTNuQAu` (tekst `UOXcmZpxv`, „0/3” → „3/3”, overrides `withLicznikRamka`/`withLicznik`,
+    widoczny do chwili „Pokaż”); **„Pokaż”** `ZqJgdZL2N` (dawniej „Nadaj kształt”, `withNadajKsztalt`),
+    „Od nowa” `C6hHtDu5I` (`withOdNowa`).
     Etykieta panelu `A8IrKWoZJ` ma override `withEtykietaPanelu` (tekst zależny od etapu).
 
 ## Jak to działa (kod)
@@ -160,7 +169,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   Nagłówek (h1, 300; 64/42/32 px dla Desktop/Tablet/Phone, interlinia 1,05), Podpis akcent (15/400, Akcent).
 - Komponent **Przycisk akcji** `HAR1CjvV6`: warianty Główny (jasny) / Drugorzędny + hover i pressed,
   zmienna „Etykieta”. Preset tekstu „Etykieta akcji” (14/600, kolor Tło).
-- Komponent **Przycisk bryły** `IhvcEuszi`: warianty Koło / Kwadrat / Głaz (różnią się ikoną SVG
+- Komponent **Przycisk bryły** `IhvcEuszi` (od 2026-11-16 bez etykiety, okrągły, ikona 26 px, `ariaLabel`
+  „Dodaj koło/kwadrat/…”; doszły warianty Trójkąt `NSLD_xhk7` i Walec `BkiYV_4M6` z hover/pressed): warianty Koło / Kwadrat / Głaz (różnią się ikoną SVG
   i etykietą) + warianty hover i pressed dla każdego.
 
 ## Ustalenia i decyzje
@@ -197,9 +207,16 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - 2026-11-16 — druga bryła w losową połowę (lewą/prawą) pierwszej, trzecia w przeciwną — żeby nie
   spadały jedna nad drugą w tym samym miejscu.
 - 2026-11-16 — układ: tekst w lewej połowie, scena 3D w prawej (wg screena-inspiracji); na telefonie tekst nad sceną.
+- 2026-11-16 — przyciski brył tylko z ikoną (większą), dwa nowe kształty (Trójkąt, Walec), licznik 0/3–3/3,
+  „Nadaj kształt” → „Pokaż”, logotyp NUMINO zamiast „Kubatura” — na prośbę użytkownika.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
+
+- [ ] Podpis pod nagłówkiem „Kubatura — nadaj kształt” odwołuje się do starej nazwy i starego przycisku —
+      zapytać, czy zmienić (np. na „NUMINO”).
+- [ ] Logotyp jako SVG nie ma tekstu alternatywnego (Framer nie pozwala dać `ariaLabel` na SVG) — rozważyć
+      opakowanie w ramkę z etykietą/linkiem do strony głównej.
 
 - [ ] Zaakceptować/zmienić tekst nagłówka i podpisu po lewej (robocze).
 - [ ] Wskazówka w nawigacji „Poruszaj kursorem, aby się rozejrzeć” jest nieaktualna (kamera stoi,
