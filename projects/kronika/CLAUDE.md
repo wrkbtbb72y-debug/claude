@@ -110,6 +110,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   zapasowa („… (oryginał 3D, ukryty)”) — można go usunąć. Uwaga: podgląd z serwera Figmy
   (get_screenshot) renderuje 3D inaczej niż edytor; do porównań używać renderu w edytorze.
 
+- 2026-11-16 — **Figma, strona „BUTTONS”, tabela przycisków (ramka `8911:29360`):** komponenty
+  linków tekstowych „Czytaj więcej” i „Zobacz wszystkie” zamienione na zestawy wariantów
+  (`8921:328` i `8921:333`) z właściwością **„Stan”**: `Domyślny` (dotychczasowy komponent,
+  ID bez zmian: `8911:29361` / `8867:14967`) i `Hover` (`8921:326` / `8921:331`) — po prawej,
+  ten sam styl „Button” + podkreślenie tekstu. Nad wariantami etykiety „Desktop” / „Hover”.
+  Zestawy i warianty mają wyłączone przycinanie (inaczej podkreślenie pod 15‑px linią tekstu
+  było ucięte). Istniejące instancje (np. w „Section heading”) zostały podpięte i dalej
+  pokazują stan domyślny.
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
