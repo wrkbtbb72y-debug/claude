@@ -292,6 +292,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     długi tekst ucinany wielokropkiem (maks. 640 px); właściwość „Etykieta”.
     Uwaga: odstęp w grupie nad listą to 100 px (zmiana użytkownika) — działa też nad
     i pod blokiem podpowiedzi.
+    **Białe tło na całą szerokość** (próba, prośba użytkownika): blok ma padding 40 góra/dół,
+    pod treścią absolutny prostokąt „Tło – białe, pełna szerokość” (`9004:7886`, x −60,
+    1440 px, rozciągany z blokiem); treść zostaje w kolumnie 1320. Ramka-rodzic
+    „Frame 427319995” ma wyłączone przycinanie. We Framerze zrobić to jako osobną sekcję
+    na pełną szerokość z białym tłem i wewnętrznym kontenerem o szerokości kolumny.
   - We Framerze nic nie zmieniano.
 
 ## Do zrobienia
