@@ -57,6 +57,19 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
   Każde uderzenie bryły daje krótki błysk, który na moment odsłania całą salę.
 - Bryły są jasne (`#F2EFE9`), akcent tylko na przecięciach.
 
+### Jak spadają bryły (od 2026-11-16)
+
+- **Pierwsza bryła** spada w snop światła i ląduje na podłodze. Przy uderzeniu jej **dolna część
+  lekko się odkształca** (rozpłaszcza i rozszerza w dolnych ~35% wysokości, sprężyste drgnięcie,
+  potem zostaje niewielkie trwałe spłaszczenie).
+- **Druga i trzecia** nie dotykają podłogi — spadają na pierwszą i **wbijają się w nią**
+  (zatrzymują się z dolną częścią zagłębioną na 25–45% wysokości). Ich środek jest **lekko
+  przesunięty** względem środka pierwszej (10–25% jej promienia), trzecia wchodzi z przeciwnej
+  strony niż druga. Bryły z rodziny „Kwadrat” wchodzą ukośnie jak ostrze (przechył 20–40°),
+  pozostałe z lekkim przechyłem; nie są dużo większe od pierwszej (max 1,25× jej rozmiaru)
+  i zawsze mieszczą się pod sufitem. Lewitowanie brył usunięte.
+- „Podgląd kształtu” w edytorze: głaz przebity dwiema bryłami kanciastymi (jak na zdjęciach-inspiracjach).
+
 ### Przebieg: 3 bryły → „Nadaj kształt” (od 2026-11-15)
 
 - Zrzucić można **3 bryły** (kontrolka „Liczba brył”, domyślnie 3). Etykieta panelu pokazuje
@@ -76,6 +89,14 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
   pokazują/ukrywają przyciski. **W edytorze widać wszystkie przyciski naraz** (overrides
   działają dopiero w podglądzie), dlatego panel ma zawijanie.
 - „Podgląd kształtu” (kontrolka) pokazuje w edytorze gotowy, scalony obiekt z fakturami.
+
+### Kamera „na linii horyzontu” (zmiana spoza sesji z Claude, zauważona 2026-11-16)
+
+W kodzie `Wnetrze3D.tsx` ktoś zmienił kamerę: jest **nieruchoma, frontalna, z okiem na poziomie
+podłogi** — cała podłoga zlewa się w jedną prostą linię (horyzont), na której stają bryły.
+Wysokość tej linii na ekranie ustawia nowa kontrolka **„Linia”** (`horizon`, domyślnie 0,68).
+Ruch kursorem i dryf kamery w tej wersji nie obracają widoku. Wymiary sali na instancji:
+34 × 89 m, wys. 13,5 m. Kontrolka „Wys. oczu” nie jest już używana. Zmiany zachowane.
 
 ## Struktura (Home `augiA20Il`, `/`)
 
@@ -139,6 +160,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - 2026-11-16 — „Koło” ma bardziej przypominać koło: zawsze geoida z lekkimi wybrzuszeniami
   i wklęsłościami zamiast losowych abstrakcyjnych wariantów.
 - 2026-11-16 — żadnych linii przerywanych w bryłach (krawędzie, faktury, obrys lądowania ciągłe).
+- 2026-11-16 — pierwsza bryła odkształca się dołem przy uderzeniu; druga i trzecia wbijają się
+  w pierwszą (bez kontaktu z podłogą), lekko poza jej środkiem — na prośbę użytkownika.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
