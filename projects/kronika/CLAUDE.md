@@ -238,8 +238,10 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     zdjęcia: etykieta kategorii + „Dodaj do kolekcji” (40×40), tytuł (H4) + autor (Table
     Thin), instytucja z ikoną. Właściwości tekstowe: Tytuł, Autor, Instytucja; zdjęcie
     i kategoria jako nadpisania w instancji. Wiersz: 1320×180, ramka #E5E5E5.
-    „Wycieczka statkiem” ma w wierszu wariant etykiety **Film** — na karcie w widoku kafelków
-    to wciąż wariant „Sztuki wizualne” z ręcznie zmienionym tekstem „FILM” i kolorem.
+    „Wycieczka statkiem” ma wariant etykiety **Film** — także na kartach w „Desktop Large -
+    Cards” i w wynikach wyszukiwania (wcześniej był tam wariant „Sztuki wizualne” z ręcznie
+    zmienionym tekstem „FILM” i kolorem; poprawione, wygląd bez zmian). W kopii zapasowej
+    zostało po staremu.
   - We Framerze nic nie zmieniano.
 
 ## Do zrobienia
