@@ -13,9 +13,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „1. Główna 2.0”, ramka `8867:13877` z 4 makietami Home: 1440 `7373:100781`, Desktop Primary
   1024 `7399:252`, Tablet 810 `7373:101588`, Mobile 390 `7373:102357`.
   Strona „3. Zasoby/Obiekty - TBC”: **„Lista obiektów”** — oficjalna makieta Desktop Large
-  (1440) to ramka „Desktop Large” `8670:4812` (pozostałe 3 breakpointy jeszcze nie powstały);
-  wariant **„Desktop Large – wyniki wyszukiwania”** `8949:9184`; kopia zapasowa sprzed zmian
-  2026-11-16: „Lista obiektów - kopia zapasowa” `8911:31206` (karty odłączone od komponentu).
+  (1440): widok kafelków **„Desktop Large - Cards”** `8670:4812`, obok po prawej widok listy
+  **„Desktop Large - Lista”** `8970:7119` (x 5639), dalej „audyt” i **„Desktop Large – wyniki
+  wyszukiwania”** `8949:9184` (pozostałe 3 breakpointy jeszcze nie powstały); kopia zapasowa
+  sprzed zmian 2026-11-16: „Lista obiektów - kopia zapasowa” `8911:31206` (karty odłączone
+  od komponentu).
 - **Ikony w Figmie:** wszystkie ikony w przyciskach bierz **wyłącznie** z kolekcji na stronie
   „- ICONS LUCIDE” (`31:782`, ramka „Lucide Icons” `39:784`, nazwy `lucide/<nazwa>`) —
   polecenie użytkownika, 2026-11-16.
@@ -228,6 +230,16 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     12/600 i wartości 15/500), licznik wyników (15/450), sortowanie oraz teksty kart.
     Przełącznik i karta mają już style; filtry/licznik/sortowanie — do decyzji (etykiety
     filtrów 12/600 nie mają odpowiednika w stylach).
+  - **Widok „Lista”** (prośba użytkownika): makieta „Desktop Large - Lista” `8970:7119` —
+    kopia widoku kafelków z przełącznikiem widoku na „Lista” i 10 obiektami jeden pod drugim
+    (lista pionowa, odstęp 12, pełna szerokość kolumny 1320). Nowy komponent **„Object row”**
+    `8970:7103` (stoi nad makietą, y −30000): po lewej zdjęcie 270×180 (3:2 — te same
+    proporcje i kadr co na karcie), po prawej treść z paddingiem 20/24 rozłożona na wysokość
+    zdjęcia: etykieta kategorii + „Dodaj do kolekcji” (40×40), tytuł (H4) + autor (Table
+    Thin), instytucja z ikoną. Właściwości tekstowe: Tytuł, Autor, Instytucja; zdjęcie
+    i kategoria jako nadpisania w instancji. Wiersz: 1320×180, ramka #E5E5E5.
+    „Wycieczka statkiem” ma w wierszu wariant etykiety **Film** — na karcie w widoku kafelków
+    to wciąż wariant „Sztuki wizualne” z ręcznie zmienionym tekstem „FILM” i kolorem.
   - We Framerze nic nie zmieniano.
 
 ## Do zrobienia
