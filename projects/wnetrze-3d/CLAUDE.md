@@ -65,11 +65,13 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
   lekko się odkształca** (rozpłaszcza i rozszerza w dolnych ~35% wysokości, sprężyste drgnięcie,
   potem zostaje niewielkie trwałe spłaszczenie).
 - **Druga i trzecia** nie dotykają podłogi — spadają na pierwszą i **wbijają się w nią**
-  (zatrzymują się z dolną częścią zagłębioną na 25–45% wysokości). Ich środek jest **lekko
-  przesunięty** względem środka pierwszej (10–25% jej promienia), trzecia wchodzi z przeciwnej
-  strony niż druga. Bryły z rodziny „Kwadrat” wchodzą ukośnie jak ostrze (przechył 20–40°),
+  (zatrzymują się z dolną częścią zagłębioną na 25–45% wysokości, licząc od powierzchni pierwszej
+  bryły dokładnie pod miejscem upadku). **Druga** spada losowo w **lewą albo prawą połowę** pierwszej
+  (patrząc od widza; przesunięcie 30–60% jej promienia, nawet gdy obiekt jest już obrócony),
+  **trzecia** — w **przeciwną połowę** niż druga (zmiana 2026-11-16, zamiast „lekko obok środka”).
+  Bryły z rodziny „Kwadrat” wchodzą ukośnie jak ostrze (przechył 20–40°),
   pozostałe z lekkim przechyłem; nie są dużo większe od pierwszej (max 1,25× jej rozmiaru)
-  i zawsze mieszczą się pod sufitem. Lewitowanie brył usunięte.
+  i zawsze mieszczą się pod sufitem.
 - „Podgląd kształtu” w edytorze: głaz przebity dwiema bryłami kanciastymi (jak na zdjęciach-inspiracjach).
 
 ### Przebieg: 3 bryły → „Nadaj kształt” (od 2026-11-15)
@@ -185,6 +187,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   (nagranie użytkownika pokazało przechył i odrywanie się od ziemi).
 - 2026-11-16 — kształty mają przypominać nazwy (Kwadrat = sześcian, Głaz = kamień, Koło = geoida);
   linia ziemi niżej; obiekt powoli się obraca, reaguje na kursor, obrót przeciąganiem.
+- 2026-11-16 — druga bryła w losową połowę (lewą/prawą) pierwszej, trzecia w przeciwną — żeby nie
+  spadały jedna nad drugą w tym samym miejscu.
 - 2026-11-16 — układ: tekst w lewej połowie, scena 3D w prawej (wg screena-inspiracji); na telefonie tekst nad sceną.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
