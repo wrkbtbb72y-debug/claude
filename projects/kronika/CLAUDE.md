@@ -102,6 +102,14 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   mają szerokość „Fill” (429 px), obrazki 429×241 (proporcja 1,78 jak we Framerze), karta
   429×358.
 
+- 2026-11-16 — **Figma, „Ilustracja 07b” (`8911:27037`) → „Kompozycja” (`8911:27061`):** tablet
+  z efektem 3D (ramka „Tablet – perspektywa” `8911:27095`: perspektywa 500 na ramce + obrót 3D
+  tabletu) spłaszczony na prośbę użytkownika — wyrenderowany 4× do PNG i wstawiony jako zwykła
+  warstwa obrazu „Tablet (spłaszczony)” (`8915:4621`, 527,75×407,75 px, z cieniem), w tym samym
+  miejscu i wyglądzie, bez żadnego efektu 3D. Oryginał 3D zostawiony **ukryty** jako kopia
+  zapasowa („… (oryginał 3D, ukryty)”) — można go usunąć. Uwaga: podgląd z serwera Figmy
+  (get_screenshot) renderuje 3D inaczej niż edytor; do porównań używać renderu w edytorze.
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
