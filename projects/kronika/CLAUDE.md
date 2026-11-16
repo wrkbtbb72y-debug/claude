@@ -178,10 +178,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     makiety, x 3689 / y −28300), warianty **Aktywny=Obiekty** `8967:7099` / **Aktywny=Kolekcje**
     `8967:7100`, właściwości tekstowe „Obiekty” i „Kolekcje”. Obie opcje mają **jednakową
     szerokość podkreślenia** — równą dłuższej etykiecie (61 px dla „Obiekty” / „Kolekcje”
-    w pogrubieniu): komponent ma stałą szerokość 142 px, opcje „Fill” (dzielą po równo,
-    odstęp 20), tekst wyśrodkowany. Przy dłuższych etykietach poszerza się całą instancję:
-    2 × szersza etykieta + 20. Instancje: lista `8967:7107` (142 px), wyniki wyszukiwania
-    `8967:7113` (224 px, „Obiekty (1 248)” / „Kolekcje (3)”). Stare ramki usunięte.
+    w pogrubieniu) + **padding 4 px po bokach** (prośba użytkownika), czyli 69 px:
+    komponent ma stałą szerokość 158 px, opcje „Fill” (dzielą po równo, odstęp 20), tekst
+    wyśrodkowany. Przy dłuższych etykietach poszerza się całą instancję:
+    2 × (szersza etykieta + 8) + 20. Instancje: lista `8967:7107` (158 px), wyniki
+    wyszukiwania `8967:7113` (240 px, opcje po 110 px, „Obiekty (1 248)” / „Kolekcje (3)”).
+    Stare ramki usunięte.
   - **Karta „Object tile”** (komponent `8669:3701`): marginesy 16 px ze wszystkich stron
     (ikona „Dodaj do kolekcji” 20 px dosunięta do prawej krawędzi przycisku 32 px, więc
     wizualnie też 16 px), rytm pionowy: zdjęcie –16– kategoria –16– tytuł –4– autor –24–
