@@ -104,11 +104,16 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 
 - 2026-11-16 — **Figma, „Ilustracja 07b” (`8911:27037`) → „Kompozycja” (`8911:27061`):** tablet
   z efektem 3D (ramka „Tablet – perspektywa” `8911:27095`: perspektywa 500 na ramce + obrót 3D
-  tabletu) spłaszczony na prośbę użytkownika — wyrenderowany 4× do PNG i wstawiony jako zwykła
-  warstwa obrazu „Tablet (spłaszczony)” (`8915:4621`, 527,75×407,75 px, z cieniem), w tym samym
-  miejscu i wyglądzie, bez żadnego efektu 3D. Oryginał 3D zostawiony **ukryty** jako kopia
-  zapasowa („… (oryginał 3D, ukryty)”) — można go usunąć. Uwaga: podgląd z serwera Figmy
-  (get_screenshot) renderuje 3D inaczej niż edytor; do porównań używać renderu w edytorze.
+  tabletu) spłaszczony na prośbę użytkownika — zwykła warstwa obrazu „Tablet (spłaszczony)”
+  (`8915:4621`, PNG 4×, 270,5×340 px, x 87,5 / y 5,25 w „Kompozycja”, z cieniem), wygląd 1:1
+  z wersją 3D, bez żadnego efektu. Oryginał 3D zostawiony **ukryty** jako kopia zapasowa
+  („… (oryginał 3D, ukryty)”) — można go usunąć.
+  **Lekcja (jak spłaszczać 3D):** `exportAsync`/`screenshot` we wtyczce (use_figma) renderują
+  perspektywę **źle** (pierwsza próba wyglądała inaczej — użytkownik to wychwycił). Prawidłowy
+  render daje `get_screenshot` (serwer). Przepis: kopia ramki powiększona `rescale(4)` (+ perspektywa,
+  translateZ i transformOrigin w px ×4) w tymczasowej ramce z clipem → `get_screenshot` na czarnym
+  i białym tle → alfa = 1 − (biały − czarny)/255 → przycięcie → `upload_assets` (wymaga hosta
+  `mcp.figma.com`, dodanego do środowiska 2026-11-16).
 
 ## Do zrobienia
 
