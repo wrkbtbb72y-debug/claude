@@ -202,7 +202,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     wyśrodkowany. Przy dłuższych etykietach poszerza się całą instancję:
     2 × (szersza etykieta + 8) + 20. Instancje: lista `8967:7107` (158 px), wyniki
     wyszukiwania `8967:7113` (240 px, opcje po 110 px, „Obiekty (1 248)” / „Kolekcje (3)”).
-    Stare ramki usunięte.
+    Stare ramki usunięte. **Kreski (zmiana użytkownika):** gruba kreska aktywnej opcji
+    (3 px) **stoi na** szarej linii bazowej (1 px) — komponent ma 33 px wysokości, opcje 32 px
+    (wyrównane do góry), linia bazowa na samym dole (y 32), ciągła pod obiema opcjami.
   - **Karta „Object tile”** (komponent `8669:3701`): marginesy 16 px ze wszystkich stron
     (ikona „Dodaj do kolekcji” 20 px dosunięta do prawej krawędzi przycisku 32 px, więc
     wizualnie też 16 px), rytm pionowy: zdjęcie –16– kategoria –16– tytuł –4– autor –24–
