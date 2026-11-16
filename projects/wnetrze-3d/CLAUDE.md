@@ -63,6 +63,9 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
 
 ### Jak spadają bryły (od 2026-11-16)
 
+- **Wysokość zrzutu** (2026-11-16): dolna krawędź bryły startuje z **1/3** wysokości sali (pierwsza),
+  **2/3** (druga) i **3/3** (trzecia; zawsze pod sufitem). Ogólnie: (numer bryły / „Liczba brył”) × wysokość.
+  Druga i trzecia zawsze spadają co najmniej ~1 m, zanim wbiją się w pierwszą.
 - **Pierwsza bryła** spada w snop światła i ląduje na podłodze. Przy uderzeniu jej **dolna część
   lekko się odkształca** (rozpłaszcza i rozszerza w dolnych ~35% wysokości, sprężyste drgnięcie,
   potem zostaje niewielkie trwałe spłaszczenie).
@@ -189,6 +192,7 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   (nagranie użytkownika pokazało przechył i odrywanie się od ziemi).
 - 2026-11-16 — kształty mają przypominać nazwy (Kwadrat = sześcian, Głaz = kamień, Koło = geoida);
   linia ziemi niżej; obiekt powoli się obraca, reaguje na kursor, obrót przeciąganiem.
+- 2026-11-16 — zrzut z 1/3, 2/3 i 3/3 wysokości dla kolejnych brył.
 - 2026-11-16 — tylne linie brył ciemniejsze i mniej widoczne (przygaszanie wg głębokości).
 - 2026-11-16 — druga bryła w losową połowę (lewą/prawą) pierwszej, trzecia w przeciwną — żeby nie
   spadały jedna nad drugą w tym samym miejscu.
