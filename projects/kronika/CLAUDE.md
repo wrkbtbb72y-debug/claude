@@ -293,14 +293,17 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     Uwaga: odstęp w grupie nad listą to 100 px (zmiana użytkownika) — działa też nad
     i pod blokiem podpowiedzi.
     **Białe tło na całą szerokość** (prośba użytkownika): blok stoi pod przełącznikiem
-    Obiekty / Kolekcje, ma padding 40 góra/dół, pod treścią absolutny prostokąt „Tło – białe,
-    pełna szerokość” (`9008:7886`, x −60, 1440 px, rozciągany z blokiem); treść zostaje
-    w kolumnie 1320. Ramka-rodzic `8949:9452` ma wyłączone przycinanie. We Framerze zrobić
+    Obiekty / Kolekcje; treść w kolumnie 1320, białe tło jak niżej. Ramka-rodzic `8949:9452` ma wyłączone przycinanie. We Framerze zrobić
     to jako osobną sekcję na pełną szerokość z białym tłem i kontenerem o szerokości kolumny.
     (Próba z podpowiedziami bezpośrednio pod hero i przełącznikiem pod nimi — cofnięta na
-    prośbę użytkownika.) Odstęp przełącznik → biały pas podpowiedzi: **24 px** — oba elementy
-    w ramce „Przełącznik + podpowiedzi” (`9009:7886`, gap 24); od niej do tytułu
-    „Wyniki wyszukiwania” zostaje 100 px (gap grupy).
+    prośbę użytkownika.) Przełącznik i podpowiedzi są w ramce „Przełącznik + podpowiedzi”
+    (`9009:7886`, gap 24); od niej do tytułu „Wyniki wyszukiwania” zostaje 100 px.
+    **Białe tło od krawędzi hero** (próba, prośba użytkownika): absolutny prostokąt
+    „Tło – białe, pełna szerokość” (`9010:7888`) w tej ramce — od dolnej krawędzi hero
+    (sięga w górny padding sekcji, 24 px) do końca podpowiedzi, 1440 px; obejmuje przełącznik.
+    Między przełącznikiem a „Czy chodziło Ci o?” **szara kreska 1 px #E5E5E5 na całą szerokość**
+    („Linia – pełna szerokość”, `9010:7887`): 24 px pod przełącznikiem, 40 px nad
+    podpowiedziami; pod podpowiedziami 40 px do końca białego pasa (padding bloku 16/40).
   - We Framerze nic nie zmieniano.
 
 ## Do zrobienia
