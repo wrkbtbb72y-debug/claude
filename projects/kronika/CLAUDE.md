@@ -146,6 +146,14 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   prośba użytkownika). Padding `Content`: góra 24 px, dół 0 na wszystkich breakpointach (wcześniej
   Desktop Large 20/36, pozostałe 16/0; prawy 16 i lewy 0 bez zmian). We Framerze nie zmieniano.
 
+- 2026-11-16 — **Figma, makiety Home (sekcja „Otwarte zasoby nauki i kultury”):** wyeksportowany
+  obrazek (prostokąt z JPG) zastąpiony na wszystkich 4 makietach **instancją komponentu
+  „Ilustracja 07b”** (`8911:29497`, 630×360, strona „1. Główna 2.0”), przeskalowaną proporcjonalnie
+  do szerokości dawnego obrazka: Desktop Large 652 px (`8937:4629`), Desktop Small 468
+  (`8937:4689`), Tablet 361 (`8937:4749`), Mobile 358 (`8937:4809`). Wysokości wynikają z proporcji
+  komponentu (372,6 / 267,4 / 206,3 / 204,6 — o ułamek px mniej niż stare obrazki). Zmiany
+  w komponencie przenoszą się teraz automatycznie na wszystkie makiety.
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
