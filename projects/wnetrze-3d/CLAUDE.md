@@ -118,7 +118,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - **Ekran** `N06uDCvcg` — stack pionowy, `100vh` (min 520px), pełna szerokość (celowo bez maxWidth).
   - **Nawigacja** `GTrNEG7XB` — 64px (Phone 56px): znak „Kubatura” + wskazówka
     „Poruszaj kursorem, aby się rozejrzeć” `pvlTW1vEa` (ukryta na Tablet/Phone).
-  - **Wnętrze 3D** `Hohropvqf` — komponent kodowy `Wnetrze3D.tsx`, wysokość `1fr`.
+  - **Treść** `Mtv7dJz2Z` (od 2026-11-16) — wiersz poziomy, wysokość `1fr`; Phone: pionowo (tekst nad sceną).
+    - **Opis** `au8f8iUvr` — lewa połowa: nagłówek `hXCwV4zV6` „Puste wnętrze, w\u00A0którym trzy
+      bryły stają się jedną formą” (preset „Nagłówek”, max 540 px), linia akcentu `WN9Igq2Zz`
+      (240 px / Phone 120 px), podpis `F7tItlgMP` „Kubatura — nadaj kształt” (preset „Podpis akcent”).
+      Tekst wzorowany na screenie użytkownika (długość/wielkość), treść robocza — do akceptacji.
+    - **Wnętrze 3D** `Hohropvqf` — prawa połowa (`1fr`), komponent kodowy `Wnetrze3D.tsx`.
   - **Panel sterowania** `xHih95kf6` — „Dodaj bryłę” `A8IrKWoZJ` (ukryte na Phone) + przyciski
     `vmmVh1mwZ` (override `withPrzyciskiBryl`): Koło `O9pkhZJRu`, Kwadrat `gcLtVqWZ1`, Głaz `kPExmBcjU`;
     „Nadaj kształt” `ZqJgdZL2N` (`withNadajKsztalt`), „Od nowa” `C6hHtDu5I` (`withOdNowa`).
@@ -144,7 +149,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 ## Design system
 
 - Kolory (folder Assets → Kolory): Tło, Powierzchnia `#15181C`, Obrys, Tekst, Tekst drugorzędny, Akcent.
-- Tekst (PP Neue Montreal): Znak (17/600), Etykieta (14/400), Podpis (13/400, kolor drugorzędny).
+- Tekst (PP Neue Montreal): Znak (17/600), Etykieta (14/400), Podpis (13/400, kolor drugorzędny),
+  Nagłówek (h1, 300; 64/42/32 px dla Desktop/Tablet/Phone, interlinia 1,05), Podpis akcent (15/400, Akcent).
 - Komponent **Przycisk akcji** `HAR1CjvV6`: warianty Główny (jasny) / Drugorzędny + hover i pressed,
   zmienna „Etykieta”. Preset tekstu „Etykieta akcji” (14/600, kolor Tło).
 - Komponent **Przycisk bryły** `IhvcEuszi`: warianty Koło / Kwadrat / Głaz (różnią się ikoną SVG
@@ -179,9 +185,14 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   (nagranie użytkownika pokazało przechył i odrywanie się od ziemi).
 - 2026-11-16 — kształty mają przypominać nazwy (Kwadrat = sześcian, Głaz = kamień, Koło = geoida);
   linia ziemi niżej; obiekt powoli się obraca, reaguje na kursor, obrót przeciąganiem.
+- 2026-11-16 — układ: tekst w lewej połowie, scena 3D w prawej (wg screena-inspiracji); na telefonie tekst nad sceną.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
+
+- [ ] Zaakceptować/zmienić tekst nagłówka i podpisu po lewej (robocze).
+- [ ] Wskazówka w nawigacji „Poruszaj kursorem, aby się rozejrzeć” jest nieaktualna (kamera stoi,
+      obiekt obraca się przeciąganiem) — zaproponować np. „Przeciągnij, aby obrócić”.
 
 - [ ] Potwierdzić, czy zostaje przycisk „Od nowa” (dodany z własnej inicjatywy).
 - [ ] Inspiracje od użytkownika (2026-11-15) jeszcze niewykorzystane w pełni: wklęsła czerwona
