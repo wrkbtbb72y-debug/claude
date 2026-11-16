@@ -19,11 +19,22 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   sprzed zmian 2026-11-16: „Lista obiektów - kopia zapasowa” `8911:31206` (karty odłączone
   od komponentu). **Nowe komponenty** tych makiet (wzorce) leżą w opisanej ramce
   **„Lista obiektów – nowe komponenty”** `8983:7846` na prawo od makiety wyników
-  (x 10777): Przełącznik Obiekty / Kolekcje, Przełącznik widoku, Przycisk Dodaj do kolekcji,
-  Object row — każdy z nagłówkiem i opisem; na dole notka o zmienionych „Object tile”
+  (x 10777): Przełącznik Obiekty / Kolekcje, Przełącznik widoku, Przycisk Dodaj do kolekcji
+  (te trzy jako **kopie** — wzorce przeniesione na stronę BUTTONS do tabeli „Nowe przyciski”,
+  sekcja „Strona: Zasoby · Lista obiektów”), Object row (wzorzec) — każdy z nagłówkiem
+  i opisem; na dole notka o zmienionych „Object tile”
   i „Category label” (te zostały na swoich miejscach). Wcześniej podane pozycje x/y tych
   komponentów są nieaktualne. Stara wersja przełącznika widoku („– kwadraty (poprzednia
   wersja)” `8951:7085`) nie jest używana i została obok makiety kart.
+- **Przyciski w Figmie — zasada (użytkownik, 2026-11-16):** strona „BUTTONS” to oficjalny
+  zbiór wszystkich przycisków serwisu. **Każdy nowy przycisk** powstały podczas pracy: jego
+  **komponent główny (wzorzec)** umieść w tabeli **„Nowe przyciski”** (`8988:324`, w ramce
+  „Buttons Kronika” `8578:129844`, na prawo od tabeli „Przyciski – przegląd” `8347:118328`),
+  w sekcji strony, na której się pojawia (wiersz: opis po lewej, wzorzec w „Podglądzie”).
+  Na makietach na innych stronach używaj **wyłącznie kopii (instancji)** tych komponentów.
+  Styl tabeli = kopia wierszy z „Przyciski – przegląd” (nagłówek „KRONIK@ · …” #9A1C31,
+  tytuł 40 px, tło #EFEFEF, wiersz kolumn #F7F8FA, wiersz sekcji 20/500, opis 14/500
+  + notka 12/450 #646A74). Nowe wiersze dodawaj, klonując istniejący wiersz tej tabeli.
 - **Ikony w Figmie:** wszystkie ikony w przyciskach bierz **wyłącznie** z kolekcji na stronie
   „- ICONS LUCIDE” (`31:782`, ramka „Lucide Icons” `39:784`, nazwy `lucide/<nazwa>`) —
   polecenie użytkownika, 2026-11-16.
