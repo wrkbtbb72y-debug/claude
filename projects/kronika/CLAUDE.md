@@ -184,6 +184,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     pole 32 → 40×40 px, ikona lucide/folder-plus 20 → 24 px (natywny rozmiar Lucide, obrys
     1,5 px bez zmian), dosunięta do prawej krawędzi przycisku — dalej 16 px od krawędzi karty.
     Wiersz z kategorią ma teraz 40 px, karta 397 → 405 px.
+  - **Etykieta kategorii „Tekst”:** komponent „Category label” (`8675:4398`), wariant
+    Kategoria=Tekst (`8675:4388`) — tło zmienione #F4EDDA → **#D6DADF** (polecenie
+    użytkownika; wariant nie był wcześniej nigdzie użyty). Karta „Maria Skłodowskiej-Curie”
+    na obu makietach ma teraz kategorię „Tekst” (wcześniej „Sztuki wizualne”).
+    Kolory pozostałych kategorii: Muzealia #EAE4DD, Muzyka #DFEBE2, Sztuki wizualne #F8F6EF,
+    Film #D4E4ED.
   - **Przełącznik widoku** — nowy komponent „Przełącznik widoku” (`8949:6740`, warianty
     Widok=Kafelki `8949:6726` / Widok=Lista `8949:6733`): dwa kwadratowe przyciski 48×48
     (wysokość jak sortowanie), ikony lucide/layout-grid i lucide/layout-list, aktywny tło
