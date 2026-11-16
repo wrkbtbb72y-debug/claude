@@ -12,6 +12,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 - **Figma (makiety):** https://www.figma.com/design/XvZvAuEpnnShbbxSqZoseo/KRONIKA — strona
   „1. Główna 2.0”, ramka `8867:13877` z 4 makietami Home: 1440 `7373:100781`, Desktop Primary
   1024 `7399:252`, Tablet 810 `7373:101588`, Mobile 390 `7373:102357`.
+  Strona „3. Zasoby/Obiekty - TBC”: **„Lista obiektów”** — oficjalna makieta Desktop Large
+  (1440) to ramka „Desktop Large” `8670:4812` (pozostałe 3 breakpointy jeszcze nie powstały);
+  wariant **„Desktop Large – wyniki wyszukiwania”** `8949:9184`; kopia zapasowa sprzed zmian
+  2026-11-16: „Lista obiektów - kopia zapasowa” `8911:31206` (karty odłączone od komponentu).
+- **Ikony w Figmie:** wszystkie ikony w przyciskach bierz **wyłącznie** z kolekcji na stronie
+  „- ICONS LUCIDE” (`31:782`, ramka „Lucide Icons” `39:784`, nazwy `lucide/<nazwa>`) —
+  polecenie użytkownika, 2026-11-16.
 - **Produkcja / domena:** _TODO_
 - **Materiały od klienta:** _TODO (np. link do Google Drive)_
 - **Język treści na stronie:** _TODO (PL / EN / oba)_
@@ -154,6 +161,35 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   komponentu (372,6 / 267,4 / 206,3 / 204,6 — o ułamek px mniej niż stare obrazki). Zmiany
   w komponencie przenoszą się teraz automatycznie na wszystkie makiety.
 
+- 2026-11-16 — **Figma, „Lista obiektów” (Desktop Large `8670:4812`):**
+  - **Przełącznik Obiekty / Kolekcje** (`8701:4842`) przeniesiony z hero na górę sekcji listy,
+    tuż pod hero (padding sekcji u góry 120 → 24 px; 40 px do tytułu „Lista obiektów”).
+    Kolory pod jasne tło: aktywny #121212 + kreska 3 px, nieaktywny #6C6C6C; style tekstu
+    Button Active / Button Thin. Hero zostaje 380 px — tytuł „Przeglądaj obiekty”
+    z wyszukiwarką wyśrodkowany w pionie między okruszkami a dolną krawędzią hero (prośba
+    użytkownika). Sekcja listy ma teraz wysokość „Hug” (wcześniej stała 1777 px).
+  - **Karta „Object tile”** (komponent `8669:3701`): marginesy 16 px ze wszystkich stron
+    (ikona „Dodaj do kolekcji” 20 px dosunięta do prawej krawędzi przycisku 32 px, więc
+    wizualnie też 16 px), rytm pionowy: zdjęcie –16– kategoria –16– tytuł –4– autor –24–
+    kreska –16– muzeum –16– dół karty. Style tekstu: tytuł → H4 - Nagłówki (Duży desktop,
+    20/500, wcześniej 18/500 bez stylu), autor i muzeum → Table Thin (14/400). Karta urosła
+    383 → 397 px. Zmiana w komponencie — dotyczy też ramki „Obiekty - propozycja”;
+    kopia zapasowa zamrożona (instancje odłączone).
+  - **Przełącznik widoku** — nowy komponent „Przełącznik widoku” (`8949:6740`, warianty
+    Widok=Kafelki `8949:6726` / Widok=Lista `8949:6733`): dwa kwadratowe przyciski 48×48
+    (wysokość jak sortowanie), ikony lucide/layout-grid i lucide/layout-list, aktywny tło
+    #F1F1F1 + ikona #121212, nieaktywny białe + #6C6C6C, ramka #E5E5E5. Instancja na prawo
+    od sortowania (`8949:6741`).
+  - **Wyniki wyszukiwania** — propozycja w osobnej ramce `8949:9184`: fraza w wyszukiwarce,
+    zakładki z liczbami („Obiekty (1 248)”, „Kolekcje (3)”), tytuł sekcji „Wyniki
+    wyszukiwania”, licznik „Znaleziono 1 248 obiektów dla „…””, sortowanie „Trafność”,
+    paginacja „z 63”. Czeka na akceptację.
+  - Audyt stylów tekstu na makiecie: bez stylu były m.in. przełącznik, filtry (etykiety
+    12/600 i wartości 15/500), licznik wyników (15/450), sortowanie oraz teksty kart.
+    Przełącznik i karta mają już style; filtry/licznik/sortowanie — do decyzji (etykiety
+    filtrów 12/600 nie mają odpowiednika w stylach).
+  - We Framerze nic nie zmieniano.
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
@@ -161,3 +197,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 - [ ] Zdecydować, czy na tablecie tytuł sekcji i opis mają mieć te same rozmiary fontu co na
       Desktop Primary (28/20 px zamiast 26/18 px — wymaga zmiany presetów, wpływa na całą stronę).
 - [ ] Uzupełnić brief (pola TODO powyżej).
+- [ ] „Lista obiektów”: ustalić kolejność filtrów (obecnie Kategoria, Instytucja, Data
+      publikacji, Autor, Więcej).
+- [ ] „Lista obiektów”: akceptacja makiety Desktop Large i wariantu wyników wyszukiwania;
+      potem przycisk „×” do czyszczenia frazy w wyszukiwarce (komponent „Toolbar”).
+- [ ] „Lista obiektów”: style tekstu dla filtrów, licznika i sortowania (etykiety 12/600 —
+      nowy styl czy Uppercase S 13/450?).
+- [ ] „Lista obiektów”: **po akceptacji makiety w Figmie** przenieść projekt strony do Framera
+      (nie wcześniej — wymóg użytkownika). Potem pozostałe 3 breakpointy.
