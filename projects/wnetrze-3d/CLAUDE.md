@@ -92,15 +92,15 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
   działają dopiero w podglądzie), dlatego panel ma zawijanie.
 - „Podgląd kształtu” (kontrolka) pokazuje w edytorze gotowy, scalony obiekt z fakturami.
 
-### Obracanie obiektu (od 2026-11-16)
+### Obracanie obiektu (od 2026-11-16, poprawka po nagraniu użytkownika)
 
-- Cały obiekt (wszystkie bryły razem, oś pionowa przez pierwszą bryłę) **bardzo powoli się obraca**
-  (~0,06 rad/s, od chwili wylądowania pierwszej bryły) i **lekko reaguje na ruch myszki**
-  (pochyla się/skręca odrobinę w stronę kursora).
-- **Przeciągnięcie lewym przyciskiem myszy** (lub palcem) obraca obiekt w dowolnym kierunku
-  (poziomo — obrót, pionowo — przechył do ±40°), z bezwładnością po puszczeniu. Przechylony obiekt
-  jest podnoszony tak, by jego najniższy punkt leżał na linii ziemi. Kursor nad sceną: „grab”.
-- Bryły nadal nie obracają się osobno wokół własnych osi. „Od nowa” zeruje obrót.
+- Cały obiekt (wszystkie bryły razem) obraca się **wyłącznie wokół własnej osi pionowej**
+  (przez pierwszą bryłę) i **stoi na ziemi** — bez przechyłu, unoszenia i opadania.
+- Sam z siebie obraca się **bardzo wolno** (~0,02 rad/s ≈ pełny obrót w 5 min, od wylądowania
+  pierwszej bryły); ruch kursora skręca go tylko odrobinę (±0,05 rad).
+- **Przeciągnięcie lewym przyciskiem myszy** (lub palcem) w poziomie obraca obiekt (spokojnie:
+  0,0035 rad na piksel), z łagodnie wygasającą bezwładnością; ruch pionowy nic nie robi.
+  Kursor nad sceną: „grab”. Bryły nie obracają się osobno. „Od nowa” zeruje obrót.
 
 ### Kamera „na linii horyzontu” (zmiana spoza sesji z Claude, zauważona 2026-11-16)
 
@@ -175,6 +175,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - 2026-11-16 — żadnych linii przerywanych w bryłach (krawędzie, faktury, obrys lądowania ciągłe).
 - 2026-11-16 — pierwsza bryła odkształca się dołem przy uderzeniu; druga i trzecia wbijają się
   w pierwszą (bez kontaktu z podłogą), lekko poza jej środkiem — na prośbę użytkownika.
+- 2026-11-16 — obrót tylko wokół osi pionowej, obiekt przytwierdzony do ziemi, dużo wolniej
+  (nagranie użytkownika pokazało przechył i odrywanie się od ziemi).
 - 2026-11-16 — kształty mają przypominać nazwy (Kwadrat = sześcian, Głaz = kamień, Koło = geoida);
   linia ziemi niżej; obiekt powoli się obraca, reaguje na kursor, obrót przeciąganiem.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
