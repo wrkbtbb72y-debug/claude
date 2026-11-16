@@ -38,8 +38,9 @@ czegoś „całkowicie innego”, zaburzone proporcje, nieludzka skala; światł
 kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się przecinać i zniekształcać.
 
 - **Przyciski wybierają rodzinę**, kształt w niej jest losowy:
-  - Koło: spłaszczony dysk, igła, nieregularna elipsoida, pierścień (torus, często pionowy jak brama),
-    kula pocięta na rozjeżdżające się plastry;
+  - Koło: **geoida** (zmiana 2026-11-16) — wyraźnie kula, ale z miękkimi wybrzuszeniami
+    i wklęsłościami (±6–17% promienia), lekko spłaszczona lub wydłużona, promień 2,6–6 m;
+    wcześniejsze warianty (dysk, igła, torus, plastry) usunięte na prośbę użytkownika;
   - Kwadrat: cienki monolit (do ~85% wysokości sali), długa przechylona belka, skręcony graniastosłup,
     tesserakt (sześcian w sześcianie), rozpadający się sześcian (krawędzie odsunięte od siebie);
   - Głaz: zdeformowany głaz, odłamki zawieszone w powietrzu, kryształ z wyrwanymi wierzchołkami.
@@ -133,6 +134,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - 2026-11-15 — limit 3 brył i przycisk „Nadaj kształt” scalający je w jeden obiekt z fakturami
   (zacieki rdzy / granit / warstwice wg zdjęć-inspiracji); dodany „Od nowa”; usunięta „klatka”
   snopa światła, zostały promienie — na prośbę użytkownika.
+- 2026-11-16 — „Koło” ma bardziej przypominać koło: zawsze geoida z lekkimi wybrzuszeniami
+  i wklęsłościami zamiast losowych abstrakcyjnych wariantów.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
