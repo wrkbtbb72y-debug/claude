@@ -119,6 +119,16 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   było ucięte). Istniejące instancje (np. w „Section heading”) zostały podpięte i dalej
   pokazują stan domyślny.
 
+- 2026-11-16 — **Figma, sekcja „Polecane” na 4 makietach Home** (`7373:101080` / `7399:581` /
+  `7373:101889` / `7373:102651`): warstwy uporządkowane i ujednolicone, wygląd i wymiary bez
+  zmian. Wszędzie ta sama struktura, całość na auto‑layoucie:
+  `Recommended` → `Section heading` (Fill) + `Cards` → `Card N` (Fill) → `Image` (prostokąt
+  ze zdjęciem, Fill × stała wysokość) + `Content` → `Title` + `Meta` → `Author`, `Separator`
+  (`Dot`), `Year`. Usunięte zbędne ramki‑pośredniki (ramka wokół zdjęcia, dwie puste ramki
+  wokół tekstów — 27 warstw) i ukryta 4. karta na Desktop Large (`7658:1935`). Nazwy proste,
+  po angielsku jak reszta pliku, bez kresek, slashy i podkreśleń. Różnice między breakpointami
+  zostały tylko w wartościach (odstępy, paddingi, wysokość zdjęcia, liczba kart: 3 / 3 / 2 / 1).
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
