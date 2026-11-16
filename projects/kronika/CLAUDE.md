@@ -233,11 +233,14 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   - **Widok „Lista”** (prośba użytkownika): makieta „Desktop Large - Lista” `8970:7119` —
     kopia widoku kafelków z przełącznikiem widoku na „Lista” i 10 obiektami jeden pod drugim
     (lista pionowa, odstęp 12, pełna szerokość kolumny 1320). Nowy komponent **„Object row”**
-    `8970:7103` (stoi nad makietą, y −30000): po lewej zdjęcie 270×180 (3:2 — te same
-    proporcje i kadr co na karcie), po prawej treść z paddingiem 20/24 rozłożona na wysokość
-    zdjęcia: etykieta kategorii + „Dodaj do kolekcji” (40×40), tytuł (H4) + autor (Table
-    Thin), instytucja z ikoną. Właściwości tekstowe: Tytuł, Autor, Instytucja; zdjęcie
-    i kategoria jako nadpisania w instancji. Wiersz: 1320×180, ramka #E5E5E5.
+    `8970:7103` (stoi nad makietą, y ≈ −30165): po lewej zdjęcie **523,2×348,8** — szerokość
+    dwóch boksów filtrów nad listą (2 × 257,6 + odstęp 8; prośba użytkownika), proporcje 3:2
+    i kadr jak na karcie; prawa krawędź zdjęcia równo z prawą krawędzią boksu „Instytucja”.
+    Po prawej treść z paddingiem 24 (góra/dół) i 24 (boki): u góry grupa „Top” (etykieta
+    kategorii + „Dodaj do kolekcji” 40×40, pod nią tytuł H4 + autor Table Thin, odstęp 16),
+    na dole instytucja z ikoną. Właściwości tekstowe: Tytuł, Autor, Instytucja; zdjęcie
+    i kategoria jako nadpisania w instancji. Wiersz: 1320 × ~349 (Hug), ramka #E5E5E5.
+    Makieta listy ma przez to ~5520 px wysokości.
     „Wycieczka statkiem” ma wariant etykiety **Film** — także na kartach w „Desktop Large -
     Cards” i w wynikach wyszukiwania (wcześniej był tam wariant „Sztuki wizualne” z ręcznie
     zmienionym tekstem „FILM” i kolorem; poprawione, wygląd bez zmian). W kopii zapasowej
