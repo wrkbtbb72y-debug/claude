@@ -46,8 +46,9 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
   - Głaz: zdeformowany głaz, odłamki zawieszone w powietrzu, kryształ z wyrwanymi wierzchołkami.
 - Skala od ludzkiej do nieludzkiej (część brył sięga prawie sufitu). Ok. 18% brył zatrzymuje się
   w powietrzu i lewituje.
-- **Dematerializacja:** krawędzie „oddychają” przerwami (górne części bardziej), drżenie wierzchołków,
-  pył odrywający się od bryły i unoszący w stronę światła.
+- **Dematerializacja:** drżenie wierzchołków i pył odrywający się od bryły, unoszący się w stronę
+  światła. **Bez linii przerywanych** (2026-11-16, prośba użytkownika): krawędzie brył, faktury
+  i obrys miejsca lądowania są zawsze ciągłe — wcześniejsze „oddychające” przerwy usunięte.
 - **Interakcje:** każda nowa bryła ląduje częściowo w poprzedniej (przyciągana do snopa światła).
   Bryły odkształcają się nawzajem (pole wypychające i skręcające), mocniej w chwili uderzenia.
   Miejsca przecięć (szwy) świecą kolorem akcentu `#FF5A36`, części głęboko w innej bryle przygasają.
@@ -65,7 +66,8 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
   się przy tym odkształcając; rozpad, drżenie i pył ustają (materia „zastyga”), szwy przecięć
   zostają jako złącza w kolorze akcentu, na końcu błysk światła. Potem na powierzchnie
   wchodzą **faktury** (inspiracja: zdjęcia użytkownika — stal kortenowska i granit):
-  Kwadrat → pionowe zacieki rdzy, Głaz → ziarno granitu i drobne pęknięcia,
+  Kwadrat → pionowe, ciągłe linie (jak zacieki na stali; równy rozstaw, żeby łączyły się
+  między ścianami), Głaz → ziarno granitu i drobne pęknięcia,
   Koło → gładkie, poziome warstwice.
 - Po nadaniu kształtu pojawia się **„Od nowa”** (czyści salę i przywraca przyciski brył) —
   dodane, żeby nie było ślepego zaułka; do usunięcia, jeśli niepotrzebne.
@@ -136,6 +138,7 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   snopa światła, zostały promienie — na prośbę użytkownika.
 - 2026-11-16 — „Koło” ma bardziej przypominać koło: zawsze geoida z lekkimi wybrzuszeniami
   i wklęsłościami zamiast losowych abstrakcyjnych wariantów.
+- 2026-11-16 — żadnych linii przerywanych w bryłach (krawędzie, faktury, obrys lądowania ciągłe).
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
