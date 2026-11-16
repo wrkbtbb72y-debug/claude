@@ -41,9 +41,11 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
   - Koło: **geoida** (zmiana 2026-11-16) — wyraźnie kula, ale z miękkimi wybrzuszeniami
     i wklęsłościami (±6–17% promienia), lekko spłaszczona lub wydłużona, promień 2,6–6 m;
     wcześniejsze warianty (dysk, igła, torus, plastry) usunięte na prośbę użytkownika;
-  - Kwadrat: cienki monolit (do ~85% wysokości sali), długa przechylona belka, skręcony graniastosłup,
-    tesserakt (sześcian w sześcianie), rozpadający się sześcian (krawędzie odsunięte od siebie);
-  - Głaz: zdeformowany głaz, odłamki zawieszone w powietrzu, kryształ z wyrwanymi wierzchołkami.
+  - Kwadrat: **sześcian** (zmiana 2026-11-16) — tylko lekko nieregularny: proporcje 0,8–1,35,
+    delikatne zwężenie ku górze (do 18%) i pochylenie; wcześniejsze warianty (monolit, belka,
+    skręcona wieża, tesserakt, rozpadający się sześcian) usunięte — „kształt ma przypominać nazwę”;
+  - Głaz: **kamień** (zmiana 2026-11-16) — nieregularny, fasetowany głaz o umiarkowanych proporcjach;
+    warianty „odłamki” i „kryształ” usunięte.
 - Skala od ludzkiej do nieludzkiej (część brył sięga prawie sufitu). Ok. 18% brył zatrzymuje się
   w powietrzu i lewituje.
 - **Dematerializacja:** drżenie wierzchołków i pył odrywający się od bryły, unoszący się w stronę
@@ -90,12 +92,23 @@ kontrastu (światło vs mrok); bryły spadając jedna po drugiej mają się prze
   działają dopiero w podglądzie), dlatego panel ma zawijanie.
 - „Podgląd kształtu” (kontrolka) pokazuje w edytorze gotowy, scalony obiekt z fakturami.
 
+### Obracanie obiektu (od 2026-11-16)
+
+- Cały obiekt (wszystkie bryły razem, oś pionowa przez pierwszą bryłę) **bardzo powoli się obraca**
+  (~0,06 rad/s, od chwili wylądowania pierwszej bryły) i **lekko reaguje na ruch myszki**
+  (pochyla się/skręca odrobinę w stronę kursora).
+- **Przeciągnięcie lewym przyciskiem myszy** (lub palcem) obraca obiekt w dowolnym kierunku
+  (poziomo — obrót, pionowo — przechył do ±40°), z bezwładnością po puszczeniu. Przechylony obiekt
+  jest podnoszony tak, by jego najniższy punkt leżał na linii ziemi. Kursor nad sceną: „grab”.
+- Bryły nadal nie obracają się osobno wokół własnych osi. „Od nowa” zeruje obrót.
+
 ### Kamera „na linii horyzontu” (zmiana spoza sesji z Claude, zauważona 2026-11-16)
 
 W kodzie `Wnetrze3D.tsx` ktoś zmienił kamerę: jest **nieruchoma, frontalna, z okiem na poziomie
 podłogi** — cała podłoga zlewa się w jedną prostą linię (horyzont), na której stają bryły.
-Wysokość tej linii na ekranie ustawia nowa kontrolka **„Linia”** (`horizon`, domyślnie 0,68).
-Ruch kursorem i dryf kamery w tej wersji nie obracają widoku. Wymiary sali na instancji:
+Wysokość tej linii na ekranie ustawia nowa kontrolka **„Linia”** (`horizon`; 2026-11-16 obniżona
+z 0,68 na **0,84** wysokości sceny, żeby bryły dłużej spadały).
+Kamera się nie rusza — ruch kursora działa teraz na obiekt (patrz „Obracanie obiektu”). Wymiary sali na instancji:
 34 × 89 m, wys. 13,5 m. Kontrolka „Wys. oczu” nie jest już używana. Zmiany zachowane.
 
 ## Struktura (Home `augiA20Il`, `/`)
@@ -162,6 +175,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - 2026-11-16 — żadnych linii przerywanych w bryłach (krawędzie, faktury, obrys lądowania ciągłe).
 - 2026-11-16 — pierwsza bryła odkształca się dołem przy uderzeniu; druga i trzecia wbijają się
   w pierwszą (bez kontaktu z podłogą), lekko poza jej środkiem — na prośbę użytkownika.
+- 2026-11-16 — kształty mają przypominać nazwy (Kwadrat = sześcian, Głaz = kamień, Koło = geoida);
+  linia ziemi niżej; obiekt powoli się obraca, reaguje na kursor, obrót przeciąganiem.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
