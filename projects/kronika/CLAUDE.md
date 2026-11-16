@@ -310,7 +310,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   - **Brak wyników** (prośba użytkownika): makieta **„Desktop Large – brak wyników”**
     `9015:7886` (kopia makiety wyników, x 11165). Fraza z literówką „Muzeum Wojska Polskeigo”,
     przełącznik „Obiekty (0)” / „Kolekcje (0)”, pierwsza podpowiedź „Czy chodziło Ci o?” =
-    poprawna fraza. Pasek wyników, siatka kart i paginacja usunięte; w ich miejscu blok
+    poprawna fraza; grupa „Możesz obejrzeć także” usunięta (przy braku wyników tylko
+    „Czy chodziło Ci o?” — decyzja użytkownika). Pasek wyników, siatka kart i paginacja usunięte; w ich miejscu blok
     „Brak wyników” (`9015:9141`, wyśrodkowany, padding 120 góra/dół): napis **„Brak wyników”**
     w stylu **H1 - Nagłówek stron** (Duży desktop, 38/400 — ten sam co „Przeglądaj obiekty”;
     alternatywa: „Metric” 60/700, ale ta klasa jest dla liczb) + zdanie pomocy w Body 3
