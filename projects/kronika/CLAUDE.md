@@ -186,8 +186,10 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     Wiersz z kategorią ma teraz 40 px, karta 397 → 405 px.
   - **Etykieta kategorii „Tekst”:** komponent „Category label” (`8675:4398`), wariant
     Kategoria=Tekst (`8675:4388`) — tło zmienione #F4EDDA → **#D6DADF** (polecenie
-    użytkownika; wariant nie był wcześniej nigdzie użyty). Karta „Maria Skłodowskiej-Curie”
-    na obu makietach ma teraz kategorię „Tekst” (wcześniej „Sztuki wizualne”).
+    użytkownika; wariant nie był wcześniej nigdzie użyty). Karta „Maria Skłodowska-Curie”
+    (tytuł poprawiony z „Skłodowskiej”) na obu makietach ma teraz kategorię „Tekst”
+    (wcześniej „Sztuki wizualne”) i stoi w 2. rzędzie, 3. miejscu (zamieniona miejscami
+    z „Portret Elizy Orzeszkowej”).
     Kolory pozostałych kategorii: Muzealia #EAE4DD, Muzyka #DFEBE2, Sztuki wizualne #F8F6EF,
     Film #D4E4ED.
   - **Przełącznik widoku** — nowy komponent „Przełącznik widoku” (`8949:6740`, warianty
