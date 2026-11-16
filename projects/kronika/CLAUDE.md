@@ -197,6 +197,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     pole 32 → 40×40 px, ikona lucide/folder-plus 20 → 24 px (natywny rozmiar Lucide, obrys
     1,5 px bez zmian), dosunięta do prawej krawędzi przycisku — dalej 16 px od krawędzi karty.
     Wiersz z kategorią ma teraz 40 px, karta 397 → 405 px.
+    **Przycisk w ramce (próba, prośba użytkownika):** nowy komponent „Przycisk Dodaj do
+    kolekcji” (`8975:7834`, obok makiety, x 3689 / y −28124) z wariantami **Styl=Bez ramki**
+    `8975:7830` (dotychczasowy wygląd: ikona dosunięta do prawej) i **Styl=W ramce**
+    `8975:7831` (40×40, białe tło, ramka 1 px #E5E5E5 jak sortowanie i filtry, ikona 24 px
+    wyśrodkowana). W „Object tile” i „Object row” wstawiony wariant **W ramce** — powrót do
+    poprzedniego wyglądu = przełączenie wariantu w komponentach.
   - **Etykieta kategorii „Tekst”:** komponent „Category label” (`8675:4398`), wariant
     Kategoria=Tekst (`8675:4388`) — tło zmienione #F4EDDA → **#D6DADF** (polecenie
     użytkownika; wariant nie był wcześniej nigdzie użyty). Karta „Maria Skłodowska-Curie”
