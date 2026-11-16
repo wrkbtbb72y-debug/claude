@@ -281,7 +281,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     zmienionym tekstem „FILM” i kolorem; poprawione, wygląd bez zmian). W kopii zapasowej
     zostało po staremu.
   - **Podpowiedzi wyszukiwania** (prośba użytkownika, wzór: screen z obecnego serwisu):
-    na makiecie wyników `8949:9184` blok „Podpowiedzi wyszukiwania” (`9002:8224`): „Czy chodziło Ci o?”
+    na makiecie wyników `8949:9184` między przełącznikiem Obiekty / Kolekcje a tytułem
+    „Wyniki wyszukiwania” blok „Podpowiedzi wyszukiwania” (`9002:8224`): „Czy chodziło Ci o?”
     i „Możesz obejrzeć także” (etykiety Body 4 Bold), pod nimi zawijane rzędy podpowiedzi
     (odstęp 8). Treści przykładowe. Na stronie BUTTONS nie było pasującego elementu —
     najbliżej klasa „B · Outline button 1 px (kompaktowy)” (44–46 px, z ikoną), więc
@@ -291,12 +292,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     długi tekst ucinany wielokropkiem (maks. 640 px); właściwość „Etykieta”.
     Uwaga: odstęp w grupie nad listą to 100 px (zmiana użytkownika) — działa też nad
     i pod blokiem podpowiedzi.
-    **Położenie (zmiana użytkownika):** podpowiedzi to teraz osobna sekcja
-    **„Section / Podpowiedzi wyszukiwania”** (`9005:7886`) bezpośrednio pod hero — białe tło
-    na całą szerokość, padding 40 / 60 (treść w kolumnie 1320). Przełącznik Obiekty / Kolekcje
-    jest pod nią, na górze sekcji listy (24 px od białego pasa). Wcześniejsza wersja
-    z absolutnym białym prostokątem usunięta. Kolejność na stronie wyników: nawigacja → hero →
-    podpowiedzi → przełącznik → „Wyniki wyszukiwania” → filtry → lista.
+    **Białe tło na całą szerokość** (prośba użytkownika): blok stoi pod przełącznikiem
+    Obiekty / Kolekcje, ma padding 40 góra/dół, pod treścią absolutny prostokąt „Tło – białe,
+    pełna szerokość” (`9008:7886`, x −60, 1440 px, rozciągany z blokiem); treść zostaje
+    w kolumnie 1320. Ramka-rodzic `8949:9452` ma wyłączone przycinanie. We Framerze zrobić
+    to jako osobną sekcję na pełną szerokość z białym tłem i kontenerem o szerokości kolumny.
+    (Próba z podpowiedziami bezpośrednio pod hero i przełącznikiem pod nimi — cofnięta na
+    prośbę użytkownika.)
   - We Framerze nic nie zmieniano.
 
 ## Do zrobienia
