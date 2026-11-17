@@ -288,6 +288,9 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
   - Instancja `GuSFfl6t4` na `/home-3` w przezroczystej warstwie **„Warstwa przycisku”** `dlU8WW7D7` (absolutnie na całe
     „Ekran”, bez przechwytywania kliknięć) — wyśrodkowana w poziomie, w pionie odstępy 74fr/26fr (≈ 72% wysokości,
     tak jak środek Rozświetlenia).
+  - **Cofnięte tego samego dnia na prośbę użytkownika:** Rozświetlenie wyłączone na `/home-3` (kod grupy w komponencie
+    został, domyślnie wył.), przycisk, jego warstwa i komponent „Przycisk strzałka” usunięte (zestaw ikon Phosphor
+    został zainstalowany). Słabsze świetliki i ciemniejsze narożniki zostają.
 
 ## Jak to działa (kod)
 
@@ -391,7 +394,6 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
       logo `CjoBJZxs7` i osobną instancję `bSQ2TfYUa` z canvasu.
 - [ ] Wnętrze 3D w siatce (`/home-2`): sprawdzić w podglądzie Framera (spadanie, „Pokaż”, przeciąganie) i ustawić
       położenie/głębię/skalę wg uznania; na telefonie scena jest w innym układzie — do obejrzenia.
-- [ ] „Przycisk strzałka” na `/home-3`: dokąd ma prowadzić (Link pusty) i czy strzałka w prawo jest właściwa.
 - [ ] Potwierdzić, czy zostaje przycisk „Od nowa” (dodany z własnej inicjatywy).
 - [ ] Inspiracje od użytkownika (2026-11-15) jeszcze niewykorzystane w pełni: wklęsła czerwona
       połówka dysku, kamienie rozsypane na podłodze, kilka długich świetlików, skośne słupy.
