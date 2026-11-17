@@ -212,6 +212,20 @@ poza nią linie toną w ciemności). Działa też na rozjaśnione bliskie linie,
 - Na `/home-2`: rzadkość 0,62, oddech 0,15, nierówność 0,35, mrok 0,65, światło (0,5; 0,55), zasięg 0,8;
   bliskie linie jasność 0,7. Przerwy zostały na wartości użytkownika (0,75).
 
+### „Kosmos” w Siatce perspektywy (2026-11-17)
+
+Uwaga użytkownika: siatka nadal wyglądała regularnie („jak więzienie z sześcianów”); ma przypominać przestrzeń kosmiczną —
+referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłem i lotem kamery).
+- W `SiatkaPerspektywy.tsx` grupa **„Kosmos”** (`$control__kosmos`): Włącz, Odcinki (liczba), Długość (średnia, w sześcianach),
+  Głębia (jak daleko sięgają, w sześcianach — zastępuje wtedy „Głębię” siatki), Pył (liczba punktów), Dryf (ruch ku widzowi,
+  sześciany/s), Kolor pyłu. Zamiast pełnej kraty: rozproszone odcinki na osiach tej samej przestrzeni (poziome, pionowe
+  i biegnące w głąb), na różnych głębokościach (więcej w głębi), z miękkimi końcami w dowolnym miejscu + migoczący pył.
+  Odcinki i pył biorą udział w warstwach głębi (logo i Wnętrze 3D chowają się za bliższymi, wychodzą przed dalsze),
+  w mroku/plamie światła i rozjaśnieniu bliskich linii. Szum „Tajemnicy” nie dotyczy odcinków Kosmosu.
+- Na `/home-2` włączone: odcinki 380, długość 1, głębia 14, pył 600, dryf 0,12. Na `/` wyłączone.
+- Użytkownik sam przesunął logo w siatce (x −1,62, y 2,36, głębia 0,92, szerokość 2,37) i zmienił Głębię siatki na 0,22 —
+  zachowane.
+
 ### Wnętrze 3D w przestrzeni Siatki perspektywy (`/home-2`, od 2026-11-17)
 
 - `Wnetrze3D.tsx` ma grupę **„Przestrzeń siatki”** (`$control__siatka`): W siatce (wł./wył.), Poziomo, **Podłoga**
@@ -303,6 +317,8 @@ poza nią linie toną w ciemności). Działa też na rozjaśnione bliskie linie,
   za pierwszą warstwą linii (wcześniej wyglądało, jakby było na samym przodzie).
 - 2026-11-17 — Wnętrze 3D osadzone we wspólnej przestrzeni z Siatką perspektywy (wspólna kamera + wklejanie obrazu
   sceny między linie siatki), zamiast scalać dwa duże komponenty w jeden — każdy zostaje osobno edytowalny.
+- 2026-11-17 — tryb „Kosmos” w siatce (rozproszone odcinki + pył + dryf) zamiast pełnej kraty — na prośbę użytkownika
+  (referencja: nagranie z przestrzenią „kosmiczną”); krata zostaje dostępna (Kosmos wył.).
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
