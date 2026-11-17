@@ -412,6 +412,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     (Blue hover #142C69, Green hover #115525, Black hover #333333, Red hover #7E1728;
     kolumny `9126:352` / `9126:353` / `9126:356` / `9126:359`). Podpis „RED #9A1C31” → „Red · #9A1C31”.
     Szarości i biały bez hoveru, w tym samym rzędzie.
+    W każdej kolumnie trzecia próbka **hover Secondary** (białe tło + kolor akcji 6 %, ramka
+    80 % — czarny #333333 100 %, tekst w kolorze akcji); podpisy „X · hover Primary · #…” /
+    „X · hover Secondary · #… 6%”, pod paletą opis obu zasad hoveru (warstwa „Opis hover”).
 
 ## Do zrobienia
 
