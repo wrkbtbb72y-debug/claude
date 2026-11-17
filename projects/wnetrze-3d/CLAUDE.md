@@ -198,6 +198,16 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
     tak samo, jak przygasają linie na tej głębokości — przesunięte dalej „tonie” w przestrzeni.
 - Dawne płaskie logo `CjoBJZxs7` zostało, ale jego kontener „inside” `l5LKpFaTq` jest ukryty (żeby nie dublować).
 
+### „Tajemnica” w Siatce perspektywy (2026-11-17)
+
+Prośba: linie wyglądały za regularnie — jak kratka, a nie tajemnicza przestrzeń. W `SiatkaPerspektywy.tsx` doszła grupa
+**„Tajemnica”** (`$control__mystery`): **Rzadkość** (odcinki między węzłami nierówno przygasają, każdy z własnym, powoli
+„oddychającym” progiem — nigdy nie znikają twardo, bo pełne wycięcia dawały geometryczny „labirynt”), **Oddech** (tempo),
+**Nierówność** (różnice jasności linii; 0,4 = dawne zachowanie), **Mrok** + Światło X/Y + Zasięg światła (plama światła,
+poza nią linie toną w ciemności). Działa też na rozjaśnione bliskie linie, świetliki i węzły. Na `/` wyłączone.
+Na `/home-2`: rzadkość 0,42, oddech 0,15, nierówność 0,85, mrok 0,6, światło (0,5; 0,55), zasięg 0,8.
+Przerwy zostały na wartości użytkownika (0,75).
+
 ### Wnętrze 3D w przestrzeni Siatki perspektywy (`/home-2`, od 2026-11-17)
 
 - `Wnetrze3D.tsx` ma grupę **„Przestrzeń siatki”** (`$control__siatka`): W siatce (wł./wył.), Poziomo, **Podłoga**
