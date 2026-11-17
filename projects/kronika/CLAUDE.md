@@ -425,7 +425,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     „Strona obiektu” (+ ikona), „40” / „60” w „Pokaż na stronie” (też w komponencie
     Pagination), ikona wariantu „Bez ramki” przycisku „Dodaj do kolekcji”. Czarne podkreślone
     „Czytaj więcej” / „Zobacz wszystkie” (#1A1A1A) bez zmian.
-  - **Czarna ramka przycisków secondary = #1A1A1A z kryciem 60 %** (prośba użytkownika; było
+  - **Czarna ramka przycisków secondary = #1A1A1A z kryciem 80 %** (prośba użytkownika; najpierw
+    ustawione 60 %, potem zmienione na 80 % — tak jak ramki kolorowe; było
     #333333 100 %, #333333/80 przy A+ i English, #1A1A1A/80 przy ikonach, #222222 przy
     „Podpowiedzi wyszukiwania”). Zmienione na BUTTONS: wszystkie przyciski outline 44/46 px,
     Anuluj (wszystkie stany), Secondary/Black, Zaloguj się (jasne tło), Zalogowany, strzałki
