@@ -230,6 +230,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     Hover (tło #193680 / 6 %), Focus (pierścień 2 px #193680 z 2 px odstępu — warstwa
     „Focus ring” 44×44), Wciśnięty (tło #193680, ikona biała), Nieaktywny (krycie 35 %).
     „Bez ramki” ma tylko stan Domyślny. Karta: 405 → 401 px.
+    **Porządek warstw i auto layoutu (2026-11-17, prośba użytkownika):** usunięta ramka
+    „Top content” (miała stałą wysokość 389 px i przycinała stopkę — dolny padding 16 px był
+    niewidoczny, a w kartach z wyższym zdjęciem znikał cały wiersz muzeum) i „Divider wrapper”.
+    Struktura teraz: **Object tile** (pionowo, gap 16, padding dół 16, szer. stała, wys. hug) →
+    `Cover image` (214, fill) · `Content` (padding boki 16, gap 20: `Meta row`, `Title block`)
+    · `Footer` (padding boki 16, gap 16: `Divider` 1 px, `Institution row`). ID warstw bez zmian,
+    nadpisania instancji (zdjęcia, teksty, kategorie) zachowane. Wygląd bez zmian poza widocznym
+    dołem: karta 321 px ma 405 px. Uwaga: makieta „Mobile – wyniki wyszukiwania” `9173:16891`
+    ma stałą wysokość 5010 px i już wcześniej ucinała treść (stopka strony od y 7124).
   - **Etykieta kategorii „Tekst”:** komponent „Category label” (`8675:4398`), wariant
     Kategoria=Tekst (`8675:4388`) — tło zmienione #F4EDDA → **#D6DADF** (polecenie
     użytkownika; wariant nie był wcześniej nigdzie użyty). Karta „Maria Skłodowska-Curie”
