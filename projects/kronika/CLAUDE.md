@@ -469,6 +469,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   jak w Desktop. Dotychczasowe warianty → `Urządzenie=Desktop`; 8 kopii na stronie „3. Zasoby/
   Obiekty” bez zmian (Desktop). Opis wiersza w tabeli uzupełniony.
 
+- 2026-11-17 — **Figma: „Sortowanie” — wariant mobilny bez etykiety „Sortuj:”** (prośba
+  użytkownika). Zestaw `9078:20251` ma nową właściwość **Urządzenie = Desktop / Mobile**.
+  Mobile dla każdego stanu: Domyślny `9164:343`, Hover `9164:350`, Focus `9164:357` (pierścień
+  focus dopasowany do szerokości) — sama wartość + chevron, szerokość Hug (~201 px), wysokość
+  48 px, reszta jak Desktop. Warianty Mobile w drugim rzędzie zestawu. 6 kopii na „3. Zasoby/
+  Obiekty” bez zmian (Desktop). Opis wiersza w tabeli uzupełniony.
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
