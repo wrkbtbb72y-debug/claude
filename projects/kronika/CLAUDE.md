@@ -555,11 +555,22 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   - **Rząd 4 makiet Kolekcji przesunięty wyżej** (y −60688 → **−64327**, x jak kolumny Cards:
     5909 / 7499 / 8673 / 9633), żeby wysoka makieta Mobile nie nachodziła na „Cards” (y −56855).
 
+- 2026-11-17 — **Figma, strona „3. Zasoby/Obiekty”** (`6885:93257`, nazwa już bez „- TBC”; makiety
+  leżą teraz w ramce „Frame 427320022” `9228:96066`): wszystkie **12 nagłówków sekcji z kreską**
+  (odłączone ramki „Section heading”: tytuł + kreska 1 px #333) zastąpione **instancjami komponentu
+  „Section heading”** (`3350:38625`) w wariancie breakpointu (prośba użytkownika): 4 × Cards
+  („Lista obiektów”), 4 × wyniki i 4 × brak wyników („Wyniki wyszukiwania”). Teksty bez zmian,
+  przełączniki „Link tekstowy” i „Strzałki” wyłączone (jak było), nazwa warstwy „Section heading”,
+  to samo miejsce w „nagłówek i filtry”. Szerokość jak w oryginałach: Desktop Large — stałe 1320 px
+  (rodzic „nagłówek i filtry” ma tam szerokość Hug), pozostałe — „Fill”. Wymiary 1:1 z oryginałami,
+  nic się nie przesunęło. Pominięty tytuł ramki opisowej „Lista obiektów – nowe komponenty”
+  (`8983:7847`) — to nagłówek dokumentacji, nie sekcja makiety.
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
-      Large; fraza w pasku „brak wyników” (z literówką czy bez?); „Section heading” Fill w Cards
-      Desktop Small i Tablet; czy na Mobile użyć wariantu Mobile sortowania (bez „Sortuj:”).
+      Large; fraza w pasku „brak wyników” (z literówką czy bez?); czy na Mobile użyć wariantu
+      Mobile sortowania (bez „Sortuj:”). („Section heading” w Cards — już instancje z „Fill”, 2026-11-17.)
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
 
