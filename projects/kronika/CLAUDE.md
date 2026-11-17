@@ -540,12 +540,22 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     w chuście, Eliza Orzeszkowa ← Portret Elizy Orzeszkowej, Dzień dziecka ← Przy furtce ogrodu,
     Mikołaj Kopernik ← Wizerunek Mikołaja Kopernika, WIOSNA ← Wiosna, Wielkanoc ← Wołanie dzwonu,
     Maria Skłodowska-Curie ← Maria Skłodowska-Curie, Wakacje ← Wycieczka statkiem.
-  - Makieta niższa: 3678 → 2938 px. Pozostałe breakpointy Kolekcji nie zmieniane.
+  - Makieta niższa: 3678 → 2938 px.
+  - **Placeholder paska: „Wyszukaj w kolekcjach”** (decyzja użytkownika) — na wszystkich 4 makietach.
+  - **Pozostałe breakpointy** (prośba użytkownika): **kopie** makiet ze strony „4. Zasoby/Kolekcje”
+    (`8175:8159` / `8175:9268` / `8175:10363` — oryginały tam **bez zmian**) postawione obok Desktop
+    Large na stronie „3. Zasoby/Obiekty - TBC”: **Desktop Small `9197:24055`**, **Tablet
+    `9197:24360`**, **Mobile `9197:24671`**. Na każdej: hero = **kopia hero z Cards danego
+    breakpointu** (380 px, pasek wyszukiwarki — Desktop na DS i Tablecie, Mobile na Mobile;
+    teksty zmienione na „KRONIK@ / Kolekcje / Kolekcje publiczne” i tytuł „Kolekcje”), usunięta
+    stara wyszukiwarka spod „Kolekcje publiczne” (DS „Input wrapper”, Tablet „Toolbar”, Mobile
+    „Search bar”), **obrazki podmienione** na odpowiedniki z Obiektów (to samo przypisanie co
+    w Desktop Large, skalowanie Fill). Liczba kolumn i wymiary okładek były już jak w Cards:
+    DS 3 × 309×206, Tablet 2 × 383×255, Mobile 1 × 366×244.
+  - **Rząd 4 makiet Kolekcji przesunięty wyżej** (y −60688 → **−64327**, x jak kolumny Cards:
+    5909 / 7499 / 8673 / 9633), żeby wysoka makieta Mobile nie nachodziła na „Cards” (y −56855).
 
 ## Do zrobienia
-
-- [ ] Kolekcje (Desktop Large `9186:39665`): czy placeholder paska ma mówić o kolekcjach zamiast „19 milionów zbiorów”? Pozostałe
-      breakpointy Kolekcji — czy też zmienić?
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
       Large; fraza w pasku „brak wyników” (z literówką czy bez?); „Section heading” Fill w Cards
