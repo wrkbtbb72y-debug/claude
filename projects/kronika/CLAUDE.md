@@ -420,6 +420,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     100 %) · **Secondary tło hover** (kolor akcji 6 % na bieli; ramka i tekst bez zmian).
     Po lewej kolumna podpisów wierszy „Opis wierszy” (`9132:377`). Opis „Opis hover” pod
     paletą użytkownik usunął — nie przywracać.
+  - **Linki = #193680** (jak Kronika Blue; prośba użytkownika). Na stronie BUTTONS #2248A5 →
+    #193680: próbka „Link” w palecie, „Strona instytucji”, „Regulamin”, „Zasady RODO”,
+    „Strona obiektu” (+ ikona), „40” / „60” w „Pokaż na stronie” (też w komponencie
+    Pagination), ikona wariantu „Bez ramki” przycisku „Dodaj do kolekcji”. Czarne podkreślone
+    „Czytaj więcej” / „Zobacz wszystkie” (#1A1A1A) bez zmian.
   - **Szarości:** Dark gray **#656766** (zmienna `palette/Kronika-gray`) = **help text / tekst
     szary** (placeholdery wyszukiwarki, „Wybierz jednostkę”, „Sortuj:”, odpowiedź FAQ) — tak
     podpisany w palecie. **Light gray #8A8A8A usunięty** (decyzja użytkownika): próbka skasowana,
