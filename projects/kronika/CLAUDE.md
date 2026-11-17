@@ -426,6 +426,10 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     16 px, żeby wiersze się zgadzały. Użytkownik sam przeniósł Dark gray do drugiego rzędu
     („Kolory użyte w niektórych przyciskach”), usunął „Ramkę przycisku” i ramkę z próbek
     „tło hover Secondary”.
+  - Usunięte podpisy „domyślny · tło strony #F3F3F3” (3×: dwa wiersze „Pasek wyszukiwarki”,
+    „Paginacja”) — tło tych wierszy to w rzeczywistości #F6F6F6; podpięte do stylu
+    **Background Gray** (`8378:125152`, `8414:151`, `8347:118795`, `8362:121286`). #F3F3F3 zostaje
+    tylko jako tło hover („Anuluj”, „Podpowiedź wyszukiwania”, „Sortowanie”) — do decyzji.
   - **Linki = #193680** (jak Kronika Blue; prośba użytkownika). Na stronie BUTTONS #2248A5 →
     #193680: próbka „Link” w palecie, „Strona instytucji”, „Regulamin”, „Zasady RODO”,
     „Strona obiektu” (+ ikona), „40” / „60” w „Pokaż na stronie” (też w komponencie
