@@ -145,6 +145,25 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
     „Od nowa” `C6hHtDu5I` (`withOdNowa`).
     Etykieta panelu `A8IrKWoZJ` ma override `withEtykietaPanelu` (tekst zależny od etapu).
 
+### Sekcja „Pasy zdjęć” i ucieczka horyzontu na `/` (2026-11-17)
+
+- Pod „Ekran” (`N06uDCvcg`) doszła druga sekcja: instancja `hbGlvMNwJ` komponentu **„Pasy zdjęć”** `ORE7TUV1o`
+  (100% × `100vh`). Komponent jest natywny (bez kodu): 4 poziome pasy jeden pod drugim (`Pas 1–4`, wysokość `1fr`,
+  odstęp 2 px, tło „Tło”), każdy wypełniony zdjęciem (cover, kadr w pionie 22%) — widać tylko wycinek wysokości zdjęcia.
+- **Najechanie na pas** → `SET_VARIANT` na wariant „Pas N otwarty” (ten pas `2fr`, czyli wysokość dwóch rzędów;
+  pozostałe się ścieśniają, sekcja zostaje 100vh); zjechanie z sekcji → wariant „Spoczynek”. Przejście: spring 0,7 s,
+  bez odbicia. ID: Spoczynek `j7i3ZSdKb`, pasy `sG5jPNHAZ`, `UOGKN3CAM`, `Lrjm4VgoX`, `DNmDMb6bu`; warianty otwarte
+  `IVV9u_LME`, `zwqniuZ8M`, `AzIFoc_OJ`, `SAlA_idyt`.
+- Zdjęcia od użytkownika (ulica — mężczyzna z papierosem i chłopiec; zdjęcie obsady „Brook Theater”) mają alt-text.
+  Pasy 3 i 4 tymczasowo powtarzają te same zdjęcia — **czekamy na kolejne zdjęcia**. Podmiana: zaznacz pas w wariancie
+  „Spoczynek” komponentu i zmień wypełnienie (warianty dziedziczą). Zdjęcia nie są podpięte pod zmienne komponentu,
+  bo Framer ignorował wtedy pozycję kadru.
+- `SiatkaPerspektywy.tsx`: nowa kontrolka **„Ucieczka (scroll)”** (`scrollLift`, 0–1, domyślnie 0 = wył.). Przy
+  przewijaniu strony horyzont płynnie unosi się ku górnej krawędzi (1 = dochodzi do góry, gdy sekcja z siatką jest
+  przewinięta o ~70% swojej wysokości); działa tylko w podglądzie / na stronie, nie na canvasie. Na `/` (`OirTRcAEZ`)
+  ustawione 1; `/home-2` i `/home-3` bez zmian.
+- Wgrywanie plików do Framera z sesji w chmurze wymagało dodania hosta `mcp.framer.com` do sieci środowiska (zrobione).
+
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
 
 - Projekt ma drugą stronę `OvsvNzCvS` (nazwa w panelu też „Home”, ścieżka `/home-2` — użytkownik
@@ -375,10 +394,17 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
   poszarpane, więcej światłocienia i bieli). Zmiana tylko w siatce; `LogoSzesciany.tsx` celowo nieruszany.
 - 2026-11-17 — tryb „Kosmos” w siatce (rozproszone odcinki + pył + dryf) zamiast pełnej kraty — na prośbę użytkownika
   (referencja: nagranie z przestrzenią „kosmiczną”); krata zostaje dostępna (Kosmos wył.).
+- 2026-11-17 — sekcja „Pasy zdjęć” jako natywny komponent z wariantami (po jednym na rozwinięty pas) przełączanymi
+  na najechanie — wymóg użytkownika: natywne funkcje Framera; rozwinięcie przez `2fr` utrzymuje sekcję na 100vh.
+- 2026-11-17 — ucieczka horyzontu przy scrollu w kodzie siatki (kontrolka), bo natywne efekty scrolla Framera
+  nie mogą animować właściwości komponentu kodowego.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
 
+- [ ] „Pasy zdjęć” na `/`: podmienić zdjęcia w pasach 3 i 4 (oraz ewentualnie 1–2), gdy użytkownik je podeśle.
+- [ ] Sprawdzić w podglądzie Framera rozwijanie pasów i ucieczkę horyzontu przy scrollu (z poziomu AI widać tylko
+      statyczne zrzuty); ewentualnie dostroić tempo (spring 0,7 s) i siłę „Ucieczki”.
 - [ ] Podpis pod nagłówkiem „Kubatura — nadaj kształt” odwołuje się do starej nazwy i starego przycisku —
       zapytać, czy zmienić (np. na „NUMINO”).
 - [ ] Logotyp jako SVG nie ma tekstu alternatywnego (Framer nie pozwala dać `ariaLabel` na SVG) — rozważyć
