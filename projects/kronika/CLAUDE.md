@@ -355,6 +355,23 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   249 → 250 px. Kopia zapasowa i „Obiekty - propozycja” bez zmian. Kolekcje mają inny, starszy
   przycisk „Sortuj według” — nie ruszany.
 
+- 2026-11-17 — **Figma, „Lista obiektów” — 4 makiety Cards** (ramka `9037:22307`: Desktop Large
+  `8670:4812`, Desktop Small `9044:8436`, Tablet `9044:10606`, Mobile `9044:12750`): audyt
+  stylów tekstu z wersjami na breakpointy (H1–H4, Body 1–3, Body 4 Thin 2, Metric, Breadcrumbs)
+  — prośba użytkownika. Na Desktop Small / Tablecie / Mobile 42 teksty miały style „Duży
+  desktop ≥1440” i dostały odpowiedniki swojego breakpointu: tytuł hero „Przeglądaj obiekty”
+  (H1: 36 / 34 / 30 px), tytuły kart „Object tile” (H4: 20 → 18 px), „Czynna w dni robocze…”
+  w stopce (Body 4 Thin 2: 15 / 14 / 14 px). Wszystkie trzy były **nadpisaniami w instancjach**
+  (komponenty „Header Text”, „Footer desktop” i „Object tile” same nie mają tych stylów), więc
+  poprawione w instancjach, komponenty bez zmian. Makiety niższe o 12 / 18 / 40 px (tytuły
+  kart 18 px). Desktop Large, okruszki i „Lista obiektów” (H2) były już poprawne.
+  **Bez stylu tekstu** (poza zakresem — nie mają wersji na breakpointy w systemie): filtry
+  (12/600 i 15/500), licznik wyników, „Sortowanie”, część stopki (adres/kontakt 16/15/14 px
+  — rozmiar zmienia się z breakpointem, ale bez stylu) i pasek gov.pl.
+  Uwaga: „Object tile” nie ma wariantów na breakpointy — styl tytułu na mniejszych
+  breakpointach trzyma się na nadpisaniu w instancji (nowe karty wstawiane z komponentu mają H4
+  Dużego desktopu; trzeba przełączyć ręcznie albo dodać warianty).
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
