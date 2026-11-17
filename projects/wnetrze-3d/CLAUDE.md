@@ -222,7 +222,10 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
   i biegnące w głąb), na różnych głębokościach (więcej w głębi), z miękkimi końcami w dowolnym miejscu + migoczący pył.
   Odcinki i pył biorą udział w warstwach głębi (logo i Wnętrze 3D chowają się za bliższymi, wychodzą przed dalsze),
   w mroku/plamie światła i rozjaśnieniu bliskich linii. Szum „Tajemnicy” nie dotyczy odcinków Kosmosu.
-- Na `/home-2` włączone: odcinki 380, długość 1, głębia 14, pył 600, dryf 0,12. Na `/` wyłączone.
+- Na `/home-2` włączone: odcinki 380, długość 1, głębia 14, pył 600. Na `/` wyłączone.
+- Poprawka (2026-11-17): użytkownik **nie chce ruchu przestrzeni** → dryf 0 i Oddech „Tajemnicy” 0 (wzór nieruchomy;
+  świetliki i migotanie pyłu zostają). Ma być widoczny **lekki zarys dawnej kraty** → nowe ustawienie **Zarys siatki**
+  (krycie regularnej kraty pod odcinkami; krata ma wtedy swoją dawną głębię z „Głębi” siatki). Na `/home-2`: 0,35.
 - Użytkownik sam przesunął logo w siatce (x −1,62, y 2,36, głębia 0,92, szerokość 2,37) i zmienił Głębię siatki na 0,22 —
   zachowane.
 
