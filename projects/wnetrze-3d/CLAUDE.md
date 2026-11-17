@@ -176,6 +176,22 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - Bez WebGL pokazuje się płaskie logo SVG. Użytkownik przesunął/powiększył instancję (899×337).
 - Instancja ma krycie 100% (oryginał 41%) — żeby było widać cieniowanie ścian; do decyzji użytkownika.
 
+### Logo 3D w przestrzeni Siatki perspektywy (`/home-2`, od 2026-11-17)
+
+- Komponent `SiatkaPerspektywy.tsx` ma grupę ustawień **„Logo 3D”** (`$control__logo`): Pokaż, **Poziomo / Pionowo**
+  (w sześcianach siatki; 0 = oś punktu zbiegu / horyzont), **Głębia** (odległość od pierwszej warstwy linii
+  w sześcianach: ujemna = przed liniami, dodatnia = za nimi), Szerokość (w sześcianach siatki), kostki, grubość,
+  fazowanie, głębia rowków, kolory ścian, cień głębi, fugi, krycie. Domyślnie wyłączone (strona `/` bez zmian).
+- Bryła to ten sam algorytm i ta sama ścieżka co `LogoSzesciany.tsx` (kod skopiowany do pliku siatki —
+  zmiany algorytmu trzeba robić w obu plikach). Rysowana WebGL-em w tym samym rzucie perspektywicznym co siatka,
+  frontem do kamery. Linie, świetliki i węzły bliższe kamerze niż środek bryły malują się **na** logo, dalsze **pod** nim —
+  przesuwanie „Głębi” przeprowadza logo przed / za kolejne warstwy linii.
+- Instancja na `/home-2` `GCcSRW8rC`: Desktop x 0, y 1,1, głębia 0,25 (tuż za pierwszą warstwą), szerokość 3,64;
+  Tablet y 1,54, szer. 3,75; Phone y 2,96, szer. 0,32, 100 kostek — dobrane tak, by pokrywało się z dawnym płaskim
+  logo (na ekranach o innej wysokości może się lekko przesunąć, bo jest zakotwiczone w punkcie zbiegu).
+- Kolory szare (`#6F7176` przód …), jak dawne płaskie logo (biel z kryciem 41% na tle).
+- Dawne płaskie logo `CjoBJZxs7` zostało, ale jego kontener „inside” `l5LKpFaTq` jest ukryty (żeby nie dublować).
+
 ## Jak to działa (kod)
 
 - `Wnetrze3D.tsx` — własny renderer linii na `<canvas>` (bez bibliotek): perspektywa, przycinanie
@@ -245,6 +261,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   oryginał zostaje obok do porównania.
 - 2026-11-17 — poprawka logo 3D: kostki frontem do kamery, ciemne miejsca jako zacienione zagłębienia
   (a nie dziury), wszystkie kostki przylegają (pełny tył, usunięte oderwane drobiny) — na prośbę użytkownika.
+- 2026-11-17 — logo z sześcianów osadzone w komponencie Siatka perspektywy (wspólna przestrzeń 3D i perspektywa),
+  a nie jako osobna warstwa nad nim — tylko tak linie mogą zasłaniać logo albo być przez nie zasłaniane zależnie od głębi.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
@@ -260,6 +278,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 
 - [ ] Logo 3D (`bSQ2TfYUa`): zaakceptować wygląd (głębokość zagłębień, perspektywa, kolory), zdecydować o kryciu
       (100% vs 41% jak oryginał) i czy/gdzie ma zastąpić płaskie logo (np. w nawigacji) oraz czy usunąć oryginał.
+- [ ] Logo w siatce (`/home-2`): zaakceptować głębię/położenie i szare kolory; zdecydować, czy usunąć ukryte płaskie
+      logo `CjoBJZxs7` i osobną instancję `bSQ2TfYUa` z canvasu.
 - [ ] Potwierdzić, czy zostaje przycisk „Od nowa” (dodany z własnej inicjatywy).
 - [ ] Inspiracje od użytkownika (2026-11-15) jeszcze niewykorzystane w pełni: wklęsła czerwona
       połówka dysku, kamienie rozsypane na podłodze, kilka długich świetlików, skośne słupy.
