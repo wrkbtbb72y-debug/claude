@@ -566,6 +566,17 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   nic się nie przesunęło. Pominięty tytuł ramki opisowej „Lista obiektów – nowe komponenty”
   (`8983:7847`) — to nagłówek dokumentacji, nie sekcja makiety.
 
+- 2026-11-17 — **Figma, strona „4. Zasoby/Kolekcje”** (`6335:42234`; prośba użytkownika): to samo.
+  Nagłówki „Kolekcje publiczne” były tu instancjami **starej lokalnej kopii** „Section heading”
+  (`6415:32201`, warianty z literówką „Dekstop Large”) — ten komponent nie leży już na żadnej
+  stronie (osierocony). Wszystkie **14** takich instancji (makiety „Kolekcje publiczne - kafelki”
+  Desktop 1444/1445/1446/1024/Tablet/Mobile, stary rząd Desktop Large/Small/Tablet/Mobile
+  `8175:…` i nowy rząd `9199:…`) + **1 odłączona ramka** („Wyniki wyszukiwania” w „Desktop Large –
+  wyniki wyszukiwania” `9199:34164`) zastąpione instancjami „Section heading” `3350:38625`
+  w wariancie breakpointu. Teksty, szerokości (Fill / stałe — jak w oryginałach; Desktop Small
+  ma stałe 952 px) i wysokości bez zmian. Nie ruszane: „Wynik wyszukiwania” (H3 w „Heading row /
+  Learn more”, bez kreski) — to nie nagłówek sekcji.
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
