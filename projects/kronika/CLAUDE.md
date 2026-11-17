@@ -462,6 +462,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   długi tekst ucinany wielokropkiem. Stary komponent „Toolbar” (`9096:32681`, 16 kopii na
   makietach) **bez zmian** — kopie nie są podmienione (do decyzji użytkownika).
 
+- 2026-11-17 — **Figma: „Przełącznik widoku” — wariant mobilny bez tekstu** (prośba użytkownika).
+  Zestaw `8949:6740` (tabela „Nowe przyciski”) ma nową właściwość **Urządzenie = Desktop /
+  Mobile**. Mobile: `Widok=Kafelki` `9156:339`, `Widok=Lista` `9156:348` — same ikony
+  (layout-grid / layout-list), segmenty 40×40, całość 92×48; ramka, kolory i aktywny segment
+  jak w Desktop. Dotychczasowe warianty → `Urządzenie=Desktop`; 8 kopii na stronie „3. Zasoby/
+  Obiekty” bez zmian (Desktop). Opis wiersza w tabeli uzupełniony.
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
