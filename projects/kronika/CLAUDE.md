@@ -446,6 +446,18 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     na stronie BUTTONS zastąpiony #656766 (nagłówki grup w „Przycisku Panel”, podpisy stanów
     w wierszu „Anuluj · Zapisz”). Makiet stron nie sprawdzano — mogą mieć stare kolory.
 
+- 2026-11-17 — **Figma, nowy komponent „Pasek wyszukiwarki”** (`9147:381`, strona BUTTONS,
+  tam, gdzie leżały dwie ramki „Toolbar” od użytkownika — pusta ramka‑opakowanie usunięta).
+  Zrobiony z tych ramek (prośba użytkownika). Właściwości: **Breakpoint** = Desktop (660×56)
+  / Mobile (358×52, czerwony przycisk Fill + proporcje 1:1) i **Stan** = Pusty (placeholder
+  #656766, Button Thin) / **Wypełniony** — „po wpisaniu treści”: tekst czarny #0A0A0A
+  (przykład „Wypoczynek w czasach PRL”) + ikona **lucide/x** 18 px („Wyczyść”, jak w ramce
+  „Po wpisaniu treści” `9096:35460`), 12 px przed przyciskiem szukania. Warianty: Desktop
+  Pusty `9147:377` / Wypełniony `9147:378`, Mobile Pusty `9147:379` / Wypełniony `9147:380`.
+  Warstwa „Wyczyść” jest we wszystkich wariantach (w Pustym ukryta), pole tekstu „Fill”,
+  długi tekst ucinany wielokropkiem. Stary komponent „Toolbar” (`9096:32681`, 16 kopii na
+  makietach) **bez zmian** — kopie nie są podmienione (do decyzji użytkownika).
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
