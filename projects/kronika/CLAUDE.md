@@ -514,7 +514,30 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Uwaga: w „brak wyników” pasek wyszukiwarki pokazuje „Muzeum Wojska Polskiego”, a opis frazę
   z literówką „Polskeigo” — skopiowane 1:1 z Desktop Large, do decyzji.
 
+- 2026-11-17 — **Figma, makieta „Kolekcje” Desktop Large** (`9186:39665`, strona „3. Zasoby/Obiekty
+  - TBC”; prośba użytkownika):
+  - **Hero = jak w „Desktop Large - Cards”:** wysokość 340 → **380 px** (tło „tło” i ramki w nim
+    380, tekstura i grafika „Group 5879S” ustawione jak w Cards). „Header Text Container” jak
+    w Cards (Fill × Fill, wyśrodkowany w pionie, gap 28); w nim nowa ramka **„Tytuł i wyszukiwarka”**
+    (`9192:17776`, kopia ramki z Cards: gap 28, dół 20) — tytuł „Kolekcje” (dotychczasowy
+    „Header Text”) + **instancja „Pasek wyszukiwarki”** Desktop / Pusty (`9192:17780`, placeholder
+    jak w Cards: „Wyszukaj z ponad 19 milionów zbiorów”). Opis „Przeglądaj publiczne kolekcje
+    obiektów nauki i kultury” **ukryty** (nie usunięty — jak w Cards). Pasek wypada w tym samym
+    miejscu co w Cards (132,5 px od góry hero).
+  - **Usunięty stary pasek „Toolbar”** (z „Sortuj według”) spod nagłówka „Kolekcje publiczne”.
+  - **Siatka kolekcji: 4 w rzędzie** zamiast 3 — kafelki „Collection tile” (wariant Desktop 1440)
+    432 → **321 px** (jak „Object tile” w Cards, odstęp 12), 3 rzędy po 4; „Meta row” w kafelkach
+    przestawiony na „Fill” (miał stałe 406 px i wychodził poza kafelek). **Okładka zostaje
+    288 px wysokości** (prawie kwadrat 321×288) — wysokości „Cover image” nie da się nadpisać
+    w instancji (zmiana nie zapisuje się); proporcja 1,5 (214 px) wymagałaby zmiany komponentu.
+  - Makieta niższa: 3678 → 3160 px. Pozostałe breakpointy Kolekcji nie zmieniane.
+
 ## Do zrobienia
+
+- [ ] Kolekcje (Desktop Large `9186:39665`): okładka kafelka przy 4 kolumnach — zostawić 321×288
+      czy dodać w komponencie „Collection tile - framer” wariant/ustawienie z proporcją 1,5 (214 px)?
+      Czy placeholder paska ma mówić o kolekcjach zamiast „19 milionów zbiorów”? Pozostałe
+      breakpointy Kolekcji — czy też zmienić?
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
       Large; fraza w pasku „brak wyników” (z literówką czy bez?); „Section heading” Fill w Cards
