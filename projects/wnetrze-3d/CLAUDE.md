@@ -198,6 +198,22 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
     tak samo, jak przygasają linie na tej głębokości — przesunięte dalej „tonie” w przestrzeni.
 - Dawne płaskie logo `CjoBJZxs7` zostało, ale jego kontener „inside” `l5LKpFaTq` jest ukryty (żeby nie dublować).
 
+### Wnętrze 3D w przestrzeni Siatki perspektywy (`/home-2`, od 2026-11-17)
+
+- `Wnetrze3D.tsx` ma grupę **„Przestrzeń siatki”** (`$control__siatka`): W siatce (wł./wył.), Poziomo, **Podłoga**
+  (wysokość podłogi w sześcianach siatki; −0,5 = linia siatki tuż pod horyzontem), **Głębia** (od pierwszej warstwy
+  linii, w sześcianach) i **Skala** (sześciany siatki na 1 m sceny). Domyślnie wyłączone (strona `/` bez zmian).
+- Jak to działa: Siatka rejestruje się w `window.__siatkaPerspektywy` (kamera: punkt zbiegu, ogniskowa, Z0) i ogłasza
+  zmianę kamery zdarzeniem `siatka:kamera`. Wnętrze 3D w trybie siatki szuka siatki, która zawiera jego środek,
+  liczy obraz tą samą kamerą (przesunięta kamera sceny, ta sama ogniskowa i punkt zbiegu — także w rendererze WebGL2
+  brył po „Pokaż”), ukrywa własny canvas, a siatka wkleja go między swoje linie na głębokości sceny (jak logo 3D).
+  Siatka sortuje wszystkie wklejki (logo, scena) od najdalszej; linie trafiają między nie wg głębokości.
+- Na `/home-2` instancja Wnętrza `rUoK2HVYm`: szerokość 100% (wcześniej 544 px, żeby scena nie była przycinana),
+  W siatce: x 0, podłoga −0,5, głębia 1,5 (między 2. a 3. warstwą linii, za logo), skala 0,106 (bryły mają
+  podobną wielkość jak wcześniej). Przeciąganie, przyciski i „Pokaż” działają jak dotąd.
+- Zrzuty ekranu Framera (API) nie pokazują spadających brył ani podglądu kształtu — weryfikacja była lokalna
+  (Chromium, układ i ustawienia jak na `/home-2`).
+
 ## Jak to działa (kod)
 
 - `Wnetrze3D.tsx` — własny renderer linii na `<canvas>` (bez bibliotek): perspektywa, przycinanie
@@ -271,6 +287,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   a nie jako osobna warstwa nad nim — tylko tak linie mogą zasłaniać logo albo być przez nie zasłaniane zależnie od głębi.
 - 2026-11-17 — rozjaśnione najbliższe linie siatki + mgła głębi na logo, żeby logo czytało się jako obiekt w przestrzeni
   za pierwszą warstwą linii (wcześniej wyglądało, jakby było na samym przodzie).
+- 2026-11-17 — Wnętrze 3D osadzone we wspólnej przestrzeni z Siatką perspektywy (wspólna kamera + wklejanie obrazu
+  sceny między linie siatki), zamiast scalać dwa duże komponenty w jeden — każdy zostaje osobno edytowalny.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
@@ -288,6 +306,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
       (100% vs 41% jak oryginał) i czy/gdzie ma zastąpić płaskie logo (np. w nawigacji) oraz czy usunąć oryginał.
 - [ ] Logo w siatce (`/home-2`): zaakceptować głębię/położenie i szare kolory; zdecydować, czy usunąć ukryte płaskie
       logo `CjoBJZxs7` i osobną instancję `bSQ2TfYUa` z canvasu.
+- [ ] Wnętrze 3D w siatce (`/home-2`): sprawdzić w podglądzie Framera (spadanie, „Pokaż”, przeciąganie) i ustawić
+      położenie/głębię/skalę wg uznania; na telefonie scena jest w innym układzie — do obejrzenia.
 - [ ] Potwierdzić, czy zostaje przycisk „Od nowa” (dodany z własnej inicjatywy).
 - [ ] Inspiracje od użytkownika (2026-11-15) jeszcze niewykorzystane w pełni: wklęsła czerwona
       połówka dysku, kamienie rozsypane na podłodze, kilka długich świetlików, skośne słupy.
