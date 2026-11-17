@@ -272,6 +272,22 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
   tylko lekko dopracowana — „odrobinę więcej nieregularności linii”. Zmienione wyłącznie `GA3zheMSK`: Przerwy 0,5 → 0,6,
   Tajemnica: Nierówność 0,4 → 0,7, Mrok 0,25 (środek 0,5/0,5, zasięg 1,0); Rzadkość 0 (ramiona przy przecięciach
   zostają jak były), Kosmos wył. `/home-2` bez zmian (nadal Kosmos) — do decyzji, czy przenieść tam ustawienia z `/home-3`.
+- Użytkownik sam zmienił na `/home-3`: Wielkość sześcianu 40 (gęsta krata), nawigacja i panel ukryte.
+- 2026-11-17 — wg zrzutu-makiety użytkownika: pod logo **rozświetlony fragment kraty** + **przycisk ze strzałką**;
+  świetliki na skrzyżowaniach za mocne; linie ku narożnikom mniej widoczne:
+  - `SiatkaPerspektywy.tsx`: nowa grupa **„Rozświetlenie”** (`$control__area`): Włącz, Środek X/Y (ułamek ekranu),
+    Szerokość/Wysokość (px), Miękkość, Siła, Światełka (na skrzyżowaniach), Rozmiar światełek, Kolor. Rozjaśnia linie
+    najbliższej warstwy kraty; poziome wygasają w poziomie, pionowe długo w dół i krótko w górę. Na `/` i `/home-2` wył.
+  - `/home-3` (`GA3zheMSK`): Rozświetlenie x 0,5, y 0,72, 130×85 px, miękkość 45, siła 0,85, światełka 0,35/7 px
+    (Phone: 90×70, miękkość 28, siła 0,7); Świetliki w węzłach: jasność 0,45, wielkość 7, światło na liniach 16;
+    Tajemnica: mrok 0,6, zasięg światła 0,9 (narożniki ciemniejsze).
+  - Nowy komponent **„Przycisk strzałka”** `s__oFNsWK` (natywny): okrąg 56 px, tło `rgba(11,13,16,0.55)` + rozmycie 6 px,
+    obrys 1 px `rgba(230,236,242,0.35)`, ikona Phosphor „Arrow Right” 22 px w kolorze „Tekst”; warianty Hover
+    (tło „Tekst”, ikona „Tło”) i Pressed; zmienna **Link** (do ustawienia na instancji — na razie pusty), aria-label „Dalej”.
+    Zainstalowany zestaw ikon Phosphor.
+  - Instancja `GuSFfl6t4` na `/home-3` w przezroczystej warstwie **„Warstwa przycisku”** `dlU8WW7D7` (absolutnie na całe
+    „Ekran”, bez przechwytywania kliknięć) — wyśrodkowana w poziomie, w pionie odstępy 74fr/26fr (≈ 72% wysokości,
+    tak jak środek Rozświetlenia).
 
 ## Jak to działa (kod)
 
@@ -375,6 +391,7 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
       logo `CjoBJZxs7` i osobną instancję `bSQ2TfYUa` z canvasu.
 - [ ] Wnętrze 3D w siatce (`/home-2`): sprawdzić w podglądzie Framera (spadanie, „Pokaż”, przeciąganie) i ustawić
       położenie/głębię/skalę wg uznania; na telefonie scena jest w innym układzie — do obejrzenia.
+- [ ] „Przycisk strzałka” na `/home-3`: dokąd ma prowadzić (Link pusty) i czy strzałka w prawo jest właściwa.
 - [ ] Potwierdzić, czy zostaje przycisk „Od nowa” (dodany z własnej inicjatywy).
 - [ ] Inspiracje od użytkownika (2026-11-15) jeszcze niewykorzystane w pełni: wklęsła czerwona
       połówka dysku, kamienie rozsypane na podłodze, kilka długich świetlików, skośne słupy.
