@@ -264,6 +264,15 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 - Zrzuty ekranu Framera (API) nie pokazują spadających brył ani podglądu kształtu — weryfikacja była lokalna
   (Chromium, układ i ustawienia jak na `/home-2`).
 
+### Strona `/home-3` (zauważona 2026-11-17)
+
+- Strona `JIxLbBZCp` (w panelu „Home”, ścieżka `/home-3`, **wersja robocza**). Breakpointy: Desktop `OJAJqh788`,
+  Tablet `J3MEdxCTe`, Phone `mLh3ZbMvh`. Siatka perspektywy `GA3zheMSK` (w „Ekran” `feQNStWcD`), płaskie logo NUMINO.
+- 2026-11-17 — użytkownik: tryb „Kosmos” na `/home-2` „poszedł w złą stronę”; wzorcem jest siatka z `/home-3`,
+  tylko lekko dopracowana — „odrobinę więcej nieregularności linii”. Zmienione wyłącznie `GA3zheMSK`: Przerwy 0,5 → 0,6,
+  Tajemnica: Nierówność 0,4 → 0,7, Mrok 0,25 (środek 0,5/0,5, zasięg 1,0); Rzadkość 0 (ramiona przy przecięciach
+  zostają jak były), Kosmos wył. `/home-2` bez zmian (nadal Kosmos) — do decyzji, czy przenieść tam ustawienia z `/home-3`.
+
 ## Jak to działa (kod)
 
 - `Wnetrze3D.tsx` — własny renderer linii na `<canvas>` (bez bibliotek): perspektywa, przycinanie
