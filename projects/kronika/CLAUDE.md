@@ -380,6 +380,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   O Portalu, Głównej 2.0, Typography, NAWIGACJA I i na stronach „❌ nieaktualne”). Style H1
   na 4 makietach „Lista obiektów – Cards” sprawdzone po odłączeniu (38 / 36 / 34 / 30 px).
 
+- 2026-11-17 — **Figma, pasek wyszukiwarki „Toolbar”** (`9096:32681`, strona BUTTONS),
+  wariant **Mobile** (`9096:32682`): wysokość 56 → **52 px** (prośba użytkownika), padding
+  góra/dół 5 → 3 (jak z prawej: 3 px odstępu wokół czerwonego przycisku). Czerwony przycisk
+  „Search_button” (`9096:32694`) przebudowany na auto‑layout: czerwone tło na samej ramce
+  (usunięty czerwony prostokąt‑wektor), ikona lucide/search wyśrodkowana, wysokość „Fill”
+  + **zablokowane proporcje 1:1** — przycisk sam dopasowuje się do wysokości paska (52 → 46×46;
+  sprawdzone na kopii: 48 → 42, 60 → 54). Kontenery „3” i „Frame 427320017” też „Fill” w pionie.
+  Wariant Default (56 px, 16 kopii) bez zmian; wariant Mobile nie miał jeszcze kopii.
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
