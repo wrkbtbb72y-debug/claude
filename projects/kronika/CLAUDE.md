@@ -476,6 +476,17 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   48 px, reszta jak Desktop. Warianty Mobile w drugim rzędzie zestawu. 6 kopii na „3. Zasoby/
   Obiekty” bez zmian (Desktop). Opis wiersza w tabeli uzupełniony.
 
+- 2026-11-17 — **Figma, „Nowe przyciski” (`8988:324`): kolory ujednolicone z systemem przycisków**
+  (prośba użytkownika). W komponentach z kolumny „Podgląd”: czarny tekst/kreska/ikony
+  #121212 i #222222 → **#1A1A1A**; szary nieaktywny #6C6C6C i strzałka sortowania #7D7D7D →
+  **#656766**; tło hover „Podpowiedzi wyszukiwania” i „Sortowania” #F3F3F3 → **białe + #1A1A1A
+  6 %** (zasada hover secondary); pierścienie focus #222222 → #1A1A1A; ramka „Sortowania”
+  #E5E5E5 60 % → **100 %**, tło białe 90 % → 100 %; linia bazowa przełącznika Obiekty / Kolekcje
+  #D6D6D6 → #E5E5E5; usunięta niewidoczna biała ramka 31 % z jego wariantów. Po zmianie
+  w podglądach tylko: #193680 (100/80/6 %), #1A1A1A (100/80/6 %), #656766, #E5E5E5,
+  #F1F1F1 (aktywny segment), #FFFFFF. „Dodaj do kolekcji” był już zgodny.
+  Poza ramką: „Wybierz jednostkę” na BUTTONS nadal ma ramkę #E5E5E5 60 % — do decyzji.
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
