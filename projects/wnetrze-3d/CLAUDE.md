@@ -157,6 +157,21 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   poziomy 1, miękkość zaniku 1, przerwy 1, długość światła 20, prędkość 115, rozświetlenie 0,3
   (reszta jak domyślne).
 
+### Logo NUMINO z sześcianów (od 2026-11-17)
+
+- Na canvasie strony `/home-2` (luzem, poza breakpointami) leży oryginał **„Logo NUMINO”** `c7tBzcDUX`
+  (biała ramka 811×304, maska SVG z logotypem, krycie 41%) — **nie ruszany**.
+- Pod nim (top 1313 px) jest nowa wersja 3D **„Logo NUMINO 3D”** `bSQ2TfYUa` — komponent kodowy
+  `LogoSzesciany.tsx`: ta sama ścieżka SVG, z której w przeglądarce budowana jest bryła z sześcianów
+  (pełny blok → odjęte kolumny poza literami → schodkowe fazowanie krawędzi → płytkie rowki tam, gdzie
+  oryginał ma poszarpaną fakturę), rysowana w WebGL. Domyślnie: 220 kostek szerokości (82 wysokości),
+  głębokość 10, obrót −12°, pochylenie 9°.
+- Kolory ścian (kontrolki): przód `#E6ECF2` (kolor logotypu), góra `#FFFFFF`, bok lewy `#A9B2BC`,
+  bok prawy `#76808B`, spód `#4A525B`; delikatne fugi między kostkami i lekki losowy odcień każdej kostki.
+- W podglądzie/na stronie logo **powoli się kołysze** (±10°, okres 14 s) i można je **obrócić przeciągnięciem**
+  (po puszczeniu wraca do pozycji). W edytorze jest statyczne. Bez WebGL pokazuje się płaskie logo SVG.
+- Instancja ma krycie 100% (oryginał 41%) — żeby było widać cieniowanie ścian; do decyzji użytkownika.
+
 ## Jak to działa (kod)
 
 - `Wnetrze3D.tsx` — własny renderer linii na `<canvas>` (bez bibliotek): perspektywa, przycinanie
@@ -221,6 +236,9 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - 2026-11-16 — układ: tekst w lewej połowie, scena 3D w prawej (wg screena-inspiracji); na telefonie tekst nad sceną.
 - 2026-11-16 — przyciski brył tylko z ikoną (większą), dwa nowe kształty (Trójkąt, Walec), licznik 0/3–3/3,
   „Nadaj kształt” → „Pokaż”, logotyp NUMINO zamiast „Kubatura” — na prośbę użytkownika.
+- 2026-11-17 — logo NUMINO w wersji 3D z sześcianów jako komponent kodowy (WebGL), a nie statyczny obrazek:
+  bryła jest prawdziwie trójwymiarowa (można ją obracać), a gęstość kostek, głębokość i kolory ścian są
+  kontrolkami; oryginał zostaje obok do porównania.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
@@ -234,6 +252,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - [ ] Wskazówka w nawigacji „Poruszaj kursorem, aby się rozejrzeć” jest nieaktualna (kamera stoi,
       obiekt obraca się przeciąganiem) — zaproponować np. „Przeciągnij, aby obrócić”.
 
+- [ ] Logo 3D (`bSQ2TfYUa`): zaakceptować wygląd (kąt, głębokość, kolory, kołysanie), zdecydować o kryciu
+      (100% vs 41% jak oryginał) i czy/gdzie ma zastąpić płaskie logo (np. w nawigacji) oraz czy usunąć oryginał.
 - [ ] Potwierdzić, czy zostaje przycisk „Od nowa” (dodany z własnej inicjatywy).
 - [ ] Inspiracje od użytkownika (2026-11-15) jeszcze niewykorzystane w pełni: wklęsła czerwona
       połówka dysku, kamienie rozsypane na podłodze, kilka długich świetlików, skośne słupy.
