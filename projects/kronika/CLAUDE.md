@@ -415,6 +415,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     W każdej kolumnie trzecia próbka **hover Secondary** (białe tło + kolor akcji 6 %, ramka
     80 % — czarny #333333 100 %, tekst w kolorze akcji); podpisy „X · hover Primary · #…” /
     „X · hover Secondary · #… 6%”, pod paletą opis obu zasad hoveru (warstwa „Opis hover”).
+  - **Szarości:** Dark gray **#656766** (zmienna `palette/Kronika-gray`) = **help text / tekst
+    szary** (placeholdery wyszukiwarki, „Wybierz jednostkę”, „Sortuj:”, odpowiedź FAQ) — tak
+    podpisany w palecie. **Light gray #8A8A8A usunięty** (decyzja użytkownika): próbka skasowana,
+    na stronie BUTTONS zastąpiony #656766 (nagłówki grup w „Przycisku Panel”, podpisy stanów
+    w wierszu „Anuluj · Zapisz”). Makiet stron nie sprawdzano — mogą mieć stare kolory.
 
 ## Do zrobienia
 
