@@ -158,10 +158,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   Pasy 3 i 4 tymczasowo powtarzają te same zdjęcia — **czekamy na kolejne zdjęcia**. Podmiana: zaznacz pas w wariancie
   „Spoczynek” komponentu i zmień wypełnienie (warianty dziedziczą). Zdjęcia nie są podpięte pod zmienne komponentu,
   bo Framer ignorował wtedy pozycję kadru.
-- `SiatkaPerspektywy.tsx`: nowa kontrolka **„Ucieczka (scroll)”** (`scrollLift`, 0–1, domyślnie 0 = wył.). Przy
-  przewijaniu strony horyzont płynnie unosi się ku górnej krawędzi (1 = dochodzi do góry, gdy sekcja z siatką jest
-  przewinięta o ~70% swojej wysokości); działa tylko w podglądzie / na stronie, nie na canvasie. Na `/` (`OirTRcAEZ`)
-  ustawione 1; `/home-2` i `/home-3` bez zmian.
+- `SiatkaPerspektywy.tsx`: kontrolka **„Zbliżenie (scroll)”** (`scrollZoom`, 0–12 sześcianów, domyślnie 0 = wył.).
+  Przy przewijaniu w dół krata (pionowe i poziome linie, całe warstwy sześcianów) płynnie przysuwa się do kamery —
+  wrażenie przybliżania sześcianów; horyzont stoi w miejscu. Pełne przybliżenie, gdy sekcja z siatką jest przewinięta
+  o ~70% swojej wysokości; używa tego samego mechanizmu co „Ruch w głąb” (`flow`). Działa tylko w podglądzie / na stronie.
+  Na `/` (`OirTRcAEZ`) ustawione 3 sześciany; `/home-2` i `/home-3` bez zmian.
+  (2026-11-17 — zastąpiła wcześniejszą „Ucieczkę (scroll)”, gdzie horyzont uciekał do góry; zmiana na prośbę użytkownika.)
 - Wgrywanie plików do Framera z sesji w chmurze wymagało dodania hosta `mcp.framer.com` do sieci środowiska (zrobione).
 
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
@@ -396,15 +398,16 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
   (referencja: nagranie z przestrzenią „kosmiczną”); krata zostaje dostępna (Kosmos wył.).
 - 2026-11-17 — sekcja „Pasy zdjęć” jako natywny komponent z wariantami (po jednym na rozwinięty pas) przełączanymi
   na najechanie — wymóg użytkownika: natywne funkcje Framera; rozwinięcie przez `2fr` utrzymuje sekcję na 100vh.
-- 2026-11-17 — ucieczka horyzontu przy scrollu w kodzie siatki (kontrolka), bo natywne efekty scrolla Framera
-  nie mogą animować właściwości komponentu kodowego.
+- 2026-11-17 — efekt scrolla pierwszej sekcji w kodzie siatki (kontrolka), bo natywne efekty scrolla Framera
+  nie mogą animować właściwości komponentu kodowego. Najpierw horyzont uciekał w górę; użytkownik wolał
+  przybliżanie sześcianów (krata jedzie ku kamerze), więc kontrolka „Ucieczka” zastąpiona „Zbliżeniem”.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
 
 - [ ] „Pasy zdjęć” na `/`: podmienić zdjęcia w pasach 3 i 4 (oraz ewentualnie 1–2), gdy użytkownik je podeśle.
-- [ ] Sprawdzić w podglądzie Framera rozwijanie pasów i ucieczkę horyzontu przy scrollu (z poziomu AI widać tylko
-      statyczne zrzuty); ewentualnie dostroić tempo (spring 0,7 s) i siłę „Ucieczki”.
+- [ ] Sprawdzić w podglądzie Framera rozwijanie pasów i przybliżanie kraty przy scrollu (z poziomu AI widać tylko
+      statyczne zrzuty); ewentualnie dostroić tempo (spring 0,7 s) i siłę „Zbliżenia” (teraz 3 sześciany).
 - [ ] Podpis pod nagłówkiem „Kubatura — nadaj kształt” odwołuje się do starej nazwy i starego przycisku —
       zapytać, czy zmienić (np. na „NUMINO”).
 - [ ] Logotyp jako SVG nie ma tekstu alternatywnego (Framer nie pozwala dać `ariaLabel` na SVG) — rozważyć
