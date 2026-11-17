@@ -291,6 +291,9 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
   - **Cofnięte tego samego dnia na prośbę użytkownika:** Rozświetlenie wyłączone na `/home-3` (kod grupy w komponencie
     został, domyślnie wył.), przycisk, jego warstwa i komponent „Przycisk strzałka” usunięte (zestaw ikon Phosphor
     został zainstalowany). Słabsze świetliki i ciemniejsze narożniki zostają.
+- 2026-11-17 — świetliki za mocne / za długo i za dużo (`/home-3`, `GA3zheMSK`): Świetliki w węzłach: liczba 8 → 5,
+  jasność 0,45 → 0,2, wielkość 7 → 5, światło na liniach 16 → 6; świetliki podróżujące: poziome 6 → 3, pionowe 4 → 2,
+  w głąb 6 → 3, Dystans biegu 0,55 → 0,22 (gasną wcześniej), Czas gaśnięcia 1,2 → 0,7 s.
 
 ## Jak to działa (kod)
 
