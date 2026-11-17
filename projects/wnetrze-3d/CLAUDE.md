@@ -190,6 +190,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   Tablet y 1,54, szer. 3,75; Phone y 2,96, szer. 0,32, 100 kostek — dobrane tak, by pokrywało się z dawnym płaskim
   logo (na ekranach o innej wysokości może się lekko przesunąć, bo jest zakotwiczone w punkcie zbiegu).
 - Kolory szare (`#6F7176` przód …), jak dawne płaskie logo (biel z kryciem 41% na tle).
+- **Głębia przestrzeni** (2026-11-17, prośba: logo ma wyglądać na umieszczone w przestrzeni, nie na samym przodzie):
+  - grupa **„Bliskie linie”** (`$control__near`): linie poziome i pionowe najbliżej kamery dostają dodatkowe białe,
+    nieco grubsze pociągnięcie, wygasające w głąb (Jasność, Zasięg w sześcianach, Kolor, Grubość, „Też w głąb” dla linii
+    zbiegających). Na `/home-2`: jasność 0,9, zasięg 1,5, grubość 1,25; na `/` wyłączone (0);
+  - w „Logo 3D” doszła **Mgła głębi** (0,5 na `/home-2`) i Kolor mgły (`#0B0D10`, tło): logo ciemnieje z głębią
+    tak samo, jak przygasają linie na tej głębokości — przesunięte dalej „tonie” w przestrzeni.
 - Dawne płaskie logo `CjoBJZxs7` zostało, ale jego kontener „inside” `l5LKpFaTq` jest ukryty (żeby nie dublować).
 
 ## Jak to działa (kod)
@@ -263,6 +269,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   (a nie dziury), wszystkie kostki przylegają (pełny tył, usunięte oderwane drobiny) — na prośbę użytkownika.
 - 2026-11-17 — logo z sześcianów osadzone w komponencie Siatka perspektywy (wspólna przestrzeń 3D i perspektywa),
   a nie jako osobna warstwa nad nim — tylko tak linie mogą zasłaniać logo albo być przez nie zasłaniane zależnie od głębi.
+- 2026-11-17 — rozjaśnione najbliższe linie siatki + mgła głębi na logo, żeby logo czytało się jako obiekt w przestrzeni
+  za pierwszą warstwą linii (wcześniej wyglądało, jakby było na samym przodzie).
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
