@@ -527,16 +527,24 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   - **Usunięty stary pasek „Toolbar”** (z „Sortuj według”) spod nagłówka „Kolekcje publiczne”.
   - **Siatka kolekcji: 4 w rzędzie** zamiast 3 — kafelki „Collection tile” (wariant Desktop 1440)
     432 → **321 px** (jak „Object tile” w Cards, odstęp 12), 3 rzędy po 4; „Meta row” w kafelkach
-    przestawiony na „Fill” (miał stałe 406 px i wychodził poza kafelek). **Okładka zostaje
-    288 px wysokości** (prawie kwadrat 321×288) — wysokości „Cover image” nie da się nadpisać
-    w instancji (zmiana nie zapisuje się); proporcja 1,5 (214 px) wymagałaby zmiany komponentu.
-  - Makieta niższa: 3678 → 3160 px. Pozostałe breakpointy Kolekcji nie zmieniane.
+    przestawiony na „Fill” (miał stałe 406 px i wychodził poza kafelek).
+  - **Okładki = jak w Obiektach: 321×214, skalowanie „Fill” (bez zniekształceń)** — prośba
+    użytkownika. Wysokości „Cover image” nie da się nadpisać w instancji, więc w komponencie
+    „Collection tile - framer”, wariant Desktop 1440 (`6354:3841`), okładka (`6354:3843`) ma
+    **zablokowane proporcje 3:2** (432×288) — wysokość wynika z szerokości. Pozostałe 85 kopii
+    tego wariantu (wszystkie 432 px: Obiekty, „4. Zasoby/Kolekcje”, Instytucje) bez zmian
+    (sprawdzone: 432×288). **Obrazki podmienione na odpowiedniki z „Desktop Large - Cards”**
+    (te same pliki obrazów co „Object tile”, skalowanie Fill): Historia Wojska Polskiego ← Anioł
+    przy poległym rycerzu, Jan Stanisławski ← Błonia pod lasem, Spacer po Warszawie ← Centrum
+    Warszawy, Wirtualny spacer po muzeach ← Dziewczęce popiersie, Niezbędnik maturzysty ← Kobieta
+    w chuście, Eliza Orzeszkowa ← Portret Elizy Orzeszkowej, Dzień dziecka ← Przy furtce ogrodu,
+    Mikołaj Kopernik ← Wizerunek Mikołaja Kopernika, WIOSNA ← Wiosna, Wielkanoc ← Wołanie dzwonu,
+    Maria Skłodowska-Curie ← Maria Skłodowska-Curie, Wakacje ← Wycieczka statkiem.
+  - Makieta niższa: 3678 → 2938 px. Pozostałe breakpointy Kolekcji nie zmieniane.
 
 ## Do zrobienia
 
-- [ ] Kolekcje (Desktop Large `9186:39665`): okładka kafelka przy 4 kolumnach — zostawić 321×288
-      czy dodać w komponencie „Collection tile - framer” wariant/ustawienie z proporcją 1,5 (214 px)?
-      Czy placeholder paska ma mówić o kolekcjach zamiast „19 milionów zbiorów”? Pozostałe
+- [ ] Kolekcje (Desktop Large `9186:39665`): czy placeholder paska ma mówić o kolekcjach zamiast „19 milionów zbiorów”? Pozostałe
       breakpointy Kolekcji — czy też zmienić?
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
