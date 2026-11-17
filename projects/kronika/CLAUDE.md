@@ -320,6 +320,19 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     w Aspekta 600, reszta zdania bez zmian (15/450).
   - We Framerze nic nie zmieniano.
 
+- 2026-11-17 — **Figma, strona „BUTTONS”, komponent „Pagination”** (`9037:21913`, wariant
+  „Desktop Large i Small” `9037:21912`): „Page change” (strzałki + numer strony) jest zawsze
+  **wyśrodkowany względem całej szerokości komponentu**, także po rozciągnięciu instancji
+  (prośba użytkownika; sprawdzone przy 900 / 1024 / 1320 / 1440 px). Ramka „pagination buttons”
+  (`9037:21848`) była stała (740 px, bez auto‑layoutu, dosunięta do prawej) — teraz to poziomy
+  auto‑layout na całą szerokość („Fill”) z trzema elementami: pusta „Lewa kolumna (odstęp)”
+  (`9071:334`, Fill) · „Page change” (Hug) · „Prawa kolumna” (`9071:335`, Fill, wyrównanie do
+  prawej) z „Pokaż na stronie”. Obie boczne kolumny dzielą wolne miejsce po równo, więc środek
+  zawsze wypada na środku komponentu. Działa, dopóki „Pokaż na stronie” (246 px) mieści się
+  w połowie wolnego miejsca (komponent ≥ ~660 px). We Framerze: ten sam układ (stack poziomy,
+  dwie kolumny 1fr po bokach) albo grid 1fr / auto / 1fr. Wariant „Tablet i Mobile” bez zmian
+  (tam „Page change” już był wyśrodkowany).
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
