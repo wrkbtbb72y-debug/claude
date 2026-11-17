@@ -497,9 +497,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   584 px, Mobile — wariant Mobile, jak w Cards), blok „Przełącznik + podpowiedzi” (białe tło na
   całą szerokość makiety, od dolnej krawędzi hero), tytuł „Wyniki wyszukiwania” (H2 danego
   breakpointu), „Znaleziono **336** obiektów”, sortowanie „Trafność”, paginacja „z 63”; odstępy
-  sekcji jak w Desktop Large (wyniki 80/80, brak wyników 120/80). Na Mobile długa podpowiedź
-  („Katalog zbiorów…”) ma stałą szerokość kolumny (366 px) i tekst ucinany wielokropkiem —
-  w komponencie „Podpowiedź wyszukiwania” nie da się nadpisać maks. szerokości w instancji.
+  sekcji jak w Desktop Large (wyniki 80/80, brak wyników 120/80). Długa podpowiedź „Katalog
+  zbiorów Muzeum Wojska Polskiego…” **usunięta ze wszystkich 8 makiet** (decyzja użytkownika,
+  tego samego dnia); białe tło bloku podpowiedzi dopasowane. Uwaga na przyszłość: w komponencie
+  „Podpowiedź wyszukiwania” nie da się nadpisać maks. szerokości (640 px) w instancji — na Mobile
+  długą etykietę trzeba ograniczać stałą szerokością instancji + tekst „Fill”.
   Brak wyników: blok „Brak wyników” z H2 i Body 3 danego breakpointu.
   Makieta „Desktop Large – brak wyników” **przesunięta niżej** (y −43826 → −39090), bo wysoka
   makieta Mobile wyników zachodziła na jej rząd.
