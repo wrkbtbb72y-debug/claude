@@ -205,8 +205,12 @@ Prośba: linie wyglądały za regularnie — jak kratka, a nie tajemnicza przest
 „oddychającym” progiem — nigdy nie znikają twardo, bo pełne wycięcia dawały geometryczny „labirynt”), **Oddech** (tempo),
 **Nierówność** (różnice jasności linii; 0,4 = dawne zachowanie), **Mrok** + Światło X/Y + Zasięg światła (plama światła,
 poza nią linie toną w ciemności). Działa też na rozjaśnione bliskie linie, świetliki i węzły. Na `/` wyłączone.
-Na `/home-2`: rzadkość 0,42, oddech 0,15, nierówność 0,85, mrok 0,6, światło (0,5; 0,55), zasięg 0,8.
-Przerwy zostały na wartości użytkownika (0,75).
+- Poprawka (2026-11-17, uwagi użytkownika: część linii za jasna, części brak, „krzyże”, linie kończą się na przecięciach):
+  przy Rzadkości > 0 przygaszanie to **gładki szum wzdłuż linii, niezależny od węzłów** (fragmenty zaczynają się i kończą
+  w dowolnym miejscu i powoli wędrują) — zastępuje wtedy „ramiona” od przecięć z Przerw. **Przerwy** ustalają głębokość
+  przygaszenia (przy 0,75 linia nie spada poniżej ~30%), więc żadna nie znika. Na `/` (Rzadkość 0) bez zmian.
+- Na `/home-2`: rzadkość 0,62, oddech 0,15, nierówność 0,35, mrok 0,65, światło (0,5; 0,55), zasięg 0,8;
+  bliskie linie jasność 0,7. Przerwy zostały na wartości użytkownika (0,75).
 
 ### Wnętrze 3D w przestrzeni Siatki perspektywy (`/home-2`, od 2026-11-17)
 
