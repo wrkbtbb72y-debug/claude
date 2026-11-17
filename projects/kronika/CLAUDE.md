@@ -372,6 +372,14 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   breakpointach trzyma się na nadpisaniu w instancji (nowe karty wstawiane z komponentu mają H4
   Dużego desktopu; trzeba przełączyć ręcznie albo dodać warianty).
 
+- 2026-11-17 — **Figma: usunięty komponent „Header Text”** (`3380:50356`, strona „- KOMPONENTY -
+  nowe (robocze)”; tytuł + podtytuł w hero, warianty D Large Default / D Small / Tablet / Mobile)
+  — zbędny i nieaktualny (decyzja użytkownika). Wszystkie **71 kopii odłączono** (decyzja
+  użytkownika: „odłączyć i usunąć”) — są teraz zwykłymi ramkami „Header Text” z tym samym tekstem
+  i stylem, wygląd makiet bez zmian (m.in. hero na Obiektach, Kolekcjach, Instytucjach,
+  O Portalu, Głównej 2.0, Typography, NAWIGACJA I i na stronach „❌ nieaktualne”). Style H1
+  na 4 makietach „Lista obiektów – Cards” sprawdzone po odłączeniu (38 / 36 / 34 / 30 px).
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
