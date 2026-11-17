@@ -189,7 +189,22 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - Instancja na `/home-2` `GCcSRW8rC`: Desktop x 0, y 1,1, głębia 0,25 (tuż za pierwszą warstwą), szerokość 3,64;
   Tablet y 1,54, szer. 3,75; Phone y 2,96, szer. 0,32, 100 kostek — dobrane tak, by pokrywało się z dawnym płaskim
   logo (na ekranach o innej wysokości może się lekko przesunąć, bo jest zakotwiczone w punkcie zbiegu).
-- Kolory szare (`#6F7176` przód …), jak dawne płaskie logo (biel z kryciem 41% na tle).
+- Kolory szare (`#6F7176` przód …), jak dawne płaskie logo (biel z kryciem 41% na tle) — zmienione 2026-11-17, patrz niżej.
+- **Dopracowanie bryły i światła** (2026-11-17, prośba: mniej przypadkowo poszarpane krawędzie, więcej uzasadnionej głębi,
+  światłocień, kontrast, białe rozjaśnienia). Zmiany tylko w `SiatkaPerspektywy.tsx` — `LogoSzesciany.tsx` (osobna instancja
+  `bSQ2TfYUa`) ma jeszcze starszy algorytm:
+  - **Wygładzanie** (kontrolka, 1,2): raster logo jest rozmywany przed progowaniem, sylwetka bryły też — znikają schodki
+    i pojedyncze zadziory; drobne jasne drobiny w rowkach i drobne ciemne plamki w licu są usuwane. Wyraźne rysy zostają;
+  - **głębia z formy**: tarasowe fazowanie (2 stopnie) — krawędzie każdej kreski schodzą w głąb, więc masywne partie liter
+    wysuwają się do przodu, a cienkie rysy są cofnięte; grubość bryły 12 kostek (było 8); boki ciemnieją płynnie w głąb;
+  - **światłocień**: światło kierunkowe (Światło X/Y, domyślnie z prawej u góry — od strony jaśniejszej części sceny)
+    + plama światła na bryle + okluzja w rowkach i przy stopniach; kontrolki Światłocień 0,7, Kontrast 1,2;
+  - **Blask** (0,85, kolor `#FFFFFF`): białe linie na krawędziach grzbietów zwróconych do światła, najmocniej na najbardziej
+    wysuniętych partiach; krawędzie po przeciwnej stronie leżą w cieniu; lekki połysk na bokach od strony światła;
+  - nowe kolory: przód `#8A8E94`, góra `#E8EBEF`, bok lewy `#5C6066`, bok prawy `#3A3D42`, spód `#202226`, głębia `#0E1012`,
+    fugi 0,15 — ustawione na wszystkich trzech breakpointach (położenie i rozmiar bez zmian).
+- Położenie na Desktop zmienione ręcznie przez użytkownika (stan 2026-11-17): x −1,62, y 2,36, głębia 0,92, szerokość 2,37
+  (logo w lewym górnym rogu).
 - **Głębia przestrzeni** (2026-11-17, prośba: logo ma wyglądać na umieszczone w przestrzeni, nie na samym przodzie):
   - grupa **„Bliskie linie”** (`$control__near`): linie poziome i pionowe najbliżej kamery dostają dodatkowe białe,
     nieco grubsze pociągnięcie, wygasające w głąb (Jasność, Zasięg w sześcianach, Kolor, Grubość, „Też w głąb” dla linii
@@ -303,6 +318,9 @@ poza nią linie toną w ciemności). Działa też na rozjaśnione bliskie linie,
   za pierwszą warstwą linii (wcześniej wyglądało, jakby było na samym przodzie).
 - 2026-11-17 — Wnętrze 3D osadzone we wspólnej przestrzeni z Siatką perspektywy (wspólna kamera + wklejanie obrazu
   sceny między linie siatki), zamiast scalać dwa duże komponenty w jeden — każdy zostaje osobno edytowalny.
+- 2026-11-17 — logo 3D w siatce: głębia wynika z formy (tarasowe fazowanie — masywne partie wysunięte), światło kierunkowe
+  z blaskiem na krawędziach zamiast płaskich kolorów ścian, obrys wygładzany — na prośbę użytkownika (mniej przypadkowo
+  poszarpane, więcej światłocienia i bieli). Zmiana tylko w siatce; `LogoSzesciany.tsx` celowo nieruszany.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
@@ -318,7 +336,10 @@ poza nią linie toną w ciemności). Działa też na rozjaśnione bliskie linie,
 
 - [ ] Logo 3D (`bSQ2TfYUa`): zaakceptować wygląd (głębokość zagłębień, perspektywa, kolory), zdecydować o kryciu
       (100% vs 41% jak oryginał) i czy/gdzie ma zastąpić płaskie logo (np. w nawigacji) oraz czy usunąć oryginał.
-- [ ] Logo w siatce (`/home-2`): zaakceptować głębię/położenie i szare kolory; zdecydować, czy usunąć ukryte płaskie
+- [ ] Logo w siatce (`/home-2`): obejrzeć nowe światło i blask w podglądzie; ewentualnie dostroić Światło X/Y, Blask,
+      Wygładzanie. Zdecydować, czy przenieść nowy algorytm do `LogoSzesciany.tsx`.
+- [ ] Na Tablet logo w siatce (szer. 3,75) dotyka lewej krawędzi ekranu — do decyzji, czy zmniejszyć.
+- [ ] Logo w siatce (`/home-2`): zaakceptować głębię/położenie; zdecydować, czy usunąć ukryte płaskie
       logo `CjoBJZxs7` i osobną instancję `bSQ2TfYUa` z canvasu.
 - [ ] Wnętrze 3D w siatce (`/home-2`): sprawdzić w podglądzie Framera (spadanie, „Pokaż”, przeciąganie) i ustawić
       położenie/głębię/skalę wg uznania; na telefonie scena jest w innym układzie — do obejrzenia.
