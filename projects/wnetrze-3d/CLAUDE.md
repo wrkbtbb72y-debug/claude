@@ -241,6 +241,10 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 - Poprawka (2026-11-17): użytkownik **nie chce ruchu przestrzeni** → dryf 0 i Oddech „Tajemnicy” 0 (wzór nieruchomy;
   świetliki i migotanie pyłu zostają). Ma być widoczny **lekki zarys dawnej kraty** → nowe ustawienie **Zarys siatki**
   (krycie regularnej kraty pod odcinkami; krata ma wtedy swoją dawną głębię z „Głębi” siatki). Na `/home-2`: 0,35.
+- Poprawka (2026-11-17, uwagi: „linie w przypadkowych miejscach”, „z przodu za dużo linii ciągłych na całej długości”):
+  odcinki poziome i pionowe Kosmosu leżą teraz **na płaszczyznach kraty** (pokrywają się z jej zarysem; odcinki w głąb
+  już leżały na liniach kraty); w trybie Kosmos zarys kraty **rwie się głęboko** (przygaszone fragmenty prawie znikają,
+  szum gęstszy — krótsze kawałki) i odcinki najbliżej kamery są krótsze.
 - Użytkownik sam przesunął logo w siatce (x −1,62, y 2,36, głębia 0,92, szerokość 2,37) i zmienił Głębię siatki na 0,22 —
   zachowane.
 
