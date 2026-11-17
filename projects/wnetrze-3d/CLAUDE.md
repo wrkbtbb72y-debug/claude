@@ -145,6 +145,18 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
     „Od nowa” `C6hHtDu5I` (`withOdNowa`).
     Etykieta panelu `A8IrKWoZJ` ma override `withEtykietaPanelu` (tekst zależny od etapu).
 
+## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
+
+- Projekt ma drugą stronę `OvsvNzCvS` (nazwa w panelu też „Home”, ścieżka `/home-2` — użytkownik
+  zmienił ją 2026-11-17 z `/home`). Breakpointy: Desktop `KMqqOEmhj`, Tablet `OYwlXyB0T`, Phone `cq2IA_2QC`.
+- Na obu stronach jest tło **Siatka perspektywy** — komponent kodowy `SiatkaPerspektywy.tsx`
+  (instancje: `/` → `OirTRcAEZ`, `/home-2` → `GCcSRW8rC`; absolutnie, 100% × 100%, pod treścią).
+- 2026-11-17 — na prośbę użytkownika ustawienia siatki skopiowane z `/` do `/home-2` (obie są teraz
+  identyczne, wartości domyślne komponentu). Poprzednie ustawienia `/home-2`, gdyby trzeba było wrócić:
+  horyzont 0,35, punktZbiegu 0,33, wielkość sześcianu 460, głębia 0,32, dół (below) krycie 0,8 /
+  poziomy 1, miękkość zaniku 1, przerwy 1, długość światła 20, prędkość 115, rozświetlenie 0,3
+  (reszta jak domyślne).
+
 ## Jak to działa (kod)
 
 - `Wnetrze3D.tsx` — własny renderer linii na `<canvas>` (bez bibliotek): perspektywa, przycinanie
