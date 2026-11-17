@@ -389,6 +389,25 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   sprawdzone na kopii: 48 → 42, 60 → 54). Kontenery „3” i „Frame 427320017” też „Fill” w pionie.
   Wariant Default (56 px, 16 kopii) bez zmian; wariant Mobile nie miał jeszcze kopii.
 
+- 2026-11-17 — **Figma, strona „BUTTONS”: audyt i ujednolicenie kolorów przycisków**
+  (decyzje użytkownika; ramka „nieaktualne” pominięta na jego prośbę):
+  - **Jeden zielony przycisków: #15682D, hover #115525.** Było też #1A7936 (hover #14602B)
+    w secondary „Publikuj” (Specyfikacja, sekcja 44 px, tabela przeglądu), w hoverze zielonego
+    wiersza tabeli stanów i w „Przyciskach dodawania” (`8578:129878`) — poprawione.
+    Zmienna **`mode/OK`** (oba tryby) też zmieniona #1A7936 → **#15682D** (wpływa na cały plik).
+  - **Ramki w kolorze akcji zawsze z kryciem 80 %** — także przyciski z samą ikoną (były 40 %,
+    neutralny 30 %): tabela stanów `8578:129228`, „Same ikony” w Specyfikacji, komponent
+    „Przycisk Dodaj do kolekcji” wariant W ramce (`8975:7834`, zmiana idzie do instancji).
+  - **Stan nieaktywny = krycie 40 %** (tabela stanów i „Dodaj do kolekcji” miały 35 %).
+  - Próbka palety „Kronika Blue Hover” → **#142C69** (odłączona od starego stylu #163F7D);
+    „Cofnij publikację” w sekcji 44 px: #4B5563 → czarny secondary (tekst #1A1A1A, ramka
+    #333333); nazwy warstw: próbki „Kronika Green” / „Kronika Red”, przycisk „Przycisk/Green”.
+  - Zostało (nie ruszane, do decyzji): style kolorów w pliku są nieaktualne („Kronika Blue”
+    #1C4F9C, „Kronika Blue Hover” #163F7D), zmienne palety nie zgadzają się z przyciskami
+    (`palette/KRONIKA` #134571, `palette/RED KRONIKA` #BF1F39, `Kronika-black` #000000),
+    kolory przycisków są wpisane na sztywno; sekcja „Linki” w Specyfikacji to kopia „Disabled”;
+    w tabeli ok. 8 różnych prawie-czarnych (#1A1A1A, #121212, #111214, #0A0A0A, #000000…).
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
