@@ -14,8 +14,10 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   1024 `7399:252`, Tablet 810 `7373:101588`, Mobile 390 `7373:102357`.
   Strona „3. Zasoby/Obiekty - TBC”: **„Lista obiektów”** — oficjalna makieta Desktop Large
   (1440): widok kafelków **„Desktop Large - Cards”** `8670:4812`, obok po prawej widok listy
-  **„Desktop Large - Lista”** `8970:7119` (x 5639), dalej „audyt” i **„Desktop Large – wyniki
-  wyszukiwania”** `8949:9184` (pozostałe 3 breakpointy jeszcze nie powstały); kopia zapasowa
+  **„Desktop Large - Lista”** `8970:7119` (x 5639), dalej „audyt”. **Wyniki wyszukiwania** —
+  rząd 4 makiet (y −47876): Desktop Large `8949:9184` (x 5639), Desktop Small `9173:12149`,
+  Tablet `9173:15859`, Mobile `9173:16891`; pod nim **brak wyników** (y −39090): Desktop Large
+  `9015:7886`, Desktop Small `9173:18307`, Tablet `9173:19085`, Mobile `9173:19850`; kopia zapasowa
   sprzed zmian 2026-11-16: „Lista obiektów - kopia zapasowa” `8911:31206` (karty odłączone
   od komponentu). **Nowe komponenty** tych makiet (wzorce) leżą w opisanej ramce
   **„Lista obiektów – nowe komponenty”** `8983:7846` na prawo od makiety wyników
@@ -308,7 +310,7 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     szerokość — zmiana użytkownika; „Linia – pełna szerokość”, `9010:7887`): 24 px pod przełącznikiem, 40 px nad
     podpowiedziami; pod podpowiedziami 40 px do końca białego pasa (padding bloku 16/40).
   - **Brak wyników** (prośba użytkownika): makieta **„Desktop Large – brak wyników”**
-    `9015:7886` (kopia makiety wyników, x 11165). Fraza z literówką „Muzeum Wojska Polskeigo”,
+    `9015:7886` (kopia makiety wyników; położenie — patrz góra pliku). Fraza z literówką „Muzeum Wojska Polskeigo”,
     przełącznik „Obiekty (0)” / „Kolekcje (0)”, pierwsza podpowiedź „Czy chodziło Ci o?” =
     poprawna fraza; grupa „Możesz obejrzeć także” usunięta (przy braku wyników tylko
     „Czy chodziło Ci o?” — decyzja użytkownika). Pasek wyników, siatka kart i paginacja usunięte; w ich miejscu blok
@@ -487,7 +489,34 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   #F1F1F1 (aktywny segment), #FFFFFF. „Dodaj do kolekcji” był już zgodny.
   Poza ramką: „Wybierz jednostkę” na BUTTONS nadal ma ramkę #E5E5E5 60 % — do decyzji.
 
+- 2026-11-17 — **Figma, „Wyniki wyszukiwania” i „Brak wyników” — pozostałe 3 breakpointy**
+  (prośba użytkownika). Każda nowa makieta to **kopia odpowiedniej makiety „Cards”** (ramka
+  `9096:35581`) — nawigacja, hero, filtry, karty, paginacja, stopka, paddingi i style tekstu
+  dokładnie jak w Cards danego breakpointu — z elementami wyników przeniesionymi z Desktop Large:
+  pasek wyszukiwarki w stanie **Wypełniony** („Muzeum Wojska Polskiego”; Tablet — wariant Desktop
+  584 px, Mobile — wariant Mobile, jak w Cards), blok „Przełącznik + podpowiedzi” (białe tło na
+  całą szerokość makiety, od dolnej krawędzi hero), tytuł „Wyniki wyszukiwania” (H2 danego
+  breakpointu), „Znaleziono **336** obiektów”, sortowanie „Trafność”, paginacja „z 63”; odstępy
+  sekcji jak w Desktop Large (wyniki 80/80, brak wyników 120/80). Na Mobile długa podpowiedź
+  („Katalog zbiorów…”) ma stałą szerokość kolumny (366 px) i tekst ucinany wielokropkiem —
+  w komponencie „Podpowiedź wyszukiwania” nie da się nadpisać maks. szerokości w instancji.
+  Brak wyników: blok „Brak wyników” z H2 i Body 3 danego breakpointu.
+  Makieta „Desktop Large – brak wyników” **przesunięta niżej** (y −43826 → −39090), bo wysoka
+  makieta Mobile wyników zachodziła na jej rząd.
+  W nowych makietach „Section heading” ma szerokość „Fill” — w Cards Desktop Small i Tablet ma
+  stałe 1320 px (kreska pod „Lista obiektów” wychodzi poza kolumnę) — **w Cards nie poprawiano**.
+  Celowo **jak w Cards, nie jak w Desktop Large wyników** (rozbieżności w samych makietach DL,
+  do decyzji): kolejność filtrów (Cards: Kategoria, Instytucja, Autor, Data publikacji, Więcej;
+  wyniki DL: …Data publikacji, Autor…), odstępy w hero (Cards: gap 28 + 20 px pod paskiem; wyniki
+  DL: gap 32, bez dolnego paddingu), sortowanie na Mobile w wariancie Desktop (z „Sortuj:”).
+  Uwaga: w „brak wyników” pasek wyszukiwarki pokazuje „Muzeum Wojska Polskiego”, a opis frazę
+  z literówką „Polskeigo” — skopiowane 1:1 z Desktop Large, do decyzji.
+
 ## Do zrobienia
+
+- [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
+      Large; fraza w pasku „brak wyników” (z literówką czy bez?); „Section heading” Fill w Cards
+      Desktop Small i Tablet; czy na Mobile użyć wariantu Mobile sortowania (bez „Sortuj:”).
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
 
