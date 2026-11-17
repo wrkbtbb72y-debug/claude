@@ -407,6 +407,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     (`palette/KRONIKA` #134571, `palette/RED KRONIKA` #BF1F39, `Kronika-black` #000000),
     kolory przycisków są wpisane na sztywno; sekcja „Linki” w Specyfikacji to kopia „Disabled”;
     w tabeli ok. 8 różnych prawie-czarnych (#1A1A1A, #121212, #111214, #0A0A0A, #000000…).
+  - Ramka „Kolory podstawowe” → „Paleta Kronika”: Blue, Green, Black i Red ułożone w kolumny
+    jak w sekcji „Primary” Specyfikacji — kolor podstawowy na górze, hover pod spodem
+    (Blue hover #142C69, Green hover #115525, Black hover #333333, Red hover #7E1728;
+    kolumny `9126:352` / `9126:353` / `9126:356` / `9126:359`). Podpis „RED #9A1C31” → „Red · #9A1C31”.
+    Szarości i biały bez hoveru, w tym samym rzędzie.
 
 ## Do zrobienia
 
