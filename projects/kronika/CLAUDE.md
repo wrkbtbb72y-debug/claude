@@ -333,6 +333,28 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   dwie kolumny 1fr po bokach) albo grid 1fr / auto / 1fr. Wariant „Tablet i Mobile” bez zmian
   (tam „Page change” już był wyśrodkowany).
 
+- 2026-11-17 — **Figma, „3. Zasoby/Obiekty”: paginacja = komponent „Pagination”** (`9037:21913`,
+  ten sam co na nowych makietach „4. Zasoby/Kolekcje”, ramka `9037:16516`). Odłączone ramki
+  „Pagination section” zastąpione instancjami (szerokość „Fill”): wariant „Desktop Large
+  i Small” na Desktop Large - Cards (`9074:18271`), Desktop Small - Cards (`9074:18302`),
+  Desktop Large - Lista (`9074:18365`) i wynikach wyszukiwania (`9074:18396`, nadpisanie „z 63”);
+  wariant „Tablet i Mobile” na Tablet (`9074:18333`) i Mobile (`9074:18349`) — jak w Kolekcjach,
+  tam **bez „Pokaż na stronie”** (wcześniej na Mobile było pod numerami stron).
+  Kopie zapasowe i starsze propozycje bez zmian.
+
+- 2026-11-17 — **Figma: nowy przycisk „Sortowanie”** (prośba użytkownika) — zestaw komponentów
+  `9078:20251` w tabeli „Nowe przyciski” (wiersz „Sortowanie (lista rozwijana)” `9078:20214`,
+  sekcja „Strona: Zasoby · Lista obiektów”). Zrobiony z przycisku z makiety (wygląd 1:1:
+  48 px, padding 14/20/13/20, białe tło 90 %, ramka 1 px #E5E5E5 60 %); własna strzałka
+  zamieniona na **lucide/chevron-down** 16 px (linia 1,5 px #7D7D7D) zgodnie z zasadą ikon.
+  Właściwości: **Stan** = Domyślny `9078:20235` / Hover `9078:20238` (tło #F3F3F3) / Focus
+  `9078:20244` (pierścień 2 px #222222 z 2 px odstępu — jak „Podpowiedź wyszukiwania”),
+  teksty **Etykieta** („Sortuj: ”) i **Wartość**. Teksty nadal bez stylu tekstu (jak było —
+  punkt w „Do zrobienia”). Instancje na makietach Obiektów: Desktop Large - Cards, Desktop
+  Small, Tablet, Mobile, Lista i wyniki wyszukiwania (tam Wartość = „Trafność”); szerokość
+  249 → 250 px. Kopia zapasowa i „Obiekty - propozycja” bez zmian. Kolekcje mają inny, starszy
+  przycisk „Sortuj według” — nie ruszany.
+
 ## Do zrobienia
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
