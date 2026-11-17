@@ -161,15 +161,19 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 
 - Na canvasie strony `/home-2` (luzem, poza breakpointami) leży oryginał **„Logo NUMINO”** `c7tBzcDUX`
   (biała ramka 811×304, maska SVG z logotypem, krycie 41%) — **nie ruszany**.
-- Pod nim (top 1313 px) jest nowa wersja 3D **„Logo NUMINO 3D”** `bSQ2TfYUa` — komponent kodowy
-  `LogoSzesciany.tsx`: ta sama ścieżka SVG, z której w przeglądarce budowana jest bryła z sześcianów
-  (pełny blok → odjęte kolumny poza literami → schodkowe fazowanie krawędzi → płytkie rowki tam, gdzie
-  oryginał ma poszarpaną fakturę), rysowana w WebGL. Domyślnie: 220 kostek szerokości (82 wysokości),
-  głębokość 10, obrót −12°, pochylenie 9°.
-- Kolory ścian (kontrolki): przód `#E6ECF2` (kolor logotypu), góra `#FFFFFF`, bok lewy `#A9B2BC`,
-  bok prawy `#76808B`, spód `#4A525B`; delikatne fugi między kostkami i lekki losowy odcień każdej kostki.
-- W podglądzie/na stronie logo **powoli się kołysze** (±10°, okres 14 s) i można je **obrócić przeciągnięciem**
-  (po puszczeniu wraca do pozycji). W edytorze jest statyczne. Bez WebGL pokazuje się płaskie logo SVG.
+- Pod nim jest nowa wersja 3D **„Logo NUMINO 3D”** `bSQ2TfYUa` — komponent kodowy `LogoSzesciany.tsx`
+  (WebGL): z tej samej ścieżki SVG budowana jest bryła z sześcianów. Zasady (poprawka użytkownika 2026-11-17):
+  - **lica kostek stoją frontem do kamery** (obrót 0°, pochylenie 0°, bez kołysania i przeciągania —
+    te opcje są w kontrolkach, ale domyślnie wyłączone); głębię widać przez lekką perspektywę i cień;
+  - **ciemne miejsca oryginału = głębia**, nie brak kostek: rysy i plamy wewnątrz kresek to zagłębienia
+    (kostki cofnięte o 3–4 warstwy i przyciemnione kolorem „Kolor głębi”); puste zostają tylko duże
+    zamknięte prześwity liter (np. środek „o”);
+  - **żadnych samotnych kostek**: tylna ściana każdej litery jest pełna i płaska, a kawałki niepołączone
+    ścianami z resztą (mniejsze niż ~24 kostki) są usuwane;
+  - domyślnie 220 kostek szerokości (82 wysokości), głębokość 8, fazowanie krawędzi 1, głębia rowków 4.
+- Kolory ścian (kontrolki): przód `#E6ECF2` (kolor logotypu), głębia `#2E343B` (cień 0,85), góra `#FFFFFF`,
+  bok lewy `#A9B2BC`, bok prawy `#76808B`, spód `#4A525B`; delikatne fugi i lekki losowy odcień kostek.
+- Bez WebGL pokazuje się płaskie logo SVG. Użytkownik przesunął/powiększył instancję (899×337).
 - Instancja ma krycie 100% (oryginał 41%) — żeby było widać cieniowanie ścian; do decyzji użytkownika.
 
 ## Jak to działa (kod)
@@ -237,8 +241,10 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - 2026-11-16 — przyciski brył tylko z ikoną (większą), dwa nowe kształty (Trójkąt, Walec), licznik 0/3–3/3,
   „Nadaj kształt” → „Pokaż”, logotyp NUMINO zamiast „Kubatura” — na prośbę użytkownika.
 - 2026-11-17 — logo NUMINO w wersji 3D z sześcianów jako komponent kodowy (WebGL), a nie statyczny obrazek:
-  bryła jest prawdziwie trójwymiarowa (można ją obracać), a gęstość kostek, głębokość i kolory ścian są
-  kontrolkami; oryginał zostaje obok do porównania.
+  bryła jest prawdziwie trójwymiarowa, a gęstość kostek, głębokość i kolory ścian są kontrolkami;
+  oryginał zostaje obok do porównania.
+- 2026-11-17 — poprawka logo 3D: kostki frontem do kamery, ciemne miejsca jako zacienione zagłębienia
+  (a nie dziury), wszystkie kostki przylegają (pełny tył, usunięte oderwane drobiny) — na prośbę użytkownika.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
@@ -252,7 +258,7 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - [ ] Wskazówka w nawigacji „Poruszaj kursorem, aby się rozejrzeć” jest nieaktualna (kamera stoi,
       obiekt obraca się przeciąganiem) — zaproponować np. „Przeciągnij, aby obrócić”.
 
-- [ ] Logo 3D (`bSQ2TfYUa`): zaakceptować wygląd (kąt, głębokość, kolory, kołysanie), zdecydować o kryciu
+- [ ] Logo 3D (`bSQ2TfYUa`): zaakceptować wygląd (głębokość zagłębień, perspektywa, kolory), zdecydować o kryciu
       (100% vs 41% jak oryginał) i czy/gdzie ma zastąpić płaskie logo (np. w nawigacji) oraz czy usunąć oryginał.
 - [ ] Potwierdzić, czy zostaje przycisk „Od nowa” (dodany z własnej inicjatywy).
 - [ ] Inspiracje od użytkownika (2026-11-15) jeszcze niewykorzystane w pełni: wklęsła czerwona
