@@ -184,6 +184,9 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   **Długość zanikania** (na ilu sześcianach w głąb od bliższego końca krycie rośnie od 0% do pełnego; 0 = urwane),
   **Krzywa zanikania** (1 = równo, > 1 = dłużej przezroczyste, < 1 = szybciej nabiera koloru). Działa też na zarys
   odcinków w głąb w „Kosmosie”. Domyślnie 0/0/1 (inne strony bez zmian). Na `/`: przedłużenie 1, zanikanie 2, krzywa 1,4.
+  Od 2026-11-18 także **Bez linii ze środka** (`rays.bezSrodka`): pomija 4 linie w głąb z narożników środkowego kwadratu
+  (środek siatki zdjęć, z uwzględnieniem Warstwy i Przesunięcia X/Y zdjęć). Na `/` włączone (prośba użytkownika — linie
+  przecinały film w środku).
 - **Kwadraty na wysokość** (2026-11-18, `rzedy`): wielkość sześcianu liczona z rzeczywistej wysokości komponentu tak,
   by kwadrat pierwszej warstwy (tej ze zdjęciami) miał dokładnie wysokość/N px (0 = według „Wielkości sześcianu”).
   Żeby linie wypadały równo na górnej i dolnej krawędzi, horyzont musi być (N/2 − k − 0,5)/N — dla 5: 0,1 / 0,3 / 0,5 …
