@@ -238,6 +238,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   right 0 + szer. 1200 px — do sprawdzenia w podglądzie, czy przyciski rosną; jeśli nie, ustawić left/right 0.
   Przypięcie górne siatki zmienione przez użytkownika na 68 px (2026-11-18).
 
+- **Później 2026-11-18:** „Podziel boki zdjęć” **usunięte** (kod i przełącznik) na prośbę użytkownika. Wszystkie
+  ustawienia gridu przeniesione z „Kamera i przestrzeń” do osobnej grupy **„Grid”** (`$control__grid`, na początku panelu):
+  Włącz (`kolumny`), Padding boczny, Kolumny po bokach (`kolBoczne`), Środek (łącznie), Kolumny w środku, Stała wys.
+  rzędów, Wysokość rzędu, Rzędy do krawędzi, Rzędy nad/pod. Kod czyta najpierw `grid`, zapasowo `kamera`. Wartości
+  przepisane: Desktop wł. (80 / 2 / 442 / 3 …), Tablet i Phone wył. (nadpisanie `grid.kolumny`).
+
 ## Lista tytułów zamiast dużego logo na `/` (2026-11-18)
 
 - Duże logo NUMINO w kolumnie „Opis” (kontener `p1krlsuOc`) **ukryte** (nie usunięte) na wszystkich breakpointach.
