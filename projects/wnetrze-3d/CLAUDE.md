@@ -220,6 +220,7 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   nad nim, po zjechaniu wraca. Kliknięcie łapane z `window` (`pointerdown`).
   Powiększenie poprawione: ease-out w obie strony (wygładzanie wykładnicze — rusza od razu, łagodnie hamuje), szybciej;
   **Czas powiększenia** (`hoverPowCzas`, 0,4 s — wydłużony z 0,25 s 2026-11-18; ≈ czas dojścia do ~98%).
+  **Czas powrotu** (`hoverPowCzasPowrot`, 0,9 s): osobny, dłuższy czas powrotu do zwykłej wielkości po zejściu kursora.
   Kierunek powiększenia (2026-11-18): w stronę środka siatki zdjęć — zakotwiczona krawędź zewnętrzna (lewy górny rośnie
   w prawo i w dół, prawy dolny w lewo i w górę, środkowe w kolumnie/rzędzie symetrycznie wzdłuż tej osi, środkowy na boki).
   Sąsiedzi (także po skosie) sześcianu na hover kurczą się od strony, w którą on rośnie, o tyle samo — odstęp (padding)
