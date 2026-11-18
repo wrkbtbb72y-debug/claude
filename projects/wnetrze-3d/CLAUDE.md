@@ -250,6 +250,10 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   powiększonego zdjęcia). Kliknięcia z `window` (`pointerdown`). Na razie bez linków/podstron.
   Kursor „rączka” (`pointer`) nad sześcianami: ustawiany na `document.body` (dziedziczy się, bo warstwy nad siatką mają
   `pointerEvents: none`), zdejmowany po zjechaniu i przy odmontowaniu komponentu.
+  **Zdjęcie na ścianach** (`zdjecia.scianyObraz`, domyślnie wł.; 2026-11-18): ściany boczne pokryte tym samym zdjęciem/filmem
+  co przód (kadr „cover” ze środka w proporcjach ściany), w perspektywie — ściana dzielona na 6 pasów w głąb, każdy pas
+  rysowany dwoma trójkątami z przekształceniem afinicznym (canvas 2D nie ma mapowania tekstur); cieniowanie nakładką
+  (góra jaśniej, boki/dół ciemniej, plus „Przyciemnienie ścian”). Gdy obraz/film nie jest jeszcze wczytany — kolor jak dawniej.
   **Głębokość sześcianów** (`zdjecia.kostkiGlebia`, 0,02–1, 2026-11-18): głębokość względem boku zdjęcia (1 = sześcian,
   mniej = płytszy prostopadłościan). Na `/` 1.
   **Jasność krawędzi** (`zdjecia.krawedzie`, dawniej „Krawędzie”; 2026-11-18 poprawione): 0 = bez krawędzi, 1 = kolor
