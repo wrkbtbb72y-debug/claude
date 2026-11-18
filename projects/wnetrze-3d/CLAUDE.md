@@ -209,6 +209,9 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   (`film2`, `film2Miejsce`, `film2Kolor`, `film2Opis`). Na `/`: `…/hero/toaster-cartelle.mp4` w kwadracie **6** (prawy
   w środkowym rzędzie, zamiast zielonej kopuły — zdjęcie zostaje na liście, ale nie jest rysowane), kolor ścian `#5FC08E`
   (miętowe tło klatki), opis wg pierwszej klatki („srebrny toster na rozsypanych krakersach, na miętowym tle”).
+  **Film 3** (2026-11-18, `film3`, `film3Miejsce`, `film3Kolor`, `film3Opis`): `…/hero/fornasetti2-cartelle.mp4` w kwadracie
+  **4** (pierwszy w środkowym rzędzie, zamiast białej kopuły). Pierwszej klatki nie udało się zobaczyć (zrzuty Framera nie
+  wczytały filmu) — **TODO: kolor ścian (teraz grafit zastępczy) i opis („Zapętlony film”)**.
   **Przyciemnienie ścian** (`zdjecia.scianyCien`, 0–1, 2026-11-18): przyciemnia tylko boczne ściany sześcianów
   (0 = kolor przewodni, 1 = czarne), zdjęcia bez zmian; **nie dotyczy sześcianu z filmem** (jego ściany zawsze
   w „Kolorze ścian filmu”). Na `/` 0.
