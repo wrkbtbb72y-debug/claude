@@ -586,6 +586,20 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   ma stałe 952 px) i wysokości bez zmian. Nie ruszane: „Wynik wyszukiwania” (H3 w „Heading row /
   Learn more”, bez kreski) — to nie nagłówek sekcji.
 
+- 2026-11-18 — **Figma, strona „tabele - robocze”** (`9258:24783`), makieta „Zmiana hasła - 1441”:
+  tabela `9258:25269` (dawniej „Tabela / Użytkownicy”, teraz **„Tabela / Zaproszenia”**)
+  przerobiona wg zrzutu od użytkownika (prośba użytkownika). Kolumny: E-mail (Fill) · Data
+  utworzenia 190 · Data ważności 190 · Status 170 (wyśrodkowany) · Członek jednostki 180 ·
+  Akcje 130 (wyśrodkowane). Ramki tabeli, nagłówka i wierszy (ID, tła, kreski) bez zmian,
+  komórki zbudowane od nowa na auto‑layoucie; wiersze min. 88 px. **Style tekstu
+  (istniejące):** nagłówki → Table Bold (14/500; wcześniej 14/600 bez stylu), treść → Table
+  Thin, status → Uppercase S (Wysłane #FB7321, Zaakceptowane #0F793B), data akceptacji pod
+  statusem → Body 6 Footer #737373, członek jednostki → Links #2A307D. Kolory statusów i linku
+  wzięte ze zrzutu — w pliku nie ma dla nich stylów kolorów. Akcje (tylko przy „Wysłane”):
+  przyciski 44×44 jak wcześniej w tabeli, ikony Lucide `refresh-cw` („Wyślij ponownie”)
+  i `square-x` („Anuluj zaproszenie”), 20 px. Paginacja pod tabelą bez zmian (20/40/60;
+  na zrzucie 50/75/100 — do decyzji).
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
@@ -609,3 +623,5 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
       z warstwą tekstową OCR”, „Szukaj tylko w tytułach” z ikoną informacji), pasek aktywnych
       filtrów z „×” i „Wyczyść filtry”, wyróżnienie frazy w wynikach.
       (Pogrubiona liczba wyników i makieta „brak wyników” — zrobione 2026-11-16.)
+- [ ] „Tabela / Zaproszenia” (`9258:25269`): czy zmienić opcje „Pokaż na stronie” na 50/75/100
+      jak na zrzucie? Status pogrubiony jak na zrzucie — nowy styl czy zostaje Uppercase S?
