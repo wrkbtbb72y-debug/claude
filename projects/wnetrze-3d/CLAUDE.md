@@ -173,11 +173,10 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   Kolejność: od lewego górnego kwadratu wierszami. Gdy zdjęć jest mniej niż kwadratów: kontrolka **Powtarzaj**
   (domyślnie wył., 2026-11-18 — użytkownik nie chce powtórzeń) — wył. = zdjęcia trafiają najpierw na kwadraty
   „szachownicy” (dla 3×3: rogi i środek, układ „X”), reszta zostaje pusta; wł. = zdjęcia się powtarzają.
-  Na `/` (`OirTRcAEZ`) włączone, 3×3, 5 zdjęć od użytkownika (instalacje świetlne w kopułach, portret mężczyzny
-  w kapeluszu na pustyni) z alt-textami. **Brakują 4 zdjęcia** (żółty pawilon na zielonym kopcu, pomarańczowa kopuła,
-  różowe okno w niebieskiej mgle, zielona kopuła) — użytkownik wkleił je w czacie, ale nie dotarły jako pliki;
-  do dodania w liście „Zdjęcia” + „Opisy” (na razie 5 zdjęć w układzie „X”, 4 kwadraty puste; po dodaniu
-  wszystkich 9 zdjęcia układają się wierszami). W projekcie Framera ich też nie ma (sprawdzone 2026-11-18).
+  Na `/` (`OirTRcAEZ`) włączone, 3×3, **9 różnych zdjęć** od użytkownika (2026-11-18; instalacje świetlne w kopułach,
+  pawilon z żółtym zadaszeniem, portret mężczyzny w kapeluszu na pustyni), wszystkie z alt-textami. Kolejność dobrana
+  tak, żeby podobne kolory nie stykały się bokami: [niebieska kopuła | żółty pawilon | pomarańczowa kopuła] /
+  [różowa kopuła | biała kopuła | zielona kopuła] / [mężczyzna w pomarańczowej sali | różowe okno w niebieskim | mężczyzna w kapeluszu].
   Na Phone kwadraty są szersze niż ekran — widać środkową kolumnę i fragmenty bocznych.
 - Wgrywanie plików do Framera z sesji w chmurze wymagało dodania hosta `mcp.framer.com` do sieci środowiska (zrobione).
 
@@ -422,8 +421,6 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 
 ## Do zrobienia
 
-- [ ] Siatka na `/`: dodać 4 brakujące zdjęcia do „Zdjęć w kwadratach” (żółty pawilon, pomarańczowa kopuła,
-      różowe okno w niebieskim, zielona kopuła) — poprosić o pliki albo użytkownik doda je sam w kontrolce.
 - [ ] „Pasy zdjęć” na `/`: podmienić zdjęcia w pasach 3 i 4 (oraz ewentualnie 1–2), gdy użytkownik je podeśle.
 - [ ] Sprawdzić w podglądzie Framera rozwijanie pasów i przybliżanie kraty przy scrollu (z poziomu AI widać tylko
       statyczne zrzuty); ewentualnie dostroić tempo (spring 0,7 s) i siłę „Zbliżenia” (teraz 3 sześciany).
