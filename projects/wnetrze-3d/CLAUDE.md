@@ -205,14 +205,21 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   W tej samej kolumnie (`au8f8iUvr`, ma `pointerEvents: none`, lista ma `auto`) jest ramka **„Lista — 3 rzędy kwadratów”**
   `AzgVkCy4j`: wysokość 60% obszaru pod nawigacją = dokładnie 3 środkowe rzędy kwadratów siatki (siatka ma 5 kwadratów
   na wysokość), padding góra/dół = padding zdjęć (teraz 8 px — użytkownik zmienił z 20), więc pierwszy i ostatni wiersz
-  zrównują się z krawędziami zdjęć. W środku `Lista` `HD2wSnn92` (stack pionowy, space-between, overflow clip).
+  zrównują się z krawędziami zdjęć (od 2026-11-18 padding przeniesiony na stacki — patrz niżej). W środku `Lista`
+  `HD2wSnn92` (stack pionowy, overflow clip).
 - Wiersze: 25 instancji nowego komponentu **„Wiersz listy”** `ZIOR8bv28` (zmienna „Etykieta” `VswI4OLK4`; wariant
   Domyślny `XHXBlNg_F` — przezroczysty, kursor pointer; wariant **Hover** `p0s9Z04Ba` — kolor „Akcent”, przejście 0,15 s).
   **Bez linków** (na prośbę użytkownika) — link dodać na wariancie/instancji, gdy będą strony. Ostrzeżenie lintera
   o nieprzezroczystym tle wariantów zostawione celowo (lista leży na siatce).
 - Nowy styl tekstu **„Lista”** `dhBgkQbVl`: PP Neue Montreal 600, 14 px, interlinia 1,1, odstęp −0,01 em, kolor „Tekst”
   (wzór: screen użytkownika z listą tytułów magazynów).
-- Treść wierszy: tymczasowo tytuły z tego screena (20 Seconds … C/O Vienna Magazine) — **TODO: docelowa lista od użytkownika**.
+- Treść wierszy: tymczasowo tytuły z tego screena — **TODO: docelowa lista od użytkownika**.
+- **Trzy stacki** (2026-11-18): lista podzielona na 3 stacki, każdy na wysokość jednego kwadratu (`height: 1fr` w ramce
+  60%, padding góra/dół = padding zdjęć, wiersze rozłożone space-between, więc zrównują się z rzędami zdjęć):
+  „20 — A” `ZLpqZFyfJ`, „A — Ar” `czOOevMSP`, „As — Br” `QyG3AXvrR` — po nagłówku (styl **„Lista nagłówek”** `CNPDFVung`:
+  jak „Lista”, h3, kolor „Tekst drugorzędny”) i 7 wierszy. Wierszy jest 21: użytkownik sam usunął Atmos Magazine, Autre
+  i Avant Garde, a „C/O Vienna Magazine” usunięty, żeby wyszło po równo. 8 linii mieści się w kwadracie od ok. 760 px
+  wysokości okna. Nagłówki (zakresy alfabetyczne) robocze.
 - Tablet i Phone: lista ukryta (nachodziłaby na zdjęcia) — **TODO: zapytać, gdzie ma być na mniejszych ekranach**.
   Przy niskich oknach (< ok. 760 px) 25 wierszy może się nie zmieścić (lista jest przycinana).
 
