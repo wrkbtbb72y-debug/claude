@@ -179,6 +179,11 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   tak, żeby podobne kolory nie stykały się bokami: [niebieska kopuła | żółty pawilon | pomarańczowa kopuła] /
   [biała kopuła | FILM (pod nim różowa kopuła z listy) | zielona kopuła] / [mężczyzna w pomarańczowej sali | różowe okno w niebieskim | mężczyzna w kapeluszu].
   Padding zdjęć: 20 px (prośba użytkownika, 2026-11-18) — między zdjęciem a liniami kwadratu widać ciemne tło.
+- **Kwadraty na wysokość** (2026-11-18, `rzedy`): wielkość sześcianu liczona z rzeczywistej wysokości komponentu tak,
+  by kwadrat pierwszej warstwy (tej ze zdjęciami) miał dokładnie wysokość/N px (0 = według „Wielkości sześcianu”).
+  Żeby linie wypadały równo na górnej i dolnej krawędzi, horyzont musi być (N/2 − k − 0,5)/N — dla 5: 0,1 / 0,3 / 0,5 …
+  Na `/` (`OirTRcAEZ`): 5 kwadratów na wysokość, horyzont zmieniony z 0,24 (ustawienie użytkownika) na 0,3; „Wielkość
+  sześcianu” (220) nieużywana, dopóki „Kwadraty na wysokość” > 0. Siatka 3×3 zdjęć zajmuje środkowe 3 rzędy.
 - **Film w kwadracie** (2026-11-18): kontrolki „Film (URL)”, „Film w kwadracie” (numer kwadratu wierszami od lewego
   górnego, 0 = bez filmu) i „Opis filmu (alt)”. Film MP4 jest wyciszony, zapętlony, rysowany na tej samej płaszczyźnie co
   zdjęcia (cover + padding); w edytorze i przy ograniczonym ruchu widać tylko pierwszą klatkę. Na `/`: kwadrat 5
