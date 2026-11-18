@@ -208,6 +208,10 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   **Przyciemnienie ścian** (`zdjecia.scianyCien`, 0–1, 2026-11-18): przyciemnia tylko boczne ściany sześcianów
   (0 = kolor przewodni, 1 = czarne), zdjęcia bez zmian; **nie dotyczy sześcianu z filmem** (jego ściany zawsze
   w „Kolorze ścian filmu”). Na `/` 0.
+  **Cofnięcie na hover** (`zdjecia.hoverCofniecie`, px, domyślnie 40; 2026-11-18): sześcian ze zdjęciem/filmem pod kursorem
+  płynnie cofa się w głąb o tyle px (w skali przedniej ściany, przeliczone na głębię kraty), po zjechaniu wraca.
+  Pozycja kursora z `window` (`pointermove`), bo komponent ma `pointerEvents: none`; trafienie liczone na prostokącie
+  zdjęcia w spoczynku. Działa tylko w podglądzie/na stronie (w edytorze i przy ograniczonym ruchu — bez efektu).
   **Jasność krawędzi** (`zdjecia.krawedzie`, dawniej „Krawędzie”; 2026-11-18 poprawione): 0 = bez krawędzi, 1 = kolor
   linii siatki, powyżej 1 dodatkowe rozjaśnienie bielą (3 = białe) — wcześniej wartości > 1 nic nie zmieniały. Na `/` 1.
 - **Film w kwadracie** (2026-11-18): kontrolki „Film (URL)”, „Film w kwadracie” (numer kwadratu wierszami od lewego
