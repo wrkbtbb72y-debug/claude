@@ -177,12 +177,13 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   Na `/` (`OirTRcAEZ`) włączone, 3×3, **9 różnych zdjęć** od użytkownika (2026-11-18; instalacje świetlne w kopułach,
   pawilon z żółtym zadaszeniem, portret mężczyzny w kapeluszu na pustyni), wszystkie z alt-textami. Kolejność dobrana
   tak, żeby podobne kolory nie stykały się bokami: [niebieska kopuła | żółty pawilon | pomarańczowa kopuła] /
-  [różowa kopuła | biała kopuła | zielona kopuła] / [mężczyzna w pomarańczowej sali | różowe okno w niebieskim | mężczyzna w kapeluszu].
+  [biała kopuła | FILM (pod nim różowa kopuła z listy) | zielona kopuła] / [mężczyzna w pomarańczowej sali | różowe okno w niebieskim | mężczyzna w kapeluszu].
   Padding zdjęć: 20 px (prośba użytkownika, 2026-11-18) — między zdjęciem a liniami kwadratu widać ciemne tło.
 - **Film w kwadracie** (2026-11-18): kontrolki „Film (URL)”, „Film w kwadracie” (numer kwadratu wierszami od lewego
   górnego, 0 = bez filmu) i „Opis filmu (alt)”. Film MP4 jest wyciszony, zapętlony, rysowany na tej samej płaszczyźnie co
-  zdjęcia (cover + padding); w edytorze i przy ograniczonym ruchu widać tylko pierwszą klatkę. Na `/`: kwadrat 4
-  (pierwszy w środkowym rzędzie, zamiast różowej kopuły — zdjęcie zostaje na liście, ale nie jest rysowane),
+  zdjęcia (cover + padding); w edytorze i przy ograniczonym ruchu widać tylko pierwszą klatkę. Na `/`: kwadrat 5
+  (środek siatki; 2026-11-18 zamieniony miejscami z białą kopułą, która jest teraz w kwadracie 4; różowa kopuła zostaje
+  na liście na pozycji 5, ale pod filmem nie jest rysowana),
   URL `https://pub-72bc6220135048bfb52d7bb83acf5ea2.r2.dev/048e2bef5dd7/hero/meatharvest-jslack.mp4` (zewnętrzny hosting
   użytkownika). Opis filmu roboczy („Zapętlony film”) — **TODO: poprosić użytkownika o opis treści**.
   Na Phone kwadraty są szersze niż ekran — widać środkową kolumnę i fragmenty bocznych.
