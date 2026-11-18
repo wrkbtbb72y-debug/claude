@@ -199,7 +199,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   (`krawedzie`, na `/` 1,5). **Przesunięcie Z** (`przesZ`, w sześcianach kraty, + w głąb, − do widza) przesuwa wszystkie
   naraz (pozycje X/Y w kracie bez zmian). Na `/` 0.
   Poprawka (2026-11-18): zdjęcia **w pełni kryjące** (bez mgły głębi; zanik tylko przy mijaniu kamery), linie z płaszczyzny
-  zdjęć idą **pod** zdjęcia (wklejka na z − 0,001). **Ściany boczne** sześcianu wypełnione **kolorem przewodnim zdjęcia**
+  zdjęć — po poprawce 2026-11-18 znów **na wierzchu** (wklejka na z + 0,001): leżą między kwadratami, więc nie
+  przecinają zdjęć, ale muszą przykrywać ściany boczne sześcianów (te są za płaszczyzną). **Ściany boczne** sześcianu wypełnione **kolorem przewodnim zdjęcia**
   (średnia ważona nasyceniem z miniatury 24×24; obrazy wczytywane z CORS, przy braku zgody — ponownie bez CORS i kolor
   zastępczy grafitowy), cieniowane: góra 1,12×, boki 0,8/0,7×, dół 0,55×; rysowane tylko ściany zwrócone do kamery.
   Film (r2.dev, bez CORS) → kolor z kontrolki **Kolor ścian filmu** (`zdjecia.filmKolor`, opcjonalny; pusty = próba
