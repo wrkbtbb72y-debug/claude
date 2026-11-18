@@ -222,6 +222,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   **Czas powiększenia** (`hoverPowCzas`, 0,25 s ≈ czas dojścia do ~98%).
   Kierunek powiększenia (2026-11-18): w stronę środka siatki zdjęć — zakotwiczona krawędź zewnętrzna (lewy górny rośnie
   w prawo i w dół, prawy dolny w lewo i w górę, środkowe w kolumnie/rzędzie symetrycznie wzdłuż tej osi, środkowy na boki).
+  Sąsiedzi (także po skosie) sześcianu na hover kurczą się od strony, w którą on rośnie, o tyle samo — odstęp (padding)
+  między nimi się nie zmniejsza. Wzrost liczony najpierw dla wszystkich (`growMap` [lewo, prawo, dół, góra]), potem rysowanie.
   **Później 2026-11-18: cofnięcie po kliknięciu usunięte** (kod, nasłuch `pointerdown` i kontrolki „Cofnięcie po kliknięciu”,
   „Czas cofnięcia”, „Przyciemnienie przy cofnięciu”) na prośbę użytkownika. Zostaje: powiększenie na hover + kursor „rączka”.
   **Kliknięcie = „fokus”** (2026-11-18): kliknięty sześcian rośnie do prostokąta całej siatki zdjęć w spoczynku (od krawędzi
