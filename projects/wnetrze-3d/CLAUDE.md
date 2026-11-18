@@ -192,6 +192,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   Żeby linie wypadały równo na górnej i dolnej krawędzi, horyzont musi być (N/2 − k − 0,5)/N — dla 5: 0,1 / 0,3 / 0,5 …
   Na `/` (`OirTRcAEZ`): 5 kwadratów na wysokość, horyzont zmieniony z 0,24 (ustawienie użytkownika) na 0,3; „Wielkość
   sześcianu” (220) nieużywana, dopóki „Kwadraty na wysokość” > 0. Siatka 3×3 zdjęć zajmuje środkowe 3 rzędy.
+- **Sześciany ze zdjęć** (2026-11-18, `zdjecia.kostki`, wł. na `/`): każde zdjęcie = przednia ściana osobnego sześcianu,
+  krawędź = bok zdjęcia (więc steruje nią **Padding**); sześcian sięga w głąb od miejsca zdjęcia (przy przesunięciu 0
+  zdjęcia zostają tam, gdzie były). Rysowane w wklejce zdjęć: najpierw tylna ściana i krawędzie w głąb (zdjęcie je
+  zasłania), potem zdjęcie, na końcu obrys przedniej ściany; kolor/grubość = linie siatki, jasność **Krawędzie**
+  (`krawedzie`, na `/` 1,5). **Przesunięcie Z** (`przesZ`, w sześcianach kraty, + w głąb, − do widza) przesuwa wszystkie
+  naraz (pozycje X/Y w kracie bez zmian). Na `/` 0.
 - **Film w kwadracie** (2026-11-18): kontrolki „Film (URL)”, „Film w kwadracie” (numer kwadratu wierszami od lewego
   górnego, 0 = bez filmu) i „Opis filmu (alt)”. Film MP4 jest wyciszony, zapętlony, rysowany na tej samej płaszczyźnie co
   zdjęcia (cover + padding); w edytorze i przy ograniczonym ruchu widać tylko pierwszą klatkę. Na `/`: kwadrat 5
