@@ -217,7 +217,10 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   0 = jak szerokość środkowej kolumny, czyli kwadraty ≈ 147,3 px): rzędy nie zmieniają się z wysokością ekranu
   („Kwadraty na wysokość” jest wtedy pomijane); linie poziome przesunięte tak, by rząd na środku komponentu był
   wyśrodkowany — 3 rzędy zdjęć zawsze na środku siatki. **Lista tytułów (natywna, 60% wysokości) przestała się z nimi
-  pokrywać** — do decyzji użytkownika (np. ramka listy o stałej wysokości 442 px).
+  pokrywać** — 2026-11-18 naprawione: ramka listy `AzgVkCy4j` ma stałe **442 px** (= 3 rzędy), a kolumna „Opis”
+  `au8f8iUvr` na Desktopie górny padding **68 px** (= przypięcie górne siatki; „Treść” zaczyna się od góry sekcji,
+  siatka od 68 px), więc środek listy = środek siatki. Stacki w liście użytkownik sam zmienił na `height: auto`
+  (gap 12/8 px, padding dół 8 px) — leżą jeden pod drugim od góry ramki, nie po jednym na rząd.
 - `/` Desktop (`OirTRcAEZ`): włączone, 80 / 442 / 3 / 2. Tablet i Phone: wyłączone (nadpisanie na replikach) —
   siatka równomierna jak dawniej. **Wartości trzeba zmieniać ręcznie razem z Navi II** (komponent nie czyta paska).
 - Siatka (`OirTRcAEZ`) ma przypięcia left 0 / right 0 → rozciąga się na całą szerokość, boczne kolumny rosną
