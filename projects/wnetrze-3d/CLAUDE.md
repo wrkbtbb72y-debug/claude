@@ -207,6 +207,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   **Przyciemnienie ścian** (`zdjecia.scianyCien`, 0–1, 2026-11-18): przyciemnia tylko boczne ściany sześcianów
   (0 = kolor przewodni, 1 = czarne), zdjęcia bez zmian; **nie dotyczy sześcianu z filmem** (jego ściany zawsze
   w „Kolorze ścian filmu”). Na `/` 0.
+  **Jasność krawędzi** (`zdjecia.krawedzie`, dawniej „Krawędzie”; 2026-11-18 poprawione): 0 = bez krawędzi, 1 = kolor
+  linii siatki, powyżej 1 dodatkowe rozjaśnienie bielą (3 = białe) — wcześniej wartości > 1 nic nie zmieniały. Na `/` 1.
 - **Film w kwadracie** (2026-11-18): kontrolki „Film (URL)”, „Film w kwadracie” (numer kwadratu wierszami od lewego
   górnego, 0 = bez filmu) i „Opis filmu (alt)”. Film MP4 jest wyciszony, zapętlony, rysowany na tej samej płaszczyźnie co
   zdjęcia (cover + padding); w edytorze i przy ograniczonym ruchu widać tylko pierwszą klatkę. Na `/`: kwadrat 5
