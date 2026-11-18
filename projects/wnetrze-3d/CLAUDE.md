@@ -221,9 +221,10 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   `au8f8iUvr` na Desktopie górny padding **68 px** (= przypięcie górne siatki; „Treść” zaczyna się od góry sekcji,
   siatka od 68 px), więc środek listy = środek siatki. Stacki w liście użytkownik sam zmienił na `height: auto`
   (gap 12/8 px, padding dół 8 px) — leżą jeden pod drugim od góry ramki, nie po jednym na rząd.
-- 2026-11-18: **włączone także na Tablecie** (`yQMtFz1VeOirTRcAEZ`) — zrzut użytkownika z okna ok. 1170 px (Tablet = 810–1199 px)
-  pokazywał równomierną kratkę zamiast dwóch bocznych kolumn; Navi II ma tam te same wymiary (80 / 442). Przy 810 px boczne
-  kolumny mają ok. 52 px (jak przyciski). Phone nadal wyłączony.
+- 2026-11-18: na chwilę włączone na Tablecie — **cofnięte** (użytkownik chciał czegoś innego). Zamiast tego
+  **Podziel boki zdjęć** (`kamera.podzialBoku`): kolumna tuż obok siatki zdjęć (z lewej i z prawej) jest dzielona na pół
+  **tylko w rzędach zdjęć** (6 prostopadłościanów): pionowa linia na przedniej i tylnej ścianie warstwy zdjęć + krawędzie
+  w głąb na granicach rzędów. Działa w obu trybach kolumn. Włączone na Desktopie i Tablecie, Phone wył.
 - `/` Desktop (`OirTRcAEZ`): włączone, 80 / 442 / 3 / 2. Tablet i Phone: wyłączone (nadpisanie na replikach) —
   siatka równomierna jak dawniej. **Wartości trzeba zmieniać ręcznie razem z Navi II** (komponent nie czyta paska).
 - Siatka (`OirTRcAEZ`) ma przypięcia left 0 / right 0 → rozciąga się na całą szerokość, boczne kolumny rosną
