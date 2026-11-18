@@ -218,6 +218,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   przejście 0,35 s); **kliknięcie** = cofnięcie w głąb (kontrolka „Cofnięcie po kliknięciu”, `hoverCofniecie` 40 px) z
   przyciemnieniem („Przyciemnienie przy cofnięciu”) w „Czasie cofnięcia”; sześcian zostaje cofnięty, dopóki kursor jest
   nad nim, po zjechaniu wraca. Kliknięcie łapane z `window` (`pointerdown`).
+  Powiększenie poprawione: ease-out w obie strony (wygładzanie wykładnicze — rusza od razu, łagodnie hamuje), szybciej;
+  **Czas powiększenia** (`hoverPowCzas`, 0,25 s ≈ czas dojścia do ~98%).
   Kursor „rączka” (`pointer`) nad sześcianami: ustawiany na `document.body` (dziedziczy się, bo warstwy nad siatką mają
   `pointerEvents: none`), zdejmowany po zjechaniu i przy odmontowaniu komponentu.
   **Jasność krawędzi** (`zdjecia.krawedzie`, dawniej „Krawędzie”; 2026-11-18 poprawione): 0 = bez krawędzi, 1 = kolor
