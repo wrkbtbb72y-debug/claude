@@ -202,7 +202,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   zdjęć idą **pod** zdjęcia (wklejka na z − 0,001). **Ściany boczne** sześcianu wypełnione **kolorem przewodnim zdjęcia**
   (średnia ważona nasyceniem z miniatury 24×24; obrazy wczytywane z CORS, przy braku zgody — ponownie bez CORS i kolor
   zastępczy grafitowy), cieniowane: góra 1,12×, boki 0,8/0,7×, dół 0,55×; rysowane tylko ściany zwrócone do kamery.
-  Film (r2.dev, bez CORS) → kolor zastępczy; w środku siatki i tak nie widać jego ścian.
+  Film (r2.dev, bez CORS) → kolor z kontrolki **Kolor ścian filmu** (`zdjecia.filmKolor`, opcjonalny; pusty = próba
+  odczytu z klatki, potem grafit). Na `/` ustawione `#9A9C88` (szaro-oliwkowy jak pierwsza klatka z palmami).
 - **Film w kwadracie** (2026-11-18): kontrolki „Film (URL)”, „Film w kwadracie” (numer kwadratu wierszami od lewego
   górnego, 0 = bez filmu) i „Opis filmu (alt)”. Film MP4 jest wyciszony, zapętlony, rysowany na tej samej płaszczyźnie co
   zdjęcia (cover + padding); w edytorze i przy ograniczonym ruchu widać tylko pierwszą klatkę. Na `/`: kwadrat 5
