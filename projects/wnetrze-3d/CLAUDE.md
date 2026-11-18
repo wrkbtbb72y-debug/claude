@@ -301,6 +301,11 @@ miękkość granic) → Nad horyzontem → Pod horyzontem → Linie w głąb →
   kropki i poświaty zależy tylko od głębi (i zaniku linii w głąb przy kamerze), nie od przerw. „Czas gaśnięcia” działa
   tylko przy wyłączonym „Równym gaśnięciu” (dawne zachowanie).
 
+- **Start świetlików z punktów styku** (2026-11-18, `swietliki.start`: „Punkty styku” `wezly` — domyślnie, wszystkie strony /
+  „Krawędź ekranu” `krawedz` — dawne zachowanie): świetliki poziome i pionowe pojawiają się w losowym skrzyżowaniu linii
+  (narożniku sześcianów) na swojej linii, widocznym na ekranie, z krótkim łagodnym pojawieniem; potem biegną w kierunku
+  z ustawień i gasną jak dotąd. Świetliki w głąb bez zmian (start od krawędzi).
+
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
 
 - Projekt ma drugą stronę `OvsvNzCvS` (nazwa w panelu też „Home”, ścieżka `/home-2` — użytkownik
