@@ -253,6 +253,9 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   (`stackAlignment: start`; wcześniej środek), więc tekst zaczyna się równo z górą przedniej ściany sześcianów w rzędzie.
   Górny padding „Opis” 68 → **80 px** (siatka przypięta teraz na 80 px). Przy zmianie paddingu zdjęć/przypięcia siatki
   zmienić te wartości razem.
+- Później (2026-11-18): stacki „1”, „2”, „3” (`cbVbz8owY`, `E7a5Yw8Ck`, `y6NlewCHD`) mają **wysokość przedniej ściany
+  sześcianów** (≈ 107 px = rząd 147,3 − 2 × padding 20): `Lista` ma padding 20 px góra/dół i gap 40 px (= 2 × padding
+  zdjęć), stacki `1fr` bez paddingu; wyrównanie treści w stackach zostawione jak ustawił użytkownik.
 - **Rzędy do krawędzi** (2026-11-18, `kolRozciagnij`, domyślnie wł.; `kolRzedyBoczne` 1): przy stałej wysokości rzędów
   środkowe rzędy (tyle co „Kolumny w środku”) mają stałą wysokość, a skrajne rozciągają się dokładnie do górnej i dolnej
   krawędzi komponentu — górna linia kraty pokrywa się z dolną ramką paska nawigacji (siatka przypięta na 68 px), dolna
