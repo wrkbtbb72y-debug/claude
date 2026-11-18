@@ -202,6 +202,22 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   Na Phone kwadraty są szersze niż ekran — widać środkową kolumnę i fragmenty bocznych.
 - Wgrywanie plików do Framera z sesji w chmurze wymagało dodania hosta `mcp.framer.com` do sieci środowiska (zrobione).
 
+## Kolumny siatki jak Navi II (Desktop `/`, 2026-11-18)
+
+- Użytkownik dodał drugi pasek nawigacji **„Navi II”** `gtiExDlXS` (absolutnie, top 63 px, szer. 1200 px, padding boczny
+  80 px; 4 przyciski `1fr` + środkowy element „middle” `AyXVnZ187` 442 px). Siatka ma się do niego dopasować.
+- Wcześniej rozjazd podglądu z canvasem: kwadraty liczone z wysokości (wys./5), a pasek ma stałe wymiary → zgadzało się
+  tylko przy jednej wysokości okna.
+- `SiatkaPerspektywy.tsx`, grupa „Kamera i przestrzeń”: **Kolumny jak Navi II** (`kolumny`), **Padding boczny**
+  (`kolPadding`, 80), **Środek (łącznie)** (`kolSrodek`, 442), **Kolumny w środku** (3), **Kolumny z boku** (2). Linie
+  pionowe pierwszej warstwy: środkowe kolumny = środek/3 (stałe), boczne = (szer. − 2·padding − środek)/(2·boczne) =
+  szerokość przycisku; kolumny poza ekranem jak boczne; wyśrodkowane na środku komponentu. Rzędy bez zmian (wys./5).
+  Zdjęcia, „Bez linii ze środka”, węzły, rozświetlenie i Kosmos korzystają z tych samych kolumn.
+- `/` Desktop (`OirTRcAEZ`): włączone, 80 / 442 / 3 / 2. Tablet i Phone: wyłączone (nadpisanie na replikach) —
+  siatka równomierna jak dawniej. **Wartości trzeba zmieniać ręcznie razem z Navi II** (komponent nie czyta paska).
+- Uwaga: Navi II i instancja siatki mają szerokość stałą 1200 px — na szerszych ekranach żadne z nich nie rośnie;
+  żeby przyciski i boczne kolumny rosły, obie trzeba ustawić na 100% (nie zmieniane — użytkownik prosił tylko o kod).
+
 ## Lista tytułów zamiast dużego logo na `/` (2026-11-18)
 
 - Duże logo NUMINO w kolumnie „Opis” (kontener `p1krlsuOc`) **ukryte** (nie usunięte) na wszystkich breakpointach.
