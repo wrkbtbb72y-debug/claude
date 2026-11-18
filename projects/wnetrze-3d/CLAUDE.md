@@ -214,6 +214,10 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   zdjęcia w spoczynku. Działa tylko w podglądzie/na stronie (w edytorze i przy ograniczonym ruchu — bez efektu).
   Od 2026-11-18 wolniej i płynniej: stały czas przejścia **Czas cofnięcia** (`hoverCzas`, 0,8 s) z ease-in-out (zawraca
   płynnie z bieżącego miejsca) + **Przyciemnienie na hover** (`hoverCien`, 0,25): zdjęcie i ściany ciemnieją razem z cofaniem.
+  **Zmiana 2026-11-18:** hover = **lekkie powiększenie** (`hoverPowiekszenie`, 0,05 = 5%, wokół środka przedniej ściany,
+  przejście 0,35 s); **kliknięcie** = cofnięcie w głąb (kontrolka „Cofnięcie po kliknięciu”, `hoverCofniecie` 40 px) z
+  przyciemnieniem („Przyciemnienie przy cofnięciu”) w „Czasie cofnięcia”; sześcian zostaje cofnięty, dopóki kursor jest
+  nad nim, po zjechaniu wraca. Kliknięcie łapane z `window` (`pointerdown`).
   Kursor „rączka” (`pointer`) nad sześcianami: ustawiany na `document.body` (dziedziczy się, bo warstwy nad siatką mają
   `pointerEvents: none`), zdejmowany po zjechaniu i przy odmontowaniu komponentu.
   **Jasność krawędzi** (`zdjecia.krawedzie`, dawniej „Krawędzie”; 2026-11-18 poprawione): 0 = bez krawędzi, 1 = kolor
