@@ -222,6 +222,11 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   **Czas powiększenia** (`hoverPowCzas`, 0,25 s ≈ czas dojścia do ~98%).
   **Później 2026-11-18: cofnięcie po kliknięciu usunięte** (kod, nasłuch `pointerdown` i kontrolki „Cofnięcie po kliknięciu”,
   „Czas cofnięcia”, „Przyciemnienie przy cofnięciu”) na prośbę użytkownika. Zostaje: powiększenie na hover + kursor „rączka”.
+  **Kliknięcie = „fokus”** (2026-11-18): kliknięty sześcian rośnie do prostokąta całej siatki zdjęć w spoczynku (od krawędzi
+  pierwszego do ostatniego zdjęcia, z odstępami), pozostałe kurczą się do swoich środków aż znikną; animacja ease-in-out
+  **Czas po kliknięciu** (`fokusCzas`, 0,8 s). Kolejne kliknięcie gdziekolwiek przywraca spoczynek. Podczas fokusu hover
+  wyłączony, wybrany sześcian rysowany na końcu, a linie kraty z płaszczyzny zdjęć idą pod sześciany (żeby nie przecinały
+  powiększonego zdjęcia). Kliknięcia z `window` (`pointerdown`). Na razie bez linków/podstron.
   Kursor „rączka” (`pointer`) nad sześcianami: ustawiany na `document.body` (dziedziczy się, bo warstwy nad siatką mają
   `pointerEvents: none`), zdejmowany po zjechaniu i przy odmontowaniu komponentu.
   **Jasność krawędzi** (`zdjecia.krawedzie`, dawniej „Krawędzie”; 2026-11-18 poprawione): 0 = bez krawędzi, 1 = kolor
