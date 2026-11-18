@@ -221,6 +221,9 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   `au8f8iUvr` na Desktopie górny padding **68 px** (= przypięcie górne siatki; „Treść” zaczyna się od góry sekcji,
   siatka od 68 px), więc środek listy = środek siatki. Stacki w liście użytkownik sam zmienił na `height: auto`
   (gap 12/8 px, padding dół 8 px) — leżą jeden pod drugim od góry ramki, nie po jednym na rząd.
+- 2026-11-18: **włączone także na Tablecie** (`yQMtFz1VeOirTRcAEZ`) — zrzut użytkownika z okna ok. 1170 px (Tablet = 810–1199 px)
+  pokazywał równomierną kratkę zamiast dwóch bocznych kolumn; Navi II ma tam te same wymiary (80 / 442). Przy 810 px boczne
+  kolumny mają ok. 52 px (jak przyciski). Phone nadal wyłączony.
 - `/` Desktop (`OirTRcAEZ`): włączone, 80 / 442 / 3 / 2. Tablet i Phone: wyłączone (nadpisanie na replikach) —
   siatka równomierna jak dawniej. **Wartości trzeba zmieniać ręcznie razem z Navi II** (komponent nie czyta paska).
 - Siatka (`OirTRcAEZ`) ma przypięcia left 0 / right 0 → rozciąga się na całą szerokość, boczne kolumny rosną
