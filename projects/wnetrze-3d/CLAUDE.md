@@ -217,8 +217,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   **Tempo filmów** (2026-11-18, `filmTempo`, `film2Tempo`, `film3Tempo`, `film4Tempo`; 0,1–4, 1 = normalne; `playbackRate`).
   Na `/`: film 3 (kwadrat 4) **0,5** — zwolniony na prośbę użytkownika; pozostałe 1.
   **Przyciemnienie ścian** (`zdjecia.scianyCien`, 0–1, 2026-11-18): przyciemnia tylko boczne ściany sześcianów
-  (0 = kolor przewodni, 1 = czarne), zdjęcia bez zmian; **nie dotyczy sześcianu z filmem** (jego ściany zawsze
-  w „Kolorze ścian filmu”). Na `/` 0.
+  (0 = kolor przewodni, 1 = czarne), zdjęcia bez zmian; od 2026-11-18 (późniejsza zmiana) **działa jednakowo dla sześcianów
+  ze zdjęciami i z filmami** (wcześniej filmy były wyłączone). Na `/` 0.
   **Cofnięcie na hover** (`zdjecia.hoverCofniecie`, px, domyślnie 40; 2026-11-18): sześcian ze zdjęciem/filmem pod kursorem
   płynnie cofa się w głąb o tyle px (w skali przedniej ściany, przeliczone na głębię kraty), po zjechaniu wraca.
   Pozycja kursora z `window` (`pointermove`), bo komponent ma `pointerEvents: none`; trafienie liczone na prostokącie
