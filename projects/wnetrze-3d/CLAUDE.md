@@ -309,6 +309,8 @@ miękkość granic) → Nad horyzontem → Pod horyzontem → Linie w głąb →
   z ustawień i gasną jak dotąd. Świetliki w głąb bez zmian (start od krawędzi).
 - **Pojawianie świetlików** (2026-11-18): przy „Równym gaśnięciu” jasność od 0 równo rośnie na długości „Dystansu biegu”,
   potem tak samo równo spada do 0 (trasa = 2 × dystans) — pojawianie tak stopniowe jak gaśnięcie, bez nagłego rozbłysku.
+- **Jednakowa trasa poziomych i pionowych** (2026-11-18): „Dystans biegu” liczony od **wysokości komponentu** dla obu rodzajów
+  (wcześniej od długości linii, więc poziome — dłuższe linie — jechały dłużej). Świetliki w głąb: nadal od długości linii.
 
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
 
