@@ -305,6 +305,8 @@ miękkość granic) → Nad horyzontem → Pod horyzontem → Linie w głąb →
   „Krawędź ekranu” `krawedz` — dawne zachowanie): świetliki poziome i pionowe pojawiają się w losowym skrzyżowaniu linii
   (narożniku sześcianów) na swojej linii, widocznym na ekranie, z krótkim łagodnym pojawieniem; potem biegną w kierunku
   z ustawień i gasną jak dotąd. Świetliki w głąb bez zmian (start od krawędzi).
+- **Pojawianie świetlików** (2026-11-18): przy „Równym gaśnięciu” jasność od 0 równo rośnie na długości „Dystansu biegu”,
+  potem tak samo równo spada do 0 (trasa = 2 × dystans) — pojawianie tak stopniowe jak gaśnięcie, bez nagłego rozbłysku.
 
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
 
