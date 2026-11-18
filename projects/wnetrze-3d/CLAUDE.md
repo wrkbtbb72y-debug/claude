@@ -239,6 +239,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   `au8f8iUvr` na Desktopie górny padding **68 px** (= przypięcie górne siatki; „Treść” zaczyna się od góry sekcji,
   siatka od 68 px), więc środek listy = środek siatki. Stacki w liście użytkownik sam zmienił na `height: auto`
   (gap 12/8 px, padding dół 8 px) — leżą jeden pod drugim od góry ramki, nie po jednym na rząd.
+- 2026-11-18 (wyrównanie do sześcianów): użytkownik przebudował listę — w `Lista` są 3 widoczne wiersze `1fr`
+  (`cbVbz8owY` z tekstem „Design studio…”/nagłówkiem `uMUb36gPC`, `E7a5Yw8Ck` ze Stackiem 2, `y6NlewCHD` ze Stackiem 3;
+  Stack 1 ukryty w `kIxYM5cQx`). Wiersze dostały padding 20 px góra/dół (= padding zdjęć) i wyrównanie do góry
+  (`stackAlignment: start`; wcześniej środek), więc tekst zaczyna się równo z górą przedniej ściany sześcianów w rzędzie.
+  Górny padding „Opis” 68 → **80 px** (siatka przypięta teraz na 80 px). Przy zmianie paddingu zdjęć/przypięcia siatki
+  zmienić te wartości razem.
 - **Rzędy do krawędzi** (2026-11-18, `kolRozciagnij`, domyślnie wł.; `kolRzedyBoczne` 1): przy stałej wysokości rzędów
   środkowe rzędy (tyle co „Kolumny w środku”) mają stałą wysokość, a skrajne rozciągają się dokładnie do górnej i dolnej
   krawędzi komponentu — górna linia kraty pokrywa się z dolną ramką paska nawigacji (siatka przypięta na 68 px), dolna
