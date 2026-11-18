@@ -225,6 +225,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   **Podziel boki zdjęć** (`kamera.podzialBoku`): kolumna tuż obok siatki zdjęć (z lewej i z prawej) jest dzielona na pół
   **tylko w rzędach zdjęć** (6 prostopadłościanów): pionowa linia na przedniej i tylnej ścianie warstwy zdjęć + krawędzie
   w głąb na granicach rzędów. Działa w obu trybach kolumn. Włączone na Desktopie i Tablecie, Phone wył.
+  Później tego dnia (prośba użytkownika): podział **na całą wysokość** — pionowe linie od dołu do góry ekranu na przedniej
+  i tylnej ścianie warstwy zdjęć, krawędzie w głąb na każdej linii rzędu.
 - `/` Desktop (`OirTRcAEZ`): włączone, 80 / 442 / 3 / 2. Tablet i Phone: wyłączone (nadpisanie na replikach) —
   siatka równomierna jak dawniej. **Wartości trzeba zmieniać ręcznie razem z Navi II** (komponent nie czyta paska).
 - Siatka (`OirTRcAEZ`) ma przypięcia left 0 / right 0 → rozciąga się na całą szerokość, boczne kolumny rosną
