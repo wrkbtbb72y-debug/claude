@@ -600,6 +600,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   i `square-x` („Anuluj zaproszenie”), 20 px. Paginacja pod tabelą bez zmian (20/40/60;
   na zrzucie 50/75/100 — do decyzji).
 
+- 2026-11-18 — **Figma, strona „3. Zasoby/Obiekty”** (`6885:93257`): nad rzędami makiet stoją
+  **zielone etykiety „aktualne”** (tekst Aspekta 500 / 88 px #135530 + zielona belka #088540,
+  szerokość 4114 px = rząd 4 makiet). Wszystkie trzy miały skopiowany tekst „Widok przed
+  wyszukaniem kolekcji” — poprawione wg tego, co pokazują makiety (prośba użytkownika):
+  `9317:45054` (x 5909, nad Cards) → „Widok przed wyszukaniem obiektów”, `9317:45058`
+  (x 11158) → „Wyniki wyszukiwania obiektów”, `9317:45061` (x 16382) → „Brak wyników
+  wyszukiwania obiektów”. Nazwy warstw tekstu = treść. Rząd pod „brak wyników”
+  (`9299:43811`, wyniki z 2 obiektami, y −48074) nie ma etykiety — nie dodawano.
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
