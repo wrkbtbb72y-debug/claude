@@ -205,6 +205,10 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   zastępczy grafitowy), cieniowane: góra 1,12×, boki 0,8/0,7×, dół 0,55×; rysowane tylko ściany zwrócone do kamery.
   Film (r2.dev, bez CORS) → kolor z kontrolki **Kolor ścian filmu** (`zdjecia.filmKolor`, opcjonalny; pusty = próba
   odczytu z klatki, potem grafit). Na `/` ustawione `#9A9C88` (szaro-oliwkowy jak pierwsza klatka z palmami).
+  **Film 2** (2026-11-18): pola „Film 2 (URL)”, „Film 2 w kwadracie”, „Kolor ścian filmu 2”, „Opis filmu 2 (alt)”
+  (`film2`, `film2Miejsce`, `film2Kolor`, `film2Opis`). Na `/`: `…/hero/toaster-cartelle.mp4` w kwadracie **6** (prawy
+  w środkowym rzędzie, zamiast zielonej kopuły — zdjęcie zostaje na liście, ale nie jest rysowane), kolor ścian `#5FC08E`
+  (miętowe tło klatki), opis wg pierwszej klatki („srebrny toster na rozsypanych krakersach, na miętowym tle”).
   **Przyciemnienie ścian** (`zdjecia.scianyCien`, 0–1, 2026-11-18): przyciemnia tylko boczne ściany sześcianów
   (0 = kolor przewodni, 1 = czarne), zdjęcia bez zmian; **nie dotyczy sześcianu z filmem** (jego ściany zawsze
   w „Kolorze ścian filmu”). Na `/` 0.
