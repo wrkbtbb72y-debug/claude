@@ -213,6 +213,11 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   pionowe pierwszej warstwy: środkowe kolumny = środek/3 (stałe), boczne = (szer. − 2·padding − środek)/(2·boczne) =
   szerokość przycisku; kolumny poza ekranem jak boczne; wyśrodkowane na środku komponentu. Rzędy bez zmian (wys./5).
   Zdjęcia, „Bez linii ze środka”, węzły, rozświetlenie i Kosmos korzystają z tych samych kolumn.
+- **Stała wysokość rzędów** (2026-11-18, `kolStalaWys`, domyślnie wł. przy „Kolumnach jak Navi II”; `kolWysokosc`
+  0 = jak szerokość środkowej kolumny, czyli kwadraty ≈ 147,3 px): rzędy nie zmieniają się z wysokością ekranu
+  („Kwadraty na wysokość” jest wtedy pomijane); linie poziome przesunięte tak, by rząd na środku komponentu był
+  wyśrodkowany — 3 rzędy zdjęć zawsze na środku siatki. **Lista tytułów (natywna, 60% wysokości) przestała się z nimi
+  pokrywać** — do decyzji użytkownika (np. ramka listy o stałej wysokości 442 px).
 - `/` Desktop (`OirTRcAEZ`): włączone, 80 / 442 / 3 / 2. Tablet i Phone: wyłączone (nadpisanie na replikach) —
   siatka równomierna jak dawniej. **Wartości trzeba zmieniać ręcznie razem z Navi II** (komponent nie czyta paska).
 - Siatka (`OirTRcAEZ`) ma przypięcia left 0 / right 0 → rozciąga się na całą szerokość, boczne kolumny rosną
