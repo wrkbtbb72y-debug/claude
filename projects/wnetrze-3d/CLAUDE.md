@@ -215,8 +215,10 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   Zdjęcia, „Bez linii ze środka”, węzły, rozświetlenie i Kosmos korzystają z tych samych kolumn.
 - `/` Desktop (`OirTRcAEZ`): włączone, 80 / 442 / 3 / 2. Tablet i Phone: wyłączone (nadpisanie na replikach) —
   siatka równomierna jak dawniej. **Wartości trzeba zmieniać ręcznie razem z Navi II** (komponent nie czyta paska).
-- Uwaga: Navi II i instancja siatki mają szerokość stałą 1200 px — na szerszych ekranach żadne z nich nie rośnie;
-  żeby przyciski i boczne kolumny rosły, obie trzeba ustawić na 100% (nie zmieniane — użytkownik prosił tylko o kod).
+- Siatka (`OirTRcAEZ`) ma przypięcia left 0 / right 0 → rozciąga się na całą szerokość, boczne kolumny rosną
+  (potwierdzone przez użytkownika; „1200 px” to tylko rozmiar na canvasie). Navi II ma w danych tylko przypięcie
+  right 0 + szer. 1200 px — do sprawdzenia w podglądzie, czy przyciski rosną; jeśli nie, ustawić left/right 0.
+  Przypięcie górne siatki zmienione przez użytkownika na 68 px (2026-11-18).
 
 ## Lista tytułów zamiast dużego logo na `/` (2026-11-18)
 
