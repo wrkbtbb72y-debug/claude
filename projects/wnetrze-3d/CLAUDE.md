@@ -167,7 +167,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - **Zdjęcia w kwadratach** (2026-11-18): w `SiatkaPerspektywy.tsx` grupa „Zdjęcia w kwadratach” (`$control__zdjecia`):
   Pokaż, Zdjęcia (lista obrazów), Opisy (alt) — osobna lista tekstów w tej samej kolejności (lista obrazów przez API
   przyjmuje tylko obraz, bez opisu; opisy trafiają do ukrytej listy dla czytników ekranu), Kwadraty N×N (3), Warstwa
-  (1 = najbliższa), Przesuń X/Y (w kwadratach od środka ekranu), Odstęp, Krycie, Przyciemnienie. Zdjęcia wypełniają
+  (1 = najbliższa), Przesuń X/Y (w kwadratach od środka ekranu), Odstęp (ułamek kwadratu), **Padding** (px, od 2026-11-18;
+  liczony dla kwadratów w spoczynku, przy przybliżaniu rośnie z kratą), Krycie, Przyciemnienie. Zdjęcia wypełniają
   (cover, kadr ze środka) kwadraty jednej warstwy kraty wokół środka ekranu; linie tej warstwy i bliższe rysują się
   na zdjęciach, dalsze chowają się za nimi; przy scrollu zdjęcia jadą razem z kratą ku kamerze i gasną, gdy ją mijają.
   Kolejność: od lewego górnego kwadratu wierszami. Gdy zdjęć jest mniej niż kwadratów: kontrolka **Powtarzaj**
@@ -177,6 +178,7 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   pawilon z żółtym zadaszeniem, portret mężczyzny w kapeluszu na pustyni), wszystkie z alt-textami. Kolejność dobrana
   tak, żeby podobne kolory nie stykały się bokami: [niebieska kopuła | żółty pawilon | pomarańczowa kopuła] /
   [różowa kopuła | biała kopuła | zielona kopuła] / [mężczyzna w pomarańczowej sali | różowe okno w niebieskim | mężczyzna w kapeluszu].
+  Padding zdjęć: 20 px (prośba użytkownika, 2026-11-18) — między zdjęciem a liniami kwadratu widać ciemne tło.
   Na Phone kwadraty są szersze niż ekran — widać środkową kolumnę i fragmenty bocznych.
 - Wgrywanie plików do Framera z sesji w chmurze wymagało dodania hosta `mcp.framer.com` do sieci środowiska (zrobione).
 
