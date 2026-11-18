@@ -199,6 +199,23 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   Na Phone kwadraty są szersze niż ekran — widać środkową kolumnę i fragmenty bocznych.
 - Wgrywanie plików do Framera z sesji w chmurze wymagało dodania hosta `mcp.framer.com` do sieci środowiska (zrobione).
 
+## Lista tytułów zamiast dużego logo na `/` (2026-11-18)
+
+- Duże logo NUMINO w kolumnie „Opis” (kontener `p1krlsuOc`) **ukryte** (nie usunięte) na wszystkich breakpointach.
+  W tej samej kolumnie (`au8f8iUvr`, ma `pointerEvents: none`, lista ma `auto`) jest ramka **„Lista — 3 rzędy kwadratów”**
+  `AzgVkCy4j`: wysokość 60% obszaru pod nawigacją = dokładnie 3 środkowe rzędy kwadratów siatki (siatka ma 5 kwadratów
+  na wysokość), padding góra/dół = padding zdjęć (teraz 8 px — użytkownik zmienił z 20), więc pierwszy i ostatni wiersz
+  zrównują się z krawędziami zdjęć. W środku `Lista` `HD2wSnn92` (stack pionowy, space-between, overflow clip).
+- Wiersze: 25 instancji nowego komponentu **„Wiersz listy”** `ZIOR8bv28` (zmienna „Etykieta” `VswI4OLK4`; wariant
+  Domyślny `XHXBlNg_F` — przezroczysty, kursor pointer; wariant **Hover** `p0s9Z04Ba` — kolor „Akcent”, przejście 0,15 s).
+  **Bez linków** (na prośbę użytkownika) — link dodać na wariancie/instancji, gdy będą strony. Ostrzeżenie lintera
+  o nieprzezroczystym tle wariantów zostawione celowo (lista leży na siatce).
+- Nowy styl tekstu **„Lista”** `dhBgkQbVl`: PP Neue Montreal 600, 14 px, interlinia 1,1, odstęp −0,01 em, kolor „Tekst”
+  (wzór: screen użytkownika z listą tytułów magazynów).
+- Treść wierszy: tymczasowo tytuły z tego screena (20 Seconds … C/O Vienna Magazine) — **TODO: docelowa lista od użytkownika**.
+- Tablet i Phone: lista ukryta (nachodziłaby na zdjęcia) — **TODO: zapytać, gdzie ma być na mniejszych ekranach**.
+  Przy niskich oknach (< ok. 760 px) 25 wierszy może się nie zmieścić (lista jest przycinana).
+
 ## Siatka perspektywy — układ kontrolek (od 2026-11-18)
 
 Na prośbę użytkownika („za dużo kontrolek, ciężko się połapać”) wszystkie kontrolki `SiatkaPerspektywy.tsx` są w grupach,
