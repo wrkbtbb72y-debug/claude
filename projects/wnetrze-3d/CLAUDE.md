@@ -213,6 +213,13 @@ miękkość granic) → Nad horyzontem → Pod horyzontem → Linie w głąb →
   właściwość (zgodność wstecz). W starszych notatkach poniżej nazwy typu „Horyzont”, „Przerwy” odnoszą się do kontrolek,
   które są teraz w tych grupach.
 
+- **Równe gaśnięcie świetlików** (2026-11-18, `swietliki.rowno`, domyślnie wł. — działa na wszystkich trzech stronach):
+  użytkownik nie chciał, by świetliki przed zgaśnięciem naprzemiennie gasły i rozbłyskały. Przyczyny: wbudowane mruganie
+  (sinus), zależność jasności od przerw/szumu linii, po której biegną, i gaśnięcie dopiero na końcu trasy. Teraz: pełna
+  jasność w chwili pojawienia się na ekranie, równy spadek do zera na długości „Dystansu biegu”, bez mrugania; jasność
+  kropki i poświaty zależy tylko od głębi (i zaniku linii w głąb przy kamerze), nie od przerw. „Czas gaśnięcia” działa
+  tylko przy wyłączonym „Równym gaśnięciu” (dawne zachowanie).
+
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
 
 - Projekt ma drugą stronę `OvsvNzCvS` (nazwa w panelu też „Home”, ścieżka `/home-2` — użytkownik
