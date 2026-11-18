@@ -298,6 +298,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 - Tablet i Phone: lista ukryta (nachodziłaby na zdjęcia) — **TODO: zapytać, gdzie ma być na mniejszych ekranach**.
   Przy niskich oknach (< ok. 760 px) 25 wierszy może się nie zmieścić (lista jest przycinana).
 
+- **Logo w tle** (2026-11-18): kontener `p1krlsuOc` (dawniej „inside” w kolumnie „Opis”, użytkownik przeniósł go do sekcji)
+  przemianowany na „Logo w tle”: bezpośrednie dziecko „Ekran”/hero `N06uDCvcg`, **pierwsza warstwa** (za siatką
+  perspektywy, zIndex 0 jak siatka, ale wcześniej w kolejności), absolutnie na całą sekcję (przypięcia 0), stack
+  wyśrodkowany w obu osiach, `pointerEvents: none` — logo NUMINO (`DTM5Bxuta`, maks. 540 px; Phone 66 px) wyśrodkowane
+  względem szerokości i wysokości ekranu; sześciany ze zdjęciami je przykrywają.
+
 ## Siatka perspektywy — układ kontrolek (od 2026-11-18)
 
 Na prośbę użytkownika („za dużo kontrolek, ciężko się połapać”) wszystkie kontrolki `SiatkaPerspektywy.tsx` są w grupach,
