@@ -226,6 +226,10 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   między nimi się nie zmniejsza. Wzrost liczony najpierw dla wszystkich (`growMap` [lewo, prawo, dół, góra]), potem rysowanie.
   **Później 2026-11-18: cofnięcie po kliknięciu usunięte** (kod, nasłuch `pointerdown` i kontrolki „Cofnięcie po kliknięciu”,
   „Czas cofnięcia”, „Przyciemnienie przy cofnięciu”) na prośbę użytkownika. Zostaje: powiększenie na hover + kursor „rączka”.
+  **Scal rząd nad zdjęciami** (`zdjecia.scalNad`, px, domyślnie 1600, 0 = nigdy; 2026-11-18): gdy szerokość komponentu > próg,
+  puste sześciany w rzędzie tuż nad siatką zdjęć (nad jej kolumnami) łączą się w jeden prostopadłościan — pomijane są ich
+  wewnętrzne krawędzie: pionowe linie na przedniej i tylnej płaszczyźnie warstwy zdjęć (tylko w tym rzędzie) i odcinki
+  linii w głąb między tymi płaszczyznami w wewnętrznych narożnikach.
   **Kliknięcie = „fokus”** (2026-11-18): kliknięty sześcian rośnie do prostokąta całej siatki zdjęć w spoczynku (od krawędzi
   pierwszego do ostatniego zdjęcia, z odstępami), pozostałe kurczą się do swoich środków aż znikną; animacja ease-in-out
   **Czas po kliknięciu** (`fokusCzas`, 0,8 s). Kolejne kliknięcie gdziekolwiek przywraca spoczynek. Podczas fokusu hover
