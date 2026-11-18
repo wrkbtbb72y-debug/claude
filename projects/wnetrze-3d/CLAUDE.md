@@ -214,6 +214,8 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   wczytały filmu) — **TODO: kolor ścian (teraz grafit zastępczy) i opis („Zapętlony film”)**.
   **Film 4** (2026-11-18, `film4…`): `…/hero/jslack.mp4` w kwadracie **3** (prawy górny, zamiast pomarańczowej kopuły).
   **TODO: kolor ścian i opis** (pierwszej klatki nie widać w zrzutach).
+  **Tempo filmów** (2026-11-18, `filmTempo`, `film2Tempo`, `film3Tempo`, `film4Tempo`; 0,1–4, 1 = normalne; `playbackRate`).
+  Na `/`: film 3 (kwadrat 4) **0,5** — zwolniony na prośbę użytkownika; pozostałe 1.
   **Przyciemnienie ścian** (`zdjecia.scianyCien`, 0–1, 2026-11-18): przyciemnia tylko boczne ściany sześcianów
   (0 = kolor przewodni, 1 = czarne), zdjęcia bez zmian; **nie dotyczy sześcianu z filmem** (jego ściany zawsze
   w „Kolorze ścian filmu”). Na `/` 0.
