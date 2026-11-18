@@ -230,6 +230,7 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   puste sześciany w rzędzie tuż nad siatką zdjęć (nad jej kolumnami) łączą się w jeden prostopadłościan — pomijane są ich
   wewnętrzne krawędzie: pionowe linie na przedniej i tylnej płaszczyźnie warstwy zdjęć (tylko w tym rzędzie) i odcinki
   linii w głąb między tymi płaszczyznami w wewnętrznych narożnikach.
+  Od 2026-11-18 także **rząd pod zdjęciami** (kontrolka przemianowana na „Scal rzędy nad/pod zdjęciami”, ten sam próg).
   **Kliknięcie = „fokus”** (2026-11-18): kliknięty sześcian rośnie do prostokąta całej siatki zdjęć w spoczynku (od krawędzi
   pierwszego do ostatniego zdjęcia, z odstępami), pozostałe kurczą się do swoich środków aż znikną; animacja ease-in-out
   **Czas po kliknięciu** (`fokusCzas`, 0,8 s). Kolejne kliknięcie gdziekolwiek przywraca spoczynek. Podczas fokusu hover
