@@ -199,6 +199,20 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   Na Phone kwadraty są szersze niż ekran — widać środkową kolumnę i fragmenty bocznych.
 - Wgrywanie plików do Framera z sesji w chmurze wymagało dodania hosta `mcp.framer.com` do sieci środowiska (zrobione).
 
+## Siatka perspektywy — układ kontrolek (od 2026-11-18)
+
+Na prośbę użytkownika („za dużo kontrolek, ciężko się połapać”) wszystkie kontrolki `SiatkaPerspektywy.tsx` są w grupach,
+w tej kolejności: **Kamera i przestrzeń** (`kamera`: horyzont, punkt zbiegu, kwadraty na wysokość, wielkość sześcianu,
+głębia, zbliżenie przy scrollu, ruch w głąb) → **Linie** (`linie`: kolor, grubość, krycie, przerwy, tempo zaniku,
+miękkość granic) → Nad horyzontem → Pod horyzontem → Linie w głąb → Bliskie linie → Tajemnica → **Świetliki podróżujące**
+(`swietliki`: poziome/pionowe/w głąb + kierunki, długość światła, prędkość, dystans, gaśnięcie, rozświetlenie, kolor
+światła) → Świetliki w węzłach → Rozświetlenie → Zdjęcia w kwadratach → Logo 3D → Kosmos → Tło.
+- Dawne płaskie kontrolki (`horizon`, `cubeSize`, `lineColor`, `firefliesH` …) przeniesione do grup `kamera` / `linie` /
+  `swietliki`; wartości trzech instancji (`/` `OirTRcAEZ`, `/home-2` `GCcSRW8rC`, `/home-3` `GA3zheMSK`) przepisane
+  1:1 (tablety/telefony nie miały osobnych nadpisań). Kod czyta najpierw wartość z grupy, a gdy jej brak — dawną płaską
+  właściwość (zgodność wstecz). W starszych notatkach poniżej nazwy typu „Horyzont”, „Przerwy” odnoszą się do kontrolek,
+  które są teraz w tych grupach.
+
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
 
 - Projekt ma drugą stronę `OvsvNzCvS` (nazwa w panelu też „Home”, ścieżka `/home-2` — użytkownik
