@@ -179,6 +179,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   tak, żeby podobne kolory nie stykały się bokami: [niebieska kopuła | żółty pawilon | pomarańczowa kopuła] /
   [różowa kopuła | biała kopuła | zielona kopuła] / [mężczyzna w pomarańczowej sali | różowe okno w niebieskim | mężczyzna w kapeluszu].
   Padding zdjęć: 20 px (prośba użytkownika, 2026-11-18) — między zdjęciem a liniami kwadratu widać ciemne tło.
+- **Film w kwadracie** (2026-11-18): kontrolki „Film (URL)”, „Film w kwadracie” (numer kwadratu wierszami od lewego
+  górnego, 0 = bez filmu) i „Opis filmu (alt)”. Film MP4 jest wyciszony, zapętlony, rysowany na tej samej płaszczyźnie co
+  zdjęcia (cover + padding); w edytorze i przy ograniczonym ruchu widać tylko pierwszą klatkę. Na `/`: kwadrat 4
+  (pierwszy w środkowym rzędzie, zamiast różowej kopuły — zdjęcie zostaje na liście, ale nie jest rysowane),
+  URL `https://pub-72bc6220135048bfb52d7bb83acf5ea2.r2.dev/048e2bef5dd7/hero/meatharvest-jslack.mp4` (zewnętrzny hosting
+  użytkownika). Opis filmu roboczy („Zapętlony film”) — **TODO: poprosić użytkownika o opis treści**.
   Na Phone kwadraty są szersze niż ekran — widać środkową kolumnę i fragmenty bocznych.
 - Wgrywanie plików do Framera z sesji w chmurze wymagało dodania hosta `mcp.framer.com` do sieci środowiska (zrobione).
 
@@ -423,6 +429,7 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 
 ## Do zrobienia
 
+- [ ] Film w kwadracie siatki na `/`: uzupełnić „Opis filmu (alt)” (teraz roboczy) i sprawdzić odtwarzanie w podglądzie.
 - [ ] „Pasy zdjęć” na `/`: podmienić zdjęcia w pasach 3 i 4 (oraz ewentualnie 1–2), gdy użytkownik je podeśle.
 - [ ] Sprawdzić w podglądzie Framera rozwijanie pasów i przybliżanie kraty przy scrollu (z poziomu AI widać tylko
       statyczne zrzuty); ewentualnie dostroić tempo (spring 0,7 s) i siłę „Zbliżenia” (teraz 3 sześciany).
