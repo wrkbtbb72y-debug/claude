@@ -332,6 +332,11 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   wyśrodkowany w obu osiach, `pointerEvents: none` — logo NUMINO (`DTM5Bxuta`, maks. 540 px; Phone 66 px) wyśrodkowane
   względem szerokości i wysokości ekranu; sześciany ze zdjęciami je przykrywają.
 
+- **Przycisk „View all”** (2026-11-18): w prawej kolumnie hero („Column Right X” `Hgbr5CLZ2` → „Lista” `KQAHUSzg4`) stack „3”
+  `tSrfZh5Ok` (nagłówek „Web Design” + 3 wiersze) zastąpiony przyciskiem: zawartość usunięta, ramka została jako slot
+  (przemianowana „3 — przycisk”, żeby nie zmienić układu rzędów), w środku instancja **„Przycisk akcji”** `TIteksTiL`
+  (wariant Główny — jasna pigułka, etykieta „View all”; wybór użytkownika). **TODO: link** (brak strony docelowej).
+
 ## Siatka perspektywy — układ kontrolek (od 2026-11-18)
 
 Na prośbę użytkownika („za dużo kontrolek, ciężko się połapać”) wszystkie kontrolki `SiatkaPerspektywy.tsx` są w grupach,
