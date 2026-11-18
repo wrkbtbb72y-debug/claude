@@ -164,6 +164,18 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   o ~70% swojej wysokości; używa tego samego mechanizmu co „Ruch w głąb” (`flow`). Działa tylko w podglądzie / na stronie.
   Na `/` (`OirTRcAEZ`) ustawione 3 sześciany; `/home-2` i `/home-3` bez zmian.
   (2026-11-17 — zastąpiła wcześniejszą „Ucieczkę (scroll)”, gdzie horyzont uciekał do góry; zmiana na prośbę użytkownika.)
+- **Zdjęcia w kwadratach** (2026-11-18): w `SiatkaPerspektywy.tsx` grupa „Zdjęcia w kwadratach” (`$control__zdjecia`):
+  Pokaż, Zdjęcia (lista obrazów), Opisy (alt) — osobna lista tekstów w tej samej kolejności (lista obrazów przez API
+  przyjmuje tylko obraz, bez opisu; opisy trafiają do ukrytej listy dla czytników ekranu), Kwadraty N×N (3), Warstwa
+  (1 = najbliższa), Przesuń X/Y (w kwadratach od środka ekranu), Odstęp, Krycie, Przyciemnienie. Zdjęcia wypełniają
+  (cover, kadr ze środka) kwadraty jednej warstwy kraty wokół środka ekranu; linie tej warstwy i bliższe rysują się
+  na zdjęciach, dalsze chowają się za nimi; przy scrollu zdjęcia jadą razem z kratą ku kamerze i gasną, gdy ją mijają.
+  Kolejność: od lewego górnego kwadratu wierszami; gdy zdjęć jest mniej niż kwadratów, powtarzają się.
+  Na `/` (`OirTRcAEZ`) włączone, 3×3, 5 zdjęć od użytkownika (instalacje świetlne w kopułach, portret mężczyzny
+  w kapeluszu na pustyni) z alt-textami. **Brakują 4 zdjęcia** (żółty pawilon na zielonym kopcu, pomarańczowa kopuła,
+  różowe okno w niebieskiej mgle, zielona kopuła) — użytkownik wkleił je w czacie, ale nie dotarły jako pliki;
+  do dodania w liście „Zdjęcia” + „Opisy” (na razie kwadraty 6–9 powtarzają zdjęcia 1–4).
+  Na Phone kwadraty są szersze niż ekran — widać środkową kolumnę i fragmenty bocznych.
 - Wgrywanie plików do Framera z sesji w chmurze wymagało dodania hosta `mcp.framer.com` do sieci środowiska (zrobione).
 
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
@@ -401,10 +413,14 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 - 2026-11-17 — efekt scrolla pierwszej sekcji w kodzie siatki (kontrolka), bo natywne efekty scrolla Framera
   nie mogą animować właściwości komponentu kodowego. Najpierw horyzont uciekał w górę; użytkownik wolał
   przybliżanie sześcianów (krata jedzie ku kamerze), więc kontrolka „Ucieczka” zastąpiona „Zbliżeniem”.
+- 2026-11-18 — zdjęcia na kwadratach kraty rysowane w komponencie siatki (wklejka na głębokości warstwy), a nie jako
+  warstwy Framera nad nią — tylko tak leżą w perspektywie, linie je kadrują i jadą z kratą przy scrollu.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
 
+- [ ] Siatka na `/`: dodać 4 brakujące zdjęcia do „Zdjęć w kwadratach” (żółty pawilon, pomarańczowa kopuła,
+      różowe okno w niebieskim, zielona kopuła) — poprosić o pliki albo użytkownik doda je sam w kontrolce.
 - [ ] „Pasy zdjęć” na `/`: podmienić zdjęcia w pasach 3 i 4 (oraz ewentualnie 1–2), gdy użytkownik je podeśle.
 - [ ] Sprawdzić w podglądzie Framera rozwijanie pasów i przybliżanie kraty przy scrollu (z poziomu AI widać tylko
       statyczne zrzuty); ewentualnie dostroić tempo (spring 0,7 s) i siłę „Zbliżenia” (teraz 3 sześciany).
