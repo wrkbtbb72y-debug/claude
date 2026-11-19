@@ -107,6 +107,12 @@ Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Defaul
   linia dzieląca pod zawartością. Wariant „Stan=Rozwinięta” komponentu akordeonu nie ma już
   dolnej linii — linię niesie ramka zawartości sekcji. „Filtrowanie zaawansowane” na y 539.
 
+- 2026-11-19 — W rozwiniętej sekcji „Wyniki pomiarów PEM” (użytkownik dodał pozycję „Pomiary
+  planowane” za kreską) kreska `12800:1030` „Separator grupy” przerobiona na podział wewnątrz
+  sekcji: kolor #EAE7F2 (jaśniejszy niż linie między sekcjami #E2E2E2), wcięta z obu stron
+  (od checkboxów do −10 px od krawędzi), 16 px odstępu nad i pod. Zasada: linie między
+  sekcjami = #E2E2E2 na pełną szerokość; podziały w sekcji = #EAE7F2, wcięte.
+
 ## Do zrobienia
 
 - [ ] Użytkownik wybiera tło sekcji „Zgłoś problem z zasięgiem” z tablicy `12802:605`.
