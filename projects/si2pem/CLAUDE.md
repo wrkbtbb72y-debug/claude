@@ -17,6 +17,20 @@ System Informacyjny o Instalacjach wytwarzających Promieniowanie ElektroMagnety
 z mapą natężenia PEM, planowanymi pomiarami, zgłoszeniami instalacji, statystykami.
 Fonty: Raleway (UI), Hind (część nagłówka). Siatka desktop: 1440, marginesy 96.
 
+## Ikony na stronie si2pem.gov.pl (sprawdzone 2026-11-19)
+
+- **Główny system: Material UI — `@mui/icons-material`** (ikony Google Material Icons jako
+  komponenty React `SvgIcon`). Strona używa wariantu **podstawowego (Filled)**, np. ArrowForward,
+  ArrowBack, KeyboardArrowRight, Add, Remove, Info, Download. Dotyczy wszystkich nowych
+  (reactowych) widoków: strona główna, mapa, aktualności, statystyki, pomoc, logowanie.
+- **Font Awesome Free 5.11.2** — ładowany w starym CSS; realnie widoczny tylko w ikonach social
+  media w stopce starszych podstron (`fab fa-youtube`, `fa-linkedin-in`, `fa-twitter`,
+  `fa-facebook-f`), np. „Planowane pomiary”, „Zgłoszenia instalacji”.
+- **Własne SVG:** chevrony w menu nawigacji (inline w szablonie) i ikona stacji bazowej
+  na mapie (`base-station-icon`).
+- Nowe ikony w Figmie: brać z MUI (nazwa warstwy = nazwa komponentu MUI, np.
+  `SignalCellularConnectedNoInternet4Bar`); ścieżki SVG z paczki npm `@mui/icons-material`.
+
 ## Mapa Figmy — strona „zgłoś problem z zasięgiem” (`12729:122`)
 
 | Węzeł | Co to |
@@ -71,6 +85,8 @@ Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Defaul
   z zasięgiem” (352×60, sam przycisk 328×40 w stylu „Filtrowanie zaawansowane”: ramka 1 px #2E2E5A,
   r 6, Raleway SemiBold 14 + ikona „Ikona / Zgłoś problem z zasięgiem”). „All” przesunięte o 60 px
   w dół, ramki panelu wydłużone o 60 px.
+- 2026-11-19 — Ikona w tym przycisku podmieniona na MUI `SignalCellularConnectedNoInternet4Bar`
+  (Filled, 20 px, #5133A0) zamiast własnej „Ikona / Zgłoś problem z zasięgiem”.
 
 ## Do zrobienia
 
