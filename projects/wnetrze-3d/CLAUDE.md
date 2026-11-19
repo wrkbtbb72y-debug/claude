@@ -738,14 +738,13 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 Prośba: po kliknięciu „View all” grid ze wszystkimi sześcianami wsysany do punktu zbiegu jak do czarnej dziury, potem
 przejście na osobną stronę, która wysuwa się spod paska (wejście natywne). Decyzje użytkownika: nowa prosta strona,
 wspólny szablon z paskiem, listy po bokach gasną razem z siatką, czas ok. 1,6 s.
-- **Efekt w `SiatkaPerspektywy.tsx`**, grupa kontrolek **„Czarna dziura”** (`wchlon`): Czas (1,6 s), Skręt (1,1 obrotu),
-  Cel (Punkt zbiegu / Środek ekranu), Jądro (0,6), Blask (0,35), Kolor blasku (`#FF5A36`). Na zdarzenie `siatka:wchlon`
-  gotowa klatka jest kopiowana do bufora i rysowana w 44 pierścieniach wokół celu — każdy zmniejszony i obrócony, środek
-  rusza pierwszy i kręci się mocniej (wir), pod koniec wygaszenie; ciemne jądro + cienki pierścień. Po końcu płótno puste
-  i zdarzenie `siatka:wchloniete`. Czas siatka odpisuje w `detail.czas`. `siatka:wchlon-reset` cofa stan. Tylko w
-  podglądzie/na stronie; przy ograniczonym ruchu od razu przejście.
-- **Uwaga:** na `/` Horyzont = 0, więc punkt zbiegu leży przy dolnej krawędzi siatki (nie na środku ekranu) — wir idzie
-  w dół. Kontrolka „Cel → Środek ekranu” zmienia to bez ruszania siatki.
+- **Efekt w `SiatkaPerspektywy.tsx`**, grupa kontrolek **„Wsysanie”** (`wchlon`): Czas (1,6 s), Zasysanie (0,3),
+  Przyspieszenie (2,2), Cel (Punkt zbiegu / Środek ekranu). Na zdarzenie `siatka:wchlon` gotowa klatka jest kopiowana do
+  bufora i rysowana w 44 pierścieniach wokół punktu zbiegu (tam, gdzie zbiegają się linie w głąb, oś z) — każdy pierścień
+  zmniejszony **prosto ku temu punktowi**, bez obrotu; przy Zasysaniu > 0 bliższe pierścienie ruszają wcześniej (0 =
+  całość jednakowo). Pod koniec wygaszenie. Po końcu płótno puste i zdarzenie `siatka:wchloniete`. Czas siatka odpisuje
+  w `detail.czas`. `siatka:wchlon-reset` cofa stan. Tylko w podglądzie/na stronie; przy ograniczonym ruchu od razu przejście.
+  (2026-11-19: pierwsza wersja miała wir, ciemne jądro i pierścień — usunięte na prośbę użytkownika.)
 - **Overrides `Wchloniecie.tsx`:** `withWchlonPrzycisk` na „Przycisk View all” `i02ZAUNY5` (natywny link `/all`, htmlTag
   zmieniony z button na div): 1. klik → blokuje link, odpala czarną dziurę, przycisk gaśnie; po `siatka:wchloniete`
   (zapas: czas + 0,5 s) klika ten sam link ponownie → natywne przejście Framera. `withWchlonGasnie` na „Column Left”
