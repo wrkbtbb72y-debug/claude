@@ -49,6 +49,10 @@ Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Defaul
   do 810, bo zestaw nie ma wariantu tablet. Mobile używa instancji Variant2.
 - 2026-11-19 — Baner mapy na mobile = kopia banera ze starszej makiety „MObile” z tekstami
   z desktopu (tytuł „Mapa natężenia pola elektromagnetycznego (PEM)”, przycisk „Przejdź do Mapy PEM”).
+- 2026-11-19 — Baner mobile (`12779:240`, 358×470) przerobiony wg screena obecnej strony: tekst
+  i przycisk na górze, mapa z plakietką „Pole elektromagnetyczne” na dole, przycięta dolną krawędzią;
+  tło przyciemnione do granatu (#2E2E5A, warstwa „Przyciemnienie tła”). Stare nakładki dolnego
+  pola tekstowego („xcx”, „TEKST Z TŁEM”) ukryte, nie usunięte. Tekst pozostał z desktopu (z „(PEM)”).
 - 2026-11-19 — Usługi (3 kafelki „Usługa – element”) na tablecie i mobile: jedna pod drugą,
   pełna szerokość. Stopka: tablet — logotypy w 2 rzędach (3+2); mobile — linki i logotypy
   zawijane, logotypy w skali 70%.
