@@ -732,3 +732,32 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 - [ ] Kolejne przyciski w dolnym pasku (np. „Wyczyść” — override `withWyczysc` jest gotowy).
 - [ ] Sprawdzić działanie w podglądzie Framera (kliknięcia, ruch kursora) — z poziomu AI widać
       tylko statyczne screenshoty.
+
+## „View all” → czarna dziura → strona `/all` (2026-11-19)
+
+Prośba: po kliknięciu „View all” grid ze wszystkimi sześcianami wsysany do punktu zbiegu jak do czarnej dziury, potem
+przejście na osobną stronę, która wysuwa się spod paska (wejście natywne). Decyzje użytkownika: nowa prosta strona,
+wspólny szablon z paskiem, listy po bokach gasną razem z siatką, czas ok. 1,6 s.
+- **Efekt w `SiatkaPerspektywy.tsx`**, grupa kontrolek **„Czarna dziura”** (`wchlon`): Czas (1,6 s), Skręt (1,1 obrotu),
+  Cel (Punkt zbiegu / Środek ekranu), Jądro (0,6), Blask (0,35), Kolor blasku (`#FF5A36`). Na zdarzenie `siatka:wchlon`
+  gotowa klatka jest kopiowana do bufora i rysowana w 44 pierścieniach wokół celu — każdy zmniejszony i obrócony, środek
+  rusza pierwszy i kręci się mocniej (wir), pod koniec wygaszenie; ciemne jądro + cienki pierścień. Po końcu płótno puste
+  i zdarzenie `siatka:wchloniete`. Czas siatka odpisuje w `detail.czas`. `siatka:wchlon-reset` cofa stan. Tylko w
+  podglądzie/na stronie; przy ograniczonym ruchu od razu przejście.
+- **Uwaga:** na `/` Horyzont = 0, więc punkt zbiegu leży przy dolnej krawędzi siatki (nie na środku ekranu) — wir idzie
+  w dół. Kontrolka „Cel → Środek ekranu” zmienia to bez ruszania siatki.
+- **Overrides `Wchloniecie.tsx`:** `withWchlonPrzycisk` na „Przycisk View all” `i02ZAUNY5` (natywny link `/all`, htmlTag
+  zmieniony z button na div): 1. klik → blokuje link, odpala czarną dziurę, przycisk gaśnie; po `siatka:wchloniete`
+  (zapas: czas + 0,5 s) klika ten sam link ponownie → natywne przejście Framera. `withWchlonGasnie` na „Column Left”
+  `AzgVkCy4j` i „Column Right X” `Hgbr5CLZ2` (gasną w 70% czasu).
+- **Strona `/all`** `tpDgLHnBl` (Desktop `X9KoqFTlm`, Tablet `r5gZV8E0r`, Phone `eGuLwUNZK`): sekcja „Treść” `JapIuASkU`
+  (padding 200/40/80, Phone 160/20/60), tytuł „All work” (preset „Nagłówek”), „The full list is coming soon.” (preset
+  „Lista”) — **TODO: docelowa treść**.
+- **Szablon „Układ z paskiem”** `cZLu0HAKR` (Desktop `AR663N1bM`, Tablet `Q1u0GgNMy`, Phone `bTOyeNkOf`, wys. 800 px,
+  tło token jak Home): Navi `tbRDiBXr1` absolutnie na górze (80 px, Phone 56 px, warianty jak na Home), pod nim
+  placeholder. Na razie **tylko `/all`** go używa.
+- **Efekt wejścia** (Home Desktop `pageEffects` → `/all`): wejście z y −100% → 0, tween 0,9 s ease [0.16, 1, 0.3, 1]
+  (strona zjeżdża z góry).
+- **Otwarte:** żeby pasek stał w miejscu podczas przejścia, Home też musi używać szablonu (usunąć lokalny Navi
+  `KQifDlO5e`), a w panelu Framera trzeba wyłączyć pasek z efektu przejścia (opcja dostępna tylko w UI; nie udało się
+  potwierdzić w dokumentacji — framer.com zablokowany w sieci sesji). Czeka na zgodę użytkownika.
