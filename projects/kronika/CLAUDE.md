@@ -680,6 +680,16 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   `9173:17255`) przełączone na Stan=Domyślny z zachowaniem wartości i układu (wyniki: nadal 201 px,
   chevron przy prawej krawędzi). Wszystkie 13 kopii w pliku podpięte do nowego zestawu.
 
+- 2026-11-19 — **Figma: podpowiedzi wyszukiwania pod wynikami** (prośba użytkownika) — tylko makieta
+  **„Desktop Large – wyniki wyszukiwania” `9439:24776`** (strona „3. Zasoby/Obiekty”; nowsza kopia,
+  obok starszej `8949:9184`, której nie ruszano). Ramka „Podpowiedzi wyszukiwania” `9439:25049`
+  („Czy chodziło Ci o?” + „Możesz obejrzeć także”) przeniesiona z bloku pod hero na **koniec sekcji
+  „Section / Wyniki wyszukiwania”** — pod paginacją (odstęp 80 jak między pozostałymi częściami
+  sekcji, padding ramki 16/28 → 0/0, pod nią dolny padding sekcji 140). **Przełącznik Obiekty /
+  Kolekcje zostaje na swoim miejscu** (blok „Przełącznik + podpowiedzi” `9439:25046`, nazwa bez
+  zmian); białe tło bloku (prostokąt rozciągany) skurczyło się samo do wysokości przełącznika
+  (56 px od hero). Pozostałe breakpointy wyników — bez zmian (do decyzji, czy też przenieść).
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
