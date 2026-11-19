@@ -107,23 +107,16 @@ Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Defaul
   linia dzieląca pod zawartością. Wariant „Stan=Rozwinięta” komponentu akordeonu nie ma już
   dolnej linii — linię niesie ramka zawartości sekcji. „Filtrowanie zaawansowane” na y 539.
 
-- 2026-11-19 — W rozwiniętej sekcji „Wyniki pomiarów PEM” (użytkownik dodał pozycję „Pomiary
-  planowane” za kreską) kreska `12800:1030` „Separator grupy” przerobiona na podział wewnątrz
-  sekcji: kolor #EAE7F2 (jaśniejszy niż linie między sekcjami #E2E2E2), wcięta z obu stron
-  (od checkboxów do −10 px od krawędzi), 16 px odstępu nad i pod. Zasada: linie między
-  sekcjami = #E2E2E2 na pełną szerokość; podziały w sekcji = #EAE7F2, wcięte.
-
 - 2026-11-19 — Cel użytkownika: **pomiary planowane mają wizualnie wyglądać na inną informację
-  niż wyniki pomiarów** (planowane nie mogą być wynikami). W panelu `12783:24253` „Pomiary
-  planowane” wyjęte z listy wyników do osobnego bloku „Grupa – pomiary planowane” `12806:678`
-  (tło #F6F4FB, r 8, padding 10/12) z podpisem „Zaplanowane — jeszcze bez wyników” (Roboto 12,
-  #6B6880) — poza zasięgiem „Zaznacz wszystko”. Separator grupy `12800:1030` ukryty.
-  Osobną sekcję „Planowane pomiary” w akordeonie użytkownik sam usunął w tej wersji panelu.
+  niż wyniki pomiarów** (planowane nie mogą być wynikami). Próby Claude (jaśniejszy, wcięty
+  separator; potem osobny podbarwiony blok z podpisem „Zaplanowane — jeszcze bez wyników”)
+  zostały **cofnięte na prośbę użytkownika**. Obecny stan = wersja użytkownika: separator
+  `12800:1030` 1 px #E2E2E2 na pełną szerokość listy, pod nim „Pomiary planowane” `12800:1038`.
 
 ## Do zrobienia
 
 - [ ] Użytkownik wybiera tło sekcji „Zgłoś problem z zasięgiem” z tablicy `12802:605`.
-- [ ] Potwierdzić z użytkownikiem treść podpisu „Zaplanowane — jeszcze bez wyników” (propozycja Claude).
+- [ ] Rozróżnienie pomiarów planowanych od wyników — do ustalenia z użytkownikiem inne podejście.
 - [ ] „Zaznacz wszystko” zaznaczone, choć zaznaczone są tylko 3 z 7 zakresów — rozważyć stan pośredni (indeterminate).
 - [ ] Ewentualnie: licznik aktywnych filtrów w nagłówku zwiniętej sekcji (do decyzji).
 - [ ] Użytkownik wybiera układ usług na tablecie: podstawowy (stos) / wariant I / wariant II.
