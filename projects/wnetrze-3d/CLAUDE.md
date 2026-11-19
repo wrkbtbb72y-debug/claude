@@ -419,6 +419,17 @@ od kwadratu, który otacza sześcian, tym sześcian trochę mniejszy.
 - Na `/` (`OirTRcAEZ`): 0,15 / 600 px / Kwadratu sześcianu / 0,4 s. Zrzuty Framera nie mają kursora — efekt sprawdzalny
   tylko w podglądzie.
 
+### Hover „do krawędzi kwadratu” (2026-11-19)
+
+Prośba: sześcian po najechaniu myszą rośnie tak, by krawędzie przedniej ściany dotknęły wszystkich czterech krawędzi
+kwadratu kraty, który ją otacza.
+- Grupa „Zdjęcia w kwadratach”: kontrolka **Hover** (`zdjecia.hoverTryb`: „Powiększenie o procent” `procent` — dawne,
+  domyślne / „Do krawędzi kwadratu” `kwadrat`). W trybie `kwadrat` wzrost = padding z każdej strony × postęp hover
+  (czasy jak dotąd: „Czas powiększenia” / „Czas powrotu”), sześcian rośnie symetrycznie, głębokość rośnie razem ze
+  ścianą; sąsiedzi się nie kurczą. „Powiększenie na hover” (%) jest wtedy ukryte.
+- Na `/` (`OirTRcAEZ`) ustawione `kwadrat` (padding zdjęć 12 px — o tyle rośnie każdy bok). Sprawdzone pośrednio:
+  zrzut z paddingiem 0 (= stan po pełnym najechaniu) — przednie ściany leżą dokładnie na liniach; padding przywrócony.
+
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
 
 - Projekt ma drugą stronę `OvsvNzCvS` (nazwa w panelu też „Home”, ścieżka `/home-2` — użytkownik
@@ -664,6 +675,7 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 
 ## Do zrobienia
 
+- [ ] Sprawdzić w podglądzie hover „Do krawędzi kwadratu” razem ze zmniejszaniem od kursora.
 - [ ] Sprawdzić w podglądzie „Zmniejszanie od kursora” (0,15 / 600 px) i ewentualnie dostroić; potwierdzić, czy
       odległość ma być od kwadratu każdego sześcianu, czy od całej siatki zdjęć.
 - [ ] Film w kwadracie siatki na `/`: uzupełnić „Opis filmu (alt)” (teraz roboczy) i sprawdzić odtwarzanie w podglądzie.
