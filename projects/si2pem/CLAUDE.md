@@ -28,6 +28,13 @@ Fonty: Raleway (UI), Hind (część nagłówka). Siatka desktop: 1440, marginesy
   `fa-facebook-f`), np. „Planowane pomiary”, „Zgłoszenia instalacji”.
 - **Własne SVG:** chevrony w menu nawigacji (inline w szablonie) i ikona stacji bazowej
   na mapie (`base-station-icon`).
+- Ikony w Figmie, ramka „Ikony” `12734:231` (sprawdzone 2026-11-19 przez porównanie ścieżek
+  z paczką `@mui/icons-material` 5.15.20 — zgodne 1:1, wszystkie w wariancie **Rounded**):
+  „Ikona / Planowane pomiary” = `EventNoteRounded`; „Ikona / Zgłoszenia instalacji” =
+  `CellTowerRounded`; „Ikona / Zgłoś problem z zasięgiem” = `SignalCellularConnectedNoInternet4BarRounded`;
+  „Ikona / Chevron w prawo” = `ChevronRightRounded`; „Ikona / Strzałka w prawo” (20 px) =
+  `ArrowForwardRounded`. Uwaga: przycisk w panelu mapy ma wariant Filled (`…4Bar`), a strona
+  na produkcji używa wariantów Filled — do ujednolicenia, jeśli użytkownik zechce.
 - Nowe ikony w Figmie: brać z MUI (nazwa warstwy = nazwa komponentu MUI, np.
   `SignalCellularConnectedNoInternet4Bar`); ścieżki SVG z paczki npm `@mui/icons-material`.
 
