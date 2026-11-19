@@ -659,11 +659,25 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     Czeka na wybór
     użytkownika — po wyborze przenieść do makiety głównej i usunąć pozostałe kopie.
 
+- 2026-11-19 — **Figma: „Sortowanie” — ikona zamiast etykiety „Sortuj:”** (prośba użytkownika,
+  „na wszystkich breakpointach”). W zestawie `9078:20251` (strona BUTTONS) we **wszystkich
+  6 wariantach** (Desktop i Mobile × Domyślny/Hover/Focus) usunięty tekst „Sortuj: ”, a na
+  początku ramki „Row” wstawiona ikona **lucide/arrow-up-down** (z kolekcji „Lucide Icons”,
+  ogólna ikona sortowania; inne opcje w kolekcji: arrow-down-wide-narrow, arrow-down-a-z)
+  **18 px, linia 1,5 px #656766** (jak chevron); odstępy w „Row” 8 px. Właściwość tekstowa
+  **Etykieta usunięta** (została Wartość). Szerokość z wartością „Alfabetycznie (A–Z)” 250 → 227 px,
+  pierścienie focus dopasowały się same. Desktop i Mobile wyglądają teraz identycznie (właściwość
+  Urządzenie zostaje, żeby nie psuć kopii). Zmiana objęła wszystkie kopie: „3. Zasoby/Obiekty”
+  (Cards 4 breakpointy, wyniki wyszukiwania), „4. Zasoby/Kolekcje” i „3. Zasoby/Obiekty - OLD”.
+  Poprawka w „Mobile – wyniki wyszukiwania” (`9173:17255`): kopia miała nadpisane rozłożenie
+  „space-between”, przez co ikona odjechała od tekstu — teraz stała szerokość 201 px, ikona +
+  wartość po lewej (wartość „Fill”), chevron przy prawej krawędzi. Opis komponentu i wiersza tabeli
+  zaktualizowane (z notką: w kodzie przycisk potrzebuje aria-label „Sortuj: <wartość>”).
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
-      Large; fraza w pasku „brak wyników” (z literówką czy bez?); czy na Mobile użyć wariantu
-      Mobile sortowania (bez „Sortuj:”). („Section heading” w Cards — już instancje z „Fill”, 2026-11-17.)
+      Large; fraza w pasku „brak wyników” (z literówką czy bez?). („Section heading” w Cards — już instancje z „Fill”, 2026-11-17.)
 
 - [ ] Placeholder wyszukiwarki — ujednolicić styl między breakpointami (Framer i Figma)?
 
