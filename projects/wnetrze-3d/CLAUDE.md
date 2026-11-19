@@ -361,6 +361,24 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   interlinia **23 px** = rytm wierszy listy z lewej). Wychodzą 4 linie na wysokości nagłówka i 3 wierszy „Animation” z lewej.
   Treść robocza, po angielsku jak sąsiednia lista — **do akceptacji** (ew. wersja PL).
 
+### Hover „Archer Magazine” → zdjęcie na środkowym rzędzie (2026-11-19)
+
+Użytkownik zbudował to sam w komponencie (bez kodu); Claude poprawił błędy.
+- Nowy komponent **„Wiersz listy ze zdjęciem”** `NeuI0X8QN` (duplikat „Wiersz listy”): warianty Domyślny `invI6kC7U`
+  (Mouse Enter → Variant 2) i Variant 2 `r_PB1ieWz` (Mouse Leave → Domyślny), tween 0,35 s. Korzeń Fit content (pole hover
+  = sam napis). „Photo wrapper” `YtCQW0LMW`: Absolute, left 326 px, 443 px szer., overflow clip, zdjęcie w środku
+  wyśrodkowane (center anchor). Domyślny: **wys. 1 px, top 17,5 px, opacity 0**; Variant 2: **wys. 149 px, top −56,5 px,
+  opacity 1** → środek stoi w miejscu, zdjęcie rozsuwa się od środka w górę i w dół i tak samo się chowa.
+- **Dlaczego 1 px, nie 0:** animacja wysokości do 0 px jest we Framerze pomijana (zdjęcie znikało nagle przy zjechaniu).
+- Pozycja liczona względem wiersza „Archer Magazine” (lewa kolumna i siatka są wyśrodkowane na tej samej linii, więc
+  przesunięcie nie zależy od wysokości okna): zdjęcie przykrywa dokładnie środkowy rząd 3 kwadratów (sprawdzone zrzutem
+  z tymczasowo włączonym Variant 2). Przy zmianie paddingu listy / położenia siatki — przeliczyć top/left.
+- Instancja w lewej kolumnie podmieniona na nowy komponent: `BeP_BB86I` (dawniej `ueKklTq2L`). Ramki nadrzędne
+  „2” `r2_9T5NM3`, „Animation links” `E7a5Yw8Ck`, „Lista” `HD2wSnn92` mają Overflow: Visible (ustawił użytkownik).
+- Z oryginalnego „Wiersza listy” `ZIOR8bv28` zdjęcie usunięte, korzeń z powrotem Fit content — pozostałe wiersze
+  (Arts And Flowers, Arxipelag, prawa kolumna) bez zdjęcia. Jego hover to teraz Variant 2 `PPxxZBGly` przez
+  Mouse Enter/Leave (zmiana użytkownika; dawny wariant Hover `p0s9Z04Ba` nie istnieje).
+
 ## Siatka perspektywy — układ kontrolek (od 2026-11-18)
 
 Na prośbę użytkownika („za dużo kontrolek, ciężko się połapać”) wszystkie kontrolki `SiatkaPerspektywy.tsx` są w grupach,
