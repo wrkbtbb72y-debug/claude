@@ -24,6 +24,8 @@ Fonty: Raleway (UI), Hind (część nagłówka). Siatka desktop: 1440, marginesy
 | `12735:233` | **Niezalogowany — Propozycja 1** — desktop 1440 (mapa 2/3 + usługi 1/3, 3 karty) — x 2048 |
 | `12778:156` | **… — Tablet 810** (2026-11-19) — x 3600 |
 | `12779:216` | **… — Mobile 390** (2026-11-19) — x 4510 |
+| `12780:293` | **… — Tablet 810 — wariant I** — usługi w 1 rzędzie (3× „Usługa – karta”) — x 3600, y 4500 |
+| `12780:463` | **… — Tablet 810 — wariant II** — „Zgłoś problem z zasięgiem” na całą szerokość, pod nim 2 kafelki w rzędzie — x 4510, y 4500 |
 | `10059:15984` | „Niezalogowany” — wcześniejsza wersja desktop |
 | `12754:4141` / `12754:4144` | „tablet screen” / „mobile screen” — zrzuty obecnej strony (wzór układu kart) |
 | `12764:5199` | „MObile” — starsza makieta mobile (z niej baner mapy `12764:5245`) |
@@ -51,7 +53,15 @@ Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Defaul
   pełna szerokość. Stopka: tablet — logotypy w 2 rzędach (3+2); mobile — linki i logotypy
   zawijane, logotypy w skali 70%.
 
+- 2026-11-19 — Na prośbę użytkownika dwa alternatywne układy usług na tablecie (do wyboru):
+  I — trzy obok siebie, na komponencie „Usługa – karta” `12745:509` (ikona nad tytułem; poziomy
+  „Usługa – element” jest za szeroki na ~251 px), karty 251×196; II — „Zgłoś problem
+  z zasięgiem” 778×90, pod nim Planowane pomiary + Zgłoszenia instalacji (2× 383×90).
+  Reszta strony identyczna jak w podstawowej wersji tabletu.
+
 ## Do zrobienia
+
+- [ ] Użytkownik wybiera układ usług na tablecie: podstawowy (stos) / wariant I / wariant II.
 
 - [ ] Ewentualnie dodać wariant „Tablet” do zestawu nagłówka `9329:4788` (na prośbę użytkownika)
   i podmienić odłączony nagłówek tabletu na instancję.
