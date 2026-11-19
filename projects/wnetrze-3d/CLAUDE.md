@@ -360,7 +360,7 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
 Na prośbę użytkownika („za dużo kontrolek, ciężko się połapać”) wszystkie kontrolki `SiatkaPerspektywy.tsx` są w grupach,
 w tej kolejności: **Kamera i przestrzeń** (`kamera`: horyzont, punkt zbiegu, kwadraty na wysokość, wielkość sześcianu,
 głębia, zbliżenie przy scrollu, ruch w głąb) → **Linie** (`linie`: kolor, grubość, krycie, przerwy, tempo zaniku,
-miękkość granic) → Nad horyzontem → Pod horyzontem → Linie w głąb → Bliskie linie → Tajemnica → **Świetliki podróżujące**
+miękkość granic) → **Linie wokół sześcianów** (`wokol`, od 2026-11-19) → Nad horyzontem → Pod horyzontem → Linie w głąb → Bliskie linie → Tajemnica → **Świetliki podróżujące**
 (`swietliki`: poziome/pionowe/w głąb + kierunki, długość światła, prędkość, dystans, gaśnięcie, rozświetlenie, kolor
 światła) → Świetliki w węzłach → Rozświetlenie → Zdjęcia w kwadratach → Logo 3D → Kosmos → Tło.
 - Dawne płaskie kontrolki (`horizon`, `cubeSize`, `lineColor`, `firefliesH` …) przeniesione do grup `kamera` / `linie` /
@@ -384,6 +384,23 @@ miękkość granic) → Nad horyzontem → Pod horyzontem → Linie w głąb →
   potem tak samo równo spada do 0 (trasa = 2 × dystans) — pojawianie tak stopniowe jak gaśnięcie, bez nagłego rozbłysku.
 - **Jednakowa trasa poziomych i pionowych** (2026-11-18): „Dystans biegu” liczony od **wysokości komponentu** dla obu rodzajów
   (wcześniej od długości linii, więc poziome — dłuższe linie — jechały dłużej). Świetliki w głąb: nadal od długości linii.
+
+### Linie wokół sześcianów (2026-11-19)
+
+Prośba użytkownika: wzmocnić kreski kraty otaczające sześciany ze zdjęciami, osobnymi kontrolkami; przy kontrolkach na 0
+kreski mają wyglądać jak teraz (bazą są globalne ustawienia z grupy „Linie”, kontrolki tylko dokładają).
+- `SiatkaPerspektywy.tsx`, grupa **„Linie wokół sześcianów”** (`$control__wokol`, zaraz po „Linie”):
+  **Grubość +** (px dodawane do „Grubości”), **Krycie +** (0–1, dociąga krycie do pełnego), **Ciągłość** (0–1, zapełnia
+  przerwy z „Przerw”/„Tajemnicy”), **Rozjaśnienie** (0–1, miesza „Kolor” linii z **Kolorem rozjaśnienia**, domyślnie biały),
+  **Zakres** (Przód = płaszczyzna zdjęć / **Przód + linie w głąb** — domyślnie, odcinki linii w głąb między płaszczyzną
+  zdjęć a tylną płaszczyzną / Cała bryła = też tylna płaszczyzna), **Zasięg poza zdjęcia** (0–6 kwadratów; 0 = tylko
+  obrys siatki zdjęć i linie między sześcianami).
+- Działa tylko przy włączonych „Zdjęciach w kwadratach”. Obszar = prostokąt siatki zdjęć (N×N, z „Warstwą” i „Przesuń X/Y”),
+  linie dzielone dokładnie na jego granicach; odcinki poza nim rysowane jak dotąd. Wszystkie dodatki na 0 → kod omija
+  nowy styl (rysunek identyczny jak przed zmianą).
+- Na `/` (`OirTRcAEZ`) wszystko na 0 (wygląd bez zmian) — użytkownik dostraja sam. Test (potem cofnięty): Grubość + 1,
+  Krycie + 1, Ciągłość 1, Rozjaśnienie 0,7 — wyraźna jasna rama 3×3 wokół sześcianów na wszystkich breakpointach.
+- W kodzie była już funkcja `parseColor` (inna sygnatura) — nowa nazywa się `wkParseColor`.
 
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
 
@@ -622,6 +639,8 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
   przybliżanie sześcianów (krata jedzie ku kamerze), więc kontrolka „Ucieczka” zastąpiona „Zbliżeniem”.
 - 2026-11-18 — zdjęcia na kwadratach kraty rysowane w komponencie siatki (wklejka na głębokości warstwy), a nie jako
   warstwy Framera nad nią — tylko tak leżą w perspektywie, linie je kadrują i jadą z kratą przy scrollu.
+- 2026-11-19 — wzmocnienie kresek wokół sześcianów jako osobna grupa kontrolek-dodatków w siatce (nie zmiana
+  globalnych „Linii”): na 0 wygląd bez zmian, a reszta kraty zostaje delikatna.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
