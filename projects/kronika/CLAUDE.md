@@ -650,7 +650,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     + imię **H3 Mobile** (18/450), przyciski konta obok siebie (Fill, odstęp 16 → ok. 171 px;
     w panelu 151 px). Panel w wariancie 3 na mobile ma padding **20** (na tablecie 24). Odstępy
     jak w bazie: 48 px od logo, 40 px do nawigacji.
-    Tekst „Zalogowano jako” to propozycja copy (nie fakt o kliencie). Czeka na wybór
+    **Etykieta „Zalogowano jako” usunięta** (uwaga użytkownika: „mało zręczna”; jego pomysł:
+    ikona po lewej, imię i nazwisko po prawej) — we wszystkich 4 kopiach (warianty 1 i 3,
+    tablet i mobile) ramka „Użytkownik” jest teraz pozioma: **lucide/circle-user** 24 px
+    (linia 1,5, #1A1A1A; inna niż lucide/user w „Moje konto”) + imię, odstęp 12, wyśrodkowane
+    w pionie. Podpisy: „Wariant 1 — ikona + imię i nazwisko”, „Wariant 3 — ikona + imię
+    i nazwisko na panelu (Background Gray)”. Wariant 2 (monogram) nadal ma starą etykietę.
+    Czeka na wybór
     użytkownika — po wyborze przenieść do makiety głównej i usunąć pozostałe kopie.
 
 ## Do zrobienia
