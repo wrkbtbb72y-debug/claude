@@ -32,6 +32,7 @@ Fonty: Raleway (UI), Hind (część nagłówka). Siatka desktop: 1440, marginesy
 | `12764:5707` | „Main new tablet 4” — starsza makieta tablet (834) |
 | `12734:229` | Komponenty — kafelek usługi: „Usługa – element” `12734:245`, „Usługa – karta” `12745:509`, „Karta informacyjna – kompaktowa”, „Usługa – karta (strzałka na dole)” `12782:419` |
 | `12777:156` | Komponenty — karta sekcji (responsywna): **„Karta sekcji – responsywna”** `12777:158` |
+| `12783:9142` | „sidebar measurements expanded & searchbar” — ekran mapy 1440 z panelem bocznym (`12783:9205`); w panelu: „searchbar” `12783:9330`, sekcja „Zgłoś problem z zasięgiem” `12790:563`, „All” `12783:9211` |
 
 Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Default 1440, Variant3 1440
 — używany na desktopie, Variant2 390 — mobile; **brak wariantu tablet**).
@@ -65,6 +66,11 @@ Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Defaul
 - 2026-11-19 — Wariant I: kafelki usług przełączone na nowy komponent „Usługa – karta (strzałka
   na dole)” `12782:419` (kopia „Usługa – karta”; strzałka bez ramki, 24 px, w prawym dolnym rogu).
   Oryginalny wzorzec „Usługa – karta” bez zmian. Kafelki 251×232.
+
+- 2026-11-19 — Panel boczny mapy: między „searchbar” a „All” dodana sekcja „Zgłoś problem
+  z zasięgiem” (352×60, sam przycisk 328×40 w stylu „Filtrowanie zaawansowane”: ramka 1 px #2E2E5A,
+  r 6, Raleway SemiBold 14 + ikona „Ikona / Zgłoś problem z zasięgiem”). „All” przesunięte o 60 px
+  w dół, ramki panelu wydłużone o 60 px.
 
 ## Do zrobienia
 
