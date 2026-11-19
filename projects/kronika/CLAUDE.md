@@ -673,6 +673,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „space-between”, przez co ikona odjechała od tekstu — teraz stała szerokość 201 px, ikona +
   wartość po lewej (wartość „Fill”), chevron przy prawej krawędzi. Opis komponentu i wiersza tabeli
   zaktualizowane (z notką: w kodzie przycisk potrzebuje aria-label „Sortuj: <wartość>”).
+  **Tego samego dnia warianty Desktop i Mobile połączone** (prośba użytkownika): usunięte warianty
+  Urządzenie=Mobile (`9164:343`, `9164:350`, `9164:357`) i właściwość **Urządzenie**; zestaw ma teraz
+  tylko **Stan** = Domyślny `9078:20235` / Hover `9078:20238` / Focus `9078:20244` + tekst Wartość.
+  Dwie kopie z wariantu Mobile („Mobile - Cards” `9078:20275`, „Mobile – wyniki wyszukiwania”
+  `9173:17255`) przełączone na Stan=Domyślny z zachowaniem wartości i układu (wyniki: nadal 201 px,
+  chevron przy prawej krawędzi). Wszystkie 13 kopii w pliku podpięte do nowego zestawu.
 
 ## Do zrobienia
 
