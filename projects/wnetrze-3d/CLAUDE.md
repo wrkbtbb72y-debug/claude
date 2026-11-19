@@ -354,6 +354,12 @@ Breakpointy: Desktop `WQLkyLRf1` (1200), Tablet `yQMtFz1Ve` (810), Phone `sg8iiR
   `tSrfZh5Ok` (nagłówek „Web Design” + 3 wiersze) zastąpiony przyciskiem: zawartość usunięta, ramka została jako slot
   (przemianowana „3 — przycisk”, żeby nie zmienić układu rzędów), w środku instancja **„Przycisk akcji”** `TIteksTiL`
   (wariant Główny — jasna pigułka, etykieta „View all”; wybór użytkownika). **TODO: link** (brak strony docelowej).
+- **Tekst zamiast „View all”** (2026-11-19): przycisk `TIteksTiL` usunięty, slot `tSrfZh5Ok` przemianowany na „3 — tekst”
+  (szer. 118 px, padding prawy 12 px = lustro lewego paddingu 12 px w „Column Left”, wyrównanie do prawej). W środku
+  jeden akapit `UNBIO7wfZ` „Images, motion and space, shaped into one quiet form.” (wyrównany do prawej, `textWrap: balance`)
+  w nowym presecie **„Lista akapit”** `y2wkQleXW` (jak „Lista”: PP Neue Montreal 400, 14 px, −0,01 em, kolor „Tekst”, ale
+  interlinia **23 px** = rytm wierszy listy z lewej). Wychodzą 4 linie na wysokości nagłówka i 3 wierszy „Animation” z lewej.
+  Treść robocza, po angielsku jak sąsiednia lista — **do akceptacji** (ew. wersja PL).
 
 ## Siatka perspektywy — układ kontrolek (od 2026-11-18)
 
