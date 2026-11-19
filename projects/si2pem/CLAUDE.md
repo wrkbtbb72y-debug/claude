@@ -48,7 +48,7 @@ Fonty: Raleway (UI), Hind (część nagłówka). Siatka desktop: 1440, marginesy
 | `12777:156` | Komponenty — karta sekcji (responsywna): **„Karta sekcji – responsywna”** `12777:158` |
 | `12783:9142` | „sidebar measurements expanded & searchbar” — ekran mapy 1440 z panelem bocznym (`12783:9205`); w panelu: „searchbar” `12783:9330`, sekcja „Zgłoś problem z zasięgiem” `12790:563`, „All” `12783:9211`, w nim „Sekcje filtrów (akordeon)” `12798:579` |
 | `12798:568` | Komponenty — panel mapy (akordeon): **„Sekcja filtrów – nagłówek (akordeon)”** `12798:578` (Stan=Zwinięta `12798:570` / Rozwinięta `12798:574`, właściwość Tytuł) — na prawo od ekranu mapy |
-| `12783:24190` | Druga wersja ekranu mapy (użytkownika): sekcja „Zgłoś problem z zasięgiem” `12783:24394` na samej górze panelu, nad wyszukiwarką, tło #E5E0F2 — y −5360 |
+| `12783:24190` | Druga wersja ekranu mapy (użytkownika): sekcja „Zgłoś problem z zasięgiem” `12783:24394` na samej górze panelu, nad wyszukiwarką, tło #E5E0F2 — y −5360; panel `12783:24253` pokazuje akordeon z **rozwiniętą** sekcją „Wyniki pomiarów PEM” (zawartość `12803:680`) |
 | `12802:605` | „Propozycje tła — Zgłoś problem z zasięgiem” — tablica 6 wariantów tła sekcji (na prawo od `12783:24190`) |
 
 Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Default 1440, Variant3 1440
@@ -102,10 +102,16 @@ Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Defaul
   bez zmian): 0 obecne #E5E0F2, 1 jasna lawenda #F4F1FB, 2 lawenda marki #EDE7FA, 3 chłodna
   szarość #F5F6F8, 4 granat #2E2E5A z białym przyciskiem bez ramki, 5 ciepły bursztyn #FFF4DD.
 
+- 2026-11-19 — Widok z rozwiniętą sekcją „Wyniki pomiarów PEM” w panelu `12783:24253`: nagłówek
+  w wariancie Rozwinięta, pod nim „Zaznacz wszystko” + 7 zakresów (kopie ukrytych oryginałów),
+  linia dzieląca pod zawartością. Wariant „Stan=Rozwinięta” komponentu akordeonu nie ma już
+  dolnej linii — linię niesie ramka zawartości sekcji. „Filtrowanie zaawansowane” na y 539.
+
 ## Do zrobienia
 
 - [ ] Użytkownik wybiera tło sekcji „Zgłoś problem z zasięgiem” z tablicy `12802:605`.
-- [ ] Ewentualnie: widok z rozwiniętą sekcją akordeonu i licznik aktywnych filtrów w nagłówku zwiniętej sekcji (do decyzji).
+- [ ] „Zaznacz wszystko” zaznaczone, choć zaznaczone są tylko 3 z 7 zakresów — rozważyć stan pośredni (indeterminate).
+- [ ] Ewentualnie: licznik aktywnych filtrów w nagłówku zwiniętej sekcji (do decyzji).
 - [ ] Użytkownik wybiera układ usług na tablecie: podstawowy (stos) / wariant I / wariant II.
 
 - [ ] Ewentualnie dodać wariant „Tablet” do zestawu nagłówka `9329:4788` (na prośbę użytkownika)
