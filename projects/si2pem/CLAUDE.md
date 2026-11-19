@@ -46,7 +46,8 @@ Fonty: Raleway (UI), Hind (część nagłówka). Siatka desktop: 1440, marginesy
 | `12764:5707` | „Main new tablet 4” — starsza makieta tablet (834) |
 | `12734:229` | Komponenty — kafelek usługi: „Usługa – element” `12734:245`, „Usługa – karta” `12745:509`, „Karta informacyjna – kompaktowa”, „Usługa – karta (strzałka na dole)” `12782:419` |
 | `12777:156` | Komponenty — karta sekcji (responsywna): **„Karta sekcji – responsywna”** `12777:158` |
-| `12783:9142` | „sidebar measurements expanded & searchbar” — ekran mapy 1440 z panelem bocznym (`12783:9205`); w panelu: „searchbar” `12783:9330`, sekcja „Zgłoś problem z zasięgiem” `12790:563`, „All” `12783:9211` |
+| `12783:9142` | „sidebar measurements expanded & searchbar” — ekran mapy 1440 z panelem bocznym (`12783:9205`); w panelu: „searchbar” `12783:9330`, sekcja „Zgłoś problem z zasięgiem” `12790:563`, „All” `12783:9211`, w nim „Sekcje filtrów (akordeon)” `12798:579` |
+| `12798:568` | Komponenty — panel mapy (akordeon): **„Sekcja filtrów – nagłówek (akordeon)”** `12798:578` (Stan=Zwinięta `12798:570` / Rozwinięta `12798:574`, właściwość Tytuł) — na prawo od ekranu mapy |
 
 Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Default 1440, Variant3 1440
 — używany na desktopie, Variant2 390 — mobile; **brak wariantu tablet**).
@@ -88,8 +89,16 @@ Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Defaul
 - 2026-11-19 — Ikona w tym przycisku podmieniona na MUI `SignalCellularConnectedNoInternet4Bar`
   (Filled, 20 px, #5133A0) zamiast własnej „Ikona / Zgłoś problem z zasięgiem”.
 
+- 2026-11-19 — Panel mapy: sekcje „Wyniki pomiarów PEM”, „Lata pomiarów”, „Planowane pomiary”,
+  „Instalacje” zamienione na zwijane (akordeon), pokazane jako zwinięte: 4 nagłówki 328×52
+  (Roboto SemiBold 14 #333, strzałka MUI ExpandMore/ExpandLess #2E2E5A, linia dolna #E2E2E2).
+  Klik w prototypie przełącza wariant (Smart animate 200 ms). Dawna rozwinięta zawartość sekcji
+  jest **ukryta, nie usunięta** (w ramce „pomiary” `12783:9212`) — do użycia przy widoku rozwiniętym.
+  „Filtrowanie zaawansowane” przesunięte pod akordeon (y 294).
+
 ## Do zrobienia
 
+- [ ] Ewentualnie: widok z rozwiniętą sekcją akordeonu i licznik aktywnych filtrów w nagłówku zwiniętej sekcji (do decyzji).
 - [ ] Użytkownik wybiera układ usług na tablecie: podstawowy (stos) / wariant I / wariant II.
 
 - [ ] Ewentualnie dodać wariant „Tablet” do zestawu nagłówka `9329:4788` (na prośbę użytkownika)
