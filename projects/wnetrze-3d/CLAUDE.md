@@ -11,6 +11,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 - **Branche we Framerze:** edycje AI **nie tworzą brancha** (sprawdzone 2026-11-15) — zmiany idą
   od razu do `main`, nieopublikowane.
 
+## Słownik (terminy uzgodnione z użytkownikiem)
+
+- **Punkt zbiegu** (2026-11-19) — punkt, do którego zbiegają się linie siatki biegnące w głąb (oś z) w `SiatkaPerspektywy.tsx`
+  (w kodzie `vx`, `vy` / `entry.cam`; położenie ustawiają kontrolki „Punkt zbiegu” = X i „Horyzont” = Y). Na `/` leży przy
+  dolnej krawędzi siatki (Horyzont 0). Używać tej nazwy w rozmowie i notatkach.
+
 ## O projekcie (brief w skrócie)
 
 Jednoekranowa aplikacja: trójwymiarowe, puste wnętrze o dużej powierzchni i wysokiej kondygnacji,
@@ -738,15 +744,17 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 Prośba: po kliknięciu „View all” grid ze wszystkimi sześcianami wsysany do punktu zbiegu jak do czarnej dziury, potem
 przejście na osobną stronę, która wysuwa się spod paska (wejście natywne). Decyzje użytkownika: nowa prosta strona,
 wspólny szablon z paskiem, listy po bokach gasną razem z siatką, czas ok. 1,6 s.
-- **Efekt w `SiatkaPerspektywy.tsx`**, grupa kontrolek **„Wsysanie”** (`wchlon`): Czas (1,6 s), Zasysanie (0,3),
-  Przyspieszenie (2,2), Cel (Punkt zbiegu / Środek ekranu). Na zdarzenie `siatka:wchlon` gotowa klatka jest kopiowana do
-  bufora i rysowana w 44 pierścieniach wokół punktu zbiegu (tam, gdzie zbiegają się linie w głąb, oś z) — każdy pierścień
-  zmniejszony **prosto ku temu punktowi**, bez obrotu; przy Zasysaniu > 0 bliższe pierścienie ruszają wcześniej (0 =
-  całość jednakowo). Pod koniec wygaszenie. Po końcu płótno puste i zdarzenie `siatka:wchloniete`. Czas siatka odpisuje
-  w `detail.czas`. `siatka:wchlon-reset` cofa stan. Tylko w podglądzie/na stronie; przy ograniczonym ruchu od razu przejście.
-  (2026-11-19: pierwsza wersja miała wir, ciemne jądro i pierścień — usunięte na prośbę użytkownika.)
+- **Efekt w `SiatkaPerspektywy.tsx`**, grupa kontrolek **„Wsysanie”** (`wchlon`): Czas (1,6 s), Przyspieszenie (2,2),
+  Cel (Punkt zbiegu / Środek ekranu). Na zdarzenie `siatka:wchlon` gotowa klatka jest kopiowana do bufora i rysowana
+  **jednolicie zmniejszona wokół Punktu zbiegu** (jedna skala dla całości), pod koniec wygaszenie. Linie pionowe i poziome
+  **nie mogą się odkształcać** (wymóg użytkownika) — dlatego bez pierścieni o różnej skali. Po końcu płótno puste i zdarzenie
+  `siatka:wchloniete`. Czas siatka odpisuje w `detail.czas`. `siatka:wchlon-reset` cofa stan. Tylko w podglądzie/na
+  stronie; przy ograniczonym ruchu od razu przejście. Na `/` Punkt zbiegu jest przy dolnej krawędzi siatki, więc wszystko
+  spływa w dół, pod przycisk „View all” (użytkownik chce właśnie Punkt zbiegu, nie środek ekranu).
+  Historia (2026-11-19): 1. wir + ciemne jądro + pierścień (usunięte), 2. pierścienie z „Zasysaniem” (wyginały linie —
+  usunięte), 3. obecne jednolite zmniejszenie.
 - **Overrides `Wchloniecie.tsx`:** `withWchlonPrzycisk` na „Przycisk View all” `i02ZAUNY5` (natywny link `/all`, htmlTag
-  zmieniony z button na div): 1. klik → blokuje link, odpala czarną dziurę, przycisk gaśnie; po `siatka:wchloniete`
+  zmieniony z button na div): 1. klik → blokuje link, odpala wsysanie, przycisk gaśnie; po `siatka:wchloniete`
   (zapas: czas + 0,5 s) klika ten sam link ponownie → natywne przejście Framera. `withWchlonGasnie` na „Column Left”
   `AzgVkCy4j` i „Column Right X” `Hgbr5CLZ2` (gasną w 70% czasu).
 - **Strona `/all`** `tpDgLHnBl` (Desktop `X9KoqFTlm`, Tablet `r5gZV8E0r`, Phone `eGuLwUNZK`): sekcja „Treść” `JapIuASkU`
