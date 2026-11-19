@@ -609,6 +609,27 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   wyszukiwania obiektów”. Nazwy warstw tekstu = treść. Rząd pod „brak wyników”
   (`9299:43811`, wyniki z 2 obiektami, y −48074) nie ma etykiety — nie dodawano.
 
+- 2026-11-19 — **Figma, menu boczne po zalogowaniu** (strona „NAWIGACJA I”, makieta „Tablet -
+  zwinięte” `9403:42446`, „Drawer 580 (zwinięte)” `9403:43715`; prośba użytkownika):
+  - **Nowy przycisk „Przycisk konta (menu boczne)”** — zestaw `9414:389` w tabeli „Nowe przyciski”,
+    nowa sekcja **„Nawigacja · Menu boczne (tablet i mobile)”** (`9414:346`, wiersz `9414:348`).
+    Właściwości: **Akcja** = Moje konto / Wyloguj się, **Stan** = Domyślny / Hover / Focus.
+    64 px wysokości (jak „Zaloguj się lub zarejestruj konto” w menu wylogowanym i „English”),
+    padding boki 16, treść wyśrodkowana, ikona 20 px przed tekstem, odstęp 8, tekst styl
+    **Button** (15/450). **Moje konto** = Primary czarny (#1A1A1A, hover #333333, tekst i ikona
+    białe, ikona **lucide/user**) — w tym samym miejscu co przycisk logowania w stanie
+    wylogowanym. **Wyloguj się** = Secondary outline (białe tło, ramka 1 px #1A1A1A 80 %,
+    hover + #1A1A1A 6 %, ikona **lucide/log-out**). Focus: pierścień 2 px #1A1A1A z 2 px odstępu.
+    Ikony = instancje z kolekcji „Lucide Icons”, przeskalowane 24 → 20 px, linia 1,5.
+    Warianty: Moje konto `9414:363` / `9414:367` / `9414:371`, Wyloguj się `9414:376` /
+    `9414:380` / `9414:384`.
+  - **Blok „Konto”** w menu (`9403:44319`, dawniej „Frame 427320014”): pionowy auto‑layout,
+    odstęp **16 px**: „Imię i nazwisko” (`9403:43723`) w stylu **H4 - Nagłówki (Tablet)**
+    (18/500, interlinia 130 %, #1A1A1A; wcześniej 15/450 bez stylu, przyklejone do przycisków)
+    + „Przyciski konta” (`9403:44320`, poziomo, odstęp 16) z dwoma instancjami, szerokość Fill.
+    Odstępy wokół bez zmian: 60 px od logo, 40 px do nawigacji. Literówka „Wylloguj się”
+    poprawiona na „Wyloguj się”. We Framerze nic nie zmieniano.
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
