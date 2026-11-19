@@ -642,6 +642,14 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     (18/500), odstęp 16 / 6; 24 px do przycisków.
     **Wariant 3** `9420:7615` (x 2720) — jak wariant 1, ale cały blok konta (etykieta, imię,
     przyciski) to panel na tle **Background Gray** z paddingiem 24.
+    **Wersje mobilne wariantów 1 i 3** (prośba użytkownika; baza: instancja komponentu
+    „Mobile — zwinięte” `9403:50941` → komponent `9403:50940`, oba bez zmian): kopie odłączone
+    od komponentu, stoją pod tabletowymi wariantami (y 304): **Wariant 1 — mobile** `9422:5690`
+    (x jak `9420:3856`), **Wariant 3 — mobile** `9422:5922` (x jak `9420:7615`). Przycisk
+    „Zaloguj się lub zarejestruj konto” zastąpiony blokiem „Konto” (gap 24): etykieta Uppercase S
+    + imię **H3 Mobile** (18/450), przyciski konta obok siebie (Fill, odstęp 16 → ok. 171 px;
+    w panelu 151 px). Panel w wariancie 3 na mobile ma padding **20** (na tablecie 24). Odstępy
+    jak w bazie: 48 px od logo, 40 px do nawigacji.
     Tekst „Zalogowano jako” to propozycja copy (nie fakt o kliencie). Czeka na wybór
     użytkownika — po wyborze przenieść do makiety głównej i usunąć pozostałe kopie.
 
