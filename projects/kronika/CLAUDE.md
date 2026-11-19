@@ -688,7 +688,19 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   sekcji, padding ramki 16/28 → 0/0, pod nią dolny padding sekcji 140). **Przełącznik Obiekty /
   Kolekcje zostaje na swoim miejscu** (blok „Przełącznik + podpowiedzi” `9439:25046`, nazwa bez
   zmian); białe tło bloku (prostokąt rozciągany) skurczyło się samo do wysokości przełącznika
-  (56 px od hero). Pozostałe breakpointy wyników — bez zmian (do decyzji, czy też przenieść).
+  (56 px od hero). **Potem użytkownik poprawił odstępy na DL** (ręcznie): przełącznik → nagłówek
+  „Wyniki wyszukiwania” 80 → **100**; wyniki + podpowiedzi w nowej ramce `9439:26003` z odstępem
+  **120** (paginacja → podpowiedzi); między grupami „Czy chodziło Ci o?” / „Możesz obejrzeć także”
+  28 → **60**; etykieta → przyciski 8 → **12**.
+  **Te same zmiany przeniesione na pozostałe breakpointy wyników** (prośba użytkownika, ten sam dzień):
+  Desktop Small `9173:12149`, Tablet `9173:15859`, Mobile `9173:16891` — przełącznik zostaje u góry,
+  podpowiedzi pod paginacją, w nowych ramkach **„Wyniki i podpowiedzi”** (DS `9483:10884`, Tablet
+  `9483:10885`, Mobile `9483:10886`), odstępy 100 / 120 / 60 / 12 jak na DL (na Mobile też — bez
+  skalowania). **Mobile:** ramka makiety miała stałą wysokość 5010 px i ucinała treść (część kart,
+  paginację, stopkę) — ustawiona na „Hug”, teraz ok. 8297 px; nic pod nią nie nachodzi.
+  Uwaga: rząd wyników to teraz DL `9439:24776` + DS/Tablet/Mobile jak wyżej (x 11158–15272,
+  y −56855); druga makieta „Desktop Large – wyniki wyszukiwania” `9299:43811` (x 16382, y −53287,
+  pod etykietą „aktualne”) i makiety „brak wyników” — bez zmian.
 
 ## Do zrobienia
 
