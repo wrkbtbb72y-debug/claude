@@ -30,7 +30,7 @@ Fonty: Raleway (UI), Hind (część nagłówka). Siatka desktop: 1440, marginesy
 | `12754:4141` / `12754:4144` | „tablet screen” / „mobile screen” — zrzuty obecnej strony (wzór układu kart) |
 | `12764:5199` | „MObile” — starsza makieta mobile (z niej baner mapy `12764:5245`) |
 | `12764:5707` | „Main new tablet 4” — starsza makieta tablet (834) |
-| `12734:229` | Komponenty — kafelek usługi: „Usługa – element” `12734:245`, „Usługa – karta”, „Karta informacyjna – kompaktowa” |
+| `12734:229` | Komponenty — kafelek usługi: „Usługa – element” `12734:245`, „Usługa – karta” `12745:509`, „Karta informacyjna – kompaktowa”, „Usługa – karta (strzałka na dole)” `12782:419` |
 | `12777:156` | Komponenty — karta sekcji (responsywna): **„Karta sekcji – responsywna”** `12777:158` |
 
 Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Default 1440, Variant3 1440
@@ -62,6 +62,9 @@ Inne komponenty: nagłówek — zestaw „Frame 427318310” `9329:4788` (Defaul
   „Usługa – element” jest za szeroki na ~251 px), karty 251×196; II — „Zgłoś problem
   z zasięgiem” 778×90, pod nim Planowane pomiary + Zgłoszenia instalacji (2× 383×90).
   Reszta strony identyczna jak w podstawowej wersji tabletu.
+- 2026-11-19 — Wariant I: kafelki usług przełączone na nowy komponent „Usługa – karta (strzałka
+  na dole)” `12782:419` (kopia „Usługa – karta”; strzałka bez ramki, 24 px, w prawym dolnym rogu).
+  Oryginalny wzorzec „Usługa – karta” bez zmian. Kafelki 251×232.
 
 ## Do zrobienia
 
