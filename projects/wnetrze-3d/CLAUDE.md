@@ -401,6 +401,23 @@ kreski mają wyglądać jak teraz (bazą są globalne ustawienia z grupy „Lini
 - Na `/` (`OirTRcAEZ`) wszystko na 0 (wygląd bez zmian) — użytkownik dostraja sam. Test (potem cofnięty): Grubość + 1,
   Krycie + 1, Ciągłość 1, Rozjaśnienie 0,7 — wyraźna jasna rama 3×3 wokół sześcianów na wszystkich breakpointach.
 - W kodzie była już funkcja `parseColor` (inna sygnatura) — nowa nazywa się `wkParseColor`.
+- Później (2026-11-19) użytkownik sam ustawił na `/`: Krycie + 0,35, Ciągłość 0,4, Rozjaśnienie 0,6 (Grubość + 0,
+  Zakres „Przód + linie w głąb”, Zasięg 0).
+
+### Zmniejszanie sześcianów od kursora (2026-11-19)
+
+Prośba: wielkość sześcianów ma zależeć od kursora nad siatką — bez kursora bez zmian; kursor nad komponentem → im dalej
+od kwadratu, który otacza sześcian, tym sześcian trochę mniejszy.
+- Grupa „Zdjęcia w kwadratach”: **Zmniejszanie od kursora** (`zdjecia.kursorZmn`, 0–0,5; 0 = wył.), **Zasięg zmniejszania**
+  (`kursorZasieg`, px — przy tej odległości zmniejszenie jest pełne, liniowo), **Odległość od** (`kursorOdn`: „Kwadratu
+  sześcianu” `wlasny` — każdy sześcian od swojego kwadratu kraty, domyślnie / „Całej siatki zdjęć” `siatka` — wszystkie
+  razem od prostokąta siatki 3×3), **Czas reakcji** (`kursorCzas`, s, wygładzanie).
+- Odległość = od kursora do prostokąta (0, gdy kursor w środku); sześcian skalowany wokół środka przedniej ściany, więc
+  głębokość maleje razem z nim. „Nad komponentem” = kursor w granicach komponentu (z `window`, bo komponent ma
+  `pointerEvents: none`); tylko mysz/pióro (dotyk — bez efektu); wyłączone podczas „fokusu” po kliknięciu, w edytorze
+  i przy ograniczonym ruchu. Działa razem z powiększeniem na hover (sześcian pod kursorem ma pełną wielkość + hover).
+- Na `/` (`OirTRcAEZ`): 0,15 / 600 px / Kwadratu sześcianu / 0,4 s. Zrzuty Framera nie mają kursora — efekt sprawdzalny
+  tylko w podglądzie.
 
 ## Druga strona `/home-2` i Siatka perspektywy (zauważone 2026-11-17)
 
@@ -641,10 +658,14 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
   warstwy Framera nad nią — tylko tak leżą w perspektywie, linie je kadrują i jadą z kratą przy scrollu.
 - 2026-11-19 — wzmocnienie kresek wokół sześcianów jako osobna grupa kontrolek-dodatków w siatce (nie zmiana
   globalnych „Linii”): na 0 wygląd bez zmian, a reszta kraty zostaje delikatna.
+- 2026-11-19 — zmniejszanie sześcianów od kursora liczone domyślnie od kwadratu każdego sześcianu (efekt „soczewki”
+  pod kursorem); wariant od całej siatki 3×3 dostępny przełącznikiem „Odległość od”.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
 
 ## Do zrobienia
 
+- [ ] Sprawdzić w podglądzie „Zmniejszanie od kursora” (0,15 / 600 px) i ewentualnie dostroić; potwierdzić, czy
+      odległość ma być od kwadratu każdego sześcianu, czy od całej siatki zdjęć.
 - [ ] Film w kwadracie siatki na `/`: uzupełnić „Opis filmu (alt)” (teraz roboczy) i sprawdzić odtwarzanie w podglądzie.
 - [ ] „Pasy zdjęć” na `/`: podmienić zdjęcia w pasach 3 i 4 (oraz ewentualnie 1–2), gdy użytkownik je podeśle.
 - [ ] Sprawdzić w podglądzie Framera rozwijanie pasów i przybliżanie kraty przy scrollu (z poziomu AI widać tylko
