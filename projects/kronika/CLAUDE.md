@@ -629,6 +629,21 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     + „Przyciski konta” (`9403:44320`, poziomo, odstęp 16) z dwoma instancjami, szerokość Fill.
     Odstępy wokół bez zmian: 60 px od logo, 40 px do nawigacji. Literówka „Wylloguj się”
     poprawiona na „Wyloguj się”. We Framerze nic nie zmieniano.
+  - **Zmiana użytkownika (później tego dnia):** blok „Konto” ma odstęp 40 px, imię i nazwisko
+    („Adrianna Wysoczyńska”) w ramce „Frame 427320016” (`9403:46775`) z ukrytą kreską; obok stoi
+    jego kopia makiety `9403:46776` (x −22).
+  - **3 warianty stylu imienia i nazwiska do wyboru** (prośba użytkownika: „szlachetnie,
+    minimalistycznie”; oryginał `9403:42446` bez zmian) — kopie makiety na prawo, y −1154,
+    z podpisem nad każdą (H3 Tablet):
+    **Wariant 1** `9420:3856` (x 900) — etykieta „ZALOGOWANO JAKO” (Uppercase S 13/450, #656766)
+    + imię i nazwisko H3 Tablet (20/450), odstęp 8; 24 px do przycisków.
+    **Wariant 2** `9420:5734` (x 1810) — monogram „AW” w kwadracie 52×52 (ramka 1 px #1A1A1A 80 %,
+    jak A+ / kontrast; Aspekta 500 17, ls 4 %) + obok etykieta „ZALOGOWANO JAKO” i imię H4 Tablet
+    (18/500), odstęp 16 / 6; 24 px do przycisków.
+    **Wariant 3** `9420:7615` (x 2720) — jak wariant 1, ale cały blok konta (etykieta, imię,
+    przyciski) to panel na tle **Background Gray** z paddingiem 24.
+    Tekst „Zalogowano jako” to propozycja copy (nie fakt o kliencie). Czeka na wybór
+    użytkownika — po wyborze przenieść do makiety głównej i usunąć pozostałe kopie.
 
 ## Do zrobienia
 
