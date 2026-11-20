@@ -5,6 +5,12 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Logo w pasku: „Ewa Dąbrowska” pismem odręcznym (Parisienne) — ✅
+- Na prośbę Piotra logotyp SVG zastąpiony tekstem w foncie **Parisienne** (preset Logo Script). Wybrany z 18
+  próbek (ramka na stronie „Robocze”) — czytelny w małym rozmiarze, poprawne „ą”, darmowa licencja (OFL).
+  Odpadły m.in. Mrs Saint Delafield, Herr Von Muellerhoff, Monsieur La Doulaise — brak „ą”.
+- Zmiana fontu = zmiana fontu w presecie Logo Script. Miejsce na własny znak artystki nadal aktualne.
+
 ### 2026-11-20 · Hero: zdjęcie na całą sekcję + przyciemnienie, tekst na dole po lewej — ✅
 - Zdjęcie „Stwór 6” (dodane przez Piotra) wypełnia całe hero na każdej szerokości (wcześniej miało stały
   rozmiar 1482×988 i na telefonie pokazywało same drzewa). Nad nim osobna warstwa **photo-dim** (Ink, 40%).
