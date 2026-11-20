@@ -31,11 +31,17 @@ Photo credit `NoEk5UhCp` · Photos source (Drive) `ICFIO1h2q`.
 `VzrrcKmZt` · Venue `N7AuqP9nD` · City `p75Rs9FWW` · Country `qQ9KgIhrq` · Type `VtyAOyIX1` (Solo,
 Group, International, Festival, Open-air) · Link `mM2hTlwr3`.
 
-## Nav Bar `ECLoOCCHr` (po zmianach 2026-11-15)
+## Nav Bar `ECLoOCCHr` (opis z 2026-11-15)
+
+> **Stan odczytany 2026-11-20 (ręczne zmiany na canvasie):** „Where to see” już nie ma — węzeł `kqmsI6XdP`
+> ma teraz tytuł **„Awards”**. Exhibitions, Film / Performance i Publications / Press są **ukryte**
+> (`visible: false`) we wszystkich 4 wariantach. Widoczne: Work, About, Awards (+ Contact, EN / PL).
+> To odbiega od ustalonego menu (6 pozycji, bez Awards) — czeka na decyzję Piotra.
+
 
 Warianty: Desktop White `PKP79zZJ_`, Mobile White `i2tgDvjkO`, Desktop Black `SdizDLgxu`, Mobile Black `Ii_PrCq2k`.
 - Nav-right `TtQqBfySi` (szerokość auto, gap 32px; mobile 20px) → nav-links `lDGdXylue`:
-  Work, `YLvlX7Zs1` · Where to see, `kqmsI6XdP` (**do usunięcia** — decyzja 2026-11-20) · Exhibitions, `OToj1MVWj` · Film / Performance,
+  Work, `YLvlX7Zs1` · ~~Where to see~~ → „Awards” `kqmsI6XdP` (2026-11-20) · Exhibitions, `OToj1MVWj` · Film / Performance,
   `i2IyH4QtE` · Publications / Press, `vOfp1_xvb` · About `UJdoV6Oz2` (instancje Nav Bar button, w
   wariantach Black — wariant „Black”); Contact `LtsS5yjgf`; **EN / PL** `gB3ixSUcy` (EN `ZMOZgDB6s`,
   „/” `QPrvRHUsm`, PL `IcWUDMV8x`); hamburger `OOgm1RAxl` (tylko mobile, nie działa).
