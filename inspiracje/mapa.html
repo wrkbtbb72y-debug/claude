@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atlas inspiracji</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Układ: atlas — najpierw indeks „plansz” (kategorii z kolażem miniatur), potem każda kategoria jako rozdział z murowaną siatką screenów. */
+:root {
+  --bg: #eceef1;
+  --surface: #ffffff;
+  --fg: #15171c;
+  --muted: #5f6573;
+  --line: #d3d7de;
+  --accent: #2b44dc;
+  --accent-ink: #ffffff;
+  --shade: rgba(21, 23, 28, .06);
+  --scrim: rgba(13, 15, 20, .72);
+  --f-display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+  --f-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111318; --surface: #1a1d23; --fg: #e9ebf0; --muted: #959cab; --line: #2c3039;
+    --accent: #93a1ff; --accent-ink: #0e1018; --shade: rgba(255,255,255,.05); --scrim: rgba(5,6,9,.82);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111318; --surface: #1a1d23; --fg: #e9ebf0; --muted: #959cab; --line: #2c3039;
+  --accent: #93a1ff; --accent-ink: #0e1018; --shade: rgba(255,255,255,.05); --scrim: rgba(5,6,9,.82);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font: 15px/1.55 var(--f-body);
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: 1320px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.mono { font-family: var(--f-mono); font-size: 12px; letter-spacing: .02em; }
+
+/* nagłówek */
+header.top { padding-block: 48px 28px; display: grid; gap: 10px; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+h1 {
+  font-family: var(--f-display); font-weight: 700; margin: 0;
+  font-size: clamp(40px, 7vw, 88px); line-height: .95; letter-spacing: -.035em; text-wrap: balance;
+}
+.stats { color: var(--muted); font-size: 15px; margin: 4px 0 0; }
+.stats b { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* indeks plansz */
+.index { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 14px; padding-block: 8px 40px; }
+.plate {
+  display: grid; grid-template-rows: auto 1fr; text-decoration: none;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden;
+  transition: border-color .15s, transform .15s;
+}
+.plate:hover { border-color: var(--accent); transform: translateY(-2px); }
+.collage { aspect-ratio: 4 / 3; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 2px; background: var(--line); }
+.collage img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; min-height: 0; background: var(--bg); }
+.collage.n1 img { grid-column: 1 / -1; grid-row: 1 / -1; }
+.collage.n2 img { grid-row: 1 / -1; }
+.collage.n3 img:first-child { grid-row: 1 / -1; }
+.collage.empty {
+  display: grid; grid-template: none; place-items: center; color: var(--muted);
+  background: repeating-linear-gradient(-45deg, var(--bg) 0 8px, var(--shade) 8px 9px);
+}
+.plate-body { padding: 12px 14px 14px; display: grid; gap: 4px; align-content: start; }
+.plate-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.plate-name { font-family: var(--f-display); font-weight: 600; font-size: 18px; line-height: 1.2; letter-spacing: -.01em; }
+.plate-count { font-family: var(--f-mono); font-size: 13px; color: var(--accent); font-variant-numeric: tabular-nums; }
+.plate.is-empty .plate-count { color: var(--muted); }
+.plate-desc { color: var(--muted); font-size: 13px; line-height: 1.45; }
+
+/* pasek filtrów */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.toolbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-block: 1px solid var(--line);
+}
+.toolbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding-block: 10px; }
+.search { flex: 1 1 220px; min-width: 0; max-width: 360px; position: relative; }
+.search input {
+  width: 100%; font: inherit; font-size: 14px; color: var(--fg);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px;
+}
+.search input::placeholder { color: var(--muted); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
+.chip {
+  font: 500 12px/1 var(--f-mono); letter-spacing: .02em; color: var(--fg);
+  background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 6px 10px; cursor: pointer;
+}
+.chip:hover { border-color: var(--fg); }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.result { margin-left: auto; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* rozdziały */
+section.cat { padding-block: 44px 8px; scroll-margin-top: 72px; }
+.cat-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; padding-bottom: 18px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+.cat-head h2 { font-family: var(--f-display); font-weight: 700; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.05; letter-spacing: -.025em; margin: 0; text-wrap: balance; }
+.cat-head .count { font-family: var(--f-mono); color: var(--accent); font-size: 14px; }
+.cat-head p { flex-basis: 100%; margin: 0; color: var(--muted); max-width: 65ch; }
+
+.masonry { columns: 3 300px; column-gap: 18px; }
+.card { break-inside: avoid; margin: 0 0 22px; display: grid; gap: 10px; }
+.shot {
+  display: block; width: 100%; padding: 0; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden;
+  background: var(--surface); cursor: zoom-in; max-height: 560px;
+}
+.shot img { display: block; width: 100%; height: auto; max-height: 560px; object-fit: cover; object-position: top; }
+.shot:hover { border-color: var(--fg); }
+.card h3 { margin: 0; font-size: 15px; font-weight: 600; line-height: 1.35; }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 12px; color: var(--muted); }
+.meta a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--line); }
+.meta a:hover { border-color: var(--accent); color: var(--accent); }
+.card .tags .chip { padding: 4px 8px; font-size: 11px; }
+.note { margin: 0; font-size: 14px; color: var(--muted); }
+
+.empty-all { padding-block: 24px 80px; max-width: 60ch; }
+.empty-all h2 { font-family: var(--f-display); font-size: 28px; letter-spacing: -.02em; margin: 0 0 8px; }
+.empty-all p { color: var(--muted); margin: 0 0 8px; }
+.nothing { padding-block: 40px; color: var(--muted); }
+footer { padding-block: 48px 64px; color: var(--muted); }
+
+/* podgląd */
+dialog {
+  width: min(1240px, 100vw - 32px); max-height: calc(100dvh - 32px); padding: 0; border: 1px solid var(--line);
+  border-radius: 10px; background: var(--surface); color: var(--fg); overflow: hidden;
+}
+dialog::backdrop { background: var(--scrim); }
+.lb { display: grid; grid-template-columns: minmax(0, 1fr) 320px; height: min(860px, calc(100dvh - 34px)); }
+.lb-img { overflow: auto; background: var(--bg); min-height: 0; }
+.lb-img img { display: block; width: 100%; height: auto; }
+.lb-info { padding: 20px; display: flex; flex-direction: column; gap: 14px; overflow: auto; border-left: 1px solid var(--line); min-width: 0; }
+.lb-info h2 { font-family: var(--f-display); font-size: 24px; line-height: 1.15; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+.lb-info dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 14px; }
+.lb-info dt { color: var(--muted); font-family: var(--f-mono); font-size: 12px; padding-top: 2px; }
+.lb-info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none;
+  font: 500 14px/1 var(--f-body); padding: 10px 14px; border-radius: 999px; cursor: pointer;
+  background: var(--accent); color: var(--accent-ink); border: 1px solid var(--accent);
+}
+.btn.ghost { background: transparent; color: var(--fg); border-color: var(--line); }
+.btn.ghost:hover { border-color: var(--fg); }
+.lb-nav { display: flex; gap: 8px; margin-top: auto; }
+.lb-nav .btn { flex: 1; }
+@media (max-width: 760px) {
+  .lb { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) auto; height: calc(100dvh - 34px); }
+  .lb-info { border-left: 0; border-top: 1px solid var(--line); max-height: 46dvh; }
+  header.top { padding-block: 32px 20px; }
+  .result { margin-left: 0; }
+  .index { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .plate-body { padding: 10px 10px 12px; }
+  .plate-name { font-size: 15px; }
+  .plate-desc { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+
+<header class="top wrap">
+  <div class="eyebrow">Biblioteka elementów ze stron</div>
+  <h1>Atlas inspiracji</h1>
+  <p class="stats" id="stats"></p>
+</header>
+
+<nav class="wrap index" id="index" aria-label="Kategorie"></nav>
+
+<div class="toolbar" id="toolbar">
+  <div class="wrap">
+    <div class="search">
+      <label for="q" class="eyebrow" hidden>Szukaj</label>
+      <input id="q" type="search" placeholder="Szukaj: strona, tag, opis…" autocomplete="off">
+    </div>
+    <div class="tags" id="tagbar" role="group" aria-label="Filtruj po tagu"></div>
+    <span class="result mono" id="result"></span>
+  </div>
+</div>
+
+<main class="wrap" id="main"></main>
+
+<footer class="wrap mono" id="foot"></footer>
+
+<dialog id="lb" aria-label="Podgląd elementu">
+  <div class="lb">
+    <div class="lb-img" id="lb-img"></div>
+    <div class="lb-info">
+      <div class="eyebrow" id="lb-cat"></div>
+      <h2 id="lb-title"></h2>
+      <p class="note" id="lb-note"></p>
+      <dl id="lb-dl"></dl>
+      <a class="btn" id="lb-open" href="#" target="_blank" rel="noopener">Otwórz stronę ↗</a>
+      <div class="lb-nav">
+        <button class="btn ghost" id="lb-prev" type="button">← Poprzedni</button>
+        <button class="btn ghost" id="lb-next" type="button">Następny →</button>
+      </div>
+      <button class="btn ghost" id="lb-close" type="button">Zamknij</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+const DATA = {"kategorie": [{"slug": "nawigacja", "nazwa": "Nawigacja i menu", "opis": "Paski nawigacji, menu mobilne, nagłówki, breadcrumbs."}, {"slug": "hero", "nazwa": "Hero i otwarcia", "opis": "Pierwsze ekrany, intro, wielkie nagłówki, ekrany ładowania."}, {"slug": "typografia", "nazwa": "Typografia", "opis": "Kroje i ich zestawienia, duże napisy, detale składu."}, {"slug": "uklad", "nazwa": "Układ i siatka", "opis": "Kompozycje stron, asymetria, siatki, rytm sekcji."}, {"slug": "galerie", "nazwa": "Galerie i portfolio", "opis": "Siatki prac, karuzele, listy projektów, strony pojedynczej pracy."}, {"slug": "obraz-i-wideo", "nazwa": "Zdjęcia i wideo", "opis": "Kadrowanie, maski, wideo w tle, łączenie obrazu z tekstem."}, {"slug": "kolor", "nazwa": "Kolor i tekstury", "opis": "Palety, tła, gradienty, ziarno, faktury."}, {"slug": "interakcje", "nazwa": "Animacje i interakcje", "opis": "Hover, efekty przy przewijaniu, kursor, przejścia między stronami."}, {"slug": "komponenty", "nazwa": "Komponenty UI", "opis": "Przyciski, karty, formularze, zakładki, akordeony, ikony."}, {"slug": "stopki", "nazwa": "Stopki i kontakt", "opis": "Stopki, sekcje kontaktowe, końcowe wezwania do działania."}, {"slug": "inne", "nazwa": "Inne", "opis": "Wszystko, co nie pasuje gdzie indziej — do przejrzenia przy porządkach."}], "wpisy": []} || { kategorie: [], wpisy: [] };
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const plural = (n, a, b, c) => {
+  const d = n % 10, h = n % 100;
+  return n === 1 ? a : (d >= 2 && d <= 4 && (h < 12 || h > 14)) ? b : c;
+};
+const fmtDate = iso => { const [y, m, d] = String(iso).split("-"); return d ? `${d}.${m}.${y}` : iso; };
+const host = url => { try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return ""; } };
+
+const cats = DATA.kategorie;
+const all = DATA.wpisy;
+const catName = Object.fromEntries(cats.map(c => [c.slug, c.nazwa]));
+const state = { q: "", tag: null };
+
+function renderHeader() {
+  const used = new Set(all.map(w => w.kategoria)).size;
+  const last = all.reduce((m, w) => (w.dodano > m ? w.dodano : m), "");
+  $("#stats").innerHTML = all.length
+    ? `<b>${all.length}</b> ${plural(all.length, "element", "elementy", "elementów")} w <b>${used}</b> ${plural(used, "kategorii", "kategoriach", "kategoriach")} · ostatnio dodane ${fmtDate(last)}`
+    : `Na razie pusto — ${cats.length} kategorii czeka na pierwsze screeny.`;
+  $("#foot").textContent = `Plik generowany z katalog.json · ${all.length} ${plural(all.length, "wpis", "wpisy", "wpisów")}`;
+}
+
+function renderIndex() {
+  $("#index").innerHTML = cats.map(c => {
+    const items = all.filter(w => w.kategoria === c.slug);
+    const pics = items.slice(0, 4);
+    const collage = pics.length
+      ? `<div class="collage n${pics.length}" aria-hidden="true">${pics.map(w => `<img src="${esc(w.src)}" alt="" loading="lazy">`).join("")}</div>`
+      : `<div class="collage empty mono" aria-hidden="true">pusto</div>`;
+    return `<a class="plate${items.length ? "" : " is-empty"}" href="#${esc(c.slug)}">
+      ${collage}
+      <div class="plate-body">
+        <div class="plate-head"><span class="plate-name">${esc(c.nazwa)}</span><span class="plate-count">${items.length}</span></div>
+        <span class="plate-desc">${esc(c.opis)}</span>
+      </div></a>`;
+  }).join("");
+}
+
+function renderTagbar() {
+  const counts = {};
+  all.forEach(w => (w.tagi || []).forEach(t => counts[t] = (counts[t] || 0) + 1));
+  const top = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "pl")).slice(0, 14);
+  $("#tagbar").innerHTML = top.map(([t, n]) =>
+    `<button type="button" class="chip" data-tag="${esc(t)}" aria-pressed="${state.tag === t}">${esc(t)} <span style="opacity:.6">${n}</span></button>`).join("");
+  $("#toolbar").hidden = all.length === 0;
+}
+
+function matches(w) {
+  if (state.tag && !(w.tagi || []).includes(state.tag)) return false;
+  if (!state.q) return true;
+  const hay = [w.tytul, w.strona, w.url, w.notatka, catName[w.kategoria], ...(w.tagi || []), ...(w.projekty || [])].join(" ").toLowerCase();
+  return state.q.toLowerCase().split(/\s+/).every(p => hay.includes(p));
+}
+
+let visible = [];
+function renderMain() {
+  const main = $("#main");
+  if (!all.length) {
+    main.innerHTML = `<div class="empty-all">
+      <h2>Tu pojawią się zebrane elementy</h2>
+      <p>Wyślij Claude’owi screen fragmentu strony razem z linkiem i jednym zdaniem, co Ci się w nim podoba.</p>
+      <p>Claude przypisze go do kategorii, opisze tagami i dołoży do tej mapy.</p></div>`;
+    $("#result").textContent = "";
+    return;
+  }
+  visible = all.filter(matches);
+  $("#result").textContent = (state.q || state.tag) ? `${visible.length} z ${all.length}` : "";
+  const html = cats.map(c => {
+    const items = visible.filter(w => w.kategoria === c.slug);
+    if (!items.length) return "";
+    return `<section class="cat" id="${esc(c.slug)}">
+      <div class="cat-head"><h2>${esc(c.nazwa)}</h2><span class="count">${items.length}</span><p>${esc(c.opis)}</p></div>
+      <div class="masonry">${items.map(card).join("")}</div></section>`;
+  }).join("");
+  main.innerHTML = html || `<p class="nothing">Nic nie pasuje do filtrów. Wyczyść wyszukiwanie albo odznacz tag.</p>`;
+}
+
+function card(w) {
+  const h = host(w.url);
+  return `<article class="card">
+    <button type="button" class="shot" data-id="${esc(w.id)}" aria-label="Powiększ: ${esc(w.tytul)}">
+      <img src="${esc(w.src)}" alt="${esc(w.tytul)} — ${esc(w.strona)}" loading="lazy"></button>
+    <h3>${esc(w.tytul)}</h3>
+    <div class="meta mono">${w.url ? `<a href="${esc(w.url)}" target="_blank" rel="noopener">${esc(w.strona || h)} ↗</a>` : `<span>${esc(w.strona)}</span>`}<span>${fmtDate(w.dodano)}</span></div>
+    ${w.tagi?.length ? `<div class="tags">${w.tagi.map(t => `<button type="button" class="chip" data-tag="${esc(t)}" aria-pressed="${state.tag === t}">${esc(t)}</button>`).join("")}</div>` : ""}
+  </article>`;
+}
+
+/* podgląd */
+const lb = $("#lb");
+let cur = -1;
+function openLb(id) {
+  const order = cats.flatMap(c => visible.filter(w => w.kategoria === c.slug));
+  cur = order.findIndex(w => w.id === id);
+  if (cur < 0) return;
+  showLb(order);
+  if (!lb.open) lb.showModal();
+}
+function showLb(order) {
+  const w = order[cur];
+  lb._order = order;
+  $("#lb-img").innerHTML = `<img src="${esc(w.src)}" alt="${esc(w.tytul)} — ${esc(w.strona)}">`;
+  $("#lb-img").scrollTop = 0;
+  $("#lb-cat").textContent = catName[w.kategoria] || w.kategoria;
+  $("#lb-title").textContent = w.tytul;
+  $("#lb-note").textContent = w.notatka || "";
+  $("#lb-note").hidden = !w.notatka;
+  const rows = [["strona", esc(w.strona)], ["dodano", fmtDate(w.dodano)]];
+  if (w.tagi?.length) rows.push(["tagi", w.tagi.map(esc).join(", ")]);
+  if (w.projekty?.length) rows.push(["projekt", w.projekty.map(esc).join(", ")]);
+  if (w.url) rows.push(["adres", `<span class="mono">${esc(w.url)}</span>`]);
+  $("#lb-dl").innerHTML = rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
+  const open = $("#lb-open");
+  open.hidden = !w.url;
+  if (w.url) open.href = w.url;
+  $("#lb-prev").disabled = cur <= 0;
+  $("#lb-next").disabled = cur >= order.length - 1;
+}
+function step(d) {
+  const order = lb._order || [];
+  const n = cur + d;
+  if (n < 0 || n >= order.length) return;
+  cur = n; showLb(order);
+}
+$("#lb-prev").onclick = () => step(-1);
+$("#lb-next").onclick = () => step(1);
+$("#lb-close").onclick = () => lb.close();
+lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
+lb.addEventListener("keydown", e => { if (e.key === "ArrowLeft") step(-1); if (e.key === "ArrowRight") step(1); });
+
+/* zdarzenia */
+document.addEventListener("click", e => {
+  const shot = e.target.closest(".shot");
+  if (shot) return openLb(shot.dataset.id);
+  const chip = e.target.closest(".chip[data-tag]");
+  if (chip) {
+    state.tag = state.tag === chip.dataset.tag ? null : chip.dataset.tag;
+    renderTagbar(); renderMain();
+  }
+});
+$("#q").addEventListener("input", e => { state.q = e.target.value.trim(); renderMain(); });
+
+renderHeader(); renderIndex(); renderTagbar(); renderMain();
+if (location.hash) { const t = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (t) t.scrollIntoView(); }
+</script>
+
+</html>

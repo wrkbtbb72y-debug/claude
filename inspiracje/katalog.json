@@ -1,0 +1,16 @@
+{
+  "kategorie": [
+    { "slug": "nawigacja", "nazwa": "Nawigacja i menu", "opis": "Paski nawigacji, menu mobilne, nagłówki, breadcrumbs." },
+    { "slug": "hero", "nazwa": "Hero i otwarcia", "opis": "Pierwsze ekrany, intro, wielkie nagłówki, ekrany ładowania." },
+    { "slug": "typografia", "nazwa": "Typografia", "opis": "Kroje i ich zestawienia, duże napisy, detale składu." },
+    { "slug": "uklad", "nazwa": "Układ i siatka", "opis": "Kompozycje stron, asymetria, siatki, rytm sekcji." },
+    { "slug": "galerie", "nazwa": "Galerie i portfolio", "opis": "Siatki prac, karuzele, listy projektów, strony pojedynczej pracy." },
+    { "slug": "obraz-i-wideo", "nazwa": "Zdjęcia i wideo", "opis": "Kadrowanie, maski, wideo w tle, łączenie obrazu z tekstem." },
+    { "slug": "kolor", "nazwa": "Kolor i tekstury", "opis": "Palety, tła, gradienty, ziarno, faktury." },
+    { "slug": "interakcje", "nazwa": "Animacje i interakcje", "opis": "Hover, efekty przy przewijaniu, kursor, przejścia między stronami." },
+    { "slug": "komponenty", "nazwa": "Komponenty UI", "opis": "Przyciski, karty, formularze, zakładki, akordeony, ikony." },
+    { "slug": "stopki", "nazwa": "Stopki i kontakt", "opis": "Stopki, sekcje kontaktowe, końcowe wezwania do działania." },
+    { "slug": "inne", "nazwa": "Inne", "opis": "Wszystko, co nie pasuje gdzie indziej — do przejrzenia przy porządkach." }
+  ],
+  "wpisy": []
+}
