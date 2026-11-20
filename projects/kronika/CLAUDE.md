@@ -736,6 +736,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   (odstęp do podpowiedzi daje ramka). Makiety „brak wyników” są ok. 100 px niższe, `9299:43811` o 12 px
   wyższa — nic nie nachodzi. Uwaga (bez zmian, było wcześniej): w `9299:43811` przełącznik „Obiekty (2) /
   Kolekcje (0)” łamie liczby do drugiej linii.
+  **„Pasek wyników” także w „brak wyników”** (prośba użytkownika, ten sam dzień; wzór `9439:25153`):
+  kopia paska danego breakpointu (licznik + Sortowanie „Trafność” + Przełącznik widoku; na Mobile układ
+  pionowy jak w wynikach) z licznikiem **„Znaleziono 0 obiektów”** (pogrubione „0”). Pasek i blok „Brak
+  wyników” w nowej ramce **„Pasek wyników + brak wyników”** (odstęp **80**) na początku ramki „Brak
+  wyników i podpowiedzi”: DL `9539:10889` (pasek `9539:10890`), DS `9539:10895` (`9539:10896`), Tablet
+  `9539:10901` (`9539:10902`), Mobile `9539:10907` (`9539:10908`). Makiety wyższe o 25 px (Mobile 81 px),
+  nic nie nachodzi. Odstęp 80 między paskiem a komunikatem — moja propozycja, do akceptacji.
 
 ## Do zrobienia
 
