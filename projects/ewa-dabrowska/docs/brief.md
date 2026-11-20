@@ -34,7 +34,8 @@
   (warsztaty, spotkania z lokalną społecznością).
 
 **Główne działania odwiedzającego (CTA):** „Zobacz realizacje” i „Kontakt” (równorzędnie) +
-dodatkowo „Gdzie zobaczyć moje prace” (mapa prac).
+dodatkowo „Gdzie zobaczyć moje prace” (mapa prac — od 2026-11-20 część Exhibitions; czy przycisk
+zostaje na Home — _do ustalenia_).
 
 ## Odbiorcy
 
@@ -60,8 +61,7 @@ Obecnie: tylko `/` (Home) + szkic `/home` (draft, do usunięcia — zob. backlog
 | Home | `/` | canvas | jest — do przebudowy wg ustaleń |
 | Work (lista) | `/work` | CMS „Works” | _do zrobienia_ |
 | Work (detail) | `/work/:slug` | CMS „Works” (+ blok „Gdzie zobaczyć”) | _do zrobienia_ |
-| Where to see (mapa prac) | `/where-to-see` | CMS „Works” (lokalizacje) | _do zrobienia, nowe_ |
-| Exhibitions | `/exhibitions` | CMS — jedna lista, od najnowszych | _do zrobienia_ |
+| Exhibitions | `/exhibitions` | CMS — jedna lista, od najnowszych + mapa prac i lista miejsc (dawne „Where to see”, CMS „Works” — lokalizacje) | _do zrobienia_ |
 | Film / Performance | `/film` | YouTube (embed) | _do zrobienia_ |
 | Publications / Press | `/press` | `content/awards-press.md` (lub CMS) | _do zrobienia_ |
 | About | `/about` | `content/bio.md` | _do zrobienia_ |
@@ -71,7 +71,8 @@ Obecnie: tylko `/` (Home) + szkic `/home` (draft, do usunięcia — zob. backlog
 **Home:** wybrane projekty (propozycja: „Słoneczny Stwór”, „Tancerz”, „Dziki” + ew. 1–2), krótko o artystce,
 logotypy instytucji, CTA. **Work:** od najnowszych, ręcznie (te trzy na początku).
 **Logo:** imię i nazwisko ładnym fontem; miejsce na własny znak artystki (szkic w przygotowaniu).
-**Nawigacja:** + przełącznik języków **EN / PL** (od razu w projekcie, aktywny na etapie PL).
+**Nawigacja (6 pozycji):** Work · Exhibitions · Film / Performance · Publications / Press · About · Contact
++ przełącznik języków **EN / PL** (od razu w projekcie, aktywny na etapie PL).
 **Kontakt:** `e.dabrowska@mail.com` to adres przykładowy — prawdziwy poda artystka.
 **Odrzucone:** newsletter, News / belka „Nowości”, sekcja „Featured”, Creative Process,
 podział wystaw na nadchodzące/archiwalne, telefon na stronie.

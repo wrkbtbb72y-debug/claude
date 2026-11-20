@@ -22,7 +22,7 @@
       Do weryfikacji i podpięcia (kotwice `#work`, `#about`, mailto:, profile social).
       KLIKA: linki bez tekstu (logo, ikony social, „Back to top”) muszą mieć **aria-label**.
       ⚠ Pozycje menu zmienią się wg nowej architektury (P1) — linki podpinać już do docelowych podstron.
-      ➡ 2026-11-15: menu ma już docelowe pozycje (Work, Where to see, Exhibitions, Film / Performance,
+      ➡ 2026-11-15: menu ma już docelowe pozycje (Work, Where to see — do usunięcia 2026-11-20, Exhibitions, Film / Performance,
       Publications / Press, About + Contact + EN / PL); logo prowadzi do `/`. **Linki pozycji menu
       czekają na utworzenie podstron** (wstrzymane na prośbę Piotra).
 - [ ] **E-mail kontaktowy:** `e.dabrowska@mail.com` to **adres przykładowy** (potwierdzone 2026-11-14) —
@@ -43,11 +43,13 @@
 
 - [x] **Przełącznik języków EN / PL w Nav Bar** — dodany wizualnie we wszystkich 4 wariantach (2026-11-15);
       **aktywować** (podpiąć pod lokalizację Framera) na etapie wersji PL.
-- [ ] **[KLIKA]** **Podstrony + szablon (Layout Template) z nawigacją i stopką** — Work, Where to see, Exhibitions,
+- [ ] **[KLIKA]** **Podstrony + szablon (Layout Template) z nawigacją i stopką** — Work, Exhibitions (z mapą prac),
       Film / Performance, Publications / Press, About, Contact. **Wstrzymane na prośbę Piotra (2026-11-15).**
       KLIKA wymaga min. 1 zalinkowanej podstrony i Layout Template z top-barem i stopką.
       Gdy ruszą: podpiąć linki w menu, Contact → `/contact`, „Read more” → `/about`.
-- [ ] **Podstrona Exhibitions** — dane gotowe w CMS „Exhibitions” (18 wystaw); zostaje zbudować stronę z listą.
+- [ ] **Usunąć „Where to see” z Nav Bar** we Framerze (`kqmsI6XdP`, wszystkie 4 warianty) — decyzja 2026-11-20.
+- [ ] **Podstrona Exhibitions** — dane gotowe w CMS „Exhibitions” (18 wystaw); zostaje zbudować stronę z listą
+      **+ mapa prac i lista miejsc** (dawne „Where to see”, 2026-11-20).
 - [ ] **Menu mobilne (hamburger)** na telefonie i tablecie to tylko grafika, nic nie otwiera — do zrobienia
       jako wariant Open komponentu Nav Bar (drawer).
 - [ ] **Opisy prac po angielsku** — pole *Description* w CMS „Works” jest puste; źródło: `content/sources/portfolio-2026-09.md`.
@@ -67,13 +69,13 @@
 - [ ] **Autorzy zdjęć** (A. Aubry, Kaja Tarłowska, …) — podpisywać na stronach prac; zebrać brakujące.
 - [x] Baza prac zbudowana z portfolio (31 pozycji), lista wystaw/nagród/filmów i biogram (2026-11-14).
 
-- [ ] **Nowa architektura wg ustaleń z 2026-11-14** (decisions.md): menu Work · Where to see ·
+- [ ] **Nowa architektura wg ustaleń z 2026-11-14** (decisions.md): menu Work ·
       Exhibitions · Film / Performance · Publications / Press · About · Contact; obecny Nav Bar
       (Works / Info / Awards / Contact) do zmiany.
-- [ ] **Mapa „Where to see”:** podstrona z mapą + lista miejsc — po decyzji artystki, co z pracami
+- [ ] **Mapa prac (na podstronie Exhibitions, dawne „Where to see”):** mapa + lista miejsc — po decyzji artystki, co z pracami
       efemerycznymi i prywatnymi (pola w `works.csv` już są).
 - [ ] **Home:** dodać sekcję logotypów instytucji + przyciski „Zobacz realizacje” / „Kontakt” /
-      „Gdzie zobaczyć moje prace”.
+      „Gdzie zobaczyć moje prace” (ten trzeci — do ustalenia, czy zostaje; prowadziłby do Exhibitions).
 - [ ] **Contact:** podstrona z widocznym e-mailem + formularzem (formularz ⇒ Privacy Policy).
 - [ ] **Czekamy na artystkę:** inspiracje, lokalizacje prac do mapy, prawdziwy e-mail,
       wybór logotypów instytucji (kandydaci w `content/awards-press.md`), szkic znaku (bez terminu).
