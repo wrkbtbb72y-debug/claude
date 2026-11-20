@@ -85,8 +85,9 @@ jKwXMbO36  Desktop Large Primary (fill #000, stack vertical)
    │    xFXsEh5DM „Stwór 6” — zdjęcie na całe hero (absolute, piny 0/0/0/0, z-index 1, alt-text)
    │    ycitzB0yn photo-dim — przyciemnienie: Ink, opacity 0,4, z-index 1 (nad zdjęciem, pod tekstem)
    │    z2KrpmppH wrapper (z-index 2, max 1200) → hasło **wyśrodkowane na ekranie** (2026-11-20):
-   │    fSAxILuDe (h1) „Land art, sculpture and sound — on humans, animals and the Earth”, preset
-   │    Hero Statement `QNTM_UWmf`, max 960 px · heading-02 Rqor1giCl („& Sculpture”) ukryty ·
+   │    XWLFp0Xq3 eyebrow „Ewa Dąbrowska · sculptor & land artist” (preset Hero Eyebrow `LXw2ZBp59`, roboczy)
+   │    fSAxILuDe (h1) „Land art, sculpture, and sound — a tender look at the Earth” (twarda spacja przed
+   │    półpauzą), preset Hero Statement `QNTM_UWmf`, max 960 px · heading-02 Rqor1giCl („& Sculpture”) ukryty ·
    │    stare „photo wrapper” H3TVvLc95 ukryte. Hero bez górnego paddingu (pasek nav jest nad nim).
    ├─ a4blNq1t9  Projects-pasek sticky (59px) — vd9XkMmi0 „Explore projects”
    ├─ vwdTZARvA  Projects        #work (Scroll runway RPSCNyuOK)

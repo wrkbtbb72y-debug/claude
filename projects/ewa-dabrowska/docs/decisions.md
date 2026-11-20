@@ -11,7 +11,12 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
   pochylenie −8° na węźle tekstu `kAw3N4j00`, kontur 0,3. Rozmiar 29 / 27 / 21 px. Próbki: ramka
   „Logo — próbki: pióro / pędzel”. Mocniejszy krok w stronę pędzla: Kaushan Script.
 
-### 2026-11-20 · Hero: nowe hasło, wyśrodkowane (wzór: talkingwalls.co.il/gallery) — 🟡 propozycja
+### 2026-11-20 · Hero: hasło wybrane przez Piotra — ✅
+- **„Land art, sculpture, and sound — a tender look at the Earth”** (z listy propozycji opartych na słowach
+  artystki; „tender” ← „czułość” z opisu pracy „Mama”). Nad nim mały napis — **roboczy**: „Ewa Dąbrowska ·
+  sculptor & land artist” (do podmiany, gdy będzie lepszy).
+
+### 2026-11-20 · Hero: nowe hasło, wyśrodkowane (wzór: talkingwalls.co.il/gallery) — zastąpione (wyżej)
 - „Land art, sculpture and sound — on humans, animals and the Earth” — rozwinięcie tematu z briefu
   („Land-Art & Sculpture on Humans, Animals and the Earth”) + „sound” (Piotr dopisał je w hero). Bez nowych faktów.
 - Wersaliki Instrument Serif 52 / 44 / 32 px, środek ekranu, 2–3 linie (jak na stronie-wzorze).
