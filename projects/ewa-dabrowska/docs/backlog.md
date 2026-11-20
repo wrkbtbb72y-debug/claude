@@ -55,15 +55,15 @@
       **+ mapa prac i lista miejsc** (dawne „Where to see”, 2026-11-20).
 - [x] **Menu (hamburger)** — działa na desktopie, tablecie i telefonie jako wariant Open komponentu Nav Bar
       (2026-11-20, framer-map.md). Do zrobienia: podpiąć `href` linków, gdy powstaną podstrony; URL-e
-      Instagram / Facebook (od artystki); sprawdzić w podglądzie zachowanie przy przewijaniu z otwartym menu.
+      Instagram / Facebook (od artystki); link przycisku Contact (`eVB1wQuPY`) — czeka na podstronę Contact; sprawdzić w podglądzie zachowanie przy przewijaniu z otwartym menu.
 - [ ] **Opisy prac po angielsku** — pole *Description* w CMS „Works” jest puste; źródło: `content/sources/portfolio-2026-09.md`.
 - [ ] **Okładki w CMS** — 8 z 31 prac ma okładkę (zdjęcia już będące na stronie); reszta po zmniejszeniu
       zdjęć z Dysku. Pole *Photos source (Drive)* wskazuje folder.
 - [ ] **[KLIKA] Sprawdzić we Framerze** (brak danych w dokumentacji): wrappery z Max Width w sekcjach,
       hover na wszystkich przyciskach, znaczniki HTML (header / nav / main / section / footer),
       nazwy wszystkich warstw, presety na wszystkich tekstach, test 1920 → 390 px.
-- [ ] **Sprawdzić przycisk Contact w wariancie Black** paska — na jasnym tle był niewidoczny już przed zmianami
-      (biały przycisk na białym).
+- [ ] **Przycisk Contact w wariantach Black** paska (Desktop/Tablet/Phone Black) jest niewidoczny — biały na białym.
+      Od 2026-11-20 Contact jest w pasku na stałe (prawa strona); potrzebny ciemny wariant przycisku `flntBxkgE`.
 - [ ] **Pytania do artystki po lekturze portfolio** (szczegóły w kolumnie `notes` w `content/works.csv`):
       „Słoneczny Stwór”, „Kłos”, „Wszechkarmicielka” — brak w portfolio (dane?); czy „Tancerz” =
       „Taniec deszczu”?; „Wszechkarmicielka” — część „Żywiciała”?; rok „Państwa Gąbczaków” i
