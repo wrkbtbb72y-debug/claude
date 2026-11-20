@@ -749,6 +749,17 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   i wymuszone ponowne „Hug” wysokości — grupy miały clip, a po zmianie odstępu 8 → 12 przez API
   wysokość u użytkownika się nie przeliczyła (API pokazywało 71 px).
 
+- 2026-11-20 — **Figma: cień na hover kafelka „Object tile”** (prośba użytkownika, wzór: zrzut obecnego
+  serwisu — karta z miękkim cieniem). Komponent `8669:3701` (strona „3. Zasoby/Obiekty - OLD”, x 23062 /
+  y 17681) zamieniony w **zestaw wariantów „Object tile” `9545:8118`** z właściwością **Stan**:
+  **Domyślny** `8669:3701` (bez zmian; to ten sam węzeł, więc wszystkie 122 kopie zostały podpięte
+  z nadpisaniami tekstów i zdjęć) i **Hover** `9545:8119` — styl efektu **„hover-shadow”** z pliku
+  (cień 0/0, rozmycie 12, rozszerzenie 7, czarny 10 %; ramka 1 px #E5E5E5 zostaje). Wariant Domyślny
+  ma interakcję **While hovering → Change to Hover** (Dissolve 150 ms), jak „Link z ikoną”. Opis
+  komponentu przeniesiony na zestaw i uzupełniony o stany. Właściwości tekstowe „Nazwa obiektu”
+  i „Autor” zostały (nowe sufiksy ID). Kursor „łapka” w prezentacji wymagałby interakcji kliknięcia
+  (docelowo: strona obiektu) — nie dodano, do decyzji.
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
