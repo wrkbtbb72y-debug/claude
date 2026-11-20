@@ -780,7 +780,16 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Tablet `9617:18438` (`9617:18439`), Mobile `9617:18444` (`9617:18445`); licznik „12 kolekcji” (na
   każdej 12 kafelków). Makiety wyższe o 64 px (Mobile 101 px), nic nie nachodzi. Te 3 breakpointy nadal
   nie mają przełącznika Obiekty / Kolekcje (jest tylko na DL). Prośba o dodanie go na DS / Tablet /
-  Mobile — **przerwana przez użytkownika**, nic nie zmieniono (do zrobienia, jeśli wróci).
+  Mobile — przerwana, potem wznowiona i **zrobiona** (wpis niżej).
+  **Przełącznik Obiekty / Kolekcje na DS / Tablet / Mobile** (prośba użytkownika, ten sam dzień; wzór:
+  DL `9536:33427`, który użytkownik przełączył na **Aktywny = Kolekcje**, i Cards tej strony): w „Section /
+  Kolekcje publiczne” nowa ramka **„Przełącznik + nagłówek”** (odstęp **100**, jak w Cards) — instancja
+  wariantu **Aktywny = Kolekcje** (`8967:7100`, 150×33, teksty „Obiekty” / „Kolekcje”) nad dotychczasową
+  ramką z nagłówkiem. DS `9629:18475` (przełącznik `9629:18476`), Tablet `9629:18482` (`9629:18483`),
+  Mobile `9629:18489` (`9629:18490`). Górny padding sekcji 120 / 100 / 80 → **24** (jak w Cards; na DL
+  16 + 8 przesunięcia przełącznika = 24). Makiety wyższe o 37 / 57 / 77 px, nic nie nachodzi. Ramka
+  informacyjna „Zarejestruj konto i twórz własne kolekcje” (na DL po prawej obok przełącznika) — **nie
+  dodana** na pozostałych breakpointach (nie było prośby).
 
 - 2026-11-20 — **Figma: „Przełącznik widoku” Kafelki / Lista wygaszony (stan Disabled, krycie 40 %)**
   (prośba użytkownika) — strona „3. Zasoby/Obiekty” (`6885:93257`), wszystkie **13 kopii w makietach**:
