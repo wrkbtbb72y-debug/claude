@@ -760,6 +760,17 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   i „Autor” zostały (nowe sufiksy ID). Kursor „łapka” w prezentacji wymagałby interakcji kliknięcia
   (docelowo: strona obiektu) — nie dodano, do decyzji.
 
+- 2026-11-20 — **Figma: „Pasek wyników” nad listą kolekcji** (prośba użytkownika) — strona „4. Zasoby/
+  Kolekcje” (`6335:42234`), makieta **Desktop Large `9199:29821`** (w ramce `9602:42101`, rząd „aktualne”:
+  DL / DS `9199:30131` / Tablet `9199:30429` / Mobile `9199:30727`). Kopia paska `9536:33793` z „Desktop
+  Large - Cards” tej strony (licznik + Sortowanie „Alfabetycznie (A–Z)” + Przełącznik widoku Kafelki /
+  Lista) wstawiona nad siatkę: nowa ramka **„Pasek wyników + lista kolekcji”** `9612:18417` (odstęp 16 jak
+  w Cards) w „Section / Kolekcje publiczne” `9199:30099`, w niej pasek `9612:18418` i dotychczasowa lista
+  `9199:30102`. Licznik: **„12 kolekcji”** (12 kafelków, paginacja „1 z 1”; bez pogrubienia jak w Cards).
+  Makieta wyższa o 64 px, nic nie nachodzi. Pozostałe 3 breakpointy — bez zmian (nie mają też jeszcze
+  przełącznika Obiekty / Kolekcje). Uwaga (bez zmian): przełącznik w DL `9536:33427` ma aktywne
+  „Obiekty”, choć to strona Kolekcji.
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
