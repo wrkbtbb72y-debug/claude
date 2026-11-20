@@ -461,6 +461,13 @@ od kwadratu, który otacza sześcian, tym sześcian trochę mniejszy.
   dalej). W tym trybie zastępuje „Zmniejszanie od kursora” (ukryte; gdy `kursorNajbl` brak — kod bierze `kursorZmn`).
   Na `/` przepisane z dotychczasowego `kursorZmn` = 0,34 (wygląd bez zmian); Różnica na `/` = 0,4 (ustawienie użytkownika).
 
+- 2026-11-20 — **reakcja także nad paskiem nawigacji**: kontrolka **„Także nad siatką”** (`zdjecia.kursorNad`, px, domyślnie 0,
+  widoczna, gdy zmniejszanie jest włączone): obszar „kursor nad komponentem” sięga tyle px ponad górną krawędź siatki.
+  Siatka nie dostaje zdarzeń nawigacji — pozycja kursora i tak jest czytana z `window`, więc wystarczyło poszerzyć
+  warunek. Na `/` (`OirTRcAEZ`) 80 px = przypięcie górne siatki = wysokość Navi (Phone: Navi 56 px, ale obszar do 80 px
+  i tak leży nad siatką); Tablet/Phone dziedziczą. Odległość liczona jak dotąd, więc kursor na pasku jest „daleko
+  nad siatką zdjęć” i sześciany maleją wg Zasięgu. Hover sześcianów (powiększenie) bez zmian — działa tylko nad nimi.
+
 ### Hover „do krawędzi kwadratu” (2026-11-19)
 
 Prośba: sześcian po najechaniu myszą rośnie tak, by krawędzie przedniej ściany dotknęły wszystkich czterech krawędzi
@@ -721,6 +728,7 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 ## Do zrobienia
 
 - [ ] Sprawdzić w podglądzie hover „Do krawędzi kwadratu” razem ze zmniejszaniem od kursora.
+- [ ] Sprawdzić w podglądzie zmniejszanie sześcianów przy kursorze nad paskiem nawigacji („Także nad siatką” 80 px).
 - [ ] Tło Hero (wariant G): obejrzeć w podglądzie mruganie gwiazd, ziarno i paralaksę przy scrollu; ewentualnie dostroić
       jasność gwiazd / siłę ziarna / krycie winiety.
 - [ ] Tablet `/`: przycisk „View all” nachodzi na dolny rząd zdjęć (widoczne na zrzucie 2026-11-20, niezwiązane z tłem).
