@@ -24,6 +24,10 @@ skillami. Ten plik zawiera tylko spis projektów i zasady wspólne dla wszystkic
 | `projects/wnetrze-3d/` | NUMINO / Wnętrze 3D („Kubatura”) — interaktywne wnętrze z linii | [projekt](https://framer.com/projects/Bashful-Career--TrZY6V7hpIyWsOmfEYfW-dBvqu) | w toku |
 | `projects/si2pem/` | SI2PEM — serwis o PEM (projekt tylko w Figmie) | [Figma](https://www.figma.com/design/kiuBZ1fA0OMqFDdPuhmnHy/SI2PEM) | w toku |
 
+**Biblioteka inspiracji** (`inspiracje/`) — wspólny zbiór screenów elementów ze stron
+(nawigacje, galerie, typografia…) z wizualną mapą. To nie projekt klienta: można z niej czerpać
+w każdej sesji. Screen/link „do inspiracji” → skill `inspiracje` i `inspiracje/CLAUDE.md`.
+
 **Nowy projekt:** skopiuj `projects/_template/` do `projects/<nazwa>/`, uzupełnij jego
 `CLAUDE.md` i dopisz wiersz do tabeli powyżej. Krótkiemu projektowi wystarczy sam `CLAUDE.md`
 (brief, link do Framera, notatki) — folder `docs/` dodaj dopiero, gdy będzie potrzebny.
