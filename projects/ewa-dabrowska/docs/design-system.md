@@ -35,6 +35,7 @@ Pasek „Explore projects”: wysokość 59px, padding poziomy 100px.
 | **Line** `Lgw6mIbcg` — `rgb(196,196,196)` | stopka, linie | token |
 | **Muted** `NidFX33fI` — `rgb(122,121,121)` | podpisy (preset Caption) | token |
 | `rgba(255,255,255,0.6)` | podtytuł hero | w presecie |
+| **Night** `y6um7al0w` — `#1B1B1B` | tło otwartego menu (Nav Bar Open) | token (2026-11-20) |
 
 Nowe elementy: używaj tokenów zamiast surowych wartości. Półprzezroczyste kolory (np. biel 60%) zostają w presetach.
 
@@ -55,6 +56,8 @@ Nowe elementy: używaj tokenów zamiast surowych wartości. Półprzezroczyste k
 | Caption | `q8a80OhDX` | ABC Diatype 400 | 14 | 140% | Podpisy pod zdjęciami prac |
 | links | `sAkSZeyYk` | ABC Diatype 300 | 14 | 145% | Linki („Read more”, social) |
 | footer small | `VPJZTLXqN` | ABC Diatype 300 | 14 / 13 | — | Stopka |
+| Nav Primary | `g8gsJNo38` | Instrument Serif 400 | 88 / 72 / 52 | 100% | Linki primary w menu (Work, Exhibitions, About, Contact) |
+| Nav Secondary | `N3PQzeLo4` | Instrument Serif 400 | 24 / 22 / 20 | 120% | Linki secondary w menu (Publications, Performance) |
 
 Link style: `Contact Email Link` (`JrZOvXHMr`).
 
@@ -66,7 +69,7 @@ ABC Arizona Mix Condensed **Unlicensed Trial**, Syne, Inter.
 
 | Komponent | ID | Warianty | Użycie |
 |---|---|---|---|
-| Nav Bar | `ECLoOCCHr` | Desktop White, Mobile White, Desktop Black, Mobile Black | Górna nawigacja (logo, Works/Info/Awards, Contact) |
+| Nav Bar | `ECLoOCCHr` | Desktop / Tablet / Phone × White, Black, Open | Górny pasek: logo + hamburger; po kliknięciu wariant Open = menu na cały ekran (zob. framer-map.md) |
 | Nav Bar button | `RQhfdR2vS` | Variant 1, Black (+ gesty) | Przycisk w nawigacji; zmienna `Title` |
 | Nav bar button outlined | `flntBxkgE` | Variant 1 (+ gesty) | Obrysowany przycisk („Contact”) |
 | Footer Bar | `CZImlwXQG` | Desktop/Phone × Hidden/Visible | Stały pasek na dole (pojawia się przy scrollu) |
@@ -89,3 +92,5 @@ Ikony: zestaw z ikonami `Copy`, `Arrow Down`, `Facebook`, `Instagram` (+ własne
 - Nawigacja i stopka powinny trafić do **Layout Template** zanim powstaną kolejne strony.
 - **Nav Bar musi mieć miejsce na przełącznik języków EN / PL** (desktop i menu mobilne) oraz na
   logotyp „Ewa Dąbrowska” + przyszły znak artystki. Docelowo 6 pozycji menu (zob. brief.md).
+- **Menu = wariant komponentu, nie overlay** (2026-11-20). Nowe pozycje menu dodawaj w `nav-menu` wariantu
+  primary (Desktop White) — trafią do wszystkich wariantów.

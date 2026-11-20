@@ -31,23 +31,29 @@ Photo credit `NoEk5UhCp` · Photos source (Drive) `ICFIO1h2q`.
 `VzrrcKmZt` · Venue `N7AuqP9nD` · City `p75Rs9FWW` · Country `qQ9KgIhrq` · Type `VtyAOyIX1` (Solo,
 Group, International, Festival, Open-air) · Link `mM2hTlwr3`.
 
-## Nav Bar `ECLoOCCHr` (opis z 2026-11-15)
+## Nav Bar `ECLoOCCHr` — menu pełnoekranowe (2026-11-20)
 
-> **Stan odczytany 2026-11-20 (ręczne zmiany na canvasie):** „Where to see” już nie ma — węzeł `kqmsI6XdP`
-> ma teraz tytuł **„Awards”**. Exhibitions, Film / Performance i Publications / Press są **ukryte**
-> (`visible: false`) we wszystkich 4 wariantach. Widoczne: Work, About, Awards (+ Contact, EN / PL).
-> To odbiega od ustalonego menu (6 pozycji, bez Awards) — czeka na decyzję Piotra.
-
-
-Warianty: Desktop White `PKP79zZJ_`, Mobile White `i2tgDvjkO`, Desktop Black `SdizDLgxu`, Mobile Black `Ii_PrCq2k`.
-- Nav-right `TtQqBfySi` (szerokość auto, gap 32px; mobile 20px) → nav-links `lDGdXylue`:
-  Work, `YLvlX7Zs1` · ~~Where to see~~ → „Awards” `kqmsI6XdP` (2026-11-20) · Exhibitions, `OToj1MVWj` · Film / Performance,
-  `i2IyH4QtE` · Publications / Press, `vOfp1_xvb` · About `UJdoV6Oz2` (instancje Nav Bar button, w
-  wariantach Black — wariant „Black”); Contact `LtsS5yjgf`; **EN / PL** `gB3ixSUcy` (EN `ZMOZgDB6s`,
-  „/” `QPrvRHUsm`, PL `IcWUDMV8x`); hamburger `OOgm1RAxl` (tylko mobile, nie działa).
-- Logo `iyXc2Haid` → link `/`. Pozostałe linki: brak (czekają na podstrony).
-- Na Home instancja `xLcWXJD7r` przełącza warianty przy scrollu (hero → White, #work → Black);
-  **tablet `YinCLfjHuxLcWXJD7r` używa wariantów Mobile** (jak telefon).
+Komponent (bez overlay, bez custom code). Root wariantu = `<nav>`, pionowy stack, padding `0 16px`, overflow clip.
+- **Warianty zamknięte:** Desktop White `PKP79zZJ_` (primary), Desktop Black `SdizDLgxu`, Tablet White
+  `lOwMG1XiX`, Tablet Black `mCSjiTuhs`, Phone White `i2tgDvjkO`, Phone Black `Ii_PrCq2k` (dawne „Mobile”).
+- **Warianty otwarte:** Desktop Open `ie2h56T5S`, Tablet Open `QU72InY3n`, Phone Open `gBUFzCXNV` —
+  tło token **Night** `y6um7al0w` (#1B1B1B), `minHeight: 100vh` (Framer nie przyjmuje `height: 100vh` na
+  wariancie komponentu), przejście tween 0,6 s.
+- Struktura: `UlU0nzIq3` nav-row (logo `iyXc2Haid` → `/` + hamburger `OOgm1RAxl`; linia dolna 0,5 px) →
+  `tHAjPmZye` nav-menu (ukryte w zamkniętych, widoczne w Open, wysokość 1fr):
+  - `TeGGXVBLU` nav-primary (preset **Nav Primary**): Work `E00Wq41qe`, Exhibitions `YRqINZHOg`, About
+    `KOSrIErZS`, Contact `dq03FGQzu`;
+  - `nHjqhtmzh` nav-secondary: `BYfEc3qet` (preset **Nav Secondary**: Publications `m6Fj5zoMG`,
+    Performance `fsC8JUW6x`) → EN / PL `iYrl_UOC4` → socials `BwpZKSPeb` (Instagram `qCZKnjMqF`, Facebook `zPctAhYiR`).
+  - Każdy link to ramka z hover (opacity 0,5). **Linki bez `href`** (decyzja 2026-11-20) — social też bez URL.
+  - Desktop/Tablet: dwie kolumny obok siebie (secondary 320 / 240 px); Phone: kolumny pod sobą
+    (primary u góry, secondary na dole — space-between).
+- **Hamburger:** `ariaRole: button`, `tabIndex 0`, aria-label „Open menu” / „Close menu”. Klik (`onTap` →
+  SET_VARIANT): White/Black → Open danego rozmiaru; Open → White. W Open linie (`ERKAKLz7L`, `kEFBSpbbT`)
+  mają translateY ±3,5 px → jedna pozioma kreska.
+- Na Home: wrapper `zbBVXvrUI` (`<header>`, absolute, left/right 0, z-index 10), instancja `xLcWXJD7r`
+  przełącza przy scrollu White/Black (desktop: Desktop, **tablet: Tablet White/Black**, telefon: Phone).
+- W komponencie leży też nienazwana ramka `GkUviYHV8` (stara wersja paska z linkami — kopia Piotra, nie ruszać).
 
 ## Home — breakpointy
 
