@@ -87,9 +87,12 @@ jKwXMbO36  Desktop Large Primary (fill #000, stack vertical)
    │    xFXsEh5DM „Stwór 6” — zdjęcie na całe hero (absolute, piny 0/0/0/0, z-index 1, alt-text)
    │    ycitzB0yn photo-dim — przyciemnienie: Ink, opacity 0,4, z-index 1 (nad zdjęciem, pod tekstem)
    │    z2KrpmppH wrapper (z-index 2, max 1200) → hasło **wyśrodkowane na ekranie** (2026-11-20):
-   │    XWLFp0Xq3 eyebrow „Ewa Dąbrowska · sculptor & land artist” (preset Hero Eyebrow `LXw2ZBp59`, roboczy)
-   │    fSAxILuDe (h1) „Land art, sculpture, and sound — a tender look at the Earth” (twarda spacja przed
-   │    półpauzą), preset Hero Statement `QNTM_UWmf`, max 960 px · heading-02 Rqor1giCl („& Sculpture”) ukryty ·
+   │    typo PRqOQDz7Q (teksty wg ręcznych zmian Piotra, stan 2026-11-20):
+   │    XWLFp0Xq3 eyebrow „a tender look beyond” (preset Hero Eyebrow `LXw2ZBp59`) · ZVLMQ7A1h bar-line ·
+   │    fSAxILuDe (h1) „Land art, sculpture, and sound”, preset Hero Statement `QNTM_UWmf`, max 960 px
+   │    **Sekwencja wejścia:** eyebrow 0,2 s (fade + 14 px w górę, 1 s) → linia 0,45 s (fade + skala 0,2→1, 1 s)
+   │    → hasło 0,7 s (Text Effect linia po linii: fade, 36 px w górę, blur 6 px, 1,1 s, co 0,15 s).
+   │    Pasek nav wjeżdża później (1,6 s). · heading-02 Rqor1giCl („& Sculpture”) ukryty ·
    │    stare „photo wrapper” H3TVvLc95 ukryte. Hero bez górnego paddingu (pasek nav jest nad nim).
    ├─ a4blNq1t9  Projects-pasek sticky (59px) — vd9XkMmi0 „Explore projects”
    ├─ vwdTZARvA  Projects        #work (Scroll runway RPSCNyuOK)
