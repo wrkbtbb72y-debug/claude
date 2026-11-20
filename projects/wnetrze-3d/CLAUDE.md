@@ -714,10 +714,16 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 - 2026-11-19 — zmniejszanie sześcianów od kursora liczone domyślnie od kwadratu każdego sześcianu (efekt „soczewki”
   pod kursorem); wariant od całej siatki 3×3 dostępny przełącznikiem „Odległość od”.
 - 2026-11-15 — nazwa robocza w nawigacji „Kubatura” (do potwierdzenia/zmiany przez użytkownika).
+- 2026-11-20 — tło Hero na `/`: wariant G z 7 propozycji (poświata + rzadkie gwiazdy + lekkie ziarno + winieta).
+  Poświata i winieta natywnie (gradienty, edytowalne w panelu), gwiazdy i ziarno w Siatce perspektywy — tylko tak
+  gwiazdy mogą mieć paralaksę przy „Zbliżeniu (scroll)” i leżeć pod liniami. Bez dryfu przestrzeni (uwaga z 17.11).
 
 ## Do zrobienia
 
 - [ ] Sprawdzić w podglądzie hover „Do krawędzi kwadratu” razem ze zmniejszaniem od kursora.
+- [ ] Tło Hero (wariant G): obejrzeć w podglądzie mruganie gwiazd, ziarno i paralaksę przy scrollu; ewentualnie dostroić
+      jasność gwiazd / siłę ziarna / krycie winiety.
+- [ ] Tablet `/`: przycisk „View all” nachodzi na dolny rząd zdjęć (widoczne na zrzucie 2026-11-20, niezwiązane z tłem).
 - [ ] Sprawdzić w podglądzie „Zmniejszanie od kursora” (0,15 / 600 px) i ewentualnie dostroić; potwierdzić, czy
       odległość ma być od kwadratu każdego sześcianu, czy od całej siatki zdjęć.
 - [ ] Film w kwadracie siatki na `/`: uzupełnić „Opis filmu (alt)” (teraz roboczy) i sprawdzić odtwarzanie w podglądzie.
@@ -780,3 +786,23 @@ wspólny szablon z paskiem, listy po bokach gasną razem z siatką, czas ok. 1,6
 - **Otwarte:** żeby pasek stał w miejscu podczas przejścia, Home też musi używać szablonu (usunąć lokalny Navi
   `KQifDlO5e`), a w panelu Framera trzeba wyłączyć pasek z efektu przejścia (opcja dostępna tylko w UI; nie udało się
   potwierdzić w dokumentacji — framer.com zablokowany w sieci sesji). Czeka na zgodę użytkownika.
+
+## Tło Hero na `/` — wariant G (2026-11-20)
+
+Prośba: delikatny, minimalistyczny efekt tła pod Siatką perspektywy, dodający głębi. Claude pokazał 7 wariantów na
+stronie porównawczej (artefakt „Tło Hero NUMINO”: poświata, gwiazdy, pył, ziarno, mgła, świt na horyzoncie,
+połączenie); użytkownik wybrał **G — połączenie**. Warstwy w „Hero” `N06uDCvcg` (od dołu):
+- **„Tło — poświata”** `iYBKmeeMR` — ramka absolutna na całą sekcję (przed Siatką), `pointerEvents: none`, gradient
+  radialny `64% 90% at 50% 55%`: `rgba(86,104,132,0.16)` → `rgba(60,72,92,0.072)` 45% → 0. Chłodna jasność za sześcianami.
+- **Siatka perspektywy** `OirTRcAEZ` — nowe grupy kontrolek (na końcu panelu, przed „Tło”), domyślnie wył.:
+  - **„Gwiazdy”** (`gwiazdy`): Włącz, Liczba (190 — na ekran ~1200 × 800, większe dostają proporcjonalnie więcej; pula
+    3 × liczba), Jasność (1,1), Wielkość (1; punkty 0,4–1,3 px), Tempo mrugania (1; każda gwiazda 3–9 s), Skupienie
+    (1 = gęściej przy środku), Z poświatą (0,035), Kolor (`#E2EAF4`), Paralaksa (scroll) (1: przy „Zbliżeniu (scroll)”
+    gwiazdy przybliżają się wokół punktu zbiegu o 6% na sześcian zbliżenia — dużo wolniej niż krata).
+  - **„Ziarno”** (`ziarno`): Włącz, Siła (0,035), Tempo (12 kl/s), Wielkość ziarna (1 px).
+  - Rysowane w `paintTlo` na początku `draw` (zaraz po wyliczeniu punktu zbiegu), więc linie, zdjęcia i świetliki leżą
+    na nich; „Wsysanie” wciąga je razem z kratą. W edytorze i przy ograniczonym ruchu — nieruchome.
+  - Na `/` włączone z wartościami jak wyżej (Tablet/Phone dziedziczą); `/home-2`, `/home-3` bez zmian.
+- **„Tło — winieta”** `QoQjkrz6V` — ramka absolutna zaraz **po** Siatce (nad liniami, pod kolumnami z tekstem),
+  gradient `64% 90% at 50% 55%`: przezroczysty do 44% → `rgba(0,0,0,0.27)` na brzegach. Przyciemnia rogi kraty.
+- Środek gradientów (50% / 55%) = środek siatki zdjęć na Desktopie; przy zmianie układu przesunąć oba.
