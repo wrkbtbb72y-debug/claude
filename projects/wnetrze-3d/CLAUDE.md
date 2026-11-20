@@ -814,3 +814,19 @@ połączenie); użytkownik wybrał **G — połączenie**. Warstwy w „Hero” 
 - **„Tło — winieta”** `QoQjkrz6V` — ramka absolutna zaraz **po** Siatce (nad liniami, pod kolumnami z tekstem),
   gradient `64% 90% at 50% 55%`: przezroczysty do 44% → `rgba(0,0,0,0.27)` na brzegach. Przyciemnia rogi kraty.
 - Środek gradientów (50% / 55%) = środek siatki zdjęć na Desktopie; przy zmianie układu przesunąć oba.
+
+## Strona `/home-4` — kopia Home z dolnym paskiem (2026-11-20)
+
+- Kopia strony `/` na prośbę użytkownika: `rziApPjHh` „Home — dolny pasek”, ścieżka `/home-4`, **wersja robocza**
+  (draft). Breakpointy: Desktop `aV1YbUb_x`, Tablet `bjqHDqeZA`, Phone `xxVYaW4J1`. `/` bez zmian.
+- W „Hero” `gmcIlSWT9` nowy **„Dolny pasek”** `ddlZ2wN8D`: absolutnie na dole sekcji (left/right/bottom 0), **80 px**
+  na wszystkich breakpointach, przezroczysty, obrys **górny** 1 px tokenem obrysu jak dolna kreska Navi (`G7JKeAILq`),
+  stack poziomy space-between, padding boczny 40 px (Phone 16 px) jak w Navi, zIndex 1. **Na razie pusty — TODO: treść.**
+- Żeby układ dalej się zgadzał (wszystko liczone od środka siatki, który przesunął się o 40 px w górę):
+  - Siatka `TpFr32ewi`: przypięcie dolne 0 → **80 px** (dolna linia kraty = górna kreska paska);
+  - Hero: padding dolny 0 → **80 px** (kolumny z listami zostają wyśrodkowane na siatce);
+  - zdjęcie z hovera „Archer Magazine” (ramka absolutna `Cn0RQ_Nkx`): padding górny 80 → **0**;
+  - „View all” `IE5BZ0Huu`: top 715 → **675 px**;
+  - „Tło — poświata” `kke_N3CR2` i „Tło — winieta” `IEc6Oe2_x`: środek gradientów 50% / 55% → **50% / 50%**.
+- Luźne warstwy z canvasu strony skopiowały się razem z nią; kopię „Tło — winieta” `rM1UIn9Mz` przesunięto na canvasie
+  (left −2600), bo linter zgłaszał nakładanie się warstw.
