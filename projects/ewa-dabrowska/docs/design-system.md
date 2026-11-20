@@ -59,8 +59,8 @@ Nowe elementy: używaj tokenów zamiast surowych wartości. Półprzezroczyste k
 | Nav Primary | `g8gsJNo38` | Instrument Serif 400 | 88 / 72 / 52 | 100% | Nieużywany od 2026-11-20 (zastąpiony przez Nav Primary 2) |
 | Nav Secondary | `N3PQzeLo4` | Instrument Serif 400 | 24 / 22 / 20 | 120% | Nieużywany od 2026-11-20 (wcześniej linki secondary) |
 | Hero Statement | `QNTM_UWmf` | Instrument Serif 400, wersaliki, odstęp 0,01em | 52 / 44 / 32 | 110% | Hasło w hero (h1), wyśrodkowane |
-| Logo Script | `lBfVEdHOq` | Rock Salt 400 (Google Fonts, Apache 2.0) + kontur 0,6 (Paper) dla grubszej kreski | 20,8 / 19,2 / 15,2 | 1.4em |
-| Logo Script Dark | `Tz0N5j_mX` | jak wyżej, kolor i kontur Ink | 20,8 / 19,2 / 15,2 | 1.4em | Logo „Ewa Dąbrowska” w pasku (Ink w wariantach Black) |
+| Logo Script | `lBfVEdHOq` | Mansalva 400 (Google Fonts, OFL) — suchy pędzel; kontur 0,3 (Paper); na węźle pochylenie −8° | 29 / 27 / 21 | 1.3em |
+| Logo Script Dark | `Tz0N5j_mX` | jak wyżej, kolor i kontur Ink (warianty Black) | 29 / 27 / 21 | 1.3em | Logo „Ewa Dąbrowska” w pasku (Ink w wariantach Black) |
 | Nav Primary 2 | `iESRe_5Uf` | Instrument Serif 400, wersaliki | 80 / 72 / 52 | 100% | Linki w otwartym menu (Work … Publications) — styl Piotra ze szkicu |
 
 Link style: `Contact Email Link` (`JrZOvXHMr`).
