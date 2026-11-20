@@ -5,6 +5,15 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Hero: zdjęcie na całą sekcję + przyciemnienie, tekst na dole po lewej — ✅
+- Zdjęcie „Stwór 6” (dodane przez Piotra) wypełnia całe hero na każdej szerokości (wcześniej miało stały
+  rozmiar 1482×988 i na telefonie pokazywało same drzewa). Nad nim osobna warstwa **photo-dim** (Ink, 40%).
+- Napis „Land Art / & Sculpture” przeniesiony na dół, do lewej, nad trawą pod rzeźbą (druga linia z wcięciem),
+  żeby nie zasłaniał twarzy rzeźby.
+- Ograniczenie: Framer nie przyjął punktu ostrości zdjęcia (image position) — kadr jest wyśrodkowany.
+- Uwaga: tło breakpointów Home jest teraz puste (ręczna zmiana) — Framer zgłasza błąd „breakpoint musi mieć
+  nieprzezroczyste tło”; do decyzji Piotra.
+
 ### 2026-11-20 · Otwarte menu wg szkicu Piotra (`JfmuN1_YU`, strona „Robocze”) — ✅
 - Jedna wyśrodkowana kolumna wersalikami: Work · Exhibitions · About · Contact · Publications, pod każdą
   pozycją ręcznie rysowana linia na całą szerokość. **Performance pominięte.**

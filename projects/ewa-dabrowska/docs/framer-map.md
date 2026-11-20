@@ -76,8 +76,12 @@ jKwXMbO36  Desktop Large Primary (fill #000, stack vertical)
 ├─ zbBVXvrUI  nav-bar-scroll → xLcWXJD7r nav-bar-scroll-inner (Nav Bar)
 ├─ O63VKWwFo  footer-bar-fixed (Footer Bar)
 └─ GI46d7Pmp  Main
-   ├─ MbHe0i_sG  Hero            #hero      100vh, padding 60/40/0/40
-   │    teksty: fSAxILuDe „Land-Art” · gxakAEnqL „& Sculpture” · RZ0QS_xoY podtytuł
+   ├─ MbHe0i_sG  Hero            #hero      100vh, padding 60/40/0/40, tło token Night
+   │    xFXsEh5DM „Stwór 6” — zdjęcie na całe hero (absolute, piny 0/0/0/0, z-index 1, alt-text)
+   │    ycitzB0yn photo-dim — przyciemnienie: Ink, opacity 0,4, z-index 1 (nad zdjęciem, pod tekstem)
+   │    z2KrpmppH wrapper (z-index 2, max 1200) → tekst na dole po lewej, pod rzeźbą (2026-11-20):
+   │    fSAxILuDe „Land Art” · gxakAEnqL „& Sculpture” (preset Heading 1 Narrow 2 `TGpy8ZHV1`, wersaliki;
+   │    wcięcie 2. linii 96 / 72 / 40 px) · stare „photo wrapper” H3TVvLc95 ukryte
    ├─ a4blNq1t9  Projects-pasek sticky (59px) — vd9XkMmi0 „Explore projects”
    ├─ vwdTZARvA  Projects        #work (Scroll runway RPSCNyuOK)
    │    EBDMHlsbW intro „A multidisciplinary art…” · pky5JYXw5 Intro Subtext
