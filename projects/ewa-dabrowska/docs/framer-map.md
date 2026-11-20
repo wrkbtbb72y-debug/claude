@@ -12,6 +12,8 @@
 Design page (brudnopis): **Robocze** `juyxNVARq` — wersje robocze stopki, About,
 „work-grid — B Index”, sticky-icon, read-more.
 
+Na „Robocze” jest też ramka **Logo — próbki pisma odręcznego** `G1f2KF0Xw` (18 fontów, 2026-11-20).
+
 Design page: **Fonty — propozycje zamienników** `IC_Z5ffzI` — próbki darmowych fontów (2026-11-15).
 
 Layout Templates: **brak** (wstrzymane). Skill Framera: **`ewa-brand`** `QIgqMpnwt` (on-demand).
@@ -40,7 +42,8 @@ Komponent (bez overlay, bez custom code). Root wariantu = `<nav>`, pionowy stack
   tło token **Night** `y6um7al0w` (#1B1B1B), `minHeight: 100vh` (Framer nie przyjmuje `height: 100vh` na
   wariancie komponentu), przejście tween 0,6 s.
 - Struktura: `UlU0nzIq3` nav-row (linia dolna 0,5 px; od 2026-11-20 trzy części: `DleEx3DjC` nav-row-left 1fr
-  z hamburgerem `OOgm1RAxl` · logo `iyXc2Haid` → `/` **na środku** · `VW7CEorPF` nav-row-right 1fr z przyciskiem
+  z hamburgerem `OOgm1RAxl` · logo `iyXc2Haid` → `/` **na środku** (od 2026-11-20 tekst `kAw3N4j00` „Ewa Dąbrowska” presetem Logo Script;
+  dawny logotyp SVG był maską ramki: `uSAvd2qsAvbTUDNT5VcSshybTF4.svg`) · `VW7CEorPF` nav-row-right 1fr z przyciskiem
   Contact `eVB1wQuPY` = instancja „Nav bar button outlined” `flntBxkgE`, bez linku) →
   `tHAjPmZye` nav-menu (ukryte w zamkniętych, widoczne w Open; od 2026-11-20 wg szkicu `JfmuN1_YU` na stronie „Robocze”):
   - `TeGGXVBLU` nav-list — wyśrodkowana kolumna (gap 48 / 40 / 28 px): Work `E00Wq41qe`, Exhibitions `YRqINZHOg`,
