@@ -717,6 +717,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „Zmiana hasła - 1441”** (ta sama makieta, bez animacji, z zachowaniem przewinięcia — kliknięcie
   praktycznie nic nie robi). Docelowa akcja kliknięcia (profil członka?) — do ustalenia; użyty na
   innej makiecie komponent przeniesie do tej. W kodzie: `cursor: pointer` + podkreślenie na `:hover`.
+  **Ciemniejszy kolor w hoverze** (prośba użytkownika, ten sam dzień): w wariancie Hover tekst
+  i strzałka #2350BF → **#142C69** (Blue hover z „Paleta Kronika”). Uwaga: kolor domyślny tych
+  linków (#2350BF) nie jest systemowym kolorem linku #193680 — do decyzji, czy ujednolicić.
 
 ## Do zrobienia
 
