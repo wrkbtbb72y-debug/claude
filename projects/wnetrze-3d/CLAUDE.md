@@ -456,6 +456,11 @@ od kwadratu, który otacza sześcian, tym sześcian trochę mniejszy.
   sześcianu: najbliższy 1, najdalszy 1 − **Różnica** (`kursorRoznica`, domyślnie 0,7; liniowo pomiędzy). Na `/`:
   najblizszy, Różnica 0,7, Zmniejszanie 0,3 (ustawione przez użytkownika), Zasięg 600 px.
 
+- 2026-11-20 (później) — kontrolka **„Najbliższy maleje o”** (`kursorNajbl`, 0–0,9, widoczna tylko w trybie „Siatki —
+  najbliższy najmniejszy”): o ile maleje sześcian najbliżej kursora (pełna wartość, gdy kursor jest „Zasięg” od siatki lub
+  dalej). W tym trybie zastępuje „Zmniejszanie od kursora” (ukryte; gdy `kursorNajbl` brak — kod bierze `kursorZmn`).
+  Na `/` przepisane z dotychczasowego `kursorZmn` = 0,34 (wygląd bez zmian); Różnica na `/` = 0,4 (ustawienie użytkownika).
+
 ### Hover „do krawędzi kwadratu” (2026-11-19)
 
 Prośba: sześcian po najechaniu myszą rośnie tak, by krawędzie przedniej ściany dotknęły wszystkich czterech krawędzi
