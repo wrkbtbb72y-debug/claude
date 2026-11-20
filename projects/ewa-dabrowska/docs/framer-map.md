@@ -84,9 +84,10 @@ jKwXMbO36  Desktop Large Primary (fill #000, stack vertical)
    ├─ MbHe0i_sG  Hero            #hero      100vh, padding 60/40/0/40, tło token Night
    │    xFXsEh5DM „Stwór 6” — zdjęcie na całe hero (absolute, piny 0/0/0/0, z-index 1, alt-text)
    │    ycitzB0yn photo-dim — przyciemnienie: Ink, opacity 0,4, z-index 1 (nad zdjęciem, pod tekstem)
-   │    z2KrpmppH wrapper (z-index 2, max 1200) → tekst na dole po lewej, pod rzeźbą (2026-11-20):
-   │    fSAxILuDe „Land Art” · gxakAEnqL „& Sculpture” (preset Heading 1 Narrow 2 `TGpy8ZHV1`, wersaliki;
-   │    wcięcie 2. linii 96 / 72 / 40 px) · stare „photo wrapper” H3TVvLc95 ukryte
+   │    z2KrpmppH wrapper (z-index 2, max 1200) → hasło **wyśrodkowane na ekranie** (2026-11-20):
+   │    fSAxILuDe (h1) „Land art, sculpture and sound — on humans, animals and the Earth”, preset
+   │    Hero Statement `QNTM_UWmf`, max 960 px · heading-02 Rqor1giCl („& Sculpture”) ukryty ·
+   │    stare „photo wrapper” H3TVvLc95 ukryte. Hero bez górnego paddingu (pasek nav jest nad nim).
    ├─ a4blNq1t9  Projects-pasek sticky (59px) — vd9XkMmi0 „Explore projects”
    ├─ vwdTZARvA  Projects        #work (Scroll runway RPSCNyuOK)
    │    EBDMHlsbW intro „A multidisciplinary art…” · pky5JYXw5 Intro Subtext

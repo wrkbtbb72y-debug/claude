@@ -5,6 +5,13 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Hero: nowe hasło, wyśrodkowane (wzór: talkingwalls.co.il/gallery) — 🟡 propozycja
+- „Land art, sculpture and sound — on humans, animals and the Earth” — rozwinięcie tematu z briefu
+  („Land-Art & Sculpture on Humans, Animals and the Earth”) + „sound” (Piotr dopisał je w hero). Bez nowych faktów.
+- Wersaliki Instrument Serif 52 / 44 / 32 px, środek ekranu, 2–3 linie (jak na stronie-wzorze).
+- Do akceptacji Piotra / artystki. Alternatywy: „Sculpture and land art shaped by nature — on humans, animals
+  and the Earth”, „Land art, sculpture and sound — works on humans, animals and the Earth”.
+
 ### 2026-11-20 · Logo: **Rock Salt** — surowe, szkicowe pismo — ✅
 - Mr Dafoe „trochę za grzeczne” (Piotr). Wybrany **Rock Salt** z 40 próbek ekspresyjnych (ramka „Logo — próbki:
   ekspresyjne”) — wygląda jak pisane patykiem / węglem, pasuje do land artu. Rozmiar 26 / 24 / 19 px (font jest
