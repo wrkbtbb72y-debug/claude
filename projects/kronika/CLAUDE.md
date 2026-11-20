@@ -702,6 +702,17 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   y −56855); druga makieta „Desktop Large – wyniki wyszukiwania” `9299:43811` (x 16382, y −53287,
   pod etykietą „aktualne”) i makiety „brak wyników” — bez zmian.
 
+- 2026-11-20 — **Figma: hover linków „Członek jednostki”** (prośba użytkownika) — strona
+  „tabele - robocze”, makieta „Zmiana hasła - 1441” `9258:25170`, tabela „Tabela / Zaproszenia”
+  `9258:25269`. Pięć linków z imieniem i strzałką (dotąd luźne ramki „See_more_button”) zamienione
+  na kopie nowego zestawu wariantów **„Link z ikoną”** `9520:2026` (leży pod makietą, x 1640, y 120):
+  właściwości **Stan** = Domyślny `9520:2021` / Hover `9520:2022` (**podkreślenie tekstu**, kolor bez
+  zmian — jak „Czytaj więcej” / „Zobacz wszystkie” na BUTTONS) + tekst **Tekst**. Wariant Domyślny ma
+  interakcję prototypu **While hovering → Change to Hover** (Dissolve 150 ms), więc w trybie
+  prezentacji linki podkreślają się po najechaniu. Nowe ID kopii w tabeli: `9520:2030`, `9520:2035`,
+  `9520:2040`, `9520:2045`, `9520:2050` (warstwa „Link” w ramkach „akcje”). Wygląd tabeli bez zmian.
+  Zestaw nie został przeniesiony na stronę BUTTONS — do decyzji.
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
