@@ -71,6 +71,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 - Presety tekstu są responsywne (sloty `medium` ≥1024, `small` ≥768): np. „Nazwy sekcji”
   `onFkvs54B` 28→26 px, „Body 1 - tekst długi L” `qho9AhWr_` 20→18 px na tablecie.
 
+## Stałe zasady projektowe (Figma)
+
+- **Stan Disabled / nieaktywny przycisku = krycie 40 %** całego elementu (bez zmiany kolorów).
+  Dotyczy wszystkich przycisków, także przełączników (np. „Przełącznik widoku” Kafelki / Lista).
+  Potwierdzone przez użytkownika 2026-11-17 i 2026-11-20.
+
 ## Ustalenia i decyzje
 
 - 2026-11-15 — Sekcja „O Portalu‑section 4” na Tablecie ma wyglądać jak na Desktop Primary:
@@ -773,7 +779,16 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   widoku). Nowe ramki „Pasek wyników + lista kolekcji” (odstęp 16): DS `9617:18432` (pasek `9617:18433`),
   Tablet `9617:18438` (`9617:18439`), Mobile `9617:18444` (`9617:18445`); licznik „12 kolekcji” (na
   każdej 12 kafelków). Makiety wyższe o 64 px (Mobile 101 px), nic nie nachodzi. Te 3 breakpointy nadal
-  nie mają przełącznika Obiekty / Kolekcje (jest tylko na DL). Uwaga (bez zmian): przełącznik w DL `9536:33427` ma aktywne
+  nie mają przełącznika Obiekty / Kolekcje (jest tylko na DL). Prośba o dodanie go na DS / Tablet /
+  Mobile — **przerwana przez użytkownika**, nic nie zmieniono (do zrobienia, jeśli wróci).
+
+- 2026-11-20 — **Figma: „Przełącznik widoku” Kafelki / Lista wygaszony (stan Disabled, krycie 40 %)**
+  (prośba użytkownika) — strona „3. Zasoby/Obiekty” (`6885:93257`), wszystkie **13 kopii w makietach**:
+  Cards DL `9439:24731` / DS `9044:8807` / Tablet `9044:10977` / Mobile `9044:13121`; wyniki DL
+  `9439:25157`, DL (2 obiekty) `9299:44192`, DS `9173:12514`, Tablet `9173:16224`, Mobile `9173:17256`;
+  brak wyników DL `9539:10894`, DS `9539:10900`, Tablet `9539:10906`, Mobile `9539:10912`. Krycie
+  ustawione na instancjach (komponent bez zmian). Nie ruszano 2 wzorców w ramce dokumentacji „Lista
+  obiektów - komponenty” (`8988:8238`, `8988:8247`) ani przełączników na stronie „4. Zasoby/Kolekcje”. Uwaga (bez zmian): przełącznik w DL `9536:33427` ma aktywne
   „Obiekty”, choć to strona Kolekcji.
 
 ## Do zrobienia
