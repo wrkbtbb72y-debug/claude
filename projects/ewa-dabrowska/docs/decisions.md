@@ -9,6 +9,9 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 - Mr Dafoe „trochę za grzeczne” (Piotr). Wybrany **Rock Salt** z 40 próbek ekspresyjnych (ramka „Logo — próbki:
   ekspresyjne”) — wygląda jak pisane patykiem / węglem, pasuje do land artu. Rozmiar 26 / 24 / 19 px (font jest
   szeroki; na telefonie musi zmieścić się między hamburgerem a Contact).
+- Poprawka tego samego dnia: napis **−20%** (20,8 / 19,2 / 15,2 px) i **grubsza kreska** przez kontur 0,6 w kolorze
+  tekstu (Rock Salt ma tylko jedną grubość). Kontur da się ustawić tylko w presecie, więc warianty Black
+  (jasne tło) używają osobnego presetu **Logo Script Dark**.
 - Grubsze alternatywy na wypadek dalszych poprawek: Knewave, Sedgwick Ave Display, Permanent Marker, Mrs Sheppards.
 
 ### 2026-11-20 · Logo: zmiana na grubszy, „artystyczny” font — **Mr Dafoe** — zastąpione (wyżej)
