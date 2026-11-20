@@ -5,6 +5,11 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Układ paska: hamburger po lewej, logo na środku, Contact po prawej — ✅
+- Na prośbę Piotra, we wszystkich 9 wariantach Nav Bar (też w otwartym menu). Contact = istniejący
+  komponent „Nav bar button outlined”. Logo jest wyśrodkowane dzięki dwóm bocznym kolumnom o równej szerokości.
+- Pasek urósł o ok. 10 px (przycisk Contact ma 34,5 px wysokości).
+
 ### 2026-11-20 · Menu nawigacji: hamburger → pełny ekran w komponencie Nav Bar — ✅
 - Pasek = tylko logo + hamburger na wszystkich szerokościach. Klik otwiera wariant **Open** tego samego
   komponentu (tło Night #1B1B1B, min. 100vh) — **bez overlay i custom code** (wymóg Piotra).

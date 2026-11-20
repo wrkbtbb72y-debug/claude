@@ -39,7 +39,9 @@ Komponent (bez overlay, bez custom code). Root wariantu = `<nav>`, pionowy stack
 - **Warianty otwarte:** Desktop Open `ie2h56T5S`, Tablet Open `QU72InY3n`, Phone Open `gBUFzCXNV` —
   tło token **Night** `y6um7al0w` (#1B1B1B), `minHeight: 100vh` (Framer nie przyjmuje `height: 100vh` na
   wariancie komponentu), przejście tween 0,6 s.
-- Struktura: `UlU0nzIq3` nav-row (logo `iyXc2Haid` → `/` + hamburger `OOgm1RAxl`; linia dolna 0,5 px) →
+- Struktura: `UlU0nzIq3` nav-row (linia dolna 0,5 px; od 2026-11-20 trzy części: `DleEx3DjC` nav-row-left 1fr
+  z hamburgerem `OOgm1RAxl` · logo `iyXc2Haid` → `/` **na środku** · `VW7CEorPF` nav-row-right 1fr z przyciskiem
+  Contact `eVB1wQuPY` = instancja „Nav bar button outlined” `flntBxkgE`, bez linku) →
   `tHAjPmZye` nav-menu (ukryte w zamkniętych, widoczne w Open, wysokość 1fr):
   - `TeGGXVBLU` nav-primary (preset **Nav Primary**): Work `E00Wq41qe`, Exhibitions `YRqINZHOg`, About
     `KOSrIErZS`, Contact `dq03FGQzu`;
