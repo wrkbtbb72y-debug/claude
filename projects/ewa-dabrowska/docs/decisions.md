@@ -5,7 +5,12 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
-### 2026-11-20 · Logo w pasku: „Ewa Dąbrowska” pismem odręcznym (Parisienne) — ✅
+### 2026-11-20 · Logo: zmiana na grubszy, „artystyczny” font — **Mr Dafoe** — ✅
+- Piotr chciał bardziej kreatywnego stylu i grubszej kreski niż Parisienne. Wybrany **Mr Dafoe** (pędzelkowy
+  podpis) z 31 próbek (ramka „Logo — próbki: grubsza kreska”). Rozmiar 36 / 32 / 28 px. Zmiana tylko w presecie
+  Logo Script. Inne mocne kandydatury: Kaushan Script, Yesteryear, Mrs Sheppards, Damion.
+
+### 2026-11-20 · Logo w pasku: „Ewa Dąbrowska” pismem odręcznym (Parisienne) — zastąpione (wyżej)
 - Na prośbę Piotra logotyp SVG zastąpiony tekstem w foncie **Parisienne** (preset Logo Script). Wybrany z 18
   próbek (ramka na stronie „Robocze”) — czytelny w małym rozmiarze, poprawne „ą”, darmowa licencja (OFL).
   Odpadły m.in. Mrs Saint Delafield, Herr Von Muellerhoff, Monsieur La Doulaise — brak „ą”.
