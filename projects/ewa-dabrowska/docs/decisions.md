@@ -14,8 +14,8 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
   (padding wiersza zmniejszony, by pasek miał tę samą wysokość). Usunięty nieużywany ukryty tekst logo.
 
 ### 2026-11-20 · Hero: kolejność wejścia elementów w „typo” — ✅
-- Z góry na dół: mały napis (0,2 s) → linia (0,45 s) → hasło (0,7 s, linia po linii, z lekkim rozmyciem),
-  wszystko przed paskiem nawigacji (1,6 s). Wcześniej napis i hasło startowały niemal równo (0,3 / 0,4 s).
+- Poprawka Piotra: najpierw hasło (0,3 s, linia po linii, z lekkim rozmyciem), a mały napis i linia pojawiają
+  się **razem z paskiem nawigacji (1,6 s)**. (Pierwsza wersja szła z góry na dół: napis → linia → hasło.)
 - Hasło używa Text Effect (podział na linie) zamiast przesuwania całego bloku o 200 px.
 
 ### 2026-11-20 · Logo bardziej autorskie i nieregularne — ✅
