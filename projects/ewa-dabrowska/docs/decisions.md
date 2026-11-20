@@ -5,6 +5,16 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Logo identyczne we wszystkich wariantach paska — ✅
+- Problem: litery logo „rozlatywały się” przy wejściu paska (zmiana wariantu). Wzorzec = logo Piotra w wariancie
+  Desktop White (`iyXc2Haid`: ramka 203×38 px, litery ułożone swobodnie, pochylenie −8°) — **nie zmieniać**.
+  Pozostałe warianty miały stare nadpisania rozmiaru (auto), więc Framer animował różnicę.
+- Rozwiązanie: nadpisania logo w wariantach zresetowane (zostały tylko: opacity 0 + brak klikania w Open,
+  ciemny preset liter w Black). Litery mają zawsze 29 px (presety Logo Script / Dark bez zmian rozmiaru na
+  tablecie i telefonie), a na telefonie całe logo jest pomniejszone skalą 0,8 — litery się nie rozsuwają.
+- Zasada: logo zmieniamy tylko w wariancie Desktop White; w innych wariantach nie nadpisywać jego rozmiaru
+  ani pozycji liter.
+
 ### 2026-11-20 · Pasek nawigacji: stabilny układ i przenikanie zamiast znikania — ✅
 - Problem (nagranie Piotra): przy otwieraniu menu linia pod paskiem przesuwała się w górę, a EN / PL wjeżdżał
   z prawej. Przyczyna: logo i Contact były w wariantach Open **ukrywane** (`visible: false`), więc wiersz
