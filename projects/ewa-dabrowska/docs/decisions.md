@@ -5,6 +5,12 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Logo: **Mansalva** (suchy pędzel) z lekkim pochyleniem — ✅
+- Piotr: zachować charakter Rock Salt, ale „odrobinę” bardziej jak pisane piórem / pędzlem (wzór: logo
+  talkingwalls.co.il — pochylona, pędzlowa kreska). Wybrany **Mansalva** (suchy pędzel, zmienna grubość kreski),
+  pochylenie −8° na węźle tekstu `kAw3N4j00`, kontur 0,3. Rozmiar 29 / 27 / 21 px. Próbki: ramka
+  „Logo — próbki: pióro / pędzel”. Mocniejszy krok w stronę pędzla: Kaushan Script.
+
 ### 2026-11-20 · Hero: nowe hasło, wyśrodkowane (wzór: talkingwalls.co.il/gallery) — 🟡 propozycja
 - „Land art, sculpture and sound — on humans, animals and the Earth” — rozwinięcie tematu z briefu
   („Land-Art & Sculpture on Humans, Animals and the Earth”) + „sound” (Piotr dopisał je w hero). Bez nowych faktów.
