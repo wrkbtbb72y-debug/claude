@@ -449,6 +449,13 @@ od kwadratu, który otacza sześcian, tym sześcian trochę mniejszy.
 - Na `/` (`OirTRcAEZ`): 0,15 / 600 px / Kwadratu sześcianu / 0,4 s. Zrzuty Framera nie mają kursora — efekt sprawdzalny
   tylko w podglądzie.
 
+- 2026-11-20 — użytkownik: „zmniejsza je wszystkie jednakowo” (był tryb „Kwadratu sześcianu”, 0,3 — przy kursorze dalej
+  niż zasięg wszystkie dochodziły do tego samego maksimum, a bliżej najbliższy był największy). Nowy, trzeci tryb
+  **„Siatki — najbliższy najmniejszy”** (`kursorOdn: "najblizszy"`): siła = „Zmniejszanie” × odległość kursora od całej
+  siatki zdjęć / „Zasięg” (kursor w siatce → bez zmian), rozłożona wagą po odległości kursora od kwadratu każdego
+  sześcianu: najbliższy 1, najdalszy 1 − **Różnica** (`kursorRoznica`, domyślnie 0,7; liniowo pomiędzy). Na `/`:
+  najblizszy, Różnica 0,7, Zmniejszanie 0,3 (ustawione przez użytkownika), Zasięg 600 px.
+
 ### Hover „do krawędzi kwadratu” (2026-11-19)
 
 Prośba: sześcian po najechaniu myszą rośnie tak, by krawędzie przedniej ściany dotknęły wszystkich czterech krawędzi
