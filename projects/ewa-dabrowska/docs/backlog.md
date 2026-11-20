@@ -56,6 +56,7 @@
 - [x] **Menu (hamburger)** — działa na desktopie, tablecie i telefonie jako wariant Open komponentu Nav Bar
       (2026-11-20, framer-map.md). Do zrobienia: podpiąć `href` linków, gdy powstaną podstrony; URL-e
       Instagram / Facebook (od artystki); link przycisku Contact (`eVB1wQuPY`) — czeka na podstronę Contact; sprawdzić w podglądzie zachowanie przy przewijaniu z otwartym menu.
+      Performance nie ma w menu (2026-11-20) — gdy powstanie podstrona, zdecydować, skąd będzie dostępna.
 - [ ] **Opisy prac po angielsku** — pole *Description* w CMS „Works” jest puste; źródło: `content/sources/portfolio-2026-09.md`.
 - [ ] **Okładki w CMS** — 8 z 31 prac ma okładkę (zdjęcia już będące na stronie); reszta po zmniejszeniu
       zdjęć z Dysku. Pole *Photos source (Drive)* wskazuje folder.

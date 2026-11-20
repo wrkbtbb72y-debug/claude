@@ -42,14 +42,15 @@ Komponent (bez overlay, bez custom code). Root wariantu = `<nav>`, pionowy stack
 - Struktura: `UlU0nzIq3` nav-row (linia dolna 0,5 px; od 2026-11-20 trzy części: `DleEx3DjC` nav-row-left 1fr
   z hamburgerem `OOgm1RAxl` · logo `iyXc2Haid` → `/` **na środku** · `VW7CEorPF` nav-row-right 1fr z przyciskiem
   Contact `eVB1wQuPY` = instancja „Nav bar button outlined” `flntBxkgE`, bez linku) →
-  `tHAjPmZye` nav-menu (ukryte w zamkniętych, widoczne w Open, wysokość 1fr):
-  - `TeGGXVBLU` nav-primary (preset **Nav Primary**): Work `E00Wq41qe`, Exhibitions `YRqINZHOg`, About
-    `KOSrIErZS`, Contact `dq03FGQzu`;
-  - `nHjqhtmzh` nav-secondary: `BYfEc3qet` (preset **Nav Secondary**: Publications `m6Fj5zoMG`,
-    Performance `fsC8JUW6x`) → EN / PL `iYrl_UOC4` → socials `BwpZKSPeb` (Instagram `qCZKnjMqF`, Facebook `zPctAhYiR`).
-  - Każdy link to ramka z hover (opacity 0,5). **Linki bez `href`** (decyzja 2026-11-20) — social też bez URL.
-  - Desktop/Tablet: dwie kolumny obok siebie (secondary 320 / 240 px); Phone: kolumny pod sobą
-    (primary u góry, secondary na dole — space-between).
+  `tHAjPmZye` nav-menu (ukryte w zamkniętych, widoczne w Open; od 2026-11-20 wg szkicu `JfmuN1_YU` na stronie „Robocze”):
+  - `TeGGXVBLU` nav-list — wyśrodkowana kolumna (gap 48 / 40 / 28 px): Work `E00Wq41qe`, Exhibitions `YRqINZHOg`,
+    About `KOSrIErZS`, Contact `dq03FGQzu`, Publications `m6Fj5zoMG`; tekst presetem **Nav Primary 2** `iESRe_5Uf`
+    (wersaliki), pod każdym „bar-line” na całą szerokość (ręcznie rysowana linia — maska SVG jak w Footer Bar).
+  - `WQcXBeASU` nav-menu-footer: socials `BwpZKSPeb` (Instagram, Facebook) po lewej, `VZn4ZDpNd`
+    „© 2026 Ewa Dąbrowska. All rights reserved.” po prawej (na telefonie pod sobą).
+  - W Open ukryte: logo i przycisk Contact w pasku; widoczny EN / PL `iYrl_UOC4` w prawym górnym rogu
+    (w `VW7CEorPF`); linia pod paskiem przezroczysta. **Performance usunięte z menu** (decyzja Piotra).
+  - Każdy link to ramka z hover (opacity 0,5). **Linki bez `href`**; social bez URL.
 - **Hamburger:** `ariaRole: button`, `tabIndex 0`, aria-label „Open menu” / „Close menu”. Klik (`onTap` →
   SET_VARIANT): White/Black → Open danego rozmiaru; Open → White. W Open linie (`ERKAKLz7L`, `kEFBSpbbT`)
   mają translateY ±3,5 px → jedna pozioma kreska.
