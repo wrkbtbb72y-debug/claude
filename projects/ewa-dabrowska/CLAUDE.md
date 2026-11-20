@@ -62,9 +62,10 @@ publikacją, **`/add-work`** — dodanie nowej pracy do bazy (i do CMS, gdy pows
 - **Zewnętrzne moduły:** Lenis (smooth scroll), Video, override `withLinksAfterSection`.
 - **Ustalenia z artystką (v3, 2026-11-14)** — `docs/ustalenia/ustalenia-strony-v3.pdf`, streszczone
   w `docs/brief.md` i `docs/decisions.md`: najpierw EN (PL później), CTA „Zobacz realizacje” +
-  „Kontakt” (+ „Gdzie zobaczyć moje prace”), docelowe menu Work · Where to see · Exhibitions ·
-  Film / Performance · Publications / Press · About · Contact. **Obecna strona jeszcze tego nie
-  odzwierciedla** (stare menu Works / Info / Awards). W nawigacji musi się zmieścić
+  „Kontakt” (+ „Gdzie zobaczyć moje prace”), docelowe menu Work · Exhibitions ·
+  Film / Performance · Publications / Press · About · Contact („Where to see” usunięte 2026-11-20 — mapa
+  prac będzie w Exhibitions). Nav Bar ma już docelowe pozycje (2026-11-15), ale „Where to see” trzeba
+  jeszcze z niego usunąć, a linki czekają na podstrony. W nawigacji musi się zmieścić
   **przełącznik języków EN / PL**.
 - **E-mail na stronie (`e.dabrowska@mail.com`) jest przykładowy** — prawdziwy poda artystka.
 - **Brak CMS** — plan: kolekcja „Works” zgodna ze schematem `content/works.csv` (patrz backlog).

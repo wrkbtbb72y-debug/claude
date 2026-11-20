@@ -9,8 +9,8 @@
 - Tytuły prac: oryginalny polski tytuł jest nadrzędny (np. „Słoneczny Stwór”); w wersji EN
   pokazujemy tytuł angielski, a polski oryginał jako podtytuł/w opisie — _do potwierdzenia
   w projekcie_.
-- Nazwy w menu są robocze, po angielsku: Work · Where to see · Exhibitions · Film / Performance ·
-  Publications / Press · About · Contact.
+- Nazwy w menu są robocze, po angielsku: Work · Exhibitions · Film / Performance ·
+  Publications / Press · About · Contact. („Where to see” usunięte 2026-11-20 — mapa w Exhibitions.)
 
 ## Ton
 

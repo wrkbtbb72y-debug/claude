@@ -27,7 +27,7 @@ CMS „Works” we Framerze. Wypełnione wyłącznie faktami z portfolio i z naz
 | `context` | string | festiwal, rezydencja, wystawa, zamówienie, stypendium |
 | `collaborators` | string | współautorzy (np. Jan Sajdak) |
 | `can_visit` | enum | `yes` · `gone` (efemeryczna, nie istnieje) · `private` — **czeka na artystkę** |
-| `maps_url` | link | link z Map Google — do „Where to see” |
+| `maps_url` | link | link z Map Google — do mapy prac (Exhibitions) |
 | `video_url` | link | film (YouTube) — także do podstrony Film / Performance |
 | `photos_drive` | link | folder ze zdjęciami na Dysku |
 | `photo_credit` | string | autor zdjęć — **obowiązkowo podawać na stronie** |

@@ -35,7 +35,7 @@ Group, International, Festival, Open-air) · Link `mM2hTlwr3`.
 
 Warianty: Desktop White `PKP79zZJ_`, Mobile White `i2tgDvjkO`, Desktop Black `SdizDLgxu`, Mobile Black `Ii_PrCq2k`.
 - Nav-right `TtQqBfySi` (szerokość auto, gap 32px; mobile 20px) → nav-links `lDGdXylue`:
-  Work, `YLvlX7Zs1` · Where to see, `kqmsI6XdP` · Exhibitions, `OToj1MVWj` · Film / Performance,
+  Work, `YLvlX7Zs1` · Where to see, `kqmsI6XdP` (**do usunięcia** — decyzja 2026-11-20) · Exhibitions, `OToj1MVWj` · Film / Performance,
   `i2IyH4QtE` · Publications / Press, `vOfp1_xvb` · About `UJdoV6Oz2` (instancje Nav Bar button, w
   wariantach Black — wariant „Black”); Contact `LtsS5yjgf`; **EN / PL** `gB3ixSUcy` (EN `ZMOZgDB6s`,
   „/” `QPrvRHUsm`, PL `IcWUDMV8x`); hamburger `OOgm1RAxl` (tylko mobile, nie działa).

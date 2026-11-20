@@ -5,6 +5,16 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · „Where to see” znika z menu — będzie częścią Exhibitions — ✅
+- **Decyzja (Piotr):** usuwamy osobną pozycję menu i podstronę **Where to see** (`/where-to-see`).
+  Mapa prac i lista miejsc trafią na podstronę **Exhibitions**.
+- **Menu (6 pozycji):** Work · Exhibitions · Film / Performance · Publications / Press · About · Contact
+  (+ przełącznik EN / PL).
+- **Powód:** treść „gdzie zobaczyć prace” pasuje do Exhibitions; lżejszy pasek nawigacji.
+- 🟡 **Otwarte:** czy na Home zostaje trzeci przycisk „Gdzie zobaczyć moje prace” (prowadziłby do
+  Exhibitions); czy blok „Gdzie zobaczyć” na stronach projektów zostaje (zakładamy, że tak).
+  Mapa to pomysł artystki — przekazać jej zmianę w kolejnej wersji dokumentu ustaleń.
+
 ### 2026-11-15 · Strona = projekt zaliczeniowy kursu KLIKA — ✅
 - Strona Ewy jest jednocześnie projektem końcowym kursu KLIKA. Wymagania (21 punktów z Notion, przepisane
   dosłownie) i ich statusy są w `docs/zaliczenie-klika.md`; punkty wymagające pracy oznaczone w backlogu **[KLIKA]**.
@@ -19,7 +29,7 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
   jest w historii wersji Framera. Zmiany w istniejących elementach (np. Home) zawsze ze screenshotami.
 - **Podstrony i szablon stron wstrzymane** na prośbę Piotra — menu ma docelowe pozycje, ale bez linków.
 - **Na tablecie (810 px) pasek nawigacji używa wariantów mobilnych** (logo, EN / PL, hamburger), jak na
-  telefonie — pełne menu z 7 pozycjami nie mieści się w 810 px.
+  telefonie — pełne menu z 7 pozycjami nie mieści się w 810 px. (Od 2026-11-20 pozycji jest 6.)
 - **Przełącznik EN / PL** jest na razie tylko wizualny (EN aktywny, PL wyszarzony).
 - **Dane w CMS po angielsku:** materiały, miejsca i kontekst prac przetłumaczone z portfolio wiernie, bez
   dodawania faktów; tytuły prac zostają oryginalne (pole *Original title* = polski tytuł).
@@ -77,7 +87,7 @@ Zapisane w `docs/ustalenia/ustalenia-strony-v3.pdf` (pkt 7 i 8).
   ❌ telefon, ❌ newsletter.
 - **Home:** wybrane projekty (3–5), krótko o artystce, logotypy instytucji.
   ❌ belka „Nowości” (powód: rzadkie aktualizacje), ❌ sekcja „Featured”.
-- **Menu (nazwy robocze):** Work · Where to see · Exhibitions (jedna lista, bez podziału na
+- **Menu (nazwy robocze):** Work · Where to see _(usunięte 2026-11-20 → Exhibitions)_ · Exhibitions (jedna lista, bez podziału na
   nadchodzące/aktualne/archiwalne) · Film / Performance (YouTube) · Publications / Press · About · Contact.
   ❌ News, ❌ Creative Process.
 - **Wciąż otwarte:** strony-inspiracje. (Kolejność projektów i logo — ustalone, wpis wyżej.)

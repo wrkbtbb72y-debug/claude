@@ -88,4 +88,4 @@ Ikony: zestaw z ikonami `Copy`, `Arrow Down`, `Facebook`, `Instagram` (+ własne
 - Brak zaokrągleń, brak cieni — estetyka płaska, drukowa.
 - Nawigacja i stopka powinny trafić do **Layout Template** zanim powstaną kolejne strony.
 - **Nav Bar musi mieć miejsce na przełącznik języków EN / PL** (desktop i menu mobilne) oraz na
-  logotyp „Ewa Dąbrowska” + przyszły znak artystki. Docelowo 7 pozycji menu (zob. brief.md).
+  logotyp „Ewa Dąbrowska” + przyszły znak artystki. Docelowo 6 pozycji menu (zob. brief.md).
