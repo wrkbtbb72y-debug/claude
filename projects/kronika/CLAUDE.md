@@ -743,6 +743,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   wyników i podpowiedzi”: DL `9539:10889` (pasek `9539:10890`), DS `9539:10895` (`9539:10896`), Tablet
   `9539:10901` (`9539:10902`), Mobile `9539:10907` (`9539:10908`). Makiety wyższe o 25 px (Mobile 81 px),
   nic nie nachodzi. Odstęp 80 między paskiem a komunikatem — moja propozycja, do akceptacji.
+  **Poprawka (ten sam dzień):** użytkownik zgłosił ucięte od dołu przyciski podpowiedzi w „brak wyników”.
+  W 5 zmienionych makietach (`9299:44084`, `9015:8171`, `9173:19063`, `9173:19828`, `9173:20584`
+  i ich grupy „Czy chodziło Ci o?” / „Możesz obejrzeć także”) wyłączone przycinanie treści
+  i wymuszone ponowne „Hug” wysokości — grupy miały clip, a po zmianie odstępu 8 → 12 przez API
+  wysokość u użytkownika się nie przeliczyła (API pokazywało 71 px).
 
 ## Do zrobienia
 
