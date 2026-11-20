@@ -44,7 +44,9 @@ Komponent (bez overlay, bez custom code). Root wariantu = `<nav>`, pionowy stack
   tło token **Night** `y6um7al0w` (#1B1B1B), `minHeight: 100vh` (Framer nie przyjmuje `height: 100vh` na
   wariancie komponentu), przejście tween 0,6 s.
 - Struktura: `UlU0nzIq3` nav-row (linia dolna 0,5 px; od 2026-11-20 trzy części: `DleEx3DjC` nav-row-left 1fr
-  z hamburgerem `OOgm1RAxl` · logo `iyXc2Haid` → `/` **na środku** (od 2026-11-20 tekst `kAw3N4j00` „Ewa Dąbrowska” presetem Logo Script;
+  z hamburgerem `OOgm1RAxl` · logo `iyXc2Haid` → `/` **na środku** (od 2026-11-20: **12 osobnych liter** + odstęp `pAS1B9MpM`, każda z własnym
+  obrotem / przesunięciem / skalą, preset Logo Script, w Black — Logo Script Dark; ramka pochylona −8°;
+  ukryty stary tekst `kAw3N4j00` „Ewa Dąbrowska” — do przywrócenia;
   dawny logotyp SVG był maską ramki: `uSAvd2qsAvbTUDNT5VcSshybTF4.svg`) · `VW7CEorPF` nav-row-right 1fr z przyciskiem
   Contact `eVB1wQuPY` = instancja „Nav bar button outlined” `flntBxkgE`, bez linku) →
   `tHAjPmZye` nav-menu (ukryte w zamkniętych, widoczne w Open; od 2026-11-20 wg szkicu `JfmuN1_YU` na stronie „Robocze”):
