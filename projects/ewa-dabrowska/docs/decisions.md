@@ -5,6 +5,14 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Pasek nawigacji: stabilny układ i przenikanie zamiast znikania — ✅
+- Problem (nagranie Piotra): przy otwieraniu menu linia pod paskiem przesuwała się w górę, a EN / PL wjeżdżał
+  z prawej. Przyczyna: logo i Contact były w wariantach Open **ukrywane** (`visible: false`), więc wiersz
+  zmieniał wysokość, a EN / PL pojawiał się w układzie dopiero przy przełączeniu.
+- Rozwiązanie / zasada: elementy paska są zawsze w układzie, warianty zmieniają tylko **opacity** i
+  `pointerEvents`; EN / PL leży absolutnie w miejscu Contact. Hamburger dostał obszar kliknięcia 44×44 px
+  (padding wiersza zmniejszony, by pasek miał tę samą wysokość). Usunięty nieużywany ukryty tekst logo.
+
 ### 2026-11-20 · Hero: kolejność wejścia elementów w „typo” — ✅
 - Z góry na dół: mały napis (0,2 s) → linia (0,45 s) → hasło (0,7 s, linia po linii, z lekkim rozmyciem),
   wszystko przed paskiem nawigacji (1,6 s). Wcześniej napis i hasło startowały niemal równo (0,3 / 0,4 s).
