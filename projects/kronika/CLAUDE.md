@@ -712,6 +712,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   prezentacji linki podkreślają się po najechaniu. Nowe ID kopii w tabeli: `9520:2030`, `9520:2035`,
   `9520:2040`, `9520:2045`, `9520:2050` (warstwa „Link” w ramkach „akcje”). Wygląd tabeli bez zmian.
   Zestaw nie został przeniesiony na stronę BUTTONS — do decyzji.
+  **Kursor „łapka”** (prośba użytkownika, ten sam dzień): Figma pokazuje łapkę w prezentacji tylko
+  nad elementami z interakcją kliknięcia, więc **oba warianty** dostały **On click → Navigate to
+  „Zmiana hasła - 1441”** (ta sama makieta, bez animacji, z zachowaniem przewinięcia — kliknięcie
+  praktycznie nic nie robi). Docelowa akcja kliknięcia (profil członka?) — do ustalenia; użyty na
+  innej makiecie komponent przeniesie do tej. W kodzie: `cursor: pointer` + podkreślenie na `:hover`.
 
 ## Do zrobienia
 
