@@ -5,6 +5,13 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Otwarte menu wg szkicu Piotra (`JfmuN1_YU`, strona „Robocze”) — ✅
+- Jedna wyśrodkowana kolumna wersalikami: Work · Exhibitions · About · Contact · Publications, pod każdą
+  pozycją ręcznie rysowana linia na całą szerokość. **Performance pominięte.**
+- U góry tylko kreska zamykania (lewo) i EN / PL (prawo) — logo i przycisk Contact ukryte w otwartym menu.
+- Na dole: Instagram · Facebook (lewo) i „© 2026 Ewa Dąbrowska. All rights reserved.” (prawo) zamiast
+  drugiego przełącznika EN / PL ze szkicu.
+
 ### 2026-11-20 · Układ paska: hamburger po lewej, logo na środku, Contact po prawej — ✅
 - Na prośbę Piotra, we wszystkich 9 wariantach Nav Bar (też w otwartym menu). Contact = istniejący
   komponent „Nav bar button outlined”. Logo jest wyśrodkowane dzięki dwóm bocznym kolumnom o równej szerokości.

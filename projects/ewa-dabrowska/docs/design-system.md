@@ -56,8 +56,9 @@ Nowe elementy: używaj tokenów zamiast surowych wartości. Półprzezroczyste k
 | Caption | `q8a80OhDX` | ABC Diatype 400 | 14 | 140% | Podpisy pod zdjęciami prac |
 | links | `sAkSZeyYk` | ABC Diatype 300 | 14 | 145% | Linki („Read more”, social) |
 | footer small | `VPJZTLXqN` | ABC Diatype 300 | 14 / 13 | — | Stopka |
-| Nav Primary | `g8gsJNo38` | Instrument Serif 400 | 88 / 72 / 52 | 100% | Linki primary w menu (Work, Exhibitions, About, Contact) |
-| Nav Secondary | `N3PQzeLo4` | Instrument Serif 400 | 24 / 22 / 20 | 120% | Linki secondary w menu (Publications, Performance) |
+| Nav Primary | `g8gsJNo38` | Instrument Serif 400 | 88 / 72 / 52 | 100% | Nieużywany od 2026-11-20 (zastąpiony przez Nav Primary 2) |
+| Nav Secondary | `N3PQzeLo4` | Instrument Serif 400 | 24 / 22 / 20 | 120% | Nieużywany od 2026-11-20 (wcześniej linki secondary) |
+| Nav Primary 2 | `iESRe_5Uf` | Instrument Serif 400, wersaliki | 80 / 72 / 52 | 100% | Linki w otwartym menu (Work … Publications) — styl Piotra ze szkicu |
 
 Link style: `Contact Email Link` (`JrZOvXHMr`).
 
