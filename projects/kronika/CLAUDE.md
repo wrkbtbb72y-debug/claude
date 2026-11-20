@@ -767,8 +767,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Lista) wstawiona nad siatkę: nowa ramka **„Pasek wyników + lista kolekcji”** `9612:18417` (odstęp 16 jak
   w Cards) w „Section / Kolekcje publiczne” `9199:30099`, w niej pasek `9612:18418` i dotychczasowa lista
   `9199:30102`. Licznik: **„12 kolekcji”** (12 kafelków, paginacja „1 z 1”; bez pogrubienia jak w Cards).
-  Makieta wyższa o 64 px, nic nie nachodzi. Pozostałe 3 breakpointy — bez zmian (nie mają też jeszcze
-  przełącznika Obiekty / Kolekcje). Uwaga (bez zmian): przełącznik w DL `9536:33427` ma aktywne
+  Makieta wyższa o 64 px, nic nie nachodzi. **Pozostałe 3 breakpointy** (prośba użytkownika, ten sam
+  dzień): to samo z kopią paska danego breakpointu z Cards tej strony (DS `9536:34186`, Tablet
+  `9536:34579`, Mobile `9536:34972` — na Mobile układ pionowy: licznik nad sortowaniem i przełącznikiem
+  widoku). Nowe ramki „Pasek wyników + lista kolekcji” (odstęp 16): DS `9617:18432` (pasek `9617:18433`),
+  Tablet `9617:18438` (`9617:18439`), Mobile `9617:18444` (`9617:18445`); licznik „12 kolekcji” (na
+  każdej 12 kafelków). Makiety wyższe o 64 px (Mobile 101 px), nic nie nachodzi. Te 3 breakpointy nadal
+  nie mają przełącznika Obiekty / Kolekcje (jest tylko na DL). Uwaga (bez zmian): przełącznik w DL `9536:33427` ma aktywne
   „Obiekty”, choć to strona Kolekcji.
 
 ## Do zrobienia
