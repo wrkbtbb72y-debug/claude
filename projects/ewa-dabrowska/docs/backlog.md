@@ -47,7 +47,10 @@
       Film / Performance, Publications / Press, About, Contact. **Wstrzymane na prośbę Piotra (2026-11-15).**
       KLIKA wymaga min. 1 zalinkowanej podstrony i Layout Template z top-barem i stopką.
       Gdy ruszą: podpiąć linki w menu, Contact → `/contact`, „Read more” → `/about`.
-- [ ] **Usunąć „Where to see” z Nav Bar** we Framerze (`kqmsI6XdP`, wszystkie 4 warianty) — decyzja 2026-11-20.
+- [x] **„Where to see” zniknęło z Nav Bar** (2026-11-20, sprawdzone we Framerze — zmienione ręcznie: ten węzeł to teraz „Awards”).
+- [ ] **Ustalić widoczne pozycje menu** — na canvasie: Work · About · Awards (Exhibitions, Film / Performance,
+      Publications / Press ukryte); ustalone menu: Work · Exhibitions · Film / Performance · Publications / Press ·
+      About · Contact. Czy „Awards” wraca do menu? (pytanie do Piotra, 2026-11-20)
 - [ ] **Podstrona Exhibitions** — dane gotowe w CMS „Exhibitions” (18 wystaw); zostaje zbudować stronę z listą
       **+ mapa prac i lista miejsc** (dawne „Where to see”, 2026-11-20).
 - [ ] **Menu mobilne (hamburger)** na telefonie i tablecie to tylko grafika, nic nie otwiera — do zrobienia
