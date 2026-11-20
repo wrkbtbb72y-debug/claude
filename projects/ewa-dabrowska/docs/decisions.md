@@ -5,7 +5,13 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
-### 2026-11-20 · Logo: zmiana na grubszy, „artystyczny” font — **Mr Dafoe** — ✅
+### 2026-11-20 · Logo: **Rock Salt** — surowe, szkicowe pismo — ✅
+- Mr Dafoe „trochę za grzeczne” (Piotr). Wybrany **Rock Salt** z 40 próbek ekspresyjnych (ramka „Logo — próbki:
+  ekspresyjne”) — wygląda jak pisane patykiem / węglem, pasuje do land artu. Rozmiar 26 / 24 / 19 px (font jest
+  szeroki; na telefonie musi zmieścić się między hamburgerem a Contact).
+- Grubsze alternatywy na wypadek dalszych poprawek: Knewave, Sedgwick Ave Display, Permanent Marker, Mrs Sheppards.
+
+### 2026-11-20 · Logo: zmiana na grubszy, „artystyczny” font — **Mr Dafoe** — zastąpione (wyżej)
 - Piotr chciał bardziej kreatywnego stylu i grubszej kreski niż Parisienne. Wybrany **Mr Dafoe** (pędzelkowy
   podpis) z 31 próbek (ramka „Logo — próbki: grubsza kreska”). Rozmiar 36 / 32 / 28 px. Zmiana tylko w presecie
   Logo Script. Inne mocne kandydatury: Kaushan Script, Yesteryear, Mrs Sheppards, Damion.

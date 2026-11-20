@@ -90,7 +90,7 @@
       Wiersz „Tancerz” i kolumna `order` już są (2026-11-14). „Dziki” = „Herd” — potwierdzone.
 - [x] Kolumny na mapę (`maps_url`, `can_visit`) dodane do `content/works.csv` (2026-11-14);
       współrzędne niepotrzebne, jeśli są linki z Map Google.
-- [x] **Logotyp:** font pędzelkowy **Mr Dafoe** (Google Fonts, OFL) — 2026-11-20; do akceptacji artystki.
+- [x] **Logotyp:** font **Rock Salt** (Google Fonts, Apache 2.0) — 2026-11-20; do akceptacji artystki.
 
 - [x] **CMS „Works”** (31 prac, 2026-11-15; strony listy i detail — jeszcze nie) wg schematu `content/works.csv` + strona listy `/work` i detail `/work/:slug` (zgodnie z brief.md).
 - [ ] **[KLIKA]** **Layout Template** z Nav Bar i stopką — warunek przed dodaniem kolejnych stron.
