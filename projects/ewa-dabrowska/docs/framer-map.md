@@ -46,7 +46,7 @@ Komponent (bez overlay, bez custom code). Root wariantu = `<nav>`, pionowy stack
 - Struktura: `UlU0nzIq3` nav-row (linia dolna 0,5 px; od 2026-11-20 trzy części: `DleEx3DjC` nav-row-left 1fr
   z hamburgerem `OOgm1RAxl` · logo `iyXc2Haid` → `/` **na środku** (od 2026-11-20: **12 osobnych liter** + odstęp `pAS1B9MpM`, każda z własnym
   obrotem / przesunięciem / skalą, preset Logo Script, w Black — Logo Script Dark; ramka pochylona −8°;
-  ukryty stary tekst `kAw3N4j00` „Ewa Dąbrowska” — do przywrócenia;
+  stary tekst `kAw3N4j00` usunięty 2026-11-20;
   dawny logotyp SVG był maską ramki: `uSAvd2qsAvbTUDNT5VcSshybTF4.svg`) · `VW7CEorPF` nav-row-right 1fr z przyciskiem
   Contact `eVB1wQuPY` = instancja „Nav bar button outlined” `flntBxkgE`, bez linku) →
   `tHAjPmZye` nav-menu (ukryte w zamkniętych, widoczne w Open; od 2026-11-20 wg szkicu `JfmuN1_YU` na stronie „Robocze”):
@@ -58,12 +58,19 @@ Komponent (bez overlay, bez custom code). Root wariantu = `<nav>`, pionowy stack
   - W Open ukryte: logo i przycisk Contact w pasku; widoczny EN / PL `iYrl_UOC4` w prawym górnym rogu
     (w `VW7CEorPF`); linia pod paskiem przezroczysta. **Performance usunięte z menu** (decyzja Piotra).
   - Każdy link to ramka z hover (opacity 0,5). **Linki bez `href`**; social bez URL.
-- **Hamburger:** `ariaRole: button`, `tabIndex 0`, aria-label „Open menu” / „Close menu”. Klik (`onTap` →
+- **Zasady budowy paska (2026-11-20, po nagraniu Piotra):** górny wiersz `UlU0nzIq3` ma **ten sam układ we
+  wszystkich 9 wariantach** — logo, Contact i EN / PL są zawsze w warstwach, a w wariantach przełącza się tylko
+  **opacity** (+ `pointerEvents: none`), nigdy `visible`. Dzięki temu wysokość paska i linia pod nim się nie
+  ruszają przy otwieraniu. EN / PL `iYrl_UOC4` leży **absolutnie** na miejscu przycisku Contact (prawa kolumna
+  `VW7CEorPF`, piny prawo/góra/dół) — przenika się z Contact zamiast wjeżdżać z boku. Padding wiersza: desktop
+  15/20 px, tablet/telefon 11/0 px.
+- **Hamburger:** obszar kliknięcia 44×44 px (linie bez zmian, przy lewej krawędzi), `ariaRole: button`, `tabIndex 0`, aria-label „Open menu” / „Close menu”. Klik (`onTap` →
   SET_VARIANT): White/Black → Open danego rozmiaru; Open → White. W Open linie (`ERKAKLz7L`, `kEFBSpbbT`)
   mają translateY ±3,5 px → jedna pozioma kreska.
 - Na Home: wrapper `zbBVXvrUI` (`<header>`, absolute, left/right 0, z-index 10), instancja `xLcWXJD7r`
   przełącza przy scrollu White/Black (desktop: Desktop, **tablet: Tablet White/Black**, telefon: Phone).
-- W komponencie leży też nienazwana ramka `GkUviYHV8` (stara wersja paska z linkami — kopia Piotra, nie ruszać).
+- W komponencie leży też ramka `GkUviYHV8` „OLD — stara wersja paska (nieużywana)” — kopia Piotra; Framer nie
+  pozwala przenieść jej poza komponent. Można ją usunąć, gdy nie będzie potrzebna.
 
 ## Home — breakpointy
 
