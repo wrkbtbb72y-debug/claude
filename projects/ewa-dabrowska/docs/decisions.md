@@ -5,6 +5,13 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Logo bardziej autorskie i nieregularne — ✅
+- Piotr: logo może być mniej czytelne, bardziej autorskie. Zostaje Mansalva, ale każda litera jest osobną
+  warstwą z lekko innym obrotem (±3–8°), przesunięciem w pionie (±3 px) i wielkością (0,9–1,22; większe E i D)
+  — efekt ręcznego podpisu. Całość pochylona −8°. Litery mają `ariaHidden`, nazwę czyta aria-label linku.
+- Zmiana fontu/rozmiaru nadal przez presety Logo Script / Logo Script Dark; „charakter pisma” — przez obroty
+  i przesunięcia liter (warstwy logo-E, logo-w, …).
+
 ### 2026-11-20 · Logo: **Mansalva** (suchy pędzel) z lekkim pochyleniem — ✅
 - Piotr: zachować charakter Rock Salt, ale „odrobinę” bardziej jak pisane piórem / pędzlem (wzór: logo
   talkingwalls.co.il — pochylona, pędzlowa kreska). Wybrany **Mansalva** (suchy pędzel, zmienna grubość kreski),
