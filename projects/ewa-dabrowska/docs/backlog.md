@@ -53,8 +53,9 @@
       About · Contact. Czy „Awards” wraca do menu? (pytanie do Piotra, 2026-11-20)
 - [ ] **Podstrona Exhibitions** — dane gotowe w CMS „Exhibitions” (18 wystaw); zostaje zbudować stronę z listą
       **+ mapa prac i lista miejsc** (dawne „Where to see”, 2026-11-20).
-- [ ] **Menu mobilne (hamburger)** na telefonie i tablecie to tylko grafika, nic nie otwiera — do zrobienia
-      jako wariant Open komponentu Nav Bar (drawer).
+- [x] **Menu (hamburger)** — działa na desktopie, tablecie i telefonie jako wariant Open komponentu Nav Bar
+      (2026-11-20, framer-map.md). Do zrobienia: podpiąć `href` linków, gdy powstaną podstrony; URL-e
+      Instagram / Facebook (od artystki); sprawdzić w podglądzie zachowanie przy przewijaniu z otwartym menu.
 - [ ] **Opisy prac po angielsku** — pole *Description* w CMS „Works” jest puste; źródło: `content/sources/portfolio-2026-09.md`.
 - [ ] **Okładki w CMS** — 8 z 31 prac ma okładkę (zdjęcia już będące na stronie); reszta po zmniejszeniu
       zdjęć z Dysku. Pole *Photos source (Drive)* wskazuje folder.

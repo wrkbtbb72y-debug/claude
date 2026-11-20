@@ -65,7 +65,7 @@ Albo otwórz ten plik — **Podsumowanie** i **Do zrobienia** są na górze.
 
 | # | Wymaganie (dosłownie) | Stan | Dowód / gdzie to jest | Co jeszcze zrobić |
 |---|---|---|---|---|
-| 12 | Wszystkie przyciski mają mikrointerakcję na hover. | ❓ | Brak informacji w dokumentacji | Sprawdzić Nav Bar button, Contact, CTA w stopce; dodać stan Hover, jeśli brak |
+| 12 | Wszystkie przyciski mają mikrointerakcję na hover. | 🟡 | Linki w menu Nav Bar mają hover (opacity 0,5, 2026-11-20); reszty nie sprawdzono | Sprawdzić Nav Bar button, Contact, CTA w stopce; dodać stan Hover, jeśli brak |
 | 13 | Zastosuj przynajmniej jedną animację typu Appear. | ✅ | 14 × Appear na Home Desktop (`framer-map.md`) | — |
 | 14 | Zastosuj przynajmniej jedną animację typu Scroll Animate lub Scroll Transform. | ✅ | 14 × Scroll Transform + triggery scrolla na Home | — |
 | 15 | Więcej animacji mile widziane. Tylko nie przedawkuj. | ✅ | Efekty scrolla w Projects, nav zmieniający wariant, footer reveal | Opcjonalne — nie dokładać na siłę |
@@ -77,7 +77,7 @@ Albo otwórz ten plik — **Podsumowanie** i **Do zrobienia** są na górze.
 | 16 | Strona ma wypełnione pole Title i Description w Settings. | ✅ | „Ewa Dąbrowska · Land Art & Sculpture” + opis (2026-11-15) | Podstrony: własne title / description |
 | 17 | Dodana jest favikona i Social Image. | ⬜ | Brak (`backlog.md` P0) | Wybrać zdjęcie na Social Image i znak na favicon |
 | 18 | Warstwy są ponazywane. | 🟡 | Główne warstwy Home mają nazwy (`framer-map.md`) | Przejrzeć wszystkie warstwy (też w komponentach) — bez „Frame”, „Text”, „Image” |
-| 19 | Ustawione są znaczniki elementów header, nav, main, section, footer. | ❓ | Brak informacji w dokumentacji | Sprawdzić pole HTML Tag w Framerze dla nav-baru, Main, sekcji i stopki |
+| 19 | Ustawione są znaczniki elementów header, nav, main, section, footer. | 🟡 | `header` na wrapperze paska i `nav` w komponencie Nav Bar (2026-11-20); main / section / footer niesprawdzone | Sprawdzić pole HTML Tag w Framerze dla nav-baru, Main, sekcji i stopki |
 | 20 | Wszystkie obrazy mają swój alt-text. | ✅ | 13 zdjęć prac + portret na Home (2026-11-15); 6 grafik dekoracyjnych celowo bez opisu | Każde nowe zdjęcie z alt-textem (`content-guidelines.md`) |
 | 21 | Wszystkie elementy linkujące bez etykiety tekstowej mają swój aria-label. | ⬜ | Linki w nav i stopce w większości niepodpięte (`backlog.md` P0) | Podpiąć linki; aria-label dla logo, ikon Instagram / Facebook, „Back to top” |
 

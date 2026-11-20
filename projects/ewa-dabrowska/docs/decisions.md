@@ -5,6 +5,17 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Menu nawigacji: hamburger → pełny ekran w komponencie Nav Bar — ✅
+- Pasek = tylko logo + hamburger na wszystkich szerokościach. Klik otwiera wariant **Open** tego samego
+  komponentu (tło Night #1B1B1B, min. 100vh) — **bez overlay i custom code** (wymóg Piotra).
+- Kolumna 1 (duży Instrument Serif): Work · Exhibitions · About · Contact. Kolumna 2 (mniejszy):
+  Publications · Performance, pod nimi EN / PL, potem Instagram · Facebook. Hamburger w Open = jedna kreska.
+- Osobne warianty dla Desktop / Tablet / Phone (zamknięte White/Black + Open), żeby zamknięcie wracało do
+  właściwego rozmiaru. Tablet dostał własne warianty (wcześniej używał mobilnych).
+- Pasek zostaje u góry strony (absolute), nie przyklejony — żeby nie kolidował ze sticky paskami sekcji.
+- **Linki na razie bez `href`** (podstrony wstrzymane); social bez URL — brak adresów od artystki.
+- Ograniczenie: Framer bez overlay nie blokuje przewijania strony pod otwartym menu.
+
 ### 2026-11-20 · Kolejność warstw: Nav Bar > Footer Bar > Main — ✅
 - Footer Bar przestał się wysuwać: `footer-bar-fixed` i `Main` miały ten sam z-index (9), a Main leży
   dalej w kolejności warstw, więc przykrywał pasek. **Main obniżony do 8** (Footer Bar 9, Nav 10).
