@@ -77,11 +77,13 @@ jKwXMbO36  Desktop Large Primary (fill #000, stack vertical)
               kolumny Menu / Contact / Legal, xCRqk8oKn Back to top (href „/”)
 ```
 
-## Warstwy (z-index) na Home — sprawdzone 2026-11-20
+## Warstwy (z-index) na Home — stan 2026-11-20
 
 Dzieci breakpointu (jeden kontekst nakładania, wszystkie breakpointy bez nadpisań):
 `zbBVXvrUI` nav-bar-scroll **10** (absolute, u góry strony) > `O63VKWwFo` footer-bar-fixed **9** (fixed, góra
-ekranu, `pointerEvents: none`) = `GI46d7Pmp` Main **9** (relative). Nav jest więc nad Footer Barem.
+ekranu, `pointerEvents: none`) > `GI46d7Pmp` Main **8** (relative).
+⚠ Footer Bar musi mieć wyższy z-index niż Main — przy równych wartościach Main (późniejszy w kolejności)
+przykrywa pasek i ten „nie wysuwa się” (zob. decisions.md 2026-11-20).
 Z-indeksy wewnątrz Main (np. sticky pasek About `sHRNN4Tvd` = 11) działają tylko w obrębie Main.
 
 ## Kotwice i triggery scrolla (nie usuwać / nie zmieniać `elementId` bez potrzeby!)

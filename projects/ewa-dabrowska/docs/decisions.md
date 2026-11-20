@@ -5,6 +5,11 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-20 · Kolejność warstw: Nav Bar > Footer Bar > Main — ✅
+- Footer Bar przestał się wysuwać: `footer-bar-fixed` i `Main` miały ten sam z-index (9), a Main leży
+  dalej w kolejności warstw, więc przykrywał pasek. **Main obniżony do 8** (Footer Bar 9, Nav 10).
+- Zasada: nav-bar-scroll > footer-bar-fixed > Main. Nie wyrównywać tych wartości.
+
 ### 2026-11-20 · „Where to see” znika z menu — będzie częścią Exhibitions — ✅
 - **Decyzja (Piotr):** usuwamy osobną pozycję menu i podstronę **Where to see** (`/where-to-see`).
   Mapa prac i lista miejsc trafią na podstronę **Exhibitions**.
