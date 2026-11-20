@@ -722,6 +722,21 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   **#1C3E94** (środek między #2350BF a #142C69, bez stylu w pliku). Uwaga: kolor domyślny tych
   linków (#2350BF) nie jest systemowym kolorem linku #193680 — do decyzji, czy ujednolicić.
 
+- 2026-11-20 — **Figma: podpowiedzi wyszukiwania na dole — pozostałe makiety strony „3. Zasoby/Obiekty”**
+  (prośba użytkownika, wzór: rząd wyników `9439:24776` + DS/Tablet/Mobile z 2026-11-19). Zmienione
+  makiety: druga **„Desktop Large – wyniki wyszukiwania” `9299:43811`** (2 obiekty) i cały rząd
+  **„brak wyników”**: DL `9015:7886`, DS `9173:18307`, Tablet `9173:19085`, Mobile `9173:19850`.
+  W każdej: przełącznik Obiekty / Kolekcje zostaje u góry (blok „Przełącznik + podpowiedzi”, nazwa bez
+  zmian), odstęp przełącznik → „Wyniki wyszukiwania” 80 → **100**; „Podpowiedzi wyszukiwania” przeniesione
+  do nowej ramki pod treścią: **„Wyniki i podpowiedzi”** `9539:10884` (w `9299:43811`, odstęp 120) oraz
+  **„Brak wyników i podpowiedzi”** — DL `9539:10885`, DS `9539:10886` (odstęp 120), Tablet `9539:10887`,
+  Mobile `9539:10888` (odstęp 100, jak we wzorcu na tych breakpointach). Podpowiedzi: padding 0, odstęp
+  między grupami 40, etykieta → przyciski 12 (jak we wzorcu). Sekcja: odstęp 80 (było 120 w „brak
+  wyników”), dolny padding **60** (było 140/140/120/100); blok „Brak wyników” — dolny padding 60 → 0
+  (odstęp do podpowiedzi daje ramka). Makiety „brak wyników” są ok. 100 px niższe, `9299:43811` o 12 px
+  wyższa — nic nie nachodzi. Uwaga (bez zmian, było wcześniej): w `9299:43811` przełącznik „Obiekty (2) /
+  Kolekcje (0)” łamie liczby do drugiej linii.
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
