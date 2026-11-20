@@ -718,7 +718,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   praktycznie nic nie robi). Docelowa akcja kliknięcia (profil członka?) — do ustalenia; użyty na
   innej makiecie komponent przeniesie do tej. W kodzie: `cursor: pointer` + podkreślenie na `:hover`.
   **Ciemniejszy kolor w hoverze** (prośba użytkownika, ten sam dzień): w wariancie Hover tekst
-  i strzałka #2350BF → **#142C69** (Blue hover z „Paleta Kronika”). Uwaga: kolor domyślny tych
+  i strzałka #2350BF → najpierw #142C69 (Blue hover z palety) — użytkownik: „trochę za ciemne” →
+  **#1C3E94** (środek między #2350BF a #142C69, bez stylu w pliku). Uwaga: kolor domyślny tych
   linków (#2350BF) nie jest systemowym kolorem linku #193680 — do decyzji, czy ujednolicić.
 
 ## Do zrobienia
