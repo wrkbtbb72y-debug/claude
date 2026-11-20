@@ -790,6 +790,19 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   16 + 8 przesunięcia przełącznika = 24). Makiety wyższe o 37 / 57 / 77 px, nic nie nachodzi. Ramka
   informacyjna „Zarejestruj konto i twórz własne kolekcje” (na DL po prawej obok przełącznika) — **nie
   dodana** na pozostałych breakpointach (nie było prośby).
+  **Zastąpione tego samego dnia** (prośba użytkownika: „ten design i ta struktura warstw”, wzór DL
+  `9536:38176`): moje ramki „Przełącznik + nagłówek” (i w nich przełączniki `9629:…`) usunięte, w ich
+  miejsce **kopie ramki DL „Frame 427320023”** (odstęp 100) → „Frame 427320024” (bez auto layoutu:
+  przełącznik Aktywny = Kolekcje + ramka „main” z „Zarejestruj konto ↗ i twórz własne kolekcje.”) →
+  „Frame 427319994” z **nagłówkiem sekcji danego breakpointu** (przeniesione instancje `9241:13424` /
+  `9241:13431` / `9241:13438`; stare ramki „Frame 427319977” usunięte). Górny padding sekcji **16**
+  (jak DL). DS `9631:18490` (wiersz `9631:18491`, „main” `9631:18493` przy prawej krawędzi, x 589,
+  ograniczenie poziome Right), Tablet `9631:18515` (`9631:18516`, „main” `9631:18518`, x 415, Right),
+  **Mobile** `9631:18540` — przełącznik i ramka obok siebie się nie mieszczą (366 px), więc **ramka
+  „main” pod przełącznikiem** (odstęp 16, x 0; wiersz `9631:18541` ma 98 px; ramka ma 363 px — Hug,
+  nie pełna szerokość). Makiety: DS 3327, Tablet 4427, Mobile 7243 px; nic nie nachodzi. Uwaga: w ramce
+  „main” (też na DL) leży ikona **lucide/x** z pozycją absolutną x 1400 — poza ramką, niewidoczna
+  (makiety przycinają treść); pewnie przycisk zamknięcia do ustawienia — nie ruszano.
 
 - 2026-11-20 — **Figma: „Przełącznik widoku” Kafelki / Lista wygaszony (stan Disabled, krycie 40 %)**
   (prośba użytkownika) — strona „3. Zasoby/Obiekty” (`6885:93257`), wszystkie **13 kopii w makietach**:
