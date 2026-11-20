@@ -13,7 +13,8 @@ Design page (brudnopis): **Robocze** `juyxNVARq` — wersje robocze stopki, Abou
 „work-grid — B Index”, sticky-icon, read-more.
 
 Na „Robocze” są też ramki z próbkami fontów do logo (2026-11-20): **Logo — próbki pisma odręcznego**
-`G1f2KF0Xw` (18 cienkich) i **Logo — próbki: grubsza kreska** `hX2pKSrmR` (31 pędzelkowych / grubszych).
+`G1f2KF0Xw` (18 cienkich) i **Logo — próbki: grubsza kreska** `hX2pKSrmR` (31 pędzelkowych / grubszych) oraz **Logo — próbki: ekspresyjne**
+`LvcJ1oVNL` (40 surowych, markerowych, graffiti).
 
 Design page: **Fonty — propozycje zamienników** `IC_Z5ffzI` — próbki darmowych fontów (2026-11-15).
 

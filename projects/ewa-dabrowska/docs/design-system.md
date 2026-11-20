@@ -58,7 +58,7 @@ Nowe elementy: używaj tokenów zamiast surowych wartości. Półprzezroczyste k
 | footer small | `VPJZTLXqN` | ABC Diatype 300 | 14 / 13 | — | Stopka |
 | Nav Primary | `g8gsJNo38` | Instrument Serif 400 | 88 / 72 / 52 | 100% | Nieużywany od 2026-11-20 (zastąpiony przez Nav Primary 2) |
 | Nav Secondary | `N3PQzeLo4` | Instrument Serif 400 | 24 / 22 / 20 | 120% | Nieużywany od 2026-11-20 (wcześniej linki secondary) |
-| Logo Script | `lBfVEdHOq` | Mr Dafoe 400 (Google Fonts, OFL) — pędzelkowy podpis | 36 / 32 / 28 | 1.2em | Logo „Ewa Dąbrowska” w pasku (Ink w wariantach Black) |
+| Logo Script | `lBfVEdHOq` | Rock Salt 400 (Google Fonts, Apache 2.0) — surowe, szkicowe pismo | 26 / 24 / 19 | 1.4em | Logo „Ewa Dąbrowska” w pasku (Ink w wariantach Black) |
 | Nav Primary 2 | `iESRe_5Uf` | Instrument Serif 400, wersaliki | 80 / 72 / 52 | 100% | Linki w otwartym menu (Work … Publications) — styl Piotra ze szkicu |
 
 Link style: `Contact Email Link` (`JrZOvXHMr`).
