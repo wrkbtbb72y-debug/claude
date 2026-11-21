@@ -872,3 +872,23 @@ od dolnej kreski paska):
 - `/home-4`: instancja Navi `RQ8bBRkUD` ma wymuszoną wysokość 80 px → pasek tam się nie zmienił, układ bez zmian.
 - Przy kolejnej zmianie wysokości paska zmienić razem: przypięcie siatki, kursorNad, padding Hero, środek gradientów,
   top „View all” (przesunięcie rzędów = połowa różnicy wysokości paska).
+
+## Siatka zdjęć 4×4 na Desktopie `/` (2026-11-21)
+
+Prośba: zamiast 3 rzędów po 3 sześciany — 4 rzędy po 4.
+- Wcześniej (tego dnia) użytkownik sam zwiększył „Środek (łącznie)” 442 → **660 px** i dodał drugi pasek Navi na dole
+  strony (`hFDkJFCJO`, absolutnie, bottom 0).
+- **Kod** `SiatkaPerspektywy.tsx`: grupa „Grid” obsługuje teraz także **parzystą** liczbę „Kolumn w środku” (kontrolka
+  krok 1 zamiast 2). Nieparzysta → środek ekranu w środku kolumny (jak dotąd, rysunek identyczny); parzysta → przez środek
+  biegnie linia (`kN`, `kE` = 0,5 / 0, `kHi`, `kLo` zamiast dawnych `kM2`/`rM2`). Rzędy o stałej wysokości tak samo
+  (wysokość rzędu = Środek / liczba kolumn). Siatka zdjęć N×N przy parzystym N: `j0 = jc + ceil((N−1)/2)` (wcześniej floor),
+  to samo przy „Scal rzędy nad/pod”; „Bez linii ze środka” przy parzystym N pomija jedną linię w głąb ze skrzyżowania
+  w środku (zamiast 4 z narożników środkowego kwadratu).
+- **Desktop** (`OirTRcAEZ`): Grid → Kolumny w środku **4**; Zdjęcia → Kwadraty N×N **4**, **Powtarzaj wł.** (jest tylko
+  9 zdjęć na 16 kwadratów — TODO: 7 nowych zdjęć od użytkownika); filmy w tych samych miejscach (wiersz, kolumna):
+  film 5 → 6, film2 6 → 7, film3 4 → 5, film4 3 → 3. Środek 660 px bez zmian → kwadraty **165 px** (było 220).
+- **Tablet i Phone**: zostają 3×3 (nadpisania: Kolumny w środku 3, N×N 3, Powtarzaj wył., filmy 5/6/4/3) — 4 kolumny
+  nie mieszczą się tam w obecnej wielkości kwadratów. Do decyzji użytkownika.
+- Do sprawdzenia przez użytkownika: listy po bokach mają nadal 442 px wysokości (nie 660) — są wyśrodkowane, ale nie
+  wyrównane do rzędów; zdjęcie z hovera „Archer Magazine” liczone pod dawny środkowy rząd 3 × 147 px (przy 4×4 nie ma
+  środkowego rzędu). Na zrzucie Phone dolny pasek Navi `hFDkJFCJO` wypada w połowie ekranu (na siatce).
