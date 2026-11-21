@@ -5,7 +5,10 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
-### 2026-11-21 · navi-top: Contact ↔ EN / PL zamieniają się płynnie przy otwieraniu menu — ✅
+### 2026-11-21 · navi-top: Contact ↔ EN / PL zamieniają się płynnie przy otwieraniu menu — ❌ wycofane
+- **Wycofane tego samego dnia na prośbę Piotra** (robi własne zmiany): przywrócony stan sprzed animacji —
+  Contact i EN / PL znów tylko ukrywane (`visible`), bez przesunięć i własnych przejść; Contact w zamkniętym
+  pasku znów ma Pointer Events: none. Poniżej opis wycofanej wersji (do ewentualnego powrotu).
 - Inspiracja: nagranie Piotra (logo ↔ FR / EN: element wychodzący blednie i zjeżdża w dół, wchodzący po chwili
   pojawia się z góry).
 - `nav-contact` i `nav-lang` (to samo miejsce po prawej) nie są już ukrywane (`visible`), tylko animowane:
