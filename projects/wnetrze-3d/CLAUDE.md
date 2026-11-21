@@ -892,3 +892,23 @@ Prośba: zamiast 3 rzędów po 3 sześciany — 4 rzędy po 4.
 - Do sprawdzenia przez użytkownika: listy po bokach mają nadal 442 px wysokości (nie 660) — są wyśrodkowane, ale nie
   wyrównane do rzędów; zdjęcie z hovera „Archer Magazine” liczone pod dawny środkowy rząd 3 × 147 px (przy 4×4 nie ma
   środkowego rzędu). Na zrzucie Phone dolny pasek Navi `hFDkJFCJO` wypada w połowie ekranu (na siatce).
+
+## Dolny pasek z linkami społecznościowymi na `/` (2026-11-21)
+
+Prośba: kopię paska nawigacji, którą użytkownik wstawił na dół strony, przerobić na dolny pasek w stylu ze screena
+(4 równe pola z pionowymi liniami między nimi i linią u góry, wyśrodkowane wersaliki: INSTAGRAM / LINKEDIN / BEHANCE /
+DRIBBBLE; na screenie limonkowe tło — przeniesiony sam układ, w kolorach strony).
+- Kopia Navi `hFDkJFCJO` (absolutnie na dole breakpointu; na Phone wypadała w połowie ekranu) **usunięta**.
+- Nowy **„Dolny pasek”** `HadJ76UFf` w Hero `N06uDCvcg`: `nav` (aria-label „Media społecznościowe”), absolutnie
+  left/right/bottom 0, **56 px** (= górny pasek na Desktopie), zIndex 2, przezroczysty, linia górna 1 px tokenem
+  „Obrys” `G7JKeAILq` (jak dolna kreska Navi). 4 pola `1fr` (Instagram `P0OXcr50b`, LinkedIn `bLQSaH7CF`, Behance
+  `q6gCtjFZq`, Dribbble `d7silKFwI`), linia prawa 1 px w pierwszych trzech, tekst presetem „navi” `FBNRC0So5`
+  (Courier Prime 12 px, wersaliki). Ten sam na wszystkich breakpointach (na Phone mieści się).
+- **TODO: adresy profili** (Instagram, LinkedIn, Behance, Dribbble) — w projekcie nie ma żadnych; pola są na razie bez
+  linków. Po podaniu: `link.href` na polach + `linkStylePreset` na etykietach.
+- Siatka kończy się na górnej linii paska: `OirTRcAEZ` bottom 0 → **56 px** (wszystkie breakpointy); Hero padding dolny
+  0 → **56 px** (kolumny z listami wyśrodkowane na siatce); gradienty tła: Desktop 53,5% → **50%** (siatka 56–744 px,
+  symetrycznie), Tablet/Phone 55% → **51%** (siatka od 80 px); „Przycisk View all” (ukryty) −28 px: Desktop **675**,
+  Tablet/Phone **687**.
+- Linter: „Visible siblings… too close (−300)” na replikach paska (Tablet/Phone) — fałszywy alarm pomiaru replik,
+  zrzuty pokazują równe pola.
