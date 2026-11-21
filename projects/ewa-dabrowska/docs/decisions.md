@@ -5,6 +5,14 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-21 · Logo jako jeden plik SVG (kopia w navi-top) — ✅
+- Na prośbę Piotra luźna kopia logo w komponencie `navi-top` (ramka `Nav-logo` z 12 literami Mansalva, `sP1ezmbA0`)
+  zamieniona na **jeden kształt SVG**: ramka `Nav-logo` (`F5MtxN40v`, link „/”, aria-label „Ewa Dąbrowska, home”)
+  → w środku `logo-svg` (`PJH3rc6S2`). Kształty liter wzięte z fontu Mansalva (OFL) z dokładnie tymi samymi
+  obrotami, skalami, przesunięciami i pochyleniem −8° co w ramce; odchyłki < 1 px.
+- Plik źródłowy: `content/logo/ewa-dabrowska-logo-white.svg` (biały, 160×24 px).
+- Logo w wariantach paska (`fk9xGa13z`) nadal jest z liter — tej zamiany nie robiliśmy.
+
 ### 2026-11-21 · navi-top: Contact ↔ EN / PL zamieniają się płynnie przy otwieraniu menu — ❌ wycofane
 - **Wycofane tego samego dnia na prośbę Piotra** (robi własne zmiany): przywrócony stan sprzed animacji —
   Contact i EN / PL znów tylko ukrywane (`visible`), bez przesunięć i własnych przejść; Contact w zamkniętym
