@@ -837,3 +837,20 @@ połączenie); użytkownik wybrał **G — połączenie**. Warstwy w „Hero” 
   - „Tło — poświata” `kke_N3CR2` i „Tło — winieta” `IEc6Oe2_x`: środek gradientów 50% / 55% → **50% / 50%**.
 - Luźne warstwy z canvasu strony skopiowały się razem z nią; kopię „Tło — winieta” `rM1UIn9Mz` przesunięto na canvasie
   (left −2600), bo linter zgłaszał nakładanie się warstw.
+
+## Font jak na studiofreight.com — Courier Prime (`/`, 2026-11-21)
+
+Prośba: font na `/` „podobny do tego ze studiofreight.com”. Tam: **Publico Text Mono** (Commercial Type — szeryfowy
+monospace, cały drobny tekst) + **J.Jannon** (szeryf, tylko duże hasło). Na `/` jest tylko drobny tekst, więc odpowiednik
+Publico Text Mono z katalogu Framera: **Courier Prime** (400 / 700; brak 600 → nagłówki 700). Odstępy liter 0 (mono).
+- Presety zmienione w miejscu (używane tylko na `/` i `/home-4`, więc **`/home-4` też zmieniła font**): „Lista nagłówek”
+  `CNPDFVung` (700), „Lista akapit” `y2wkQleXW` (400), „navi” `FBNRC0So5` (był ABC Arizona Sans Condensed 300 → 400,
+  wielkie litery bez zmian).
+- „Lista” `dhBgkQbVl` jest też na `/all` → nie zmieniana; nowy preset **„Lista mono”** `f1IfIMiC6` (kopia „Listy”
+  w Courier Prime) podpięty w komponentach „Wiersz listy” `ZIOR8bv28` i „Wiersz listy ze zdjęciem” `NeuI0X8QN`
+  (oba tylko na `/` i `/home-4`).
+- Tekst bez presetów: „View all” `g94uExZhx` i ukryty nagłówek `OU8yqIDhs` + ich nadpisania na Tablecie/Phone.
+- Skutek: na Desktopie opis w prawej kolumnie („Images, motion and space”, kolumna 169 px) łamie się na 2 linie
+  (mono jest szerszy). Zostawione; do decyzji użytkownika (mniejszy rozmiar / szersza kolumna).
+- Cofnięcie: w presetach z powrotem PP Neue Montreal (600/400, odstęp −0,01em, cechy OT cv03/cv04/cv09/cv11/blwf),
+  navi — ABC Arizona Sans Condensed 300; w komponentach wierszy z powrotem „Lista”.
