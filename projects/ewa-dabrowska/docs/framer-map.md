@@ -90,17 +90,18 @@ jKwXMbO36  Desktop Large Primary (fill #000, stack vertical)
 ├─ zbBVXvrUI  nav-bar-scroll → xLcWXJD7r nav-bar-scroll-inner (Nav Bar)
 ├─ O63VKWwFo  footer-bar-fixed (Footer Bar)
 └─ GI46d7Pmp  Main
-   ├─ MbHe0i_sG  Hero            #hero      100vh, padding 60/40/0/40, tło token Night
+   ├─ MbHe0i_sG  Hero            #hero      100vh, tło token Night (warstwy uporządkowane 2026-11-21)
    │    xFXsEh5DM „Stwór 6” — zdjęcie na całe hero (absolute, piny 0/0/0/0, z-index 1, alt-text)
-   │    ycitzB0yn photo-dim — przyciemnienie: Ink, opacity 0,4, z-index 1 (nad zdjęciem, pod tekstem)
-   │    z2KrpmppH wrapper (z-index 2, max 1200) → hasło **wyśrodkowane na ekranie** (2026-11-20):
-   │    typo PRqOQDz7Q (teksty wg ręcznych zmian Piotra, stan 2026-11-20):
-   │    XWLFp0Xq3 eyebrow „a tender look beyond” (preset Hero Eyebrow `LXw2ZBp59`) · ZVLMQ7A1h bar-line ·
-   │    fSAxILuDe (h1) „Land art, sculpture, and sound”, preset Hero Statement `QNTM_UWmf`, max 960 px
-   │    **Sekwencja wejścia (wg Piotra):** najpierw hasło 0,3 s (Text Effect linia po linii: fade, 36 px w górę,
-   │    blur 6 px, 1,1 s, co 0,15 s) → potem **razem z paskiem nav (1,6 s)**: eyebrow (fade + 14 px w górę, 1 s)
-   │    i linia (fade + skala 0,2→1, 1 s). Przy zmianie opóźnienia paska (`xLcWXJD7r`) zmień też te dwa. · heading-02 Rqor1giCl („& Sculpture”) ukryty ·
-   │    stare „photo wrapper” H3TVvLc95 ukryte. Hero bez górnego paddingu (pasek nav jest nad nim).
+   │    ycitzB0yn photo-dim — przyciemnienie (Ink; opacity ustawiona przez Piotra), nad zdjęciem, pod tekstem
+   │    z2KrpmppH wrapper (z-index 2, max 1200) → PRqOQDz7Q typo:
+   │      cpclYQakr eyebrow-group → XWLFp0Xq3 hero-eyebrow „a tender look beyond” (Hero Eyebrow) + ZVLMQ7A1h bar-line
+   │      e0N8XfIys heading-01 → fSAxILuDe (h1) „Land art, sculpture, and sound” (Hero Statement, max 960 px)
+   │    **Sekwencja wejścia:** hasło 0,3 s (Text Effect linia po linii: fade, 36 px w górę, blur 6 px, 1,1 s,
+   │    co 0,15 s) → razem z paskiem nav (1,6 s): eyebrow (fade + 14 px w górę, 1 s) i linia (fade + skala
+   │    0,2→1, 1 s). Przy zmianie opóźnienia paska (`xLcWXJD7r`) zmień też te dwa.
+   │    B9kXdfngL scroll-arrow · QuXEKed3G socials (qJK7mwyTh Facebook, zztZovkXY Instagram)
+   │    Usunięte 2026-11-21 (wyłączone na wszystkich breakpointach): heading-02 „& Sculpture”, stare
+   │    „photo wrapper” z wyciętym zdjęciem rzeźby.
    ├─ a4blNq1t9  Projects-pasek sticky (59px) — vd9XkMmi0 „Explore projects”
    ├─ vwdTZARvA  Projects        #work (Scroll runway RPSCNyuOK)
    │    EBDMHlsbW intro „A multidisciplinary art…” · pky5JYXw5 Intro Subtext
