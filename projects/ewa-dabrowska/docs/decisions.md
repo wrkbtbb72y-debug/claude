@@ -5,6 +5,17 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-21 · navi-top: Contact ↔ EN / PL zamieniają się płynnie przy otwieraniu menu — ✅
+- Inspiracja: nagranie Piotra (logo ↔ FR / EN: element wychodzący blednie i zjeżdża w dół, wchodzący po chwili
+  pojawia się z góry).
+- `nav-contact` i `nav-lang` (to samo miejsce po prawej) nie są już ukrywane (`visible`), tylko animowane:
+  navi-open → Contact opacity 0 / Offset Y +10 px, EN / PL opacity 1 / 0; navi-closed → Contact opacity 1 / 0,
+  EN / PL opacity 0 / Offset Y −10 px. Przejścia na warstwach: Ease Out 0,3 s; element wchodzący z opóźnieniem 0,15 s.
+- Niewidoczny element ma Pointer Events: none (żeby nie łapał kliknięć). Contact w menu zamkniętym ma teraz
+  Pointer Events: auto (wcześniej none — nie dało się go kliknąć).
+- Przy zamykaniu ruch jest odwrócony (EN / PL odjeżdża w górę, Contact podjeżdża z dołu) — wersja „zawsze w dół”
+  wymagałaby dodatkowych wariantów.
+
 ### 2026-11-21 · Linki w menu: hover z „wjeżdżającym” tłem i dzielonym kolorem tekstu — ✅
 - Komponent `nav-primary-button` (`pB54bUj0P`, instancja w `navi-top` → `navi-open`): na najechanie od dołu wjeżdża
   ramka `wipe` (Paper, Absolute, pin L/R/B = 0, Overflow Clip, wysokość 0% → 100%), a w niej kopia tekstu (Night,
