@@ -5,6 +5,19 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-21 · navi-top: menu otwiera się jak „roleta” (wzór: benjamin-nespoulous.com) — 🟡 w toku
+- Wzór z nagrania Piotra: cały panel w kolorze tła **zjeżdża z góry** z treścią (stopka jedzie na krawędzi),
+  ostra krawędź, bez przenikania koloru. Ruch: wolny start, mocne przyspieszenie, miękkie hamowanie
+  (~0,8 s otwieranie, ~0,55 s zamykanie). Linki wysuwają się spod maski od dołu, po kolei, gdy panel prawie dojechał.
+- Kroki 1–5 zrobił Piotr: `menu-panel` (`OPG86_Pmg`, Absolute, piny L/R/B, 100vh, Night, z-index 0; w navi-closed
+  **Bottom 74 px** = panel schowany nad paskiem), pusta rozpórka `100vh` (`rYB7_toMi`) trzyma wysokość otwartego
+  menu, tło usunięte z wariantów. Przejścia: navi-open Bezier `0.8, 0, 0.2, 1` 0,8 s; navi-closed ta sama krzywa 0,55 s.
+- Krok 6 (Claude, **na pokaz** — Piotr może go usunąć i zrobić sam): każdy link w `links-100vh` opakowany w maskę
+  (`mask-work` `pp24mHNlQ`, `mask-2` `DAc3ac1EX`, `mask-3` `s5M6MGcR1`, `mask-4` `eIxos2ptA`; Overflow Clip).
+  W navi-closed instancje mają Offset Y 160 px; przejścia warstw: otwieranie Ease Out `0.22, 1, 0.36, 1` 0,6 s,
+  opóźnienia 0,55 / 0,61 / 0,67 / 0,73 s; zamykanie Ease In `0.5, 0, 0.75, 0` 0,3 s bez opóźnienia.
+  Kreska pod linkiem wyjeżdża razem z napisem (sam napis wymagałby zmiany w `nav-primary-button`).
+
 ### 2026-11-21 · Logo jako jeden plik SVG (kopia w navi-top) — ✅
 - Na prośbę Piotra luźna kopia logo w komponencie `navi-top` (ramka `Nav-logo` z 12 literami Mansalva, `sP1ezmbA0`)
   zamieniona na **jeden kształt SVG**: ramka `Nav-logo` (`F5MtxN40v`, link „/”, aria-label „Ewa Dąbrowska, home”)

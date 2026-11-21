@@ -72,6 +72,19 @@ Komponent (bez overlay, bez custom code). Root wariantu = `<nav>`, pionowy stack
 - W komponencie leży też ramka `GkUviYHV8` „OLD — stara wersja paska (nieużywana)” — kopia Piotra; Framer nie
   pozwala przenieść jej poza komponent. Można ją usunąć, gdy nie będzie potrzebna.
 
+## navi-top `TResx8GqO` — nowy pasek z menu „roletą” (2026-11-21)
+
+Na Home: instancja `OIeRrf3DF` (fixed, z-index 10, szerokość 1200 px). Warianty: **navi-open** `uSok_Ju8O`
+(primary, wysokość z rozpórki) i **navi-closed** `lmfEqZApa` (74 px). Oba bez tła, overflow clip.
+- `kNqO7Bcte` top-bar-container (absolute, góra, 74 px, z-index 1) — hamburger, logo, Contact / EN-PL, Navi-line.
+- `rYB7_toMi` „100vh” — pusta rozpórka (relative, 100vh); bez niej otwarte menu spada do 200 px.
+- `OPG86_Pmg` menu-panel (absolute L/R/B, 100vh, Night, z-index 0; navi-closed: Bottom 74 px) →
+  `CWJfR8V2e` links-100vh → maski `pp24mHNlQ`, `DAc3ac1EX`, `s5M6MGcR1`, `eIxos2ptA` z linkami
+  (work `OtV__FjxS`, nav-primary-button `irKeFJFBu`, `HjwH49EAE`, `N8wcphCcb`) + `NHjiomG5_` footer (absolute, dół).
+- Szczegóły animacji: `decisions.md` (2026-11-21, „roleta”).
+- ⚠ W komponencie leży luźna stara ramka „Desktop Open” (`o7uYvB9DP`); jej hamburger ma akcję Set Variant do
+  nieistniejącego wariantu (błąd w diagnostyce Framera) — do usunięcia razem z ramką.
+
 ## Home — breakpointy
 
 | Breakpoint | ID |
