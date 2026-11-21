@@ -12,11 +12,17 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 - Kroki 1–5 zrobił Piotr: `menu-panel` (`OPG86_Pmg`, Absolute, piny L/R/B, 100vh, Night, z-index 0; w navi-closed
   **Bottom 74 px** = panel schowany nad paskiem), pusta rozpórka `100vh` (`rYB7_toMi`) trzyma wysokość otwartego
   menu, tło usunięte z wariantów. Przejścia: navi-open Bezier `0.8, 0, 0.2, 1` 0,8 s; navi-closed ta sama krzywa 0,55 s.
-- Krok 6 (Claude, **na pokaz** — Piotr może go usunąć i zrobić sam): każdy link w `links-100vh` opakowany w maskę
-  (`mask-work` `pp24mHNlQ`, `mask-2` `DAc3ac1EX`, `mask-3` `s5M6MGcR1`, `mask-4` `eIxos2ptA`; Overflow Clip).
-  W navi-closed instancje mają Offset Y 160 px; przejścia warstw: otwieranie Ease Out `0.22, 1, 0.36, 1` 0,6 s,
-  opóźnienia 0,55 / 0,61 / 0,67 / 0,73 s; zamykanie Ease In `0.5, 0, 0.75, 0` 0,3 s bez opóźnienia.
-  Kreska pod linkiem wyjeżdża razem z napisem (sam napis wymagałby zmiany w `nav-primary-button`).
+- Krok 6 (Claude): **napis wysuwa się spod swojej kreski, kreski stoją**. Ruch jest w komponentach linków:
+  `nav-primary-button` i `work` dostały ramkę `text-mask` (Overflow Clip) wokół napisu i wariant **Hidden**
+  (`TUbLR9wld`, `b6EX11KgP`: napis Offset Y 110 px). W `navi-top` → navi-closed instancje linków mają wariant
+  Hidden, w navi-open domyślny. Przejścia na napisie: wejście Ease Out `0.22, 1, 0.36, 1` 0,45 s, opóźnienie
+  **0,6 s** (`work`) / **0,65 s** (pozostałe); wyjście (Hidden) Ease In `0.5, 0, 0.75, 0` 0,25 s bez opóźnienia.
+- Pierwsza wersja kroku 6 (maski wokół całych instancji w `navi-top`) nie działała — napisy w ogóle się nie
+  pojawiały: w navi-open nie było zapisanej wartości Offset Y, więc Framer nie miał do czego wracać (ta sama
+  pułapka co „0 → 0,01 px”). Zasada: wartość docelową przesunięcia zawsze wpisuj jawnie (0,01 px).
+- Ograniczenie Framera: przejścia nie da się podpiąć pod zmienną komponentu, więc każdy link z osobna nie może
+  mieć innego opóźnienia (stagger tylko `work` vs reszta). Pełny stagger = osobne warianty, na razie zbędne
+  (na nagraniu odstępy są minimalne).
 
 ### 2026-11-21 · Logo jako jeden plik SVG (kopia w navi-top) — ✅
 - Na prośbę Piotra luźna kopia logo w komponencie `navi-top` (ramka `Nav-logo` z 12 literami Mansalva, `sP1ezmbA0`)
