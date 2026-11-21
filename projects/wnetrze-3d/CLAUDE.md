@@ -854,3 +854,21 @@ Publico Text Mono z katalogu Framera: **Courier Prime** (400 / 700; brak 600 →
   (mono jest szerszy). Zostawione; do decyzji użytkownika (mniejszy rozmiar / szersza kolumna).
 - Cofnięcie: w presetach z powrotem PP Neue Montreal (600/400, odstęp −0,01em, cechy OT cv03/cv04/cv09/cv11/blwf),
   navi — ABC Arizona Sans Condensed 300; w komponentach wierszy z powrotem „Lista”.
+
+## Niższy pasek nawigacji na Desktopie `/` — 56 px (2026-11-21)
+
+Użytkownik zmienił w komponencie **Navi** `cAoTyKwTO` wariant Desktop `Pfq3SGMzj` z 80 na **56 px** (przyciski bez ramek).
+Tablet `DCLYzClFb` nadal 80 px, Phone `JEtPeR5s6` 56 px (jak dawniej). Claude dopasował Desktop `/` (wszystko liczone
+od dolnej kreski paska):
+- Siatka `OirTRcAEZ`: przypięcie górne 80 → **56 px** (górna linia kraty = dolna kreska paska);
+  „Także nad siatką” (`zdjecia.kursorNad`) 80 → **56**;
+- Hero `N06uDCvcg`: padding górny 80 → **56 px** (kolumny z listami dalej wyśrodkowane na siatce);
+- „Tło — poświata” `iYBKmeeMR` i „Tło — winieta” `QoQjkrz6V`: środek gradientów 55% → **53,5%**
+  (środek siatki (56 + 800) / 2 = 428 px; rzędy przesunęły się o 12 px w górę);
+- „Przycisk View all” `i02ZAUNY5`: top 715 → **703 px** (o 12 px w górę razem z rzędami). Uwaga: przycisk jest
+  **ukryty** (`visible: false`, zmiana użytkownika) — pozycja poprawiona na wypadek ponownego włączenia.
+- Tablet i Phone: te same właściwości **przypięte nadpisaniami do dawnych wartości** (siatka 80, padding 80, kursorNad 80,
+  gradienty 55%, View all 715) — wygląd bez zmian.
+- `/home-4`: instancja Navi `RQ8bBRkUD` ma wymuszoną wysokość 80 px → pasek tam się nie zmienił, układ bez zmian.
+- Przy kolejnej zmianie wysokości paska zmienić razem: przypięcie siatki, kursorNad, padding Hero, środek gradientów,
+  top „View all” (przesunięcie rzędów = połowa różnicy wysokości paska).
