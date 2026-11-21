@@ -11,7 +11,8 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
   pin Bottom 3 px, środek). Tekst zmienia kolor dokładnie na krawędzi tła (inspiracja: nagranie Piotra).
 - Warianty: **Variant 1** (Mouse Enter → Active) i **Active** (Mouse Leave → Variant 1), przejście Ease 0,4 s.
   Gesture-variant Hover zastąpiony interakcjami, bo tło nie zjeżdżało płynnie.
-- Instancja nie może mieć własnego efektu Hover (opacity 50% kolidował z wariantami) — usunięty 2026-11-21.
+- Instancja w menu ma własny efekt Hover (opacity 50%), który prawdopodobnie koliduje z wariantami (tło nie zjeżdża
+  płynnie) — Piotr usuwa go sam (2026-11-21).
 - Tekst „Work” jest na sztywno w obu kopiach; przy kolejnych linkach dodać zmienną String `Title` podpiętą do obu.
 
 ### 2026-11-20 · Logo identyczne we wszystkich wariantach paska — ✅
