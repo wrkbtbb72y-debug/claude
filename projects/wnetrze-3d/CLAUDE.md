@@ -912,3 +912,18 @@ DRIBBBLE; na screenie limonkowe tło — przeniesiony sam układ, w kolorach str
   Tablet/Phone **687**.
 - Linter: „Visible siblings… too close (−300)” na replikach paska (Tablet/Phone) — fałszywy alarm pomiaru replik,
   zrzuty pokazują równe pola.
+
+## Grid siatki jak grid strony — 3 + 4 + 3, środek wg wysokości (Desktop `/`, 2026-11-21)
+
+Prośba: komponent ma się zachowywać jak grid strony — 4 kolumny na środku z sześcianami, po 3 równe kolumny z każdej
+strony, skrajne krawędzie równo z krawędziami ekranu; zbiór sześcianów skaluje się z wysokością ekranu.
+- **Kod** `SiatkaPerspektywy.tsx`, grupa „Grid”: nowe **Środek wg wysokości** (`kolOdWys`) i **Wysokość środka**
+  (`kolWypeln`, 0,1–1, domyślnie 0,85; widoczna przy włączonym). Gdy wł.: łączna szerokość środkowych kolumn =
+  `kolWypeln` × wysokość komponentu (ograniczona, by boczne miały ≥ 10 px), a „Środek (łącznie)” jest ukryty i nieużywany.
+  Rzędy na środku są kwadratowe (szer. kolumny), skrajne rzędy dochodzą do krawędzi („Rzędy do krawędzi”).
+- **Desktop** (`OirTRcAEZ`): Padding boczny 40 → **0**, Kolumny po bokach 2 → **3**, Środek wg wysokości **wł.**,
+  Wysokość środka **0,89** (proporcja 660 / 744 px, którą użytkownik ustawił wcześniej; nad i pod sześcianami ok. 40 px).
+  Przy ekranie 1200 × 850: środek ≈ 657 px (kwadrat ≈ 164 px), boczne kolumny ≈ 90 px. „Środek (łącznie)” 660 został jako
+  zapas (używany po wyłączeniu).
+- Tablet/Phone: Grid wyłączony jak dotąd; przypięte dawne wartości (padding 40, boczne 2, wg wysokości wył.).
+- Listy po bokach nadal 442 px — wyśrodkowane, niezależne od wielkości sześcianów.
