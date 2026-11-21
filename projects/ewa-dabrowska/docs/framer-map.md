@@ -79,8 +79,11 @@ Na Home: instancja `OIeRrf3DF` (fixed, z-index 10, szerokość 1200 px). Wariant
 - `kNqO7Bcte` top-bar-container (absolute, góra, 74 px, z-index 1) — hamburger, logo, Contact / EN-PL, Navi-line.
 - `rYB7_toMi` „100vh” — pusta rozpórka (relative, 100vh); bez niej otwarte menu spada do 200 px.
 - `OPG86_Pmg` menu-panel (absolute L/R/B, 100vh, Night, z-index 0; navi-closed: Bottom 74 px) →
-  `CWJfR8V2e` links-100vh → maski `pp24mHNlQ`, `DAc3ac1EX`, `s5M6MGcR1`, `eIxos2ptA` z linkami
-  (work `OtV__FjxS`, nav-primary-button `irKeFJFBu`, `HjwH49EAE`, `N8wcphCcb`) + `NHjiomG5_` footer (absolute, dół).
+  `CWJfR8V2e` links-100vh → linki (work `OtV__FjxS`, nav-primary-button `irKeFJFBu`, `HjwH49EAE`, `N8wcphCcb`;
+  w navi-closed wariant **Hidden**) + `NHjiomG5_` footer (absolute, dół).
+- Komponenty linków: `nav-primary-button` `pB54bUj0P` (Variant 1 `Qlf_qkVYD`, Active `w0UmIuFfn`, Hidden
+  `TUbLR9wld`; maska napisu `ExbWSBbrb`, napis `IVn6CHTJH`) i `work` `GEthf1YJG` (Variant 1 `sQCK6LpXo`,
+  Variant 2 `NnH0iwuu7`, Hidden `b6EX11KgP`; maska `vg8Yr6_5b`, napis `qJIiq6o_2`).
 - Szczegóły animacji: `decisions.md` (2026-11-21, „roleta”).
 - ⚠ W komponencie leży luźna stara ramka „Desktop Open” (`o7uYvB9DP`); jej hamburger ma akcję Set Variant do
   nieistniejącego wariantu (błąd w diagnostyce Framera) — do usunięcia razem z ramką.
