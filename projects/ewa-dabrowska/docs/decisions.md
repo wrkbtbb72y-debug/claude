@@ -13,6 +13,9 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
   EN / PL opacity 0 / Offset Y −10 px. Przejścia na warstwach: Ease Out 0,3 s; element wchodzący z opóźnieniem 0,15 s.
 - Niewidoczny element ma Pointer Events: none (żeby nie łapał kliknięć). Contact w menu zamkniętym ma teraz
   Pointer Events: auto (wcześniej none — nie dało się go kliknąć).
+- ⚠ Pułapka Framera: wartość **0** nadpisana w wariancie podrzędnym (navi-closed) bywa gubiona — Contact dziedziczył
+  przesunięcie +10 px z navi-open i był przesunięty w dół w zamkniętym pasku. Dlatego w navi-closed Contact ma
+  Offset Y **0,01 px** (niewidoczne). Nie zmieniać na 0.
 - Przy zamykaniu ruch jest odwrócony (EN / PL odjeżdża w górę, Contact podjeżdża z dołu) — wersja „zawsze w dół”
   wymagałaby dodatkowych wariantów.
 
