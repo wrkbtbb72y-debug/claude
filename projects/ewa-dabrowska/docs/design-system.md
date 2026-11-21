@@ -80,6 +80,7 @@ ABC Arizona Mix Condensed **Unlicensed Trial**, Syne, Inter.
 | Footer Bar | `CZImlwXQG` | Desktop/Phone × Hidden/Visible | Stały pasek na dole (pojawia się przy scrollu) |
 | Intro Subtext | `dLnxv11ux` | 1, 2 | Podmieniany tekst w intro (blend „difference”) |
 | Read More Underline | `WMRFPcODi` | Hidden, Drawn | Animowane podkreślenie „Read more” |
+| nav-primary-button | `pB54bUj0P` | Variant 1, Active (Mouse Enter / Leave) | Link w otwartym menu; hover: tło `wipe` wjeżdża od dołu, tekst zmienia kolor na krawędzi (zob. decisions.md 2026-11-21) |
 
 Zewnętrzne: **Lenis** (smooth scroll), **Video** (np. „wszechkarmicielka-video”),
 override **withLinksAfterSection**.

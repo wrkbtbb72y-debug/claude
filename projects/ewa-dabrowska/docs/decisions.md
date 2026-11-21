@@ -5,6 +5,15 @@ Status: ✅ przyjęte · 🟡 propozycja (czeka na akceptację) · ❌ odrzucone
 
 ---
 
+### 2026-11-21 · Linki w menu: hover z „wjeżdżającym” tłem i dzielonym kolorem tekstu — ✅
+- Komponent `nav-primary-button` (`pB54bUj0P`, instancja w `navi-top` → `navi-open`): na najechanie od dołu wjeżdża
+  ramka `wipe` (Paper, Absolute, pin L/R/B = 0, Overflow Clip, wysokość 0% → 100%), a w niej kopia tekstu (Night,
+  pin Bottom 3 px, środek). Tekst zmienia kolor dokładnie na krawędzi tła (inspiracja: nagranie Piotra).
+- Warianty: **Variant 1** (Mouse Enter → Active) i **Active** (Mouse Leave → Variant 1), przejście Ease 0,4 s.
+  Gesture-variant Hover zastąpiony interakcjami, bo tło nie zjeżdżało płynnie.
+- Instancja nie może mieć własnego efektu Hover (opacity 50% kolidował z wariantami) — usunięty 2026-11-21.
+- Tekst „Work” jest na sztywno w obu kopiach; przy kolejnych linkach dodać zmienną String `Title` podpiętą do obu.
+
 ### 2026-11-20 · Logo identyczne we wszystkich wariantach paska — ✅
 - Problem: litery logo „rozlatywały się” przy wejściu paska (zmiana wariantu). Wzorzec = logo Piotra w wariancie
   Desktop White (`iyXc2Haid`: ramka 203×38 px, litery ułożone swobodnie, pochylenie −8°) — **nie zmieniać**.
