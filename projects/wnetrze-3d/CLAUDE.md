@@ -927,3 +927,9 @@ strony, skrajne krawędzie równo z krawędziami ekranu; zbiór sześcianów ska
   zapas (używany po wyłączeniu).
 - Tablet/Phone: Grid wyłączony jak dotąd; przypięte dawne wartości (padding 40, boczne 2, wg wysokości wył.).
 - Listy po bokach nadal 442 px — wyśrodkowane, niezależne od wielkości sześcianów.
+- 2026-11-21 (później) — **liczba bocznych kolumn sama się dobiera**: nowa kontrolka Grid **„Boczne jak środkowe”**
+  (`kolBoczneAuto`; gdy wł., „Kolumny po bokach” jest ukryte). Z każdej strony tyle kolumn (floor lub ceil z
+  miejsca / szer. środkowej), by ich szerokość była **najbliższa** szerokości kolumny z sześcianami; skrajne krawędzie
+  dalej równo z krawędzią ekranu. Desktop `/`: **wł.** (Tablet/Phone przypięte: wył.). Przykłady (ekran → kolumna
+  środkowa, boczne): 1200×850 → 164, 2 × 136; 1440×900 → 175, 2 × 185; 1680×1050 → 209, 2 × 211; 1920×1080 → 215,
+  3 × 176; 2560×1440 → 295, 2 × 345.
