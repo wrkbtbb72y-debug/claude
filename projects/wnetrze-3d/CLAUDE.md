@@ -388,7 +388,7 @@ Użytkownik zbudował to sam w komponencie (bez kodu); Claude poprawił błędy.
 ## Siatka perspektywy — układ kontrolek (od 2026-11-18)
 
 Na prośbę użytkownika („za dużo kontrolek, ciężko się połapać”) wszystkie kontrolki `SiatkaPerspektywy.tsx` są w grupach,
-w tej kolejności: **Kamera i przestrzeń** (`kamera`: horyzont, punkt zbiegu, kwadraty na wysokość, wielkość sześcianu,
+w tej kolejności: **Kamera i przestrzeń** (`kamera`: horyzont, punkt zbiegu, zbieg za kursorem + jego ustawienia, kwadraty na wysokość, wielkość sześcianu,
 głębia, zbliżenie przy scrollu, ruch w głąb) → **Linie** (`linie`: kolor, grubość, krycie, przerwy, tempo zaniku,
 miękkość granic) → **Linie wokół sześcianów** (`wokol`, od 2026-11-19) → Nad horyzontem → Pod horyzontem → Linie w głąb → Bliskie linie → Tajemnica → **Świetliki podróżujące**
 (`swietliki`: poziome/pionowe/w głąb + kierunki, długość światła, prędkość, dystans, gaśnięcie, rozświetlenie, kolor
@@ -414,6 +414,22 @@ miękkość granic) → **Linie wokół sześcianów** (`wokol`, od 2026-11-19) 
   potem tak samo równo spada do 0 (trasa = 2 × dystans) — pojawianie tak stopniowe jak gaśnięcie, bez nagłego rozbłysku.
 - **Jednakowa trasa poziomych i pionowych** (2026-11-18): „Dystans biegu” liczony od **wysokości komponentu** dla obu rodzajów
   (wcześniej od długości linii, więc poziome — dłuższe linie — jechały dłużej). Świetliki w głąb: nadal od długości linii.
+
+### Punkt zbiegu za kursorem (2026-11-21)
+
+Prośba: punkt zbiegu ma się przesuwać w prawo, gdy kursor jest w prawej części ekranu, i w lewo — w lewej; z kontrolkami
+i możliwością wyłączenia.
+- `SiatkaPerspektywy.tsx`, grupa „Kamera i przestrzeń”, zaraz pod „Punktem zbiegu”: **Zbieg za kursorem** (`kamera.zbiegKursor`,
+  wł./wył., domyślnie wył.), a gdy włączone: **Zakres ruchu** (`zbiegZakres`, 0–0,5 szerokości komponentu w każdą stronę,
+  domyślnie 0,08), **Czas reakcji** (`zbiegCzas`, s, wygładzanie, domyślnie 0,8), **Kursor względem** (`zbiegOdn`: „Ekranu”
+  `ekran` — domyślnie, środek okna dzieli lewo/prawo / „Komponentu” `komponent`), **Kierunek** (`zbiegKierunek`: „Za kursorem”
+  `za` / „Przeciwnie” `przeciw`).
+- Przesunięcie = Zakres × szerokość × położenie kursora (−1 lewa krawędź … 0 środek … +1 prawa), liniowo, płynnie.
+  Kursor opuszcza stronę → punkt zbiegu wraca na miejsce. Tylko mysz/pióro (dotyk — bez efektu); w edytorze i przy
+  ograniczonym ruchu wyłączone, więc zrzuty Framera wyglądają jak dotąd — **sprawdzać w podglądzie**.
+- Przesuwa się `vx` (więc też gwiazdy z „Tła”, logo 3D i Wnętrze 3D „w siatce” przez `entry.cam`); horyzont stoi.
+- Na `/` (`OirTRcAEZ`) włączone: 0,08 / 0,8 s / Ekranu / Za kursorem (Tablet/Phone dziedziczą). `/home-2`, `/home-3`,
+  `/home-4` bez zmian (wyłączone).
 
 ### Linie wokół sześcianów (2026-11-19)
 
