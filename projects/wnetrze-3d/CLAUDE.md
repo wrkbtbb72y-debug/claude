@@ -1011,3 +1011,7 @@ symetrycznym do tekstu po prawej („Images, motion and space”) i usunąć wsz
   `film5Tempo`) na wzór filmu 4. Desktop `/`: film5 w kwadracie **12** (bryła `11-12:12` pokazuje treść kwadratu 12),
   alt „Animacja: czarny napis KANAL na czerwonym tle”. Film wczytuje się już w edytorze (czerwona klatka z napisem).
 - Uwaga: to materiał z case study innego studia (Base Design, „Kanal”) — użytkownik decyduje, czy może być na stronie.
+- 2026-11-22 — **„Tylko rzędy środka” bez linii brzegowych**: użytkownik zgłosił na Desktopie (podgląd 1322 × 800)
+  „drugą poziomą kreskę pod górną kreską” — to była górna linia pasa 4 rzędów (przycięcie miało zapas ±1 px, więc linie
+  brzegowe pasa były widoczne; to samo na dole nad dolnym paskiem). Teraz przycięcie `inset(ceil(rT + lw/2 + 1) …
+  ceil(h − rB + lw/2 + 1))` — górna i dolna linia pasa poza przycięciem; pionowe linie kończą się na krawędzi pasa.
