@@ -1109,3 +1109,7 @@ Prośba: przenieść makietę strony do Figmy (szer. 1200 px), **statycznie** �
   jest przycinana do limitu, a boczne kolumny się poszerzają (krawędzie dalej równo z ekranem). Desktop `/`: **4**.
   Przykłady (kolumna środkowa = (wys. − 112) / 6): 1200×850 → 3 × 118; 1920×1080 → 4 × 159; 1920×800 → było 6, teraz
   4 × 182; 2560×1080 → było 6, teraz 4 × 239. Tablet/Phone: „Boczne jak środkowe” wył. — bez zmian.
+- 2026-11-22 — **pionowe kreski nad i pod bryłami z powrotem**: użytkownik (szeroki ekran) zgłosił brak pionowych linii
+  w rzędach nad i pod bryłami. Przyczyna: „Scal rzędy nad/pod zdjęciami” (`zdjecia.scalNad` 1600) — przy szerokości
+  > 1600 px te rzędy łączyły się w jeden prostopadłościan bez wewnętrznych krawędzi (w edytorze 1200 px niewidoczne).
+  Desktop `/`: **`scalNad` 0** (nigdy). Tablet/Phone mają 1600, ale są węższe — bez znaczenia.
