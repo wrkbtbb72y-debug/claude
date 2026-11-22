@@ -952,3 +952,8 @@ strony, skrajne krawędzie równo z krawędziami ekranu; zbiór sześcianów ska
     nie przesuwa zdjęć w pozostałych kwadratach (bez scalania wynik identyczny; przy „szachownicy” nadal wg kolejności).
   - Desktop `/`: `pary`, Treść 1. bryły **2**, Treść 2. bryły **3** (film4 „jslack”, który był w 3. kwadracie).
     Tablet/Phone (3×3): przypięte `brak`.
+- 2026-11-22 — **ten sam film w dwóch kwadratach**: prośba — w dolnym rzędzie, 3. sześcian od lewej (zielone zdjęcie)
+  ma pokazywać film z 2. sześcianu w 2. rzędzie. Wszystkie 4 filmy były zajęte, więc nowe kontrolki **„Film (2/3/4)
+  także w kwadracie”** (`filmTez`, `film2Tez`, `film3Tez`, `film4Tez`; 0 = brak, widoczne, gdy film jest ustawiony).
+  Desktop `/`: `filmTez` **15** (film „meatharvest-jslack”, który gra też w kwadracie 6). Tablet/Phone 3×3 — kwadratu 15
+  nie ma, bez zmian.
