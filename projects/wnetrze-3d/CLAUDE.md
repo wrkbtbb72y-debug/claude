@@ -17,6 +17,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   (w kodzie `vx`, `vy` / `entry.cam`; położenie ustawiają kontrolki „Punkt zbiegu” = X i „Horyzont” = Y). Na `/` leży przy
   dolnej krawędzi siatki (Horyzont 0). Używać tej nazwy w rozmowie i notatkach.
 
+## Marka NUMINO (ustalone z użytkownikiem 2026-11-22)
+
+- **NUMINO** to marka (studio) budująca **branding dla firm oraz organizacji kultury i sztuki**.
+- Tekst do opisu marki (od użytkownika, dosłownie): **„25 years of building brands with cultural impact”**.
+- Używać tego przy pisaniu treści strony (hasła, opisy, meta). Innych faktów o marce nie dopisywać bez potwierdzenia.
+
 ## O projekcie (brief w skrócie)
 
 Jednoekranowa aplikacja: trójwymiarowe, puste wnętrze o dużej powierzchni i wysokiej kondygnacji,
