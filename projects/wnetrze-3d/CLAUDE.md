@@ -1061,3 +1061,15 @@ Prośba: przenieść makietę strony do Figmy (szer. 1200 px), **statycznie** �
   na oryginały (wypełnienie przodu i ścian bocznych). Filmy pokazane jako stopklatka ze zrzutu; film „jslack” (górny
   prawy prostopadłościan) w edytorze Framera się nie wczytuje → w Figmie szara zaślepka z podpisem „FILM · JSLACK.MP4”.
 - Alt-teksty zdjęć zostają we Framerze (Figma nie ma pola alt).
+
+### Przyciemnienie przodu brył na hover (`/`, 2026-11-22)
+
+- Prośba: przednia ściana brył ze zdjęciami/filmami po najechaniu kursorem traci przyciemnienie z 0,9 do 0,5.
+- **Kod** `SiatkaPerspektywy.tsx`, grupa „Zdjęcia w kwadratach”: nowa kontrolka **„Przyciemnienie na hover”**
+  (`zdjecia.przyciemnienieHover`, 0–1, domyślnie 0). Przednia ściana płynnie przechodzi od „Przyciemnienia” do tej wartości
+  w tempie powiększenia na hover („Czas powiększenia” 0,4 s / „Czas powrotu” 0,9 s; postęp `hoverState.grow`). Ściany
+  boczne bez zmian („Przyciemnienie ścian”). Gdy wartości brak — jak „Przyciemnienie” (inne instancje: wszystkie mają 0/0).
+- Desktop `/` (`OirTRcAEZ`): Przyciemnienie **0,9** (ustawione wcześniej przez użytkownika), na hover **0,5**.
+  Tablet/Phone przypięte: 0 / 0 (dotyk nie ma hovera — inaczej zdjęcia byłyby stale ciemne).
+- W edytorze Framera hover nie działa (widać stan spoczynku) — sprawdzać w podglądzie.
+- Makieta w Figmie (`310:2`) pokazuje zdjęcia bez przyciemnienia — nie zmieniana.
