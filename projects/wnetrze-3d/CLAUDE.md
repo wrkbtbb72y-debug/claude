@@ -1177,3 +1177,24 @@ w górę i jednocześnie znika do 0%, nowy wlatuje od dołu. Użytkownik: „jak
   klatki 0 = stan animacji się nie przesuwa; `step = clamp(dt, 0, 0.05)` — bez dzielenia przez dt).
 - Nie da się usunąć: przejście przez granicę breakpointów (1200 px, Desktop ↔ Tablet) to inna instancja komponentu —
   Framer ją przełącza (nowe ustawienia siatki, 4×4 ↔ 3×3), zdjęcia doczytują się z pamięci przeglądarki.
+
+## Dolny pasek jako kolejna sekcja, która przy przewijaniu zakrywa siatkę (`/`, 2026-11-22)
+
+Prośba: dolny pasek ma być kolejną sekcją strony — na starcie wystaje tyle, co dotąd pasek (56 px), a po przewinięciu
+w dół zakrywa całą siatkę z bryłami.
+- **„Main”** `wUYfTPOi0` (poziomy stos z Hero): `position: sticky`, top 0, zIndex 0 — Hero zostaje w miejscu.
+- **„Sekcja — dolny pasek”** `HadJ76UFf` (dawny „Dolny pasek”): przeniesiona z Hero do breakpointu, zaraz po „Main”;
+  relative, 100% × **100vh**, tło token „Tło”, zIndex 1, **translateY −56 px** (wystaje 56 px nad dół Hero), padding
+  56 / 0 / 56 / 0 (jak Hero — dzięki temu kolumny i „Miarka” dalej dają środkowemu polu szerokość „middle”).
+  Pola Instagram / YouTube (`q6gCtjFZq`) / Dribbble: absolutnie **top −56 px** w kolumnach = górny pas sekcji,
+  linia górna 1 px. „Wypełnienie pod sekcją” `CHSp1GVo3` (absolutnie bottom −56 px, 56 px, tło) zakrywa pas, który
+  translateY zostawia na samym dole strony. Reszta sekcji na razie pusta (miejsce na treść).
+- Tablet/Phone: dawne przypięcia paska (56 px, padding 0, pola bottom 0) zresetowane → to samo zachowanie
+  (Kolumna Behance 1fr, Miarka ukryta — zostają).
+- Nawigacja (Navi, absolutnie u góry breakpointu) przewija się razem ze stroną — nie jest przyklejona.
+- **Kod** `SiatkaPerspektywy.tsx`: siatka słucha myszy na całym oknie, więc pod zakrywającą sekcją bryły reagowałyby
+  na hover/klik. Nowe `covered(e)`: od elementu pod kursorem w górę do wspólnego przodka z siatką — jeśli po drodze
+  jest element z kolorem tła (nie przezroczysty, nie opacity 0), siatka traktuje kursor jak poza nią i ignoruje klik.
+- Na canvasie strony przesunięte o 800 px w dół luźne elementy pod Desktopem (Desktop urósł do 2 × 100vh):
+  pionowe kreski `j482y2GEM`, `lbTirTotK` i teksty `aaIjkvQMN`, `N7RwZG5ma` (te dwa nachodziły na siebie już wcześniej).
+- Przewijania nie widać w edytorze — sprawdzać w podglądzie.
