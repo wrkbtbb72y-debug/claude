@@ -933,3 +933,8 @@ strony, skrajne krawędzie równo z krawędziami ekranu; zbiór sześcianów ska
   dalej równo z krawędzią ekranu. Desktop `/`: **wł.** (Tablet/Phone przypięte: wył.). Przykłady (ekran → kolumna
   środkowa, boczne): 1200×850 → 164, 2 × 136; 1440×900 → 175, 2 × 185; 1680×1050 → 209, 2 × 211; 1920×1080 → 215,
   3 × 176; 2560×1440 → 295, 2 × 345.
+- 2026-11-22 — **siatka na wysokość 4 rzędów**: użytkownik nie chciał wąskich pasów kraty (z liniami w głąb) nad
+  i pod 4 rzędami sześcianów. Desktop `/`: „Wysokość środka” (`kolWypeln`) 0,89 → **1** — 4 rzędy wypełniają cały
+  komponent (od kreski górnej nawigacji do kreski dolnego paska). Sześciany ok. 12% większe (przy 1200 × 850: kolumna
+  ≈ 184 px; po bokach 1 kolumna ≈ 231 px z każdej strony — „Boczne jak środkowe” wybrało 1 zamiast 2). Alternatywa,
+  gdyby sześciany miały zostać mniejsze: zmniejszyć sam komponent (przypięcia top/bottom) — wtedy nad/pod siatką puste tło.
