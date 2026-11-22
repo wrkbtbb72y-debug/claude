@@ -1087,3 +1087,11 @@ Prośba: przenieść makietę strony do Figmy (szer. 1200 px), **statycznie** �
   kwadraty. Przy 1200 × 850: rząd/kolumna **123 px** (było ~164), środek 492 px, boczne „Boczne jak środkowe” 3 × 118 px.
   Przy innej wysokości ekranu nadal kwadraty (wszystko liczone z wysokości). Zmiana z 4/6 na inną wartość rozjedzie
   proporcje skrajnych rzędów.
+- 2026-11-22 — **„middle” `UK5KtZeEu` = szerokość środka siatki przy skalowaniu**: prośba — przekładka w Hero (opacity 0,
+  trzyma szerokość środkowej kolumny) ma mieć szerokość białej kreski pod sześcianami (4 kwadraty) także przy zmianie
+  rozmiaru okna. Środek siatki = „Wysokość środka” 0,6667 × wysokość komponentu (= wysokość Hero − 56 − 56), więc
+  Desktop: **height 100%** (wnętrze Hero bez paddingu = wysokość siatki) + **aspectRatio 0,6667** (zablokowane
+  proporcje; `width` 100px to tylko wartość wejściowa — szerokość liczy się z wysokości). Przy 1200 × 800: 458 px,
+  x 371–829 = kreska. (Wcześniej użytkownik ustawił ręcznie 611 px.) Framer odrzuca aspectRatio przy szerokości „auto”.
+  Tablet/Phone przypięte: 611 px / height auto (wygląd bez zmian).
+  Przy zmianie „Wysokości środka” w siatce zmienić też aspectRatio „middle” na tę samą wartość.
