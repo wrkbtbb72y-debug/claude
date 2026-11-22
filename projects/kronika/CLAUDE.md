@@ -75,7 +75,7 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „search” `gAvqbQX8m`); wiersz pod hero `C3RRpKDkJ` (przełącznik „Obiekty / Kolekcje” `E0XHTw2QL` + ramka
   informacyjna `wa_CqtzF1` z linkiem „Zarejestruj konto” `muxmYNClL` → `/moje-konto`); „main” `zOmqRBR29`
   (nagłówek „Kolekcje publiczne” = instancja „tytuł sekcji”); „Pasek wyników” `LdQyL8mYK` (licznik, „Sortowanie”
-  `LktU3No1N`, „Przełącznik widoku” `xrG4ybpUO` krycie 40 %); siatka CMS „Collections grid” `AIctD0gIv`
+  `LktU3No1N`, „Przełącznik widoku” `xrG4ybpUO` krycie 50 %); siatka CMS „Collections grid” `AIctD0gIv`
   (kolekcja `ieFZEvO29`; 4 / 3 / 2 / 1 kolumny, odstęp 16); „Pagination section”. Zmienna strony „Stan
   Wyszukiwania” (`RzifO176z`): 0 = przed wyszukaniem (start), 1 = po wyszukaniu (blok „Wynik wyszukiwania”
   `gX5UFBu0f` i tytuł „Pozostałe”).
@@ -84,9 +84,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 
 ## Stałe zasady projektowe (Figma)
 
-- **Stan Disabled / nieaktywny przycisku = krycie 40 %** całego elementu (bez zmiany kolorów).
+- **Stan Disabled / nieaktywny przycisku = krycie 50 %** całego elementu (bez zmiany kolorów).
   Dotyczy wszystkich przycisków, także przełączników (np. „Przełącznik widoku” Kafelki / Lista).
-  Potwierdzone przez użytkownika 2026-11-17 i 2026-11-20.
+  Zmiana z 40 % na 50 % — decyzja użytkownika 2026-11-22 (wcześniej 40 %, potwierdzone 2026-11-17 i 2026-11-20).
 
 ## Ustalenia i decyzje
 
@@ -909,6 +909,20 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   - Diagnostyki, które **były wcześniej** i nie są ruszane: akcje „Set Variable” w ukrytym „Search row”
     odwołują się do usuniętej zmiennej `RAB75BF1M`; „tytuł sekcji” na Tablecie i Mobile ma wariant „1440”
     (linter sugeruje Tablet / Phone); nakładanie się ramek na canvasie.
+
+- 2026-11-22 — **Przyciski nieaktywne: krycie 40 % → 50 %** w Figmie i we Framerze (prośba użytkownika; zasada
+  w „Stałe zasady projektowe” zaktualizowana). Przeszukane wszystkie bieżące strony Figmy (bez stron ❌ i spod
+  „NIEAKTUALNE”, bez stron ikon / grafik / e-maili). Zmienione **50** elementów w Figmie:
+  - „Buttons” (`5360:39838`): „Button – disabled” ×4, „para” (Anuluj / Zapisz), przykłady w „Specyfikacja
+    przycisków” (Edytuj, Dodaj obiekt, Rozmiar czcionki), wzorzec „Przycisk Dodaj do kolekcji” Styl=W ramce,
+    Stan=Nieaktywny (`8981:8170`);
+  - „linki i tertiary” (`9258:24783`): Usuń / Publikuj / Ukryj (3);
+  - „3. Zasoby/Obiekty”: 13 × „Przełącznik widoku” + instancja „Dodaj do kolekcji” w ramce komponentów
+    (`8988:8273`, krycie przejęła ze wzorca);
+  - „4. Zasoby/Kolekcje”: 12 × „Przełącznik widoku”;
+  - „9. Zarządzanie obiektami” (`5239:35351`): Usuń / Publikuj / Ukryj ×4 (12).
+  Pominięte: ramka „OLD MOBILE” (`1132:8612`, „7. Moje konto”) — to nie przycisk. Framer: „Przełącznik widoku”
+  na stronie „Kolekcje” (`xrG4ybpUO`, wszystkie breakpointy) — jedyny element z kryciem 40 % w projekcie.
 
 ## Do zrobienia
 
