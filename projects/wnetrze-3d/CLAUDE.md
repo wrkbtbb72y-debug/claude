@@ -1138,3 +1138,22 @@ w górę i jednocześnie znika do 0%, nowy wlatuje od dołu. Użytkownik: „jak
 - Nowa bryła / zmiana „Scalonych brył” → dodać wariant „Kwadrat N” w obu komponentach.
 - Działa tylko w podglądzie / na stronie (edytor pokazuje „Domyślny”). Tablet/Phone: kolumny z napisami ukryte.
 - Przy okazji (zmiana użytkownika, nie Claude): w „Dolnym pasku” są teraz 3 pola (bez LinkedIn) i bez pionowych kresek.
+
+### Dolny pasek: pole „Behance” zawsze tak szerokie jak „middle” (Desktop `/`, 2026-11-22)
+
+- Stan wyjściowy (zmiany użytkownika): „Dolny pasek” `HadJ76UFf` ma 3 pola 1fr — Instagram `P0OXcr50b`, Behance
+  `q6gCtjFZq`, Dribbble `d7silKFwI` (LinkedIn usunięty), bez pionowych kresek.
+- Prośba: Behance zawsze szerokości „middle” `UK5KtZeEu` (= 0,6667 × wys. siatki, liczona z proporcji). Pasek ma stałe
+  56 px, więc proporcje nie mogły działać wprost → pasek **powtarza układ Hero**:
+  - „Dolny pasek”: absolutnie na całe Hero (top/bottom 0, height 100%), padding **56 / 0 / 56 / 0** jak Hero,
+    overflow visible, `pointerEvents: none`, bez obramowania.
+  - 3 kolumny (height 100% = wys. siatki): „Kolumna Instagram” `gRmkYEklD` 1fr, **„Kolumna Behance” `NzRVWExTS` width
+    auto** z niewidoczną **„Miarką szerokości (jak middle)” `HsHjMxtHI`** (height 100%, aspectRatio 0,6667 — dokładnie
+    jak „middle”), „Kolumna Dribbble” `HOPHWE6sN` 1fr.
+  - Pola przeniesione do kolumn: absolutnie left/right 0, **bottom −56 px**, 56 px wysokości (czyli w dolnym pasie
+    strony), linia górna 1 px tokenem „Obrys” w każdym polu, `pointerEvents: auto`.
+  - Przy 1200 × 800: Behance 458 px, x 371–829 = „middle”.
+- Proporcje są na „Miarce”, nie na kolumnie: wyzerowanie `aspectRatio` w replice nie działa (dziedziczy się), a ukrycie
+  miarki działa. Tablet/Phone: pasek przypięty (top null, height 56, padding 0), Kolumna Behance 1fr, Miarka ukryta,
+  pola bottom 0 → 3 równe pola jak wcześniej.
+- Przy zmianie „Wysokości środka” siatki zmienić aspectRatio także w Miarce (oprócz „middle”).
