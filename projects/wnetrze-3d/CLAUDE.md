@@ -1095,3 +1095,11 @@ Prośba: przenieść makietę strony do Figmy (szer. 1200 px), **statycznie** �
   x 371–829 = kreska. (Wcześniej użytkownik ustawił ręcznie 611 px.) Framer odrzuca aspectRatio przy szerokości „auto”.
   Tablet/Phone przypięte: 611 px / height auto (wygląd bez zmian).
   Przy zmianie „Wysokości środka” w siatce zmienić też aspectRatio „middle” na tę samą wartość.
+- 2026-11-22 — **przyciemnienie kraty pod bocznymi napisami**: prośba — delikatnie, stopniowo przyciemnić linie pod
+  „25 years building brands” i „Images, motion and space”, by mniej nakładały się na tekst. (Użytkownik wcześniej
+  uprościł kolumny: tekst stoi bezpośrednio w „L” `HD2wSnn92` / „R” `tRvpBEufj`, 371 × 442 px przy 1200.) W każdej
+  dodana jako pierwsze dziecko ramka **„Przyciemnienie pod tekstem”** (L `CSnsXi_dD`, R `Ea8uxk5wi`): absolutnie na całą
+  kolumnę, `pointerEvents: none`, `ariaHidden`, wypełnienie `radial-gradient(46% 15% at 50% 50%, rgba(11,13,16,0.62) 0%,
+  rgba(11,13,16,0.42) 45%, rgba(11,13,16,0) 100%)` (kolor Tła; ok. 170 × 64 px promienia). Linie pod tekstem ~40% słabsze,
+  zanikanie płynne. Uwaga: Framer zamienia px w promieniach gradientu na % — podawać od razu w %. Mocniej/słabiej: zmienić
+  krycie 0,62 / 0,42; szerzej: pierwszy promień.
