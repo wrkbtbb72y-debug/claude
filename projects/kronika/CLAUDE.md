@@ -847,6 +847,19 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   381×254, 358×238,67). Wysokość kafelków Hug. Makiety nie nachodzą na sąsiednie. Nie ruszano: kopii
   zapasowej (odłączone karty) ani list kolekcji na stronie „4. Zasoby/Kolekcje” (tam nadal 12).
 
+- 2026-11-22 — **Figma: odstępy między kafelkami 16 px — także w Kolekcjach** (prośba użytkownika) — strona
+  „4. Zasoby/Kolekcje” (`6335:42234`), wszystkie **20** list (12 → **16** w poziomie i pionie):
+  - **15 list „Collection tile”**: rząd aktualny DL `9199:30116` (4 kol., 321 → **318**), DS `9199:30414`
+    (3 kol., 309,33 → **306,666**), Tablet `9199:30712` (2 kol., 383 → **381**), Mobile `9199:31015`
+    (pionowa lista, kafelki Fill 366 — tylko odstęp); stary rząd `8175:4930` / `8175:8483` / `8175:9591` /
+    `8175:10446`; „Kolekcje publiczne - kafelki” 1444 `6335:42571`, 1446 `9228:100615`, 1024 `6335:43060`,
+    Tablet 810 `6335:43439`, Mobile 390 `6335:43672`; ramki „Frame 427319993” `9228:101444` i `9317:45404`
+    (2 kafelki). Listy 3-kolumnowe na 1320: 432 → **429,333**.
+  - **5 list „Object tile”** (kopie makiet Obiektów na tej stronie): wyniki DL `9199:34562`, Cards DL
+    `9536:33812` (318), DS `9536:34205` (306,666), Tablet `9536:34598` (381), Mobile `9536:34991` (366,
+    tylko odstęp — kolumna na tej stronie nadal 366, padding Mobile tu 12).
+  - Liczba kolumn bez zmian, okładki bez zniekształceń, kafelki Hug w pionie; 20 makiet nie nachodzi na siebie.
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
