@@ -822,6 +822,21 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   (styl bez zmian; okruszek węższy o ok. 10 px). Na stronie „3. Zasoby/Obiekty” nie ma już okruszków
   z „Kolekcje”. Uwaga: na DL w hero leży czerwona strzałka-adnotacja wskazująca ten element — nie ruszana.
 
+- 2026-11-22 — **Figma: padding boczny 16 px na makietach Mobile** (prośba użytkownika) — strona
+  „3. Zasoby/Obiekty” (`6885:93257`), 3 makiety Mobile: Cards `9044:12750`, wyniki wyszukiwania
+  `9173:16891`, brak wyników `9173:19850`. W „Section / Hero” (`9044:12752` / `9173:16893` / `9173:19852`)
+  i sekcji treści („Section / Lista obiektów” `9044:13017`, „Section / Wyniki wyszukiwania” `9173:17159`
+  / `9173:20118`) padding lewy/prawy **12 → 16** (kolumna treści 366 → **358 px**; nawigacja i stopka
+  miały już 16). Skutki:
+  - **„Object tile”** (12 na Cards, 12 na wynikach) miały stałe 366 px — teraz stałe **358** (okładka
+    358×239, Fill bez zniekształceń). Nie „Fill”: lista „Objects list” to poziomy układ z zawijaniem,
+    „Fill” dzieliłby rząd między kafelki.
+  - **Filtry** („Filtry / pasek (wariant 3)”, 5 pól) 179 → **175 px**, żeby nadal stały po dwa w rzędzie
+    (175 + 8 + 175 = 358); przy 179 łamały się po jednym.
+  - Wysokości: Cards 7775 → 7711, wyniki 8217 → 8153, brak wyników bez zmian (2790).
+  - Pasek kategorii („Zakładka / …”) nadal celowo wystaje w prawo (przewijany) — bez zmian.
+  - Nie ruszano makiet Mobile na innych stronach (np. „4. Zasoby/Kolekcje” `9199:30727` ma nadal 12).
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
