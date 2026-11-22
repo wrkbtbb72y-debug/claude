@@ -976,3 +976,6 @@ strony, skrajne krawędzie równo z krawędziami ekranu; zbiór sześcianów ska
   się wpisy). Desktop `/`: **`1-2:2, 3-4:3, 6-7:7, 13:14, 14-15:13, 16:15`** — dolny rząd: różowe | jasne (bryła) |
   film z palmami. Pomarańczowe zdjęcie (było w 15) wypadło z siatki. Zdjęcie na szerokiej ścianie jest kadrowane ze
   środka („cover”), więc góra jasnego zdjęcia (niebieski owal) jest przycięta — kod nie ma ustawienia punktu kadru.
+- 2026-11-22 — bryła w 3. rzędzie: kwadraty 11–12 (kopuła + pomarańczowe) połączone, z pomarańczowym zdjęciem →
+  dopisane `11-12:12`. Desktop `/`: **`1-2:2, 3-4:3, 6-7:7, 13:14, 14-15:13, 16:15, 11-12:12`**. Kopuła z 11 wypadła
+  w tym miejscu (jest w górnej bryle 1–2). Kadr „cover” ucina górę pomarańczowego zdjęcia (szary owal w połowie).
