@@ -965,3 +965,7 @@ strony, skrajne krawędzie równo z krawędziami ekranu; zbiór sześcianów ska
   na linii poziomej znika tylko, gdy po obu jej stronach jest bryła (albo brzeg siatki zdjęć).
   Desktop `/`: **`1-2:2, 3-4:3, 6-7:7`** (górny rząd jak dotąd + bryła 6–7 z filmem2 „toaster”). Film „meatharvest”
   (dawniej w kwadracie 6) gra teraz tylko w kwadracie 15. Tablet/Phone: puste.
+- 2026-11-22 — **zamiana treści dwóch sześcianów**: „Scalone bryły” przyjmuje też pojedynczy kwadrat z dwukropkiem
+  (`a:c` — kwadrat a pokazuje zdjęcie/film kwadratu c, bez scalania; treść liczona wg ustawień sprzed zamian, więc
+  `15:16, 16:15` = zamiana). Desktop `/`: dopisane **`15:16, 16:15`** — w dolnym rzędzie film „meatharvest” (filmTez 15)
+  jest teraz w ostatnim sześcianie, a pomarańczowe zdjęcie w 3. Pełna wartość: `1-2:2, 3-4:3, 6-7:7, 15:16, 16:15`.
