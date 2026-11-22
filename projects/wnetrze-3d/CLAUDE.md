@@ -1262,3 +1262,7 @@ krata przechodząca w kreski listy); użytkownik wybrał połączenie 1 + 4.
   - Column Left `AzgVkCy4j` / Column Right X `Hgbr5CLZ2` (napisy): **y −48 px, opacity 0**.
 - Strojenie: siła odjazdu / zakres w kontrolkach siatki; skala/ściemnienie/odpływ napisów w Scroll Transform warstw.
   W edytorze widać tylko stan początkowy — sprawdzać w podglądzie.
+- 2026-11-22 — poprawka: przy odjeździe pojawiały się nowe linie pionowe (kamera cofając się przechodziła przez
+  kolejne warstwy kraty, które dorysowywały się przed siatką). Teraz przy `scrollState.v < 0` warstwy o `id < 1`
+  (bliższe niż przednia warstwa ze spoczynku; `id = k + floor(shift)`) są pomijane — struktura tylko odsuwa się w głąb,
+  z przodu nic nie przybywa. Linie w głąb (od krawędzi ekranu) bez zmian.
