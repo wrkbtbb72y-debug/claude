@@ -860,6 +860,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     tylko odstęp — kolumna na tej stronie nadal 366, padding Mobile tu 12).
   - Liczba kolumn bez zmian, okładki bez zniekształceń, kafelki Hug w pionie; 20 makiet nie nachodzi na siebie.
 
+- 2026-11-22 — **Figma: „Przełącznik widoku” krycie 40 % na stronie „4. Zasoby/Kolekcje”** (`6335:42234`;
+  prośba użytkownika; to samo co 2026-11-20 na Obiektach). Na stronie jest **14** instancji; 6 miało już
+  40 % (m.in. nowe makiety użytkownika „Kolekcje publiczne - kafelki - Desktop 1449” `9657:63377`, DS
+  `9657:64762`, Tablet `9657:65068`, Mobile `9657:65374`, „Desktop Large – wyniki wyszukiwania” `9657:58553`),
+  pozostałe **8** ustawione na 40 %: Desktop 1447 `9317:45390`, rząd aktualny DL `9612:18422` / DS
+  `9617:18437` / Tablet `9617:18443` / Mobile `9617:18449`, oraz DS `9657:55650`, Tablet `9657:55956`,
+  Mobile `9657:56016`. Krycie na instancjach, komponent bez zmian. Kopie makiet Obiektów (`9536:…`) nie
+  leżą już na tej stronie (usunięte przez użytkownika).
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
