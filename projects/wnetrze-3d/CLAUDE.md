@@ -1042,3 +1042,22 @@ Rysunek: `assets/projects-karta-cms-propozycja.png` (źródło `assets/projects-
   Zakres prac — 12 pozycji (Strategia marki … Wystawa i ekspozycja); Typ projektu — Nowa marka, Rebranding,
   Odświeżenie, Identyfikacja wydarzenia/sezonu, Kampania, Projekt specjalny.
 - Otwarte pytania do użytkownika: język kart (PL/EN), logo klienta na karcie, trzeci sektor, filtry na stronie Projects.
+
+## Makieta strony `/` w Figmie — Desktop 1200 (2026-11-22)
+
+Prośba: przenieść makietę strony do Figmy (szer. 1200 px), **statycznie** — bez animacji i funkcji (hover, kursor, filmy).
+- Plik: [BIURKO – VAAV](https://www.figma.com/design/Hr3x34LirWo1GJa1JRMkun/BIURKO---VAAV?node-id=297-2), strona
+  „Numino - 3d grid” `297:2`, ramka **„NUMINO — Home — Desktop 1200”** `310:2` (1200 × 850, jak zrzut Desktopu z Framera),
+  na prawo od wcześniejszych elementów strony (ich nie ruszano).
+- Warstwy: tło `#0B0D10`, „Tło — poświata” i „Tło — winieta” (gradienty radialne), „Siatka perspektywy” (przycięta do pasa
+  rzędów y 95–755) z wektorami linii: przód środek (α 0,34) / boki (0,16), tylna płaszczyzna (0,06), linie w głąb (0,10),
+  gwiazdy; „Bryły ze zdjęciami” — 11 grup (przód = prostokąt ze zdjęciem, ściany boczne = wielokąty z tym samym zdjęciem
+  + 35% czerni); teksty boczne (Courier Prime 14/23); „Nawigacja” i „Dolny pasek” jako auto-layout; logo jako wektor
+  z `assets/numino-logo-nav.svg` (85,4 × 32, rozciągnięte jak we Framerze).
+- Geometria odczytana ze zrzutu Framera: punkt zbiegu (599,5; 481), tylna płaszczyzna skala 0,8676, tył brył 0,918,
+  padding brył 12 px, kolumny 0 / 135,5 / 271 / 435,25 / 599,5 / 763,75 / 928 / 1064,5 / 1200, rzędy 96 / 260,25 / 424,5 /
+  588,75 / 753.
+- **Zdjęcia wycięte ze zrzutu 1×** (sieć tej sesji nie pobierała plików z framerusercontent) — niższa jakość; do podmiany
+  na oryginały (wypełnienie przodu i ścian bocznych). Filmy pokazane jako stopklatka ze zrzutu; film „jslack” (górny
+  prawy prostopadłościan) w edytorze Framera się nie wczytuje → w Figmie szara zaślepka z podpisem „FILM · JSLACK.MP4”.
+- Alt-teksty zdjęć zostają we Framerze (Figma nie ma pola alt).
