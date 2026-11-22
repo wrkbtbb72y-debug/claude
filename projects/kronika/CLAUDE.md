@@ -68,6 +68,17 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   (`K4Yhx9QyY`) na Mobile — tytuł + linia, ilustracja na całą szerokość, pod nią tekst
   (odstęp 28 px) i „Czytaj więcej” (gap 20 px, wariant przycisku jak w Aktualnościach),
   odstęp tytuł–treść 32 px.
+- **Kolekcje** (`TaU5NR1T7`, `/kolekcje`) — breakpointy: **Desktop Large** `yL7U5Ca6k` (primary, ≥1440),
+  **Desktop Small** `wGZ1SNtqa` (1024–1439), **Tablet** `s9pVODhJU` (768–1023), **Mobile** `LPOTrtJ2n` (<768).
+  Układ wg makiet Figmy „4. Zasoby/Kolekcje”, rząd aktualny (`9725:19869`, od 2026-11-22): hero (`nhd7zbaRB`,
+  okruszki `MD_Oaspc6`, ramka „text” `WEiUJ9hAP` z tytułem `g84TAGEBn` „Przeglądaj kolekcje” i wyszukiwarką
+  „search” `gAvqbQX8m`); wiersz pod hero `C3RRpKDkJ` (przełącznik „Obiekty / Kolekcje” `E0XHTw2QL` + ramka
+  informacyjna `wa_CqtzF1` z linkiem „Zarejestruj konto” `muxmYNClL` → `/moje-konto`); „main” `zOmqRBR29`
+  (nagłówek „Kolekcje publiczne” = instancja „tytuł sekcji”); „Pasek wyników” `LdQyL8mYK` (licznik, „Sortowanie”
+  `LktU3No1N`, „Przełącznik widoku” `xrG4ybpUO` krycie 40 %); siatka CMS „Collections grid” `AIctD0gIv`
+  (kolekcja `ieFZEvO29`; 4 / 3 / 2 / 1 kolumny, odstęp 16); „Pagination section”. Zmienna strony „Stan
+  Wyszukiwania” (`RzifO176z`): 0 = przed wyszukaniem (start), 1 = po wyszukaniu (blok „Wynik wyszukiwania”
+  `gX5UFBu0f` i tytuł „Pozostałe”).
 - Presety tekstu są responsywne (sloty `medium` ≥1024, `small` ≥768): np. „Nazwy sekcji”
   `onFkvs54B` 28→26 px, „Body 1 - tekst długi L” `qho9AhWr_` 20→18 px na tablecie.
 
@@ -869,7 +880,42 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Mobile `9657:56016`. Krycie na instancjach, komponent bez zmian. Kopie makiet Obiektów (`9536:…`) nie
   leżą już na tej stronie (usunięte przez użytkownika).
 
+- 2026-11-22 — **Framer: strona „Kolekcje” (`TaU5NR1T7`) zaktualizowana wg makiet Figmy** (prośba użytkownika;
+  wzór: rząd aktualny na „4. Zasoby/Kolekcje”, ramka `9725:19869`, 4 breakpointy). Zmiany od razu w `main`
+  (bez brancha), **strona nieopublikowana**. Co zmieniono:
+  - Okruszki „KRONIK@ / **Zasoby** / Kolekcje publiczne” (Tablet i Mobile miały własną kopię tekstu —
+    poprawione osobno). Tytuł hero **„Przeglądaj kolekcje”**, opis pod tytułem ukryty.
+  - **Wyszukiwarka przeniesiona do hero** pod tytuł (odstęp 24): szerokość 652 / 629 / 584 px / pełna
+    (Mobile, wys. 52), placeholder „Wyszukaj w kolekcjach” (#656766), pole „Sortuj według” 203 px, przycisk
+    lupy 50 px (Mobile 46, samo „v” bez napisu). Stara siatka „wyszukiwarka + wypełniacz” `SbLNRBp1Y` ukryta.
+  - **Pod hero** (wiersz `C3RRpKDkJ`, góra 12): nowy **przełącznik „Obiekty / Kolekcje”** (zwykłe ramki,
+    nie komponent: zakładki 69×32, aktywna „Kolekcje” z kreską 3 px #1A1A1A, linia bazowa 1 px #999; presety
+    „Button Thin” / „Button Active”; „Obiekty” **bez linku** — brak strony Obiektów we Framerze) + **ramka
+    informacyjna** po prawej (Hug, padding 12/16, tło białe 80 %, ramka #E5E5E5, bez zaokrągleń, przycisk „×”
+    ukryty jak w makiecie). Komponent „In-body link z strzałką v2” (tekst „Zaloguj się lub zarejestruj”, użyty
+    też na „Przyciski – przegląd”) **nie zmieniany** — w ramce ukryty, a w jego miejsce lokalny link
+    **„Zarejestruj konto” ↗** (ten sam cel `/moje-konto`). Mobile: przełącznik nad ramką (odstęp 16), ramka
+    z paddingiem 12, by tekst zmieścił się w jednej linii.
+  - **Pasek wyników** nad siatką (odstęp 16): „12 kolekcji” (statyczny tekst), „Sortowanie” 48 px (ikony Lucide
+    Arrow Up Down / Chevron Down, „Alfabetycznie (A–Z)” preset „Body 4 Bold” #1A1A1A), „Przełącznik widoku”
+    Kafelki / Lista krycie 40 %. Mobile: przełącznik (same ikony, 40×40) nad sortowaniem, licznik po lewej na dole.
+  - **Siatka kolekcji**: Desktop Large **4 kolumny** (było 3), odstępy **16** na wszystkich breakpointach.
+  - Odstępy: hero→wiersz 12, wiersz→„Kolekcje publiczne” 100, nagłówek→pasek wyników 80 (Mobile 60),
+    lista→stopka 140 / 140 / 120 / 100.
+  - **Stan startowy = przed wyszukaniem** (zmienna „Stan Wyszukiwania” 1 → **0**); blok „Wynik wyszukiwania”
+    i tytuł „Pozostałe” widoczne tylko przy stanie 1 (wcześniej blok był widoczny zawsze, a „Pozostałe”
+    przy stanie 0). Przełączniki stanu leżą w ukrytym „Search row” — prototyp wyszukiwania na widocznej
+    stronie nic nie przełącza.
+  - Diagnostyki, które **były wcześniej** i nie są ruszane: akcje „Set Variable” w ukrytym „Search row”
+    odwołują się do usuniętej zmiennej `RAB75BF1M`; „tytuł sekcji” na Tablecie i Mobile ma wariant „1440”
+    (linter sugeruje Tablet / Phone); nakładanie się ramek na canvasie.
+
 ## Do zrobienia
+
+- [ ] Framer „Kolekcje”: do decyzji — link zakładki „Obiekty” (gdy powstanie strona Obiektów), licznik
+      „12 kolekcji” powiązany z CMS zamiast tekstu, wariant „tytuł sekcji” Tablet / Phone na mniejszych
+      breakpointach, usunięcie martwych akcji (`RAB75BF1M`) w ukrytym „Search row”, „Pokaż na stronie”
+      w paginacji na Mobile (w makiecie go nie ma).
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
       Large; fraza w pasku „brak wyników” (z literówką czy bez?). („Section heading” w Cards — już instancje z „Fill”, 2026-11-17.)
