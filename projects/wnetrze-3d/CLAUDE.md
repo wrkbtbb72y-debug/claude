@@ -1245,3 +1245,20 @@ Zmiany (bez zmiany wyglądu):
   tło rgba(11,13,16,**0.92**).
 - Dalsze możliwości (zmieniają wygląd — do decyzji użytkownika): wyłączyć „Zdjęcie na ścianach” (ściany w kolorze),
   mniej filmów (5 dekoduje się naraz), mniej gwiazd (190), wyłączyć świetliki / przerwy w liniach („gaps”).
+
+## Efekt Hero, gdy wjeżdża sekcja projektów — „odjazd w głąb” + „zgaszenie światła” (`/`, 2026-11-22)
+
+Claude zaproponował 5 pomysłów (odjazd w głąb, czarna dziura przewijana, bryły znikające rzędami, zgaszenie światła,
+krata przechodząca w kreski listy); użytkownik wybrał połączenie 1 + 4.
+- **Kod** `SiatkaPerspektywy.tsx`, grupa „Kamera”: **„Odjazd przy przewijaniu”** (`kamera.odjazd`, sześciany, 0 = wył.)
+  i **„Odjazd — zakres”** (`kamera.odjazdZakres`, × wysokość okna, domyślnie 0,9). Postęp = `scrollY / (zakres × innerHeight)`
+  z wygładzeniem (smoothstep + to samo tłumienie co scrollZoom); kamera cofa się przez warstwy kraty (`scrollState.v`
+  ujemne → `shift`), bryły maleją ku punktowi zbiegu i gasną w mgle. W trakcie odjazdu rysowana każda klatka
+  (`scrollDriven`), poza nim — oszczędzanie co drugiej klatki przy scrollu jak wcześniej.
+  Desktop `/`: **odjazd 3, zakres 0,9** (Tablet/Phone dziedziczą).
+- **Natywnie (Scroll Transform, trigger `onScrollTarget`, viewport „start”, spring 400/60)**: cele przewijania
+  „hero” = Main `wUYfTPOi0`, „projects” = sekcja `HadJ76UFf` (`elementId` + `scrollTargetEnabled`).
+  - Hero `N06uDCvcg`: przy „projects” **scale 0,94, opacity 0,35** (prześwituje ciemne tło = ściemnienie).
+  - Column Left `AzgVkCy4j` / Column Right X `Hgbr5CLZ2` (napisy): **y −48 px, opacity 0**.
+- Strojenie: siła odjazdu / zakres w kontrolkach siatki; skala/ściemnienie/odpływ napisów w Scroll Transform warstw.
+  W edytorze widać tylko stan początkowy — sprawdzać w podglądzie.
