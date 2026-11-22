@@ -837,6 +837,16 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   - Pasek kategorii („Zakładka / …”) nadal celowo wystaje w prawo (przewijany) — bez zmian.
   - Nie ruszano makiet Mobile na innych stronach (np. „4. Zasoby/Kolekcje” `9199:30727` ma nadal 12).
 
+- 2026-11-22 — **Figma: odstępy między kafelkami 16 px** (prośba użytkownika) — strona „3. Zasoby/Obiekty”
+  (`6885:93257`), wszystkie **9** list „Objects list” (poziomy układ z zawijaniem): Cards DL `8670:5146` /
+  DS `9044:8822` / Tablet `9044:10992` / Mobile `9044:13136`; wyniki DL `9439:25172`, DL (2 obiekty)
+  `9299:44207`, DS `9173:12529`, Tablet `9173:16239`, Mobile `9173:17271`. Odstęp poziomy i pionowy
+  **12 → 16**. Szerokość „Object tile” (stała, przeliczona tak, by liczba kolumn została ta sama):
+  DL 4 kol. 321 → **318**, DS 3 kol. 309 → **306,666** (952 nie dzieli się równo), Tablet 2 kol.
+  383 → **381**, Mobile 1 kol. **358** (bez zmian). Okładki trzymają proporcje 3:2 (318×212, 306,67×204,44,
+  381×254, 358×238,67). Wysokość kafelków Hug. Makiety nie nachodzą na sąsiednie. Nie ruszano: kopii
+  zapasowej (odłączone karty) ani list kolekcji na stronie „4. Zasoby/Kolekcje” (tam nadal 12).
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
