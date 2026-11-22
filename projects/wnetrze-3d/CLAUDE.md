@@ -1103,3 +1103,9 @@ Prośba: przenieść makietę strony do Figmy (szer. 1200 px), **statycznie** �
   rgba(11,13,16,0.42) 45%, rgba(11,13,16,0) 100%)` (kolor Tła; ok. 170 × 64 px promienia). Linie pod tekstem ~40% słabsze,
   zanikanie płynne. Uwaga: Framer zamienia px w promieniach gradientu na % — podawać od razu w %. Mocniej/słabiej: zmienić
   krycie 0,62 / 0,42; szerzej: pierwszy promień.
+- 2026-11-22 — **maks. 4 kolumny po bokach**: prośba — przy poszerzaniu ekranu przybywało bocznych kolumn kraty (obok
+  brył); ma być najwyżej 4 z każdej strony. Kod, grupa „Grid”: nowa kontrolka **„Maks. kolumn po bokach”**
+  (`kolBoczneMax`, 0 = bez limitu, widoczna przy „Boczne jak środkowe”) — liczba dobrana przez „Boczne jak środkowe”
+  jest przycinana do limitu, a boczne kolumny się poszerzają (krawędzie dalej równo z ekranem). Desktop `/`: **4**.
+  Przykłady (kolumna środkowa = (wys. − 112) / 6): 1200×850 → 3 × 118; 1920×1080 → 4 × 159; 1920×800 → było 6, teraz
+  4 × 182; 2560×1080 → było 6, teraz 4 × 239. Tablet/Phone: „Boczne jak środkowe” wył. — bez zmian.
