@@ -985,3 +985,20 @@ strony, skrajne krawędzie równo z krawędziami ekranu; zbiór sześcianów ska
 - 2026-11-22 — bryła w 3. rzędzie: kwadraty 11–12 (kopuła + pomarańczowe) połączone, z pomarańczowym zdjęciem →
   dopisane `11-12:12`. Desktop `/`: **`1-2:2, 3-4:3, 6-7:7, 13:14, 14-15:13, 16:15, 11-12:12`**. Kopuła z 11 wypadła
   w tym miejscu (jest w górnej bryle 1–2). Kadr „cover” ucina górę pomarańczowego zdjęcia (szary owal w połowie).
+
+## Lista tytułów w lewej kolumnie → jednolinijkowy tekst (`/`, 2026-11-22)
+
+Prośba: zastąpić listę („Animation” + Archer Magazine / Arts And Flowers / Arxipelag) krótkim, jednolinijkowym tekstem
+symetrycznym do tekstu po prawej („Images, motion and space”) i usunąć wszystkie związane z nią elementy i komponenty.
+- Na `/` usunięte: w lewej kolumnie „L” `HD2wSnn92` — przekładki `cbVbz8owY`, `y6NlewCHD` i „Animation links”
+  `E7a5Yw8Ck` (nagłówek + 3 instancje wierszy, w tym „Wiersz listy ze zdjęciem” z hoverem); w prawej kolumnie „R”
+  `tRvpBEufj` — ukryte (opacity 0) „1” `IJnKLpLY9` (nagłówek) i „2” `lOZG_8ycZ` (lista z instancjami wierszy).
+- Nowy tekst **„25 years of branding”** `UDoDYwjDF` (preset „Lista akapit” jak prawy tekst, wyśrodkowany) w „L”
+  (padding 20/0 jak prawa „R”, wyśrodkowanie w pionie i poziomie) → lustrzane położenie względem prawego tekstu
+  (środek x ≈ 124 vs 1076 przy 1200 px), ta sama wysokość. Treść skrócona z hasła marki „25 years of building brands
+  with cultural impact” — do potwierdzenia przez użytkownika.
+- „middle” `UK5KtZeEu` (opacity 0, zrzut ekranu w środku) zostaje — to przekładka trzymająca szerokość środkowej
+  kolumny w układzie Hero.
+- **Komponenty „Wiersz listy” `ZIOR8bv28` i „Wiersz listy ze zdjęciem” `NeuI0X8QN` NIE usunięte** — są jeszcze na
+  szkicach `/w` („Home — dolny pasek”) i `/home` (kopia Home). Czeka na decyzję użytkownika. (Ścieżki stron zmienione
+  przez użytkownika: dawne `/home-2` → `/x`, `/home-3` → `/y`, `/all` → `/z`, `/home-4` → `/w`.)
