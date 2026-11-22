@@ -957,3 +957,11 @@ strony, skrajne krawędzie równo z krawędziami ekranu; zbiór sześcianów ska
   także w kwadracie”** (`filmTez`, `film2Tez`, `film3Tez`, `film4Tez`; 0 = brak, widoczne, gdy film jest ustawiony).
   Desktop `/`: `filmTez` **15** (film „meatharvest-jslack”, który gra też w kwadracie 6). Tablet/Phone 3×3 — kwadratu 15
   nie ma, bez zmian.
+- 2026-11-22 — **scalanie w dowolnym rzędzie — pole „Scalone bryły”**: prośba — dwa środkowe sześciany w 2. rzędzie
+  połączyć w jeden kształt z filmem z 3. sześcianu tego rzędu. Kontrolki „Górny rząd” / „Treść 1./2. bryły” zastąpione
+  jednym polem tekstowym **„Scalone bryły”** (`zdjecia.scal`, funkcja `parseScal`): zakresy kwadratów jednego rzędu
+  (numery wierszami od lewego górnego), po dwukropku numer kwadratu z treścią, kilka po przecinku, np. `1-2:2, 6-7:7`.
+  Nakładające się / wielorzędowe zakresy są pomijane. Linie kraty wewnątrz brył pomijane w każdym rzędzie; krawędź w głąb
+  na linii poziomej znika tylko, gdy po obu jej stronach jest bryła (albo brzeg siatki zdjęć).
+  Desktop `/`: **`1-2:2, 3-4:3, 6-7:7`** (górny rząd jak dotąd + bryła 6–7 z filmem2 „toaster”). Film „meatharvest”
+  (dawniej w kwadracie 6) gra teraz tylko w kwadracie 15. Tablet/Phone: puste.
