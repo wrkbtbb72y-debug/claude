@@ -971,3 +971,8 @@ strony, skrajne krawędzie równo z krawędziami ekranu; zbiór sześcianów ska
   jest teraz w ostatnim sześcianie, a pomarańczowe zdjęcie w 3. Pełna wartość: `1-2:2, 3-4:3, 6-7:7, 15:16, 16:15`.
 - 2026-11-22 — zamiana w dolnym rzędzie 1. ↔ 2. sześcianu (białe i różowe zdjęcie): dopisane `13:14, 14:13`. Pełna
   wartość „Scalonych brył” na Desktopie `/`: `1-2:2, 3-4:3, 6-7:7, 15:16, 16:15, 13:14, 14:13`.
+- 2026-11-22 — **bryła w dolnym rzędzie**: dwa środkowe sześciany (14–15) połączone, z jasnym zdjęciem (pierwotnie
+  w kwadracie 13). Usunięte pojedyncze zamiany `15:16` i `14:13` (nakładałyby się z bryłą — parser pomija nakładające
+  się wpisy). Desktop `/`: **`1-2:2, 3-4:3, 6-7:7, 13:14, 14-15:13, 16:15`** — dolny rząd: różowe | jasne (bryła) |
+  film z palmami. Pomarańczowe zdjęcie (było w 15) wypadło z siatki. Zdjęcie na szerokiej ścianie jest kadrowane ze
+  środka („cover”), więc góra jasnego zdjęcia (niebieski owal) jest przycięta — kod nie ma ustawienia punktu kadru.
