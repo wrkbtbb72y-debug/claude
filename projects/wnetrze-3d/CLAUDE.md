@@ -1022,3 +1022,8 @@ symetrycznym do tekstu po prawej („Images, motion and space”) i usunąć wsz
   (1fr × 1fr, stack pionowy, środek, gap 10) z tekstem (`textWrap: balance` jak prawy), „L” overflow clip, wyrównanie
   start (prawa „R”: end), gap 40; pusta prawa połówka lewej kolumny `iFkni0iCW` padding 20/0/20/0 (był lewy 12 px) →
   obie połówki 169 px przy 1200. Próg: ≥ ok. 202 px szerokości połówki (ekran ≈ 1330 px) — oba w 1 linii, węziej — w 2.
+- 2026-11-22 (poprawka poprzedniej) — użytkownik: „usunąłeś złą kreskę, teraz nie ma żadnej”. Górna/dolna linia pasa
+  ma być widoczna; „druga kreska” to była **linia pozioma zewnętrznego rzędu (krawędź komponentu) w dalszej warstwie
+  kraty** — w perspektywie wpada do pasa ok. 10 px pod jego górną krawędzią (na dole analogicznie). Teraz: przycięcie
+  znów z liniami brzegowymi (±1 px), a przy „Tylko rzędy środka” linie poziome o indeksie poza pasem (`j > kHi`
+  lub `j < kLo`) pomijane na każdej głębokości. Do sprawdzenia przez użytkownika w podglądzie 1322 × 800.
