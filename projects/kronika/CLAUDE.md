@@ -813,6 +813,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   obiektów - komponenty” (`8988:8238`, `8988:8247`) ani przełączników na stronie „4. Zasoby/Kolekcje”. Uwaga (bez zmian): przełącznik w DL `9536:33427` ma aktywne
   „Obiekty”, choć to strona Kolekcji.
 
+- 2026-11-22 — **Figma: okruszki na makietach Kolekcji — „Kolekcje” → „Zasoby”** (prośba użytkownika) —
+  strona „4. Zasoby/Kolekcje” (`6335:42234`): we wszystkich **16** okruszkach „KRONIK@ / Kolekcje / Kolekcje
+  publiczne” drugi element zmieniony na **„Zasoby”** (teraz „KRONIK@ / Zasoby / Kolekcje publiczne”, jak
+  „KRONIK@ / Zasoby / Obiekty” w Obiektach). Makiety: „Kolekcje publiczne - kafelki” Desktop 1445 / 1446 /
+  1447 / 1448, ramka „Frame 427320025” `9602:42100` (8 starszych makiet, m.in. rząd `8175:…`) i rząd aktualny
+  DL `9199:29821` / DS `9199:30131` / Tablet `9199:30429` / Mobile `9199:30727`. Zmieniony tylko tekst
+  (styl bez zmian; okruszek węższy o ok. 10 px). Na stronie „3. Zasoby/Obiekty” nie ma już okruszków
+  z „Kolekcje”. Uwaga: na DL w hero leży czerwona strzałka-adnotacja wskazująca ten element — nie ruszana.
+
 ## Do zrobienia
 
 - [ ] Wyniki / brak wyników — ujednolicić z Cards: kolejność filtrów i odstępy w hero na Desktop
