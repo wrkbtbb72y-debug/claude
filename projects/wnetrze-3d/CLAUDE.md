@@ -1081,3 +1081,9 @@ Prośba: przenieść makietę strony do Figmy (szer. 1200 px), **statycznie** �
   pasy nad i pod 4 rzędami (~40 px) mają linie w głąb i gwiazdy. Wysokość środka 0,89 bez zmian. Tablet/Phone — bez zmian
   (tam ustawienie było wyłączone). Kontrolka zostaje w kodzie — ponowne włączenie przycina kratę jak wcześniej.
 - Makieta w Figmie (`310:2`) nadal pokazuje wersję przyciętą (bez tych pasów).
+- 2026-11-22 (ciąg dalszy) — prośba: rzędy nad i pod mają mieć **taką samą wysokość i szerokość jak kwadraty
+  z sześcianami** (kosztem mniejszych sześcianów). Desktop: Grid → „Wysokość środka” 0,89 → **0,6667** (= 4/6): przy
+  „Rzędach nad/pod” 1 wysokość komponentu dzieli się na 6 równych rzędów, a środkowe kolumny = 4 × wysokość rzędu →
+  kwadraty. Przy 1200 × 850: rząd/kolumna **123 px** (było ~164), środek 492 px, boczne „Boczne jak środkowe” 3 × 118 px.
+  Przy innej wysokości ekranu nadal kwadraty (wszystko liczone z wysokości). Zmiana z 4/6 na inną wartość rozjedzie
+  proporcje skrajnych rzędów.
