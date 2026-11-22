@@ -939,3 +939,16 @@ strony, skrajne krawędzie równo z krawędziami ekranu; zbiór sześcianów ska
   (`kolTylkoSrodek`, przy „Rzędach do krawędzi”): canvas przycinany CSS `clip-path: inset(...)` do pasa rzędów o stałej
   wysokości (±1 px na linie brzegowe); nad i pod — puste tło (bez kraty i bez gwiazd z „Tła”; poświata/winieta to osobne
   ramki, zostają). Desktop `/`: wł., „Wysokość środka” z powrotem **0,89**. Tablet/Phone przypięte: wył.
+- 2026-11-22 — **scalone prostopadłościany w górnym rzędzie zdjęć**: prośba — w górnym rzędzie sześcianów ze
+  zdjęciami/filmami połączyć dwa pierwsze i dwa ostatnie w dwa dłuższe prostopadłościany; w pierwszym zdjęcie z 2.
+  sześcianu, w drugim film z 3. sześcianu.
+  - Kod, grupa „Zdjęcia w kwadratach”: **Górny rząd** (`scalGora`: „Osobne sześciany” `brak` / „Po dwa” `pary` /
+    „Jeden przez cały rząd” `caly`), **Treść 1. bryły** / **Treść 2. bryły** (`scalTresc1/2`: numer kwadratu w górnym
+    rzędzie od lewej, którego zdjęcie lub film pokazuje bryła; 0 = jej pierwszy kwadrat). Bryła zajmuje kilka kwadratów
+    (`spanW`), głębokość = jak sześcian (min. z boków przedniej ściany); hover/fokus/zmniejszanie liczone dla całej bryły.
+    Linie kraty wewnątrz bryły (pionowe na przedniej i tylnej płaszczyźnie warstwy zdjęć + krawędź w głąb przy górnej
+    linii) pomijane (`isTopMerge`, jak „Scal rzędy nad/pod”).
+  - Zmiana ogólna: zdjęcie dobierane **wg numeru kwadratu** (`pIdx = slotNo`), a nie kolejności sześcianów — scalanie
+    nie przesuwa zdjęć w pozostałych kwadratach (bez scalania wynik identyczny; przy „szachownicy” nadal wg kolejności).
+  - Desktop `/`: `pary`, Treść 1. bryły **2**, Treść 2. bryły **3** (film4 „jslack”, który był w 3. kwadracie).
+    Tablet/Phone (3×3): przypięte `brak`.
