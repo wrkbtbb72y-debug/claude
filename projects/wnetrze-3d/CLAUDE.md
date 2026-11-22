@@ -1073,3 +1073,11 @@ Prośba: przenieść makietę strony do Figmy (szer. 1200 px), **statycznie** �
   Tablet/Phone przypięte: 0 / 0 (dotyk nie ma hovera — inaczej zdjęcia byłyby stale ciemne).
 - W edytorze Framera hover nie działa (widać stan spoczynku) — sprawdzać w podglądzie.
 - Makieta w Figmie (`310:2`) pokazuje zdjęcia bez przyciemnienia — nie zmieniana.
+
+### Rząd kraty nad i pod sześcianami z powrotem (Desktop `/`, 2026-11-22)
+
+- Prośba: przywrócić rząd nad i pod sześcianami usunięty wcześniej tego dnia. Desktop `OirTRcAEZ`: Grid → **„Tylko rzędy
+  środka” wył.** (`kolTylkoSrodek` false). Krata znów sięga od dolnej kreski Navi (56 px) do górnej kreski dolnego paska;
+  pasy nad i pod 4 rzędami (~40 px) mają linie w głąb i gwiazdy. Wysokość środka 0,89 bez zmian. Tablet/Phone — bez zmian
+  (tam ustawienie było wyłączone). Kontrolka zostaje w kodzie — ponowne włączenie przycina kratę jak wcześniej.
+- Makieta w Figmie (`310:2`) nadal pokazuje wersję przyciętą (bez tych pasów).
