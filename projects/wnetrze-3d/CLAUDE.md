@@ -1015,3 +1015,10 @@ symetrycznym do tekstu po prawej („Images, motion and space”) i usunąć wsz
   „drugą poziomą kreskę pod górną kreską” — to była górna linia pasa 4 rzędów (przycięcie miało zapas ±1 px, więc linie
   brzegowe pasa były widoczne; to samo na dole nad dolnym paskiem). Teraz przycięcie `inset(ceil(rT + lw/2 + 1) …
   ceil(h − rB + lw/2 + 1))` — górna i dolna linia pasa poza przycięciem; pionowe linie kończą się na krawędzi pasa.
+- 2026-11-22 — **lewy tekst łamie się jak prawy**: prośba — „25 years of branding” ma przechodzić do 2. linii w tych
+  samych momentach co „Images, motion and space”. Oba teksty to Courier Prime (stała szerokość znaku) → to samo zachowanie
+  przy tej samej liczbie znaków i tej samej szerokości pola. Zmiany: tekst `UDoDYwjDF` → **„25 years building brands”**
+  (24 znaki jak prawy; z hasła marki); budowa lustrzana do prawej: w „L” `HD2wSnn92` ramka **„3 — tekst”** `x_wvKCF_k`
+  (1fr × 1fr, stack pionowy, środek, gap 10) z tekstem (`textWrap: balance` jak prawy), „L” overflow clip, wyrównanie
+  start (prawa „R”: end), gap 40; pusta prawa połówka lewej kolumny `iFkni0iCW` padding 20/0/20/0 (był lewy 12 px) →
+  obie połówki 169 px przy 1200. Próg: ≥ ok. 202 px szerokości połówki (ekran ≈ 1330 px) — oba w 1 linii, węziej — w 2.
