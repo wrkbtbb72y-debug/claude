@@ -1113,3 +1113,28 @@ Prośba: przenieść makietę strony do Figmy (szer. 1200 px), **statycznie** �
   w rzędach nad i pod bryłami. Przyczyna: „Scal rzędy nad/pod zdjęciami” (`zdjecia.scalNad` 1600) — przy szerokości
   > 1600 px te rzędy łączyły się w jeden prostopadłościan bez wewnętrznych krawędzi (w edytorze 1200 px niewidoczne).
   Desktop `/`: **`scalNad` 0** (nigdy). Tablet/Phone mają 1600, ale są węższe — bez znaczenia.
+
+## Boczne napisy zmieniają się po kliknięciu bryły (`/`, 2026-11-22)
+
+Prośba: gdy bryła jest kliknięta i powiększona, napisy po bokach zmieniają się na teksty tej bryły; stary napis wylatuje
+w górę i jednocześnie znika do 0%, nowy wlatuje od dołu. Użytkownik: „jak się da — na komponentach i wariantach”.
+- **Komponenty** (folder Komponenty): **„Napis lewy”** `A1gRbg7LO` i **„Napis prawy”** `k_11UqrF3` — stack z tekstem
+  (preset „Lista akapit”, wyśrodkowany, bez tła, przejście wariantów Instant). Warianty: **„Domyślny”** (25 years
+  building brands / Images, motion and space) i **„Kwadrat N”** dla każdej bryły na Desktopie (N = numer pierwszego
+  kwadratu bryły wierszami od lewego górnego: 1, 3, 5, 6, 8, 9, 10, 11, 13, 14, 16). Teksty edytuje się na canvasie
+  w wariantach. Instancje `CIV7J00Mp` (w „L”) i `LolOc7rF8` (w „R”) zastąpiły dawne teksty `UDoDYwjDF` / `XiEwMAVDe`.
+- **Treść robocza (zaproponowana przez Claude, do akceptacji)** — opisowa, bez faktów o klientach:
+  1 pawilon „Yellow pavilion” / „Light and landscape”; 3 film jslack „Motion study” / „Film loop”; 5 spirala „Endless
+  spiral” / „Pattern in motion”; 6 toster „Toast theory” / „3D animation”; 8 różowe okno „Pink window” / „Colour and
+  space”; 9 portret „Desert portrait” / „Photography”; 10 niebieska kopuła „Blue oculus” / „Light installation”;
+  11 KANAL „Red letters” / „Type in motion”; 13 różowa kopuła „Pink horizon” / „Light and sky”; 14 biała kopuła „White
+  dome” / „Architecture and sky”; 16 palmy „Palm drift” / „Landscape in motion”.
+- **Kod (to, czego natywnie się nie da):** bryły rysuje komponent kodowy, więc tylko on wie, którą kliknięto.
+  `SiatkaPerspektywy.tsx` przy zmianie fokusu wysyła zdarzenie okna **`siatka:fokus`** z `detail { kwadrat }` (0 = brak
+  fokusu; zapisuje też `window.__siatkaFokus`). Override **`withNapisFokus`** (`NapisyFokus.tsx`) na obu instancjach
+  ustawia wariant „Kwadrat N” (brak wariantu → domyślny Framera) i animuje zmianę (framer-motion, AnimatePresence:
+  wyjście y −24 + opacity 0, wejście od y +24; 0,55 s, ease [0.22, 1, 0.36, 1]). Natywne przejście wariantów nie umie
+  jednocześnie wypuścić starego napisu w górę i wpuścić nowego od dołu — dlatego ruch jest w overridzie.
+- Nowa bryła / zmiana „Scalonych brył” → dodać wariant „Kwadrat N” w obu komponentach.
+- Działa tylko w podglądzie / na stronie (edytor pokazuje „Domyślny”). Tablet/Phone: kolumny z napisami ukryte.
+- Przy okazji (zmiana użytkownika, nie Claude): w „Dolnym pasku” są teraz 3 pola (bez LinkedIn) i bez pionowych kresek.
