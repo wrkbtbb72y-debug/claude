@@ -1198,3 +1198,30 @@ w dół zakrywa całą siatkę z bryłami.
 - Na canvasie strony przesunięte o 800 px w dół luźne elementy pod Desktopem (Desktop urósł do 2 × 100vh):
   pionowe kreski `j482y2GEM`, `lbTirTotK` i teksty `aaIjkvQMN`, `N7RwZG5ma` (te dwa nachodziły na siebie już wcześniej).
 - Przewijania nie widać w edytorze — sprawdzać w podglądzie.
+
+## Sekcja „Featured projects” + Navi fixed (`/`, 2026-11-22)
+
+Prośba: sekcja pod siatką to „featured projects” z listą kilku projektów jeden pod drugim, przedzielonych kreską;
+Navi ma być fixed i się nie ruszać.
+- **„Sekcja — Featured projects”** `HadJ76UFf`: pionowy stos, height auto, **minHeight 100vh** (zawsze zakrywa siatkę),
+  padding dół 80, nadal translateY −56 i zIndex 1. Dzieci:
+  - **„Pasek z linkami”** `ZR4kUwPMr` (56 px, overflow visible) z 3 kolumnami jak wcześniej; pola top 0.
+    Środkowa kolumna (YouTube) dalej = szerokość „middle”: Miarka `HsHjMxtHI` siedzi teraz w ramce
+    **„Miarka — wysokość siatki”** `FynCzwNT6` (height **100vh**, padding 56/0/56/0 — jak Hero, więc wnętrze = wys.
+    siatki; wystaje poza pasek, niewidoczna). Tablet/Phone: ramka ukryta, kolumna 1fr.
+  - **„Nagłówek sekcji”** `Vmd4wOnMQ` (padding 64/40/24/40; Phone 48/16/16/16): „Featured projects” (h2, preset „navi”).
+  - **„Lista projektów”** `uUHwDSEIm`: 5 instancji komponentu **„Wiersz projektu”** `mKIi2lqmd` (folder Komponenty),
+    linia dolna 1 px „Obrys”.
+- **Komponent „Wiersz projektu”**: zmienne Numer / Tytuł / Zakres / Zdjęcie; wariant **Desktop** (stack poziomy, gap 24,
+  padding 16/40, linia górna 1 px „Obrys”): numer (navi, 64 px) · tytuł (Lista akapit, h3, 1fr) · zakres (navi, 240 px) ·
+  miniatura 120 × 80 (zdjęcie z alt) · strzałka Phosphor „Arrow Right” 14 px. Wariant **Phone**: padding 16, gap 12,
+  numer 28 px, bez zakresu, miniatura 72 × 48 — ustawiony na instancjach w breakpoincie Phone.
+- **Treść robocza (do podmiany na prawdziwe projekty)**: 01 Yellow pavilion / Light and landscape, 02 Blue oculus /
+  Light installation, 03 Pink horizon / Light and sky, 04 Desert portrait / Photography, 05 Pink window / Colour and
+  space — zdjęcia i alt-y z siatki. **TODO:** linki wierszy (brak stron projektów); ew. przejście na CMS (por. propozycja
+  karty Projects).
+- **Navi fixed**: instancja Navi `KQifDlO5e` w nowej ramce **„Navi — przyklejona”** `GiaHsJO3X` (position fixed,
+  top/left/right 0, zIndex 8, tło rgba(11,13,16,0.85) + rozmycie tła 12 px, żeby przewijana lista nie mieszała się
+  z napisami). Instancja: relative, 100%.
+- Kod `SiatkaPerspektywy.tsx` → `covered()`: siatkę zasłania tylko tło o kryciu ≥ 0,95 (sekcja tak, półprzezroczysta
+  Navi nie — reakcja na kursor nad nawigacją jak dawniej).
