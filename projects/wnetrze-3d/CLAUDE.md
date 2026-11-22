@@ -1225,3 +1225,23 @@ Navi ma być fixed i się nie ruszać.
   z napisami). Instancja: relative, 100%.
 - Kod `SiatkaPerspektywy.tsx` → `covered()`: siatkę zasłania tylko tło o kryciu ≥ 0,95 (sekcja tak, półprzezroczysta
   Navi nie — reakcja na kursor nad nawigacją jak dawniej).
+
+## Wydajność — cięcie się przy przewijaniu (`/`, 2026-11-22)
+
+Zgłoszenie: strona strasznie się tnie przy scrollu. Siatka (`SiatkaPerspektywy.tsx`, ~3300 linii) przelicza i rysuje
+całość w każdej klatce: linie kraty dzielone na odcinki po 9 px, 11 brył, 5 filmów, ściany boczne z teksturą (każda
+ściana = 6 pasów × 2 trójkąty, każdy z clip + drawImage **pełnego** źródła, np. 2000 px / klatka filmu).
+Zmiany (bez zmiany wyglądu):
+- **Tekstury ścian bocznych** z małych kopii (≤ 192 px, `getSideTex`, cache per zdjęcie/film; film odświeżany tylko
+  przy nowym `currentTime`) zamiast pełnych źródeł.
+- **Nie rysujemy, gdy siatki nie widać**: karta w tle, poza ekranem albo w całości zakryta (3 punkty `elementFromPoint`
+  + `coveredEl` — nieprzezroczyste tło ≥ 0,95, np. sekcja Featured projects nad przyklejonym Hero). Sprawdzane przy
+  scroll/resize/visibilitychange (raz na klatkę). Filmy wtedy pauzowane, potem wznawiane.
+- **W trakcie przewijania co druga klatka** (do 150 ms po ostatnim scrollu) — przyklejona siatka i tak stoi.
+- **Gęstość pikseli płótna** w podglądzie/na stronie max **1,5×** (było 2×; edytor bez zmian).
+- **„Zbliżenie (scroll)” (`kamera.scrollZoom`) 3 → 0** na wszystkich breakpointach — przy przyklejonym Hero nic nie
+  robiło, a czytało `getBoundingClientRect` w każdej klatce.
+- **Navi — przyklejona** `GiaHsJO3X`: bez rozmycia tła (backdrop blur nad animowanym płótnem był drogi przy scrollu),
+  tło rgba(11,13,16,**0.92**).
+- Dalsze możliwości (zmieniają wygląd — do decyzji użytkownika): wyłączyć „Zdjęcie na ścianach” (ściany w kolorze),
+  mniej filmów (5 dekoduje się naraz), mniej gwiazd (190), wyłączyć świetliki / przerwy w liniach („gaps”).
