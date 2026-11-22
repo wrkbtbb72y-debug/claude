@@ -1157,3 +1157,12 @@ w górę i jednocześnie znika do 0%, nowy wlatuje od dołu. Użytkownik: „jak
   miarki działa. Tablet/Phone: pasek przypięty (top null, height 56, padding 0), Kolumna Behance 1fr, Miarka ukryta,
   pola bottom 0 → 3 równe pola jak wcześniej.
 - Przy zmianie „Wysokości środka” siatki zmienić aspectRatio także w Miarce (oprócz „middle”).
+- 2026-11-22 — użytkownik potwierdził zrzutem, że zamiana napisów działa (KANAL → „Red letters” / „Type in motion”).
+  Potem prośba: **prawy napis na powiększonej bryle = „See more” ze strzałką po prawej**. „Napis prawy” `k_11UqrF3`:
+  stack poziomy, gap 8 px; dodana ikona **„Strzałka”** `bp0ahn3e4` (Phosphor „Arrow Right”, 14 px, kolor token
+  „Tekst”, grubość 1,5) — ukryta w „Domyślnym”, widoczna we wszystkich wariantach „Kwadrat N”, które mają teraz tekst
+  „See more” (opisy brył z prawej strony zastąpione). Lewy napis (tytuł bryły) bez zmian.
+  **TODO:** „See more” nie jest jeszcze linkiem — brak stron projektów (por. propozycja karty Projects w CMS); po ich
+  powstaniu podlinkować w wariantach (`link.href` + `linkStylePreset`).
+- Zmiana użytkownika zauważona przy okazji: środkowe pole dolnego paska to teraz „YouTube” (dawniej Behance; id
+  `q6gCtjFZq` i nazwa warstwy bez zmian?) — do sprawdzenia przy linkowaniu.
