@@ -1166,3 +1166,14 @@ w górę i jednocześnie znika do 0%, nowy wlatuje od dołu. Użytkownik: „jak
   powstaniu podlinkować w wariantach (`link.href` + `linkStylePreset`).
 - Zmiana użytkownika zauważona przy okazji: środkowe pole dolnego paska to teraz „YouTube” (dawniej Behance; id
   `q6gCtjFZq` i nazwa warstwy bez zmian?) — do sprawdzenia przy linkowaniu.
+
+### Mruganie siatki przy skalowaniu okna (2026-11-22)
+
+- Zgłoszenie (nagranie): przy przeciąganiu okna cała Siatka perspektywy (linie + bryły) co chwilę znikała na pojedyncze
+  klatki. Przyczyna w `SiatkaPerspektywy.tsx`, `resize()` (ResizeObserver): ustawienie `canvas.width/height` czyści
+  płótno, a w trybie animacji ponowne rysowanie było dopiero w kolejnym `requestAnimationFrame` — ResizeObserver działa
+  po klatce animacji, przed malowaniem, więc przeglądarka malowała puste płótno.
+- Poprawka: płótno zmieniane tylko przy innym rozmiarze; po zmianie od razu `draw(now, 0)` + `applyHole(now)` (czas
+  klatki 0 = stan animacji się nie przesuwa; `step = clamp(dt, 0, 0.05)` — bez dzielenia przez dt).
+- Nie da się usunąć: przejście przez granicę breakpointów (1200 px, Desktop ↔ Tablet) to inna instancja komponentu —
+  Framer ją przełącza (nowe ustawienia siatki, 4×4 ↔ 3×3), zdjęcia doczytują się z pamięci przeglądarki.
