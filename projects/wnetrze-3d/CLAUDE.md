@@ -1002,3 +1002,12 @@ symetrycznym do tekstu po prawej („Images, motion and space”) i usunąć wsz
 - **Komponenty „Wiersz listy” `ZIOR8bv28` i „Wiersz listy ze zdjęciem” `NeuI0X8QN` NIE usunięte** — są jeszcze na
   szkicach `/w` („Home — dolny pasek”) i `/home` (kopia Home). Czeka na decyzję użytkownika. (Ścieżki stron zmienione
   przez użytkownika: dawne `/home-2` → `/x`, `/home-3` → `/y`, `/all` → `/z`, `/home-4` → `/w`.)
+
+### Film 5 — „KANAL” w bryle 11–12 (`/`, 2026-11-22)
+
+- Prośba: zamiast pomarańczowego zdjęcia w bryle 11–12 (3. rząd) film z URL od użytkownika (imgix, GIF → MP4:
+  `https://basedesign2.imgix.net/images/Kanal_Case_Thumbnail-GIF-04_1_2026-06-12-121941_gabz.gif?fm=mp4&video-codec=h264&video-bitrate=2500k`).
+- Wszystkie 4 filmy były zajęte → w kodzie **Film 5** (`film5`, `film5Miejsce`, `film5Tez`, `film5Kolor`, `film5Opis`,
+  `film5Tempo`) na wzór filmu 4. Desktop `/`: film5 w kwadracie **12** (bryła `11-12:12` pokazuje treść kwadratu 12),
+  alt „Animacja: czarny napis KANAL na czerwonym tle”. Film wczytuje się już w edytorze (czerwona klatka z napisem).
+- Uwaga: to materiał z case study innego studia (Base Design, „Kanal”) — użytkownik decyduje, czy może być na stronie.
