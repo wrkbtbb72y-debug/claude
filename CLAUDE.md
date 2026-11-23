@@ -4,7 +4,9 @@ To repozytorium trzyma **wiele projektów** (głównie strony we Framerze). Każ
 własny folder w `projects/<nazwa>/` z własnym `CLAUDE.md`, dokumentacją i ewentualnie
 skillami. Ten plik zawiera tylko spis projektów i zasady wspólne dla wszystkich.
 
-**Język rozmowy z Claude:** polski.
+**Język rozmowy z Claude:** polski. W swoich tekstach (odpowiedzi, notatki i opisy w Figmie/Framerze, notatki
+w repo) **nie używaj długich myślników „—”** - pisz zwykły łącznik „-” (prośba użytkownika, 2026-11-23).
+Półpauza w zakresach lat w treściach stron (niżej) bez zmian.
 
 ## Na start każdej sesji
 
