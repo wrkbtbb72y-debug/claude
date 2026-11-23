@@ -962,6 +962,10 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   tekstu — jak etykiety grup w „Dymku” mobilnym; ramka „Label Moje konto” `9799:6066`, padding 8/8/4/12), pod nim
   **Ustawienia konta · Zgłoszenia · Kolekcje · Adnotacje**; dalej Rejestracja instytucji | **Wyloguj się na czerwono
   #9A1C31** (Kronika Red). Lista 310 px. Na stronie leży też kopia użytkownika `9767:33963` (stara treść) — nie ruszana.
+  **Wersja aktualna = kopia użytkownika `9767:33983`** w „Navi II - Desktop Large” (`9767:24513`), z jego poprawkami
+  (kreska pod „Moje konto”, inne paddingi). Na jego prośbę **dwie dolne kreski jak ta pod „Moje konto”**: wcięte
+  15 px z obu stron (szer. 228, #E5E5E5) — padding L/P 15 w „Separator” `9767:33995` i `9767:34000`. Moja wersja
+  `9796:7538` (przy instancji `9767:33430`) jest starsza i nie ma tych zmian.
 
 ## Do zrobienia
 
