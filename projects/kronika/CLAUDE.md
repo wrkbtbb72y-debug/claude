@@ -1028,6 +1028,22 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   (ramki `9779:5969`, `9830:7044`, `9830:7444`, `9830:7839`, `9830:8228`, `9835:9490`, `9796:7538`). Ramek
   `9789:6055` (Subnav przed/po) i `9816:6120` (menu boczne Mobile - propozycje) już nie ma na stronie.
 
+- 2026-11-23 - **Figma: „Wzór zachowania paska” (MC) zaktualizowany** (prośba użytkownika) - strona „NAWIGACJA II”,
+  ramka `9767:39525` (x 1600, y −8170). Kopia zapasowa starej wersji: **„Wzór zachowania paska - stara wersja (kopia
+  zapasowa 2026-11-23)”** `9846:9844` (x 6030, y −8170). Instancje komponentu „Subnav” (`8088:5007`, komponent bez
+  zmian) zastąpione kopiami „Subnav - dopracowany” (zwykłe ramki, 72 px, przycinanie wyłączone):
+  - **Desktop Large 1440** `9846:9919`: jak wzór - 4 sekcje z ikonami (Edycja treści, Zarządzanie, Pozyskiwanie
+    zasobów, Moja instytucja), odstęp 40, pole jednostki 260.
+  - **Desktop Small 1024** `9846:9960`: padding 36, pole jednostki **220**, odstęp między sekcjami **24** (całość
+    933 z 952 px; przy 260 / 40 by się nie zmieściło).
+  - **Tablet 810** `9846:10001`: 4 sekcje się nie mieszczą → pole jednostki 260 + czarny okrągły przycisk „⋮” (jak
+    na Mobile) po prawej, padding 24.
+  - **Mobile 390** `9846:10047`: pole jednostki na całą szerokość (Fill) + przycisk „⋮”, odstęp 12, padding 16.
+  - **Mobile - menu rozwinięte** (`7741:9623`): pasek `9846:10093`; stary „Dymek” (Użytkownicy / Zarządzanie / Moje
+    zasoby) usunięty, nowy **akordeon „Menu sekcji - rozwinięte”** `9846:11814` (358 px, 4 px pod polem jednostki,
+    styl jak listy desktop): 4 nagłówki sekcji z ikoną i strzałką (kopie pozycji paska, padding 10/8/10/12),
+    separatory między sekcjami; rozwinięte „Zarządzanie” - pozycje wcięte 38 px (tekst w linii z nazwą sekcji).
+
 ## Do zrobienia
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
