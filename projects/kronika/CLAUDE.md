@@ -1006,6 +1006,14 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   MC, dubel „Instytucje”, znaczenie „Użytkownicy”) jako żółte notatki obok list. Menu konta użytkownika `9767:33983`
   już nie istnieje na stronie — listy zbudowane od zera według jego wymiarów.
 
+- 2026-11-23 — **Figma: drugi pasek „Subnav” — instytucja partnerska** (prośba użytkownika: „drugi pasek dla innego
+  usera”). Kopia wzoru `9767:37402` pod czterema makietami rozwiniętych sekcji: **„Navi II - Desktop Large — instytucja
+  partnerska — Zarządzanie (rozwinięte)”** `9835:9490` (x −3501, y −7288, 1440 × 457). Sekcje z ikonami Lucide 18 px:
+  **Obiekty instytucji** (lucide/images) i **Migracje** (lucide/arrow-right-left) — zwykłe linki, bez strzałki;
+  **Zarządzanie** (settings) — jedyny dropdown, pokazany rozwinięty: Dane instytucji, Użytkownicy (lista `9835:9871`,
+  ten sam styl co pozostałe, dosunięta do prawej krawędzi 1380). Żółta notatka: wg notatki „DLA PARTNERSKICH” na
+  stronie „Zarządzanie” tylko dla administratorów lokalnych; ikony do akceptacji.
+
 ## Do zrobienia
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
