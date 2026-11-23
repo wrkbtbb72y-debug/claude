@@ -944,6 +944,16 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   #1A1A1A, wszystko wyśrodkowane w pionie (bez paddingu 2 px w „Chevron wrap”), pole klikalne pozycji na pełną
   wysokość 48 (niewidoczne). Prawa krawędź równa z „Anna Sobczak”. Czeka na akceptację.
 
+- 2026-11-23 — **Figma: menu konta „Anna Sobczak” — stan otwarty** (prośba użytkownika) — strona „NAWIGACJA II”,
+  instancja **„Navi Kronika”** `9767:33430` (x −1343, y −11662). W tej instancji (override, komponent bez zmian)
+  przycisk „Anna Sobczak” (`I9767:33430;7724:24882`) dostał stan otwarty: tło biel + #1A1A1A 6 % (zasada hover
+  secondary), strzałka podmieniona na **lucide/chevron-up**. Pod przyciskiem (4 px niżej, wyrównana do jego prawej
+  krawędzi) ramka **„Menu konta – rozwinięte (Anna Sobczak)”** `9796:7538` (na stronie, nie w instancji) — styl jak
+  „Dymek” z wzorców dropdownów (`9767:33921`): 260 px, biel, ramka #E5E5E5, zaokrąglenie 4, cień 0/0/3 czarny 20 %,
+  pozycje 38 px (padding 11/8/12/12, styl **Button**), separatory #E5E5E5 (padding 4/6) na pełną szerokość.
+  Kolejność (zmieniona względem listy użytkownika — „Wyloguj się” na końcu, jak zwykle w menu konta):
+  Moje konto · Moje zgłoszenia · Moje kolekcje · Moje adnotacje | Rejestracja instytucji | Wyloguj się.
+
 ## Do zrobienia
 
 - [ ] „Subnav” (NAWIGACJA II): akceptacja wersji „Po” (`9789:6103` w ramce `9789:6055`) → przenieść do oryginału
