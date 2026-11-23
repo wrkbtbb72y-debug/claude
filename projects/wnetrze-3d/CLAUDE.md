@@ -1272,3 +1272,24 @@ krata przechodząca w kreski listy); użytkownik wybrał połączenie 1 + 4.
   (w spoczynku = 1, wygląd bez zmian): przód — nakładka `1 − (1 − dim × visP) × fadeOdj`, ściany boczne — jasność × fadeOdj.
   Bryły ciemnieją tym bardziej, im dalej odjeżdżają. Nowa kontrolka „Kamera” → **„Odjazd — przyciemnienie brył”**
   (`kamera.odjazdCien`, 0–1, domyślnie **0,6**; 0 = tylko mgła, 1 = do czerni).
+
+## Stopka: dolny pasek w stylu echo.txt (`/`, 2026-11-23)
+
+Prośba: „footer bottom” `UmUPg4rLv` (w ramce „Footer” `yVikSkj7m`, pod dużym logo; wcześniej kopia paska z linkami
+z napisem „featured projects”) przerobić na pasek jak dolny pasek ze screena echo.txt (bez znacznika „Made in Framer”):
+po lewej znak + copyright, na środku pusta kapsuła, po prawej linki społecznościowe i ostatni element przy krawędzi.
+- Usunięte stare kolumny (Instagram/Behance z Miarką/Dribbble). Pasek: **„Dolny pasek stopki”** `UmUPg4rLv`, 56 px,
+  padding boczny 40, stack poziomy, wyśrodkowany w pionie, bez linii górnej (jak na screenie).
+- **„Lewa strona”** `YmcZeRgRB` (1fr, gap 120): „Logo (do góry)” `QJmLUGq_B` (link `/#hero`, płynne przewijanie,
+  aria-label „NUMINO, back to top”, hover opacity 0,6) z SVG logo NUMINO `S0_NVRWRA` (35 × 20 px, kopia z Navi)
+  + „Copyright” `GErbdfJPy`: „© NUMINO · 25 years of branding” (preset „footer” `kDjaPd3uW`, 11 px, wersaliki).
+- **„Kapsuła”** `XT9MUX_sA`: 46 × 12 px, obrys 1 px rgba(255,255,255,0.8), zaokrąglenie 100 px, ozdobna (aria-hidden).
+- **„Prawa strona”** `Uxo6CATcF` (1fr, do prawej, gap 120): „Media społecznościowe” `bcIhQ5Hph` (gap 24: Instagram
+  `rNGt4vtb4`, YouTube `MWJNJ7yGo`, Dribbble `WQKATF_MS`) + „Connect” `uusspPXOm`; wszystko presetem „footer”.
+- Tablet: gap lewej/prawej strony 48. Phone: pasek w kolumnie (height auto, padding 24/16, gap 16), kolejność:
+  linki → Connect → logo + copyright; kapsuła ukryta.
+- **TODO:** adresy Instagram / YouTube / Dribbble i cel „Connect” - brak danych, teksty bez linków
+  (po podaniu: `link.href` + link style preset; w projekcie nie ma jeszcze żadnego link style presetu).
+- **Do sprawdzenia przez użytkownika:** ramka „Footer” `yVikSkj7m` ma ten sam `elementId` „projects” co sekcja
+  Featured projects `HadJ76UFf` (pozostałość po kopii) - może mylić cel przewijania „projects” w Scroll Transform
+  Hero i napisów. Nie zmieniane. Pasek stoi tuż pod logo, a nie na dole 100vh stopki (układ ramki bez zmian).
