@@ -969,6 +969,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   **Nagłówek kategorii „Moje konto” (`9767:33986`) → styl „Uppercase S”** (13/450, wersaliki, tracking 2 %), kolor
   #656766 (prośba użytkownika: ma wyglądać jak nazwa kategorii, nie link). Uwaga: górna nawigacja też ma wersaliki
   (14/450, czarne, klikalne) — od linków odróżnia go mniejszy rozmiar i szary kolor.
+  **Kreska pod „Ustawienia konta”** (prośba użytkownika): „Separator” `9805:6066` (kopia dolnego separatora, padding
+  6/6, kreska 228 px #E5E5E5 w tym samym miejscu co pozostałe). Lista 342 px. Użytkownik sam dodał kreskę nad
+  „MOJE KONTO” (`9767:34014`) — nie ruszana.
 
 ## Do zrobienia
 
