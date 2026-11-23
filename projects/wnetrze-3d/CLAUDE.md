@@ -1266,3 +1266,9 @@ krata przechodząca w kreski listy); użytkownik wybrał połączenie 1 + 4.
   kolejne warstwy kraty, które dorysowywały się przed siatką). Teraz przy `scrollState.v < 0` warstwy o `id < 1`
   (bliższe niż przednia warstwa ze spoczynku; `id = k + floor(shift)`) są pomijane — struktura tylko odsuwa się w głąb,
   z przodu nic nie przybywa. Linie w głąb (od krawędzi ekranu) bez zmian.
+- 2026-11-23 — poprawka (nagranie użytkownika): przy odjeździe bryły **jaśniały** — ciemna nakładka przodu
+  (`przyciemnienie` 0,9) była mnożona przez `visP = visNear × depthFade(zP)`, a samo zdjęcie tylko przez `visNear`,
+  więc w głębi nakładka słabła. Teraz `fadeOdj = depthFade(zP) / depthFade(zRest) × (1 − odjazdCien × postęp odjazdu)`
+  (w spoczynku = 1, wygląd bez zmian): przód — nakładka `1 − (1 − dim × visP) × fadeOdj`, ściany boczne — jasność × fadeOdj.
+  Bryły ciemnieją tym bardziej, im dalej odjeżdżają. Nowa kontrolka „Kamera” → **„Odjazd — przyciemnienie brył”**
+  (`kamera.odjazdCien`, 0–1, domyślnie **0,6**; 0 = tylko mgła, 1 = do czerni).
