@@ -933,11 +933,21 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   (biel, ramka #E5E5E5, jak pole „Wybierz jednostkę”) · **D** jedna biała grupa #E5E5E5 z przegródkami
   na pełną wysokość (segmenty, jak „Przełącznik widoku”) · **E** ikony Lucide 18 px przed nazwami
   (file-pen-line, settings, folder-input, building-2), odstęp 36. Czeka na wybór użytkownika.
+  Użytkownik sam wprowadził wariant **E (ikony)** w pasku — teraz to **Subnav `9767:33573`** (Container `9767:33574`).
+
+- 2026-11-23 — **Figma: „Subnav” — dopracowanie odstępów i stylu** (prośba użytkownika: „spacing niedopracowany”).
+  Oryginał `9767:33573` **bez zmian**; na lewo od „Navi II - Desktop Large” ramka **„Subnav — dopracowanie odstępów
+  (przed / po)”** `9789:6055` (x −3023, y −10904): „Przed” = kopia obecnego, „Po” = kopia dopracowana `9789:6103`.
+  W „Po”: pasek 72 px (padding 12 + kontrolki 48, jak „Sortowanie” / „Przełącznik widoku”); pole „Wybierz jednostkę”
+  260 × 48, padding 0/16 wyśrodkowany, biel 100 %, ramka #E5E5E5 100 %, placeholder styl **Button Thin** #656766;
+  pozycje — styl **Button**, ikona–tekst 8, tekst–strzałka 4, **między pozycjami 40** (było 28), ikony i strzałki
+  #1A1A1A, wszystko wyśrodkowane w pionie (bez paddingu 2 px w „Chevron wrap”), pole klikalne pozycji na pełną
+  wysokość 48 (niewidoczne). Prawa krawędź równa z „Anna Sobczak”. Czeka na akceptację.
 
 ## Do zrobienia
 
-- [ ] „Subnav” (NAWIGACJA II): wybrać wariant podziału dropdownów (A–E w ramce `9779:5969`), potem
-      wprowadzić go w oryginale i na pozostałych breakpointach (Desktop Small / Tablet / Mobile).
+- [ ] „Subnav” (NAWIGACJA II): akceptacja wersji „Po” (`9789:6103` w ramce `9789:6055`) → przenieść do oryginału
+      `9767:33573`, potem pozostałe breakpointy (Desktop Small / Tablet / Mobile).
 
 - [ ] Framer „Kolekcje”: do decyzji — link zakładki „Obiekty” (gdy powstanie strona Obiektów), licznik
       „12 kolekcji” powiązany z CMS zamiast tekstu, wariant „tytuł sekcji” Tablet / Phone na mniejszych
