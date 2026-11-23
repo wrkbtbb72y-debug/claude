@@ -972,6 +972,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   **Kreska pod „Ustawienia konta”** (prośba użytkownika): „Separator” `9805:6066` (kopia dolnego separatora, padding
   6/6, kreska 228 px #E5E5E5 w tym samym miejscu co pozostałe). Lista 342 px. Użytkownik sam dodał kreskę nad
   „MOJE KONTO” (`9767:34014`) — nie ruszana.
+  **Porządki w warstwach (prośba użytkownika; treść i układ wg jego wersji — bez nagłówka „MOJE KONTO”, pozycje
+  „Moje zgłoszenia / kolekcje / adnotacje”):** jednolity auto‑layout: ramka menu (V, padding 12/8/12/8, gap 0) →
+  „Grupa – Konto” / „Grupa – Moje zasoby” / „Grupa – Instytucja” / „Grupa – Wylogowanie” (V, bez paddingu) →
+  „Pozycja – <nazwa>” (H, padding 10/8/10/12, wys. 35, bez tła) → tekst (styl Button). Między grupami „Separator”
+  (V, padding 2/7/2/7, kreska 228 × 1 #E5E5E5, x 16). Usunięte zbędne ramki („Moje”, „Frame 427320025”,
+  „Instytucja”, „Wyloguj”) i białe tła wewnętrznych ramek. **Odstęp tekst–kreska i kreska–tekst = 12 px przy
+  każdej kresce** (wcześniej przy ostatniej 12/14); margines góra/dół menu do tekstu 23/23. Menu 260 × 251.
 
 ## Do zrobienia
 
