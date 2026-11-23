@@ -980,7 +980,22 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „Instytucja”, „Wyloguj”) i białe tła wewnętrznych ramek. **Odstęp tekst–kreska i kreska–tekst = 12 px przy
   każdej kresce** (wcześniej przy ostatniej 12/14); margines góra/dół menu do tekstu 23/23. Menu 260 × 251.
 
+- 2026-11-23 — **Figma: menu boczne Mobile — gdzie dać linki konta** (prośba użytkownika: Moje zgłoszenia, Moje
+  kolekcje, Moje adnotacje, Rejestracja instytucji; „Ustawienia konta” = obecny czarny przycisk „Moje konto”).
+  Strona „NAWIGACJA II”, ramka **„Menu boczne Mobile — gdzie dać linki konta (propozycje)”** `9816:6120`
+  (x −1343, y −8700, pod ramką z makietami Tablet/Mobile `9767:36131`). Kopie „Mobile - zalogowany” (`9767:35466`,
+  oryginał bez zmian; w kopiach „Drawer Mobile (zwinięte)” przestawiony z Absolute do układu, ramki wysokie na
+  treść, czerwona linia = dół ekranu 844): **Teraz** `9816:6129` · **A** lista „MOJE ZASOBY” (Uppercase S #656766)
+  pod przyciskami konta, wiersze jak pod‑lista „O nas” `9816:6201` · **B** rozwijana pozycja „MOJE ZASOBY” jako
+  pierwsza w nawigacji (kopia akordeonu „O nas”, stan rozwinięty) `9816:6353` · **C** imię i nazwisko ze strzałką
+  rozwija to samo menu co desktop (Ustawienia konta | Moje… ×3 | Rejestracja | Wyloguj się czerwony), przyciski konta
+  ukryte, stan rozwinięty `9816:6509`. Rekomendacja Claude: C (spójne z desktopem, zwinięte najkrótsze), alternatywa B.
+  Czeka na wybór; potem Tablet (drawer 580).
+
 ## Do zrobienia
+
+- [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
+      wersję Tablet.
 
 - [ ] „Subnav” (NAWIGACJA II): akceptacja wersji „Po” (`9789:6103` w ramce `9789:6055`) → przenieść do oryginału
       `9767:33573`, potem pozostałe breakpointy (Desktop Small / Tablet / Mobile).
