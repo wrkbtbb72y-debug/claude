@@ -924,7 +924,20 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Pominięte: ramka „OLD MOBILE” (`1132:8612`, „7. Moje konto”) — to nie przycisk. Framer: „Przełącznik widoku”
   na stronie „Kolekcje” (`xrG4ybpUO`, wszystkie breakpointy) — jedyny element z kryciem 40 % w projekcie.
 
+- 2026-11-23 — **Figma: propozycje podziału dropdownów w pasku „Subnav”** (prośba użytkownika) — strona
+  „NAWIGACJA II” (`6785:11870`), pasek `9767:25074` w „Navi II - Desktop Large” (`9767:24513`; „Edycja treści”,
+  „Zarządzanie”, „Pozyskiwanie zasobów”, „Moja instytucja”). **Oryginał bez zmian.** Pod nim ramka
+  **„Pasek – propozycje podziału dropdownów (do wyboru)”** `9779:5969` (x −1383, y −10400) z kopiami paska
+  (zwykłe ramki): **0** obecnie · **A** pionowe kreski 1×20 px (#1A1A1A 20 %, odstęp 20) · **B** osobne
+  ramki Secondary (biel, ramka #1A1A1A 80 %, 46 px, padding 16, odstęp 8) · **C** osobne jasne ramki
+  (biel, ramka #E5E5E5, jak pole „Wybierz jednostkę”) · **D** jedna biała grupa #E5E5E5 z przegródkami
+  na pełną wysokość (segmenty, jak „Przełącznik widoku”) · **E** ikony Lucide 18 px przed nazwami
+  (file-pen-line, settings, folder-input, building-2), odstęp 36. Czeka na wybór użytkownika.
+
 ## Do zrobienia
+
+- [ ] „Subnav” (NAWIGACJA II): wybrać wariant podziału dropdownów (A–E w ramce `9779:5969`), potem
+      wprowadzić go w oryginale i na pozostałych breakpointach (Desktop Small / Tablet / Mobile).
 
 - [ ] Framer „Kolekcje”: do decyzji — link zakładki „Obiekty” (gdy powstanie strona Obiektów), licznik
       „12 kolekcji” powiązany z CMS zamiast tekstu, wariant „tytuł sekcji” Tablet / Phone na mniejszych
