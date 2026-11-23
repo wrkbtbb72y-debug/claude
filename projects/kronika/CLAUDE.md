@@ -1020,6 +1020,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   (`9830:7044`, `9830:7444`, `9830:7839`, `9830:8228`, `9835:9490`) jako prostokąt „Tło – aktywny” (Absolute, pod
   treścią pozycji — układ paska bez zmian). Lista przesunięta **4 px pod ramkę** i wyrównana do jej lewej krawędzi
   (przy ostatniej pozycji — do prawej). We wdrożeniu: padding 0/12 na każdej pozycji, tło tylko w stanie otwartym.
+  Poprawka: ramka była **ucinana** (przycinanie treści w „Nav2 links”, „Container” i „Subnav — dopracowany”) —
+  w tych 5 makietach „Clip content” wyłączone, ramka widoczna w całości.
 
 ## Do zrobienia
 
