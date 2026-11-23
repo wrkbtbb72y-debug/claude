@@ -953,6 +953,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   pozycje 38 px (padding 11/8/12/12, styl **Button**), separatory #E5E5E5 (padding 4/6) na pełną szerokość.
   Kolejność (zmieniona względem listy użytkownika — „Wyloguj się” na końcu, jak zwykle w menu konta):
   Moje konto · Moje zgłoszenia · Moje kolekcje · Moje adnotacje | Rejestracja instytucji | Wyloguj się.
+  **Poprawka tego samego dnia** (użytkownik: „odrobinę ściśnięte w pionie”): pozycje 38 → **44 px** (padding
+  14/15 zamiast 11/12, cel kliknięcia ≥ 44), separatory padding 4/6 → **8/8**; lista ma teraz 316 px wysokości.
+  Uwaga: wzorcowe „Dymki” (`9767:33921`) nadal mają 38 px — do ujednolicenia, jeśli 44 zostaje.
 
 ## Do zrobienia
 
