@@ -956,6 +956,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   **Poprawka tego samego dnia** (użytkownik: „odrobinę ściśnięte w pionie”): pozycje 38 → **44 px** (padding
   14/15 zamiast 11/12, cel kliknięcia ≥ 44), separatory padding 4/6 → **8/8**; lista ma teraz 316 px wysokości.
   Uwaga: wzorcowe „Dymki” (`9767:33921`) nadal mają 38 px — do ujednolicenia, jeśli 44 zostaje.
+  **Druga poprawka** (użytkownik: 44 „za bardzo, coś pomiędzy”): pozycje **40 px** (padding 12/13), separatory
+  **6/6**; lista 284 px. Aktualne wartości = te.
 
 ## Do zrobienia
 
