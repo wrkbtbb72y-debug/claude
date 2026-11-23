@@ -1014,6 +1014,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   ten sam styl co pozostałe, dosunięta do prawej krawędzi 1380). Żółta notatka: wg notatki „DLA PARTNERSKICH” na
   stronie „Zarządzanie” tylko dla administratorów lokalnych; ikony do akceptacji.
 
+- 2026-11-23 — **Figma: stan aktywny (otwarty) pozycji „Subnav”** wg wzoru użytkownika „Makieta” `9767:39134`
+  (stary przycisk „Zarządzanie”): tło **#E6E6E6**, ramka **1 px #D4D4D4** (inside), wysokość **34**, 12 px poza
+  treść pozycji z każdej strony, bez zaokrągleń. Dodane we **wszystkich 5** makietach rozwiniętych sekcji
+  (`9830:7044`, `9830:7444`, `9830:7839`, `9830:8228`, `9835:9490`) jako prostokąt „Tło – aktywny” (Absolute, pod
+  treścią pozycji — układ paska bez zmian). Lista przesunięta **4 px pod ramkę** i wyrównana do jej lewej krawędzi
+  (przy ostatniej pozycji — do prawej). We wdrożeniu: padding 0/12 na każdej pozycji, tło tylko w stanie otwartym.
+
 ## Do zrobienia
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
