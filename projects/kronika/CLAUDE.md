@@ -1023,6 +1023,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Poprawka: ramka była **ucinana** (przycinanie treści w „Nav2 links”, „Container” i „Subnav — dopracowany”) —
   w tych 5 makietach „Clip content” wyłączone, ramka widoczna w całości.
 
+- 2026-11-23 - Prośba użytkownika: bez długich myślników „—” w tekstach Claude (zasada w głównym `CLAUDE.md`).
+  W Figmie (strona „NAWIGACJA II”) w ramkach od Claude zamienione „—” → „-”: 8 tekstów i 19 nazw warstw
+  (ramki `9779:5969`, `9830:7044`, `9830:7444`, `9830:7839`, `9830:8228`, `9835:9490`, `9796:7538`). Ramek
+  `9789:6055` (Subnav przed/po) i `9816:6120` (menu boczne Mobile - propozycje) już nie ma na stronie.
+
 ## Do zrobienia
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
