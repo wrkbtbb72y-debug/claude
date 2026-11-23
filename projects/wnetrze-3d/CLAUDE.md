@@ -1295,3 +1295,24 @@ po lewej znak + copyright, na środku pusta kapsuła, po prawej linki społeczno
 - **Do sprawdzenia przez użytkownika:** ramka „Footer” `yVikSkj7m` ma ten sam `elementId` „projects” co sekcja
   Featured projects `HadJ76UFf` (pozostałość po kopii) - może mylić cel przewijania „projects” w Scroll Transform
   Hero i napisów. Nie zmieniane. Pasek stoi tuż pod logo, a nie na dole 100vh stopki (układ ramki bez zmian).
+
+## Featured projects: przyklejone teksty zmieniane wg zdjęcia na środku (`/`, 2026-11-23)
+
+Wzór: focus-gallery.framer.website (komponent z kodem). Z jego kodu: aktywne jest zdjęcie, którego środek jest najbliżej
+środka ekranu; stary tekst znika od razu, nowy wjeżdża 0,3 s (krycie 0 → 1, tytuł z −20 px, opis z +20 px); teksty
+40 px od krawędzi ekranu, w pionowym środku; poniżej 1024 px ukryte; zdjęcia: aktywne skala 1,3, reszta 0,7 i krycie 0,4.
+Układ zbudował użytkownik z instrukcji Claude (sekcja `HadJ76UFf`): „Lewa kolumna” `RqVV9HufJ` (absolute, Left/Right 0,
+Top −100, wysokość całej sekcji, pointer events none, zIndex 3) z przyklejoną ramką „tekst - sticky” `M0WLo0IsD`
+(sticky, Top 56, 100vh; pasy „left text” `Xmdf5w5Yk` 1fr / „middle” `Rx6zlkF2_` 546 px / „right text” `kngBPqYgF` 1fr).
+Zdjęcia w grupie „1” `KzTe86uZ1` są Scroll Section: photo-1 `HzQMxSHVp`, photo-2 `kA1bO5szG`, photo3 `a0kbIINEc`.
+- Komponent „tekst - sticky” (warianty + przejścia) okazał się niepotrzebny: we Framerze nie da się w panelu ustawić
+  przejścia pojedynczej warstwie w wariancie (przez API tak). Instancja odpięta (Detach), komponent usunięty.
+- Teksty: „Tytuły” `vIFNNRaWe` (260 × 20, w lewym pasie, padding lewy 40) i „Opisy” `KEnBAz7rn` (w prawym, padding
+  prawy 40, tekst do prawej); w każdej po 3 teksty nałożone (absolute, top 0): Tytuł 1–3 `JFATg6NBS`, `oceFTVdIz`,
+  `jTG5RRS_6`, Opis 1–3 `TESqBFJAK`, `V6j5yUuV_`, `G4uQpy6Vk`. Treść robocza („Tytuł N”, „opis N”) - do podmiany.
+- Każdy tekst: Appear, trigger **Scroll Section** = jego zdjęcie, replay; wejście z krycia 0 i x −20 (tytuły) / +20
+  (opisy), Ease Out 0,3 s; wyjście do tego samego stanu w 0,01 s.
+- Tablet i Phone: „Lewa kolumna” ukryta (jak we wzorze poniżej 1024 px).
+- W edytorze widać wszystkie 3 teksty naraz (nałożone) - efekty działają tylko w podglądzie. Do sprawdzenia przez
+  użytkownika: moment przełączenia (środek ekranu czy góra) i czy replay chowa tekst przy następnym zdjęciu; jeśli nie,
+  wrócić do komponentu z wariantami i przejściami warstw ustawionymi przez API.
