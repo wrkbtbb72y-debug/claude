@@ -1260,6 +1260,8 @@ krata przechodząca w kreski listy); użytkownik wybrał połączenie 1 + 4.
   „hero” = Main `wUYfTPOi0`, „projects” = sekcja `HadJ76UFf` (`elementId` + `scrollTargetEnabled`).
   - Hero `N06uDCvcg`: przy „projects” **scale 0,94, opacity 0,35** (prześwituje ciemne tło = ściemnienie).
   - Column Left `AzgVkCy4j` / Column Right X `Hgbr5CLZ2` (napisy): **y −48 px, opacity 0**.
+  **2026-11-23 - usunięte** na prośbę użytkownika (napisy nie mają się ruszać przy scrollu): `styleTransformEffect` = brak
+  w obu kolumnach (wszystkie breakpointy dziedziczą). Kolumny są nadal w Hero, więc dalej zmniejszają się (0,94) i przygasają (0,35) razem z nim.
 - Strojenie: siła odjazdu / zakres w kontrolkach siatki; skala/ściemnienie/odpływ napisów w Scroll Transform warstw.
   W edytorze widać tylko stan początkowy — sprawdzać w podglądzie.
 - 2026-11-22 — poprawka: przy odjeździe pojawiały się nowe linie pionowe (kamera cofając się przechodziła przez
