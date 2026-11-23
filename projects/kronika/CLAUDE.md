@@ -1044,6 +1044,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     styl jak listy desktop): 4 nagłówki sekcji z ikoną i strzałką (kopie pozycji paska, padding 10/8/10/12),
     separatory między sekcjami; rozwinięte „Zarządzanie” - pozycje wcięte 38 px (tekst w linii z nazwą sekcji).
 
+- 2026-11-23 - **Figma: menu sekcji na Mobile jako panel boczny** (prośba użytkownika) - makieta „Navi II - Mobile -
+  menu rozwinięte” `9767:41642` (x 5440, y −7181). Dymek-akordeon pod paskiem (`9767:41657`) zamieniony na **panel
+  boczny z prawej na całą wysokość ekranu**: „Panel boczny - menu sekcji” `9856:10211` (320 × 800, biel, padding
+  20/8/16/8, odstęp 24) - u góry przycisk zamknięcia lucide/x 28 px (jak w menu głównym), pod nim „Lista sekcji”
+  `9856:10215` (te same sekcje, nagłówki, pozycje i kreski co w dymku; „Zarządzanie” rozwinięte). Pod panelem
+  **„Scrim”** (czarny 44 %, jak w menu bocznym na Tablet) na całej makiecie; ramka makiety przycina zawartość.
+
 ## Do zrobienia
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
