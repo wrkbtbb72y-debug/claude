@@ -958,6 +958,10 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Uwaga: wzorcowe „Dymki” (`9767:33921`) nadal mają 38 px — do ujednolicenia, jeśli 44 zostaje.
   **Druga poprawka** (użytkownik: 44 „za bardzo, coś pomiędzy”): pozycje **40 px** (padding 12/13), separatory
   **6/6**; lista 284 px. Aktualne wartości = te.
+  **Treść (prośba użytkownika):** pierwsza grupa ma nagłówek kategorii **„Moje konto”** (14/500 #656766, bez stylu
+  tekstu — jak etykiety grup w „Dymku” mobilnym; ramka „Label Moje konto” `9799:6066`, padding 8/8/4/12), pod nim
+  **Ustawienia konta · Zgłoszenia · Kolekcje · Adnotacje**; dalej Rejestracja instytucji | **Wyloguj się na czerwono
+  #9A1C31** (Kronika Red). Lista 310 px. Na stronie leży też kopia użytkownika `9767:33963` (stara treść) — nie ruszana.
 
 ## Do zrobienia
 
