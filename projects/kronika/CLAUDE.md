@@ -992,6 +992,20 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   ukryte, stan rozwinięty `9816:6509`. Rekomendacja Claude: C (spójne z desktopem, zwinięte najkrótsze), alternatywa B.
   Czeka na wybór; potem Tablet (drawer 580).
 
+- 2026-11-23 — **Figma: rozwinięte sekcje paska „Subnav”** (prośba użytkownika, lista pozycji od niego). Wzór:
+  „Navi II - Desktop Large” `9767:37402` (x −3501, y −10945; z „Subnav — dopracowany”) — **bez zmian**. Pod nim
+  (odstęp 80) **4 kopie 1440 × 700**, w każdej jedna sekcja otwarta (strzałka w górę, lista 4 px pod polem klikalnym,
+  kolumna tekstu wyrównana do ikony; ostatnia dosunięta do prawej krawędzi treści 1380):
+  „… — Edycja treści (rozwinięte)” `9830:7044` · „… — Zarządzanie” `9830:7444` · „… — Pozyskiwanie zasobów” `9830:7839`
+  · „… — Moja instytucja” `9830:8228`. Listy = styl menu konta: 260 px, padding 12/8, biel, ramka #E5E5E5, r 4, cień
+  0/0/3 20 %, pozycje 35 px (10/8/10/12, styl Button), separator 2/7/2/7. Pozycje:
+  Edycja treści — O portalu, Aktualności, Pomoc, Instytucje, Kontakt | Regulamin, Polityka prywatności i RODO
+  (nazwa robocza), Deklaracja dostępności; Zarządzanie — Użytkownicy, Zgłoszenia, Instytucje, Wnioski o rejestrację,
+  Słowniki, Kolekcje, Statystyki; Pozyskiwanie zasobów — Obiekty cyfrowe, Źródła danych, Lista migracji, Manager
+  plików; Moja instytucja — Dane instytucji, Obiekty instytucji, Migracje, Użytkownicy. Uwagi z listy (do dopytania
+  MC, dubel „Instytucje”, znaczenie „Użytkownicy”) jako żółte notatki obok list. Menu konta użytkownika `9767:33983`
+  już nie istnieje na stronie — listy zbudowane od zera według jego wymiarów.
+
 ## Do zrobienia
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
