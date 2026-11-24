@@ -25,6 +25,7 @@ Półpauza w zakresach lat w treściach stron (niżej) bez zmian.
 | `projects/kronika/` | Kronika | [projekt](https://framer.com/projects/Kronika--0h5pA6cwUCiyjVB0qFni-1oD05) | w toku — brief do uzupełnienia |
 | `projects/wnetrze-3d/` | NUMINO / Wnętrze 3D („Kubatura”) — interaktywne wnętrze z linii | [projekt](https://framer.com/projects/Bashful-Career--TrZY6V7hpIyWsOmfEYfW-dBvqu) | w toku |
 | `projects/si2pem/` | SI2PEM — serwis o PEM (projekt tylko w Figmie) | [Figma](https://www.figma.com/design/kiuBZ1fA0OMqFDdPuhmnHy/SI2PEM) | w toku |
+| `projects/cohaere/` | Cohaere Ensemble - strona zespołu (makiety w Figmie) | [Figma](https://www.figma.com/design/psPKdiaT2JhUOjIqIQ5Yy7/Cohaere) | w toku |
 
 **Biblioteka inspiracji** (`inspiracje/`) — wspólny zbiór screenów elementów ze stron
 (nawigacje, galerie, typografia…) z wizualną mapą. To nie projekt klienta: można z niej czerpać
