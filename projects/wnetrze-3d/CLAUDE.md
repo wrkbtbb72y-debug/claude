@@ -1330,3 +1330,21 @@ nazwie, więc drugi „photo3” (cel paska) był nieosiągalny.
   „Pasek z linkami” w „Lista projektów” `gz49SgmVh`.
 - Linki z kotwicą w projekcie: tylko `/#hero` (logo w stopce) - bez zmian.
 - Zasada na przyszłość: po zduplikowaniu warstwy ze Scroll Section zmienić jej nazwę.
+
+## Podsumowanie pod zdjęciami Featured projects (`/`, 2026-11-24)
+
+Prośba: osobna sekcja z opisem i przyciskiem („Projects” `yJcrtn4nP`, kopia z translateY −56, tekst 15 px bez presetu,
+na Phone wychodził poza ekran) ma być dopełnieniem sekcji ze zdjęciami; tekst o tym, jakie projekty robimy i że jest
+więcej; dobrać wielkość i odstępy.
+- **Miejsce w warstwach:** nie osobna sekcja na poziomie breakpointu, tylko część sekcji Featured projects - ramka
+  **„Podsumowanie”** `rkxEEThqG` w kolumnie zdjęć (grupa „1” `KzTe86uZ1`), zaraz po „Photo 3”, przed „spacer”
+  (`nv67EJ8nh`, cel wygaszania paska - pasek „featured projects” gaśnie dopiero po podsumowaniu). Sekcja `yJcrtn4nP`
+  usunięta (jej nazwa Scroll Section „about” zniknęła razem z nią; nic jej nie używało).
+- Układ: stos pionowy, do lewej (krawędź równa ze zdjęciami), szer. 100% / max 546 px (= zdjęcia), padding górny 96
+  (+ gap grupy 28 = 124 px od ostatniego zdjęcia), odstęp tekst-przycisk 32.
+- Tekst „Opis” `czoxkt2o5`: „We shape brands for companies and cultural institutions, across images, motion and space.
+  These are a few of them, and there is more to see.” (z marki NUMINO: branding dla firm i kultury + „Images, motion
+  and space” ze strony; do akceptacji przez użytkownika).
+- **Nowy preset „Opis sekcji”** `Duk87rJ1f`: PP Neue Montreal 300, 24 / 22 / 20 px (Desktop / Tablet / Phone),
+  interlinia 1,35em, odstęp −0,01em, kolor token „Tekst”.
+- Przycisk „View all” `saShW5RM2` (link `/z`) bez zmian.
