@@ -93,6 +93,10 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Dotyczy wszystkich przycisków, także przełączników (np. „Przełącznik widoku” Kafelki / Lista).
   Zmiana z 40 % na 50 % — decyzja użytkownika 2026-11-22 (wcześniej 40 %, potwierdzone 2026-11-17 i 2026-11-20).
 
+- **Kolory tekstu (Framer, od 2026-11-24, decyzja użytkownika):** tylko dwa neutralne kolory tekstu na jasnym tle -
+  **ciemny #1A1A1A** (`rgb(26, 26, 26)`) i **szary #656766** (`rgb(101, 103, 102)`). Nowe teksty i presety tylko
+  w tych kolorach (plus biały na ciemnym tle i kolory akcentów: niebieskie linki, czerwony / zielony w akcjach).
+
 ## Ustalenia i decyzje
 
 - 2026-11-15 — Sekcja „O Portalu‑section 4” na Tablecie ma wyglądać jak na Desktop Primary:
@@ -1203,6 +1207,16 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     section” (`muYP6A_iR`, `DfdiIM49B`, `ya9WCCmx9`, `eeUkB49Cy`), „Footer wrapper” `hHA1xEUSH` (nic do nich nie
     linkowało). Zostały pojedyncze ukryte elementy w widocznych sekcjach (np. licznik „19 mln”, ukryty celowo).
   Zrzuty wszystkich 4 breakpointów sprawdzone. Zmiana od razu w `main`, nieopublikowana.
+
+- 2026-11-24 - **Framer: ujednolicone kolory tekstu w całym projekcie** (prośba użytkownika): wszystkie neutralne
+  ciemne / czarne teksty → **#1A1A1A**, szare → **#656766**. Podział: neutralne (różnica kanałów RGB ≤ 30), średnia
+  jasność ≤ 72 (do ok. #484848, w tym #000, #121212, #1B1B1B, #222, #333, #3C3C3C, #464646, czarny 80 %) = ciemne;
+  73-170 (#4E4D4D, #505755, #595959, #5A5852, #696969, #6C6C6C, #757575, #787878, #A0A0A0 itd.) = szare. Bez zmian:
+  biały, białe półprzezroczyste, kolorowe (niebieskie linki, czerwone „Usuń” / gwiazdki, zielone „Publikuj”,
+  zielony „Badge”). Zakres: style tekstu (presety), style linków, wszystkie strony (wszystkie breakpointy, także
+  luźne ramki na canvasie stron) i komponenty (wszystkie warianty); pominięte robocze strony projektowe („Design”).
+  Uwaga techniczna: repliki (breakpointy / warianty) mają własne kopie koloru - trzeba je zmieniać osobno.
+  Zrzuty Home (4 breakpointy) i Kolekcje sprawdzone. Zmiana od razu w `main`, nieopublikowana.
 
 ## Do zrobienia
 
