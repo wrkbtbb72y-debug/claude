@@ -1391,3 +1391,16 @@ with makers and brands to shape impactful brand experiences”) był prawie dos�
 - 2026-11-24 - na prośbę użytkownika **bez Brand Strategy**: wiersz usunięty, pozostałe przenumerowane 01-05
   (Visual Identity `UnXZDLWCz`, Art Direction `RVrYvBxB2`, Motion & 3D `wHhhZpKK4`, Digital Experiences `hfUpV2v4Q`,
   Space & Print `ayGvY283I`).
+
+## Tabela danych do CMS w Figmie (2026-11-24)
+
+Prośba: czytelna, prosta tabela wszystkich danych do CMS (kolekcja Projects), posegregowana po kategoriach.
+- Plik [BIURKO – VAAV](https://www.figma.com/design/Hr3x34LirWo1GJa1JRMkun/BIURKO---VAAV?node-id=328-27), strona
+  „Numino - 3d grid”, ramka użytkownika **„Dane CMS”** `328:27` (szer. 4970 bez zmian; zamieniona na auto-layout
+  pionowy, padding 160, wysokość dopasowana do treści - ok. 5330 px).
+- Grupy: 01 Karta projektu (pola 1-9), 02 Strona główna - Featured projects (10-12), 03 Pełna strona projektu (13-18),
+  04 SEO i udostępnianie (19-20), 05 Wartości pola Category (5 dziedzin z What We Do z kolorami chipów).
+  Kolumny: #, Pole (nazwa w CMS), Typ pola w Framerze, Gdzie widać, Wymagane, Zasady / opis, Przykład.
+- Wiersze 1-20 to instancje komponentu **„CMS Table / Row”** `330:2` (leży na prawo od ramki; teksty kolumn jako
+  właściwości). Fonty: Inter + Courier Prime (jak etykiety na stronie). Treść zgodna z propozycją karty (wersja 2).
+- Do potwierdzenia: czy Framer CMS ma pole typu Gallery (inaczej kilka pól Image), limity znaków, kolory chipów.
