@@ -10,6 +10,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 - **Język treści na stronie:** PL
 - **Branche we Framerze:** edycje AI **nie tworzą brancha** (sprawdzone 2026-11-15) — zmiany idą
   od razu do `main`, nieopublikowane.
+- **Tabela danych CMS w Figmie - zawsze aktualna** (stała prośba użytkownika, 2026-11-24). Gdy w sesji zmieni się
+  cokolwiek, co dotyczy danych projektów w CMS (pola karty lub pełnej strony, typy pól, wymagane, limity, przykłady,
+  wartości Category / usługi w What We Do, pola Featured projects), **sam zaktualizuj tabelę** w Figmie: plik
+  BIURKO – VAAV (`Hr3x34LirWo1GJa1JRMkun`), ramka „Dane CMS” `328:27`, bez pytania. Wiersze to instancje
+  „CMS Table / Row” `330:2` (właściwości No, Field, Type, Where, Required, Rules, Example) - nowy wiersz = nowa
+  instancja w grupie, zmiana = `setProperties`, numeracja ciągła. Wartości Category: grupa 05 `330:230`.
+  Po zmianie zrzut ramki i wzmianka w podsumowaniu. Szczegóły tabeli: sekcja „Tabela danych do CMS w Figmie”.
 - **Nazwy warstw we Framerze: po angielsku** (prośba użytkownika, 2026-11-24). Nowe warstwy nazywać po angielsku;
   starsze notatki niżej używają dawnych polskich nazw - ID węzłów się nie zmieniły.
 
