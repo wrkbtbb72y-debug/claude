@@ -1537,7 +1537,8 @@ Prośba: 6 projektów z arkusza w Figmie na stronę Projects we Framerze. Zmiany
 - **Strona `/projects`** `RK_gmhXuR`, sekcja „projects” `J09QQV8My`: nowa lista CMS **„Project List (CMS)”** `LK791BIIc`
   (sortowanie Order rosnąco) → „Project Row” `r1XSFaNGa` → instancja „Wiersz projektu” `e0sRzCdfk`: numer = Order
   (2 cyfry), tytuł = Project name, zakres = Category (nazwa opcji), zdjęcie = Main image; na Phone wariant Phone.
-  Stare wiersze z usługami (Service 01-05) **ukryte**, nie usunięte - do decyzji użytkownika.
+  Stare wiersze z usługami (Service 01-05) najpierw ukryte, potem **usunięte** na prośbę użytkownika (2026-11-24);
+  w sekcji zostały tylko „Section Bar” `Mop_e0NSp` i lista CMS.
 - Linter: ostrzeżenie o braku maxWidth na sekcji `J09QQV8My` - sekcja celowo na całą szerokość (linie wierszy od krawędzi
   do krawędzi jak na `/`), zostawione bez zmian.
 - **TODO:** strona szczegółów projektu `/projects/[slug]` i link z wierszy (wiersze na razie nie są klikalne).
