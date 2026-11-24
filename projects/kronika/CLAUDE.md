@@ -1177,7 +1177,33 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   ramka „Duzy desktop”) jest jeszcze instancja `GD9OeDtos` w wariancie „Otwarty” - nie ruszana (do decyzji).
   Zmiana od razu w `main`, nieopublikowana.
 
+- 2026-11-24 - **Framer, Home: tekst w „Otwarte zasoby nauki i kultury”** (prośba użytkownika: pogrubiona fraza nie
+  może łamać się na dwie linie). Tekst `TrlUpls2C` („Opis portalu”, preset „Body 1 - tekst długi L”) zmieniony z
+  „Zapewniamy bezpłatny dostęp do ponad **19 milionów obiektów** cyfrowego dziedzictwa narodowego.” na
+  „**Ponad 19 milionów obiektów** cyfrowego dziedzictwa narodowego udostępniamy bezpłatnie.” - pogrubienie na
+  początku, więc zawsze w pierwszej linii (wcześniej łamało się po „19” na Desktop 1024 i Mobile). Sprawdzone
+  na zrzutach wszystkich 4 breakpointów. Zmiana od razu w `main`, nieopublikowana.
+
+- 2026-11-24 - **Audyt wizualny / typograficzny Home** (wyniki, nic poza tekstem wyżej nie zmieniano):
+  wszystkie widoczne teksty na stronie (20) mają preset tekstu, font wszędzie Aspekta; nagłówki sekcji, nawigacja
+  i stopka w komponentach. Znalezione niekonsekwencje - lista w „Do zrobienia” (punkt „Audyt Home”).
+
 ## Do zrobienia
+
+- [ ] **Audyt Home (2026-11-24) - do decyzji użytkownika:**
+      1) placeholder wyszukiwarki `w7UXI65fG`: Mobile „Szukaj w naszych zbiorach”, reszta „Wyszukaj z ponad 19 milionów
+      zbiorów”; style różne na każdym breakpoincie (Body 4 Thin / Button Thin na Dużym desktopie / ręczne 15 px 400
+      na Tablecie / 15 px 450 na Mobile), kolor #757575 vs #6B6B6B na Dużym desktopie;
+      2) Aktualności `FvqGRkPEb`: Duży desktop ma inny tekst („…zasobów. Dołącz do nas i udostępnij swoje unikatowe
+      zbiory szerokiemu gronu odbiorców.”) niż pozostałe („…oraz dzielenia się swoim dorobkiem.”);
+      3) „Podziel się swoimi zbiorami…” `eEc7OFqIY`: na Tablecie ręczny kolor #333333, na reszcie kolor z presetu;
+      4) wielkie litery w nagłówkach: „Dołącz do Nas”, „Instytucje Partnerskie” vs „Otwarte zasoby nauki i kultury”;
+      5) stopka: „w godzinach 08:15-16:15” - łącznik zamiast półpauzy i na 1024 / 1440 łamie się po „08:15-”;
+      6) cienka linia 1 px rgba(0,0,0,0.1) **pod stopką** („Recommended_h2” `h93FmTSH9`) na wszystkich breakpointach;
+      7) ukryte stare kopie sekcji (88 ukrytych tekstów): „Polecane-section” `MoQkF82Y4`, 4× „O Portalu-section”,
+      „Footer wrapper” `hHA1xEUSH` - do usunięcia po zgodzie (zaśmiecają linter i canvas);
+      8) „Body 1 - tekst długi L” ma grubość 250 + szary kolor - cienki tekst, warto sprawdzić czytelność / kontrast;
+      9) etykiety kategorii w źródle różną wielkością liter („tekst”, „Muzealia”, „film”) - na stronie wielkie przez preset.
 
 - [x] Framer: „O portalu” i „Kolekcje” ujednolicone do maks. 1720 px jak Home i stopka (2026-11-24).
 
