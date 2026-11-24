@@ -1075,6 +1075,22 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „Obiekty instytucji”). Przy wstawianiu do paska odstęp między przyciskami **16** zamiast 40 (padding 12 + 12
   jest już w przycisku). Makiety na „NAWIGACJA II” nadal mają zwykłe ramki - nie podmienione.
 
+- 2026-11-24 - **Figma: makiety „NAWIGACJA II” na kopiach komponentów** (prośba użytkownika). Przyciski paska
+  (ramki „Nav item / …” / „Pozycja - …”) zastąpione instancjami **„Przycisk paska Subnav”** (`9915:378`, nazwy
+  „Przycisk - <etykieta>”, etykieta/ikona/strzałka ustawione właściwościami; otwarta sekcja = wariant Otwarty,
+  prostokąty „Tło – aktywny” zniknęły razem ze starymi ramkami) w 8 paskach: „Navi II - Desktop Large” `9767:37402`,
+  5 makiet rozwiniętych (`9830:7044`, `9830:7444`, `9830:7839`, `9830:8228`, `9835:9490`) i we „Wzorze zachowania
+  paska” Desktop Large `9846:9919` + Desktop Small `9846:9960`. Odstęp w „Nav2 links”: 40 → **16** (Desktop Small
+  24 → **0**), bo padding 12 jest w przycisku - odległości między treściami bez zmian. Skutek: cała grupa
+  przesunęła się o 12 px w lewo; zamknięta ostatnia sekcja kończy się 12 px przed krawędzią 1380, a tło otwartej
+  sekcji sięga do 1380 (równo z „Anna Sobczak”).
+  Listy rozwinięte zastąpione instancjami **„Dymek”** (Stan Domyślny; `9926:5436`, `9926:5457`, `9926:5478`,
+  `9926:5499`, `9926:5520`, stare nazwy „Dropdown – …”): teksty pozycji nadpisane, zbędne pozycje / druga grupa /
+  separator ukryte (Zarządzanie 7 pozycji = grupa 1 + 3 z grupy 2 bez separatora). Listy i żółte notatki
+  przesunięte o −12 px (lista 4 px pod przyciskiem, wyrównana do jego lewej krawędzi, przy ostatniej sekcji do prawej).
+  Bez zmian: paski Tablet / Mobile (tylko pole jednostki + „⋮”), panel boczny menu sekcji na Mobile, stary
+  komponent „Subnav” `8088:5007`, lista pola „Wybierz jednostkę” (osobny komponent Select).
+
 ## Do zrobienia
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
