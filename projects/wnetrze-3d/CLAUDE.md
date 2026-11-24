@@ -1558,3 +1558,17 @@ tekst ciemnieje): warstwa **„Hover fill”** `E2DUdvqEW` (absolute, token „T
 - Ostrzeżenia lintera „zero height” (tło w spoczynku) i „brak nieprzezroczystego tła wariantu” - celowe, zostawione.
 - Użytkownik zmienił w CMS nazwy: Department of Interest → **Interest**, EVAC x Our Legacy + ROA → **Our Legacy**;
   zsynchronizowane w arkuszu Figmy (Projekt 01 i 03). Lista na `/projects` ma teraz szerokość `1fr` (zmiana użytkownika).
+- 2026-11-24 - **Kolor tekstu na hover jak w projekcie Ewy Dąbrowskiej** (prośba użytkownika; wzór: komponent „work” `GEthf1YJG`
+  w projekcie Ewy, warstwa „wipe” - tylko odczyt, nic tam nie zmieniano). Technika: tło przycina zawartość (Overflow: Clip)
+  i ma w środku **ciemną kopię tekstu** leżącą dokładnie na oryginale; tło przesuwając się odsłania kopię, więc kolor zmienia się
+  na krawędzi tła (nie przez przenikanie). W „Wierszu projektu”:
+  - użytkownik w międzyczasie zmienił tło na wjeżdżające: „Hover fill” spoczynek Top −64 px, wysokość 64 px; Hover Top 0;
+  - w „Hover fill” nowa ramka **„Hover content”** `YecMTotpn` (absolute, Left 0, szer. 100%, stack poziomy jak wiersz: padding
+    20/40, gap 24, środek) z kopiami **„Tytuł (hover)”** `S3VjatetE` i **„Zakres (hover)”** `OVym3OEzy` (te same zmienne
+    komponentu i style tekstu, kolor „Tło”); Top 64 px w spoczynku i 0 w Hover - porusza się przeciwnie do tła, więc kopia
+    stoi w miejscu; Phone: padding 16, gap 12, kopia zakresu ukryta;
+  - wariant Hover: usunięta zmiana koloru oryginalnych tekstów; „Hover fill” z-index **2 we wszystkich wariantach** (nad
+    tekstami, bez przełączania - inaczej jasny oryginał prześwitywał przez kopię).
+- Do sprawdzenia przez użytkownika: animacja w podglądzie. Uwaga: wysokość tła 64 px pasuje do wierszy jednolinijkowych
+  (Desktop); na Tablet/Phone wiersze są wyższe. Na `/projects` użytkownik buduje „Horizontal wrapper” (lista 1fr + ramka
+  595 px) - na Tablet/Phone ramka 595 px ściska listę (na Phone lista niewidoczna); nie ruszane.
