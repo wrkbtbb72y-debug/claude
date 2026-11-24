@@ -1518,3 +1518,27 @@ Prośba (dobra praktyka Framera): na Desktopie poza „Main” zostają tylko �
 - Zasada: nowe sekcje `/` wstawiać do „Main” (po Hero), nie bezpośrednio do breakpointu.
 - 2026-11-24 - „What We Do”: kadry **kwadratowe** (aspectRatio 1) we wszystkich 4 kolumnach („Media” `BRYavVKSY`,
   `ijOKlcSDs`, `GrFJK3O3U`, `Gtqtg26nf`) na Desktopie, Tablecie i Phone (Phone wcześniej 5:4).
+
+## Kolekcja CMS „Projects” i lista na `/projects` (Framer, 2026-11-24)
+
+Prośba: 6 projektów z arkusza w Figmie na stronę Projects we Framerze. Zmiany od razu w `main` (bez brancha), **nieopublikowane**.
+- **Kolekcja „Projects”** `TpqN6PgHg` - pola wg tabeli „Dane CMS” (z separatorami Card / Home / Project page / SEO):
+  Project name `HFchKKAAQ`, Slug `Bf6q983Gb` (z Project name), Title `qgpuV6WDb`, Category `eQ0IyN4Qu` (Option: Visual
+  Identity `VA1GeXJ6C`, Art Direction `Y2sFLm6x8`, Motion & 3D `jtGZ06V5K`, Digital Experiences `b7OhyQmbP`, Space & Print
+  `xf9beZIvU`), Year `BrBc5FKil`, Short description `xShrUeBFp`, Main image `w7Invwqgm`, Cover video `rtvzmXOGY` (MP4),
+  Featured on Home `hzf_YoEG3`, Order `HnQdSUTkJ`, Home caption `cNFMWWNRJ`, Long description `qfEMx27Nt` (Formatted Text),
+  Additional images `qBQIH4cZl` (List z polem Image `MHyOX44Fq`), Credits `hupGOox3I`, Project website `se0khTjZG`,
+  SEO description `xufJ0Ukcr`, Social image `ArE2bbRWJ`.
+- **6 wpisów** (treść jak w arkuszu Figmy, wzór sort-office.com): Department of Interest `jDYZzeTRw`, Beta Bar `ghY9NiekE`,
+  EVAC x Our Legacy + ROA `mBpYigm6H`, Mycoaudio `PvTnbjtXf`, Nod Objects `hkwX48ete`, Letter Bet `absaBEcBR`; Order 1-6,
+  SEO description = Short description, Featured on Home wyłączone, Cover video / Home caption / Credits / Project website /
+  Social image puste. Zdjęcia: Main image + Additional images (łącznie 42) z alt-textami po angielsku, wgrane z adresów
+  źródłowych (c-p.rmcdn.net) przez `tree.assetReference`.
+- **Strona `/projects`** `RK_gmhXuR`, sekcja „projects” `J09QQV8My`: nowa lista CMS **„Project List (CMS)”** `LK791BIIc`
+  (sortowanie Order rosnąco) → „Project Row” `r1XSFaNGa` → instancja „Wiersz projektu” `e0sRzCdfk`: numer = Order
+  (2 cyfry), tytuł = Project name, zakres = Category (nazwa opcji), zdjęcie = Main image; na Phone wariant Phone.
+  Stare wiersze z usługami (Service 01-05) **ukryte**, nie usunięte - do decyzji użytkownika.
+- Linter: ostrzeżenie o braku maxWidth na sekcji `J09QQV8My` - sekcja celowo na całą szerokość (linie wierszy od krawędzi
+  do krawędzi jak na `/`), zostawione bez zmian.
+- **TODO:** strona szczegółów projektu `/projects/[slug]` i link z wierszy (wiersze na razie nie są klikalne).
+- Tabela „Dane CMS” w Figmie: wiersz 13 Additional images - typ „List (Image)” (rozstrzygnięte: Framer ma pole List).
