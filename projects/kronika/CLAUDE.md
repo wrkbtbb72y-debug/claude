@@ -1064,6 +1064,17 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     `9830:7421` (treść „Edycji treści”: 2 grupy po 4 pozycje + separator); Hover = tło pozycji „Aktualności” #F6F6F6
     (kolor hover ze starej ramki). Na makietach dropdowny nadal są zwykłymi ramkami - nie podmienione na instancje.
 
+- 2026-11-24 - **Figma: komponent „Przycisk paska Subnav”** (prośba użytkownika) - strona „Buttons”, ten sam wiersz
+  tabeli („Linki rozwijane…”): stara ramka „hover zarządzanie” z trzema szarymi przyciskami (`8347:118514`)
+  **usunięta**, w jej miejscu zestaw **„Przycisk paska Subnav”** `9915:378` (nad „Dymkiem”). Wzór = pozycje paska
+  z ikonami w „Navi II - Desktop Large - Edycja treści (rozwinięte)” (`9830:7050`). Warianty **Stan = Domyślny**
+  `9915:363` / **Otwarty** `9915:370`. Budowa: padding 8/12, wys. 34, ikona Lucide 18 px (kreska 1,5) + tekst
+  (styl Button), odstęp 8, strzałka **lucide/chevron-down / chevron-up** 16 px (kreska 1,33, #1A1A1A), odstęp 4.
+  Otwarty: tło #E6E6E6, ramka 1 px #D4D4D4 inside (nie wlicza się do układu - oba warianty 157 × 34). Właściwości:
+  **Etykieta** (tekst), **Ikona** (podmiana instancji), **Strzałka** (wł./wył. - zwykłe linki bez listy, np.
+  „Obiekty instytucji”). Przy wstawianiu do paska odstęp między przyciskami **16** zamiast 40 (padding 12 + 12
+  jest już w przycisku). Makiety na „NAWIGACJA II” nadal mają zwykłe ramki - nie podmienione.
+
 ## Do zrobienia
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
