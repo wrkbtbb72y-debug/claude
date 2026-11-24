@@ -1245,6 +1245,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   wyśrodkowany i przycinany z boków przy zwężaniu ekranu. Mobile bez zmian (inny układ: wiersze z małym zdjęciem).
   Zmiana od razu w `main`, nieopublikowana.
 
+- 2026-11-24 - **Framer, Home: zdjęcia w sekcji Polecane w proporcji 3:2** (szerokość 3, wysokość 2; prośba
+  użytkownika) - ramki zdjęć kart `GkISoYpGq`, `Pj9fpvgGP`, `vnbLbbCks`, `Jj_ckQFsI` (ostatnia karta ukryta):
+  proporcja 1,78 (16:9) → **1,5** na wszystkich breakpointach; szerokość = szerokość karty, wysokość wynika z proporcji
+  (np. 429 × 286 px na Dużym desktopie, 358 × 239 px na Mobile). Zmiana od razu w `main`, nieopublikowana.
+
 ## Do zrobienia
 
 - [ ] **Audyt Home (2026-11-24) - do decyzji użytkownika:**
