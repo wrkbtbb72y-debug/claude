@@ -10,6 +10,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 - **Język treści na stronie:** PL
 - **Branche we Framerze:** edycje AI **nie tworzą brancha** (sprawdzone 2026-11-15) — zmiany idą
   od razu do `main`, nieopublikowane.
+- **Nazwy warstw we Framerze: po angielsku** (prośba użytkownika, 2026-11-24). Nowe warstwy nazywać po angielsku;
+  starsze notatki niżej używają dawnych polskich nazw - ID węzłów się nie zmieniły.
 
 ## Słownik (terminy uzgodnione z użytkownikiem)
 
@@ -1348,3 +1350,18 @@ więcej; dobrać wielkość i odstępy.
 - **Nowy preset „Opis sekcji”** `Duk87rJ1f`: PP Neue Montreal 300, 24 / 22 / 20 px (Desktop / Tablet / Phone),
   interlinia 1,35em, odstęp −0,01em, kolor token „Tekst”.
 - Przycisk „View all” `saShW5RM2` (link `/z`) bez zmian.
+
+## Podsumowanie wyśrodkowane, nowe ostatnie zdanie; angielskie nazwy warstw (`/`, 2026-11-24)
+
+- „Outro” `rkxEEThqG` (dawne „Podsumowanie”): tekst i przycisk wyśrodkowane (stack center, tekst center, textWrap
+  balance). Ostatnie zdanie zmienione na prośbę użytkownika: „We shape brands for companies and cultural institutions,
+  across images, motion and space. Explore the rest of our work.”
+- Wszystkie warstwy na `/` z polskimi nazwami przemianowane na angielskie (49 warstw, ID bez zmian), m.in.:
+  Featured Projects `HadJ76UFf`, Side Text Track `RqVV9HufJ`, Titles / Title 1-3, Descriptions / Description 1-3,
+  Section Bar `ZR4kUwPMr` (i `gz49SgmVh`, `d5x7_nEeP`), Outro / Outro Text `czoxkt2o5`, View All Button `saShW5RM2`,
+  Project List `csMK8sqkt`, Project 01-05, Bottom Fill, Section Heading `bSDOGqGD1`, Footer Bar `UmUPg4rLv`
+  (Left Side, Logo (Back to Top), Pill, Right Side, Social Links), Navi - Fixed `GiaHsJO3X`, Perspective Grid
+  `OirTRcAEZ`, Left Label / Right Label (instancje „Napis lewy/prawy”), Background - Glow / Vignette, Label (etykiety),
+  Instagram / Behance / Dribbble Column, Grid Height Ruler, Width Ruler (as Middle).
+- Nie zmieniane (to nie warstwy strony): nazwy komponentów i presetów tekstu (np. „Napis lewy”, „Opis sekcji”),
+  kontrolki kodu siatki, aria-label stopki „Media społecznościowe”.
