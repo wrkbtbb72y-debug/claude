@@ -1447,6 +1447,19 @@ ramki na dane: zdjęcie główne, zdjęcia dodatkowe, tytuł, nazwa, rok, opis d
   jako **wersje robocze (Draft)** - nie trafiają na stronę, dopóki nie zostaną opublikowane.
 - 2026-11-24 - **Long description: maksymalnie 3 zdania** (decyzja użytkownika). Zmienione: tabela „Dane CMS” (wiersz 12),
   arkusz (6 pól „Long description”: limit „maks. 3 zdania”), wariant Size=Long komponentu „CMS Entry / Field” (minHeight 200).
-- Prośba w toku: wypełnić 6 projektów w arkuszu treścią i zdjęciami z sort-office.com (**tylko w Figmie**, nie we Framerze).
-  Host sort-office.com dodany do sieci środowiska, ale pobranie strony zablokowało zabezpieczenie sesji - czeka na
-  decyzję użytkownika. Uwaga: to projekty innego studia - w arkuszu oznaczać jako treść zastępczą, nie na stronę.
+- 2026-11-24 - **6 projektów w arkuszu wypełnionych treścią z sort-office.com** (zgoda i prośba użytkownika: strona NUMINO
+  to projekt na kurs dla samorozwoju, projekty Sort Office opisane jako projekty NUMINO; **tylko w Figmie**, Framer bez zmian).
+  Kolejność jak na stronie źródłowej: 01 Department of Interest (2025, Digital Experiences), 02 Beta Bar (2021, Visual
+  Identity), 03 EVAC x Our Legacy + ROA (2024, Art Direction), 04 Mycoaudio (2026, Visual Identity), 05 Nod Objects
+  (2023, Art Direction), 06 Letter Bet (2022, Visual Identity). Pozostałe na stronie: Touski, Reigning Champ, Miriam
+  Brellenthin (nieprzeniesione).
+  - Short description = jedyne zdanie opisu ze strony (dosłownie). Long description = to zdanie + zdanie o zakresie prac
+    NUMINO, przepisanym z listy dyscyplin na stronie (nic ponad to nie dopisywano). Title napisany na bazie opisu.
+    Kategorie przypisane przez Claude wg dyscyplin ze strony - do zmiany przez użytkownika.
+  - Zdjęcia: wszystkie ze stron projektów (6-10 na projekt, łącznie 42), zmniejszone do maks. 2400 px, wgrane do slotów
+    „CMS Entry / Image” (zdjęcie główne = poziome, jeśli było; portretowe w trybie FIT). Alt-texty po angielsku,
+    napisane po obejrzeniu zdjęć. Film Mycoaudio (strumień HLS) nieprzeniesiony.
+  - Etykieta statusu bloków: „wzór: sort-office.com”. Dane pobrane z `sort-office.com/api/viewer/project/4576252/widgets?pageId=…`
+    (strona w Readymagu); do sieci środowiska dodane: sort-office.com, www.sort-office.com, st-p.rmcdn1.net, c-p.rmcdn.net,
+    i-p.rmcdn.net.
+  - Uwaga: to treści i zdjęcia innego studia - przy publikacji strony poza kursem trzeba je zastąpić.
