@@ -1572,3 +1572,8 @@ tekst ciemnieje): warstwa **„Hover fill”** `E2DUdvqEW` (absolute, token „T
 - Do sprawdzenia przez użytkownika: animacja w podglądzie. Uwaga: wysokość tła 64 px pasuje do wierszy jednolinijkowych
   (Desktop); na Tablet/Phone wiersze są wyższe. Na `/projects` użytkownik buduje „Horizontal wrapper” (lista 1fr + ramka
   595 px) - na Tablet/Phone ramka 595 px ściska listę (na Phone lista niewidoczna); nie ruszane.
+- 2026-11-24 - **„Zakres (hover)” jechał w bok na hover**: użytkownik zmienił szerokości oryginałów na Tytuł 2fr / Zakres 1fr
+  (gap 0) i kopiom ustawił to samo tylko w wariancie Hover; w spoczynku kopie miały 1fr / 240 px, więc Framer animował
+  szerokość. Poprawka: kopie `S3VjatetE` 2fr i `OVym3OEzy` 1fr także w Desktop (Hover ma te same wartości). **Zasada:**
+  każda zmiana układu oryginalnych tekstów wiersza (szerokości, odstępy, padding) musi być powtórzona w „Hover content”
+  w **obu** stanach (Desktop i Hover), inaczej kopia rozjedzie się z oryginałem.
