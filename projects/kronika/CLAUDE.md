@@ -1104,7 +1104,22 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
     Instytucji, 9. Zarządzanie obiektami, 3. Zasoby/Obiekty - OLD, linki i tertiary); żadna nie miała własnej
     strzałki (sprawdzone). Przycisk węższy o 2 px (156 → 154).
 
+- 2026-11-24 - **Figma: stan Hover w „Przycisk paska Subnav”** (prośba użytkownika: spójny z podobnymi przyciskami
+  na „Buttons”). Hovery na „Buttons”: przyciski Secondary/pola (Sortowanie, Podpowiedź wyszukiwania, Wyloguj się)
+  = **nakładka #1A1A1A 6 %** na tło, ramka bez zmian; „Dodaj do kolekcji” = to samo w granacie (#193680 6 %); linki
+  tekstowe (Czytaj więcej, Zobacz wszystkie, Tabela) = podkreślenie; pozycja „Dymka” = tło #F6F6F6; czarny „Moje
+  konto” = #333. Wybrane: **Hover = tło #1A1A1A 6 %, bez ramki** (reszta jak Domyślny). Na pasku #F4F4F4 daje to
+  ok. #E7E7E7 - prawie ton stanu Otwarty (#E6E6E6); Otwarty różni się ramką #D4D4D4 i strzałką w górę.
+  Zestaw na „Buttons” ma teraz ID **`9891:51708`** (Domyślny `9891:51709`, **Hover `9938:361`**, Otwarty
+  `9891:51714`; tło zestawu #F6F6F6, r 5, ikona krycie 80 % - zmiany użytkownika), w ramce `9923:51730` z podpisami
+  Domyślny / Hover / Wybrany (podpisy w ramkach 197 px = rozstaw wariantów). Zestaw `9915:378` z poprzedniej wersji
+  **nie istnieje** - 31 przycisków na makietach „NAWIGACJA II” wskazuje na usunięty komponent (nie dostaną hovera,
+  dopóki nie zostaną przepięte na `9891:51708`).
+
 ## Do zrobienia
+
+- [ ] „NAWIGACJA II”: 31 instancji „Przycisk - …” wskazuje na usunięty zestaw `9915:378` - przepiąć na
+      „Przycisk paska Subnav” `9891:51708` (czeka na zgodę użytkownika).
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
       wersję Tablet.
