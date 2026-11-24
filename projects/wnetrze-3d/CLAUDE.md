@@ -1495,3 +1495,9 @@ z kadrem na hover, C przyklejony nagłówek + bloki) wybrał **A**.
 - Tablet: padding kolumn 24/32/40, gap 20. Phone: kolumny pod sobą (pełna szerokość, padding 32/16/40, linia dolna),
   kadr 5:4 zamiast 4:5.
 - Linter: „clipped by ancestor” przy hover scale - zamierzone (kadr przycina powiększenie).
+- 2026-11-24 - **4 kolumny** (prośba „daj 4 sekcje”): dodana „Service 04” `VssJ3SdjA` - 04 / Digital, **Digital
+  Experiences**, opis (propozycja) „Websites and interactive work, from editorial sites to WebGL, built to feel like the
+  brand.”, zdjęcie różowe okno (alt jak w liście projektów). Linia pionowa teraz też przy „Service 03”, ostatnia bez.
+  Preset „Service Title” zmniejszony: 32 / 28 / 28 px (Desktop / Tablet / Phone). Tablet: siatka 2 × 2 (zawijanie,
+  kolumny 50%, linie dolne pod 01-02, bez prawej przy 02). Phone: 4 bloki pod sobą.
+  Na Desktopie „Digital Experiences” łamie się na 2 linie (opis tej kolumny zaczyna się niżej).
