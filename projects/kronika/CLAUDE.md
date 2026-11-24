@@ -96,11 +96,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 - **Kolory tekstu (Framer, od 2026-11-24, decyzja użytkownika):** tylko dwa neutralne kolory tekstu na jasnym tle -
   **ciemny #1A1A1A** (`rgb(26, 26, 26)`) i **szary #656766** (`rgb(101, 103, 102)`). Nowe teksty i presety tylko
   w tych kolorach (plus biały na ciemnym tle i kolory akcentów: niebieskie linki, czerwony / zielony w akcjach).
-- **Linki „Czytaj więcej” / „Zobacz wszystkie” (od 2026-11-24, decyzja użytkownika): kolor #234FBF**
-  (`rgb(35, 79, 191)`). Komponent „Przycisk tekstowy” (`n3Zd34m52`) ma kolor tekstu podpięty pod właściwość
+- **Linki „Czytaj więcej” / „Zobacz wszystkie” (od 2026-11-24, decyzja użytkownika): kolor #173EA3**
+  (`rgb(23, 62, 163)`; najpierw było #234FBF, użytkownik zmienił na #173EA3). Komponent „Przycisk tekstowy” (`n3Zd34m52`) ma kolor tekstu podpięty pod właściwość
   „Color 3” (`dppKln7gC`, domyślnie #1A1A1A) - w instancjach ustawiamy kolor: „Czytaj więcej” / „Zobacz
-  wszystkie” = #234FBF, „Strona instytucji” = #1A1A1A. „Zobacz wszystkie” w komponencie „tytuł sekcji”
-  (`Ry_ugVwNR` + warianty) ma #234FBF wpisany w tekst. Wariant hover „Mobile” zostaje z tokenem „Kronika Blue Hover”.
+  wszystkie” = #173EA3, „Strona instytucji” = #1A1A1A. „Zobacz wszystkie” w komponencie „tytuł sekcji”
+  (`Ry_ugVwNR` + warianty) ma #173EA3 wpisany w tekst. Wariant hover „Mobile” zostaje z tokenem „Kronika Blue Hover”.
 
 ## Ustalenia i decyzje
 
