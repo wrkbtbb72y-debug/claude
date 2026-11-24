@@ -1516,3 +1516,5 @@ Prośba (dobra praktyka Framera): na Desktopie poza „Main” zostają tylko �
 - Sprawdzone: pozycje sekcji na Desktopie identyczne co do piksela (Hero 0, Featured 800, What We Do 3396, Footer 4196);
   zrzuty całej strony na 3 breakpointach.
 - Zasada: nowe sekcje `/` wstawiać do „Main” (po Hero), nie bezpośrednio do breakpointu.
+- 2026-11-24 - „What We Do”: kadry **kwadratowe** (aspectRatio 1) we wszystkich 4 kolumnach („Media” `BRYavVKSY`,
+  `ijOKlcSDs`, `GrFJK3O3U`, `Gtqtg26nf`) na Desktopie, Tablecie i Phone (Phone wcześniej 5:4).
