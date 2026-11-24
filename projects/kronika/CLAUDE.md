@@ -1212,7 +1212,7 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
       na Tablecie / 15 px 450 na Mobile), kolor #757575 vs #6B6B6B na Dużym desktopie;
       2) Aktualności `FvqGRkPEb`: Duży desktop ma inny tekst („…zasobów. Dołącz do nas i udostępnij swoje unikatowe
       zbiory szerokiemu gronu odbiorców.”) niż pozostałe („…oraz dzielenia się swoim dorobkiem.”);
-      3) „Podziel się swoimi zbiorami…” `eEc7OFqIY`: na Tablecie ręczny kolor #333333, na reszcie kolor z presetu;
+      3) ~~ręczny kolor „Podziel się…” na Tablecie~~ - zdjęty 2026-11-24 (preset ma ten sam #333333, wygląd bez zmian);
       4) ~~wielkie litery w nagłówkach~~ - zrobione 2026-11-24 (Home: „Dołącz do nas”, „Instytucje partnerskie”);
       5) ~~stopka 08:15-16:15~~ - zrobione 2026-11-24 (półpauza + niełamliwe połączenie);
       6) ~~linia 1 px pod stopką („Recommended_h2” `h93FmTSH9`)~~ - zmienił użytkownik ręcznie (2026-11-24);
