@@ -1463,3 +1463,5 @@ ramki na dane: zdjęcie główne, zdjęcia dodatkowe, tytuł, nazwa, rok, opis d
     (strona w Readymagu); do sieci środowiska dodane: sort-office.com, www.sort-office.com, st-p.rmcdn1.net, c-p.rmcdn.net,
     i-p.rmcdn.net.
   - Uwaga: to treści i zdjęcia innego studia - przy publikacji strony poza kursem trzeba je zastąpić.
+  - **Zasada (użytkownik, 2026-11-24):** jeśli wejście na sort-office.com się nie uda (sieć, blokada), pobrać treści
+    i zdjęcia przez przeglądarkę Chrome użytkownika (Claude in Chrome), zamiast się zatrzymywać.
