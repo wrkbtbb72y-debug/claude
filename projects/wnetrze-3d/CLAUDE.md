@@ -1543,3 +1543,18 @@ Prośba: 6 projektów z arkusza w Figmie na stronę Projects we Framerze. Zmiany
   do krawędzi jak na `/`), zostawione bez zmian.
 - **TODO:** strona szczegółów projektu `/projects/[slug]` i link z wierszy (wiersze na razie nie są klikalne).
 - Tabela „Dane CMS” w Figmie: wiersz 13 Additional images - typ „List (Image)” (rozstrzygnięte: Framer ma pole List).
+
+## Hover wiersza projektu - poprawki (`/projects`, 2026-11-24)
+
+Użytkownik sam zrobił w komponencie „Wiersz projektu” `mKIi2lqmd` efekt hover wg nagrania (jasne tło wsuwa się z góry,
+tekst ciemnieje): warstwa **„Hover fill”** `E2DUdvqEW` (absolute, token „Tekst”), wariant gestu **Hover** `r5PayVlbo`
+(teksty Tytuł/Zakres w kolorze „Tło”), przejście tween 0,4 s. Ukrył też Numer i Miniaturę.
+- **Mruganie tekstu** - przyczyna: „Hover fill” miał z-index 1 w spoczynku i 0 w Hover; Framer przełącza z-index bez
+  animacji, więc przy zjechaniu myszką tło wskakiwało nad tekst. Poprawka: z-index 0 we wszystkich wariantach
+  i warstwa przeniesiona na spód listy warstw.
+- **Jasne paski na Tablecie/Phone** - przyczyna: w spoczynku wysokość tła wynikała z pinów Top −1 / Bottom 63 px, więc
+  przy wierszu wyższym niż ~63 px (tytuł w 2 liniach) tło wychodziło na wierzch i zasłaniało jasny tekst. Poprawka:
+  spoczynek Top −1, **wysokość 0 px** (bez pinu Bottom); Hover: Top −1 + Bottom 0 (cały wiersz).
+- Ostrzeżenia lintera „zero height” (tło w spoczynku) i „brak nieprzezroczystego tła wariantu” - celowe, zostawione.
+- Użytkownik zmienił w CMS nazwy: Department of Interest → **Interest**, EVAC x Our Legacy + ROA → **Our Legacy**;
+  zsynchronizowane w arkuszu Figmy (Projekt 01 i 03). Lista na `/projects` ma teraz szerokość `1fr` (zmiana użytkownika).
