@@ -1192,6 +1192,10 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „**Ponad 19 milionów obiektów** cyfrowego dziedzictwa narodowego udostępniamy bezpłatnie.” - pogrubienie na
   początku, więc zawsze w pierwszej linii (wcześniej łamało się po „19” na Desktop 1024 i Mobile). Sprawdzone
   na zrzutach wszystkich 4 breakpointów. Zmiana od razu w `main`, nieopublikowana.
+  **Zmiana 2026-11-24 (użytkownik: „udostępniamy bezpłatnie” na końcu źle brzmi):** obecny tekst „Bezpłatny dostęp do
+  **ponad 19 milionów obiektów** cyfrowego dziedzictwa narodowego.” - pogrubiona fraza sklejona twardymi spacjami,
+  więc nigdy się nie łamie, tylko przechodzi w całości do następnej linii (Desktop 1024 / Tablet / Mobile: 3 linie,
+  Duży desktop: 2 linie). Sprawdzone na zrzutach.
 
 - 2026-11-24 - **Audyt wizualny / typograficzny Home** (wyniki, nic poza tekstem wyżej nie zmieniano):
   wszystkie widoczne teksty na stronie (20) mają preset tekstu, font wszędzie Aspekta; nagłówki sekcji, nawigacja
