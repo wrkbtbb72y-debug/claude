@@ -1611,3 +1611,17 @@ Przesunięcie nie zmniejsza miejsca w układzie, więc pod ostatnią sekcją zos
 - Zasada: kolejne sekcje w „Main” bez translateY; przesunięcie −56 tylko w pierwszej sekcji po Hero.
 - Zastane: What We Do ukryta przez użytkownika (Visible off na wszystkich breakpointach) - nie ruszane.
 - Przy okazji: kolumnom 01-02 w What We Do na Tablecie i Phone dopisany kolor obramowania (linter: „Border is incomplete”).
+
+## Dolna część stopki dopracowana (`/`, 2026-11-24)
+
+Prośba: „zrób ładnie dolną część stopki” („Footer Bar” `UmUPg4rLv`). Stan zastany: pasek 56 px bez linii, grupy
+rozrzucone (logo i copyright 120 px od siebie, Connect 120 px od linków), pod paskiem 80 px paddingu stopki i reszta
+z jej minHeight 100vh - pasek wisiał nad dołem strony.
+- Pasek: **72 px**, linia górna 1 px token „Obrys” (jak pozostałe paski strony). Logo + copyright gap **24**
+  (Tablet 16), linki + Connect gap **40** (Tablet 24). Kapsuła: obrys rgba(255,255,255,0.5).
+- Pasek **na samym dole stopki**: Footer `yVikSkj7m` padding dolny 80 → **0**; „Section Heading” `bSDOGqGD1` (duże logo)
+  wysokość **1fr** - wypełnia wolne miejsce stopki (minHeight 100vh), logo na środku; jej padding dolny 24 → 72
+  (Phone 16 → 48).
+- Phone: pasek w kolumnie, padding 32/16/28, gap 20 (kolejność bez zmian: linki → Connect → logo + copyright).
+- Bez zmian: teksty, linki (TODO adresy profili), pasek „Section Bar” na górze stopki z napisem „featured projects”
+  (zmiana użytkownika - do sprawdzenia, czy to właściwy napis dla stopki).
