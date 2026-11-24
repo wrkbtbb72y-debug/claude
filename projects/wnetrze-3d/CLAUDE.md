@@ -1445,3 +1445,8 @@ ramki na dane: zdjęcie główne, zdjęcia dodatkowe, tytuł, nazwa, rok, opis d
 - Pytanie od użytkownika: czy rozpisywać to raczej we Framerze przed oficjalnym CMS. Odpowiedź: na etapie zbierania
   treści Figma (obok siebie zdjęcia i teksty, komentarze); gotowe projekty wpisać do kolekcji Projects we Framerze
   jako **wersje robocze (Draft)** - nie trafiają na stronę, dopóki nie zostaną opublikowane.
+- 2026-11-24 - **Long description: maksymalnie 3 zdania** (decyzja użytkownika). Zmienione: tabela „Dane CMS” (wiersz 12),
+  arkusz (6 pól „Long description”: limit „maks. 3 zdania”), wariant Size=Long komponentu „CMS Entry / Field” (minHeight 200).
+- Prośba w toku: wypełnić 6 projektów w arkuszu treścią i zdjęciami z sort-office.com (**tylko w Figmie**, nie we Framerze).
+  Host sort-office.com dodany do sieci środowiska, ale pobranie strony zablokowało zabezpieczenie sesji - czeka na
+  decyzję użytkownika. Uwaga: to projekty innego studia - w arkuszu oznaczać jako treść zastępczą, nie na stronę.
