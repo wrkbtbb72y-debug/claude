@@ -1140,7 +1140,19 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   kropki z elips, teraz ikona Lucide). Stary komponent „Subnav” `8088:5007` ma własny przycisk - bez zmian.
   Na stronie „NAWIGACJA II 2” jest jeszcze 7 takich przycisków jako zwykłe ramki - nie ruszane.
 
+- 2026-11-24 - **Framer: stopka na szerokich ekranach** (prośba użytkownika, Home „Duży desktop”) - komponent
+  „Footer desktop” (`C2z0HEoS0`), ramka „Frame 427319873” (`I8xVLP_7s`, w wariancie „Primary Large”, dziedziczą
+  pozostałe warianty): maks. szerokość **1800 → 1600 px**. Sekcje strony głównej mają maks. 1720 px i padding 60
+  (kolumna treści 1600 px, wyśrodkowana), a stopka ma padding 60 - teraz treść stopki zaczyna się przy tej samej
+  lewej krawędzi co treść strony także powyżej 1720 px (sprawdzone: 2200 px → 300 px, 3000 px → 700 px; wcześniej
+  przy 2200 px było 200 px). Do 1720 px wygląd bez zmian. Uwaga: „O portalu” (Desktop Large) i „Kolekcje” mają
+  sekcje z maks. 1920 px, więc tam powyżej 1720 px krawędzie nadal się rozjeżdżają (wcześniej też). Zmiana od razu
+  w `main`, nieopublikowana.
+
 ## Do zrobienia
+
+- [ ] Framer: „O portalu” (Desktop Large) i „Kolekcje” mają sekcje z maks. 1920 px, a stopka i Home 1720 px
+      (kolumna 1600) - do decyzji, czy ujednolicić, żeby lewa krawędź treści i stopki zgadzała się na ekranach > 1720 px.
 
 - [x] „NAWIGACJA II”: 31 instancji „Przycisk - …” przepięte z usuniętego zestawu `9915:378` na
       „Przycisk paska Subnav” `9891:51708` (2026-11-24).
