@@ -1223,6 +1223,18 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Uwaga techniczna: repliki (breakpointy / warianty) mają własne kopie koloru - trzeba je zmieniać osobno.
   Zrzuty Home (4 breakpointy) i Kolekcje sprawdzone. Zmiana od razu w `main`, nieopublikowana.
 
+- 2026-11-24 - **Framer: „Przycisk tekstowy” bez przycinania** (zgłoszenie użytkownika: ucięty ogonek „ę” w „Czytaj
+  więcej”). Styl „Button” ma wysokość linii = rozmiar fontu (15/15 px), więc ogonki liter wystają poza ramkę.
+  Zamiast zmieniać styl (używany w innych przyciskach) wszystkie warianty komponentu `n3Zd34m52` mają
+  overflow „visible”. Uwaga na przyszłość: tekst w stylu z interlinią 1em / 15px w ramce z przycinaniem obetnie
+  ogonki (ą, ę, j, g, y).
+
+- 2026-11-24 - **Framer, Home: zdjęcia w sekcji Kategorie** (prośba użytkownika): na Desktop 1024, Tablet i Dużym
+  desktopie zdjęcia kart (`ZCeVMb3Ep`, `AXS5iNPbX`, `pGY1aLyOj`, `bVo5OY940`, ukryte `Hj4LtSHRW`) mają wysokość
+  **580 px** (wcześniej 419 / 380 / 600 px, zdjęte min./maks. 419 px), szerokość = szerokość kolumny, obraz
+  wyśrodkowany i przycinany z boków przy zwężaniu ekranu. Mobile bez zmian (inny układ: wiersze z małym zdjęciem).
+  Zmiana od razu w `main`, nieopublikowana.
+
 ## Do zrobienia
 
 - [ ] **Audyt Home (2026-11-24) - do decyzji użytkownika:**
