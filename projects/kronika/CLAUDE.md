@@ -1091,6 +1091,19 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Bez zmian: paski Tablet / Mobile (tylko pole jednostki + „⋮”), panel boczny menu sekcji na Mobile, stary
   komponent „Subnav” `8088:5007`, lista pola „Wybierz jednostkę” (osobny komponent Select).
 
+- 2026-11-24 - **Figma: strzałka ostatniej sekcji paska równo z „Anna Sobczak” + ta sama strzałka w menu konta**
+  (prośba użytkownika).
+  - 8 pasków Subnav (te same co wyżej): padding prawy ramki „Subnav…” 60 → **48** (Desktop Small 36 → **24**), lewy
+    bez zmian. Prawa krawędź rysunku strzałki ostatniej sekcji = prawa krawędź ramki „Anna Sobczak” (sprawdzone
+    pomiarem; tło otwartej ostatniej sekcji wystaje 16 px poza tę krawędź). Listy „Dymek” i żółte notatki w 5
+    makietach rozwiniętych przesunięte o +12 px (dalej 4 px pod przyciskiem, wyrównane jak wcześniej).
+  - **Komponent „Navi Kronika”** (`6075:40683`, wariant **Zalogowany** `7724:24804`, strona „- KOMPONENTY - nowe
+    (robocze)”): strzałka przy „Anna Sobczak” (`7724:24885`) podmieniona z lokalnej lucide/chevron-down 18 px
+    (kreska 2, #222) na **tę samą co w „Przycisk paska Subnav”**: lucide/chevron-down z biblioteki, 16 px, kreska
+    1,33, #1A1A1A. Zmiana w komponencie głównym - dotyczy wszystkich 21 kopii (NAWIGACJA I / II / II 2, Lista
+    Instytucji, 9. Zarządzanie obiektami, 3. Zasoby/Obiekty - OLD, linki i tertiary); żadna nie miała własnej
+    strzałki (sprawdzone). Przycisk węższy o 2 px (156 → 154).
+
 ## Do zrobienia
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
