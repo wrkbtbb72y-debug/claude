@@ -1476,3 +1476,22 @@ ramki na dane: zdjęcie główne, zdjęcia dodatkowe, tytuł, nazwa, rok, opis d
 - Przycisk „View all” `saShW5RM2` (w Outro pod zdjęciami): link `/z` → **`/projects`**.
 - W edytorze przyklejony pasek nachodzi na pierwszy wiersz (rysowany w pozycji przyklejenia) - tak samo było z dawną
   sekcją „6”; sprawdzać w podglądzie.
+
+## „What We Do” - nowy design: trzy kolumny (wariant A, `/`, 2026-11-24)
+
+Użytkownik chciał nowy wygląd zamiast wierszy jak w liście projektów; z 3 propozycji (A kolumny, B wielka typografia
+z kadrem na hover, C przyklejony nagłówek + bloki) wybrał **A**.
+- W sekcji `NgsTpcy9z` wiersze „Wiersz projektu” usunięte; pasek „what we do” `tPIZgEwql` bez zmian.
+- **„Services”** `RRRW9tVPN`: stack poziomy, linia górna i dolna 1 px token „Obrys”. 3 kolumny **„Service 01-03”**
+  (`k586JCwzk`, `dPkQTocMB`, `Y5U6n1KY5`), 1fr, padding 40/40/48/40, gap 24, linia pionowa 1 px między kolumnami
+  (ostatnia bez obramowania). W kolumnie: „Label” (preset „navi”: 01 / Identity, 02 / Image, 03 / Motion), „Media”
+  (100% × proporcja 4:5, przycina; w środku „Image” ze zdjęciem i alt, hover: skala 1,04, 0,6 s), „Text”: „Title”
+  (nowy preset **„Service Title”** `BtthkWnh3`: PP Neue Montreal 300, 40 / 28 / 32 px) i „Description” (nowy preset
+  **„Service Description”** `jkvAPUd5v`: PP Neue Montreal 400, 16 / 15 / 15 px, krycie warstwy 0,7).
+- Opisy (propozycja, do akceptacji): Visual Identity - „Logos, type and brand systems that hold together from a business
+  card to a building.” · Art Direction - „Photography and campaigns with one consistent eye, from concept to final
+  image.” · Motion & 3D - „Animation, film and CGI that let a brand move, in feeds, on screens and in space.”
+- Zdjęcia tymczasowe (niebieska kopuła, różowa kopuła, mężczyzna w kapeluszu) - do podmiany na materiały usług.
+- Tablet: padding kolumn 24/32/40, gap 20. Phone: kolumny pod sobą (pełna szerokość, padding 32/16/40, linia dolna),
+  kadr 5:4 zamiast 4:5.
+- Linter: „clipped by ancestor” przy hover scale - zamierzone (kadr przycina powiększenie).
