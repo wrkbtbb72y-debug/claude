@@ -1188,6 +1188,22 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   wszystkie widoczne teksty na stronie (20) mają preset tekstu, font wszędzie Aspekta; nagłówki sekcji, nawigacja
   i stopka w komponentach. Znalezione niekonsekwencje - lista w „Do zrobienia” (punkt „Audyt Home”).
 
+- 2026-11-24 - **Framer: poprawki z audytu Home (punkty 4, 5, 7)** (decyzja użytkownika):
+  - Nagłówki jak w zdaniu: „Dołącz do nas” (`wYthHJl_L` + jego repliki na Tablet / Duży desktop / Mobile - każda ma
+    własny tekst, trzeba poprawiać osobno) i „Instytucje partnerskie” (instancja „tytuł sekcji” `FYQppVYVS`,
+    właściwość `sxiPZlvCS`; Mobile zostaje „Instytucje”). Zasada: nagłówki sekcji zapisujemy jak zdanie (wielka
+    litera tylko na początku). Nie ruszano: „Dołącz do Nas” w luźnych ramkach na stronie „O portalu” (`HNdg05rg4`,
+    `xruOJLRST`, nie są breakpointami) i na stronie „Design”.
+  - Stopka (komponent „Footer desktop”, tekst `Aqi8SsrEm` - każdy z 4 wariantów ma własną kopię tekstu): „w godzinach
+    08:15-16:15” → „w godzinach 08:15–16:15” z półpauzą otoczoną niewidocznym znakiem łączącym (U+2060), żeby zakres
+    godzin się nie łamał, i twardą spacją po „w” (bez samotnego „w” na końcu linii). Wynik: Tablet / Mobile 2 linie,
+    Desktop 1024 / Duży desktop 3 linie („Czynna w dni robocze / w godzinach / 08:15–16:15”), nigdzie nie rozdziela
+    zakresu. Stopka jest wspólna, więc zmiana działa na wszystkich stronach.
+  - Usunięte ukryte (na wszystkich breakpointach) stare sekcje Home: „Polecane-section” `MoQkF82Y4`, 4× „O Portalu-
+    section” (`muYP6A_iR`, `DfdiIM49B`, `ya9WCCmx9`, `eeUkB49Cy`), „Footer wrapper” `hHA1xEUSH` (nic do nich nie
+    linkowało). Zostały pojedyncze ukryte elementy w widocznych sekcjach (np. licznik „19 mln”, ukryty celowo).
+  Zrzuty wszystkich 4 breakpointów sprawdzone. Zmiana od razu w `main`, nieopublikowana.
+
 ## Do zrobienia
 
 - [ ] **Audyt Home (2026-11-24) - do decyzji użytkownika:**
@@ -1197,11 +1213,10 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
       2) Aktualności `FvqGRkPEb`: Duży desktop ma inny tekst („…zasobów. Dołącz do nas i udostępnij swoje unikatowe
       zbiory szerokiemu gronu odbiorców.”) niż pozostałe („…oraz dzielenia się swoim dorobkiem.”);
       3) „Podziel się swoimi zbiorami…” `eEc7OFqIY`: na Tablecie ręczny kolor #333333, na reszcie kolor z presetu;
-      4) wielkie litery w nagłówkach: „Dołącz do Nas”, „Instytucje Partnerskie” vs „Otwarte zasoby nauki i kultury”;
-      5) stopka: „w godzinach 08:15-16:15” - łącznik zamiast półpauzy i na 1024 / 1440 łamie się po „08:15-”;
-      6) cienka linia 1 px rgba(0,0,0,0.1) **pod stopką** („Recommended_h2” `h93FmTSH9`) na wszystkich breakpointach;
-      7) ukryte stare kopie sekcji (88 ukrytych tekstów): „Polecane-section” `MoQkF82Y4`, 4× „O Portalu-section”,
-      „Footer wrapper” `hHA1xEUSH` - do usunięcia po zgodzie (zaśmiecają linter i canvas);
+      4) ~~wielkie litery w nagłówkach~~ - zrobione 2026-11-24 (Home: „Dołącz do nas”, „Instytucje partnerskie”);
+      5) ~~stopka 08:15-16:15~~ - zrobione 2026-11-24 (półpauza + niełamliwe połączenie);
+      6) ~~linia 1 px pod stopką („Recommended_h2” `h93FmTSH9`)~~ - zmienił użytkownik ręcznie (2026-11-24);
+      7) ~~ukryte stare kopie sekcji~~ - usunięte 2026-11-24 za zgodą użytkownika;
       8) „Body 1 - tekst długi L” ma grubość 250 + szary kolor - cienki tekst, warto sprawdzić czytelność / kontrast;
       9) etykiety kategorii w źródle różną wielkością liter („tekst”, „Muzealia”, „film”) - na stronie wielkie przez preset.
 
