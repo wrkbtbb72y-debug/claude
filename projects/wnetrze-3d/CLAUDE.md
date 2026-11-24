@@ -1465,3 +1465,14 @@ ramki na dane: zdjęcie główne, zdjęcia dodatkowe, tytuł, nazwa, rok, opis d
   - Uwaga: to treści i zdjęcia innego studia - przy publikacji strony poza kursem trzeba je zastąpić.
   - **Zasada (użytkownik, 2026-11-24):** jeśli wejście na sort-office.com się nie uda (sieć, blokada), pobrać treści
     i zdjęcia przez przeglądarkę Chrome użytkownika (Claude in Chrome), zamiast się zatrzymywać.
+
+## „What We Do” na stronie głównej (3 usługi) + „View all” → `/projects` (2026-11-24)
+
+- Nowa sekcja **„What We Do”** `NgsTpcy9z` na `/`, między Featured Projects a Footer: kopia sekcji „projects” ze strony
+  `/projects` (tamta bez zmian). Jak inne sekcje na `/`: translateY −56, padding dół 80, przyklejony pasek `tPIZgEwql`
+  top 112 z napisem **„what we do”**; Scroll Section „what-we-do”, aria-label „What we do”.
+- Tylko 3 wiersze (prośba użytkownika): 01 Visual Identity `FcCmDEssL`, 02 Art Direction `roZ9_yrtv`,
+  03 Motion & 3D `Ff9NovRGv` (zakresy jak na `/projects`); na Phone wariant Phone.
+- Przycisk „View all” `saShW5RM2` (w Outro pod zdjęciami): link `/z` → **`/projects`**.
+- W edytorze przyklejony pasek nachodzi na pierwszy wiersz (rysowany w pozycji przyklejenia) - tak samo było z dawną
+  sekcją „6”; sprawdzać w podglądzie.
