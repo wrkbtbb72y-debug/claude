@@ -1411,3 +1411,15 @@ Prośba: czytelna, prosta tabela wszystkich danych do CMS (kolekcja Projects), p
 - Wiersze 1-20 to instancje komponentu **„CMS Table / Row”** `330:2` (leży na prawo od ramki; teksty kolumn jako
   właściwości). Fonty: Inter + Courier Prime (jak etykiety na stronie). Treść zgodna z propozycją karty (wersja 2).
 - Do potwierdzenia: czy Framer CMS ma pole typu Gallery (inaczej kilka pól Image), limity znaków, kolory chipów.
+
+## Nowa strona „Projects” `/projects` (2026-11-24)
+
+Stan zastany (zmiany użytkownika): sekcja „What We Do” `J09QQV8My` przemianowana na **„projects”**, bez „Intro” i bez
+ramki „Service List” (pasek + 5 wierszy bezpośrednio w sekcji), napis paska „our projects”; sekcja „6” usunięta.
+- Nowa strona **Projects** `RK_gmhXuR`, ścieżka `/projects`, szablon układu **„Układ z paskiem”** `cZLu0HAKR` (Navi
+  u góry, jak `/z` „All”). Breakpointy: Desktop `a7yxUtaxD`, Tablet `hxNFrbGfp`, Phone `gXUpXfgZ5` (wysokość 1200 px).
+- Sekcja „projects” `J09QQV8My` przeniesiona z `/` (teksty bez zmian): bez translateY −56 (to było tylko pod Hero),
+  padding 80/0/80/0 (Phone 56/0/64/0 - pod Navi 80 / 56 px), „Section Bar” `Mop_e0NSp` sticky **top 0** (Navi w
+  szablonie nie jest przyklejona). Wiersze na Phone przełączone na wariant Phone (jak na `/`).
+- Na `/` zostały: Main, Featured Projects, Footer.
+- Do decyzji: nic jeszcze nie linkuje do `/projects` (przycisk „View all” prowadzi do `/z`, Navi bez linków).
