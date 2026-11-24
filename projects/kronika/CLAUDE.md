@@ -1051,6 +1051,19 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   `9856:10215` (te same sekcje, nagłówki, pozycje i kreski co w dymku; „Zarządzanie” rozwinięte). Pod panelem
   **„Scrim”** (czarny 44 %, jak w menu bocznym na Tablet) na całej makiecie; ramka makiety przycina zawartość.
 
+- 2026-11-24 - **Figma: paddingi list dropdown ujednolicone + komponent „Dymek”** (prośba użytkownika).
+  - Strona „NAWIGACJA II”: wzór = „Dropdown – Edycja treści” `9830:7421` (padding listy **8/8/8/8**, pozycje 35 px
+    10/8/10/12, separator 4/7/4/7). Pozostałe listy miały padding 12/8 → 8/8: „Dropdown – Zarządzanie” `9830:7821`,
+    „Dropdown – Pozyskiwanie zasobów” `9830:8216`, „Dropdown – Moja instytucja” `9830:8605`, „Dropdown – Zarządzanie”
+    (instytucja partnerska) `9835:9871`. Lista pola „Wybierz jednostkę” w instancji „Select - 1 Domyślny” `9767:41214`:
+    **nadpisania w instancji** (komponent `9767:41209` na stronie Buttons bez zmian) - padding 4 → 8, pozycje
+    11/8/12/14 → 10/8/10/12 (pozycja z ikoną check ma 36 px).
+  - Strona „Buttons”, tabela „Przyciski – przegląd”, wiersz „Linki rozwijane: Użytkownicy · Zarządzanie · Moje
+    zasoby”: stara ramka „Nav - 2 Otwarty” (`8378:124736`) **usunięta**, w jej miejscu **komponent główny „Dymek”**
+    `9908:5221` (zestaw wariantów, właściwość **Stan = Domyślny / Hover**: `9908:5199` / `9908:5200`). Budowa jak wzór
+    `9830:7421` (treść „Edycji treści”: 2 grupy po 4 pozycje + separator); Hover = tło pozycji „Aktualności” #F6F6F6
+    (kolor hover ze starej ramki). Na makietach dropdowny nadal są zwykłymi ramkami - nie podmienione na instancje.
+
 ## Do zrobienia
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
