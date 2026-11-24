@@ -1193,8 +1193,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   początku, więc zawsze w pierwszej linii (wcześniej łamało się po „19” na Desktop 1024 i Mobile). Sprawdzone
   na zrzutach wszystkich 4 breakpointów. Zmiana od razu w `main`, nieopublikowana.
   **Zmiana 2026-11-24 (użytkownik: „udostępniamy bezpłatnie” na końcu źle brzmi):** obecny tekst „Bezpłatny dostęp do
-  ponad **19 milionów obiektów** cyfrowego dziedzictwa narodowego.” („ponad” bez pogrubienia - prośba użytkownika;
-  sklejone twardą spacją z „19”) - pogrubiona fraza sklejona twardymi spacjami,
+  ponad **19 milionów obiektów** cyfrowego dziedzictwa narodowego.” („ponad” bez pogrubienia i zwykła spacja po nim -
+  prośba użytkownika: „ponad” zostaje w pierwszej linii) - pogrubiona fraza sklejona twardymi spacjami,
   więc nigdy się nie łamie, tylko przechodzi w całości do następnej linii (Desktop 1024 / Tablet / Mobile: 3 linie,
   Duży desktop: 2 linie). Sprawdzone na zrzutach.
 
