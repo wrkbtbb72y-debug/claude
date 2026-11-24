@@ -1168,6 +1168,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   („Desktop Small Translucent” / „Desktop White BG”) nie miała różnic. Zasada: przy zmianie odstępów w jednym
   wariancie nawigacji poprawić drugi tak, by położenie tekstów się zgadzało. Zmiana od razu w `main`, nieopublikowana.
 
+- 2026-11-24 - **Framer: lista „Wybór instytucji” na Home zamknięta na canvasie** (prośba użytkownika: nie chce
+  widzieć rozwiniętej listy w przestrzeni roboczej). Instancja komponentu „Wybór instytucji” (`LR_e0lpcL`, warianty
+  „Zamknięty” `zrmunORyP` / „Otwarty” `hV15UgTcR`) w wyszukiwarce hero na Home, breakpoint „Duży desktop”
+  (`XjMbofAH4B48TPUa6Q`), miała nadpisany wariant „Otwarty” - na stronie ≥ 1440 px lista byłaby rozwinięta od razu
+  po wejściu. Ustawiony „Zamknięty” jak na pozostałych breakpointach. Zasada: instancje list rozwijanych na stronach
+  zawsze w wariancie zamkniętym (stan otwarty tylko w komponencie). Na stronie projektowej „Design” (`G3pEUaHiE`,
+  ramka „Duzy desktop”) jest jeszcze instancja `GD9OeDtos` w wariancie „Otwarty” - nie ruszana (do decyzji).
+  Zmiana od razu w `main`, nieopublikowana.
+
 ## Do zrobienia
 
 - [x] Framer: „O portalu” i „Kolekcje” ujednolicone do maks. 1720 px jak Home i stopka (2026-11-24).
