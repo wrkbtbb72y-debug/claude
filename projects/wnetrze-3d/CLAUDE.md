@@ -17,6 +17,7 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „CMS Table / Row” `330:2` (właściwości No, Field, Type, Where, Required, Rules, Example) - nowy wiersz = nowa
   instancja w grupie, zmiana = `setProperties`, numeracja ciągła. Wartości Category: grupa 05 `330:230`.
   Po zmianie zrzut ramki i wzmianka w podsumowaniu. Szczegóły tabeli: sekcja „Tabela danych do CMS w Figmie”.
+  To samo dotyczy arkusza **„Treści CMS - projekty (robocze)”** `332:142` (pola w blokach projektów i kategorie).
 - **Nazwy warstw we Framerze: po angielsku** (prośba użytkownika, 2026-11-24). Nowe warstwy nazywać po angielsku;
   starsze notatki niżej używają dawnych polskich nazw - ID węzłów się nie zmieniły.
 
@@ -1055,6 +1056,8 @@ rysunku fikcyjni).
 - **Tylko w CMS:** Featured on Home + Order (zasila sekcję Featured projects na `/`), Short description (~40 zn.,
   podpis w Featured projects), pełna strona projektu (Challenge / Approach / Outcome, galeria, credits, SEO).
 - Usunięte względem wersji 1: Sektor, Branża, Zakres prac, Typ projektu, Miejsce.
+- **2026-11-24 (później): logo klienta nigdzie** - ani na karcie, ani w CMS, ani w arkuszu (decyzja użytkownika).
+  Rysunek `assets/projects-karta-cms-propozycja.png` z logo jest przez to nieaktualny w tym punkcie; obowiązuje tabela w Figmie.
 
 ## Makieta strony `/` w Figmie — Desktop 1200 (2026-11-22)
 
@@ -1423,3 +1426,22 @@ ramki „Service List” (pasek + 5 wierszy bezpośrednio w sekcji), napis paska
   szablonie nie jest przyklejona). Wiersze na Phone przełączone na wariant Phone (jak na `/`).
 - Na `/` zostały: Main, Featured Projects, Footer.
 - Do decyzji: nic jeszcze nie linkuje do `/projects` (przycisk „View all” prowadzi do `/z`, Navi bez linków).
+
+## Arkusz treści projektów przed CMS - Figma (2026-11-24)
+
+Prośba: rozpisać w Figmie to, co trafi do CMS - kategorie i listę projektów (na start 6), przy każdym projekcie osobne
+ramki na dane: zdjęcie główne, zdjęcia dodatkowe, tytuł, nazwa, rok, opis długi, opis skrócony; **bez logo klienta**.
+- Ramka **„Treści CMS - projekty (robocze)”** `332:142` (2880 szer., x 2257, y 7697, pod tabelą „Dane CMS”).
+  A „Kategorie projektów” (5 kart z chipami), B „Projekty” - bloki **Project 01-06** (`332:185`, `332:282`, `332:379`,
+  `332:476`, `332:573`, `332:670`, status TODO). Kolejność pól: teksty 01 Project name, 02 Title, 03 Category, 04 Year,
+  05 Short description, 06 Long description (lewa kolumna), zdjęcia 07 Main image, 08 Additional images (6 miejsc,
+  prawa kolumna). Każde zdjęcie z polem „Alt:”. Pola techniczne (Slug, Order, Featured, SEO) uzupełniane przy przenoszeniu.
+- Komponenty (na prawo od ramki): **„CMS Entry / Field”** `331:158` (warianty Size=Short/Long; właściwości No, Label,
+  Limit, Value) i **„CMS Entry / Image”** `331:167` (Size=Main 1232×770 / Extra 394×263; Label, Alt). Zdjęcie wkleja się
+  jako wypełnienie warstwy „Image”; dodatkowe miejsce = duplikat instancji w siatce „Grid”.
+- Tabela „Dane CMS” zaktualizowana (17 pól): Client name → **Project name**, Client logo usunięte, Summary → **Short
+  description**, podpis w Featured → **Home caption**, Challenge/Approach/Outcome → jedno pole **Long description**,
+  Gallery → **Additional images**, Cover image → **Main image**.
+- Pytanie od użytkownika: czy rozpisywać to raczej we Framerze przed oficjalnym CMS. Odpowiedź: na etapie zbierania
+  treści Figma (obok siebie zdjęcia i teksty, komentarze); gotowe projekty wpisać do kolekcji Projects we Framerze
+  jako **wersje robocze (Draft)** - nie trafiają na stronę, dopóki nie zostaną opublikowane.
