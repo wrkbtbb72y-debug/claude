@@ -1030,20 +1030,24 @@ symetrycznym do tekstu po prawej („Images, motion and space”) i usunąć wsz
   znów z liniami brzegowymi (±1 px), a przy „Tylko rzędy środka” linie poziome o indeksie poza pasem (`j > kHi`
   lub `j < kLo`) pomijane na każdej głębokości. Do sprawdzenia przez użytkownika w podglądzie 1322 × 800.
 
-## Strona Projects — karta projektu (CMS) — propozycja treści (2026-11-22, do akceptacji)
+## Strona Projects - karta projektu (CMS) - propozycja treści (2026-11-22, wersja 2 z 2026-11-24, do akceptacji)
 
 Prośba: zaproponować rodzaj treści i kategorie karty jednego projektu brandingowego (wzór: karta wydarzenia z datą,
-chipem kategorii, awatarem, tytułem, opisem i linkiem). Nic we Framerze nie zmienione; wygląd strony i kart — później.
-Rysunek: `assets/projects-karta-cms-propozycja.png` (źródło `assets/projects-karta-cms-propozycja.html`; klienci na rysunku fikcyjni).
-- **Na karcie:** 1 okładka (zdjęcie lub film MP4 w pętli + alt), 2 rok (lub zakres 2019–2021), 3 sektor jako kolorowy
-  chip, 4 klient (nazwa + logo w miejscu awatara), 5 tytuł projektu (~70 zn.), 6 streszczenie (140–220 zn.),
-  7 zakres prac — tagi (max 3–4 na karcie), 8 link „Zobacz projekt” → `/projects/[slug]`.
-- **Tylko w CMS:** branża, typ projektu, wyróżniony + kolejność, miejsce, treść pełnej strony (wyzwanie/rozwiązanie/
-  efekt, galeria, zespół, nagrody, SEO).
-- **Kategorie:** Sektor — Kultura i sztuka / Biznes (opcj. Organizacje społeczne); Branża — 7 kultura + 7 biznes;
-  Zakres prac — 12 pozycji (Strategia marki … Wystawa i ekspozycja); Typ projektu — Nowa marka, Rebranding,
-  Odświeżenie, Identyfikacja wydarzenia/sezonu, Kampania, Projekt specjalny.
-- Otwarte pytania do użytkownika: język kart (PL/EN), logo klienta na karcie, trzeci sektor, filtry na stronie Projects.
+chipem kategorii, awatarem, tytułem, opisem i linkiem). Nic we Framerze nie zmienione; wygląd strony i kart - później.
+Rysunek: `assets/projects-karta-cms-propozycja.png` (źródło `assets/projects-karta-cms-propozycja.html`; klienci na
+rysunku fikcyjni).
+- **Decyzje użytkownika (2026-11-24):** treść kart **po angielsku**; **logo klienta** na karcie - tak; **bez filtrów**
+  na stronie Projects; **bez kategorii Sektor** (i chipów sektora) i **bez kategorii Zakres prac** (tagów). Kategorie
+  dopasować do obecnego profilu marki na stronie.
+- **Na karcie:** 1 Cover (zdjęcie lub film MP4 w pętli + alt), 2 Year (lub zakres 2019–2021), 3 Category - kolorowy
+  chip, 4 Client (logo w kółku + nazwa), 5 Title (~70 zn.), 6 Summary (140–220 zn.), 7 „View project →” →
+  `/projects/[slug]`.
+- **Category** (1 na projekt, tylko etykieta) = 5 dziedzin z sekcji What We Do na `/`: Visual Identity, Art Direction,
+  Motion & 3D, Digital Experiences, Space & Print (kolory chipów robocze). Jeśli lista usług w What We Do się zmieni,
+  zmienić też kategorie.
+- **Tylko w CMS:** Featured on Home + Order (zasila sekcję Featured projects na `/`), Short description (~40 zn.,
+  podpis w Featured projects), pełna strona projektu (Challenge / Approach / Outcome, galeria, credits, SEO).
+- Usunięte względem wersji 1: Sektor, Branża, Zakres prac, Typ projektu, Miejsce.
 
 ## Makieta strony `/` w Figmie — Desktop 1200 (2026-11-22)
 
