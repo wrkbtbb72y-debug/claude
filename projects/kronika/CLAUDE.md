@@ -1145,14 +1145,20 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   pozostałe warianty): maks. szerokość **1800 → 1600 px**. Sekcje strony głównej mają maks. 1720 px i padding 60
   (kolumna treści 1600 px, wyśrodkowana), a stopka ma padding 60 - teraz treść stopki zaczyna się przy tej samej
   lewej krawędzi co treść strony także powyżej 1720 px (sprawdzone: 2200 px → 300 px, 3000 px → 700 px; wcześniej
-  przy 2200 px było 200 px). Do 1720 px wygląd bez zmian. Uwaga: „O portalu” (Desktop Large) i „Kolekcje” mają
-  sekcje z maks. 1920 px, więc tam powyżej 1720 px krawędzie nadal się rozjeżdżają (wcześniej też). Zmiana od razu
-  w `main`, nieopublikowana.
+  przy 2200 px było 200 px). Do 1720 px wygląd bez zmian. Zmiana od razu w `main`, nieopublikowana.
+
+- 2026-11-24 - **Framer: jedna szerokość kolumny treści na szerokich ekranach** (decyzja użytkownika: ujednolicić) -
+  zasada: sekcje / ramki z treścią mają **maks. 1720 px + padding 60** (kolumna 1600 px), jak Home, Instytucje,
+  Moje konto i stopka. Zmienione 1920 → 1720 px (w głównym breakpoincie, pozostałe dziedziczą):
+  „O portalu” (Desktop Large) - „Section / Portal overview” `HxnHSX2vO`, „Section / Safety and archiving” `IoaTRC3uh`,
+  „Section / Learn more” `Mm3xRNzW0`, plus treść hero „inside” `MLvQTY5XU` (wcześniej bez limitu); „Kolekcje”
+  (Desktop Large) - hero „inside” `TO6NnIH3K`, wiersz pod hero `C3RRpKDkJ`, „main” `zOmqRBR29`. Tła (hero, belki)
+  zostają na całą szerokość. Przy 1440 px i węższych wygląd bez zmian (zrzuty sprawdzone). Nie ruszano ukrytego
+  „Notice banner” `lNQ_e1F87` w „Kolekcjach” (padding 60, bez limitu). Zmiana od razu w `main`, nieopublikowana.
 
 ## Do zrobienia
 
-- [ ] Framer: „O portalu” (Desktop Large) i „Kolekcje” mają sekcje z maks. 1920 px, a stopka i Home 1720 px
-      (kolumna 1600) - do decyzji, czy ujednolicić, żeby lewa krawędź treści i stopki zgadzała się na ekranach > 1720 px.
+- [x] Framer: „O portalu” i „Kolekcje” ujednolicone do maks. 1720 px jak Home i stopka (2026-11-24).
 
 - [x] „NAWIGACJA II”: 31 instancji „Przycisk - …” przepięte z usuniętego zestawu `9915:378` na
       „Przycisk paska Subnav” `9891:51708` (2026-11-24).
