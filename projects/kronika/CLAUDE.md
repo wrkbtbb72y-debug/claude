@@ -1129,12 +1129,23 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   instancje to komponenty z „- KOMPONENTY - nowe (robocze)” (Navi Kronika ×7, gov_top_bar ×7, Podwójna nawigacja ×4)
   i ikony Lucide z biblioteki.
 
+- 2026-11-24 - **Figma: komponent „Przycisk Panel” (okrągły „⋮”)** (prośba użytkownika) - strona „Buttons”, wiersz
+  tabeli „Przycisk Panel” (`8347:118486`): ramki „Default” / „Open” zastąpione zestawem **„Przycisk Panel”**
+  `9945:13664` (w ramce „Przycisk Panel - warianty” `9945:13654` z podpisami): **Stan = Domyślny** `9945:13658`
+  (biel, ramka 1 px #E1E1E1, ikona lucide/ellipsis-vertical 22 px #1A1A1A) / **Otwarty** `9945:13661` (tło #0A0A0A,
+  ikona biała); 40 × 40, r 20. Tło zestawu #F6F6F6, r 5 (jak „Przycisk paska Subnav”). Kolumna „Podgląd” w tym
+  wierszu miała stałe 163 px i ucinała zestaw - teraz „Fill” jak w innych wierszach.
+  Makiety „NAWIGACJA II” - 3 przyciski zamienione na instancje: pasek Tablet `9945:13669` i Mobile `9945:13672`
+  („Wzór zachowania paska”, Domyślny) oraz „Navi II - Mobile - menu rozwinięte” `9945:13675` (Otwarty; wcześniej
+  kropki z elips, teraz ikona Lucide). Stary komponent „Subnav” `8088:5007` ma własny przycisk - bez zmian.
+  Na stronie „NAWIGACJA II 2” jest jeszcze 7 takich przycisków jako zwykłe ramki - nie ruszane.
+
 ## Do zrobienia
 
 - [x] „NAWIGACJA II”: 31 instancji „Przycisk - …” przepięte z usuniętego zestawu `9915:378` na
       „Przycisk paska Subnav” `9891:51708` (2026-11-24).
 - [ ] „NAWIGACJA II”: przyciski / pola, które nie są instancjami komponentów z „Buttons”: pola „Wybierz jednostkę”
-      w paskach (zwykłe ramki), okrągłe „⋮” na Tablet / Mobile, przycisk „Anna Sobczak” i reszta menu (w komponencie
+      w paskach (zwykłe ramki), przycisk „Anna Sobczak” i reszta menu (w komponencie
       „Navi Kronika” na „- KOMPONENTY - nowe (robocze)”), pozycje panelu bocznego na Mobile - do decyzji użytkownika.
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
