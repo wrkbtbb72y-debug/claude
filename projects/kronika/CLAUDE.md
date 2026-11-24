@@ -37,6 +37,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Styl tabeli = kopia wierszy z „Przyciski – przegląd” (nagłówek „KRONIK@ · …” #9A1C31,
   tytuł 40 px, tło #EFEFEF, wiersz kolumn #F7F8FA, wiersz sekcji 20/500, opis 14/500
   + notka 12/450 #646A74). Nowe wiersze dodawaj, klonując istniejący wiersz tej tabeli.
+  **Potwierdzone 2026-11-24 (użytkownik):** każdy przycisk (także dropdown / „Dymek”, pole Select) na makietach
+  ma być **instancją komponentu głównego ze strony „Buttons”** - nie zwykłą ramką, nie odłączoną kopią i nie
+  instancją usuniętego lub innego komponentu. Po zmianach w komponentach na „Buttons” (np. gdy zestaw dostanie
+  nowe ID) sprawdzić, czy instancje na makietach nadal wskazują na „Buttons”, i w razie potrzeby przepiąć je
+  (`swapComponent` + ponowne ustawienie właściwości).
 - **Ikony w Figmie:** wszystkie ikony w przyciskach bierz **wyłącznie** z kolekcji na stronie
   „- ICONS LUCIDE” (`31:782`, ramka „Lucide Icons” `39:784`, nazwy `lucide/<nazwa>`) —
   polecenie użytkownika, 2026-11-16.
@@ -1116,10 +1121,21 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   **nie istnieje** - 31 przycisków na makietach „NAWIGACJA II” wskazuje na usunięty komponent (nie dostaną hovera,
   dopóki nie zostaną przepięte na `9891:51708`).
 
+- 2026-11-24 - **Figma: przyciski paska na makietach przepięte na komponent z „Buttons”** (prośba użytkownika).
+  31 instancji „Przycisk - …” na „NAWIGACJA II” (8 pasków) wskazywało na usunięty zestaw `9915:378` - podmienione
+  na „Przycisk paska Subnav” `9891:51708` (Domyślny / Otwarty jak wcześniej), etykiety, ikony i strzałki
+  przeniesione właściwościami (sprawdzone wszystkie 31). Wygląd bez zmian poza kryciem ikon 80 % (z komponentu).
+  Audyt strony: instancje ze strony „Buttons” = Przycisk paska Subnav ×31, Dymek ×5, Select ×1; pozostałe
+  instancje to komponenty z „- KOMPONENTY - nowe (robocze)” (Navi Kronika ×7, gov_top_bar ×7, Podwójna nawigacja ×4)
+  i ikony Lucide z biblioteki.
+
 ## Do zrobienia
 
-- [ ] „NAWIGACJA II”: 31 instancji „Przycisk - …” wskazuje na usunięty zestaw `9915:378` - przepiąć na
-      „Przycisk paska Subnav” `9891:51708` (czeka na zgodę użytkownika).
+- [x] „NAWIGACJA II”: 31 instancji „Przycisk - …” przepięte z usuniętego zestawu `9915:378` na
+      „Przycisk paska Subnav” `9891:51708` (2026-11-24).
+- [ ] „NAWIGACJA II”: przyciski / pola, które nie są instancjami komponentów z „Buttons”: pola „Wybierz jednostkę”
+      w paskach (zwykłe ramki), okrągłe „⋮” na Tablet / Mobile, przycisk „Anna Sobczak” i reszta menu (w komponencie
+      „Navi Kronika” na „- KOMPONENTY - nowe (robocze)”), pozycje panelu bocznego na Mobile - do decyzji użytkownika.
 
 - [ ] Menu boczne Mobile/Tablet: wybrać wariant linków konta (A/B/C w ramce `9816:6120`), dopracować go i zrobić
       wersję Tablet.
