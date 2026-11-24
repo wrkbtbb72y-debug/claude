@@ -1365,3 +1365,22 @@ więcej; dobrać wielkość i odstępy.
   Instagram / Behance / Dribbble Column, Grid Height Ruler, Width Ruler (as Middle).
 - Nie zmieniane (to nie warstwy strony): nazwy komponentów i presetów tekstu (np. „Napis lewy”, „Opis sekcji”),
   kontrolki kodu siatki, aria-label stopki „Media społecznościowe”.
+
+## Sekcja „What We Do” (wariant 1 z propozycji, `/`, 2026-11-24)
+
+Prośba: zamiast drugiej listy projektów (sekcja „6” `sX3rRcew2`) sekcja o tym, czym marka się zajmuje; układ z tekstami
+roboczymi; inspiracje: sort-office.com, basement.studio (brands, websites, 3D, products), lusion.co (strategy / art
+direction, UX/UI, motion, interactive, WebGL / 3D production). Uwaga: dawny tekst podsumowania („creative coop working
+with makers and brands to shape impactful brand experiences”) był prawie dosłownie opisem sort-office.com.
+- **Sekcja „6” zostaje** (na prośbę użytkownika, bez zmian, nadal widoczna) - do decyzji: ukryć / usunąć.
+- Nowa sekcja **„What We Do (TODO: confirm copy)”** `J09QQV8My` (kopia układu „6”), na Desktopie zaraz po Featured
+  Projects, przed „6”. `section`, aria-label „What we do”, Scroll Section **what-we-do**; translateY −56, padding dół 80
+  jak „6”.
+- W środku „Service List” `vjzrf0wvx`: przyklejony „Section Bar” `Mop_e0NSp` z napisem „what we do”; **„Intro (TODO)”**
+  `nWn62nZV_` (padding 96/40/64/40) z „Intro Text” `R5IzFmrsB` (h2, preset „Opis sekcji”, środek, max 546 px):
+  „From first idea to final detail, we build brands end to end, for companies and for culture.”
+- 6 instancji „Wiersz projektu” (Service 01–06): Brand Strategy / Positioning, naming · Visual Identity / Logos, type,
+  brand systems · Art Direction / Photography, campaigns · Motion & 3D / Animation, film, CGI · Digital Experiences /
+  Websites, interactive, WebGL · Space & Print / Exhibitions, signage, packaging. Miniatury tymczasowo ze zdjęć projektów.
+- **TODO (użytkownik):** potwierdzić listę usług i opisy (to propozycja, nie fakty o marce), dobrać miniatury do usług,
+  linki wierszy (strzałka sugeruje link).
