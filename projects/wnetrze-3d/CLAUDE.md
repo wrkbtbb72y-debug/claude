@@ -1597,3 +1597,17 @@ przez użytkownika) sześcian 3D, który po najechaniu na wiersz innego projektu
     zamontowany wiersz ustawia zdjęcie startowe. Wiersz owinięty w `div` z `display: contents` (zdarzenia myszy).
 - Animacja i hover działają tylko w podglądzie / na opublikowanej stronie, nie na płótnie. Na Tablet/Phone sześcian jest
   przycinany przez wąską kolumnę z układu użytkownika.
+
+## Puste 56 px pod stopką na `/` - usunięte (2026-11-24)
+
+Przyczyna: Featured Projects, What We Do i Footer miały translateY −56 (pierwszy pasek wystaje nad dół Hero).
+Przesunięcie nie zmniejsza miejsca w układzie, więc pod ostatnią sekcją zostawało 56 px (wcześniej zakrywał je
+„Bottom Fill” w stopce, usunięty przez użytkownika).
+- Teraz −56 ma **tylko pierwsza sekcja** (Featured Projects `HadJ76UFf`); jej padding dolny 80 → **24** (24 + 56 = te
+  same 80 px odstępu do następnej sekcji). What We Do `NgsTpcy9z` i Footer `yVikSkj7m` bez translateY.
+  Pasek „what we do” `tPIZgEwql`: sticky top 112 → **56** (wcześniej 112 kompensowało przesunięcie).
+- Sprawdzone: stopka na ekranie w tym samym miejscu (y 3340), wysokość strony 4196 → 4140 (Desktop), wszystkie
+  breakpointy.
+- Zasada: kolejne sekcje w „Main” bez translateY; przesunięcie −56 tylko w pierwszej sekcji po Hero.
+- Zastane: What We Do ukryta przez użytkownika (Visible off na wszystkich breakpointach) - nie ruszane.
+- Przy okazji: kolumnom 01-02 w What We Do na Tablecie i Phone dopisany kolor obramowania (linter: „Border is incomplete”).
