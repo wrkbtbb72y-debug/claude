@@ -1384,3 +1384,6 @@ with makers and brands to shape impactful brand experiences”) był prawie dos�
   Websites, interactive, WebGL · Space & Print / Exhibitions, signage, packaging. Miniatury tymczasowo ze zdjęć projektów.
 - **TODO (użytkownik):** potwierdzić listę usług i opisy (to propozycja, nie fakty o marce), dobrać miniatury do usług,
   linki wierszy (strzałka sugeruje link).
+- 2026-11-24 - na prośbę użytkownika **bez Brand Strategy**: wiersz usunięty, pozostałe przenumerowane 01-05
+  (Visual Identity `UnXZDLWCz`, Art Direction `RVrYvBxB2`, Motion & 3D `wHhhZpKK4`, Digital Experiences `hfUpV2v4Q`,
+  Space & Print `ayGvY283I`).
