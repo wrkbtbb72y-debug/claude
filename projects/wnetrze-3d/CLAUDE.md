@@ -1316,3 +1316,17 @@ Zdjęcia w grupie „1” `KzTe86uZ1` są Scroll Section: photo-1 `HzQMxSHVp`, p
 - W edytorze widać wszystkie 3 teksty naraz (nałożone) - efekty działają tylko w podglądzie. Do sprawdzenia przez
   użytkownika: moment przełączenia (środek ekranu czy góra) i czy replay chowa tekst przy następnym zdjęciu; jeśli nie,
   wrócić do komponentu z wariantami i przejściami warstw ustawionymi przez API.
+
+## Zdublowane nazwy Scroll Section - poprawione (`/`, 2026-11-24)
+
+Zgłoszenie: Scroll Transform na „Pasku z linkami” `ZR4kUwPMr` (krycie 1 → 0 przy celu `nv67EJ8nh`, viewport start) nie
+działał. Przyczyna: powtarzające się nazwy Scroll Section (`elementId`, w HTML musi być jedyny), powstałe przy duplikowaniu
+warstw: „photo3” ×2, „pierwsza” ×3, „projects” ×4. Efekty wskazują cele po ID warstwy, ale na stronie cel jest szukany po
+nazwie, więc drugi „photo3” (cel paska) był nieosiągalny.
+- Nowe nazwy: `nv67EJ8nh` (ostatnie, małe zdjęcie w grupie „1”) **photo-4**, „Photo 3” `a0kbIINEc` **photo-3**,
+  „About” `yJcrtn4nP` **about**, „6” `sX3rRcew2` **sekcja-6**, „Footer” `yVikSkj7m` **footer**
+  („projects” zostaje tylko sekcji Featured projects `HadJ76UFf`).
+- Scroll Section wyłączone (nie były celem żadnego efektu): „Pasek z linkami” `ZR4kUwPMr`, „Shade” `Sx2ug13OI`,
+  „Pasek z linkami” w „Lista projektów” `gz49SgmVh`.
+- Linki z kotwicą w projekcie: tylko `/#hero` (logo w stopce) - bez zmian.
+- Zasada na przyszłość: po zduplikowaniu warstwy ze Scroll Section zmienić jej nazwę.
