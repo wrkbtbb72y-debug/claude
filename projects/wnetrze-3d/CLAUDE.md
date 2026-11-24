@@ -1501,3 +1501,18 @@ z kadrem na hover, C przyklejony nagłówek + bloki) wybrał **A**.
   Preset „Service Title” zmniejszony: 32 / 28 / 28 px (Desktop / Tablet / Phone). Tablet: siatka 2 × 2 (zawijanie,
   kolumny 50%, linie dolne pod 01-02, bez prawej przy 02). Phone: 4 bloki pod sobą.
   Na Desktopie „Digital Experiences” łamie się na 2 linie (opis tej kolumny zaczyna się niżej).
+
+## Wszystkie sekcje `/` w stacku „Main” (2026-11-24)
+
+Prośba (dobra praktyka Framera): na Desktopie poza „Main” zostają tylko „Navi - Fixed” `GiaHsJO3X` i „lenis”
+`nMDvE6f04`; wszystkie sekcje w „Main” `wUYfTPOi0`. Zachowanie i skalowanie bez zmian.
+- Wcześniej „Main” był **przyklejony** (sticky top 0, stos poziomy, gap 10, overflow clip) i był celem przewijania
+  **„hero”**; w środku tylko Hero. Sekcje (translateY −56, zIndex 1) przejeżdżały nad nim.
+- Teraz: **Main** = zwykły pionowy stos strony (relative, gap 0, overflow visible, szer. 100%, minHeight 520 zostaje),
+  dzieci: **Hero → Featured Projects → What We Do → Footer**. **Hero** `N06uDCvcg` przejął przyklejenie (sticky top 0,
+  zIndex 0) i Scroll Section **„hero”** (link logo `/#hero` dalej działa). Sekcje bez zmian (translateY −56, zIndex 1).
+- Efekt przewijania „Perspective Grid” `OirTRcAEZ` (Scroll Transform: cel „hero” → „projects”): cel przestawiony
+  z Main na Hero (wszystkie breakpointy).
+- Sprawdzone: pozycje sekcji na Desktopie identyczne co do piksela (Hero 0, Featured 800, What We Do 3396, Footer 4196);
+  zrzuty całej strony na 3 breakpointach.
+- Zasada: nowe sekcje `/` wstawiać do „Main” (po Hero), nie bezpośrednio do breakpointu.
