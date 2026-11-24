@@ -1577,3 +1577,23 @@ tekst ciemnieje): warstwa **„Hover fill”** `E2DUdvqEW` (absolute, token „T
   szerokość. Poprawka: kopie `S3VjatetE` 2fr i `OVym3OEzy` 1fr także w Desktop (Hover ma te same wartości). **Zasada:**
   każda zmiana układu oryginalnych tekstów wiersza (szerokości, odstępy, padding) musi być powtórzona w „Hover content”
   w **obu** stanach (Desktop i Hover), inaczej kopia rozjedzie się z oryginałem.
+
+## Sześcian projektów na `/projects` (2026-11-24)
+
+Prośba: w miejscu prostokąta `Uc8gjSbE1` (240 × 240, prawy panel obok listy, w „Horizontal wrapper” `O9Gi3eY7d` zbudowanym
+przez użytkownika) sześcian 3D, który po najechaniu na wiersz innego projektu obraca się o 90° w prawo lub w dół, a na
+ścianie wychodzącej na front pokazuje zdjęcie główne tego projektu.
+- Plik kodu **`SzescianProjektow.tsx`** (folder Assets → Kod), dwa eksporty:
+  - komponent **„SzescianProjektow”** (instancja „Sześcian projektów” `b02hKELET` w ramce `Uc8gjSbE1`, która dostała nazwę
+    „Cube”, przezroczyste tło, overflow visible; instancja 100% × 100%). Sześcian z 6 ścian (CSS 3D, kolor ścian #15181C,
+    krawędzie rgba(255,255,255,0.12)), rozmiar z jednostek kontenera (cqmin), cofnięty o pół boku, więc front = rozmiar
+    ramki. Stan orientacji to macierz 3×3; obrót „w prawo” = rotateY(+90°), „w dół” = rotateX(−90°) w osiach świata; na
+    ścianę, która wyjdzie na front, wstawiane jest nowe zdjęcie z obrotem korygującym (zawsze prosto). Kontrolki: Zdjęcie
+    startowe (ustawione: Main image 1. projektu), Kierunek (Losowo / Na przemian / W prawo / W dół; domyślnie Losowo),
+    Czas obrotu (0,7 s), Kolor ścian, Krawędzie. Ten sam projekt ponownie = bez obrotu.
+  - override **`withSzescianHover`** na instancji wiersza „Project” `e0sRzCdfk` w liście CMS: po najechaniu (i focusie)
+    bierze z propsów instancji zdjęcie (pierwsza wartość z `src` = kontrolka Zdjęcie, podpięta pod Main image) i przekazuje
+    je sześcianowi przez wspólny mały store w module (`createStore` z „framer” niedostępny w tym projekcie). Pierwszy
+    zamontowany wiersz ustawia zdjęcie startowe. Wiersz owinięty w `div` z `display: contents` (zdarzenia myszy).
+- Animacja i hover działają tylko w podglądzie / na opublikowanej stronie, nie na płótnie. Na Tablet/Phone sześcian jest
+  przycinany przez wąską kolumnę z układu użytkownika.
