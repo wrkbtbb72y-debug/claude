@@ -1250,6 +1250,16 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   proporcja 1,78 (16:9) → **1,5** na wszystkich breakpointach; szerokość = szerokość karty, wysokość wynika z proporcji
   (np. 429 × 286 px na Dużym desktopie, 358 × 239 px na Mobile). Zmiana od razu w `main`, nieopublikowana.
 
+- 2026-11-24 - **Framer, Home: sekcja „Dołącz do nas” - szare tło na całą szerokość ekranu** (prośba użytkownika, ze
+  szkicem). Tło (obraz z gradientem „Join us_img” `PmkHCtL7D`) było w ramce „Join_us_wrapper” `OxTlhbxd8` (na Dużym
+  desktopie maks. 1720 px) i miało stałe 1440 px - na szerokich ekranach się kończyło. Przeniesione o poziom wyżej,
+  do samej sekcji `mcLYc56hW` (pełna szerokość), jako pierwsze dziecko (pod treścią); dół przypięty do dolnego
+  odstępu sekcji: Desktop 200, Tablet 180, Duży desktop 200, Mobile 159,5 px. Na **Dużym desktopie** tło przypięte
+  do lewej i prawej krawędzi (szerokość 100 %); na Desktop / Tablet / Mobile bez zmian (1440 px, Mobile przesunięte
+  -200 px jak wcześniej). Treść bez zmian: biała karta zaczyna się 60 px na lewo od tekstu, tekst i nagłówek w linii
+  z kolumną (Polecane, Kategorie) - sprawdzone przy 1928 px (karta 104, tekst 164 px = lewa krawędź Kategorii).
+  Ilustracja (jeźdźcy) nadal w ramce 1720 px. Zmiana od razu w `main`, nieopublikowana.
+
 ## Do zrobienia
 
 - [ ] **Audyt Home (2026-11-24) - do decyzji użytkownika:**
