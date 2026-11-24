@@ -1228,6 +1228,11 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Zamiast zmieniać styl (używany w innych przyciskach) wszystkie warianty komponentu `n3Zd34m52` mają
   overflow „visible”. Uwaga na przyszłość: tekst w stylu z interlinią 1em / 15px w ramce z przycinaniem obetnie
   ogonki (ą, ę, j, g, y).
+  Uzupełnienie (2026-11-24): drugie „Czytaj więcej” (sekcja „Otwarte zasoby”) było dalej ucięte przez ramki strony -
+  „text” `OJuh71bfJ` oraz `Rb27y1mLb` i `wLr81XRsH` (przycinanie, wysokość auto, bez dolnego odstępu); ustawione
+  overflow „visible” na wszystkich breakpointach. To samo dla ramki `y9pabiZMI` nad nagłówkiem „Dołącz do nas”
+  (ogonek „ą” na krawędzi). Zasada: ramka z przycinaniem, w której tekst stoi przy dolnej krawędzi, utnie ogonki -
+  przycinanie zostawiać tylko tam, gdzie jest potrzebne (zdjęcia, karty z zaokrągleniem).
 
 - 2026-11-24 - **Framer, Home: zdjęcia w sekcji Kategorie** (prośba użytkownika): na Desktop 1024, Tablet i Dużym
   desktopie zdjęcia kart (`ZCeVMb3Ep`, `AXS5iNPbX`, `pGY1aLyOj`, `bVo5OY940`, ukryte `Hj4LtSHRW`) mają wysokość
