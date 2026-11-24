@@ -1156,6 +1156,18 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   zostają na całą szerokość. Przy 1440 px i węższych wygląd bez zmian (zrzuty sprawdzone). Nie ruszano ukrytego
   „Notice banner” `lNQ_e1F87` w „Kolekcjach” (padding 60, bez limitu). Zmiana od razu w `main`, nieopublikowana.
 
+- 2026-11-24 - **Framer: nawigacja nie skacze na boki przy zmianie tła** (prośba użytkownika, nagranie ekranu) -
+  komponent „Navi” (`SWJhT9Gb9`): przy przewijaniu na górę wariant „Desktop Large White BG” (`Mymr8EEp_`) zmienia
+  się w „Desktop Large Translucent” (`ZSUKrGPol`) i linki „O NAS … POMOC” + kreska przesuwały się o ok. 80 px.
+  Powód: w białym wariancie linki to instancje „Przycisk nav rozwijany” (`Wh6ZYci5u`, padding 12/8/12/12) i ramki
+  „… (hover)” (padding 12) z odstępem 4 px, a odstęp przed kreską 79 px; w przezroczystym zwykłe teksty z odstępami
+  20/22 px i 52 px. Poprawka **tylko w wariancie Translucent** (biały bez zmian, jego odstępy wynikają z tła hover):
+  grupa linków `q2GapG2v8` odstęp 20 → **24**, „navi_links” `EWfMoUp8s` odstęp 22 → **28** + padding prawy **12**,
+  „navi-right” `z7DF8rOdH` odstęp 52 → **79**. Teraz teksty i kreska stoją w obu wariantach w tych samych miejscach
+  (zrzuty: O NAS 579, ZASOBY 667, INSTYTUCJE 770, POMOC 886, kreska 1031 px przy 1440). Para wariantów 1024
+  („Desktop Small Translucent” / „Desktop White BG”) nie miała różnic. Zasada: przy zmianie odstępów w jednym
+  wariancie nawigacji poprawić drugi tak, by położenie tekstów się zgadzało. Zmiana od razu w `main`, nieopublikowana.
+
 ## Do zrobienia
 
 - [x] Framer: „O portalu” i „Kolekcje” ujednolicone do maks. 1720 px jak Home i stopka (2026-11-24).
