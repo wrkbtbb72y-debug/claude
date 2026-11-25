@@ -1986,3 +1986,7 @@ trwający 0,7 s, przy szybkim przewijaniu obroty się nakładały i spóźniały
 - Nowa kontrolka **„Postój przy wierszu”** (`hold`, 0-0,45, domyślnie 0,25): część drogi między wierszami, przez którą
   sześcian stoi prosto; 0 = obraca się bez przerwy. Widoczna tylko w trybie Przewijanie.
 - Desktop (tryb Najechanie) bez zmian: obroty po najechaniu jak dotąd.
+- 2026-11-25 (później) - prośba: start trochę wyżej, koniec trochę niżej. Nowe kontrolki w trybie Przewijanie:
+  **„Start wyżej o”** (`startShift`, px) i **„Koniec niżej o”** (`endShift`, px) - przesuwają początek i koniec biegu
+  względem 1. / ostatniego wiersza. Ustawione: **Tablet 40 / 40 px**, **Phone 24 / 24 px** (Desktop nie dotyczy).
+  Obrót i kropka bez zmian (przed 1. wierszem sześcian pokazuje 1. projekt, za ostatnim - ostatni).
