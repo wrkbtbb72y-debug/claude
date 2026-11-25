@@ -1298,6 +1298,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   zaproszenie”. Styl = klon tabeli „nowe”. Bloki porównań (CMS, Anuluj zaproszenie) zostały na miejscu - użytkownik
   przeniósł je wcześniej do ramki `10028:62403`.
 
+- 2026-11-25 - **Figma, Buttons: „Przyciski ikonowe - wg koloru”** (`10061:406`, prośba użytkownika) - osobna lista
+  na prawo od ramki `10033:363` (x 12167, y 10757). 18 przycisków z obu tabel („Buttony - same ikony” + „nowe”)
+  w 4 kolumnach wg koloru: Neutralny (3), Niebieski (5), Czerwony (7), Zielony (3); każdy: przycisk (kopia z tabeli),
+  tytuł, opis działania, nazwa ikony. Opisy napisał Claude - do weryfikacji. Stan tabeli „nowe” w tym momencie
+  (zmiany użytkownika): Edytuj dane instytucji = `file-cog`, Anuluj zaproszenie = `circle-x`.
+
 ## Do zrobienia
 
 - [ ] Figma „Buttons”, tabela „Przyciski ikonowe – opisy” (`10033:368`): sprawdzić opisy działania przycisków;
