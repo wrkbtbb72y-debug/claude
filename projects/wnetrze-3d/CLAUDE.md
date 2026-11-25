@@ -1151,7 +1151,7 @@ w górę i jednocześnie znika do 0%, nowy wlatuje od dołu. Użytkownik: „jak
   ustawia wariant „Kwadrat N” (brak wariantu → domyślny Framera) i animuje zmianę (framer-motion, AnimatePresence:
   wyjście y −24 + opacity 0, wejście od y +24; 0,55 s, ease [0.22, 1, 0.36, 1]). Natywne przejście wariantów nie umie
   jednocześnie wypuścić starego napisu w górę i wpuścić nowego od dołu — dlatego ruch jest w overridzie.
-- Nowa bryła / zmiana „Scalonych brył” → dodać wariant „Kwadrat N” w obu komponentach.
+- Nowa bryła / zmiana „Scalonych brył” → dodać wariant „Kwadrat N” w „Napisie lewym” (prawy od 2026-11-25 ma tylko „Fokus”).
 - Działa tylko w podglądzie / na stronie (edytor pokazuje „Domyślny”). Tablet/Phone: kolumny z napisami ukryte.
 - Przy okazji (zmiana użytkownika, nie Claude): w „Dolnym pasku” są teraz 3 pola (bez LinkedIn) i bez pionowych kresek.
 
@@ -1607,6 +1607,18 @@ przez użytkownika) sześcian 3D, który po najechaniu na wiersz innego projektu
   **Wychylenie** (°), **Okres ruchu** (s). Na płótnie i przy „ogranicz ruch” w systemie - bez kołysania.
   Stan zastany: instancja `b02hKELET` jest teraz w „Cube Stage” `yJR6xOUDx` (prawa kolumna „Right” `k0rqSWoT9`,
   przebudowa użytkownika; dawna ramka `Uc8gjSbE1` już nie istnieje); override na wierszach `e0sRzCdfk` i `JDCbU_6LI`.
+- 2026-11-25 - **„Napis prawy” `k_11UqrF3` uproszczony do 2 wariantów + zmienne** (prośba użytkownika: „za dużo
+  wariantów”). Wszystkie 11 wariantów „Kwadrat N” różniło się od siebie niczym (każdy „See more” + strzałka), więc:
+  - Warianty: **„Domyślny”** `j80GqzVEb` (+ hover jak dotąd) i **„Fokus”** `Q6mxb3i7d` (dawny „Kwadrat 1”, preset
+    „Lista akapit”, strzałka widoczna). Pozostałe „Kwadrat 3...16” usunięte.
+  - Zmienne komponentu: **„Tekst”** `AOc8AAI_I` (domyślnie „See our projects”, tekst w „Domyślnym”) i **„Tekst po
+    kliknięciu”** `Tt9KdtaSE` (domyślnie „See more”, tekst w „Fokusie”) - teksty zmienia się w panelu instancji.
+  - Kod: w `NapisyFokus.tsx` nowy override **`withNapisFokusWariant`** - przy kliknięciu dowolnej bryły ustawia wariant
+    „Fokus” (animacja jak dotąd; klucz animacji bez numeru bryły, więc przy przejściu bryła → bryła napis się nie
+    przeładowuje, bo tekst jest ten sam). Podpięty do instancji `LolOc7rF8` („/”) i `M2JjoZw2h` („/home”).
+    Stary `withNapisFokus` („Kwadrat N”) zostaje dla „Napisu lewego” `A1gRbg7LO` (tam warianty mają różne tytuły brył).
+  - Nowa bryła nie wymaga już nowego wariantu w „Napisie prawym” (tylko w lewym). Sprawdzone: Desktop bez zmian
+    wizualnych, diagnostyki kodu czyste; Tablet/Phone - kolumny z napisami ukryte jak wcześniej.
 
 ## Puste 56 px pod stopką na `/` - usunięte (2026-11-24)
 
