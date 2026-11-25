@@ -1815,3 +1815,18 @@ mniejszy. Zmiany w `main`, **nieopublikowane**.
   „Project Body”. Phone: pod sobą, gap 12, padding 24/0/24/0.
 - Figma: tabela „Dane CMS” - wiersz 14 „Context” w grupie 03 (numeracja 1-19); arkusz - pole 08 „Context” w każdym
   bloku (z tekstem), numeracja pól 01-10.
+
+### Para zdjęć pod Context (strona projektu, 2026-11-25)
+
+Prośba: pod sekcją Context dwa zdjęcia z Additional images, w układzie jak Context (dwie kolumny); bardziej poziome
+z lewej, bardziej pionowe z prawej.
+- Kanwa Framera nie pozwala wybrać konkretnych pozycji listy w CMS, więc **kolejność Additional images zmieniona** w każdym
+  projekcie: zdjęcie 1 = najbardziej poziome, zdjęcie 2 = najbardziej pionowe, reszta w dawnej kolejności. Wybór
+  (proporcje szer./wys.): Interest Dept 1,48 / 0,56 · Beta Bar 1,5 / 0,74 · Our Legacy 1,5 / 0,8 · Mycoaudio 0,8 / 0,79
+  (brak poziomych - oba pionowe) · Nod Objects 0,8 / 0,67 (brak poziomych) · Letter Bet 1,5 / 0,79.
+- Strona `JJQ4pAWMy`: **„Image Pair”** `PUuqk2Gxy` w „Main” po sekcji Context: stos poziomy, gap 24, wyrównanie do góry;
+  w środku **„Pair Image”** `Wc6yTYGyT` powtarzany po Additional images z limitem 2 (`limitArray`), szer. 1fr, wysokość
+  wg proporcji zdjęcia (fit-image), wypełnienie = pole Image (alt z CMS). Phone: pod sobą, gap 16.
+- **Zasada:** dodając projekt, ustaw w Additional images na 1. miejscu zdjęcie poziome, na 2. pionowe.
+- Figma: w arkuszu kolejność zdjęć w siatkach zsynchronizowana z CMS (etykiety Image 1...N); w tabeli „Dane CMS” wiersz
+  Additional images - „Gdzie widać” i zasady opisują parę.
