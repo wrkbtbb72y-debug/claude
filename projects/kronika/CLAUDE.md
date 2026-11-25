@@ -1326,9 +1326,39 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   właściwość tekstowa „Etykieta” (`Etykieta#10090:0`); przyciski w makiecie to jego instancje (szerokość Fill).
   Tylko Desktop Large; pozostałe breakpointy po akceptacji.
 
+- 2026-11-25 - **Figma, panel logowania - wersja użytkownika 2 kolumny: wyrównanie kart + belka rejestracji**
+  (prośba użytkownika). Użytkownik przerobił propozycję ręcznie (ramka `10116:85095`, tytuł „Logowanie
+  i Rejestracja”, szare tło sekcji, 2 karty: Login.gov.pl i Formularz; kolumna Rejestracja usunięta).
+  Zmiany w „Login / 3 kolumny” `10116:85107`: obie karty **ta sama budowa i rozmiar** (650 × 448, Fill, równa
+  wysokość, odstęp 20): padding 56 ze wszystkich stron, treść wyrównana do lewej na całą szerokość karty
+  (wcześniej kolumna 380 px na środku i różne paddingi 40/80); kolejno: Grafika (32 px) · 32 · etykieta
+  Uppercase S · 12 · tytuł H3 · 16 · opis (akapity co 8) · odstęp elastyczny (min. 48) · przycisk 340 × 46
+  (przyciski obu kart na tej samej wysokości). Usunięte puste ramki-owijki („Frame 427320006”, „Treść”).
+  **Nad kartami belka „Belka / Rejestracja”** (`10120:5213`, szerokość obu kart 1320, w nowej ramce „Logowanie
+  i rejestracja / opcje” `10120:5212`, odstęp 20 do kart): białe tło, ramka 1 px #1A1A1A 20 %, padding 28/56;
+  ikona lucide/user-round-plus w kole 56 px #F6F6F6, tytuł „Nie masz jeszcze konta?” (H4 20/500), opis Body 3
+  #656766, po prawej „Przycisk CTA 46 px” Secondary „Zarejestruj się” (240 px).
+
+- 2026-11-25 - **Figma, panel logowania (2 karty): treść wyśrodkowana, poprawiony auto-layout** (prośba
+  użytkownika: wcześniej tekst był przycinany, a treść wyrównana do lewej). W każdej karcie nowa ramka
+  **„Zawartość”** (`10122:5556` / `10122:5557`, stała szerokość 460, wyśrodkowana w karcie): grafika (logo / ikona,
+  wysokość 40, na środku) · 32 · etykieta + tytuł (12) · 16 · akapity (8); **wszystkie teksty wyśrodkowane**.
+  Karta: padding 56 góra/dół, 48 boki, odstęp elastyczny (min. 40) i przycisk 340 × 46 na środku, przyciski obu
+  kart na tej samej wysokości; karty 650 × 456. Ikona info Login.gov.pl przeniesiona do prawego górnego rogu
+  karty 1 (pozycja absolutna, 24 px od krawędzi). Wyłączone przycinanie (clip) w kartach, ramkach treści, belce
+  i grupie. Odstępy: tytuł strony → belka **56** (było 80), belka → karty 20, karty → „Problem z logowaniem?” 40.
+
+- 2026-11-25 - **Figma, panel logowania - wariant użytkownika z blokiem „Nie masz konta?” nad kartami**
+  (ramka `10116:86529`): dwie karty **połączone w jeden panel na całą szerokość** (prośba użytkownika) -
+  „Panel logowania (2 kolumny)” `10116:86554` (1320 × 470): białe tło, ramka 1 px #1A1A1A 20 %, kreska 3 px
+  #1A1A1A u góry całego panelu, padding 64 góra/dół; w środku 2 kolumny (Fill, po 659 px, padding boczny 64)
+  rozdzielone pionową linią 1 px #1A1A1A 20 % (`10125:5557`). W kolumnie ramka „Zawartość” 440 px, wszystko
+  wyśrodkowane: logo / ikona (40 px; ikona info obok logo Login, odstęp 12) · 32 · etykieta + tytuł · 16 ·
+  akapity; odstęp elastyczny (min. 40) i przycisk 340 × 46 - przyciski obu kolumn w jednej linii.
+
 ## Do zrobienia
 
-- [ ] Panel logowania 3 kolumny (`10092:4517`): akceptacja propozycji; potem Desktop Small / Tablet / Mobile,
+- [ ] Panel logowania (propozycja `10092:4517`, wersja użytkownika 2 kolumny + belka `10116:85095`): akceptacja; potem Desktop Small / Tablet / Mobile,
       stan Focus dla „Przycisk CTA 46 px”, treść dymku pod ikoną info (Login.gov.pl) i widok formularza
       login + hasło (dokąd prowadzi „Zaloguj się loginem i hasłem”).
 
