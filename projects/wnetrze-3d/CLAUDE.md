@@ -2057,3 +2057,24 @@ efektywniejsze paddingi. Zmiany w `main`, nieopublikowane. Wygląd bez zmian (zr
   Przewijanie). Boki były nieruchome poza pierścieniem - teraz są w pierścieniu i toczą się razem z sześcianem (zdjęcie
   na boku obraca się w swojej płaszczyźnie jak na prawdziwej bryle). Desktop (Najechanie) bez zmian - tam bok był już
   częścią sześcianu.
+
+## `/projects` Desktop: sześcian jedzie ze scrollem + hover z kurtyną i obrotem (2026-11-25)
+
+Prośba: na Desktopie sześcian przemieszcza się jak na Tablet/Phone; na hover biała kurtyna; najechanie na wiersz,
+który sześcian już pokazuje - bez obrotu; na inny - obrót na jego zdjęcie. Ustalenia z użytkownikiem (pytania):
+**sześcian zostaje na miejscu** (tylko się obraca), **kursor ma pierwszeństwo** (także podczas przewijania; po zjechaniu
+z listy powrót do wiersza przy sześcianie), **kropka też na Desktopie** (przy wierszu, którego zdjęcie widać).
+Zmiany w `main`, nieopublikowane.
+- Desktop: „Cube Stage” `yJR6xOUDx` relative 100% (bez sticky), instancja `b02hKELET` wys. 100%, **Tryb: Przewijanie**,
+  start/koniec 40/40 px; „Horizontal wrapper” z-index 6 także na Desktopie (nad „Intro”).
+- „Wiersz projektu”: nowy wariant **„Desktop Active”** `r9VwjNfpZ` (kropka + tytuł w prawo). W kurtynie: kopia tytułu
+  w ramce **„Title row (hover)”** `NPentAAqN` z kropką **„Dot (hover)”** `wzSx6u3Wc` (kolor „Tło”); w wariancie **Hover**
+  kropka i przesunięcie widoczne w oryginale i kopii (wiersz pod kursorem jest zawsze tym pokazywanym).
+  **Interakcje Mouse Enter/Leave usunięte z Desktop i Hover** - wariant (Desktop / Desktop Active / Hover) ustawia teraz
+  override `withSzescianHover`, żeby kurtyna, kropka i sześcian nigdy się nie rozjechały.
+- Kod `SzescianProjektow.tsx`: `hoverRow` (wiersz pod kursorem, tylko wariant Desktop; zjechanie z 120 ms opóźnieniem,
+  żeby przejście między wierszami nie migało). Sześcian: przy najechaniu zapamiętuje pozycję pierścienia i obraca się
+  o +90° (animacja 0,6 s) na zdjęcie najechanego projektu - tylko gdy to inny projekt niż widoczny; kolejne wiersze =
+  kolejne obroty. Po zjechaniu: obrót do zdjęcia wiersza przy sześcianie (bez obrotu, jeśli to ten sam projekt), potem
+  znów sterowanie przewijaniem (przesunięcie pierścienia `ringOff`, więc bez cofania się o kilka obrotów). Bok =
+  następny projekt po pokazywanym. Tablet/Phone bez zmian (tam hover nie działa).
