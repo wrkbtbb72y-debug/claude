@@ -1990,3 +1990,12 @@ trwający 0,7 s, przy szybkim przewijaniu obroty się nakładały i spóźniały
   **„Start wyżej o”** (`startShift`, px) i **„Koniec niżej o”** (`endShift`, px) - przesuwają początek i koniec biegu
   względem 1. / ostatniego wiersza. Ustawione: **Tablet 40 / 40 px**, **Phone 24 / 24 px** (Desktop nie dotyczy).
   Obrót i kropka bez zmian (przed 1. wierszem sześcian pokazuje 1. projekt, za ostatnim - ostatni).
+- 2026-11-25 (później) - zgłoszenia: (1) na Tablecie sześcian na starcie przycięty od góry; (2) na iPadzie nie dojeżdża
+  do ostatniego wiersza.
+  - (1) Przyczyna: sekcja „Intro” `Mop_e0NSp` ma tło i z-index 5, a „Horizontal wrapper” `O9Gi3eY7d` (z listą
+    i sześcianem) z-index 1 - wysunięty w górę sześcian chował się pod tłem Intro. Tablet i Phone: „Horizontal wrapper”
+    **z-index 6** (Desktop bez zmian, 1).
+  - (2) Przyczyna: sześcian jechał 1:1 z przewijaniem, a pod listą jest za mało strony (160 px + stopka), żeby na
+    wysokim ekranie ostatni wiersz dojechał do sześcianu. Teraz droga sześcianu jest rozłożona na dostępne przewijanie:
+    jeśli strony wystarcza - jak dotąd 1:1; jeśli nie - sześcian jedzie odpowiednio szybciej i dociera do końca przy
+    końcu przewijania (liczone z wysokości dokumentu i okna, więc działa na każdym ekranie).
