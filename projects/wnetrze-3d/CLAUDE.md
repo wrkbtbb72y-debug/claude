@@ -1799,3 +1799,19 @@ Nagranie użytkownika: na hover tytuł i kategoria jadą w prawo (ok. 20 px) i c
   we wszystkich 4 miejscach (`KKOVc9hzs`, `r5PayVlboKKOVc9hzs`, `nQotsJIR5`, `r5PayVlbonQotsJIR5`) + „Spacer (title)”
   `hNYALf_rm` w nakładce sześcianu padding lewy 40 → 12 (sześcian nadal na środku pustych kolumn - sprawdzone Desktop
   i Tablet). Phone bez zmian (wiersz ma tam własny padding 16).
+
+### Pole „Context” i sekcja Context na stronie projektu (2026-11-25)
+
+Prośba: w CMS kolumna „Context” z wymyślonym tekstem w stylu wzoru (Collège Sainte-Anne: tło, wyzwanie, współpraca);
+na stronie projektu pod zdjęciem głównym układ jak na screenie: „Context” z lewej, tekst w prawej połowie; tekst trochę
+mniejszy. Zmiany w `main`, **nieopublikowane**.
+- Pole **Context** `IgxKgRi9Z` (Plain Text, pole wielowierszowe) po Long Description. 6 tekstów po angielsku (4-5 zdań,
+  ok. 70-80 słów) - **wymyślone na prośbę użytkownika** na bazie opisów i zakresów prac z arkusza; bez dat, nazwisk
+  i liczb. Do podmiany na prawdziwe, jeśli strona wyjdzie poza kurs.
+- Nowy preset tekstu **„Project Body”** `DxUxBWbJD`: PP Neue Montreal 400, 20 / 18 / 17 px (Desktop / Tablet / Phone),
+  interlinia 1,4, odstęp liter -0,01em, token „Tekst”.
+- Strona `JJQ4pAWMy`: sekcja **„Context”** `ttsKFuRGE` w „Main” zaraz po „Main Image” `zfo3jf7xT`: stos poziomy, gap 24,
+  padding 40/0/40/0; „Label” `foG8eHcLn` (h2, „Context”) i „Context Text” `qcCTuoHvy` (pole Context), obie 1fr i preset
+  „Project Body”. Phone: pod sobą, gap 12, padding 24/0/24/0.
+- Figma: tabela „Dane CMS” - wiersz 14 „Context” w grupie 03 (numeracja 1-19); arkusz - pole 08 „Context” w każdym
+  bloku (z tekstem), numeracja pól 01-10.
