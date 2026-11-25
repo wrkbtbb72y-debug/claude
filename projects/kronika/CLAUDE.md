@@ -1280,6 +1280,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   - czerwony #9A1C31, `lucide/mail-x` (para do „Anuluj zgłoszenie” = file-x). Uwaga: na makiecie „Tabela / Zaproszenia”
   (2026-11-18) te akcje miały ikony `refresh-cw` i `square-x` - do ujednolicenia po akceptacji nowych.
 
+- 2026-11-25 - **Figma, Buttons: blok „Propozycje ikon: CMS”** (`10050:1837`, prośba użytkownika) - pod tabelami
+  w ramce „Przyciski ikonowe – opisy” (`10033:363`; użytkownik przeniósł ją z ramki „Tabela” bezpośrednio na stronę,
+  bez auto-layoutu - blok ustawiony ręcznie, ramka wydłużona do 1524 px). 23 niebieskie przyciski z ikonami Lucide
+  kojarzącymi się z CMS (brak ikony „CMS” w Lucide): layout-dashboard, layout-template, panels-top-left, app-window,
+  database, file-cog, newspaper i in. Do wyboru przez użytkownika (nie wiadomo jeszcze, czy to ikona dla „Edytuj dane
+  instytucji”, czy osobny przycisk). Stan tabeli „nowe” w tym momencie: „Anuluj zaproszenie” użytkownik zmienił sam
+  na `trash-2`; „Edytuj dane instytucji” (`file-pen-line`) i „Opublikuj dane” (`globe`) - użytkownik prosił o inne
+  ikony, propozycje pokazane w rozmowie, czeka na wybór.
+
 ## Do zrobienia
 
 - [ ] Figma „Buttons”, tabela „Przyciski ikonowe – opisy” (`10033:368`): sprawdzić opisy działania przycisków;
