@@ -1597,6 +1597,16 @@ przez użytkownika) sześcian 3D, który po najechaniu na wiersz innego projektu
     zamontowany wiersz ustawia zdjęcie startowe. Wiersz owinięty w `div` z `display: contents` (zdarzenia myszy).
 - Animacja i hover działają tylko w podglądzie / na opublikowanej stronie, nie na płótnie. Na Tablet/Phone sześcian jest
   przycinany przez wąską kolumnę z układu użytkownika.
+- 2026-11-25 - **Ruch na start** (prośba użytkownika: „niech się lekko obraca, zanim najedzie się na któryś wiersz”):
+  dopóki nikt nie najechał na żaden wiersz listy, sześcian łagodnie się kołysze (wychylenie w lewo/prawo ±18°,
+  w górę/dół ok. ±8°, okres 9 s, płynny start 1,5 s) - zdjęcie zostaje z przodu, widać głębię bryły. Pierwsze najechanie
+  na **dowolny** wiersz (także pierwszy projekt) płynnie (0,8 s) prostuje sześcian i wyłącza kołysanie na stałe (do
+  przeładowania strony); dalej obroty jak dotąd. Technika: zewnętrzna warstwa z `translateZ(-50cqmin)` + obrót
+  kołysania (sterowany `requestAnimationFrame`, bez re-renderów), wewnątrz sześcian z macierzą orientacji; w store
+  nowa flaga `hovered` (ustawia override `withSzescianHover`). Nowe kontrolki: **Ruch na start** (domyślnie tak),
+  **Wychylenie** (°), **Okres ruchu** (s). Na płótnie i przy „ogranicz ruch” w systemie - bez kołysania.
+  Stan zastany: instancja `b02hKELET` jest teraz w „Cube Stage” `yJR6xOUDx` (prawa kolumna „Right” `k0rqSWoT9`,
+  przebudowa użytkownika; dawna ramka `Uc8gjSbE1` już nie istnieje); override na wierszach `e0sRzCdfk` i `JDCbU_6LI`.
 
 ## Puste 56 px pod stopką na `/` - usunięte (2026-11-24)
 
