@@ -2041,3 +2041,15 @@ nieopublikowane.
   (Europe/Warsaw, odświeżane co 10 s; działa w podglądzie, na płótnie widać tekst wpisany ręcznie). Komponent
   „LocalTime” w pliku został, ale nie jest już nigdzie wstawiony.
 - Zasada: teksty stopki zmieniają kolor przez styl „Footer info”; style linków nie powinny ustawiać koloru spoczynku.
+
+## Stopka: pasek informacji - porządek w stackach i paddingach (`/`, 2026-11-25)
+
+Prośba: sekcja `d5x7_nEeP` (górny pasek stopki z danymi studia) zgodnie z dobrymi praktykami - jak najmniej stacków,
+efektywniejsze paddingi. Zmiany w `main`, nieopublikowane. Wygląd bez zmian (zrzuty Desktop/Tablet/Phone 1:1).
+- Stan wyjściowy: pasek bez paddingu, odstępy w kolumnach i asymetryczne (lewa 60/0/0/40, prawa 60/40/50/0; Phone
+  56/0/24/40 i 0/24/24/40), odstęp między kolumnami wynikał z paddingów.
+- Teraz: **„Info Bar”** `d5x7_nEeP` (dawniej „top bar”) trzyma cały padding: **60/40/50/40** (Desktop, Tablet dziedziczy),
+  Phone **56/24/24/40**; odstęp między kolumnami = **gap 24** (na Phone pionowo). Kolumny **„Studio Column”** `xmTz2RGzc`
+  (dawniej mylnie „Instagram Column”) i **„Info Column”** `zYwvDPFKo`: padding 0, gap 8 między wierszami.
+- Struktura minimalna: 1 pasek + 2 kolumny (trzeba je mieć osobno - lewa wyrównana do lewej, prawa do prawej; teksty
+  w prawej nie dadzą się połączyć w jeden, bo e-mail jest linkiem, a godzina ma override).
