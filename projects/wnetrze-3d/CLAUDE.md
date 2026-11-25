@@ -1927,3 +1927,15 @@ najpierw nieużywane komponenty i kod, potem style i kolory, które były używa
   linków Footer info link, Featured title link; moduły Phosphor (ikony) i Lenis. Style Service Title / Service Description
   i część „footer” są używane tylko na stronie projektowej „Design” `RyX9sG7UG`.
 
+
+## Navi na Phone: bez linków, przycisk „+” po prawej (2026-11-25)
+
+Prośba: na mobile pasek Navi bez linków, tylko przycisk „+” w roli hamburgera po prawej. Komponent „Navi” `cAoTyKwTO`,
+wariant Phone `JEtPeR5s6` (używany na `/` i w szablonie „Układ z paskiem”). Zmiany w `main`, nieopublikowane.
+- Nowy **„Menu Button”** `pVPOGoIi9` w „connect-wrapper” `FjKPtGGl_` (ramka 40 × 40, htmlTag button, ariaLabel „Menu”,
+  kursor pointer) z ikoną Phosphor **„Plus”** `Iqg5FXaEA` (24 px, kolor token „Tekst”, grubość 1). Ukryty na Desktop
+  i Tablet, widoczny na Phone.
+- Phone: linki About / Work / Archive / Contact ukryte; „objects-wrapper” 40 × 40 (pusty, równoważy przycisk),
+  „connect-wrapper” 40 px → logo wyśrodkowane i już nie przycięte (wcześniej kolumny po 150 px ucinały je do „NUMIN”).
+- **TODO:** przycisk jeszcze niczego nie otwiera - do zrobienia menu (np. wariant „Phone Open” z linkami) po decyzji
+  użytkownika, jak ma wyglądać.
