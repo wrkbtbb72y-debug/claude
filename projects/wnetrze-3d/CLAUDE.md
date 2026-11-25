@@ -1345,6 +1345,23 @@ Zdjęcia w grupie „1” `KzTe86uZ1` są Scroll Section: photo-1 `HzQMxSHVp`, p
     ukryte tylko kryciem) - samo dodanie linków do tytułów nie zadziała (klik trafiłby w górny, niewidoczny tytuł).
     Trzeba będzie np. link na zdjęciach + tytuły klikalne przez kod albo przebudowa tytułów.
 
+- 2026-11-25 - **Linki do strony projektu** (prośba użytkownika: klik w tytuł lub zdjęcie → strona projektu; zgoda na
+  pustą stronę). Zmiany w `main`, nieopublikowane.
+  - **Strona „Project”** `JJQ4pAWMy`, ścieżka `/projects/:TpqN6PgHg` (strona CMS kolekcji Projects, adres = Slug, np.
+    `/projects/beta-bar`), szablon „Układ z paskiem” `cZLu0HAKR`, breakpointy Desktop `Ob89z3UFi` (1200, wys. 1000),
+    Tablet `zzq6hyL6v`, Phone `OMyD7gpoX`. **Celowo pusta - treść projektuje użytkownik.**
+  - Featured projects na `/`: linki (href + collectionItem) na zdjęciach `W0o27POab` → nod-objects, `kA1bO5szG` →
+    beta-bar, `L48Zyy6zT` → evac-our-legacy-roa i na tytułach `JFATg6NBS` / `oceFTVdIz` / `jTG5RRS_6` (te same projekty).
+    Tytuły: nowy styl linku **„Featured title link”** `gIrdK07WJ` (kolor jak preset tytułu rgba(255,255,255,0.8),
+    podkreślenie na hover, offset 4 px) + override **`withClickableWhenVisible`** z nowego pliku **`FeaturedLinks.tsx`**:
+    tytuł jest klikalny tylko przy kryciu > 0,5 (tytuły leżą na sobie, a „Lewa kolumna” ma pointer events none);
+    sprawdza krycie co klatkę tylko, gdy tytuł jest na ekranie (IntersectionObserver). Działa tylko w podglądzie.
+  - `/projects`: wiersze obu list („Project Row” `r1XSFaNGa` i `fedaI36BN`) linkują do strony projektu (Slug z listy).
+  - Zastane: użytkownik podzielił „Cube col” w wierszu na dwie kolumny 1fr (`v3zJJF85a` + `bVsD9ntJ2`, linia na środku
+    kolumny z sześcianem) - kopia na hover dopasowana (`RIiuJi1Zw` 1fr + `xtTHvIcYW` 1fr), obie ukryte na Phone.
+    Nakładka z sześcianem bez zmian („Right” 2fr nad obiema kolumnami). Nawigacja w szablonie zmieniona przez użytkownika
+    (About / Work / Archive / Contact).
+
 ## Zdublowane nazwy Scroll Section - poprawione (`/`, 2026-11-24)
 
 Zgłoszenie: Scroll Transform na „Pasku z linkami” `ZR4kUwPMr` (krycie 1 → 0 przy celu `nv67EJ8nh`, viewport start) nie
@@ -1553,7 +1570,7 @@ Prośba: 6 projektów z arkusza w Figmie na stronę Projects we Framerze. Zmiany
   w sekcji zostały tylko „Section Bar” `Mop_e0NSp` i lista CMS.
 - Linter: ostrzeżenie o braku maxWidth na sekcji `J09QQV8My` - sekcja celowo na całą szerokość (linie wierszy od krawędzi
   do krawędzi jak na `/`), zostawione bez zmian.
-- **TODO:** strona szczegółów projektu `/projects/[slug]` (robi użytkownik, 2026-11-25) i link z wierszy (wiersze na razie nie są klikalne) oraz z tytułów i zdjęć Featured projects na `/`.
+- **TODO:** treść strony projektu „Project” `JJQ4pAWMy` (`/projects/[slug]`, pusta, projektuje użytkownik). Linki z wierszy i z Featured projects - zrobione 2026-11-25.
 - Tabela „Dane CMS” w Figmie: wiersz 13 Additional images - typ „List (Image)” (rozstrzygnięte: Framer ma pole List).
 
 ## Hover wiersza projektu - poprawki (`/projects`, 2026-11-24)
