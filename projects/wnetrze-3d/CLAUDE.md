@@ -1957,3 +1957,16 @@ Phone, Hover, Phone Hover): wysokość **100 px**; „Hover fill” `E2DUdvqEW` 
 „Hover content” `YecMTotpn` wys. 100, spoczynek Top 100 / Hover 0 (żeby efekt hover dalej działał na całą wysokość).
 Teksty nadal przy dolnej krawędzi komórek (jak dotąd). Zmiana w `main`, nieopublikowana.
 **Zasada:** przy zmianie wysokości wiersza zmieniać też te 4 wartości „Hover fill” / „Hover content” we wszystkich wariantach.
+
+## Wiersz projektu - stan „aktywny” na Tablet / Phone: kropka + tytuł w prawo (2026-11-25, w toku)
+
+Prośba: na Tablet i Phone wiersz, przy którym jest sześcian (i pokazuje jego zdjęcie), ma się zmieniać wizualnie: tytuł
+odrobinę w prawo, po jego lewej pojawia się kropka wyśrodkowana względem tytułu. Użytkownik: **natywnymi funkcjami Framera**.
+- W „Wierszu projektu” `mKIi2lqmd`: w komórce tytułu `KKOVc9hzs` nowa ramka **„Title row”** `AAjaZxvGa` (stack poziomy,
+  wyśrodkowany w pionie, gap 0; szer. 2fr, na Phone 100%) z **„Dot”** `PEhzayt7P` (6 px, okrągła, token „Tekst”; w spoczynku
+  szer. 0 i krycie 0 - układ bez zmian) i „Tytuł” `GEs43rULV` (szer. 1fr). Desktop i hover bez zmian wizualnych.
+- Nowe warianty: **„Tablet Active”** `iIoIQXINk` (z Tablet) i **„Phone Active”** `TPYigSkP2` (z Phone): kropka 6 px, krycie 1,
+  „Title row” gap 10 → tytuł przesuwa się o 16 px. Przejście wariantów jak w komponencie (tween 0,4 s).
+- **Otwarte: wyzwalacz.** Framer nie ma natywnego wyzwalacza „gdy sześcian jest przy wierszu” (pozycję sześcianu zna tylko
+  kod). Natywne „In View” (scroll variant) włącza wiersz przy wejściu w ekran - zapaliłoby kilka wierszy naraz. Czeka na
+  decyzję użytkownika: przybliżenie natywne albo przełączanie wariantu przez override `withSzescianHover`.
