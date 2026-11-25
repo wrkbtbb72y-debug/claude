@@ -2027,3 +2027,17 @@ z kolejnego wiersza. Zmiany w `main`, nieopublikowane.
   pokazuje zdjęcie wiersza po aktywnym; przy ostatnim wierszu bok pusty (kolor ścian).
 - Zdjęcie na boku jest dekoracyjne (alt pusty, aria-hidden). Na płótnie bok bez zdjęcia (wiersze rejestrują się dopiero
   w podglądzie).
+
+## Stopka: e-mail i „Local time” biorą kolor ze stylu „Footer info” (`/`, 2026-11-25)
+
+Zgłoszenie: kolor tekstów STUDIO@NUMINO.COM i LOCAL TIME nie zmienia się razem z kolorem w stylu tekstu. Zmiany w `main`,
+nieopublikowane.
+- **E-mail** `wCWhYGpUG`: kolor dawał styl linku **„Footer info link”** `BPKJDbIds` (biały 70%) - usunięty kolor spoczynku
+  w stylu linku (teraz bierze kolor ze stylu tekstu; hover: biały + podkreślenie bez zmian). Usunięte też ręczne kolory
+  tekstu na węźle (Desktop, Tablet i Phone miały rgba(0,0,0,0.5) - na Tablet/Phone e-mail był prawie niewidoczny).
+- **Local time:** był to komponent z kodem „LocalTime” (własny kolor 70% i stały rozmiar 14 px, bez stylu tekstu).
+  Zastąpiony zwykłym tekstem **„Local Time”** `aN_J4C5P_` w stylu **„Footer info”** (kolor, rozmiar 14/13/12, odstępy
+  z presetu) z overridem **`withLocalTime`** (w `LocalTime.tsx`), który podmienia treść na „Local time: HH:MM STREFA”
+  (Europe/Warsaw, odświeżane co 10 s; działa w podglądzie, na płótnie widać tekst wpisany ręcznie). Komponent
+  „LocalTime” w pliku został, ale nie jest już nigdzie wstawiony.
+- Zasada: teksty stopki zmieniają kolor przez styl „Footer info”; style linków nie powinny ustawiać koloru spoczynku.
