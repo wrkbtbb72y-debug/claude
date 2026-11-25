@@ -1633,6 +1633,11 @@ przez użytkownika) sześcian 3D, który po najechaniu na wiersz innego projektu
   - **Phone:** dotąd hover na telefonie przełączał na wariant „Hover” (układ Desktop). Nowy wariant **„Phone Hover”**
     `rAcWGQbfH` (z Phone; tło i kopia Top 0); Phone → Mouse Enter → Phone Hover, Phone Hover → Mouse Leave → Phone.
   - **Zasada bez zmian:** każda zmiana układu oryginalnych tekstów musi być powtórzona w „Hover content” (Desktop i Hover).
+  - Poprawka tego samego dnia (nagranie użytkownika: „kategorie mrugają”): w wariancie Hover oryginalny „Zakres”
+    `r5PayVlbocTVLo9zRf` miał własne nadpisanie stylu (ręczne 11 px bez presetu), a Desktop już preset „navi” - przy
+    przełączeniu wariantu napis gasł. `resetOverrides` na tym węźle; sprawdzone, że wszystkie teksty wiersza mają ten sam
+    preset, rozmiar i krycie w Desktop / Hover / Phone / Phone Hover (kopie różnią się tylko kolorem „Tło”).
+    **Zasada:** styl tekstu zmieniać tylko w wariancie głównym (Desktop); w Hover nie nadpisywać fontu ani presetu.
   - Zastane: na `/projects` są dwie listy CMS („Project List (CMS)” i „– kopia” `e9f1RvEmA`, zmiana użytkownika), więc
     każdy projekt widać dwa razy - nie ruszane. Ostrzeżenia lintera „brak tła wariantu” i „-300 px odstępu” w Hover
     content (pomiar warstwy absolutnej) - zostawione.
