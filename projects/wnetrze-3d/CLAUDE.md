@@ -1795,3 +1795,7 @@ Nagranie użytkownika: na hover tytuł i kategoria jadą w prawo (ok. 20 px) i c
 - Przy okazji: „Rok col” `u8v7flN16` - usunięte puste obramowanie „0px solid #222” (linter: „Border is incomplete”).
 - **Zasada (przypomnienie):** zmianę paddingu/szerokości komórki wiersza robić we wszystkich czterech miejscach:
   oryginał w Desktop i Hover + kopia w „Hover content” w Desktop i Hover.
+- 2026-11-25 (później) - **tytuł w wierszu: padding lewy 12 px** (prośba użytkownika): komórka tytułu **0/16/8/12**
+  we wszystkich 4 miejscach (`KKOVc9hzs`, `r5PayVlboKKOVc9hzs`, `nQotsJIR5`, `r5PayVlbonQotsJIR5`) + „Spacer (title)”
+  `hNYALf_rm` w nakładce sześcianu padding lewy 40 → 12 (sześcian nadal na środku pustych kolumn - sprawdzone Desktop
+  i Tablet). Phone bez zmian (wiersz ma tam własny padding 16).
