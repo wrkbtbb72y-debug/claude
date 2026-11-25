@@ -1958,7 +1958,7 @@ Phone, Hover, Phone Hover): wysokość **100 px**; „Hover fill” `E2DUdvqEW` 
 Teksty nadal przy dolnej krawędzi komórek (jak dotąd). Zmiana w `main`, nieopublikowana.
 **Zasada:** przy zmianie wysokości wiersza zmieniać też te 4 wartości „Hover fill” / „Hover content” we wszystkich wariantach.
 
-## Wiersz projektu - stan „aktywny” na Tablet / Phone: kropka + tytuł w prawo (2026-11-25, w toku)
+## Wiersz projektu - stan „aktywny” na Tablet / Phone: kropka + tytuł w prawo (2026-11-25)
 
 Prośba: na Tablet i Phone wiersz, przy którym jest sześcian (i pokazuje jego zdjęcie), ma się zmieniać wizualnie: tytuł
 odrobinę w prawo, po jego lewej pojawia się kropka wyśrodkowana względem tytułu. Użytkownik: **natywnymi funkcjami Framera**.
@@ -1967,6 +1967,9 @@ odrobinę w prawo, po jego lewej pojawia się kropka wyśrodkowana względem tyt
   szer. 0 i krycie 0 - układ bez zmian) i „Tytuł” `GEs43rULV` (szer. 1fr). Desktop i hover bez zmian wizualnych.
 - Nowe warianty: **„Tablet Active”** `iIoIQXINk` (z Tablet) i **„Phone Active”** `TPYigSkP2` (z Phone): kropka 6 px, krycie 1,
   „Title row” gap 10 → tytuł przesuwa się o 16 px. Przejście wariantów jak w komponencie (tween 0,4 s).
-- **Otwarte: wyzwalacz.** Framer nie ma natywnego wyzwalacza „gdy sześcian jest przy wierszu” (pozycję sześcianu zna tylko
-  kod). Natywne „In View” (scroll variant) włącza wiersz przy wejściu w ekran - zapaliłoby kilka wierszy naraz. Czeka na
-  decyzję użytkownika: przybliżenie natywne albo przełączanie wariantu przez override `withSzescianHover`.
+- **Wyzwalacz (decyzja użytkownika: opcja 2):** Framer nie ma natywnego wyzwalacza „gdy sześcian jest przy wierszu”, więc
+  wariant przełącza kod, a wygląd zostaje w natywnych wariantach. `SzescianProjektow.tsx`: sześcian w trybie przewijania
+  zapisuje wiersz, w którym jest jego środek (`activeRow`); override `withSzescianHover` daje temu wierszowi wariant
+  wg mapy `ACTIVE_VARIANT` (Tablet `ZBhKqKf0s` → Tablet Active `iIoIQXINk`, Phone `KpXuMCYkK` → Phone Active `TPYigSkP2`;
+  obsługuje nazwy i ID). Zawsze aktywny jeden wiersz - ten sam, którego zdjęcie pokazuje sześcian. Desktop bez zmian.
+  **Przy zmianie nazw/ID tych wariantów poprawić mapę w kodzie.** Działa tylko w podglądzie / na stronie.
