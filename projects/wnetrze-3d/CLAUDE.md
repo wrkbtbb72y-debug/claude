@@ -1770,3 +1770,17 @@ Prośba: w rzędzie „Categories” `kzNFtovaT` podkategorie w jednym rzędzie,
 - Zastane: użytkownik przebudował stronę („Project Header” `RKMnzf5MN` w nowym rodzicu `h9U5YGu59`, zdjęcie z marginesami);
   linter: brak maxWidth na „Project Header” - nie ruszane.
 
+
+### „Projects List” i „Next Project” na stronie projektu (`/projects/[slug]`, 2026-11-25)
+
+Prośba: nad tytułem (pod Navi) przycisk ze strzałką w lewo i napisem „Projects List”; na końcu strony „Next Project”
+ze strzałką po prawej. Strzałki i napisy jak w komponencie „Napis prawy” `k_11UqrF3` (instancja `LolOc7rF8` na `/`).
+- Wzór skopiowany (komponentu nie ruszano): tekst PP Neue Montreal 300, interlinia 100%, token „Tekst”; strzałka - ikona
+  „Arrow Square Right” (zestaw `omX0gWFPqDwhaiWwf6ab`, width 0.5, alpha 0, kolor „Tekst”, 36 px) w ramce 32 px z paddingiem
+  górnym 1; hover: krycie 0,65, tween 0,25 s.
+- **„Back Link”** `wRynQzs0D` - pierwsze dziecko „Main” `RKMnzf5MN`, link `/projects`, ariaLabel „Back to projects list”;
+  strzałka `n2b8IhrRc` = ta sama ikona obrócona o 180° („Arrow Square Left” w tym zestawie ma ramkę, „Arrow Left” to inny
+  kształt), potem tekst „Projects List”.
+- **„Next Project Row”** `qJecYpIvF` - ostatnie dziecko „Main”, wyrównanie do prawej; w środku **„Next Link”** `FXtx98rbI`
+  (tekst „Next Project” + strzałka), link do następnego wpisu CMS (`nextItemId`, kolejność kolekcji Projects). Rząd jest
+  ukryty, gdy nie ma następnego projektu (ostatni projekt, Letter Bet) - do decyzji, czy ma wtedy prowadzić do pierwszego.
