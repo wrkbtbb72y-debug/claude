@@ -1304,7 +1304,33 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   tytuł, opis działania, nazwa ikony. Opisy napisał Claude - do weryfikacji. Stan tabeli „nowe” w tym momencie
   (zmiany użytkownika): Edytuj dane instytucji = `file-cog`, Anuluj zaproszenie = `circle-x`.
 
+- 2026-11-25 - **Figma, „0. Panel logowania”: propozycja układu 3 kolumn (Desktop Large)** (prośba użytkownika) -
+  nowa ramka **„Panel logowania - Desktop Large - 3 kolumny (propozycja)”** `10092:4517` (x -65, y 4170, pod
+  „Panel logowania - Desktop 1445” `6132:86618`, który został bez zmian; nad nią podpis `10092:4670`). Kopia
+  ramki 1445 (nawigacja, okruszki i stopka bez zmian), w „Section / Login” nowa ramka „Login / content”
+  `10092:5004` (gap 48): nagłówek **H1 „Zaloguj się lub załóż konto”** (H1 Duży desktop 38/400) + lead Body 2
+  #656766 („Wybierz sposób logowania albo załóż nowe konto w portalu KRONIK@.”) + kreska 1 px #1A1A1A 20 %;
+  rząd **3 kolumn** `10092:5009` (gap 24, równe szerokości i wysokości, przycisk zawsze na dole kolumny):
+  1) **Login.gov.pl** - białe tło, ramka 1 px #1A1A1A 20 % + **kreska 3 px #1A1A1A u góry** (wyróżnienie), logo
+  Login (kopia z „Moje konto”) + lucide/info po prawej, etykieta Uppercase S „Sposób 1”, tytuł H3 (22/450),
+  3 akapity Body 3 #656766 (treść ze screenu gov), przycisk **Primary „Zaloguj się przez Login.gov.pl”**;
+  2) **Formularz** - jak 1 bez kreski, ikona lucide/key-round, „Sposób 2”, 2 akapity, przycisk **Secondary
+  „Zaloguj się loginem i hasłem”**; 3) **Rejestracja** - tło #F6F6F6 bez ramki, lucide/user-round-plus,
+  „Nowe konto”, „Nie masz jeszcze konta?”, przycisk **Secondary „Zarejestruj się”**. Pod rzędem linia
+  „Problem z logowaniem? Przejdź do Pomocy” (Body 3, link #173EA3 podkreślony). Decyzje użytkownika: w kolumnie 2
+  **opis + przycisk** (formularz login/hasło na osobnym widoku, nie w kolumnie); na przyciskach **konkretne akcje**
+  zamiast „Wybieram”. W treściach nazwa portalu „KRONIK@” (jak na screenie).
+  **Nowy komponent „Przycisk CTA 46 px”** `10090:448` na „Buttons”, tabela „Nowe przyciski”, nowa sekcja
+  „Strona: Panel logowania” (`10090:411`, wiersz `10090:414`): Styl = Primary / Secondary, Stan = Domyślny / Hover
+  (warianty `10090:440` / `10090:442` / `10090:444` / `10090:446`), wysokość 46, padding 0 32, styl Button,
+  właściwość tekstowa „Etykieta” (`Etykieta#10090:0`); przyciski w makiecie to jego instancje (szerokość Fill).
+  Tylko Desktop Large; pozostałe breakpointy po akceptacji.
+
 ## Do zrobienia
+
+- [ ] Panel logowania 3 kolumny (`10092:4517`): akceptacja propozycji; potem Desktop Small / Tablet / Mobile,
+      stan Focus dla „Przycisk CTA 46 px”, treść dymku pod ikoną info (Login.gov.pl) i widok formularza
+      login + hasło (dokąd prowadzi „Zaloguj się loginem i hasłem”).
 
 - [ ] Figma „Buttons”, tabela „Przyciski ikonowe – opisy” (`10033:368`): sprawdzić opisy działania przycisków;
       ustalić, czym różnią się dwa przyciski „Szczegóły” (lucide/eye vs lucide/file-search) i nadać drugiemu inną nazwę.
