@@ -1339,6 +1339,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   ikona lucide/user-round-plus w kole 56 px #F6F6F6, tytuł „Nie masz jeszcze konta?” (H4 20/500), opis Body 3
   #656766, po prawej „Przycisk CTA 46 px” Secondary „Zarejestruj się” (240 px).
 
+- 2026-11-25 - **Figma, panel logowania (2 karty): treść wyśrodkowana, poprawiony auto-layout** (prośba
+  użytkownika: wcześniej tekst był przycinany, a treść wyrównana do lewej). W każdej karcie nowa ramka
+  **„Zawartość”** (`10122:5556` / `10122:5557`, stała szerokość 460, wyśrodkowana w karcie): grafika (logo / ikona,
+  wysokość 40, na środku) · 32 · etykieta + tytuł (12) · 16 · akapity (8); **wszystkie teksty wyśrodkowane**.
+  Karta: padding 56 góra/dół, 48 boki, odstęp elastyczny (min. 40) i przycisk 340 × 46 na środku, przyciski obu
+  kart na tej samej wysokości; karty 650 × 456. Ikona info Login.gov.pl przeniesiona do prawego górnego rogu
+  karty 1 (pozycja absolutna, 24 px od krawędzi). Wyłączone przycinanie (clip) w kartach, ramkach treści, belce
+  i grupie. Odstępy: tytuł strony → belka **56** (było 80), belka → karty 20, karty → „Problem z logowaniem?” 40.
+
 ## Do zrobienia
 
 - [ ] Panel logowania (propozycja `10092:4517`, wersja użytkownika 2 kolumny + belka `10116:85095`): akceptacja; potem Desktop Small / Tablet / Mobile,
