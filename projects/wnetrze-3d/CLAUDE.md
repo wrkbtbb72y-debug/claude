@@ -671,6 +671,10 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 
 ## Design system
 
+> **2026-11-25: porządki w Assets** - stan aktualny w sekcji „Porządki w panelu Assets” na końcu pliku. Opis niżej jest
+> historyczny: część wymienionych stylów, kolorów i komponentów została usunięta jako nieużywana.
+
+
 - Kolory (folder Assets → Kolory): Tło, Powierzchnia `#15181C`, Obrys, Tekst, Tekst drugorzędny, Akcent.
 - Tekst (PP Neue Montreal): ~~Znak (17/600)~~ (usunięty 2026-11-25 - nieużywany), Etykieta (14/400), Podpis (13/400, kolor drugorzędny),
   Nagłówek (h1, 300; 64/42/32 px dla Desktop/Tablet/Phone, interlinia 1,05), Podpis akcent (15/400, Akcent).
@@ -1901,4 +1905,25 @@ i presety per tag w tekstach z CMS / zmiennych) oraz referencje w każdej stroni
 Nieużywany był tylko **„Znak”** `j0UKxoBTC` (17/600, PP Neue Montreal) - usunięty razem z odnośnikiem w folderze.
 Zostało 19 presetów; wszystkie są gdzieś użyte (część może być tylko na szkicach `/x`, `/y`, `/w`, `/home` - liczy się
 to jako użycie).
+
+## Porządki w panelu Assets - usunięte nieużywane elementy (2026-11-25)
+
+Prośba: usunąć wszystkie nieużywane elementy z panelu Assets. Użycie sprawdzone w całym projekcie (strony `/`, `/projects`,
+`/projects/[slug]`, szablon „Układ z paskiem”, strona projektowa „Design”, komponenty, kolekcje CMS): instancje, overridy,
+style tekstu i linków (też w blokach tekstu), kolory (`--token-…` w każdej wartości), zestawy ikon. Usuwane kaskadowo:
+najpierw nieużywane komponenty i kod, potem style i kolory, które były używane tylko przez nie. Brak wiszących odwołań
+(sprawdzone pełną serializacją), zrzuty `/` i `/projects` bez zmian.
+- **Komponenty (5):** Przycisk bryły `IhvcEuszi`, Przycisk akcji `HAR1CjvV6`, Pasy zdjęć `ORE7TUV1o`, Wiersz listy
+  `ZIOR8bv28`, Wiersz listy ze zdjęciem `NeuI0X8QN`.
+- **Pliki kodu (3):** `Wnetrze3D.tsx` (pierwotna aplikacja „Kubatura” z bryłami), `ShapeButtons.tsx`, `LogoSzesciany.tsx`.
+  Przywrócić można tylko z historii wersji Framera.
+- **Moduł zewnętrzny:** „Project Scroll” `0ZCpsECd2IebEEknqlOx` (żadnej instancji).
+- **Style tekstu (8 + wcześniej „Znak”):** Etykieta, Podpis, Etykieta akcji, Podpis akcent, Licznik, Lista, Lista nagłówek,
+  Lista mono.
+- **Kolory (3):** Powierzchnia, Tekst drugorzędny, Akcent.
+- **Zostało:** komponenty Navi, Napis lewy, Napis prawy, Wiersz projektu; kod SiatkaPerspektywy, Wchloniecie, NapisyFokus,
+  SzescianProjektow, LocalTime, FeaturedLinks; style tekstu Nagłówek, navi, Lista akapit, footer, Heading 3, Opis do
+  heading 3, Opis sekcji, Service Title, Service Description, Footer info, Project Body; kolory Tło, Obrys, Tekst; style
+  linków Footer info link, Featured title link; moduły Phosphor (ikony) i Lenis. Style Service Title / Service Description
+  i część „footer” są używane tylko na stronie projektowej „Design” `RyX9sG7UG`.
 
