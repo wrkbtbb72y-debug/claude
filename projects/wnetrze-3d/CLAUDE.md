@@ -1642,6 +1642,19 @@ przez użytkownika) sześcian 3D, który po najechaniu na wiersz innego projektu
     każdy projekt widać dwa razy - nie ruszane. Ostrzeżenia lintera „brak tła wariantu” i „-300 px odstępu” w Hover
     content (pomiar warstwy absolutnej) - zostawione.
 
+- 2026-11-25 - **Kolejność kolumn na `/projects`: Tytuł | Kategoria | sześcian | Rok** (prośba użytkownika).
+  - Komponent „Wiersz projektu”: nowa pusta komórka **„Cube col”** `v3zJJF85a` (2fr, linia z prawej #222) między Zakresem
+    a Rokiem, i jej kopia **„Cube col (hover)”** `RIiuJi1Zw` w „Hover content” (linia rgba(0,0,0,0.12)); na Phone i Phone
+    Hover obie ukryte. Proporcje wiersza: Tytuł 1fr / Kategoria 1fr / Cube 2fr / Rok 1fr.
+  - Strona: „Project Lists” `dn3Pw0qhu` szerokość 1fr (cała szerokość). Kolumna **„Right”** `k0rqSWoT9` (z „Cube Stage”
+    i sześcianem) przeniesiona do nowej nakładki **„Cube overlay”** `yKavc4ANa` (absolute na całym „Horizontal wrapper”,
+    stack poziomy, `pointerEvents: none`, z-index 5 - hover i kliknięcia przechodzą do wierszy). W nakładce kolumny jak
+    w wierszu, z tymi samymi paddingami: „Spacer (title)” `hNYALf_rm` 1fr pad 0/16/0/40, „Spacer (category)” `EnjSg2JAk`
+    1fr pad 0/16/0/32, „Right” 2fr, „Spacer (year)” `qte6_7P5j` 1fr pad 0/16/0/32 - środek sześcianu = środek pustej
+    komórki (sprawdzone Desktop i Tablet, ±2 px). **Zmiana paddingów komórek wiersza wymaga tej samej zmiany w spacerach
+    nakładki.** Nakładka ukryta na Phone. Pionowa linia w „Right” `pvIiTHICH` ukryta (wypadałaby na środku kolumny).
+  - Pozycja absolutna samego „Right” niemożliwa (Framer wymaga pinów w px, nie trzymałoby proporcji) - stąd nakładka.
+
 ## Puste 56 px pod stopką na `/` - usunięte (2026-11-24)
 
 Przyczyna: Featured Projects, What We Do i Footer miały translateY −56 (pierwszy pasek wystaje nad dół Hero).
