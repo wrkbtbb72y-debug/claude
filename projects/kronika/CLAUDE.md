@@ -1356,6 +1356,12 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   wyśrodkowane: logo / ikona (40 px; ikona info obok logo Login, odstęp 12) · 32 · etykieta + tytuł · 16 ·
   akapity; odstęp elastyczny (min. 40) i przycisk 340 × 46 - przyciski obu kolumn w jednej linii.
 
+- 2026-11-25 - **Figma, panel logowania - wersja użytkownika „2” (`10129:88541`, w ramce `10116:86529`):
+  treść wyrównana do lewej** (prośba użytkownika). Prawa kolumna „4” (`10129:88220`, Formularz) była
+  wyśrodkowana - teraz wszystkie ramki i teksty do lewej, jak lewa kolumna „2” (`10129:88201`). Odstępy prawej
+  kolumny zrównane z lewą (treść → przycisk 40, tytuł → opis 24), więc przyciski obu kolumn stoją na tej samej
+  wysokości (y 248).
+
 ## Do zrobienia
 
 - [ ] Panel logowania (propozycja `10092:4517`, wersja użytkownika 2 kolumny + belka `10116:85095`): akceptacja; potem Desktop Small / Tablet / Mobile,
