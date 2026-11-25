@@ -1784,3 +1784,14 @@ ze strzałką po prawej. Strzałki i napisy jak w komponencie „Napis prawy” 
 - **„Next Project Row”** `qJecYpIvF` - ostatnie dziecko „Main”, wyrównanie do prawej; w środku **„Next Link”** `FXtx98rbI`
   (tekst „Next Project” + strzałka), link do następnego wpisu CMS (`nextItemId`, kolejność kolekcji Projects). Rząd jest
   ukryty, gdy nie ma następnego projektu (ostatni projekt, Letter Bet) - do decyzji, czy ma wtedy prowadzić do pierwszego.
+
+### Teksty wiersza projektu przesuwały się na hover - poprawione (`/projects`, 2026-11-25)
+
+Nagranie użytkownika: na hover tytuł i kategoria jadą w prawo (ok. 20 px) i ciemna kopia nie leży na oryginale.
+- Przyczyna: użytkownik zmienił w wariancie Desktop komórce tytułu `KKOVc9hzs` padding lewy 40 → **0**
+  (0/16/8/0), a w wariancie Hover oryginał (`r5PayVlboKKOVc9hzs`) i kopia „Tytuł col (hover)” `nQotsJIR5` (oba stany)
+  zostały z 40. Framer animował padding, a szersza komórka tytułu (fr + padding) przesuwała też kategorię.
+- Poprawka: padding **0/16/8/0** w Hover na oryginale i na kopii w Desktop i Hover. Pozostałe komórki już były zgodne.
+- Przy okazji: „Rok col” `u8v7flN16` - usunięte puste obramowanie „0px solid #222” (linter: „Border is incomplete”).
+- **Zasada (przypomnienie):** zmianę paddingu/szerokości komórki wiersza robić we wszystkich czterech miejscach:
+  oryginał w Desktop i Hover + kopia w „Hover content” w Desktop i Hover.
