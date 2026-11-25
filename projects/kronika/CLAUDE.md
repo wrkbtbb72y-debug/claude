@@ -1260,8 +1260,18 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   z kolumną (Polecane, Kategorie) - sprawdzone przy 1928 px (karta 104, tekst 164 px = lewa krawędź Kategorii).
   Ilustracja (jeźdźcy) nadal w ramce 1720 px. Zmiana od razu w `main`, nieopublikowana.
 
+- 2026-11-25 - **Figma, strona „Buttons”: nowa tabela „Przyciski ikonowe – opisy”** (`10033:363`, prośba
+  użytkownika) - osobny wiersz w ramce „Tabela” (`8347:118332`) zaraz pod „Stanami przycisków” (`8578:129228`).
+  Tabela `10033:368`: 12 przycisków z kolumny „Przyciski” tabeli stanów, **jeden pod drugim**; kolumny: Przycisk
+  (kopia ramki, nie instancja - oryginały też są zwykłymi ramkami), Tytuł (tooltip / aria-label = nazwa warstwy
+  „Button – …”), Co robi, Kolor (próbka + hex), Ikona (Lucide). Styl jak tabela stanów (Aspekta 500 / Aspekta
+  Variable, nagłówek #F7F7F7, linie #E5E5E5). Tabela stanów bez zmian. **Opisy działania napisane przez Claude
+  na podstawie nazw - do weryfikacji.** Dwa przyciski mają tę samą nazwę „Szczegóły” (eye i file-search) - TODO.
+
 ## Do zrobienia
 
+- [ ] Figma „Buttons”, tabela „Przyciski ikonowe – opisy” (`10033:368`): sprawdzić opisy działania przycisków;
+      ustalić, czym różnią się dwa przyciski „Szczegóły” (lucide/eye vs lucide/file-search) i nadać drugiemu inną nazwę.
 - [ ] **Audyt Home (2026-11-24) - do decyzji użytkownika:**
       1) placeholder wyszukiwarki `w7UXI65fG`: Mobile „Szukaj w naszych zbiorach”, reszta „Wyszukaj z ponad 19 milionów
       zbiorów”; style różne na każdym breakpoincie (Body 4 Thin / Button Thin na Dużym desktopie / ręczne 15 px 400
