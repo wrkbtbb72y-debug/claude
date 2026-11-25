@@ -1943,3 +1943,9 @@ wariant Phone `JEtPeR5s6` (używany na `/` i w szablonie „Układ z paskiem”)
   `/projects/[slug]` i strona projektowa „Design”): **nic do usunięcia** - wszystkie 11 stylów tekstu, 2 style linków,
   4 komponenty, 6 plików kodu, 3 kolory i moduły Phosphor / Lenis są używane. „Service Title” i „Service Description”
   tylko na stronie projektowej „Design” `RyX9sG7UG`.
+
+## `/projects`: 3 ostatnie wiersze usunięte (2026-11-25)
+
+Prośba: usunąć 3 ostatnie wiersze tabeli projektów. Tabela to dwie listy CMS jedna pod drugą (po 6 projektów); druga
+lista „Project List (CMS) – kopia” `e9f1RvEmA` ma teraz **limit 3** (wszystkie breakpointy) → 9 wierszy: 6 projektów
++ Interest Dept, Beta Bar, Our Legacy. Wpisy w CMS bez zmian. Zmiana w `main`, nieopublikowana.
