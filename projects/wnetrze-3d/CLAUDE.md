@@ -1973,3 +1973,16 @@ odrobinę w prawo, po jego lewej pojawia się kropka wyśrodkowana względem tyt
   wg mapy `ACTIVE_VARIANT` (Tablet `ZBhKqKf0s` → Tablet Active `iIoIQXINk`, Phone `KpXuMCYkK` → Phone Active `TPYigSkP2`;
   obsługuje nazwy i ID). Zawsze aktywny jeden wiersz - ten sam, którego zdjęcie pokazuje sześcian. Desktop bez zmian.
   **Przy zmianie nazw/ID tych wariantów poprawić mapę w kodzie.** Działa tylko w podglądzie / na stronie.
+
+## Sześcian na Tablet / Phone - obrót sterowany przewijaniem (2026-11-25)
+
+Zgłoszenie (nagranie): sześcian nie nadąża za przewijaniem - przy każdym nowym wierszu losowy obrót (w prawo / w dół)
+trwający 0,7 s, przy szybkim przewijaniu obroty się nakładały i spóźniały. Zmiany w `main`, nieopublikowane.
+- `SzescianProjektow.tsx`, tryb **Przewijanie**: zamiast obrotów z animacją - **toczenie w dół sterowane przewijaniem**
+  (bez opóźnienia). Sześcian to pierścień 4 ścian wokół osi X (+ boki bez zdjęć); kąt = 90° × postęp między środkami
+  kolejnych wierszy. Przy każdym wierszu sześcian stoi prosto (płaski „postój”), między wierszami toczy się do następnego.
+  Zdjęcia na ścianach podmieniane w locie (wiersz bieżący, poprzedni i dwa następne). Przewijanie w górę = toczenie
+  w przeciwną stronę. Aktywny wiersz (kropka) = wiersz najbliższy obrotowi, więc kropka i zdjęcie są zawsze zgrane.
+- Nowa kontrolka **„Postój przy wierszu”** (`hold`, 0-0,45, domyślnie 0,25): część drogi między wierszami, przez którą
+  sześcian stoi prosto; 0 = obraca się bez przerwy. Widoczna tylko w trybie Przewijanie.
+- Desktop (tryb Najechanie) bez zmian: obroty po najechaniu jak dotąd.
