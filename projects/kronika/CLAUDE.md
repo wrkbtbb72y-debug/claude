@@ -1276,7 +1276,7 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   przez „Szczegóły”); **Ukryj dane** - neutralny #1A1A1A, `lucide/eye-off` (jak „Cofnij publikację” w przeglądzie).
   Przyciski = kopie ramek przycisków danego koloru, ikony = instancje z kolekcji Lucide (18 px, linia 1,5). Wiersz
   wzorcowy „Szczegóły” w tej tabeli zastąpiony nowymi. Do akceptacji użytkownika.
-  Dodane też (ta sama sesja): **Wyślij ponownie zaproszenie** - niebieski #193680, `lucide/mails` (najpierw `send`, użytkownik chciał inną); **Anuluj zaproszenie**
+  Dodane też (ta sama sesja): **Wyślij ponownie zaproszenie** - niebieski #193680, `lucide/rotate-cw` (wybór użytkownika; wcześniej `send`, potem `mails`); użytkownik zmienił tytuł na „Wyślij zaproszenie ponownie” i sam dodał wiersz **„Wyproś z jednostki”** (czerwony, `lucide/user-minus`, notka „jak Usuń członka”); **Anuluj zaproszenie**
   - czerwony #9A1C31, `lucide/mail-x` (para do „Anuluj zgłoszenie” = file-x). Uwaga: na makiecie „Tabela / Zaproszenia”
   (2026-11-18) te akcje miały ikony `refresh-cw` i `square-x` - do ujednolicenia po akceptacji nowych.
 
