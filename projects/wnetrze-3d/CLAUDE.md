@@ -2053,3 +2053,7 @@ efektywniejsze paddingi. Zmiany w `main`, nieopublikowane. Wygląd bez zmian (zr
   (dawniej mylnie „Instagram Column”) i **„Info Column”** `zYwvDPFKo`: padding 0, gap 8 między wierszami.
 - Struktura minimalna: 1 pasek + 2 kolumny (trzeba je mieć osobno - lewa wyrównana do lewej, prawa do prawej; teksty
   w prawej nie dadzą się połączyć w jeden, bo e-mail jest linkiem, a godzina ma override).
+- 2026-11-25 (później) - zgłoszenie: widoczna boczna ściana nie obraca się razem z sześcianem (Tablet/Phone, tryb
+  Przewijanie). Boki były nieruchome poza pierścieniem - teraz są w pierścieniu i toczą się razem z sześcianem (zdjęcie
+  na boku obraca się w swojej płaszczyźnie jak na prawdziwej bryle). Desktop (Najechanie) bez zmian - tam bok był już
+  częścią sześcianu.
