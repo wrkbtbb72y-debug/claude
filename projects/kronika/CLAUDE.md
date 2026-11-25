@@ -1291,6 +1291,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   na `trash-2`; „Edytuj dane instytucji” (`file-pen-line`) i „Opublikuj dane” (`globe`) - użytkownik prosił o inne
   ikony, propozycje pokazane w rozmowie, czeka na wybór.
 
+- 2026-11-25 - **Figma, Buttons: „Lista przycisków (propozycje ikon, bez zastosowania)”** (`10059:414`, tabela
+  `10059:416`; prośba użytkownika) - jedna pionowa lista (przycisk pod przyciskiem, kolumny Przycisk / Ikona, bez
+  kolumny tytułu), na prawo od ramki „Frame 427320042” (`10028:62403`, x 10964). 38 przycisków bez powtórzeń, kolejno:
+  krótka lista użytkownika (`10028:60758`, 9 szt.), reszta „Propozycji ikon: CMS”, potem czerwone z „Anuluj
+  zaproszenie”. Styl = klon tabeli „nowe”. Bloki porównań (CMS, Anuluj zaproszenie) zostały na miejscu - użytkownik
+  przeniósł je wcześniej do ramki `10028:62403`.
+
 ## Do zrobienia
 
 - [ ] Figma „Buttons”, tabela „Przyciski ikonowe – opisy” (`10033:368`): sprawdzić opisy działania przycisków;
