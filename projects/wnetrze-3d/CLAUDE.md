@@ -1949,3 +1949,11 @@ wariant Phone `JEtPeR5s6` (używany na `/` i w szablonie „Układ z paskiem”)
 Prośba: usunąć 3 ostatnie wiersze tabeli projektów. Tabela to dwie listy CMS jedna pod drugą (po 6 projektów); druga
 lista „Project List (CMS) – kopia” `e9f1RvEmA` ma teraz **limit 3** (wszystkie breakpointy) → 9 wierszy: 6 projektów
 + Interest Dept, Beta Bar, Our Legacy. Wpisy w CMS bez zmian. Zmiana w `main`, nieopublikowana.
+
+## Wiersz projektu - wysokość 100 px (2026-11-25)
+
+Prośba: wiersz projektu 100 px (było 80). Komponent „Wiersz projektu” `mKIi2lqmd`, wszystkie 5 wariantów (Desktop, Tablet,
+Phone, Hover, Phone Hover): wysokość **100 px**; „Hover fill” `E2DUdvqEW` wys. 100, spoczynek Top −100 / Hover 0;
+„Hover content” `YecMTotpn` wys. 100, spoczynek Top 100 / Hover 0 (żeby efekt hover dalej działał na całą wysokość).
+Teksty nadal przy dolnej krawędzi komórek (jak dotąd). Zmiana w `main`, nieopublikowana.
+**Zasada:** przy zmianie wysokości wiersza zmieniać też te 4 wartości „Hover fill” / „Hover content” we wszystkich wariantach.
