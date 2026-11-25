@@ -1329,7 +1329,8 @@ Zdjęcia w grupie „1” `KzTe86uZ1` są Scroll Section: photo-1 `HzQMxSHVp`, p
   `jTG5RRS_6`, Opis 1–3 `TESqBFJAK`, `V6j5yUuV_`, `G4uQpy6Vk`. Treść robocza („Tytuł N”, „opis N”) - do podmiany.
 - Każdy tekst: Appear, trigger **Scroll Section** = jego zdjęcie, replay; wejście z krycia 0 i x −20 (tytuły) / +20
   (opisy), Ease Out 0,3 s; wyjście do tego samego stanu w 0,01 s.
-- Tablet i Phone: „Lewa kolumna” ukryta (jak we wzorze poniżej 1024 px).
+- Tablet i Phone: „Lewa kolumna” ukryta (jak we wzorze poniżej 1024 px). **Od 2026-11-25 Tablet pokazuje napisy po bokach**
+  (niżej, punkt „Tablet: napisy po bokach”); Phone nadal bez.
 - W edytorze widać wszystkie 3 teksty naraz (nałożone) - efekty działają tylko w podglądzie. Do sprawdzenia przez
   użytkownika: moment przełączenia (środek ekranu czy góra) i czy replay chowa tekst przy następnym zdjęciu; jeśli nie,
   wrócić do komponentu z wariantami i przejściami warstw ustawionymi przez API.
@@ -1851,4 +1852,18 @@ bryłami. Zmiany w `main`, nieopublikowane. Desktop bez zmian (tylko nadpisania 
 - Sprawdzone zrzutami: Tablet (810) - bryły ok. 440 px przy wysokim ekranie (wcześniej ok. 630), napis górny i dolny
   w równej odległości; Phone (390) - bryły 330 px, napisy nad i pod. Na szerokim Tablecie (np. 1400 × 800) bryły będą
   dość małe (ok. 310 px) - do oceny przez użytkownika.
+
+### Featured projects - Tablet: napisy po bokach jak na Desktopie (`/`, 2026-11-25)
+
+Prośba: na Tablecie w sekcji ze zdjęciami („photos&outro” `KzTe86uZ1`) tytuły i opisy po bokach jak na Desktopie.
+Tylko nadpisania w breakpoincie Tablet `yQMtFz1Ve`; Desktop i Phone bez zmian. Zmiany w `main`, nieopublikowane.
+- „Side Text Track” `RqVV9HufJ` **widoczny** na Tablecie (wcześniej ukryty).
+- Przy 810 px zdjęcia 546 px zostawiały po bokach tylko 132 px, więc **zdjęcia na Tablecie zwężone do 440 px** (× 0,806,
+  proporcje bez zmian): Photo 1 `nALPP0gZl` 440 × 301,8; Photo 2 `kA1bO5szG` 440 × 421,9; Photo 3 `a0kbIINEc`
+  440 × 451,3; ramka „photo 2” `L48Zyy6zT` 440 × 347; pas „middle” `Rx6zlkF2_` w ścieżce napisów 440 (= szerokość zdjęć).
+- Pasy „left text” `Xmdf5w5Yk` / „right text” `kngBPqYgF`: padding 0/16/0/16; „Titles” `vIFNNRaWe` i „Descriptions”
+  `KEnBAz7rn` szer. 100% (zamiast 260 px); tytuły szer. 100%, wyrównanie do prawej. Przy 810 px napis ma 145 px -
+  wszystkie tytuły i opisy w jednej linii (sprawdzone pomiarem). **Przy zmianie szerokości zdjęć na Tablecie zmienić też
+  „middle” `Rx6zlkF2_`.**
+- Jak na Desktopie: w edytorze 3 teksty widać naraz (nałożone), zmiana wg zdjęcia działa tylko w podglądzie.
 
