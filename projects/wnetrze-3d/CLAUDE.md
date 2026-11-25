@@ -2013,3 +2013,17 @@ Zmiany w `main`, nieopublikowane.
   72 px | Spacer (category) 1fr (widoczny); paddingi spacerów i „Right” 0 → sześcian 72 px dokładnie w kolumnie.
   **Zmiana szerokości kolumny sześcianu wymaga tej samej zmiany w „Right” nakładki.**
 - „Phone Hover” (nieużywany) i kopia tekstów w „Hover content” na Phone nie zostały przestawione.
+
+## Sześcian pochylony - boczna ściana ze zdjęciem kolejnego projektu (wszystkie breakpointy, 2026-11-25)
+
+Prośba: sześcian delikatnie obrócony, żeby było widać trochę bocznej ściany; na niej lekko przyciemnione zdjęcie projektu
+z kolejnego wiersza. Zmiany w `main`, nieopublikowane.
+- `SzescianProjektow.tsx`: nowe kontrolki **„Pochylenie”** (`tilt`, domyślnie **14°**, stały obrót rotateY(−tilt) - widać
+  prawą ścianę; kołysanie na start dodaje się do tego) i **„Przyciemnienie boku”** (`sideDim`, domyślnie **0,35** -
+  czarna warstwa na zdjęciu boku). Wartości domyślne działają na Desktop, Tablet i Phone.
+- **Najechanie (Desktop):** prawa ściana (liczona z macierzy orientacji) pokazuje zdjęcie projektu następnego po bieżącym
+  na liście (kolejność wierszy na stronie; po ostatnim - pierwszy). Po obrocie bok od razu dostaje kolejny projekt.
+- **Przewijanie (Tablet, Phone):** boki są nieruchome (poza pierścieniem, który toczy się wokół osi X); prawy bok
+  pokazuje zdjęcie wiersza po aktywnym; przy ostatnim wierszu bok pusty (kolor ścian).
+- Zdjęcie na boku jest dekoracyjne (alt pusty, aria-hidden). Na płótnie bok bez zdjęcia (wiersze rejestrują się dopiero
+  w podglądzie).
