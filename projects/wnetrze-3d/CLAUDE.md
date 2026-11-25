@@ -1753,7 +1753,20 @@ Zmiany od razu w `main`, **nieopublikowane**.
   Interest Dept - Web Design, Graphic Design · Beta Bar - Graphic Design, Web Design · Our Legacy - Co-design, Brand
   Identity · Mycoaudio - Brand Identity, Creative Direction · Nod Objects - Brand Identity, Product Design · Letter Bet -
   Web Design, Art Direction.
-- Na stronach nic jeszcze nie pokazuje podkategorii (np. chipy obok kategorii na stronie projektu - do decyzji).
+- Strona projektu: podkategorie jako chipy obok kategorii głównej - patrz sekcja niżej (2026-11-25).
 - Figma: tabela „Dane CMS” - wiersz 3 „Main Category”, nowy wiersz 4 „Subcategories”, numeracja 1-18; arkusz
   „Treści CMS” - w każdym bloku pole 04 „Subcategories · podkategorie”, numeracja pól 01-09. Pozostałe zmiany nazw
   użytkownika (Short/Long Description) w tabeli jeszcze niezsynchronizowane.
+
+### Podkategorie na stronie projektu (`/projects/[slug]`, 2026-11-25)
+
+Prośba: w rzędzie „Categories” `kzNFtovaT` podkategorie w jednym rzędzie, wyglądające jak chip kategorii głównej.
+- W „Categories”, po „Category Chip” `Pu3oLUVSJ`: lista CMS **„Subcategory List”** `iclFMOOga` (kolekcja Subcategories,
+  filtr: `id` zawiera się w polu **Subcategories** bieżącego projektu; stos poziomy, gap 6, **bez zawijania**) →
+  **„Subcategory Chip”** `u3XSM4U62` (kopia wyglądu chipu kategorii: padding 10/14, ramka 1 px rgba(255,255,255,0.5)) →
+  tekst `rrDadH7wC` (preset „navi”, pole Name).
+- Desktop i Tablet: 3 chipy w jednym rzędzie. Phone: kategoria główna w pierwszym wierszu, obie podkategorie razem
+  w drugim (rząd „Categories” zawija się, bo trzy chipy nie mieszczą się w 358 px).
+- Zastane: użytkownik przebudował stronę („Project Header” `RKMnzf5MN` w nowym rodzicu `h9U5YGu59`, zdjęcie z marginesami);
+  linter: brak maxWidth na „Project Header” - nie ruszane.
+
