@@ -1721,7 +1721,8 @@ Zmiany od razu w `main` (bez brancha), **nieopublikowane**.
   Tablet `zzq6hyL6v`, Phone `OMyD7gpoX`.
 - **„Project Header”** `RKMnzf5MN` (section, 100%, pionowy stos, gap 32; padding 64/40/48/40, Tablet 56/32/40/32 gap 28,
   Phone 40/16/32/16 gap 24):
-  - „Intro” `CANax8HuG` (gap 20, Phone 16): **„Title”** `s7kB366cd` (h1, preset „Nagłówek” 64/42/32, pole CMS **Title**)
+  - „Intro” `CANax8HuG` (gap 20, Phone 16): **„Title”** `s7kB366cd` (h1, preset „Nagłówek” 64/42/32, pole CMS
+    **Project name** - zmiana z pola Title tego samego dnia na prośbę użytkownika)
     i **„Short Description”** `SJg016FD2` (p, preset „Opis sekcji” 24/22/20, krycie 0,7, maxWidth 760, pole
     **Short description**).
   - **„Categories”** `kzNFtovaT` (stos poziomy z zawijaniem, gap 6) → **„Category Chip”** `Pu3oLUVSJ` (padding 10/14,
@@ -1732,6 +1733,7 @@ Zmiany od razu w `main` (bez brancha), **nieopublikowane**.
   nie robiły bardzo wysokiej strony.
 - Sprawdzone na zrzutach 3 breakpointów (Beta Bar, Letter Bet). Linter: „siblings too close” między nagłówkiem a zdjęciem -
   fałszywy alarm (odstęp daje dolny padding nagłówka), zostawione.
-- Tabela „Dane CMS” w Figmie: kolumna „Gdzie widać” - Category i Short description mają teraz też „pełna strona”.
+- Tabela „Dane CMS” w Figmie: kolumna „Gdzie widać” - Category i Short description mają teraz też „pełna strona”;
+  Title już tylko „Karta” (na stronie projektu jest Project name).
 - Zastane, nie ruszane: na Phone w Navi szablonu logo nachodzi na „ARCHIVE”.
 
