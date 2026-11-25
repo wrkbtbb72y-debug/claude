@@ -1999,3 +1999,17 @@ trwający 0,7 s, przy szybkim przewijaniu obroty się nakładały i spóźniały
     wysokim ekranie ostatni wiersz dojechał do sześcianu. Teraz droga sześcianu jest rozłożona na dostępne przewijanie:
     jeśli strony wystarcza - jak dotąd 1:1; jeśli nie - sześcian jedzie odpowiednio szybciej i dociera do końca przy
     końcu przewijania (liczone z wysokości dokumentu i okna, więc działa na każdym ekranie).
+
+## `/projects` Phone: kolumny Tytuł | sześcian | kategoria (2026-11-25)
+
+Prośba: na mobile brak kategorii - ma być w ostatniej kolumnie przy prawej krawędzi; kolumny: tytuł, sześcian, kategoria.
+Zmiany w `main`, nieopublikowane.
+- „Wiersz projektu” `mKIi2lqmd`, warianty **Phone** `KpXuMCYkK` i **Phone Active** `TPYigSkP2` (tylko nadpisania):
+  komórka kategorii `KEVjpyCQD` przestawiona za kolumny sześcianu (kolejność w wariancie), widoczna, 1fr, treść do prawej
+  (padding 0/0/4/0 jak tytuł → kategoria na linii roku); „Zakres” `cTVLo9zRf` widoczny, szer. auto, wyrównanie do prawej.
+  Pierwsza „Cube col” `v3zJJF85a` widoczna, **72 px**. Pionowe kreski tych komórek na Phone przezroczyste (jak wcześniej
+  komórka tytułu). Układ: Tytuł 1fr | 72 px | Kategoria 1fr, padding wiersza 16.
+- „Cube overlay” na Phone `gXUpXfgZ5yKavc4ANa`: padding 0/16/0/16 (jak wiersz); kolejność Spacer (title) 1fr | Right
+  72 px | Spacer (category) 1fr (widoczny); paddingi spacerów i „Right” 0 → sześcian 72 px dokładnie w kolumnie.
+  **Zmiana szerokości kolumny sześcianu wymaga tej samej zmiany w „Right” nakładki.**
+- „Phone Hover” (nieużywany) i kopia tekstów w „Hover content” na Phone nie zostały przestawione.
