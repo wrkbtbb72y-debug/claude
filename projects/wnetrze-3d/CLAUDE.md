@@ -1152,7 +1152,8 @@ w górę i jednocześnie znika do 0%, nowy wlatuje od dołu. Użytkownik: „jak
   wyjście y −24 + opacity 0, wejście od y +24; 0,55 s, ease [0.22, 1, 0.36, 1]). Natywne przejście wariantów nie umie
   jednocześnie wypuścić starego napisu w górę i wpuścić nowego od dołu — dlatego ruch jest w overridzie.
 - Nowa bryła / zmiana „Scalonych brył” → dodać wariant „Kwadrat N” w „Napisie lewym” (prawy od 2026-11-25 ma tylko „Fokus”).
-- Działa tylko w podglądzie / na stronie (edytor pokazuje „Domyślny”). Tablet/Phone: kolumny z napisami ukryte.
+- Działa tylko w podglądzie / na stronie (edytor pokazuje „Domyślny”). Tablet/Phone: od 2026-11-25 napisy nad i pod bryłami
+  (sekcja „Tablet i Phone: napisy nad i pod bryłami” na końcu pliku).
 - Przy okazji (zmiana użytkownika, nie Claude): w „Dolnym pasku” są teraz 3 pola (bez LinkedIn) i bez pionowych kresek.
 
 ### Dolny pasek: pole „Behance” zawsze tak szerokie jak „middle” (Desktop `/`, 2026-11-22)
@@ -1830,3 +1831,24 @@ z lewej, bardziej pionowe z prawej.
 - **Zasada:** dodając projekt, ustaw w Additional images na 1. miejscu zdjęcie poziome, na 2. pionowe.
 - Figma: w arkuszu kolejność zdjęć w siatkach zsynchronizowana z CMS (etykiety Image 1...N); w tabeli „Dane CMS” wiersz
   Additional images - „Gdzie widać” i zasady opisują parę.
+
+## Tablet i Phone: mniejszy zbiór brył, napisy nad i pod nim (`/`, 2026-11-25)
+
+Prośba: na Tablecie zbiór brył mniejszy o ok. 30%; na Tablecie i Phone boczne napisy (z Desktopu po bokach) nad i pod
+bryłami. Zmiany w `main`, nieopublikowane. Desktop bez zmian (tylko nadpisania w replikach).
+- Zastane: breakpointy `/` to teraz Desktop ≥ 1440, Tablet 810–1439, Phone < 810 (zmiana użytkownika). Siatka na Tablecie
+  i Phone ma już „Kolumny jak Navi II” wł., „Środek wg wysokości” wł., 4×4 jak Desktop.
+- **Tablet** „Perspective Grid” `yQMtFz1VeOirTRcAEZ`: „Wysokość środka” (`grid.kolWypeln`) 0,6667 → **0,4667** (× 0,7).
+  Środek = min(kolWypeln × wys. komponentu, szer. − 2·kolPadding − 20·kolBoczne) - zbiór brył jest kwadratem tej wielkości,
+  wyśrodkowanym w komponencie (top 80, bottom 56). Phone bez zmian (0,6667, w praktyce ogranicza go szerokość: 390 − 60).
+- **Hero** `N06uDCvcg` na Tablet/Phone: stos **pionowy**, wyśrodkowany, padding **80 / 30 / 56 / 30** - obszar treści = obszar
+  siatki, a 30 px z boku = 3 kolumny boczne × 10 px z wzoru wyżej.
+- „Column Left” `AzgVkCy4j` i „Column Right” `Hgbr5CLZ2` **widoczne**, szer. 100%, wys. 1fr (równe → bryły na środku);
+  „L” `HD2wSnn92` dosunięte do dołu, padding dolny 24; „R” `tRvpBEufj` dosunięte do góry, padding górny 24.
+- „middle” `UK5KtZeEu` = niewidoczna miarka wysokości brył: szer. 100%, aspectRatio 1 (wys. = szerokość, jak środek
+  ograniczony szerokością), **maxHeight = Wysokość środka w %** (Tablet 46.67%, Phone 66.67%), padding 0; „Photo wrapper”
+  `QMKrWUQkA` ukryty. **Przy zmianie „Wysokości środka” na Tablet/Phone zmienić też maxHeight miarki.**
+- Sprawdzone zrzutami: Tablet (810) - bryły ok. 440 px przy wysokim ekranie (wcześniej ok. 630), napis górny i dolny
+  w równej odległości; Phone (390) - bryły 330 px, napisy nad i pod. Na szerokim Tablecie (np. 1400 × 800) bryły będą
+  dość małe (ok. 310 px) - do oceny przez użytkownika.
+
