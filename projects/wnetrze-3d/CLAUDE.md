@@ -672,7 +672,7 @@ referencja: nagranie ekranu (strona z przestrzenią z rozproszonych linii, pyłe
 ## Design system
 
 - Kolory (folder Assets → Kolory): Tło, Powierzchnia `#15181C`, Obrys, Tekst, Tekst drugorzędny, Akcent.
-- Tekst (PP Neue Montreal): Znak (17/600), Etykieta (14/400), Podpis (13/400, kolor drugorzędny),
+- Tekst (PP Neue Montreal): ~~Znak (17/600)~~ (usunięty 2026-11-25 - nieużywany), Etykieta (14/400), Podpis (13/400, kolor drugorzędny),
   Nagłówek (h1, 300; 64/42/32 px dla Desktop/Tablet/Phone, interlinia 1,05), Podpis akcent (15/400, Akcent).
 - Komponent **Przycisk akcji** `HAR1CjvV6`: warianty Główny (jasny) / Drugorzędny + hover i pressed,
   zmienna „Etykieta”. Preset tekstu „Etykieta akcji” (14/600, kolor Tło).
@@ -1893,4 +1893,12 @@ Desktop bez zmian (hover i sticky sześcian jak dotąd).
   Stage” relative, 100% × 100%; instancja wys. 100%, Tryb: Przewijanie.
 - Działa tylko w podglądzie / na stronie. Lista ma 12 wierszy (dwie listy CMS - zastane), więc sześcian przechodzi przez
   każdy projekt dwa razy.
+
+## Porządki: nieużywane style tekstu (2026-11-25)
+
+Prośba: usunąć nieużywane style tekstowe. Sprawdzone wszystkie 20 presetów: użycie w węzłach (textStylePreset
+i presety per tag w tekstach z CMS / zmiennych) oraz referencje w każdej stronie, komponencie, szablonie i kolekcji.
+Nieużywany był tylko **„Znak”** `j0UKxoBTC` (17/600, PP Neue Montreal) - usunięty razem z odnośnikiem w folderze.
+Zostało 19 presetów; wszystkie są gdzieś użyte (część może być tylko na szkicach `/x`, `/y`, `/w`, `/home` - liczy się
+to jako użycie).
 
