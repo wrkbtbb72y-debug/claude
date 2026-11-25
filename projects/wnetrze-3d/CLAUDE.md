@@ -1737,3 +1737,23 @@ Zmiany od razu w `main` (bez brancha), **nieopublikowane**.
   Title już tylko „Karta” (na stronie projektu jest Project name).
 - Zastane, nie ruszane: na Phone w Navi szablonu logo nachodzi na „ARCHIVE”.
 
+
+## Pole „Subcategories” w CMS (2026-11-25)
+
+Prośba: obok kolumny „Main Category” w kolekcji Projects nowa kolumna „Subcategories”, w każdym projekcie dwie podkategorie.
+Zmiany od razu w `main`, **nieopublikowane**.
+- Stan zastany (zmiany użytkownika w CMS): Category → **Main Category** (opcja „Digital Experiences” → „Digital Experience”),
+  Title `qgpuV6WDb` → **Short Description**, Short description `xShrUeBFp` → **Long Description** (plain text), dawne pole
+  Long description `qfEMx27Nt` (Formatted Text) usunięte; Interest → „Interest Dept”. Na stronie projektu akapit pod
+  tytułem (`SJg016FD2`) jest podpięty pod `xShrUeBFp`, czyli teraz pod pole o nazwie „Long Description”.
+- Nowa kolekcja **„Subcategories”** `Td6DzBkYQ` (Name `SueJOgZbB`, Slug) z 7 wpisami: Web Design, Graphic Design,
+  Brand Identity, Creative Direction, Art Direction, Product Design, Co-design.
+- W Projects pole **Subcategories** `Epj7HprZ9` (Multi-Reference → Subcategories), zaraz po Main Category.
+- Przypisania (z zakresu prac w opisach długich z arkusza Figmy, wzór sort-office.com - nic nie dopisywano):
+  Interest Dept - Web Design, Graphic Design · Beta Bar - Graphic Design, Web Design · Our Legacy - Co-design, Brand
+  Identity · Mycoaudio - Brand Identity, Creative Direction · Nod Objects - Brand Identity, Product Design · Letter Bet -
+  Web Design, Art Direction.
+- Na stronach nic jeszcze nie pokazuje podkategorii (np. chipy obok kategorii na stronie projektu - do decyzji).
+- Figma: tabela „Dane CMS” - wiersz 3 „Main Category”, nowy wiersz 4 „Subcategories”, numeracja 1-18; arkusz
+  „Treści CMS” - w każdym bloku pole 04 „Subcategories · podkategorie”, numeracja pól 01-09. Pozostałe zmiany nazw
+  użytkownika (Short/Long Description) w tabeli jeszcze niezsynchronizowane.
