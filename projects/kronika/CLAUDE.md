@@ -1267,6 +1267,15 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „Button – …”), Co robi, Kolor (próbka + hex), Ikona (Lucide). Styl jak tabela stanów (Aspekta 500 / Aspekta
   Variable, nagłówek #F7F7F7, linie #E5E5E5). Tabela stanów bez zmian. **Opisy działania napisane przez Claude
   na podstawie nazw - do weryfikacji.** Dwa przyciski mają tę samą nazwę „Szczegóły” (eye i file-search) - TODO.
+  **Później użytkownik przebudował ją ręcznie:** ramka `10033:363` ma teraz dwie tabele obok siebie (kolumny
+  Przycisk / Tytuł / Ikona, bez opisu i koloru): po lewej „Buttony - same ikony” `10028:60207` (12 istniejących
+  przycisków), po prawej **„nowe”** `10033:368` - tu dodajemy nowe przyciski ikonowe (wiersz = klon istniejącego wiersza).
+- 2026-11-25 - **Figma, Buttons, tabela „nowe” (`10033:368`): 3 nowe przyciski ikonowe** (prośba użytkownika, kolory
+  i ikony zaproponował Claude): **Edytuj dane instytucji** - niebieski #193680, `lucide/file-pen-line` (miało być inne niż
+  square-pen); **Opublikuj dane** - zielony #15682D, `lucide/globe` (zielony jak „Publikuj” w przeglądzie; oko zajęte
+  przez „Szczegóły”); **Ukryj dane** - neutralny #1A1A1A, `lucide/eye-off` (jak „Cofnij publikację” w przeglądzie).
+  Przyciski = kopie ramek przycisków danego koloru, ikony = instancje z kolekcji Lucide (18 px, linia 1,5). Wiersz
+  wzorcowy „Szczegóły” w tej tabeli zastąpiony nowymi. Do akceptacji użytkownika.
 
 ## Do zrobienia
 
