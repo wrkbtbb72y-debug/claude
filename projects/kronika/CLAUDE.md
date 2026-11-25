@@ -1348,6 +1348,14 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   karty 1 (pozycja absolutna, 24 px od krawędzi). Wyłączone przycinanie (clip) w kartach, ramkach treści, belce
   i grupie. Odstępy: tytuł strony → belka **56** (było 80), belka → karty 20, karty → „Problem z logowaniem?” 40.
 
+- 2026-11-25 - **Figma, panel logowania - wariant użytkownika z blokiem „Nie masz konta?” nad kartami**
+  (ramka `10116:86529`): dwie karty **połączone w jeden panel na całą szerokość** (prośba użytkownika) -
+  „Panel logowania (2 kolumny)” `10116:86554` (1320 × 470): białe tło, ramka 1 px #1A1A1A 20 %, kreska 3 px
+  #1A1A1A u góry całego panelu, padding 64 góra/dół; w środku 2 kolumny (Fill, po 659 px, padding boczny 64)
+  rozdzielone pionową linią 1 px #1A1A1A 20 % (`10125:5557`). W kolumnie ramka „Zawartość” 440 px, wszystko
+  wyśrodkowane: logo / ikona (40 px; ikona info obok logo Login, odstęp 12) · 32 · etykieta + tytuł · 16 ·
+  akapity; odstęp elastyczny (min. 40) i przycisk 340 × 46 - przyciski obu kolumn w jednej linii.
+
 ## Do zrobienia
 
 - [ ] Panel logowania (propozycja `10092:4517`, wersja użytkownika 2 kolumny + belka `10116:85095`): akceptacja; potem Desktop Small / Tablet / Mobile,
