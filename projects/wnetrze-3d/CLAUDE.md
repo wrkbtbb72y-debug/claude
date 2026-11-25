@@ -1570,7 +1570,7 @@ Prośba: 6 projektów z arkusza w Figmie na stronę Projects we Framerze. Zmiany
   w sekcji zostały tylko „Section Bar” `Mop_e0NSp` i lista CMS.
 - Linter: ostrzeżenie o braku maxWidth na sekcji `J09QQV8My` - sekcja celowo na całą szerokość (linie wierszy od krawędzi
   do krawędzi jak na `/`), zostawione bez zmian.
-- **TODO:** treść strony projektu „Project” `JJQ4pAWMy` (`/projects/[slug]`, pusta, projektuje użytkownik). Linki z wierszy i z Featured projects - zrobione 2026-11-25.
+- Strona projektu „Project” `JJQ4pAWMy` (`/projects/[slug]`) - początek zrobiony 2026-11-25 (sekcja niżej). Linki z wierszy i z Featured projects - zrobione 2026-11-25.
 - Tabela „Dane CMS” w Figmie: wiersz 13 Additional images - typ „List (Image)” (rozstrzygnięte: Framer ma pole List).
 
 ## Hover wiersza projektu - poprawki (`/projects`, 2026-11-24)
@@ -1711,3 +1711,27 @@ z jej minHeight 100vh - pasek wisiał nad dołem strony.
 - Phone: pasek w kolumnie, padding 32/16/28, gap 20 (kolejność bez zmian: linki → Connect → logo + copyright).
 - Bez zmian: teksty, linki (TODO adresy profili), pasek „Section Bar” na górze stopki z napisem „featured projects”
   (zmiana użytkownika - do sprawdzenia, czy to właściwy napis dla stopki).
+
+## Strona projektu z CMS `/projects/[slug]` - nagłówek i zdjęcie (2026-11-25)
+
+Prośba: na stronie projektu z listy CMS pod navbarem tytuł, krótki opis, kategorie w ramce, pod spodem zdjęcie na całą
+szerokość ekranu (inspiracja: strona projektu BVN - duży tytuł, chipy usług w cienkich ramkach, duże zdjęcie).
+Zmiany od razu w `main` (bez brancha), **nieopublikowane**.
+- Strona „Project” `JJQ4pAWMy`, szablon „Układ z paskiem” (Navi i stopka z szablonu). Breakpointy: Desktop `Ob89z3UFi`,
+  Tablet `zzq6hyL6v`, Phone `OMyD7gpoX`.
+- **„Project Header”** `RKMnzf5MN` (section, 100%, pionowy stos, gap 32; padding 64/40/48/40, Tablet 56/32/40/32 gap 28,
+  Phone 40/16/32/16 gap 24):
+  - „Intro” `CANax8HuG` (gap 20, Phone 16): **„Title”** `s7kB366cd` (h1, preset „Nagłówek” 64/42/32, pole CMS **Title**)
+    i **„Short Description”** `SJg016FD2` (p, preset „Opis sekcji” 24/22/20, krycie 0,7, maxWidth 760, pole
+    **Short description**).
+  - **„Categories”** `kzNFtovaT` (stos poziomy z zawijaniem, gap 6) → **„Category Chip”** `Pu3oLUVSJ` (padding 10/14,
+    ramka 1 px rgba(255,255,255,0.5) jak kapsuła w stopce, bez zaokrągleń) → tekst `FUGIahypO` (preset „navi”, pole
+    **Category**, nazwa opcji). Projekt ma jedną kategorię - stos jest gotowy na więcej chipów, gdyby doszło pole wielokrotne.
+- **„Main Image”** `idx6HeO5a`: bezpośrednio w breakpoincie, 100% szerokości (od krawędzi do krawędzi), wypełnienie =
+  pole **Main image** (alt z CMS), proporcja **16:9** (Desktop, Tablet), **4:3** (Phone) - stała, żeby pionowe zdjęcia
+  nie robiły bardzo wysokiej strony.
+- Sprawdzone na zrzutach 3 breakpointów (Beta Bar, Letter Bet). Linter: „siblings too close” między nagłówkiem a zdjęciem -
+  fałszywy alarm (odstęp daje dolny padding nagłówka), zostawione.
+- Tabela „Dane CMS” w Figmie: kolumna „Gdzie widać” - Category i Short description mają teraz też „pełna strona”.
+- Zastane, nie ruszane: na Phone w Navi szablonu logo nachodzi na „ARCHIVE”.
+
