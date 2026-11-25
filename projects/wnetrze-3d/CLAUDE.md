@@ -1333,6 +1333,18 @@ Zdjęcia w grupie „1” `KzTe86uZ1` są Scroll Section: photo-1 `HzQMxSHVp`, p
   użytkownika: moment przełączenia (środek ekranu czy góra) i czy replay chowa tekst przy następnym zdjęciu; jeśli nie,
   wrócić do komponentu z wariantami i przejściami warstw ustawionymi przez API.
 
+- 2026-11-25 - **Tytuły dopasowane do zdjęć; „Touski” zastąpione przez Our Legacy** (prośba użytkownika: klik na tytuł
+  lub zdjęcie ma prowadzić do strony projektu; strony projektu jeszcze nie ma - **użytkownik zrobi ją sam**, potem
+  podpinamy linki). Stan zastany: tytuły nie pasowały do zdjęć (Scroll Section): przy zdjęciu Nod był „Beta bar”, przy
+  puszce Beta - „Touski” (nie ma go w CMS), przy drugim zdjęciu Beta (telefon) - „NOD Objects”. Teraz (tytuły razem
+  z opisami): photo 1 `W0o27POab` (Nod) → Title 1 `JFATg6NBS` **Nod Objects** / „Identity, Product”; Photo 2 `kA1bO5szG`
+  (Beta) → Title 2 `oceFTVdIz` **Beta Bar** / „Identity, Art Direction”; photo 2 `L48Zyy6zT` (w nim „Photo 3 - Our
+  Legacy” `a0kbIINEc`) → Title 3 `jTG5RRS_6` **Our Legacy** / „Art Direction” (kategoria z CMS); zdjęcie = Main image
+  Our Legacy z CMS (plakat EVAC). Opis „Website, Graphic Design” (Touski) nieużyty. Zdjęcia dostały alt-texty.
+  - **Na później (linki):** „Lewa kolumna” `RqVV9HufJ` ma `pointerEvents: none`, a 3 tytuły leżą na sobie (absolute,
+    ukryte tylko kryciem) - samo dodanie linków do tytułów nie zadziała (klik trafiłby w górny, niewidoczny tytuł).
+    Trzeba będzie np. link na zdjęciach + tytuły klikalne przez kod albo przebudowa tytułów.
+
 ## Zdublowane nazwy Scroll Section - poprawione (`/`, 2026-11-24)
 
 Zgłoszenie: Scroll Transform na „Pasku z linkami” `ZR4kUwPMr` (krycie 1 → 0 przy celu `nv67EJ8nh`, viewport start) nie
@@ -1541,7 +1553,7 @@ Prośba: 6 projektów z arkusza w Figmie na stronę Projects we Framerze. Zmiany
   w sekcji zostały tylko „Section Bar” `Mop_e0NSp` i lista CMS.
 - Linter: ostrzeżenie o braku maxWidth na sekcji `J09QQV8My` - sekcja celowo na całą szerokość (linie wierszy od krawędzi
   do krawędzi jak na `/`), zostawione bez zmian.
-- **TODO:** strona szczegółów projektu `/projects/[slug]` i link z wierszy (wiersze na razie nie są klikalne).
+- **TODO:** strona szczegółów projektu `/projects/[slug]` (robi użytkownik, 2026-11-25) i link z wierszy (wiersze na razie nie są klikalne) oraz z tytułów i zdjęć Featured projects na `/`.
 - Tabela „Dane CMS” w Figmie: wiersz 13 Additional images - typ „List (Image)” (rozstrzygnięte: Framer ma pole List).
 
 ## Hover wiersza projektu - poprawki (`/projects`, 2026-11-24)
