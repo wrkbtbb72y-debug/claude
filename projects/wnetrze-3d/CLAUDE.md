@@ -1866,6 +1866,9 @@ Tylko nadpisania w breakpoincie Tablet `yQMtFz1Ve`; Desktop i Phone bez zmian. Z
   wszystkie tytuły i opisy w jednej linii (sprawdzone pomiarem). **Przy zmianie szerokości zdjęć na Tablecie zmienić też
   „middle” `Rx6zlkF2_`.**
 - Jak na Desktopie: w edytorze 3 teksty widać naraz (nałożone), zmiana wg zdjęcia działa tylko w podglądzie.
+- 2026-11-25 (później) - prośba „jeszcze trochę zmniejsz”: zdjęcia na Tablecie **440 → 380 px** (× 0,696 względem 546):
+  Photo 1 380 × 260,7; Photo 2 380 × 364,3; Photo 3 380 × 389,7; ramka „photo 2” 380 × 299; „middle” `Rx6zlkF2_` 380.
+  Napisy po bokach mają teraz 183 px przy 810.
 
 ## `/projects` Tablet i Phone: bez hovera, sześcian jedzie z przewijaniem (2026-11-25)
 
