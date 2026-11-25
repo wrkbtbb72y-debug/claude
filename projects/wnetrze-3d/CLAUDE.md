@@ -1939,3 +1939,7 @@ wariant Phone `JEtPeR5s6` (używany na `/` i w szablonie „Układ z paskiem”)
   „connect-wrapper” 40 px → logo wyśrodkowane i już nie przycięte (wcześniej kolumny po 150 px ucinały je do „NUMIN”).
 - **TODO:** przycisk jeszcze niczego nie otwiera - do zrobienia menu (np. wariant „Phone Open” z linkami) po decyzji
   użytkownika, jak ma wyglądać.
+- 2026-11-25 (później) - ponowne sprawdzenie po usunięciu stron przez użytkownika (zostały `/`, `/projects`,
+  `/projects/[slug]` i strona projektowa „Design”): **nic do usunięcia** - wszystkie 11 stylów tekstu, 2 style linków,
+  4 komponenty, 6 plików kodu, 3 kolory i moduły Phosphor / Lenis są używane. „Service Title” i „Service Description”
+  tylko na stronie projektowej „Design” `RyX9sG7UG`.
