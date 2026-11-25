@@ -1620,6 +1620,23 @@ przez użytkownika) sześcian 3D, który po najechaniu na wiersz innego projektu
   - Nowa bryła nie wymaga już nowego wariantu w „Napisie prawym” (tylko w lewym). Sprawdzone: Desktop bez zmian
     wizualnych, diagnostyki kodu czyste; Tablet/Phone - kolumny z napisami ukryte jak wcześniej.
 
+- 2026-11-25 - **Napisy w komórkach wiersza projektu wyrównane, hover bez skoków** (prośba użytkownika, komponent
+  „Wiersz projektu” `mKIi2lqmd`, `/projects`). Zmiany od razu w `main`, nieopublikowane.
+  - Przyczyny skoków na hover: kopia w „Hover content” `YecMTotpn` miała kolumny w innej kolejności (Rok przed Zakresem),
+    inne wcięcia (24 zamiast 32 px, dół 4 zamiast 8), „Zakres (hover)” 1fr tylko w wariancie Hover (animowana szerokość),
+    a oryginalny „Zakres” `cTVLo9zRf` miał ręczne 11 px zamiast presetu.
+  - Teraz kolumny w obu warstwach: Tytuł / Zakres / Rok; **Tytuł padding 0/16/8/40, etykiety (Zakres, Rok) 0/16/12/32** -
+    dół 12 zamiast 8, żeby linia bazowa małych etykiet (preset „navi” 12 px) wypadała na linii bazowej tytułu („Lista
+    akapit” 20/23 px); sprawdzone na zrzucie 1:1. Zakres też w presecie „navi”. Etykiety (oryginał i kopia) szerokość
+    **1fr** we wszystkich wariantach - w wąskich kolumnach (Tablet) zawijają się zamiast wchodzić na linię. Kopia „Zakres
+    col (hover)” dostała linię z prawej jak oryginał. Wariant Desktop: `borderWidth` 0 (linter „Border is incomplete”).
+  - **Phone:** dotąd hover na telefonie przełączał na wariant „Hover” (układ Desktop). Nowy wariant **„Phone Hover”**
+    `rAcWGQbfH` (z Phone; tło i kopia Top 0); Phone → Mouse Enter → Phone Hover, Phone Hover → Mouse Leave → Phone.
+  - **Zasada bez zmian:** każda zmiana układu oryginalnych tekstów musi być powtórzona w „Hover content” (Desktop i Hover).
+  - Zastane: na `/projects` są dwie listy CMS („Project List (CMS)” i „– kopia” `e9f1RvEmA`, zmiana użytkownika), więc
+    każdy projekt widać dwa razy - nie ruszane. Ostrzeżenia lintera „brak tła wariantu” i „-300 px odstępu” w Hover
+    content (pomiar warstwy absolutnej) - zostawione.
+
 ## Puste 56 px pod stopką na `/` - usunięte (2026-11-24)
 
 Przyczyna: Featured Projects, What We Do i Footer miały translateY −56 (pierwszy pasek wystaje nad dół Hero).
