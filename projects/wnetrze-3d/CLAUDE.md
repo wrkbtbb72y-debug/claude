@@ -1867,3 +1867,27 @@ Tylko nadpisania w breakpoincie Tablet `yQMtFz1Ve`; Desktop i Phone bez zmian. Z
   „middle” `Rx6zlkF2_`.**
 - Jak na Desktopie: w edytorze 3 teksty widać naraz (nałożone), zmiana wg zdjęcia działa tylko w podglądzie.
 
+## `/projects` Tablet i Phone: bez hovera, sześcian jedzie z przewijaniem (2026-11-25)
+
+Prośba: na Tablecie i Phone wyłączyć hover wierszy projektów; sześcian na starcie przy pierwszym wierszu, przy
+przewijaniu jedzie w dół i przy każdym wierszu obraca się na zdjęcie tego projektu. Zmiany w `main`, nieopublikowane.
+Desktop bez zmian (hover i sticky sześcian jak dotąd).
+- **Hover wyłączony:** w „Wierszu projektu” `mKIi2lqmd` nowy wariant **„Tablet”** `ZBhKqKf0s` (kopia Desktop, bez
+  interakcji) - ustawiony na instancjach na Tablecie (`hxNFrbGfpe0sRzCdfk`, `hxNFrbGfpJDCbU_6LI`). Wariant **Phone**
+  `KpXuMCYkK`: usunięte Mouse Enter → Phone Hover (wariant „Phone Hover” `rAcWGQbfH` zostaje, ale nic go już nie włącza).
+  Interakcje nie dziedziczą się z Desktopu - każdy wariant ma własne.
+- **Kod `SzescianProjektow.tsx`:** nowa kontrolka **„Tryb”** (`mode`): **Najechanie** (domyślnie, Desktop) / **Przewijanie**
+  (Tablet, Phone). W trybie przewijania instancja ma wysokość całej listy; sześcian (bok = szerokość instancji) zaczyna
+  przy 1. wierszu (środek na środku wiersza, a gdy sześcian jest wyższy od wiersza - górą równo z górą wiersza),
+  przesuwa się w dół o tyle, ile przewinięto stronę (stoi w miejscu na ekranie), do ostatniego wiersza. Wiersz, na
+  którego wysokości jest środek sześcianu, ustawia zdjęcie → obrót jak przy hoverze (kierunek wg „Kierunek”). Kołysanie
+  na start działa do pierwszej zmiany wiersza. Override `withSzescianHover` rejestruje teraz wiersze (element + zdjęcie)
+  i ignoruje najechanie, gdy widoczny jest sześcian w trybie przewijania. Na płótnie sześcian stoi przy 1. wierszu.
+- **Tablet:** „Cube Stage” `hxNFrbGfpyJR6xOUDx` relative (bez sticky), wys. 100%; instancja `hxNFrbGfpb02hKELET`
+  wys. 100%, Tryb: Przewijanie. Sześcian ok. 120 px (wiersz 80 px) - górą równo z 1. wierszem.
+- **Phone:** „Cube overlay” `yKavc4ANa` widoczny; „Spacer (category)” i „Spacer (year)” ukryte; „Right” `k0rqSWoT9`
+  widoczny, szer. 72 px, padding prawy 16 → sześcian 56 px przy prawej krawędzi wiersza (obok tytułu i roku); „Cube
+  Stage” relative, 100% × 100%; instancja wys. 100%, Tryb: Przewijanie.
+- Działa tylko w podglądzie / na stronie. Lista ma 12 wierszy (dwie listy CMS - zastane), więc sześcian przechodzi przez
+  każdy projekt dwa razy.
+
