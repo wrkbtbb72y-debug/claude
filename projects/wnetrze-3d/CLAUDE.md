@@ -2078,3 +2078,24 @@ Zmiany w `main`, nieopublikowane.
   kolejne obroty. Po zjechaniu: obrót do zdjęcia wiersza przy sześcianie (bez obrotu, jeśli to ten sam projekt), potem
   znów sterowanie przewijaniem (przesunięcie pierścienia `ringOff`, więc bez cofania się o kilka obrotów). Bok =
   następny projekt po pokazywanym. Tablet/Phone bez zmian (tam hover nie działa).
+
+## `/projects`: nowa siatka 5 kart podpięta pod CMS (2026-11-26)
+
+Stan zastany: użytkownik przebudował stronę `/projects` (Desktop `a7yxUtaxD`) - zamiast listy wierszy z sześcianem jest
+ramka **„Projects”** `oj2r6gDpE` w „Main” `J09QQV8My`: 4 rzędy (`mUQVqRqnv`, `BLr9reFW0`, `I7MOhoiwV`, `lAlon0CsE`) ze
+schodkowym układem 5 kart (szer. 1fr / 2fr) i pustych komórek + absolutne tło z liniami kolumn `TRSihInbH`. Każda karta:
+„Photo wrapper” → **„Main photo”** (zdjęcie), **„Text”** (Project name, Category, year).
+Prośba: podpiąć 5 pierwszych projektów z CMS, tylko natywnie; kliknięcie w całą kartę → strona projektu.
+Zmiany w `main`, nieopublikowane.
+- Każda karta owinięta w osobną listę CMS (żeby została na swoim miejscu w układzie): **„Project N (CMS)”** - Project 1
+  `z5lWL1TeN`, 2 `QsflNWmEz`, 3 `TQl_89Zn6`, 4 `wnONzOfp5`, 5 `Ksm4prFTb`; kolekcja Projects, sortowanie **Order rosnąco**,
+  **limit 1, offset 0-4** (karta N = projekt z N-tym Order). Lista przejęła szerokość karty (1fr / 2fr), karta ma 100%.
+- Karty przemianowane na **Project 1-5** (wcześniej „Project 1” i cztery „Project 2”): `jOpAa29If`, `Sw3TnUduu`,
+  `Iaw5McR0K`, `ANYh_ES2I`, `TbAdlXQdP`. Link na całej karcie: `/projects/[slug]` (strona „Project” `JJQ4pAWMy`).
+- Bindowania: Main photo = **Main image** (alt z CMS), Project name = **Project name**, Category = **Main Category** (nazwa
+  opcji), year = **Year**.
+- Teraz: Interest Dept, Beta Bar, Our Legacy, Mycoaudio, Nod Objects (Letter Bet - Order 6 - nie jest pokazany).
+  **Zmiana kolejności projektów = zmiana pola Order w CMS.**
+- Zastane, nie ruszane: na Phone w wąskiej karcie 1 tytuł i kategoria są przycięte („Interest Dep…”); linter na „Main”
+  (brak maxWidth, „Intro” nachodzi na „Projects”) - układ użytkownika.
+- Stare notatki o liście wierszy z sześcianem na `/projects` (sekcje z 2026-11-24/25) opisują stan sprzed przebudowy.
