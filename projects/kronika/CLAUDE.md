@@ -97,6 +97,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   „Mobile ≤767”).
 - **Paddingi boczne - zawsze (stała zasada użytkownika, 2026-11-26):** Desktop Large **60 px**, Desktop Small
   **36 px**, Tablet **16 px**, Mobile **16 px** (lewy i prawy, w każdej sekcji z treścią na każdej makiecie).
+- **Odstęp ostatniej sekcji od stopki - zawsze (stała zasada użytkownika, 2026-11-26):** od dolnej krawędzi treści
+  ostatniej sekcji strony do stopki: Desktop Large **140 px**, Desktop Small **140 px**, Tablet **120 px**,
+  Mobile **100 px** (w makietach = dolny padding ostatniej sekcji, stopka bez odstępu nad sobą).
 
 - **Stan Disabled / nieaktywny przycisku = krycie 50 %** całego elementu (bez zmiany kolorów).
   Dotyczy wszystkich przycisków, także przełączników (np. „Przełącznik widoku” Kafelki / Lista).
@@ -1376,7 +1379,8 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   `10206:5921` (x 1398), **„Tablet”** `10206:7008` (x 2522), **„Mobile”** `10206:8073` (x 3432). Nawigacja
   i „Section heading” w wariancie breakpointu; zamiast odłączonej ramki „Section / Footer” z DL - instancja
   „Footer desktop” danego breakpointu. Style tekstu (H3, Body 2, Body 3) z grupy breakpointu; okruszki 15 → 14 px
-  na Tablecie i Mobile. „Section / Login”: padding boki 36 / 16 / 16, dół 96 / 80 / 60, odstęp main → „Pomoc”
+  na Tablecie i Mobile. „Section / Login”: padding boki 36 / 16 / 16, dół 140 / 120 / 100 (zasada odstępu do stopki;
+  na DL użytkownik sam ustawił 140 i wstawił instancję „Footer desktop”), odstęp main → „Pomoc”
   80 / 60 / 48; okruszki → tytuł 80 / 60 / 48; logowanie → „Nie masz jeszcze konta?” 120 / 100 / 80.
   Dwie kolumny logowania: DS i Tablet obok siebie (odstęp 60 / 40, linia pionowa na całą wysokość, kolumny Fill,
   równa wysokość, przycisk na dole - przyciski obu kolumn w jednej linii, treść → przycisk min. 40); Mobile -
