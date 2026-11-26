@@ -2099,3 +2099,13 @@ Zmiany w `main`, nieopublikowane.
 - Zastane, nie ruszane: na Phone w wąskiej karcie 1 tytuł i kategoria są przycięte („Interest Dep…”); linter na „Main”
   (brak maxWidth, „Intro” nachodzi na „Projects”) - układ użytkownika.
 - Stare notatki o liście wierszy z sześcianem na `/projects` (sekcje z 2026-11-24/25) opisują stan sprzed przebudowy.
+
+## Featured projects: napisy po bokach znów widoczne (`/`, 2026-11-26)
+
+Zgłoszenie: na `/` teksty w sekcji Featured Projects się nie pokazują. Przyczyna: „Side Text Track” `RqVV9HufJ` (cała
+warstwa z tytułami i opisami) była **ukryta na Desktopie** (`visible: false` w breakpoincie głównym; nie wiadomo, kiedy).
+Poprawka: Desktop widoczna, Tablet widoczna (jak było), Phone ukryta (jak było). Treść, efekty i linki bez zmian.
+Zmiana w `main`, nieopublikowana.
+- Linki: przegląd całego projektu (2026-11-26) - żaden link nie prowadzi na `/projects-2` (`osVUJX7ur`, draft, stara lista
+  z sześcianem, też nazwana „Projects” - łatwo pomylić w wyborze linku). „View All”, „Napis prawy” i „Projects List”
+  prowadzą na `/projects` `RK_gmhXuR`.
