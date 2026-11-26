@@ -89,6 +89,13 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
 
 ## Stałe zasady projektowe (Figma)
 
+- **Zawsze 4 breakpointy (stała zasada użytkownika, 2026-11-26):** każdą makietę w tym projekcie robimy
+  w czterech wersjach - **Desktop Large (1440)**, **Desktop Small (1024)**, **Tablet (810)** i **Mobile (390)**.
+  Gdy użytkownik da makietę jednego breakpointu, pozostałe robimy jako kopie obok (w rzędzie na prawo, odstęp 100)
+  z wariantami komponentów danego breakpointu („Podwójna nawigacja” Breakpoint, „Footer desktop” Property 1,
+  „Section heading” Property 1), stylami tekstu z grupy breakpointu („Desktop 1024–1439” / „Tablet 768–1023” /
+  „Mobile ≤767”) i paddingiem bocznym sekcji 60 / 36 / 16 / 16.
+
 - **Stan Disabled / nieaktywny przycisku = krycie 50 %** całego elementu (bez zmiany kolorów).
   Dotyczy wszystkich przycisków, także przełączników (np. „Przełącznik widoku” Kafelki / Lista).
   Zmiana z 40 % na 50 % — decyzja użytkownika 2026-11-22 (wcześniej 40 %, potwierdzone 2026-11-17 i 2026-11-20).
@@ -1362,9 +1369,21 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   kolumny zrównane z lewą (treść → przycisk 40, tytuł → opis 24), więc przyciski obu kolumn stoją na tej samej
   wysokości (y 248).
 
+- 2026-11-26 - **Figma, „0. Panel logowania”: Desktop Small / Tablet / Mobile dla makiety „Desktop Large”**
+  (`10116:86529`, prośba użytkownika). Trzy kopie w rzędzie na prawo (y -5424, odstęp 100): **„Desktop Small”**
+  `10206:5921` (x 1398), **„Tablet”** `10206:7008` (x 2522), **„Mobile”** `10206:8073` (x 3432). Nawigacja
+  i „Section heading” w wariancie breakpointu; zamiast odłączonej ramki „Section / Footer” z DL - instancja
+  „Footer desktop” danego breakpointu. Style tekstu (H3, Body 2, Body 3) z grupy breakpointu; okruszki 15 → 14 px
+  na Tablecie i Mobile. „Section / Login”: padding boki 36 / 16 / 16, dół 96 / 80 / 60, odstęp main → „Pomoc”
+  80 / 60 / 48; okruszki → tytuł 80 / 60 / 48; logowanie → „Nie masz jeszcze konta?” 120 / 100 / 80.
+  Dwie kolumny logowania: DS i Tablet obok siebie (odstęp 60 / 40, linia pionowa na całą wysokość, kolumny Fill,
+  równa wysokość, przycisk na dole - przyciski obu kolumn w jednej linii, treść → przycisk min. 40); Mobile -
+  kolumny jedna pod drugą (odstęp 40, linia pozioma 1 px, treść → przycisk 32). Przyciski logowania Fill
+  szerokości kolumny; „Zarejestruj się” 240 px, na Mobile na całą szerokość. Makieta DL bez zmian.
+
 ## Do zrobienia
 
-- [ ] Panel logowania (propozycja `10092:4517`, wersja użytkownika 2 kolumny + belka `10116:85095`): akceptacja; potem Desktop Small / Tablet / Mobile,
+- [ ] Panel logowania (propozycja `10092:4517`, wersja użytkownika 2 kolumny + belka `10116:85095`): akceptacja; (Desktop Small / Tablet / Mobile dla wersji `10116:86529` - zrobione 2026-11-26),
       stan Focus dla „Przycisk CTA 46 px”, treść dymku pod ikoną info (Login.gov.pl) i widok formularza
       login + hasło (dokąd prowadzi „Zaloguj się loginem i hasłem”).
 
