@@ -94,7 +94,9 @@ Zasady wspólne (praca z Framerem, definition of done) są w głównym `CLAUDE.m
   Gdy użytkownik da makietę jednego breakpointu, pozostałe robimy jako kopie obok (w rzędzie na prawo, odstęp 100)
   z wariantami komponentów danego breakpointu („Podwójna nawigacja” Breakpoint, „Footer desktop” Property 1,
   „Section heading” Property 1), stylami tekstu z grupy breakpointu („Desktop 1024–1439” / „Tablet 768–1023” /
-  „Mobile ≤767”) i paddingiem bocznym sekcji 60 / 36 / 16 / 16.
+  „Mobile ≤767”).
+- **Paddingi boczne - zawsze (stała zasada użytkownika, 2026-11-26):** Desktop Large **60 px**, Desktop Small
+  **36 px**, Tablet **16 px**, Mobile **16 px** (lewy i prawy, w każdej sekcji z treścią na każdej makiecie).
 
 - **Stan Disabled / nieaktywny przycisku = krycie 50 %** całego elementu (bez zmiany kolorów).
   Dotyczy wszystkich przycisków, także przełączników (np. „Przełącznik widoku” Kafelki / Lista).
