@@ -2109,3 +2109,23 @@ Zmiana w `main`, nieopublikowana.
 - Linki: przegląd całego projektu (2026-11-26) - żaden link nie prowadzi na `/projects-2` (`osVUJX7ur`, draft, stara lista
   z sześcianem, też nazwana „Projects” - łatwo pomylić w wyborze linku). „View All”, „Napis prawy” i „Projects List”
   prowadzą na `/projects` `RK_gmhXuR`.
+
+## Hero: bryły podpięte pod projekty, „See more” prowadzi na stronę projektu (`/`, 2026-11-26)
+
+Prośba: każda bryła w Hero ma tytuł po lewej z losowo wybranego projektu z CMS, a w stanie powiększonym „See more”
+przenosi na stronę tego projektu. Zdjęć w bryłach nie zmieniać. Zmiany w `main`, nieopublikowane.
+- **Przypisanie (losowe, każdy projekt min. raz):** Kwadrat 1 (pawilon) Mycoaudio · 3 (film) Letter Bet · 5 (spirala)
+  Interest Dept · 6 (toster) Nod Objects · 8 (różowe okno) Beta Bar · 9 (portret) Our Legacy · 10 (niebieska kopuła)
+  Letter Bet · 11 (KANAL) Interest Dept · 13 (różowa kopuła) Beta Bar · 14 (biała kopuła) Mycoaudio · 16 (palmy) Nod Objects.
+- **„Napis lewy”** `A1gRbg7LO`: w wariantach „Kwadrat N” tytuł = nazwa projektu (dawne robocze tytuły brył zastąpione).
+- **„Napis prawy”** `k_11UqrF3`: nowe warianty **„Fokus - <projekt>”** (kopie „Fokus”, ten sam tekst „See more” + strzałka)
+  z natywnym linkiem do `/projects/[slug]` (href + collectionItem = slug) i kursorem „pointer”: Interest Dept `qRy3lSJQm`,
+  Beta Bar `lh85jxvec`, Our Legacy `yNyEQ4OGO`, Mycoaudio `vW5jyJYqq`, Nod Objects `caiyHxQqA`, Letter Bet `xd9Pit6yk`
+  (rząd na płótnie, top 720), każdy z wariantem **hover** (krycie 0,65, tween 0,25 s jak „Domyślny”; top 960).
+  Zwykły „Fokus” `Q6mxb3i7d` zostaje jako zapas (bez linku).
+- Kod `NapisyFokus.tsx`: tabela **`PROJEKT_BRYLY`** (numer kwadratu → nazwa projektu); `withNapisFokusWariant` włącza
+  wariant „Fokus - <projekt>” (brak wpisu → „Fokus”). Bez zmian animacji.
+- **Zmiana projektu bryły = 2 miejsca:** tytuł w wariancie „Kwadrat N” „Napisu lewego” + wpis w `PROJEKT_BRYLY`.
+  Nowy projekt w CMS → nowy wariant „Fokus - <nazwa>” (z hoverem) w „Napisie prawym”. Nazwa wariantu musi zgadzać się
+  z tabelą w kodzie.
+- Działa tylko w podglądzie / na stronie (edytor pokazuje stan domyślny).
